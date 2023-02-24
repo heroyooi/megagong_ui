@@ -1,0 +1,1064 @@
+@charset "euc-kr";
+
+/* 공통 css 작성 */
+*, *:before, *:after{box-sizing:border-box;}
+.mo-view,.slick-slide .mo-view{display:none;}
+
+body{transition:opacity 0.2s;}
+body.ready{opacity:0;}
+#headertop{position: relative;margin-bottom: 33px;z-index: 3;margin-bottom: 0;}
+
+#headertop .hd-top {position: relative; padding-top: 15px;}
+#headertop .hd-top .inner {position: relative; width: 1200px; margin: 0 auto; }
+#headertop .hd-top .inner::after { content: ""; display: block; clear: both; }
+#headertop .hdtop-wrap { float: right; }
+#headertop .hdtop-wrap::after { content: ""; display: block; clear: both; }
+#headertop .hdtop-wrap > li{float: left;}
+#headertop .hdtop-wrap > li a { position: relative;padding: 6px 0;display: block;}
+#headertop .hdtop-wrap .link-wrap {margin-left: 12px;position: relative;}
+#headertop .hdtop-wrap .link-wrap .link-btn {min-width: 110px; position: relative;display: block;color: #777;border: 1px solid #777;font-size: 13px;padding: 4px 32px 4px 15px;border-radius: 30px;text-align: left;}
+#headertop .hdtop-wrap .link-wrap .link-btn::before {content: "";display: block;position: absolute;right: 15px;top: 50%;transform: translateY(-50%);background: url(https://img.megagong.net/lab/common/arr_down.png) center center no-repeat;width: 8px;height: 4px;}
+#headertop .hdtop-wrap .link-wrap .link-btn.on::before{transform: rotate(180deg);top: 40%;}
+#headertop .hdtop-wrap .link-wrap .link-list {display: none;}
+#headertop .hdtop-wrap .link-wrap .link-list.on { display: block; position: absolute;top: 27px; right: 0; z-index: 4;background: #fff; border: 1px solid #777;border-radius: 10px;}
+#headertop .hdtop-wrap .link-wrap .link-list li a{display: block; color: #777; padding:0 32px 7px 15px;min-width: 110px;white-space:nowrap;}
+#headertop .hdtop-wrap .link-wrap .link-list li:first-child a{padding-top: 15px;}
+#headertop .hdtop-wrap .link-wrap .link-list li:last-child a{padding-bottom: 15px;}
+
+#headertop .hd-logo {position:relative;text-align:center;width: 1200px;margin:0 auto;padding: 20px 0;height: 100px;} 
+#headertop .hd-logo a { display:inline-block; } 
+
+#headertop .hd-utility{position: relative;z-index:1;}
+
+#headertop nav{position: relative;}
+#headertop nav .lab-menu.gong{background: #0c998d;}
+#headertop nav .lab-menu.sobang{background: #b85353;}
+#headertop nav .lab-menu.army{background: #7a8e53;}
+
+#headertop .depth1-wrp{position: relative;display: flex;z-index: 3;margin: 0 auto 25px;width: 1200px;} 
+#headertop .depth1-wrp li {text-align:center;margin-right: 20px;} 
+#headertop .depth1-wrp li a{font-weight: 600;font-size: 23px;color: #b1b1b1;font-family: 'Noto Sans KR', sans-serif;}
+#headertop .depth1-wrp li a.on{color: #333;position: relative;padding: 0 8px 0 5px;} 
+#headertop .depth1-wrp li a:hover{color: #333;position: relative;} 
+
+#headertop .depth1-wrp li a.on:before{content: '';display: block;position: absolute;right: 0;top: 0;background: #333;height: 6px;width: 6px;border-radius: 50%;}
+#headertop .depth1-wrp li a.on:after{content: '';display: block;position: absolute;left: 0;bottom: 4px;background: #26b7bc;height: 3px;width: 100%;z-index: -1;}
+#headertop .depth1-wrp.sobang li a.on:after{content: '';display: block;position: absolute;right: 3px;bottom: 4px;background: #b85353;height: 3px;width: 100%;z-index: -1;}
+#headertop .depth1-wrp.army li a.on:after{content: '';display: block;position: absolute;right: 3px;bottom: 4px;background: #7a8e53;height: 3px;width: 100%;z-index: -1;}
+
+#headertop .depth2-wrp > div{overflow: hidden;}
+#headertop .depth2-wrp .gong{background-color:#0c998d;}
+#headertop .depth2-wrp .sobang{background: #b85353;}
+#headertop .depth2-wrp .army{background: #7a8e53;}
+#headertop .sobang .depth2-swiper.swiper-container .swiper-slide:before{background-color: #cb9898;}
+#headertop .army .depth2-swiper.swiper-container .swiper-slide:before{background-color: #cad2ba;}
+
+#headertop .depth2-swiper.swiper-container{overflow:inherit;}            
+#headertop .depth2-swiper.swiper-container .swiper-wrapper{justify-content: center;}
+#headertop .depth2-swiper.swiper-container .swiper-slide{width: 140px;text-align: center;position: relative;}
+#headertop .depth2-swiper.swiper-container .swiper-slide:before{content:'';display:block;position:absolute;right:0;top:50%;transform:translateY(-50%);height: 13.3%;width:1px;background: #75bbb5;}
+#headertop .depth2-swiper.swiper-container .swiper-slide:last-child::before{content: none;}
+#headertop .depth2-swiper.swiper-container .swiper-slide.on::after{content: '';display: block;position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);height: 3px;width: 78%;background: #fff;}
+#headertop .depth2-swiper.swiper-container .swiper-slide a{font-size:15px;line-height:1.4;color:#fff;padding: 15px 0;display: block;font-family: 'Noto Sans KR', sans-serif;}
+#headertop .depth2-swiper.swiper-container .swiper-slide a .ic-new{display: inline-flex;}
+
+#headertop .depth3-wrp{width: 1200px; margin: 50px auto 0; margin-top: 0;}
+#headertop .depth3-wrp.collapse{min-height:initial !important;}/* 로드 시 버그 */
+#headertop .depth3-wrp li a{height: 40px; position: relative; display: block;padding: 13px 20px;font-size: 13px;text-align: left;font-size: 14px;color: #333;background: #f5f5f5;}  
+#headertop .depth3-wrp li.depth3 a, #headertop .depth3-wrp li.current a{font-weight: bold;}
+#headertop .depth3-wrp li:last-child a{padding-bottom: 25px; border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;}  
+#headertop .depth3-wrp .depth3 a{border-radius: 20px;}
+#headertop .depth3-wrp .depth3 a:before{content: '';display: block;right: 20px;top: 50%;position: absolute;background: url(https://img.megagong.net/lab/common/arr_depdown.png) no-repeat center center;width: 8px;height: 4px;transform: translateY(-50%);}
+#headertop .depth3-wrp .depth3.on a{border-bottom-right-radius: 0;border-bottom-left-radius: 0;padding: 13px 20px 25px;}
+#headertop .depth3-wrp .depth3.on a:before{background: url(https://img.megagong.net/lab/common/arr_depup.png) no-repeat center center;top: 37%;}
+#headertop .depth3-wrp .depth3.on2 a:before{background: url(https://img.megagong.net/lab/common/arr_depdown.png) no-repeat center center}
+#headertop .depth3-wrp .depth3.on li a{padding-bottom: 10px;}
+
+#headertop .depth3-wrp .depth3-box{position:absolute;width: 200px;display: none;z-index: 2;}
+#headertop .depth3-wrp .depth3-box .depth3 ~ li{display: none;}
+#headertop .depth3-wrp .depth3-box .depth3.on ~ li{display: block;}
+/* #headertop .depth3-wrp .depth3-box li:last-child a{-webkit-box-shadow:10px 20px 20px 0px rgb(0 0 0 / 10%); box-shadow:10px 10px 20px 0px rgb(0 0 0 / 20%);} */
+#headertop .fulldown-wrp{display: none; position:absolute;background: #fff;border-bottom: 1px solid #7ec2bc;top: 99px;padding: 40px 0 50px;width: 100%;z-index: 99;}
+#headertop .fulldown-wrp.on{display: block;}
+#headertop .fulldown-wrp .inner{width: 1200px;margin: 0 auto;display: flex; justify-content: center;}
+#headertop .fulldown-wrp .inner.blank1{padding-right: 140px}
+#headertop .fulldown-wrp .inner.blank1.left{padding-left: 140px;padding-right: 0;}
+#headertop .fulldown-wrp .inner::after{content: '';display: block;clear: both;}
+#headertop .fulldown-wrp ul{width: 140px;}
+#headertop .fulldown-wrp ul li{float: none;margin-bottom: 15px;}
+#headertop .fulldown-wrp ul li:last-child{margin-bottom: 0;}
+#headertop .fulldown-wrp .inner > li{margin-bottom: 0;}
+#headertop .fulldown-wrp ul li a{position: relative;display: block;font-size: 15px;color: #333;text-align: center;font-family: 'Noto Sans KR', sans-serif;}
+#headertop .fulldown-wrp ul li a:hover span{border-bottom: 1px solid #0c998d;color: #0c998d;}
+#headertop .fulldown-wrp ul li a.on span{border-bottom: 1px solid #0c998d;color: #0c998d;}
+
+#headertop .fulldown-wrp.sobang{border-color: #b85353;}
+#headertop .fulldown-wrp.sobang ul li a:hover span{border-color: #b85353;color: #b85353;}
+#headertop .fulldown-wrp.sobang ul li a.on span{border-color: #b85353;color: #b85353;}
+#headertop .fulldown-wrp.army{border-color: #7a8e53;}
+#headertop .fulldown-wrp.army ul li a:hover span{border-color: #7a8e53;color: #7a8e53;}
+#headertop .fulldown-wrp.army ul li a.on span{border-color: #7a8e53;color: #7a8e53;}
+
+/* 서브페이지 영역 */
+#mWrap.mEvent #headertop .depth3-wrp{display:none;}
+#mWrap.mEvent .eventWrap{margin:0;}
+#mContainer .contents-wrp{width:1200px;margin: 50px auto;}
+
+.eventWrap{margin: 50px auto;}
+/* 서브페이지 공통영역 [테이블 & 기술영역] */
+.part-wrp{margin-bottom: 50px;line-height: 1.4;}
+.part-wrp .tac{text-align: center;}
+.part-wrp .tar{text-align: right;}
+.part-wrp .color-darkgray{color: #333 !important;;}
+.part-wrp .color-gray,.part-wrp .color-gray::before{color: #999 !important;}
+.part-wrp .color-red,.part-wrp .color-red::before{color: #ff0000b6 !important;}
+.part-wrp h4{margin-bottom: 25px;color: #333;font-size: 16px;padding-left: 7px;position: relative;}
+.part-wrp h4:before{content:'';display:block;position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 2px;height: 70%;background: #0c998d;}
+.sobang .part-wrp h4:before{background: #b85353;}
+.army .part-wrp h4:before{background: #7a8e53;}
+.part-wrp h5{margin-bottom: 20px;color:#333;font-size: 15px;}
+.part-wrp .sub-txt{margin-bottom: 30px;text-align: left;font-size: 13px;color: #777;line-height: 1.8;padding-left: 10px;}
+.part-wrp .tiny-noti{font-size: 12px;text-align: left;margin-top: 10px;color: #777;}
+.part-wrp .tiny-noti.mb10{margin-bottom: 10px;}
+.part-wrp .tiny-noti.tar{margin: -30px 0 10px;text-align: right;}
+.part-wrp .tiny-noti li{line-height: 1.5;}
+.part-wrp .tiny-noti .tiny-btn{border: 1px solid #777;padding: 1px 5px;margin-left: 3px;color: #333;}
+/* [가이드] 단일 버튼*/
+.part-wrp a.btn{display: inline-block;background: #777;border-radius: 3px;color: #fff;padding: 1px 5px;margin-left: 3px;font-size: 11px;}
+.part-wrp a.btn.bg-army{background: #7a8e53;}
+/* [가이드], [합격자분석] 복수 버튼 or background #333*/
+.part-wrp .btns{display: flex;flex-wrap: wrap;justify-content: center;margin-top: 20px;}
+.part-wrp .btns.tal{justify-content: flex-start;}
+.part-wrp .btns li {margin-right: 10px;}
+.part-wrp .btns li:last-child{margin-right: 0;}
+.part-wrp .btns li a{display: block;font-size: 13px;color: #fff;background: #333;padding: 6px 16px;}
+/* 소방 > [모집정보] > 지역별 채용비교 */
+.part-wrp .btns button{display: block;font-size: 13px;color: #fff;background: #333;padding: 9px 14px;border-radius: 3px;}
+
+/* [합격자 분석] 공통*/
+.part-wrp .border-wrp{margin: 30px auto 0;border: 1px solid #777;padding: 40px 30px;}
+.part-wrp .border-wrp h5{font-size: 13px;margin-bottom: 15px;}
+.part-wrp .border-wrp .half{display: flex;justify-content: space-between;}
+.part-wrp .border-wrp .half > li{width: 50%;}
+.part-wrp .graph-wrp{max-width: 1043px;margin: 0 auto;}
+.part-wrp .graph-wrp ul{display: flex;justify-content: space-between;align-items: center;}
+.part-wrp .graph-wrp ul > li{width: 49%;}
+.part-wrp .graph-wrp ul > li + li{margin-left: 2%;}
+.part-wrp .graph-wrp ul > li .mt10{margin-top: 30px;}
+/* .part-wrp .button-wrp{width: 304px;margin: 30px auto 0;background: url(https://img.megagong.net/lab/statistic/btn_bg.png) no-repeat center;}
+.part-wrp .button-wrp a{display: block; text-align: center;padding: 23px 0;}
+.part-wrp .button-wrp a b{padding-right: 25px;position: relative;font-size: 15px;}
+.part-wrp .button-wrp a b::before{content: '';display: block;position: absolute;right: 0;top: 50%;transform: translateY(-50%);background: url(https://img.megagong.net/lab/statistic/btn_arrow.png) no-repeat center;width: 18px;height: 18px;}
+.part-wrp .buttons-wrp{margin: 30px auto 0;display: flex;justify-content: center;}
+.part-wrp .buttons-wrp a{display: block;text-align: center;background: #2669bc;padding: 18px 30px;color: #fff;font-size: 18px;border-radius: 10px;width: 360px;}
+.part-wrp .buttons-wrp a + a{background: #2badb2;margin-left: 20px;}
+.part-wrp .buttons-wrp a span{display: block;font-size: 13px;margin: 5px 0 0;} */
+
+/* 서브 공통 말머리 앞 dash, dot, number 처리 */
+.part-wrp .sub-dash{margin-bottom: 30px;text-align: left;font-size: 13px;color: #777;}
+.part-wrp .sub-dash li{position: relative;padding-left: 8px;margin-bottom: 10px;line-height: 1.5;}
+.part-wrp .sub-dash li:last-child{margin-bottom: 0;}
+.part-wrp .sub-dash li::before{content: '\002D';display: block;position: absolute;left: 0;top: auto;color:#777}
+.part-wrp .sub-dash.half{display: flex;flex-wrap: wrap;}
+.part-wrp .sub-dash.half li{width: 50%;margin-bottom: 5px;}
+.part-wrp .sub-dash.half li:last-child{margin-bottom: 0;}
+.part-wrp  table td .sub-dash{margin-bottom: 0;}
+.part-wrp .td-tar tr td{text-align: right;}
+.part-wrp tr .tal{text-align: left;}
+
+.part-wrp .sub-dot{text-align: left;margin-bottom: 0;font-size: 13px; color: #777;}
+.part-wrp .sub-dot .sub-dot-tit::before{content: none;}
+.part-wrp .sub-dot li{position: relative;padding-left: 8px;margin-bottom: 10px;line-height: 1.5;}
+.part-wrp .sub-dot li:last-child{margin-bottom: 0;}
+.part-wrp .sub-dot li::before{content: '\00B7';display: block;position: absolute;left: 0;top: auto;color:#777}
+
+.part-wrp .sub-num{text-align: left;margin-bottom: 0;font-size: 13px; color: #777;}
+.part-wrp .sub-num li{position: relative;padding-left: 14px;margin-bottom: 10px;line-height: 1.5;}
+.part-wrp .sub-num li:last-child{margin-bottom: 0;}
+.part-wrp .sub-num li:nth-child(1)::before{content:'\0031\002E';display: block;position: absolute;left: 0;top: auto;color:#777}
+.part-wrp .sub-num li:nth-child(2)::before{content:'\0032\002E';display: block;position: absolute;left: 0;top: auto;color:#777}
+.part-wrp .sub-num li:nth-child(3)::before{content:'\0033\002E';display: block;position: absolute;left: 0;top: auto;color:#777}
+
+.part-wrp .sub-square h5{margin-top: 10px;}
+.part-wrp .sub-square{text-align: left;font-size: 13px;color: #777;}
+.part-wrp .sub-square li{position: relative;padding-left: 8px;margin-bottom: 10px;line-height: 1.5;}
+.part-wrp .sub-square li:last-child{margin-bottom: 0;}
+.part-wrp .sub-square li::before{content: '';display: block; width: 3px;height: 3px; position: absolute;left: 0;top: 8px; background-color:#777}
+
+/* [소방공무원 가이드 > 필기시험 ] 과목기준 들여쓰기 */
+.part-wrp .indent{display: flex;}
+.part-wrp .indent .subj{position: relative; width: auto;height: 100%;margin-right: 5px;padding-right: 5px;white-space:nowrap;}
+.part-wrp .indent .subj:before{content: '\003A';display: block;position: absolute;right: 0;top:auto}
+.part-wrp .indent .txt{display: inline-block;}
+
+
+/* 서브페이지 공통 */
+.labsub-wrp{position: relative;color: #333;padding-bottom: 50px;}
+.labsub-wrp h3{position: relative;background: #f4fafa;height: 140px;overflow: hidden;padding: 59px 49px;margin-bottom: 50px; /*background: green;*/}
+.labsub-wrp.nangongtv-wrp h3{margin-bottom: 80px;}
+.labsub-wrp h3.labsub-tit{padding: 45px 49px;}
+.labsub-wrp h3 > span{font-size: 17px;display: block;margin-bottom: 8px;position: relative;}
+.labsub-wrp h3 b{font-size: 25px;position: relative;}
+.labsub-wrp h3 b i{display: inline-block;vertical-align: middle;margin: 0 0 5px 8px;}/*120*23*/
+.labsub-wrp h3 b i a{display: block;padding: 4px 19px;font-size: 12px;color: #fff;background: #333;border-radius: 45px;font-style: normal;}
+.labsub-wrp .color-txt{color:#0c998d;}
+
+/* 서브페이지 직렬 탭 공통 [모집정보] [합격자 분석] */
+.labsub-wrp .tab-series{display: flex;margin-bottom: 30px;}
+.labsub-wrp .tab-series li{width: 50%;}
+.labsub-wrp .tab-series li a{font-size: 17px;display: block;color: #777;background: #f5f5f5;padding: 20px 0;text-align: center;border: 1px solid #fff;border-width: 0 1px;}
+.labsub-wrp .tab-series li.on a{color: #fff;background: #0c998d;}
+.labsub-wrp.sobang .tab-series li.on a{background: #b85353;}
+.labsub-wrp.army .tab-series li.on a{background: #7a8e53;}
+.labsub-wrp .tab-sub-series{display: flex;margin: 20px auto 50px;}
+.labsub-wrp .tab-sub-series li a{padding: 0 15px;font-size: 15px;color: #777;position: relative;display: inline-block;}
+.labsub-wrp .tab-sub-series li a:before{content:'';display:block;position:absolute;top:50%;transform:translateY(-50%);right:0;background: #ddd;width:1px;height: 80%;}
+.labsub-wrp .tab-sub-series li:last-child a:before{content:none}
+.labsub-wrp .tab-sub-series li.on a{color: #0c998d;font-weight: 600;}
+.labsub-wrp.sobang .tab-sub-series li.on a{color: #b85353}
+.labsub-wrp.army .tab-sub-series li.on a{color: #7a8e53}
+.labsub-wrp.sobang .color-txt{color:#b85353;}
+.labsub-wrp.sobang h3{background: #fbf5f5;}
+.labsub-wrp.army .color-txt{color: #7a8e53;}
+.labsub-wrp.army h3{background: #f6f7f3;}
+.labsub-wrp .tab-series-subcon{display: none;}
+.labsub-wrp .tab-series-subcon.on{display: block;}
+/* [가이드] > 시험일정 버튼 */
+.labsub-wrp h4 .btn-link{font-size: 12px;border: 1px solid #0c998d;color: #0c998d;padding: 1px 8px;border-radius: 5px;margin-left: 5px;}
+.labsub-wrp.sobang h4 .btn-link{border-color: #b85353;color: #b85353;}
+.labsub-wrp.army h4 .btn-link{border-color: #7a8e53; color: #7a8e53;}
+
+/* 서브페이지 타이틀 background-imange */
+.labsub-wrp h3::before{content: '';display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 0;background:url(https://img.megagong.net/lab/sub/tit_column.png) no-repeat center;width: 255px;height: 140px;background-size: auto 100%;}
+.column-wrp h3::before{background:url(https://img.megagong.net/lab/sub/gong/tit_column.png) no-repeat center;}
+.strategy-wrp h3::before{background: url(https://img.megagong.net/lab/sub/gong/tit_strategy.png) no-repeat center;}
+.nangongtv-wrp h3::before{background: url(https://img.megagong.net/lab/sub/gong/tit_nangongtv.png) no-repeat center;}
+.followm-wrp h3::before{background: url(https://img.megagong.net/lab/sub/gong/tit_followm.png) no-repeat center;}
+.statistic-wrp h3::before{background: url(https://img.megagong.net/lab/sub/gong/tit_statistic.png) no-repeat center;}
+.examinfo-wrp h3::before{background: url(https://img.megagong.net/lab/sub/gong/tit_examinfo.png) no-repeat center;}
+.newsinfo-wrp h3::before{background: url(https://img.megagong.net/lab/sub/gong/tit_newsinfo.png) no-repeat center;}
+.library-wrp h3::before{background: url(https://img.megagong.net/lab/sub/gong/tit_library.png) no-repeat center;}
+
+.sobang.column-wrp h3::before{background:url(https://img.megagong.net/lab/sub/sobang/tit_column.png) no-repeat center;}
+.sobang.strategy-wrp h3::before{background: url(https://img.megagong.net/lab/sub/sobang/tit_strategy.png) no-repeat center;}
+.sobang.nangongtv-wrp h3::before{background: url(https://img.megagong.net/lab/sub/sobang/tit_nangongtv.png) no-repeat center;}
+.sobang.followm-wrp h3::before{background: url(https://img.megagong.net/lab/sub/sobang/tit_followm.png) no-repeat center;}
+.sobang.examinfo-wrp h3::before{background: url(https://img.megagong.net/lab/sub/sobang/tit_examinfo.png) no-repeat center;}
+.sobang.newsinfo-wrp h3::before{background: url(https://img.megagong.net/lab/sub/sobang/tit_newsinfo.png) no-repeat center;}
+.sobang.library-wrp h3::before{background: url(https://img.megagong.net/lab/sub/sobang/tit_library.png) no-repeat center;}
+
+.army.column-wrp h3::before{background:url(https://img.megagong.net/lab/sub/army/tit_column.png) no-repeat center;}
+.army.strategy-wrp h3::before{background: url(https://img.megagong.net/lab/sub/army/tit_strategy.png) no-repeat center;}
+.army.nangongtv-wrp h3::before{background: url(https://img.megagong.net/lab/sub/army/tit_nangongtv.png) no-repeat center;}
+.army.followm-wrp h3::before{background: url(https://img.megagong.net/lab/sub/army/tit_followm.png) no-repeat center;}
+.army.examinfo-wrp h3::before{background: url(https://img.megagong.net/lab/sub/army/tit_examinfo.png) no-repeat center;}
+.army.newsinfo-wrp h3::before{background: url(https://img.megagong.net/lab/sub/army/tit_newsinfo.png) no-repeat center;}
+.army.library-wrp h3::before{background: url(https://img.megagong.net/lab/sub/army/tit_library.png) no-repeat center;}
+
+/* 서브페이지 셀렉트 박스 공통 */
+.select-wrp{background: #f5f5f5;margin-bottom: 50px;padding: 25px 10px;}
+.select-wrp ul{display: flex;justify-content: center;}
+.select-wrp ul li{margin-right: 4px;border: 1px solid #d0d0d0;cursor: pointer;position: relative;height: 34px;background: #fff;color: #000;padding: 10px;}
+.select-wrp ul li:last-child{margin-right: 0;}
+.select-wrp ul li.choice-box{width: 125px;}
+.select-wrp ul li.choice-box.w130{width: 130px;}
+.select-wrp ul li.choice-box:before,
+.select-wrp.tbl-wrp .choice-box:before{content: "";display: block;position: absolute;right: 10px;top: 50%;margin-top:-2px;background: url(https://img.megagong.net/lab/common/arr_down.png) center center no-repeat;width: 8px;height: 4px;transition:transform 0.2s;}
+.select-wrp ul li.choice-box.on:before,
+.select-wrp.tbl-wrp .choice-box.on:before{transform: rotate(180deg);}
+.select-wrp ul li.choice-box .value{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.select-wrp ul li.choice-box select{position: absolute;left: 0;top: 0;width: 100%;height: 100%;opacity: 0;filter: alpha(opacity=0);z-index: 1;cursor: pointer;}
+.select-wrp ul li.choice-box.disabled{background: rgba(0, 0, 0, 0.04);cursor: default;}
+.select-wrp ul li.choice-box.disabled .value{opacity:0.5;}
+.select-wrp ul li.choice-box.disabled select{display: none;}
+.select-wrp ul li.choice-box.active{border: 1px solid #0c998d;}
+.select-wrp ul li.choice-box.active .value{color: #0c998d;}
+.select-wrp ul li.text-box{width: 470px;}
+.select-wrp ul li.text-box input[type=text]{position: absolute;top: 0;left: 0;width: 100%;height: 100%; border: 0;padding:0 15px;}
+.select-wrp ul li.search-box{color: #fff;background: #555;border-color: #555;width: 60px;text-align: center;}
+.select-wrp ul li.search-box a{color: #fff;}
+/* 셀렉트박스 [기출문제] */
+.library-wrp .select-wrp ul li.choice-box{width: 100px;}
+.library-wrp .select-wrp ul li.choice-box.long{width: 150px;}
+.library-wrp .select-wrp ul li.text-box{width: 300px;}
+/* 셀렉트박스 [합격자분석] */
+.select-wrp.years{background: transparent;margin-bottom: 50px;padding: 0}
+.select-wrp.years ul{justify-content: end;}
+/* 셀렉트박스 [소방 > 모집정보] [군무원 > 모집정보]*/
+.select-wrp.tbl-wrp {background: transparent;padding: 0;}
+.select-wrp.tbl-wrp .choice-box{border: 1px solid #d0d0d0;cursor: pointer;position: relative;height: 34px;background: #fff;color: #000;padding: 10px 15px;width: 100%;}
+.select-wrp.tbl-wrp .choice-box.half{width: 49%;display: inline-block;}
+.select-wrp.tbl-wrp .choice-box select {position: absolute;left: 0;top: 0;width: 100%;height: 100%; opacity: 0; z-index: 1;cursor: pointer;filter: alpha(opacity=0);}
+.select-wrp.tbl-wrp .choice-box .value{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;text-align: left;}
+.select-wrp.tbl-wrp #area_list{display: flex;flex-wrap: wrap;}
+.select-wrp.tbl-wrp #area_list.nonsearch{justify-content: center;}
+.select-wrp.tbl-wrp #area_list .inp_chk{text-align: left;width: 20%;margin-bottom: 10px;}
+.select-wrp.tbl-wrp #area_list .inp_chk input{margin-right: 5px;cursor: pointer;}
+.select-wrp.tbl-wrp #area_list .inp_chk label{vertical-align: middle;cursor: pointer;}
+.part-wrp .cps_wrap {text-align:center;font-size:0;}
+.part-wrp .cps_wrap .cps_box {display:inline-block;padding:12px 0 20px;width:calc(33.333% - 10px);font-weight:bold;font-size:16px;line-height:1.25;color:#000;border-radius:8px;border:1px solid #f3ced0;background:#fcf3f4;box-sizing:border-box;}
+.part-wrp .cps_wrap .cps_box+.cps_box {margin-left:15px;}
+.part-wrp .cps_wrap .cps_box span {display: inline-block;vertical-align: middle;}
+.part-wrp .cps_wrap .cps_box span .remove_btn {display:inline-block;margin-top:10px;width:60px;height:20px;line-height:1.5;font-size:14px;color:#8d8d8d;border:1px solid #ccc;box-sizing:border-box;}
+
+
+/* 서브페이지 비디오 리스트 공통 [난공TV],[FollowM],[과목별학습전략] */
+.sublist-wrp{margin-bottom: 50px;}
+.sublist-wrp.no{text-align: center;}
+.sublist-wrp.no span{font-size: 15px;}
+.sublist-wrp .list{display: flex;flex-wrap: wrap;}
+.sublist-wrp .list > li{width: 278px; margin:0 29px 40px 0;}
+.sublist-wrp .list > li:nth-child(4n){margin-right: 0;}
+.sublist-wrp .list > li{position:relative}
+.sublist-wrp .list > li .video{position: relative;height: 166px; /*background: #777;*/}
+.sublist-wrp .list > li .video img{width: 100%;}
+.sublist-wrp .list > li .icn-subj{position: absolute;top: 0;left: 0;padding: 3px 5px;color: #fff;font-size: 11px;}
+.sublist-wrp .list .video-info {margin-top: 10px; padding: 10px; font-size: 14px;line-height: 1.2;}
+.sublist-wrp .list .video-info .tit{display: block;width: 260px;white-space: nowrap;word-break: break-all;overflow: hidden;text-overflow: ellipsis;}
+.sublist-wrp .list .video-info .tit b{}
+.sublist-wrp .list .video-info .tea{color: #0c998d;margin-bottom: 10px;font-weight: 600;}
+.sobang .sublist-wrp .list .video-info .tea{color: #b85353;}
+.army .sublist-wrp .list .video-info .tea{color: #7a8e53;}
+.sublist-wrp .list .video-info .dview{margin-top: 20px;color: #777;font-size: 12px;}
+.sublist-wrp .list .video-info .dview span + span{padding-left: 10px;margin-left: 10px;position: relative;}
+.sublist-wrp .list .video-info .dview span + span::before{content: '';display: block; width: 2px;height: 60%;background: #b5b5b5; position: absolute;left: 0;top: 50%;transform: translateY(-50%);}
+.sublist-wrp .paging{text-align: center;}
+
+.nangongtv-wrp .sublist-wrp .list .video-info:hover{background: #0c998d;color:#fff}
+.nangongtv-wrp.sobang .sublist-wrp .list .video-info .tea{color: #b85353;}
+.nangongtv-wrp.sobang .sublist-wrp .list .video-info:hover{background: #b85353;}
+.nangongtv-wrp.army .sublist-wrp .list .video-info .tea{color: #7a8e53;}
+.nangongtv-wrp.army .sublist-wrp .list .video-info:hover{background: #7a8e53;}
+
+.sublist-wrp .list.show-btn .video{position: relative;height: 166px; /*background: #777;*/}
+.sublist-wrp .list.show-btn .video img{height: 100%;}
+.sublist-wrp .list.show-btn a:hover .video::before{content: '';display: block; position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); background: url(https://img.megagong.net/lab/sub/vd_btn_followm.png) no-repeat center;width: 61px;height: 61px;z-index: 2;}
+.sublist-wrp .list.show-btn a:hover .video img{filter: brightness(.42);position: relative;}
+
+
+
+/* 공무원가이드 [시험제도] 상단 swiper 탭 */
+.guide-wrp{position: relative;}
+.tab-upper{border-bottom: 1px solid #0c998d;margin-bottom: 30px;height: 60px;}
+.tab-upper .swiper-slide{text-align: center;}
+.tab-upper .swiper-slide a{position: relative;display: block;border: 1px solid #ddd;border-width: 1px 1px 0 0;padding: 19px 0 22px;font-size: 16px;font-weight: normal;color: #777;box-sizing: border-box;height: 60px;}
+.tab-upper .swiper-slide:first-of-type a{border-left: 1px solid #ddd;}
+.tab-upper .swiper-slide a:hover,
+.tab-upper .swiper-slide.on a{font-weight: bold;color: #0c998d;border-color: #0c998d;border-width: 1px 1px 0;}
+.tab-upper .swiper-slide a:hover::before,
+.tab-upper .swiper-slide.on a::before{content: '';display: block;position: absolute;top: 0;left: 0;width: 100%;height: 4px;background: #0c998d;}
+.tab-upper .swiper-slide a:hover::after,
+.tab-upper .swiper-slide.on a::after{content: '';display: block;position: absolute;bottom: 0;width: 100%;height: 1px;right: 0;background: #fff;}
+.guide-wrp .tab-con .tab-subwrp{margin-bottom: 150px;display: none;}
+.guide-wrp .tab-con .tab-subwrp.on{display:block;}
+
+/* 공무원가이드 [시험제도] 공군소 분기 */
+.guide-wrp.sobang .tab-upper{border-bottom: 1px solid #b85353;margin-bottom: 30px;height: 60px;}
+.guide-wrp.sobang .tab-upper .swiper-slide.on a{font-weight: bold;color: #b85353;border-color: #b85353;border-width: 1px 1px 0;}
+.guide-wrp.sobang .tab-upper .swiper-slide a:hover,
+.guide-wrp.sobang .tab-upper .swiper-slide.on a{font-weight: bold;color: #b85353;border-color: #b85353;border-width: 1px 1px 0;}
+.guide-wrp.sobang .tab-upper .swiper-slide a:hover::before,
+.guide-wrp.sobang .tab-upper .swiper-slide.on a::before{content: '';display: block;position: absolute;top: 0;left: 0;width: 100%;height: 4px;background: #b85353;}
+.guide-wrp.sobang .tab-sub li.on a{color: #b85353;}
+.guide-wrp.army .tab-upper{border-bottom: 1px solid #7a8e53;margin-bottom: 30px;height: 60px;}
+.guide-wrp.army .tab-upper .swiper-slide.on a{font-weight: bold;color: #7a8e53;border-color: #7a8e53;border-width: 1px 1px 0;}
+.guide-wrp.army .tab-upper .swiper-slide a:hover,
+.guide-wrp.army .tab-upper .swiper-slide.on a{font-weight: bold;color: #7a8e53;border-color: #7a8e53;border-width: 1px 1px 0;}
+.guide-wrp.army .tab-upper .swiper-slide a:hover::before,
+.guide-wrp.army .tab-upper .swiper-slide.on a::before{content: '';display: block;position: absolute;top: 0;left: 0;width: 100%;height: 4px;background: #7a8e53;}
+.guide-wrp.army .tab-sub li.on a{color: #7a8e53;}
+
+/* 공무원가이드 [시험제도] 하단 sub 탭 */
+.guide-wrp .tab-sub{margin: 0 0 70px 30px;display: flex;}
+.guide-wrp .tab-sub li a{display:block;font-size: 15px;color: #777;text-align:center;padding: 0 10px;border-right: 1px solid #ddd;}
+.guide-wrp .tab-sub li.on a{color: #0c998d;font-weight: 600;}
+.guide-wrp .tab-sub li:last-child a{border-right: 0}
+.guide-wrp .tab-subcon{display: none;}
+.guide-wrp .tab-subcon.on{display: block;}
+
+/* 공무원가이드 [시험제도] table 공통 */
+.part-wrp table{line-height: 1.4;text-align: center;  border-collapse: separate; border-spacing: 0;border: 1px solid #ddd; border-width: 1px 0 0 1px}
+.part-wrp table td{color: #777;}
+.part-wrp table th{color: #333;}
+.part-wrp table td,
+.part-wrp table th{position: relative;padding: 14px 10px;font-size: 13px;border: 1px solid #ddd;background:#fff;border-width: 0 1px 1px 0;font-weight: normal;}
+.part-wrp table thead tr th{background: #f5f5f5;font-weight: 600;}
+.part-wrp table tbody tr th{background: #fafafa;font-weight: 600;}
+.part-wrp table tbody tr th.fwn{font-weight: normal;}
+.part-wrp table .bg-gray{background: #e9e9e9;}
+.part-wrp table .bg-ltgray{background: #f5f5f5;}
+
+/* 공무원가이드 [시험제도] 봉급표 & 채용절차 이미지 wrap*/
+.part-wrp .img-wrp{text-align: center;margin: 50px auto 100px;}
+
+/* 공무원가이드 [시험제도] 복리후생제도 */
+.part-wrp .benefit_wrp{text-align: center;flex-wrap: wrap;display: flex;justify-content: center;background:#f5f5f5;padding: 43px 0;width: 1040px;margin: 0 auto;}
+.part-wrp .benefit_wrp li{width: 33.3333%;font-size: 15px;color: #333;line-height: 1.4;}
+.part-wrp .benefit_wrp li:nth-child(-n+3){margin-bottom: 45px;}
+.part-wrp .benefit_wrp li img{margin-bottom: 20px;}
+.part-wrp .benefit_wrp li b,
+.part-wrp .benefit_wrp li span{display: block;}
+
+/* 공무원가이드 [시험제도] 면접시험 */
+.part-wrp .process-wrp > li{position: relative; margin-bottom: 40px; border: 1px solid #777;color: #333;}
+.part-wrp .process-wrp > li:before{content: '';display: block;position: absolute;left: 50%;bottom: -50px;border-top: 20px solid #777;border-bottom: 20px solid transparent;border-right: 20px solid transparent;border-left: 20px solid transparent;transform: translateX(-50%);}
+.part-wrp .process-wrp > li:after{content: '';display: block;position: absolute;left: 50.3%;bottom: -47px;border-top: 20px solid #b6b6b6;border-bottom: 20px solid transparent;border-right: 20px solid transparent;border-left: 20px solid transparent;transform: translateX(-50%);}
+.part-wrp .process-wrp > li:last-child{margin-bottom: 0;}
+.part-wrp .process-wrp > li:last-child::before,
+.part-wrp .process-wrp > li:last-child::after{content: none;}
+.part-wrp .process-wrp > li > ul{display: table;width: 100%;}
+.part-wrp .process-wrp > li > ul > li{padding: 30px 20px;text-align: center;display:table-cell;vertical-align:middle;}
+.part-wrp .process-wrp > li > ul > li:nth-child(1){width: 30%;background: #e9e9e9;}
+.part-wrp .process-wrp > li > ul > li:nth-child(2){width: 50%;}
+.part-wrp .process-wrp > li > ul > li:nth-child(3){width: 20%;border-left: 1px solid #777;}
+
+/* 공무원가이드 [시험제도] 팝업공통 */
+.part-wrp.pop{margin-bottom: 0;background: #fff;padding: 40px 20px;}
+.part-wrp.pop h4{padding-left: 10px;margin-bottom: 18px;color: #000;position: relative;}
+.part-wrp.pop h4::before{content: '';display: block;position: absolute; left: 0; background: #c7c7c7; height: 70%; width: 2px; top: 50%;transform: translateY(-50%);}
+.part-wrp.pop .sub-dash{color: #000;padding-left: 16px;}
+.part-wrp.pop .sub-dash li::before{color: #000;}
+.part-wrp.pop table thead th{background: #ededed;padding: 12px 0;}
+.part-wrp.pop table tbody th{background: #f9f9f9;}
+.part-wrp.pop table td, .part-wrp.pop table th{padding: 11px 8px;}
+/* 소방[모집정보] > 지역별채용검색 비교검색 */
+.part-wrp.pop .lb_choice {position:absolute;top:0;left:0;}
+.part-wrp.pop .lb_graph {position:absolute;bottom:0;right:0;}
+
+/* 소방 공무원가이드 [시험일정] */
+.tbl-wrp.hover-bold tr td:hover,
+.tbl-wrp.hover-bold tr th:hover{cursor: pointer; font-weight: bold;background: #f5f5f5;}
+
+/* 공/군/소가이드 [모집정보] */
+.series_graph{display: flex;justify-content: space-between;margin-top: 30px;}
+span.type1 {position: relative;display: inline-block;border-left: 6px solid transparent;border-right: 6px solid transparent;border-bottom: 10px solid #f5050a;vertical-align: middle;line-height: 1;margin: -1px 3px 0 3px;}
+span.type2 {position: relative;display: inline-block;border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 10px solid #0714f5;vertical-align: middle;line-height: 1;margin: -1px 3px 0 3px;}
+/* 군무원 [모집정보] > 채용기관별비교검색 */
+img.emblem{display: block;margin: 0 auto 10px;}
+/* 메인 및 서브 난공티비 팝업 공통 영역*/
+.ngtv_pop{z-index: 102;position: fixed;}
+.ngtv_pop .contentBox{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 3;width: 1080px;}
+.ngtv_pop .contentBox .vdo_wrap{position: relative;z-index: 1;cursor: pointer;padding-bottom: 56%;background: #222;overflow: hidden;}
+.ngtv_pop .contentBox .vdo_wrap .vdo{width: 100% !important;height: 100% !important;position: absolute;width: 100%;height: 100%;}
+.ngtv_pop .contentBox iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.ngtv_pop .dimBg{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.5;}
+.ngtv_pop .contentBox .btnClose{position:absolute;background: #000;top: -37px;right: 0px;padding: 6px;width: 34px;height: 34px;box-sizing: border-box;}
+.ngtv_pop .contentBox .btnToday{top: -27px;right: 26px;padding:0 15px;height: 24px;line-height: 24px;background: #444;}
+
+/* 합격전략 [난공티비] */
+.nangongtv-wrp .ngtvsub-slider-wrap{position: relative;margin: 0 auto 80px;}
+.nangongtv-wrp .ngtvsub-slider {position: relative;width: 1016px;margin: 0 auto;}
+.nangongtv-wrp .ngtvsub-slider .slick-slide{position: relative;transform: scale(0.74);transition: all 0.3s;margin: 0 -60px;}
+.nangongtv-wrp .ngtvsub-slider .slick-active.slick-current{transform: scale(1);z-index: 1;}
+.nangongtv-wrp .ngtvsub-slider .slick-slide img{display: inline-block;width: 460px;}
+.nangongtv-wrp .ngtvsub-slider .slick-slide a{display: block;position: relative;}
+.nangongtv-wrp .ngtvsub-slider .slick-slide a::before{content: '';display: block;background: url(https://img.megagong.net/lab/common/vd_btn_nangong.png) no-repeat center;width: 78px;height: 78px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.nangongtv-wrp .ngtvsub-slider .slick-arrow {position:absolute;top:50%;width:31px;height:47px;transform: translateY(-50%);z-index:2;font-size:0;}
+.nangongtv-wrp .ngtvsub-slider .slick-prev {left:-95px;background:url(https://img.megagong.net/lab/sub/arr_vdL.png) no-repeat center;}
+.nangongtv-wrp .ngtvsub-slider .slick-next {right:-95px;background:url(https://img.megagong.net/lab/sub/arr_vdR.png) no-repeat center;}
+/* swiper ver */
+/* .nangongtv-wrp .ngtvsub-slider-wrap{position: relative;}
+.nangongtv-wrp .ngtvsub-slider-wrap .ngtvsub-slider-inner{margin: 0 auto 80px;overflow: hidden;height: 275px;width: 958px;} */
+.nangongtv-wrp .ngtvsub-swiper {position: relative;}
+.nangongtv-wrp .ngtvsub-swiper .swiper-slide{position: relative;transition: all 0.3s;width: 340px;margin-top: 36px;}
+.nangongtv-wrp .ngtvsub-swiper .swiper-slide-next{z-index: 1;width: 460px;margin: 0 -90px}
+.nangongtv-wrp .ngtvsub-swiper .swiper-slide a{display: block;position: relative;}
+.nangongtv-wrp .ngtvsub-swiper .swiper-slide a::before{content: '';display: block;background: url(https://img.megagong.net/lab/common/vd_btn_nangong.png) no-repeat center;width: 78px;height: 78px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.nangongtv-wrp .ngtvsub-swiper .swiper-slide a img{width: 100%;}
+.nangongtv-wrp .ngtv-arrow {position:absolute;top: 50%;width:31px;height:47px;z-index:2;font-size:0;transform: translateY(-50%);cursor: pointer;}
+.nangongtv-wrp .prev{left: 30px;background:url(https://img.megagong.net/lab/sub/arr_vdL.png) no-repeat center;}
+.nangongtv-wrp .next{right: 30px;background:url(https://img.megagong.net/lab/sub/arr_vdR.png) no-repeat center;}
+/* 합격전략 [followm] */
+.followm-wrp .video-wrp h4{color: #0c998d;display: flex;justify-content: space-between;margin-bottom: 30px;}
+.followm-wrp.army .video-wrp h4{color: #7a8e53;}
+.followm-wrp.sobang .video-wrp h4{color: #b85353;}
+.followm-wrp .video-wrp h4 b{font-size: 16px;}
+.followm-wrp .video-wrp h4 span{color: #777;font-size: 13px;}
+.followm-wrp .video_box{position: relative;z-index: 1;cursor: pointer;overflow: hidden;margin:0 auto 80px;width: 930px; height: auto; /*height: 555px;*/}
+.followm-wrp .video_box .tvideo{text-align: center;padding-bottom: 56.6%;height: 0;overflow: hidden;background: #191919;}
+.followm-wrp .video_box .tvideo strong{position: absolute; z-index: 5; top: 119px; width: 100%; left: 50%; transform: translateX(-50%); font-weight: bold; font-size: 22px; color: #fff;}
+.followm-wrp .video_box .tvideo .play_area {width: 100%;height: 100% !important;position: absolute;top: 50%;transform: translate(-50%,-50%); left: 50%;}
+.followm-wrp .video_box .tvideo .play_area img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.followm-wrp .video_box .tvideo iframe,
+.followm-wrp .video_box .tvideo object,
+.followm-wrp .video_box .tvideo embed{top: 0;left: 0;width: 100%;height: 100%;position: absolute;}
+
+/* 합격전략 [과목별 학습전략] -> 기존 cast_style.css 변경*/
+.labsub-wrp.cast_view{padding-top: 0;}
+.labsub-wrp.cast_view .title_wrp{margin-bottom:80px}
+.labsub-wrp.cast_view .title_wrp p.tit{border-bottom: 1px solid #333;margin-bottom: 20px;padding-bottom: 20px;}
+.labsub-wrp.cast_view .title_wrp p.tit strong{position: absolute;top: -5px;left: 0;padding: 5px 7px;background-color: #0c998d;color: #fff;font-size: 14px;letter-spacing: -0.07em;font-weight: normal !important;}
+.labsub-wrp.cast_view .title_wrp .date > strong a{background-image: none;padding-right: 0;}
+.labsub-wrp.cast_view .title_wrp .date > strong{color: #0c998d;font-weight: normal;}
+.labsub-wrp.cast_view.sobang .title_wrp .date > strong{color: #b85353}
+.labsub-wrp.cast_view.army .title_wrp .date > strong{color: #7a8e53;}
+.labsub-wrp.cast_view .title_wrp .date .date > strong{font-weight: normal;color: #b1b1b1;}
+.labsub-wrp.cast_view .title_wrp .date > strong i{display: inline-block;margin-left: 10px;vertical-align: text-bottom;}
+.labsub-wrp.cast_view .title_wrp .date .date{float: right;color: #b1b1b1;padding-right: 3px}
+.labsub-wrp.cast_view .txt_wrp{border: 0;margin: 70px 0 140px;padding: 0;}
+.labsub-wrp.cast_view .down_wrp{position: relative;padding: 16px 0 15px 105px;border-top: 1px solid #d0d0d0;border-bottom: 2px solid #d0d0d0;}
+.labsub-wrp.cast_view .cast_view .down_wrp strong{display: block;position: absolute;top: 20px;left: 0;color: #0c998d;border-right: 1px solid #0c998d;padding: 0 10px 2px 0;line-height: 1;}
+.labsub-wrp .paging{text-align: center;}
+/* .labsub-wrp.cast_view .video{width: 930px;margin: 0 auto;} */
+
+/* 합격자통계 [경쟁률&합격선] */
+.labsub-wrp .count-list {overflow:hidden;margin-bottom:70px;display: flex;justify-content: center;}
+.labsub-wrp .count-list li {width: 205px;margin-left: 36px;height: 205px;text-align:center;display:table;border-radius: 50%;background: #0c998d;}
+.labsub-wrp .count-list li:nth-child(2n){background: #23aea2;}
+.labsub-wrp .count-list li:first-child { margin-left:0; }
+.labsub-wrp .count-list li dl { color:#fff; display:table-cell; vertical-align:middle;}
+.labsub-wrp .count-list li dt {font-size: 15px;line-height:120%;}
+.labsub-wrp .count-list li dd {font-weight:700;line-height:120%;margin-top: 14px;font-size: 30px;padding-top: 10px;position: relative;}
+.labsub-wrp .count-list li dd::before{content: '';display: block;position: absolute;top: 0;left: 50%;transform: translateX(-50%);background: #fff;width: 10px;height: 1px;}
+/* 합격자통계 [경쟁률&합격선] > 바로가기 버튼 */
+.part-wrp .tiny-noti .btn-link{display: inline-block; width: 60px; height: 14px; text-indent: 0; line-height: 14px; font-size: 10px; color: #fff; margin-left: 5px; background: #26b7bc; text-align: center;}
+
+
+
+/* [합격전략칼럼], [시험공고], [수험뉴스] 공통 S */
+.labsub-wrp .subj{display: inline-block;font-size: 11px;margin: 0 auto;line-height: 1;padding: 1px;min-width: 50px;text-align: center;border: 1px solid #000;}
+.labsub-wrp .border-mint{border: 1px solid #00d1b6; color: #00d1b6;}
+.labsub-wrp .aL a span{position: relative;}
+.labsub-wrp .aL a:hover span::before{content: '';display: block;position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);width: 100%;height: 1px;background: #000;}
+.labsub-wrp .noticeView .sub_txt{border-left: 0}
+/* 이전글 다음글 */
+.labsub-wrp .post_list{border-top: 1px solid #e6e6e6;margin-top: 30px;}
+.labsub-wrp .post_list div{border-bottom: 1px solid #e6e6e6;box-sizing: border-box;height: 45px;display: flex;}
+.labsub-wrp .post_list div .arr_list {width: 18%;display: inline-block;background: #f8f8f8;height: 100%;text-align: center;padding: 15px 10px;}
+.labsub-wrp .post_list div a{padding: 15px 20px;display: inline-block;width: 82%;height: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.labsub-wrp .post_list div a span.txt{position: relative;}
+.labsub-wrp .post_list div a:hover span.txt::before{content: '';display: block;position: absolute;left: 0;bottom:0;width: 100%;height: 1px;background: #000;}
+/* [합격전략칼럼], [시험공고], [수험뉴스] 공통 E */
+
+
+/* 합격자통계 [합격자분석] */
+
+
+/* 모집정보 */
+
+
+/* 합격수기 */
+.pass_op .top{text-align: center;padding: 83px 0 67px;}
+.pass_op .part-wrp table td, .pass_op .part-wrp table th{font-size: 14px;}
+.pass_op .pass_op_sd_w h3 {padding:14px 0;font-weight:bold;font-size:22px;color:#ffffff;text-align: center;}
+.pass_op .pass_op_sd_w .pass_op_sd .item {padding:20px 20px 30px;border-radius: 20px;box-sizing:border-box;box-shadow: 0 10px 10px rgb(0 0 0 / 16%);border: 1px solid #ddd;background: #fff;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .txt strong {display:block;font-weight:bold;font-size:15px;line-height:1.46;height:45px;overflow:hidden;box-sizing:border-box;text-overflow: ellipsis;white-space: normal; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.pass_op .view_tit strong {position:relative;display: inline-block;vertical-align:top;padding-right:15px;margin-right:10px;}
+.pass_op .view_info h4 {position:relative;padding:10px 20px;font-size:14px;color:#fff;}
+.pass_op .pass_opinon_nav a:before {content:'\2714';position:absolute;top:0;bottom:0;left:0;margin:auto 0;}
+/* gong */
+.pass_op.gong .top{background: url(https://img.megagong.net/lab/pass_opinion/gong/top_bg.jpg) no-repeat center;}
+.pass_op.gong .pass_op_sd_w h3 ,.pass_op.gong .view_info h4 {background: #0a857b;}
+.pass_op.gong .pass_op_sd_w .pass_op_sd .item .txt strong,.pass_op.gong .view_tit strong {color: #0a857b;}
+.pass_op.gong .pass_opinon_nav a.on:before {color: #0a857b;}
+/* sobang */
+.pass_op.sobang .top{background: url(https://img.megagong.net/lab/pass_opinion/sobang/top_bg.jpg) no-repeat center;}
+.pass_op.sobang .pass_op_sd_w h3 ,.pass_op.sobang .view_info h4 {background: #b43b3b;}
+.pass_op.sobang .pass_op_sd_w .pass_op_sd .item .txt strong,.pass_op.sobang .view_tit strong {color: #b43b3b;}
+.pass_op.sobang .pass_opinon_nav a.on:before {color: #b43b3b;}
+.pass_op.sobang .view_info .tbl td.aL a:hover{color:#b43b3b;}
+
+.pass_op .pass_op_sd_w {margin:30px auto 10px;}
+.pass_op .pass_op_sd_w h3 span {position:relative;display:inline-block;padding:0 70px;}
+.pass_op .pass_op_sd_w h3 span:before {content:'';position:absolute;top:0;bottom:0;left:0;margin:auto 0;width:48px;height:18px;background:url(https://img.megagong.net/s/gong/examinfo/pass_op/icon_star.png) no-repeat center left;background-size:100% auto;}
+.pass_op .pass_op_sd_w h3 span:after {content:'';position:absolute;top:0;bottom:0;right:0;margin:auto 0;width:48px;height:18px;background:url(https://img.megagong.net/s/gong/examinfo/pass_op/icon_star.png) no-repeat center right;background-size:100% auto;}
+.pass_op .pass_op_sd_w .pass_op_sd {padding: 40px 30px 0;background: #f5f5f5;}
+.pass_op .pass_op_sd_w .pass_op_sd .slick-slide > div {padding:0 12px 43px 13px;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box {display:table;width: 100%;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_img {display:inline-block;vertical-align: middle;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_t {width: calc(100% - 73px);display:inline-block;vertical-align: middle;padding-left:10px;font-weight:bold;line-height:1.26;font-size:15px;color:#333333;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_t .date {display:block;margin-top:3px;font-size:13px;color:#aaaaaa;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .txt {padding-top:17px;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .txt p {position:relative;word-break: break-all;padding-right:5px;margin-top:5px;font-size:12px;color:#aaaaaa;line-height:1.5;height:35px;overflow:hidden;box-sizing:border-box;text-overflow: ellipsis;white-space: normal; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .txt p span {display:inline-block;}
+.pass_op .pass_op_sd_w .pass_op_sd .item .txt p span:before {content:'...';position:absolute;bottom:0;right:0;}
+.pass_op .pass_op_sd_w .pass_op_sd .slick-arrow {width:31px;height:30px;position:absolute;top:50%;transform: translateY(-100%);font-size:0;}
+.pass_op .pass_op_sd_w .pass_op_sd .slick-prev {left:0;background:url(https://img.megagong.net/s/gong/examinfo/pass_op/pass_op_L.png) no-repeat center;background-size:100% auto;}
+.pass_op .pass_op_sd_w .pass_op_sd .slick-next {right:0;background:url(https://img.megagong.net/s/gong/examinfo/pass_op/pass_op_R.png) no-repeat center;background-size:100% auto;}
+/* .pass_op .pass_op_tbl1 th {font-weight:bold;font-size:14px;line-height:1.4;} */
+.pass_op .pass_op_tbl1 th.vtc_top {vertical-align: top;padding-top: 32px;}
+.pass_op .pass_op_tbl1 th.vtc_top+td {padding-bottom:29px;}
+.pass_op .pass_op_tbl1 td {padding:7px;text-align: left;}
+.pass_op .pass_op_tbl1 th .inp_chk {display:inline-block;margin-top:10px;font-weight:400;font-size:13px;}
+.pass_op .pass_op_tbl1 td.chk_td {padding: 10px 20px;}
+.pass_op .pass_op_tbl1 td .inp_chk {padding:10px 0;width:19%;display:inline-block;font-size:13px;color:#222222;}
+.pass_op .pass_op_search_box .pass_op_tbl1 td .inp_chk2 {padding:10px 15px 10px 0;width:auto; display:inline-block;font-size:13px;color:#222222;}
+.pass_op .pass_op_search_box select {width:100%;height:34px;vertical-align: top;padding-left:10px;border:1px solid #d0d0d0;} 
+.pass_opinon_nav {margin-bottom:10px;text-align: right;font-size:0;}
+.pass_opinon_nav a {position:relative;display:inline-block;padding-left:18px;font-weight:bold;font-size:15px;color:#999;}
+.pass_opinon_nav a+a {margin-left:20px;}
+.pass_opinon_nav a.on {color:#222;}
+.pass_op .tbl_6 td:nth-child(6):hover { font-weight:700;}
+.pass_op .tbl_6 th:nth-child(6) {background:#fafafa;font-weight:300;}
+.pass_op .tbl_6 td .label_best {display:inline-block;vertical-align:middle;margin-right:6px;padding:3px 4px 1px;line-height:1.1;font-size:11px;color:#ff0000;border:1px solid #ff0000;box-sizing:border-box;}
+.pass_op .tbl_6 td:nth-child(6) {/* font-weight:bold; */}
+.pass_op .btns {text-align: right;margin:10px 0 30px;}
+.pass_op .btns a {display:inline-block;width:70px;height:34px;line-height: 34px;text-align: center;font-weight:bold;font-size:15px;color:#ffffff;background:#555555;}
+.pass_op .paging {text-align: center;}
+.pass_op .paging a, 
+.pass_op .paging strong {display:inline-block;}
+.pass_op .mo-view {display:none;}
+.pass_op h3{font-size:22px;font-weight:600;letter-spacing:-0.05em;margin-bottom: 30px;}
+.pass_op .view_tit {font-size:0;padding: 20px;font-size: 15px;line-height:1.3;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fafafa;display: flex;justify-content: start;}
+.pass_op .view_tit strong:before {content:'';position:absolute;top:0;bottom:0;right:0;margin:auto 0;width: 1px;height:12px;background:#ddd;}
+.pass_op .view_tit .txt {position:relative;display:inline-block;vertical-align:top;word-break: keep-all;}
+.pass_op .view_tit .txt .label_best {display:inline-block;vertical-align:middle;margin-right:6px;padding:3px 4px 1px;line-height:1.1;font-size:11px;color:#ff0000;border:1px solid #ff0000;}
+.pass_op .view_tit .inq_num {position:relative;float:right;padding-left:15px;}
+.pass_op .view_tit .inq_num:before {content:'';position:absolute;top:0;bottom:0;left:0;margin:auto 0;width: 1px;height:12px;background:#ddd;}
+.pass_op .view_info {margin-top:30px;}
+.pass_op .view_info .tbl {margin-top:10px;}
+.pass_op .view_info .tbl td {text-align: center;padding:10px;line-height: 1.5;}
+.pass_op .view_info .tbl td.aL {text-align: left;}
+.view_info { position:relative;}
+.view_info .share { text-align:right; margin-bottom:5px; }
+.view_info .share:after { clear:both; display:block; }
+.sharePop { display:none; position:absolute; top:40px; right:0; background:#fff; border:1px solid #d1d1d1; width:135px; height:95px; box-sizing:border-box; padding:10px; z-index:5; }
+.sharePop .txt { color:#000; font-size:15px; line-height:120%; font-weight:400; float:left; }
+.sharePop .btn { float:right; width:13px; }
+.sharePop .btn a { margin:0 !important; }
+.sharePop ul { clear:both; padding-top:10px; overflow:hidden; text-align:center; }
+.sharePop li { display:inline-block; vertical-align:top; margin:0 6px; }
+.bottomBn { margin-top:25px; text-align:center; }
+.bottomBn li { display:inline-block; vertical-align:top; margin:0 1%; max-width:381px; width:47%; }
+.bottomBn li img { width:100%; }
+
+
+
+@media screen and (max-width: 1200px){
+    #headertop {border-bottom: none !important;}
+    #headertop .hd-top .inner{width: 100%;padding:0 20px;}
+    #headertop .hd-logo{width: 100%;padding: 20px;}
+
+    #headertop .depth1-wrp{width: 100%;}
+    #headertop .depth2-wrp .inner{padding: 0 20px;}
+    #headertop .depth2-swiper.swiper-container .swiper-slide:first-of-type a{padding-left: 0;}
+
+    #headertop .depth3-wrp{width: 100%;padding: 0 20px;}
+    
+    #headertop .fulldown-wrp{padding: 40px 20px 50px}
+    #headertop .fulldown-wrp .inner{width: 100%}
+
+	/* 서브페이지 영역 */
+	#mContainer .contents-wrp{width: 100%;padding: 0 20px;}
+	
+	/* 공통 메인 및 서브 난공티비 팝업 */
+	.ngtv_pop .contentBox{width: 70%;}
+    .ngtv_pop .contentBox iframe{width: 100% !important;}
+
+	/* 서브페이지 리스트 공통 */
+	.sublist-wrp .list > li{width: 23.5%; margin:0 2% 5% 0}
+	.sublist-wrp .list .video-info{padding:3% 0;}	
+	.sublist-wrp .list .video-info .tit{width: 23vw;}
+
+	/* 합격전략 [난공티비] */
+	.nangongtv-wrp .ngtvsub-slider {width: 90%;}
+	.nangongtv-wrp .ngtvsub-slider .slick-track{height: 23vw;overflow: hidden;}
+	.nangongtv-wrp .ngtvsub-slider .slick-prev{left: -7%;}
+	.nangongtv-wrp .ngtvsub-slider .slick-next{right: -7%;}
+	.nangongtv-wrp .ngtvsub-slider .slick-slide{margin: 0 -5vw;}
+	.nangongtv-wrp .ngtvsub-slider .slick-slide img{width: 39vw;}
+	/* swiper ver */
+	.nangongtv-wrp .ngtvsub-slider-wrap{margin: 0 auto 50px;}
+	.nangongtv-wrp .ngtvsub-swiper {width: 90%;}
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide{width: 28.7vw;height: auto;margin-top: 3vw;}
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide-prev{margin-left: 0;}
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide-next{width: 38.3vw;height: auto;margin: 0 -4vw;}
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide img{width: 100%;}
+	.nangongtv-wrp .ngtv-arrow {position:absolute;top: 50%;width:31px;height:47px;z-index:2;font-size:0;transform: translateY(-50%);}
+	.nangongtv-wrp .prev{left: 0}
+	.nangongtv-wrp .next{right: 0}
+
+	/* 공무원가이드 [모집정보] */
+	.series_graph{overflow-x: scroll;overflow-y: hidden;}
+	.series_graph > div{height: 100% !important;}
+
+	/* 서브페이지 비디오 리스트 공통 [난공TV],[FollowM],[과목별학습전략] */
+	.sublist-wrp .list > li .video,
+	.sublist-wrp .list.show-btn .video{height: 13.45vw;}
+
+	/* 합격수기 */
+	.pass_op .top{padding: 10% 2% 8%;}
+	.pass_op .view_info {margin-top:4vw;}
+	
+
+}
+@media screen and (max-width: 1024px){
+    #headertop .depth2-swiper.swiper-container .swiper-wrapper{justify-content:flex-start;}
+    #headertop .fulldown-wrp,#headertop .fulldown-wrp.on{display: none !important;}
+
+	/* 공무원 가이드 [시험제도]  */
+	.part-wrp .sub-dash.half li{width: 100%;}
+	.guide-wrp .tab-con .tab-subwrp{margin-bottom: 100px;}
+	.part-wrp .benefit_wrp{width: 100%;padding: 30px 15px;}
+	.part-wrp .benefit_wrp li{font-size: 13px;}
+	.part-wrp .benefit_wrp li:nth-child(-n+3){margin-bottom: 25px;}
+	.part-wrp .benefit_wrp li img{margin-bottom: 10px;}
+	
+	/* 서브페이지 공통  */
+	.column-wrp h3::before,.strategy-wrp h3::before,
+	.nangongtv-wrp h3::before,.followm-wrp h3::before,
+	.statistic-wrp h3::before,.examinfo-wrp h3::before,
+	.newsinfo-wrp h3::before,.library-wrp h3::before,
+	.sobang.column-wrp h3::before,.sobang.strategy-wrp h3::before,.sobang.nangongtv-wrp h3::before,
+	.sobang.followm-wrp h3::before,.sobang.examinfo-wrp h3::before,.sobang.newsinfo-wrp h3::before,.sobang.library-wrp h3::before,
+	.army.column-wrp h3::before,.army.strategy-wrp h3::before,.army.nangongtv-wrp h3::before,.army.followm-wrp h3::before,
+	.army.examinfo-wrp h3::before,.army.newsinfo-wrp h3::before,.army.library-wrp h3::before{background-position: 150% 25%;background-size: cover;height: 100%;max-width: 32%;/* background-color: #ff00004d; */}
+	
+	/* 합격전략 [난공티비] */
+	.labsub-wrp h3{height: auto;padding:40px;}
+	.labsub-wrp h3.labsub-tit{padding: 30px 40px;}
+	
+	/* 합격전략 [followm] */
+	.followm-wrp .video_box{width: 100%;}
+
+	/* 합격자통계 [경쟁률&합격선] */
+	.labsub-wrp .count-list li {width: 24.25%;height: auto;padding: 8% 0;text-align:center;margin-left: 1%;}
+}
+@media (max-width:992px){
+	
+	.pass_op .pass_op_sd_w .pass_op_sd .slick-slide > div {padding:0 15px 43px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item {padding:15px 15px 35px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_img {width: 45px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_t {font-size:14px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .txt {padding-top:20px;height:80px;}
+
+}
+
+@media screen and (max-width: 768px){
+    .pc-view{display:none;}
+    .mo-view{display:block;}
+
+    #headertop .hd-top {padding-top: 0;}
+    #headertop .hd-top .inner{padding:0;}
+
+
+    #headertop .hdtop-wrap{float: none;padding: 16px 10px 0;}
+    #headertop .hdtop-wrap > li{float: right;}
+    #headertop .hdtop-wrap > li a{padding: 0;}
+    #headertop .hdtop-wrap .link-wrap{float: left;margin: 0;padding: 0;}
+    #headertop .hd-logo{padding: 25px 0;height: auto;}
+    
+    #headertop .depth1-wrp{margin: 0 auto 20px;justify-content: center;} 
+    #headertop .depth1-wrp > li {margin: 0 5px;} 
+    #headertop .depth1-wrp li a{padding: 6px 0;font-size: 16px;color: #b1b1b1;background: #f5f5f5;width: 63px;display: inline-block;border-radius: 30px;}
+    #headertop .depth1-wrp > li:first-child> .menu{padding-left: 0;}
+    #headertop .depth1-wrp li a.on{color: #fff;background: #0c998d;padding: 6px 0;} 
+    #headertop .depth1-wrp li a:hover{color: #fff;background: #0c998d;} 
+    
+    #headertop .depth1-wrp.sobang li a.on{color: #fff;background: #b85353;padding: 6px 0;} 
+    #headertop .depth1-wrp.sobang li a:hover{color: #fff;background: #b85353;} 
+    #headertop .depth1-wrp.army li a.on{color: #fff;background: #7a8e53;padding: 6px 0;} 
+    #headertop .depth1-wrp.army li a:hover{color: #fff;background: #7a8e53;} 
+
+    #headertop .depth1-wrp li a.on:before,#headertop .depth1-wrp li a.on:after,
+    #headertop .depth1-wrp.sobang li a.on:before,#headertop .depth1-wrp.sobang li a.on:after,
+    #headertop .depth1-wrp.army li a.on:before,#headertop .depth1-wrp.army li a.on:after{content: none;}
+    
+    #headertop .depth2-wrp > div.fixed{position: fixed;top: 0;left: 0;z-index: 3;right: 0;}
+    #headertop .depth2-wrp > div.fixed + .depth3-wrp{margin-top:103px;}
+    #headertop .depth2-wrp .inner{padding: 0 10px;}
+    #headertop .depth2-swiper.swiper-container .swiper-slide a{padding: 14px 0;}
+    
+    #headertop .depth3-wrp{padding: 0 10px;margin-top: 40px;}
+	/* 서브페이지 영역 */
+	#mContainer .contents-wrp{padding: 0 10px;}
+	/* 공통 메인 및 서브 난공티비 팝업 */
+	.ngtv_pop{z-index: 100;}
+    .ngtv_pop .contentBox{width: 90%;}
+	
+	/* 공무원 가이드 [시험제도]  */
+    .tab-upper,.guide-wrp.sobang .tab-upper,.guide-wrp.army .tab-upper{border-bottom: 0;height: auto;overflow: hidden;}
+	.tab-upper .inner{background: #f8fafa;padding: 17px 35px;}
+	.tab-upper .inner .swiper-container{overflow: inherit;}
+	.tab-upper .swiper-slide{margin-right: 35px;}
+	.tab-upper .swiper-slide a{border: 0; padding: 0;height:auto;font-size: 13px;}
+	.tab-upper .swiper-slide:first-of-type a{border: 0;height: auto;}
+	.tab-upper .swiper-slide a:hover,
+	.tab-upper .swiper-slide.on a{font-weight: bold;color: #0c998d;}
+	.tab-upper .swiper-slide a:hover::before,
+	.tab-upper .swiper-slide.on a::before{bottom: -3px;top: auto;left: 50%;transform: translateX(-50%);height: 1px;width: 30%;}
+	.tab-upper .swiper-slide a:hover::after,
+	.tab-upper .swiper-slide.on a::after{content: none;}
+	.tab-upper .swiper-scrollbar{bottom:-15px;opacity:0.8;width:calc(100% + 40px);left:-20px;height:3px;}
+	.tab-upper .swiper-scrollbar-drag{background-color:#0c998d;}
+	.guide-wrp.sobang .tab-upper .swiper-scrollbar-drag{background-color:#b85353;}
+	.guide-wrp.sobang .tab-upper .swiper-slide a:hover::before,
+	.guide-wrp.sobang .tab-upper .swiper-slide.on a::before,
+	.guide-wrp.army .tab-upper .swiper-slide a:hover::before,
+	.guide-wrp.army .tab-upper .swiper-slide.on a::before{content: none;}
+	.guide-wrp.army .tab-upper .swiper-scrollbar-drag{background-color:#7a8e53;}
+	
+	.guide-wrp .tab-sub li a{font-size: 13px;}
+	.guide-wrp .tab-con .tab-subwrp{margin-bottom: 80px;}
+	/* 서브페이지 [모집정보] 테이블 간격축소 요청*/
+	.recruit-wrp .part-wrp.mb25{margin-bottom: 25px}	
+	.part-wrp .tiny-noti{font-size: 11px;}
+	/* [소방가이드 > 봉급표 팝내부 폰트 크기] */
+	.part-wrp .sub-pop{font-size: 11px;}
+	.part-wrp.pop{padding: 30px 15px;}
+	.part-wrp.pop table thead th{padding: 8px 0;}
+	.part-wrp.pop table td, .part-wrp.pop table th{padding: 5px 0;font-size: 10px;}
+	.guide-wrp .tab-sub{margin: 0 0 50px 10px;}
+	.part-wrp h4,.part-wrp.pop h4{font-size: 14px;margin-bottom: 15px;}
+	.part-wrp h5{margin-bottom: 10px;font-size: 12px;}
+	.part-wrp .btn{font-size: 10px;}
+	.part-wrp.pop .sub-dash{padding-left: 0;}
+	.part-wrp .sub-dash li{margin-bottom: 5px;}
+	.part-wrp .sub-num,.part-wrp .sub-txt{font-size: 12px;line-height: 1.6;}
+	.part-wrp .sub-dash,.part-wrp .sub-dot{font-size: 11px;}
+	.part-wrp table td, .part-wrp table th{padding: 10px 5px;font-size: 11px;}
+	.part-wrp .process-wrp > li > ul > li{padding: 20px 10px;}
+	.part-wrp .process-wrp > li{font-size: 11px;}
+	.part-wrp .process-wrp > li:before{bottom: -45px;border-top: 15px solid #777;border-bottom: 15px solid transparent;border-right: 15px solid transparent;border-left: 15px solid transparent;transform: translateX(-50%);}
+	.part-wrp .process-wrp > li:after{left: 50.5%;bottom: -44px;border-top: 15px solid #b6b6b6;border-bottom: 15px solid transparent;border-right: 15px solid transparent;border-left: 15px solid transparent;transform: translateX(-50%);}
+	.part-wrp .img-wrp{margin: 30px 20px 50px;}
+	.part-wrp .benefit_wrp li{font-size: 11px;width: 31.5%;}
+	.part-wrp .benefit_wrp li:nth-child(2),.part-wrp .benefit_wrp li:nth-child(4){margin: 0 2.5%;}
+	.part-wrp .benefit_wrp li span{font-size: 10px;}
+	.part-wrp .btns li{margin: 5px 5px 0 0;}
+	.part-wrp .btns li a{font-size: 11px;padding: 8px 10px;}
+	/* 공무원가이드 [모집정보] */
+	.series_graph{}
+	.series_graph > div{}
+	/* 소방[모집정보] > 지역별채용검색 비교검색 */
+	.part-wrp.pop .lb_choice {width: 45px;}
+	.part-wrp.pop  .lb_graph {width:180px;}
+
+	/* 서브페이지 공통  */
+	.labsub-wrp h3{padding: 30px 20px;margin-bottom: 50px;}
+	.labsub-wrp h3.labsub-tit{padding: 20px;margin-bottom: 30px;}
+	.labsub-wrp h3 > span{font-size: 13px;margin-bottom: 5px;}
+	.labsub-wrp h3 b{font-size: 18px;}
+	.labsub-wrp h3 b i{display: block;margin: 8px 0 0;width: 115px;}
+	.labsub-wrp h3 b i a{font-size: 10px;border-radius: 5px;padding: 3px 0;text-align: center;}	
+	.column-wrp h3::before,.strategy-wrp h3::before,
+	.nangongtv-wrp h3::before,.followm-wrp h3::before,
+	.statistic-wrp h3::before,.examinfo-wrp h3::before,
+	.newsinfo-wrp h3::before,.library-wrp h3::before,
+	.sobang.column-wrp h3::before,.sobang.strategy-wrp h3::before,.sobang.nangongtv-wrp h3::before,
+	.sobang.followm-wrp h3::before,.sobang.examinfo-wrp h3::before,.sobang.newsinfo-wrp h3::before,.sobang.library-wrp h3::before,
+	.army.column-wrp h3::before,.army.strategy-wrp h3::before,.army.nangongtv-wrp h3::before,.army.followm-wrp h3::before,
+	.army.examinfo-wrp h3::before,.army.newsinfo-wrp h3::before,.army.library-wrp h3::before{background-position: 40% 45%;}
+
+	/* 서브페이지 직렬 탭 공통 [모집정보] [합격자 분석] */
+	.labsub-wrp .tab-series{}
+	.labsub-wrp .tab-series li a{font-size: 15px;padding: 10px 0;}
+	.labsub-wrp .tab-sub-series{margin-bottom: 30px;}
+	.labsub-wrp .tab-sub-series li a{padding: 0 10px;font-size: 13px;}
+	.labsub-wrp .tab-sub-series li a:before{}
+	.labsub-wrp .tab-sub-series li:last-child a:before{content:none}
+	
+	/* 서브페이지 셀렉트 박스 공통 */
+	.select-wrp{padding: 20px 15px;}
+	.select-wrp ul li{height: auto;font-size: 12px;padding: 5px 10px;}
+	.select-wrp ul li:last-child{margin-right: 0;}
+	.select-wrp ul li.choice-box{width: 25%;}
+	.select-wrp ul li.choice-box:before{right: 10px;}
+	.select-wrp ul li.text-box{width: 70.6766%;}
+	.select-wrp ul li.text-box input[type=text]{padding: 0 10px;}
+	.select-wrp ul li.search-box{width: 18.7969%;}
+	.select-wrp ul li.choice-box .value{max-width: 90%}
+	/* 서브페이지 셀렉트 박스 과목명 길 경우 */
+	.strategy-wrp .select-wrp ul{flex-wrap: wrap;}
+	.strategy-wrp .select-wrp ul li.choice-box{width: calc(50% - 4px);margin-bottom: 10px;}
+	.strategy-wrp .select-wrp ul li.text-box{width: 79%}
+	/* 셀렉트박스 [모집정보] */
+	.recruit-wrp .select-wrp ul {flex-wrap: wrap;justify-content: center;}
+	.recruit-wrp .select-wrp ul li.choice-box{width: calc(33.3333% - 4px);}
+	.recruit-wrp .select-wrp ul li.choice-box:nth-child(3){margin-right: 0;}
+	.recruit-wrp .select-wrp ul li.choice-box:nth-child(n+4):nth-child(-n+6){margin-top: 5px;}
+	/* .recruit-wrp .select-wrp ul li.choice-box:nth-child(n+4):nth-child(-n+5){width: calc(50% - 4px);margin-top: 5px;}
+	.recruit-wrp .select-wrp ul li.choice-box:nth-child(6){width: 100%;margin-top: 5px;} */
+
+
+	/* 셀렉트박스 [소방 > 모집정보] [군무원 > 모집정보] */
+	.select-wrp.tbl-wrp{margin-bottom: 30px;}
+	.select-wrp.tbl-wrp #area_list .inp_chk{width: 50%;}
+	.part-wrp .cps_wrap .cps_box{font-size: 13px;}
+	.part-wrp .cps_wrap .cps_box span .remove_btn{font-size: 11px;}
+	.select-wrp.tbl-wrp .choice-box{height: auto;padding: 5px 10px;}
+	.select-wrp.tbl-wrp .choice-box .value{max-width: 90%;}
+	.select-wrp.tbl-wrp .choice-box.half{width: 100%;display: block;margin-bottom: 5px;}
+	.select-wrp.tbl-wrp .choice-box.half:last-of-type{margin-bottom: 0;}
+	
+	/* 기출문제 셀렉트박스 */
+	.library-wrp .select-wrp ul{flex-wrap: wrap;justify-content: space-between;}
+	.library-wrp .select-wrp ul li.choice-box{width: calc(50% - 2px);margin-bottom: 5px;}
+	.library-wrp .select-wrp ul li.choice-box:nth-child(2),
+	.library-wrp .select-wrp ul li.choice-box:nth-child(4),
+	.library-wrp .select-wrp ul li.choice-box:nth-child(5){margin-right: 0;}
+	.library-wrp .select-wrp ul li.choice-box:nth-child(n+3):nth-child(-n+4){width: calc(50% - 2px);}
+	.library-wrp .select-wrp ul li.text-box{width: calc(87% - 2px);height: 22px;margin-right: 2px;padding: 5px;}
+	.library-wrp .select-wrp ul li.search-box{width: 12%;height: 22px;padding: 4px 0;}
+	/* 소방, 군무원 기출문제 셀렉트박스 */
+	.library-wrp.gong .select-wrp ul li.choice-box:nth-child(5){width: 100%;}
+	.library-wrp.sobang .select-wrp ul li.choice-box:nth-child(n+3):nth-child(-n+4),
+	.library-wrp.army .select-wrp ul li.choice-box:nth-child(n+3):nth-child(-n+4){width: calc(50% - 2px)}
+	.library-wrp.sobang .select-wrp ul li.choice-box:nth-child(4),
+	.library-wrp.army .select-wrp ul li.choice-box:nth-child(4){margin-right: 0;}
+	
+
+	/* 서브페이지 리스트 공통 */
+	.sublist-wrp.no span{font-size: 13px;}
+	.sublist-wrp .list > li{width: 49%;}
+	.sublist-wrp .list > li:nth-child(2n){margin-right: 0;}
+	.sublist-wrp .list .video-info{font-size: 12px;}
+	.sublist-wrp .list .video-info .tit{white-space: normal;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;width: 46vw;}
+	/* .sublist-wrp .list > li:nth-child(4n){margin-right: 2%;}
+	.sublist-wrp .list > li:last-child,
+	.sublist-wrp .list > li:nth-child(3n){margin-right: 0;} */
+	.sublist-wrp .list .video-info .dview span {font-size: 10px;}
+	.sublist-wrp .list .video-info .dview span + span{padding-left: 3px;margin-left: 3px;}
+	.sublist-wrp .list .video-info .dview span + span::before{width: 1px;height: 40%;}
+	.sublist-wrp .list.show-btn a:hover .video::before{background-size: contain;width: 35%;height: 35%;}
+
+
+	/* [합격자 분석] 공통*/
+	.part-wrp .graph-wrp img{width: 75%;}
+	.part-wrp .graph-wrp .wide{width: 100%;}
+	.part-wrp .border-wrp{margin: 20px auto 0;padding: 25px 20px;}
+	.part-wrp .border-wrp h5{margin-bottom: 10px;font-size: 12px;}
+	.part-wrp .border-wrp .half{display: block;justify-content: normal;}
+	.part-wrp .border-wrp .half > li{width: 100%;}
+	.part-wrp .border-wrp .half > li:last-child{margin-top:20px}
+	.part-wrp .graph-wrp{max-width: none;text-align: center;}
+
+	.part-wrp .graph-wrp ul{display: block;justify-content: normal;align-items: center;}
+	.part-wrp .graph-wrp ul > li{width: 100%;}
+	.part-wrp .graph-wrp ul > li:last-child{margin-top:20px}
+	
+	/* .part-wrp .button-wrp{width: 41%;background-color: #f68819;background-image: none;border-radius: 15px;min-width: 240px;}
+	.part-wrp .button-wrp a{padding: 5% 0;}
+	.part-wrp .button-wrp a b{padding-right: 15px;font-size: 13px;}
+	.part-wrp .button-wrp a b::before{background-size: contain;max-width: 5%;}
+
+	.part-wrp .buttons-wrp a{padding: 10px 5px;font-size: 13px;width: 49%;}
+	.part-wrp .buttons-wrp a + a{margin-left: 1%;}
+	.part-wrp .buttons-wrp a span{font-size: 11px;margin: 3px 0 0;} */
+	.part-wrp .sub-square li{font-size: 12px;}
+	
+	/* 합격전략 [난공티비] */
+	.nangongtv-wrp .ngtvsub-slider{width: 100%;margin-bottom: 50px;}
+	.nangongtv-wrp .ngtvsub-slider .slick-arrow{display:none !important}
+	.nangongtv-wrp .ngtvsub-slider .slick-slide{margin: 0 1vw;width: 38vw !important;transform: scale(1);}
+	.nangongtv-wrp .ngtvsub-slider .slick-active.slick-current{width: 38vw;}
+    .nangongtv-wrp .ngtvsub-slider .slick-slide a::before{background-size: contain;width: 35%;height: 35%;}
+	.nangongtv-wrp .ngtvsub-slider .slick-slide img{}
+	/* swiper ver */
+	.nangongtv-wrp .ngtvsub-swiper{width:100%}
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide a::before{background-size: contain;width: 35%;height: 35%;}
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide,
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide-next{width: 38.13vw;margin: 0 1vw 0 0;}
+	.nangongtv-wrp .ngtvsub-swiper .swiper-slide-prev{margin:0 1vw 0 -30vw;}
+	.nangongtv-wrp .ngtv-arrow {display: none;}
+	/* 합격전략 [followm] */
+	.followm-wrp .video-wrp h4{display: block;margin-bottom: 20px;}
+	.followm-wrp .video-wrp h4 b{display: block;font-size: 13px;}
+	.followm-wrp .video-wrp h4 span{font-size: 12px;margin-top: 7px;display: block;}
+	.followm-wrp .video_box{margin-bottom: 50px;}
+	.followm-wrp .video_box .tvideo strong{font-size: 18px;top: 25%;}
+	.followm-wrp .video_box .tvideo .play_area img{width: 15%;}
+	
+	/* 합격자통계 [경쟁률&합격선] */
+	.labsub-wrp .count-list{flex-wrap: wrap;margin-bottom: 30px;}
+	.labsub-wrp .count-list li {height:75px;border-radius:10px;width: 48%;margin-bottom: 2%;padding: 0;margin-left: 0;}
+	.labsub-wrp .count-list li:nth-child(2n){margin-left: 1%;}
+	.labsub-wrp .count-list li:nth-child(3){background: #23aea2;}
+	.labsub-wrp .count-list li:nth-child(4){background: #0c998d;}
+	.labsub-wrp .count-list li dt {font-size:10px; }
+	.labsub-wrp .count-list li dd {font-size:13px;margin-top: 8px;padding-top: 5px;}
+	.labsub-wrp .count-list li dd span {font-size:18px; }
+
+	/* 합격전략 [과목별 학습전략] -> 기존 examinfo_style.css 변경*/
+	.labsub-wrp.cast_view .title_wrp{margin-bottom:40px}
+	.labsub-wrp.cast_view .title_wrp p.tit{margin-bottom: 15px;padding:0 0 15px}
+	.labsub-wrp.cast_view .title_wrp .date .date{float: none;display: block;}
+	.labsub-wrp.cast_view .title_wrp .date > strong i{margin-left: 5px;}
+	.labsub-wrp.cast_view .txt_wrp{margin: 50px 0;}
+
+	/* 합격전략칼럼 / 시험공고 / 수험뉴스 공통 S */
+	.labsub-wrp .subj{font-size: 10px;min-width: 32px;}	
+	.labsub-wrp .post_list div{height: 40px;font-size: 12px;}
+	.labsub-wrp .post_list div .arr_list {padding: 13px 10px;}
+	.labsub-wrp .post_list div a{padding: 13px 10px;}
+	.sublist-wrp .list > li .icn-subj{font-size: 10px;padding: 2px 3px;}
+	/* 합격전략칼럼 / 시험공고 / 수험뉴스 공통 E */
+
+	/* 서브페이지 비디오 리스트 공통 [난공TV],[FollowM],[과목별학습전략] */
+	.sublist-wrp .list > li .video,
+	.sublist-wrp .list.show-btn .video{height: 28vw;}
+	
+	/* [소방 > 시험제도] 테이블 내 버튼 */
+	.part-wrp .tbl-wrp a.btn{display: block;}
+
+
+	.pass_op .pass_op_sd_w h3{font-size: 20px;}
+	.pass_op h3{font-size: 20px;}
+	.pass_op .pass_op_sd_w h3 span {padding:0 45px;}
+	.pass_op .pass_op_sd_w h3 span:before {width:35px;}
+	.pass_op .pass_op_sd_w h3 span:after {width:35px;}
+
+	.pass_op .pass_op_sd_w .pass_op_sd {padding: 20px 25px 0;}
+	.pass_op .pass_op_sd_w .pass_op_sd .slick-list {padding-right:20%;}
+	.pass_op .pass_op_sd_w .pass_op_sd .slick-slide > div {padding:0 5px 25px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item {padding:10px 10px 20px;box-shadow: 0 0 6px rgba(0, 0, 0, .2);}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_img {width: 40px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_t {font-size:12px;width: calc(100% - 60px);}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .pf_box .pf_t .date {font-size:11px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .txt {padding-top:12px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .txt strong {font-size:13px;height:40px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .txt p {margin-top:0;font-size:11px;height:34px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .item .txt p span:before {bottom:2px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .slick-arrow {width:25px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .slick-prev {left:-5px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .slick-next {right:-5px;}
+
+	.pass_opinon_nav a {padding-left:15px;font-size:13px;color:#999;}
+	.pass_opinon_nav a:before {width:12px;}
+	.pass_op .pass_op_search_box .pass_op_tbl1 colgroup col:nth-child(1),
+	.pass_op .pass_op_search_box .pass_op_tbl1 colgroup col:nth-child(3) {width: 75px;}
+	.pass_op .pass_op_search_box .pass_op_tbl1 th .inp_chk {font-size:11px;}
+	.pass_op .pass_op_search_box .pass_op_tbl1 td .inp_chk {padding:5px 0;font-size:12px;width: 24%;}	
+	.pass_op .pass_op_search_box .pass_op_tbl1 td .inp_chk2 {padding:5px 0;font-size:12px;width: 32%;}
+	.pass_op .pass_op_search_box select {font-size:12px;}
+
+	.pass_op .btns {margin:10px 0 20px;}
+	.pass_op .btns a {width:60px;height:30px;line-height: 30px;font-size:13px;}
+	
+	.pass_op .view_tit {padding:15px;font-size:13px;}
+	.pass_op .view_tit strong {padding-right:10px;}
+	.pass_op .view_tit .inq_num {padding-left:10px;}
+	.pass_op .view_tit .inq_num.mo_none {display:none;}
+	.pass_op .view_info h4 {font-size:13px;padding:10px 15px;}
+	.pass_op .view_info .tbl colgroup col:nth-child(1) {width: 20%;}
+	.pass_op .view_info .tbl colgroup col:nth-child(3) {width: 20%;}
+	.pass_op .tbl_6 col:last-child, 
+	.pass_op .tbl_6 td:last-child,
+	.pass_op .tbl_6 th:last-child {display: table-cell;}
+	.pass_op .view_info .pass_op_tbl1 th br {display: none;}
+	.pass_op .mo-view {display:table-row;}	
+}
+@media screen and (max-width: 576px){
+	/* 텍스트 두줄일때 bottom기준으로 위치조정 */
+	.followm-wrp .video_box .tvideo strong{font-size: 13px;width: 80%;line-height: 1.4;top: auto;bottom: 65%;}
+
+	.pass_op .pass_op_sd_w h3{font-size: 18px;}
+	.pass_op h3{font-size: 18px;}
+	.pass_op .pass_op_sd_w .pass_op_sd .slick-slide > div {padding:0 10px 25px;}
+	.pass_op .tbl_6 colgroup col:nth-child(1) {width: 40px;}
+	.pass_op .tbl_6 colgroup col:nth-child(2) {width: 45px;}
+	.pass_op .tbl_6 colgroup col:nth-child(5) {width: 56px;}
+	.pass_op .pass_op_search_box .pass_op_tbl1 td .inp_chk {width: 32%;}
+	.pass_op .pass_op_search_box .pass_op_tbl1 td .inp_chk2 {width: 45%;}
+}
+@media all and (max-width:460px){
+
+    .pass_op .pass_op_search_box .pass_op_tbl1 td .inp_chk {width: 49%;margin-right: 0;}
+
+}
+
+@media all and (max-width:375px){
+	
+	.pass_op .pass_op_search_box .pass_op_tbl1 td .inp_chk2 { width: 100%;margin-right: 0; }
+
+}

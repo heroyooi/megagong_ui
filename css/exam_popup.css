@@ -1,0 +1,65 @@
+/* ÆË¾÷ */
+.black_bg{background-color:#000;opacity:0.8;position:fixed;left:0;top:0;width:100%;height:100%;text-indent:-9999em;z-index:92}
+.certifi_pop{position:fixed;top:0;left:0;bottom:0;right:0;z-index:93;text-align: center;}
+.certifi_pop:after {display: inline-block;vertical-align: middle; width: 0;height: 100%; content: ''; }
+.certifi_pop .popinner{ width: 976px; display: inline-block; vertical-align: middle;padding: 0;position:relative;top:0;right:0;left:0;bottom:0;margin:auto;text-align: center;background:transparent}
+.certifi_pop .popinner img{ max-width: 100%; width: 100%; }
+.certifi_pop .popinner .btn_popclo{position:absolute;top: -37px; right:0; display:block;font-size:0;line-height:0;padding:10px; z-index:2;}
+.certifi_pop .popinner .btn_popclo img {width:17px;}
+
+.certifi_pop .bg { position:fixed; top:0; left:0; z-index:-1; background:transparent; width: 100%; height:100%; }
+
+.interest_pop {padding:43px 54px;background:#fff;}
+.interest_pop .bb_tit {margin-bottom:15px;display:block;font-weight:bold;font-size:18px;color:#222222;text-align:left;}
+.interest_pop .gray_area_box {border:1px solid #c0cfdb;background:#ebf1f5;padding:12px 20px;}
+.interest_pop .gray_area_box ul {text-align:left;}
+.interest_pop .gray_area_box ul li {position:relative;font-weight:100;font-size:13px;color:#5f7d96;line-height:1.5;padding-left:12px;}
+.interest_pop .gray_area_box ul li:before {content:'';position:absolute;top:7px;left:0;width:6px;height:6px;border-radius:50px;background:#b7c3ce;}
+.interest_pop .bg_b_tit {margin-top:20px;margin-bottom:28px;display:block;font-weight:bold;font-size:18px;color:#fff;line-height:40px;background:#5f7d96;text-align:center;}
+.interest_pop .itrt_area {overflow:hidden;padding:0 11px;font-size:0;}
+.interest_pop .itrt_area .itrt_box {display:inline-block;padding:0 35px;width:50%;box-sizing:border-box;}
+.interest_pop .itrt_area .itrt_box .itrt_tit {display:block;margin-bottom:10px;padding-left:10px;font-weight:bold;font-size:16px;color:#000000;text-align:left;}
+.interest_pop .itrt_area .itrt_box .itrt_tit .fw400 {font-weight:400;}
+.interest_pop .itrt_area .itrt_box .table_itrt {border:none;border-bottom:1px solid #9c9c9c;margin-bottom:0;}
+.interest_pop .itrt_area .itrt_box .table_itrt th {border:none;border-top:1px solid #9c9c9c;font-weight:bold;font-size:15px;color:#000000;}
+.interest_pop .itrt_area .itrt_box .table_itrt td {padding:10px 42px;border:none;border-top:1px solid #9c9c9c;border-left:1px solid #9c9c9c;font-weight:300;font-size:15px;line-height:2;color:#000000;}
+.interest_pop .itrt_area .itrt_box .table_itrt td .select_box {display:block;}
+.interest_pop .itrt_area .itrt_box .table_itrt td .select_box select {width:100%;padding:0 8px;height:30px;border:1px solid #d2d2d2;font-size:13px;color:#666666;}
+
+.interest_pop .itrt_area .itrt_box1 .table_itrt th {background:#e8f2f6;}
+.interest_pop .itrt_area .itrt_box2 .table_itrt th {background:#fbeeee;}
+
+.interest_pop .btn {margin-top:40px;display:inline-block;font-weight:bold;font-size:18px;color:#ffffff;line-height:50px;width:290px;border-radius:10px;background:#2c2c2c;}
+
+.interest_pop_2 .itrt_area .itrt_box .table_itrt td {padding:9px 0;}
+.interest_pop_2 .itrt_area {padding:0 18px;}
+.interest_pop_2 .itrt_area .itrt_box1 {padding-left:0;padding-right:31px;}
+.interest_pop_2 .itrt_area .itrt_box2 {padding-left:32px;padding-right:0;}
+@media (max-width: 992px) {
+    .certifi_pop .popinner {width: 90%;}
+    .interest_pop {padding:20px;}
+    .interest_pop .itrt_area {padding:0 2%;}
+    .interest_pop .itrt_area .itrt_box {padding:0 15px;}
+    .interest_pop .itrt_area .itrt_box .table_itrt td {padding:5px 20px;}
+    
+    .interest_pop_2 .itrt_area .itrt_box .table_itrt td {padding:5px 0;}
+}
+@media (max-width: 768px){
+    /* ÆË¾÷ */
+    .certifi_pop .btn_popclo {top: calc(50% - 50.5vw); left:90%;}
+    .interest_pop .bb_tit {margin-bottom:10px;font-size:15px;}
+    .interest_pop .gray_area_box {padding:12px 10px;}
+    .interest_pop .bg_b_tit {font-size:15px;line-height:35px;}
+    .interest_pop .itrt_area .itrt_box {width: 100%;}
+    .interest_pop .itrt_area .itrt_box2 {margin-top:3%;}
+    .interest_pop .itrt_area .itrt_box .itrt_tit {font-size:14px;}
+    .interest_pop .itrt_area .itrt_box .table_itrt th {font-size:13px;}
+    .interest_pop .itrt_area .itrt_box .table_itrt td {font-size:13px;}
+    .interest_pop .btn {margin-top:25px;width: 200px;line-height:40px;font-size:15px;}
+
+}
+
+@media (max-width: 420px){
+    /* ÆË¾÷ */
+    .certifi_pop .btn_popclo { width:12%; top: calc(50% - 50.5vw); }
+}

@@ -18,7 +18,7 @@ body,
   height: 100%
 }
 
-/* 스크롤바 */
+/* ?????? */
 body::-webkit-scrollbar {
   border-radius: 25px;
   background: transparent;
@@ -40,7 +40,7 @@ body.no_scroll {
   overflow: hidden;
 }
 
-/* guide-header 헤더 공통 css */
+/* guide-header ??? ???? css */
 .guide-header {
   position: fixed;
   width: 100%;
@@ -188,7 +188,7 @@ body.v-fixed .guide-header {
   font-size: 20px;
 }
 
-/* 리뉴얼 헤더 */
+/* ?????? ??? */
 .header_wrp {
   position: fixed;
   left: 0;
@@ -240,7 +240,7 @@ body.v-fixed .guide-header {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/logo.png);
+  background-image: url(../images/logo.png);
   margin-right: 10px;
 }
 
@@ -340,7 +340,7 @@ body.v-fixed .guide-header {
   color: #fff;
 }
 .header_wrp.on .header h1 a:before {
-  background-image: url(/images/logo3.png);
+  background-image: url(../images/logo3.png);
 }
 
 .header_wrp.on:not(.open_menu) .btn_menu .shape svg rect {
@@ -373,7 +373,7 @@ body.v-fixed .guide-header {
   font-size: 0;
 }
 .header_wrp.open_menu .header h1 a:before {
-  background-image: url(/images/logo3.png);
+  background-image: url(../images/logo3.png);
 }
 
 .mo_dimm {
@@ -438,7 +438,7 @@ body.v-fixed .guide-header {
   transform: translate(50%, -50%);
 }
 
-/* login 로그인 팝업 css */
+/* login ?α??? ??? css */
 .login_dim {
   display: none;
   width: 9999%;
@@ -461,7 +461,7 @@ body.v-fixed .guide-header {
 }
 
 
-/* login 로그인 내부  css*/
+/* login ?α??? ????  css*/
 .page_foot .page_copyright {
   color: #8d8d8d;
   font-size: 12px;
@@ -598,7 +598,7 @@ body.v-fixed .guide-header {
 
 
 
-/* guide-aside 좌측 네비게이션  */
+/* guide-aside ???? ???????  */
 .guide-area {
   min-height: 600px;
 }
@@ -766,7 +766,7 @@ body.v-fixed .guide-header {
 
 
 
-/* 좌측 네비게이션 하위요소*/
+/* ???? ??????? ???????*/
 .guide-aside ul li.small_nav {
   padding-left: 9px;
   display: none;
@@ -1614,7 +1614,7 @@ pre[class*=language-].line-numbers>code {
 }
 
 
-/* 코드 박스 내부 */
+/* ??? ??? ???? */
 pre[class*=language-].act {
   height: 0;
   padding: 0;
@@ -2468,7 +2468,7 @@ i.bx.bx-copy-alt {
 }
 
 
-/* 추가 페이지 내부 css작업  */
+/* ??? ?????? ???? css???  */
 .page_wrap {
   width: 100%;
   height: 100%;
@@ -2548,7 +2548,7 @@ i.bx.bx-copy-alt {
 }
 
 .page_wrap .code-box {
-  font-family: '맑은 고딕', 'Malgun Gothic';
+  font-family: '???? ????', 'Malgun Gothic';
 }
 
 .page_wrap i.bx.bx-link {
@@ -2582,7 +2582,7 @@ i.bx.bx-copy-alt {
   font-size: 24px;
 }
 
-/* 소개 */
+/* ??? */
 
 .logo_box {
   width: 70%;
@@ -2599,7 +2599,7 @@ i.bx.bx-copy-alt {
 }
 
 
-/* 요소 기본 css */
+/* ??? ?? css */
 .token.atrule,
 .token.attr-value,
 .token.class-name,
@@ -2649,7 +2649,7 @@ a {
 
 
 
-/* 로그인 관련 css */
+/* ?α??? ???? css */
 
 .login-area span.valid {
   font-size: 13px;
@@ -2730,7 +2730,7 @@ a.go {
 }
 
 
-/* no-tweet 공용 */
+/* no-tweet ???? */
 .no-tweet i {
   font-size: 70px;
   color: #a9deff;
@@ -2745,7 +2745,7 @@ a.go {
 }
 
 
-/* popup_tweet 의견남기기 css  */
+/* popup_tweet ??????? css  */
 
 .popup_tweet_board .page_head_wrap {
   position: relative;
@@ -2907,7 +2907,7 @@ a.go {
 }
 
 
-/* popup_tweet 의견남기기 세부 버튼 css */
+/* popup_tweet ??????? ???? ??? css */
 /* .tweet-list li {font-family: 'NotoSans KR'; margin: 20px 0 4px 0;display: block;;padding: 4% 4%;border-radius: 15px 15px 15px 0px;;background: #e1f9ff;} */
 .tweet-list li {
   font-family: 'NotoSans KR';
@@ -3062,7 +3062,7 @@ a.go {
 }
 
 
-/* popup_tweet 의견남기기 select box */
+/* popup_tweet ??????? select box */
 .select_wrap {
   position: relative;
   border: 1px solid #d1d1d19c;
@@ -3139,7 +3139,7 @@ a.go {
 }
 
 
-/* 개별 이슈 채팅 css */
+/* ???? ??? ??? css */
 .issue-box-wrap {
   margin: 15px 0 20px;
 }
@@ -3395,7 +3395,7 @@ a.go {
 
 
 
-/* 이슈 해결 완료 */
+/* ??? ??? ??? */
 .issue-box-wrap .issue-box.completed a.issue_icon_user {
   background: #e5e8ea;
 }
@@ -3485,7 +3485,7 @@ a.go {
 }
 
 
-/* 앵커 */
+/* ??Ŀ */
 .ank {
   position: fixed;
   right: 1%;
@@ -3552,7 +3552,7 @@ a.go {
 }
 
 
-/* 코드 오픈 */
+/* ??? ???? */
 .page_text_wrap button.code_open {
   position: relative;
   margin-right: 20px;
@@ -3631,7 +3631,7 @@ a.go {
 }
 
 
-/* 매니저 유저 관리 영역 */
+/* ????? ???? ???? ???? */
 .manage-user-area {
   position: absolute;
   right: 30px;
@@ -3708,7 +3708,7 @@ a.go {
 }
 
 
-/* ball공통 */
+/* ball???? */
 .ball {
   background: #47b2ff;
   width: 500px;
@@ -3834,7 +3834,7 @@ a.go {
   }
 }
 
-/* 인트로 */
+/* ????? */
 .ball_white {
   width: 1700px;
   height: 1500px;
@@ -3852,7 +3852,7 @@ a.go {
 }
 
 
-/* 로그인-회원가입 공통 */
+/* ?α???-??????? ???? */
 .login-area .signup_btn {
   color:  #ffffff61;
   text-align: center;
@@ -4939,7 +4939,7 @@ input[type=file]::-webkit-file-upload-button {
 @media screen and (max-width: 280px) {}
 
 
-/* 컴포넌트 & 페이지별 예외 처리 */
+/* ??????? & ???????? ???? ??? */
 /* .page_text_wrap .code-box :not(.part-wrp) h4{margin-bottom:0;} */
 .page_text_wrap b {
   font-weight: bold;

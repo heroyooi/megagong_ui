@@ -193,6 +193,8 @@ const refreshUser = () => {
     $('#gnb li.anonymous').remove();
     $('#gnb li.authorized').show();
 
+    $item_util.addClass('on');
+
     $('.mo_menu_wrp').html($('#gnb ul').clone());
 
     // $('.popup_tweet .items .user').find('em.name').text(user.displayName);
@@ -389,6 +391,7 @@ authService.onAuthStateChanged(async (user) => {
           }
         }
         $('.mo_menu_wrp').html($('#gnb ul').clone());
+        $item_util.addClass('on');
       }
       if (PAGE_BLOG_DETAIL) {
         getBlogItem(); // blog.js 파일 내부에 들어갈 경우 수정, 삭제 버튼이 가려짐
@@ -416,6 +419,9 @@ authService.onAuthStateChanged(async (user) => {
       getBlogCommentItem();
     }
     $('.mo_menu_wrp').html($('#gnb ul').clone());
+    setTimeout(function(){
+      $item_util.addClass('on');
+    }, 700);
   }  
 });
 

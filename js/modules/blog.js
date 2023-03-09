@@ -96,6 +96,10 @@ $blog_write_close_btn.on('click', function(e){
 let initBlogItem = false;
 let initBlogCommentItem = false;
 
+if (PAGE_BLOG || PAGE_BLOG_DETAIL) {
+    $('.ank').remove();
+}
+
 const getBlogItem = async () => {
     try {
         const id = $.urlParam('id');
@@ -113,7 +117,7 @@ const getBlogItem = async () => {
             $blog_detail.prepend(`
                 <div class="content_wrp">${blogData.content}</div>
             `);
-            if (['S3V7rNiYhjMEGMBrYcIk', 'ioQOAR071F83dVsNFKtO', 'Kxk3UZO1Xh77qAd5VeCb'].includes(id)) {
+            if (['S3V7rNiYhjMEGMBrYcIk', 'ioQOAR071F83dVsNFKtO', 'Kxk3UZO1Xh77qAd5VeCb', 'VfZAncdsjHgXVyOdMetq'].includes(id)) {
                 $blog_detail.find('.content_wrp').addClass('v_github');
             }
         }
@@ -149,11 +153,11 @@ const getBlogCommentItem = async () => {
             } else {
                 data.comments.reverse().map((comment) => {
                     comments_html += `<li>
-                        <span class="content">${comment.content}</span>
                         <div class="author_wrp">
                             <span class="face">${comment.creatorId ? '<img src="images/char' + getUserFace(comment.creatorId) + '.png" alt=' + comment.author +' />': ''}</span>
                             <span class="author">${comment.author}</span>
                         </div>
+                        <span class="content">${comment.content}</span>
                         <span class="date">${moment(comment.createdAt).fromNow()}</span>
                         ${FBU_ADMIN_UID === USER_ID ? '<button class="btn_delete_comment">ªË¡¶</button>' : ''}
                     </li>`;

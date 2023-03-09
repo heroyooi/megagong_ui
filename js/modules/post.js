@@ -50,7 +50,7 @@ const getPostsAll = async () => {
               <button class="btn delete"><i class='bx bx-trash'  ></i></button>
             </span>
             <span class="btns btns2">
-              <button class="btn edit"><i class='bx bx-check-circle' style='color:#4cc2ff;' ></i></button>
+              <button class="btn edit"><i class='bx bx-check-circle' style='color: #aab4ff;' ></i></button>
               <button class="btn cancel"><i class='bx bx-message-square-x'  ></i></button>
             </span>
           `;
@@ -93,7 +93,7 @@ const getPostsAll = async () => {
         
       });
   } catch (error) {
-    console.log(error)
+    console.log(error);
   } finally {
     $loading_all.fadeOut(200);
     $loading_all_ui.fadeOut(200);
@@ -135,7 +135,7 @@ const getPostsItem = async () => {
               <button class="btn delete"><i class='bx bx-trash'  ></i></button>
             </span>
             <span class="btns btns2">
-              <button class="btn edit"><i class='bx bx-check-circle' style='color:#4cc2ff;' ></i></button>
+              <button class="btn edit"><i class='bx bx-check-circle' style='color: #aab4ff;' ></i></button>
               <button class="btn cancel"><i class='bx bx-message-square-x'  ></i></button>
             </span>
           `;

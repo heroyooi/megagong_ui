@@ -95,7 +95,7 @@ const $auth_info = $auth.next('.s-info');
 const $items = $('.guide-area#Tweet .items');
 const $item_user = $items.find('.user');
 const $item_logout = $items.find('.logout');
-
+const $item_util = $('.util_list');
 
 const $popup_tweet_all = $('.popup_tweet#all');
 const $tweet_box_all = $popup_tweet_all.find('.guide-inner-left .code-box');
@@ -158,6 +158,17 @@ $('.btn.action').each(function(){
 $('.btn_login').each(function(){
   $('.login_logo_text').append(SVG_HTML);
 });
+
+$header.find('.btn_menu2').on('click', function(e){
+  e.preventDefault();
+  if (!$('.guide-aside').hasClass('open_nav')) {
+    $('.guide-aside').addClass('open_nav');
+  } else {
+    $('.guide-aside').removeClass('open_nav');
+  }
+});
+
+
 
 let timer = null;
 const headerH = 90;
@@ -298,6 +309,7 @@ if ($('.page_wrap.page_wide').length) {
 
 // 우측 네비게이션
 if ($('.ank').length) {
+  $('.ank').append('<button><i class="bx bx-chevrons-down"></i></button>');
   $('.ank').append('<ul></ul>');
   if ($popup_tweet_item.length) {
     // $tweet_select_item.append('<option value="0">' + isPathname.toUpperCase() + ' 타입 선택</option>');
@@ -313,6 +325,15 @@ if ($('.ank').length) {
     }
   });
 }
+
+$('.ank button').on('click', function(){
+  if($('.ank ul').hasClass('close_list')){
+    $('.ank ul').removeClass('close_list');
+  }
+  else{
+    $('.ank ul').addClass('close_list');
+  }
+});
 
 // 프로필 팝업
 $('.user_info#authorized li.user, #gnb li.profile').on("click", function(e){
@@ -354,6 +375,8 @@ $page_wrap.each(function(){
 });
 
 var calH = 150;
+var objH = 22.39;
+var ankSpeed = 300;
 $(window).on('load scroll', function(){
   let anchorh = $(this).scrollTop();
 
@@ -365,35 +388,38 @@ $(window).on('load scroll', function(){
           return false;
         }
         if ($('.board' + (i + 1)).length) {
-          if (anchorh >= i && anchorh < $('.board' + (i + 2)).offset().top - calH && !flagArr[i]) {
+          if (anchorh >= i && anchorh < $('.board' + (i + 2)).offset().top - calH && !flagArr[i]) { // 처음 영역
             flagArr = flagArr.map(function() {
               return false;
             });
             flagArr[i] = true;
             $('.ank_list.on').removeClass('on');
             $('.ank_list:nth-child(' + (i + 1) + ')').addClass('on');
+            $('.ank ul').stop(true, true).animate({ scrollTop: 0 }, ankSpeed);
           }
         }
       } else if (i === $page_wrap.length - 1) {
         if ($('.board' + (i + 1)).length) {
-          if (anchorh >= $('.board' + (i + 1)).offset().top - calH && !flagArr[i]) {
+          if (anchorh >= $('.board' + (i + 1)).offset().top - calH && !flagArr[i]) { // 마지막 영역
             flagArr = flagArr.map(function() {
               return false;
             });
             flagArr[i] = true;
             $('.ank_list.on').removeClass('on');
             $('.ank_list:nth-child(' + (i + 1) + ')').addClass('on');
+            $('.ank ul').stop(true, true).animate({ scrollTop: objH * (i + 1) }, ankSpeed);
           }
         }
       } else {
         if ($('.board' + (i + 1)).length) {
-          if (anchorh >= $('.board' + (i + 1)).offset().top - calH && anchorh < $('.board' + (i + 2)).offset().top - calH && !flagArr[i]) {
+          if (anchorh >= $('.board' + (i + 1)).offset().top - calH && anchorh < $('.board' + (i + 2)).offset().top - calH && !flagArr[i]) { // 처음과 마지막을 제외한 모든 영역
             flagArr = flagArr.map(function() {
               return false;
             });
             flagArr[i] = true;
             $('.ank_list.on').removeClass('on');
             $('.ank_list:nth-child(' + (i + 1) + ')').addClass('on');
+            $('.ank ul').stop(true, true).animate({ scrollTop: objH * (i + 1) }, ankSpeed);
           }
         }
       }

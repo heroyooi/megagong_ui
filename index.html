@@ -67,8 +67,8 @@
     <div class="wrap">
       <div class="guide-header" style="display: none;">
         <div class="guide-h-inner">
-            <h1><!--<img src="images/h1.png" alt="메가공무원" />--><a href="index.asp"><img src="images/logo3.png" alt='메가공무원' width="35"></a></h1>
-            <span class="desc"><a href="index.asp">COMPONENT GUIDE</a></span>
+            <h1><!--<img src="/images/h1.png" alt="메가공무원" />--><a href="/index.asp"><img src="/images/logo3.png" alt='메가공무원' width="35"></a></h1>
+            <span class="desc"><a href="/index.asp">COMPONENT GUIDE</a></span>
             
             <!-- 로그인 후 -->
             <ul class="user_info pending" id="authorized" style="display: none;">
@@ -79,8 +79,8 @@
             
             <!-- 로그인 후 -->
             <ul class="user_info pending" id="anonymous">
-                <li><a href="login.asp">로그인</a></li>
-                <li><a href="signup.asp">회원가입</a></li>
+                <li><a href="/login.asp">로그인</a></li>
+                <li><a href="/signup.asp">회원가입</a></li>
             </ul>
             
 
@@ -95,36 +95,39 @@
       </div>
       <header class="header_wrp">
         <div class="header">
-          <h1 class="logo"><a href="index.asp">COMPONENT GUIDE</a></h1>
+          <button type="button" class="btn_menu2">
+            <i class='bx bx-plus'></i>
+          </button>
+          <h1 class="logo"><a href="/index.asp">COMPONENT GUIDE</a></h1>
           <nav id="gnb">
             <!--<ul>
-              <li><a href="items/button.asp">COMPONENT</a></li>
-              <li><a href="pages/teacher.asp">PAGE</a></li>
-              <li><a href="blog.asp">BLOG</a></li>
+              <li><a href="/items/button.asp">COMPONENT</a></li>
+              <li><a href="/pages/teacher.asp">PAGE</a></li>
+              <li><a href="/blog.asp">BLOG</a></li>
               <li class="authorized profile" style="display:none;"><span>홍길동</span>(<em>honggildong</em>)님 환영합니다.</li>
               <li class="authorized logout" style="display:none;"><a onclick="logoutAction(); return false;" href="#" class="btn"><i class='bx bx-log-out'></i></a></li>
-              <li class="anonymous"><a href="login.asp">LOGIN</a></li>
-              <li class="anonymous"><a href="signup.asp">SIGNUP</a></li>
+              <li class="anonymous"><a href="/login.asp">LOGIN</a></li>
+              <li class="anonymous"><a href="/signup.asp">SIGNUP</a></li>
             </ul>-->
-            <ul>
-              <li><a href="items/button.asp">COMPONENT</a></li>
-              <li><a href="pages/teacher.asp">PAGE</a></li>
-              <li><a href="blog.asp">BLOG</a></li>
+            <ul class="nav_list">
+              <li><a href="/items/button.asp">COMPONENT</a></li>
+              <li><a href="/pages/teacher.asp">PAGE</a></li>
+              <li><a href="/blog.asp">BLOG</a></li>
             </ul>
-            <ul>
+            <ul class="util_list">
               <li class="authorized profile" style="display:none;"><span>홍길동</span>(<em>honggildong</em>)님 환영합니다.</li>
               <li class="authorized logout" style="display:none;"><a onclick="logoutAction(); return false;" href="#" class="btn"><i class='bx bx-log-out'></i></a></li>
-              <li class="anonymous"><a href="login.asp">LOGIN</a></li>
-              <li class="anonymous"><a href="signup.asp">SIGNUP</a></li>
+              <li class="anonymous"><a href="/login.asp">LOGIN</a></li>
+              <li class="anonymous"><a href="/signup.asp">SIGNUP</a></li>
             </ul>
           </nav>
           <button type="button" class="btn_menu">
             <div class="shape">
               <svg vid="menu_btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" xml:space="preserve">
               <g>
-                <rect x="0" y="0" width="18" height="2"/>
-                <rect x="0" y="6" width="18" height="2"/>
-                <rect x="0" y="12" width="18" height="2"/>
+                <rect x="0" y="0" width="18" height="2" rx="1"/>
+                <rect x="0" y="6" width="18" height="2" rx="1"/>
+                <rect x="0" y="12" width="18" height="2" rx="1"/>
               </g>
             </svg>
             </div>
@@ -162,14 +165,16 @@
             <a href="javascript:void(0)" class="btn_base" onclick="deleteMemberAction(); return false;">회원탈퇴</a>
         </div>
       </div>
+<!-- include - top -->
+
 
 <!--
 https://greensock.com/docs/v3/Eases
 -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-<script src="js/smoothScroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/smoothScroll.js"></script>
 
     <div class="megagong_main_wrap">
 
@@ -185,7 +190,7 @@ https://greensock.com/docs/v3/Eases
           </div>
 
           <video muted autoplay loop>
-            <source src="images/back.mp4" type="video/mp4">
+            <source src="/images/back.mp4" type="video/mp4">
           </video>
         </div>
         
@@ -197,11 +202,11 @@ https://greensock.com/docs/v3/Eases
 
           <div class="bk_box_wrap">
             <div class="bk_box">
-              <img src="images/con2_img2.jpg" alt="배경이미지">
+              <img src="/images/con2_img2.jpg" alt="배경이미지">
             </div>
           </div>
 
-          <div class="bk_msg">
+          <div class="bk_msg pc">
             <p class="bk_head">컴포넌트 가이드란?
               <span class="tit_line"></span>
             </p>
@@ -214,6 +219,22 @@ https://greensock.com/docs/v3/Eases
               컴포넌트 가이드는 그러한 '웹 구성요소의 안내서' 역할을 수행하며 HTML, CSS, 자바스크립트 코드를 포함하도록 설계되었습니다.
               기본적으로 사전 구축된 구성 요소의 라이브러리와 새 구성 요소를 생성하기 위한 지침 및 모범 사례를 제공합니다. 
               컴포넌트 가이드 서비스의 목적은 개발자가 다양한 프로젝트와 애플리케이션에서 사용할 수 있는 재사용 가능한 UI 구성요소의 중앙 저장소를 제공하여 휠을 재창조하는 것을 방지하는 것입니다.
+              이를 통해 유지관리에 필요한 중복 코드의 양을 줄이는 동시에 웹 페이지 및 응용프로그램의 일관성과 사용자 경험을 향상시킬 수 있습니다.
+              </span>
+            </p>
+            <!--<p><span>사이트 전반적으로 사용하고 있는 페이지 및 컴포넌트들을</span></p>
+            <p><span>한 눈에 확인할 수 있게 도와드립니다.</span></p>-->
+          </div>
+
+          <div class="bk_msg mo">
+            <p class="bk_head">컴포넌트 가이드란?
+              <span class="tit_line"></span>
+            </p>
+            
+            <p>
+              <span>
+              컴포넌트란 재사용 가능한 웹의 구성요소를 의미하며, 
+              개발자가 다른 웹 페이지와 응용 프로그램에서 재사용 가능한 UI 구성 요소를 만들 수 있도록 돕습니다.
               이를 통해 유지관리에 필요한 중복 코드의 양을 줄이는 동시에 웹 페이지 및 응용프로그램의 일관성과 사용자 경험을 향상시킬 수 있습니다.
               </span>
             </p>
@@ -237,9 +258,6 @@ https://greensock.com/docs/v3/Eases
       </section>
 
       <section class="sec_intro">
-        <video muted autoplay loop>
-          <source src="images/back2.mp4" type="video/mp4">
-        </video>
         <div class="intro_wrp">
           <!--<div class="intro_msg">
             <div class="msg_wrp">
@@ -251,6 +269,9 @@ https://greensock.com/docs/v3/Eases
 
           <div class="intro_logo">
             <div class="msg_wrp">
+              <video muted autoplay loop>
+                <source src="/images/back2.mp4" type="video/mp4">
+              </video>
               <div class="logo">
                 <span>M</span>
                 <span>E</span>
@@ -283,13 +304,13 @@ https://greensock.com/docs/v3/Eases
 
           <!--<div class="intro_bg">
             <div class="bg_wrp">
-              <div class="sample_layout sample_layout1"><img src="images/popup1.png" alt=""></div>
-              <div class="sample_layout sample_layout2"><img src="images/popup2.png" alt=""></div>
-              <div class="sample_layout sample_layout3"><img src="images/popup3.png" alt=""></div>
-              <div class="sample_layout sample_layout4"><img src="images/popup4.png" alt=""></div>
-              <div class="sample_layout sample_layout5"><img src="images/popup5.png" alt=""></div>
-              <div class="sample_layout sample_layout6"><img src="images/popup6.png" alt=""></div>
-              <div class="sample_layout sample_layout7"><img src="images/popup7.png" alt=""></div>
+              <div class="sample_layout sample_layout1"><img src="/images/popup1.png" alt=""></div>
+              <div class="sample_layout sample_layout2"><img src="/images/popup2.png" alt=""></div>
+              <div class="sample_layout sample_layout3"><img src="/images/popup3.png" alt=""></div>
+              <div class="sample_layout sample_layout4"><img src="/images/popup4.png" alt=""></div>
+              <div class="sample_layout sample_layout5"><img src="/images/popup5.png" alt=""></div>
+              <div class="sample_layout sample_layout6"><img src="/images/popup6.png" alt=""></div>
+              <div class="sample_layout sample_layout7"><img src="/images/popup7.png" alt=""></div>
             </div>
           </div>-->
         </div>
@@ -299,8 +320,27 @@ https://greensock.com/docs/v3/Eases
         <div class="slide_wrp">
           <div class="slide_panel slide_1">
             <div class="slide_inner">
-              <div class="pic_wrp"><img src="images/sec_slide_1.jpg" alt=""></div>
-              <div class="txt_wrp">
+              <div class="pic_wrp"><img src="/images/sec_slide_1.jpg" alt=""></div>
+              <!--<div class="txt_wrp">
+                <p class="tit">
+                  TEAM IN CHARGE
+                </p>
+                <p class="tit mini_font">
+                  <span class="tit_line"></span>PUBLISHING TEAM
+                </p>
+                <p class="desc">
+                해당 컴포넌트 가이드는 교육 및 웹 사이트 서비스의 일환으로 다양한 리소스와 자료를 제공하며, 
+                메가스터디교육 공무원사업본부 소속 퍼블리싱 팀이 제작 및 서비스를 담당하고 있습니다.<br/>
+                <br/>
+                메가스터디교육 공무원사업본부는 현재 메가공무원, 메가소방, 메가군무원 기숙전문관, 난공불락 등의 
+                다양한 교육 및 웹 사이트 서비스를 제공하고 있습니다.
+                따라서 웹 사이트의 설계 및 개발, 콘텐츠 작성 및 업데이트, 사이트의 안전성 및 접근성 보장, 
+                검색 엔진 및 기타 디지털 플랫폼에 대한 최적화 등의 책임을 지니고 있으며
+                관련 업무 또한 퍼블리싱 팀에서 담당하고 있습니다.
+                </p>
+              </div>-->
+
+              <div class="txt_wrp pc">
                 <p class="tit">
                   TEAM IN CHARGE
                 </p>
@@ -318,12 +358,29 @@ https://greensock.com/docs/v3/Eases
                 관련 업무 또한 퍼블리싱 팀에서 담당하고 있습니다.
                 </p>
               </div>
+
+              <div class="txt_wrp mo">
+                <p class="tit">
+                  TEAM IN CHARGE
+                </p>
+                <p class="tit mini_font">
+                  <span class="tit_line"></span>PUBLISHING TEAM
+                </p>
+                <p class="desc">
+                해당 컴포넌트 가이드는 교육 및 웹 사이트 서비스의 일환으로 다양한 리소스와 자료를 제공하며, 
+                메가스터디교육 공무원사업본부 소속 퍼블리싱 팀이 제작 및 서비스를 담당하고 있습니다.<br/>
+                <br/>
+                메가스터디교육 공무원사업본부는 현재 메가공무원, 메가소방, 메가군무원 기숙전문관, 난공불락 등의 
+                다양한 교육 및 웹 사이트 서비스를 제공하고 있습니다.
+                </p>
+              </div>
+              
             </div>
           </div>
           <div class="slide_panel slide_2">
-            <div class="slide_2_bg">
-                <img src="images/sld2_bg.jpg" alt="">
-              </div>
+            <!--<div class="slide_2_bg">
+              <img src="/images/sld2_bg.jpg" alt="">
+            </div>-->
             <div class="slide_inner">
               
               <div class="pic_wrp bulrver">
@@ -367,7 +424,7 @@ https://greensock.com/docs/v3/Eases
                 </div>
               </div>
               
-              <div class="txt_wrp">
+              <div class="txt_wrp pc">
                 <p class="tit">
                   ABOUT
                 </p>
@@ -375,15 +432,31 @@ https://greensock.com/docs/v3/Eases
                   <span class="tit_line"></span>BASIC WORK
                 </p>
                 <p class="desc">
-                퍼블리싱 팀은 메가공무원 내의 다양한 웹페이지를 제작하고 관리하는 역할을 담당하며
-                이러한 웹 페이지에는 이벤트 프로모션 페이지, 강사의 개인 페이지 및 기타 유형의 페이지가 포함됩니다.
-                <br/><br/>
-                이에 대하여 퍼블리싱 팀은 웹 페이지가 일관된 시각적 스타일로 작성되도록 계획 및 설계 초안을 유형화하고 있습니다.
-                또한 페이지가 다양한 장치에서 접근 가능하고 사용 가능하도록 설계를 수정하고 구축하는 작업 역시 맡고 있습니다.
-                <!---그 외에도 필요에 따라 기존 웹 페이지를 업데이트하고 수정하는 작업을 담당하며,
-                이에는 요구에 따른 신규 컨텐츠 추가 및 레이아웃 변경, 페이지의 기능 업데이트 등의 작업이 포함됩니다.-->
-                따라서 전반적으로 퍼블리싱 팀은 교육 서비스의 목표를 달성하고 직원 및 사용자의 요구를 충족시키는 데 도움이 되는,
-                고품질의 웹 페이지를 제작하는 일에 주요한 역할을 담당하고 있습니다.
+                  퍼블리싱 팀은 메가공무원 내의 다양한 웹페이지를 제작하고 관리하는 역할을 담당하며
+                  이러한 웹 페이지에는 이벤트 프로모션 페이지, 강사의 개인 페이지 및 기타 유형의 페이지가 포함됩니다.
+                  <br/><br/>
+                  이에 대하여 퍼블리싱 팀은 웹 페이지가 일관된 시각적 스타일로 작성되도록 계획 및 설계 초안을 유형화하고 있습니다.
+                  또한 페이지가 다양한 장치에서 접근 가능하고 사용 가능하도록 설계를 수정하고 구축하는 작업 역시 맡고 있습니다.
+                  <!---그 외에도 필요에 따라 기존 웹 페이지를 업데이트하고 수정하는 작업을 담당하며,
+                  이에는 요구에 따른 신규 컨텐츠 추가 및 레이아웃 변경, 페이지의 기능 업데이트 등의 작업이 포함됩니다.-->
+                  따라서 전반적으로 퍼블리싱 팀은 교육 서비스의 목표를 달성하고 직원 및 사용자의 요구를 충족시키는 데 도움이 되는,
+                  고품질의 웹 페이지를 제작하는 일에 주요한 역할을 담당하고 있습니다.
+                </p>
+              </div>
+
+              <div class="txt_wrp mo">
+                <p class="tit">
+                  ABOUT
+                </p>
+                <p class="tit mini_font">
+                  <span class="tit_line"></span>BASIC WORK
+                </p>
+                <p class="desc">
+                  퍼블리싱 팀은 메가공무원 내의 다양한 웹페이지를 제작하고 관리하는 역할을 담당하며
+                  이러한 웹 페이지에는 이벤트 프로모션 페이지, 강사의 개인 페이지 및 기타 유형의 페이지가 포함됩니다.
+                  <br/><br/>
+                  이에 대하여 퍼블리싱 팀은 웹 페이지가 일관된 시각적 스타일로 작성되도록 계획 및 설계 초안을 유형화하고 있습니다.
+                  또한 페이지가 다양한 장치에서 접근 가능하고 사용 가능하도록 설계를 수정하고 구축하는 작업 역시 맡고 있습니다.
                 </p>
               </div>
             </div>
@@ -392,7 +465,7 @@ https://greensock.com/docs/v3/Eases
             <div class="slide_inner">
               <div class="obj_sir">
               </div>
-              <div class="pic_wrp"><img src="images/T_img.png" alt=""></div>
+              <div class="pic_wrp"><img src="/images/T_img.png" alt=""></div>
               <div class="txt_wrp">
                 <p class="tit">
                   INTRODUCTION
@@ -416,8 +489,8 @@ https://greensock.com/docs/v3/Eases
               <div class="Subject_wrap">
                 <p>language</p>
               </div>
-              <div class="pic_wrp_sample"><img src="images/page_sam1.jpg" alt=""></div>
-              <div class="pic_wrp"><img src="images/T_img2.png" alt=""></div>
+              <div class="pic_wrp_sample"><img src="/images/page_sam1.jpg" alt=""></div>
+              <div class="pic_wrp"><img src="/images/T_img2.png" alt=""></div>
               <div class="glass4"></div>
               <div class="txt_wrp">
                 <p class="tit">
@@ -455,8 +528,8 @@ https://greensock.com/docs/v3/Eases
               <div class="Subject_wrap">
                 <p>History</p>
               </div>
-              <div class="pic_wrp_sample"><img src="images/page_sam1.jpg" alt=""></div>
-              <div class="pic_wrp"><img src="images/T_img3.png" alt=""></div>
+              <div class="pic_wrp_sample"><img src="/images/page_sam1.jpg" alt=""></div>
+              <div class="pic_wrp"><img src="/images/T_img3.png" alt=""></div>
               <div class="glass4"></div>
               <div class="txt_wrp">
                 <p class="tit">
@@ -493,8 +566,8 @@ https://greensock.com/docs/v3/Eases
               <div class="Subject_wrap">
                 <p>administration</p>
               </div>
-              <div class="pic_wrp_sample"><img src="images/page_sam1.jpg" alt=""></div>
-              <div class="pic_wrp"><img src="images/T_img4.png" alt=""></div>
+              <div class="pic_wrp_sample"><img src="/images/page_sam1.jpg" alt=""></div>
+              <div class="pic_wrp"><img src="/images/T_img4.png" alt=""></div>
               <div class="glass4"></div>
               <div class="txt_wrp">
                 <p class="tit">
@@ -539,7 +612,7 @@ https://greensock.com/docs/v3/Eases
           <div class="member_wrap fade-item2">
             <ul class="member_ul"> 
                 <!--<li class="member_box fade-item3">
-                    <div class="imo_wrap"><img src="images/char3.png" alt=""></div>
+                    <div class="imo_wrap"><img src="/images/char3.png" alt=""></div>
                     <div class="info_mem_wrap">
                         <p class="member_name">SYW</p>
                         <p class="page_text">사랑하기에도 <br/>부족한 시간<span>&#128149;</span></p> 
@@ -548,11 +621,11 @@ https://greensock.com/docs/v3/Eases
                 <li class="member_box fade-item3">
                   <div class="front">
                     <div class="imo_wrap">
-                      <img src="images/char3.png" alt="">
+                      <img src="/images/char3.png" alt="">
                     </div>
                     <div class="info_mem_wrap">
                         <p class="member_name">SYW</p>
-                        <p class="member_span">Publishers<br>Team Manager</p>
+                        <p class="member_span">Publishers<br> Team Manager</p>
                     </div>
                   </div>
                   <div class="back">
@@ -565,11 +638,11 @@ https://greensock.com/docs/v3/Eases
                 <li class="member_box fade-item4">
                   <div class="front">
                     <div class="imo_wrap">
-                      <img src="images/char4.png" alt="">
+                      <img src="/images/char4.png" alt="">
                     </div>
                     <div class="info_mem_wrap">
                         <p class="member_name">KHR</p>
-                        <p class="member_span">Publishers<br>Part Manager</p>
+                        <p class="member_span">Publishers<br> Part Manager</p>
                     </div>
                   </div>
                   <div class="back">
@@ -582,11 +655,11 @@ https://greensock.com/docs/v3/Eases
                 <li class="member_box fade-item5">
                   <div class="front">
                     <div class="imo_wrap">
-                      <img src="images/char6.png" alt="">
+                      <img src="/images/char6.png" alt="">
                     </div>
                     <div class="info_mem_wrap">
                       <p class="member_name">CHJ</p>
-                      <p class="member_span">Publishers<br>Staff</p>
+                      <p class="member_span">Publishers<br> Staff</p>
                     </div>
                   </div>
 
@@ -600,11 +673,11 @@ https://greensock.com/docs/v3/Eases
                 <li class="member_box fade-item6">
                   <div class="front">
                     <div class="imo_wrap">
-                      <img src="images/char7.png" alt="">
+                      <img src="/images/char7.png" alt="">
                     </div>
                     <div class="info_mem_wrap">
                       <p class="member_name">JDI</p>
-                      <p class="member_span">Publishers<br>Staff</p>
+                      <p class="member_span">Publishers<br> Staff</p>
                     </div>
                   </div>
                   <div class="back">
@@ -616,11 +689,11 @@ https://greensock.com/docs/v3/Eases
                 <li class="member_box fade-item7">
                   <div class="front">
                     <div class="imo_wrap">
-                      <img src="images/char5.png" alt="">
+                      <img src="/images/char5.png" alt="">
                     </div>
                     <div class="info_mem_wrap">
                       <p class="member_name">YHR</p>
-                      <p class="member_span">Publishers<br>Staff</p>
+                      <p class="member_span">Publishers<br> Staff</p>
                     </div>
                   </div>
                   <div class="back">
@@ -632,11 +705,11 @@ https://greensock.com/docs/v3/Eases
                 <li class="member_box fade-item8">
                   <div class="front">
                     <div class="imo_wrap">
-                      <img src="images/char2.png" alt="">
+                      <img src="/images/char2.png" alt="">
                     </div>
                     <div class="info_mem_wrap">
                       <p class="member_name">SYR</p>
-                      <p class="member_span">Publishers<br>Staff</p>
+                      <p class="member_span">Publishers<br> Staff</p>
                     </div>
                   </div>
                   <div class="back">
@@ -648,11 +721,11 @@ https://greensock.com/docs/v3/Eases
                 <li class="member_box fade-item9">
                   <div class="front">
                     <div class="imo_wrap">
-                      <img src="images/char1.png" alt="">
+                      <img src="/images/char1.png" alt="">
                     </div>
                     <div class="info_mem_wrap">
                       <p class="member_name">GYO</p>
-                      <p class="member_span">Publishers<br>Staff</p>
+                      <p class="member_span">Publishers<br> Staff</p>
                     </div>
                   </div>
                   <div class="back">
@@ -678,14 +751,24 @@ https://greensock.com/docs/v3/Eases
         </div>
       </section>-->
 
+      
+
+
     </div><!-- .megagong_main_wrap -->
 
     <div class="custom_pointer"></div>
 
-    <script src="js/main.js"></script>
-    <script>
-      
+    <style>
+    .header_wrp {background: none;}
+    .header_wrp .header {border-bottom:none; }
+    @media screen and (max-width: 1200px) {
+      .header_wrp.on .btn_menu2 {display: none;}
+      .header_wrp .header h1 a {justify-content: flex-start;}
+    }
+    </style>
 
+    <script src="/js/main.js"></script>
+    <script>
       document.querySelector('body').className = 'gsap';
       history.scrollRestoration = "manual"; // 진입 시 스크롤 위치 초기화
 
@@ -811,7 +894,7 @@ https://greensock.com/docs/v3/Eases
             end: '+=200%',
             pin: true,
             scrub: 3,
-            markers: true,
+            // markers: true,
             toggleClass: "active",
           }
         });
@@ -828,7 +911,7 @@ https://greensock.com/docs/v3/Eases
           end: '+=400%',
           pin: true,
           scrub: 2,
-          markers: true,
+          // markers: true,
         }
         });
         bk_wrp2
@@ -1130,6 +1213,7 @@ https://greensock.com/docs/v3/Eases
       }
       //motion_wrap E
 
+      
 
       ScrollTrigger.matchMedia({
 	
@@ -1173,6 +1257,9 @@ https://greensock.com/docs/v3/Eases
 
     </script>
 
+
+
+<!-- include - footer & bottom -->
 <div class="page_foot">
   <p class="page_copyright">
     Copyright &#169; megastudyEdu.co.,Ltd. All rights reserved.

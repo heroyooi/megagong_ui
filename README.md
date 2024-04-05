@@ -17,9 +17,8 @@
 
 ## 브랜치 설명
 
-- master: 개발 브랜치
-- legacy: 2023년부터 운영하고있는 초기 소스
-
+- master: [개발 브랜치](https://uidev.megagong.net)
+- legacy: [2023년부터 운영하고있는 초기 소스](https://ui.megagong.net)
 
 ## 배포
 

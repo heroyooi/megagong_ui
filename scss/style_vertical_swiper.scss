@@ -1,0 +1,33 @@
+@charset 'euc-kr';
+@import "config";
+
+.verticalSwiper {
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background: #628cd0;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 0 auto 40px;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0 40px;
+  text-align: center;
+  &.swiper-initialized {
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .verticalSwiper {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .verticalSwiper {
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+}

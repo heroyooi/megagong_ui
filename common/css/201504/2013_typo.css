@@ -1,0 +1,1386 @@
+
+/* 11px폰트*/
+@font-face { font-family:dotum;돋움; }
+.11px_gray { font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; font-size: 11px; color:#666666; text-decoration: none; line-height:130%;}
+.11px_gray1 { font-size:11px; color:#858585; line-height:140%;}
+.11px_gray2 { font-size:11px; color:#222222; line-height:140%;}
+.11px_gray3 { font-size:11px; font-weight: bold; color:#858585; line-height:140%;}
+.11px_gray4 { font-size:11px; font-weight: bold; color:#565656; line-height:140%;}
+.11px_gray5 { font-size:11px; color:#acacac; line-height:140%;}
+.11px_gray6 { font-size:11px; font-weight: bold; color:#515151; line-height:140%;}
+.11px_gray_u { font-size:11px; color:#acacac; line-height:140%; text-decoration: underline;}
+.11px_blue1 { font-size:11px; color:#6797b3; line-height:140%;}
+.11px_blue2 { font-size:11px; font-weight: bold; color:#247eb2; line-height:140%;}
+.11px_gre { font-size:11px; font-weight: bold; color:#31a6a1; line-height:140%;}
+.11p_blue4 { font-family:Verdana; font-size: 11px; color:#9dacb1; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.11p_n1 { font-family:Verdana; font-size: 11px; color:#acacac; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+.11px_gray_con01 { font-size:11px; color:#666666; letter-spacing:-1px; letter-spacing:120%; }
+.11px_gray_tit01 { font-size:11px; color:#595959; letter-spacing:-1px; font-weight:bold;}
+.11px_orange_con01 { font-size:11px; color:#629ece; letter-spacing:-1px; } /* 색상 블루로 변경 */
+.11px_gray_con011 { font-size:11px; color:#666666; letter-spacing:-1px; letter-spacing:120%; }
+.11px_gray_con0111 { font-size:11px; color:#666666; letter-spacing:-1px; letter-spacing:120%; }
+
+/* 11px링크폰트*/
+.11px_gray  a:link { font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; font-size: 11px; color:#666666; text-decoration: none;line-height:130%;}
+.11px_gray  a:visited { font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; font-size: 11px; color:#666666; text-decoration: none; line-height:130%;}
+.11px_gray  a:active { font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; font-size: 11px; color:#666666; text-decoration: none;line-height:130%;}
+.11px_gray  a:hover { font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; font-size: 11px; color:#666666; text-decoration: none;line-height:130%;}
+
+.11px_gray1  a:link { font-size:11px; color:#858585; line-height:140%;}
+.11px_gray1  a:visited { font-size:11px; color:#858585; line-height:140%;}
+.11px_gray1  a:active { font-size:11px; color:#858585; line-height:140%;}
+.11px_gray1  a:hover { font-size:11px; color:#858585; text-decoration: none; line-height:140%;}
+
+.11px_gray2  a:link  { font-size:11px; color:#222222; line-height:140%;}
+.11px_gray2  a:visited  { font-size:11px; color:#222222; line-height:140%;}
+.11px_gray2  a:active  { font-size:11px; color:#222222; line-height:140%;}
+.11px_gray2  a:hover  { font-size:11px; color:#222222; text-decoration: underline; line-height:140%;}
+
+.11px_gray3  a:link { font-size:11px; font-weight: bold; color:#858585; line-height:140%;}
+.11px_gray3  a:visited { font-size:11px; font-weight: bold; color:#858585; line-height:140%;}
+.11px_gray3  a:active { font-size:11px; font-weight: bold; color:#858585; line-height:140%;}
+.11px_gray3  a:hover { font-size:11px; font-weight: bold; color:#247eb2; text-decoration: none; line-height:140%;}
+
+.11px_gray6  a:link  { font-size:11px; font-weight: bold; color:#515151; line-height:140%;}
+.11px_gray6  a:visited  { font-size:11px; font-weight: bold; color:#515151; line-height:140%;}
+.11px_gray6  a:active  { font-size:11px; font-weight: bold; color:#515151; line-height:140%;}
+.11px_gray6  a:hover  { font-size:11px; font-weight: bold; color:#515151; line-height:140%;}
+
+.11px_gray_u  a:link { font-size:11px; color:#acacac; line-height:140%; text-decoration: underline;}
+.11px_gray_u  a:visited { font-size:11px; color:#acacac; line-height:140%; text-decoration: underline;}
+.11px_gray_u  a:active { font-size:11px; color:#acacac; line-height:140%; text-decoration: underline;}
+.11px_gray_u  a:hover { font-size:11px; color:#acacac; line-height:140%; text-decoration: underline;}
+
+.11px_blue1  a:link  { font-size:11px; color:#6797b3; line-height:140%;}
+.11px_blue1  a:visited  { font-size:11px; color:#6797b3; line-height:140%;}
+.11px_blue1  a:active  { font-size:11px; color:#6797b3; line-height:140%;}
+.11px_blue1  a:hover  { font-size:11px; text-decoration: none; color:#6797b3; line-height:140%;}
+
+
+/* 12px폰트*/
+.12p_gray { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#686868; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_gray1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#858585; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_gray2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#b5b5b5; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_tit1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#000000; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_tit2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#000000; font-weight: bold; text-decoration: none; line-height:140%;}
+.12p_blue1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#247eb2; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_blue2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#6797b3; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_blue3 { font-family:"돋움", Dotum, Arial, sans-serif;  font-size: 12px; color:#296bb5; font-weight: bold; text-decoration: none; line-height:140%;}
+.12p_orange {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#527dbf; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_orange2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#296bb5; font-weight: bold; text-decoration: none; line-height:140%;}
+.12p_gre { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#31a6a1; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_red { font-family:"돋움", Dotum, Arial, sans-serif;  font-size: 12px; color:#d13809;  text-decoration: none; line-height:140%;}
+.12p_red1 {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#0059a9; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_lec { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#636162; font-weight: bold; text-decoration: line-through; line-height:140%;}
+.12p_lec1 {font-family:"돋움", Dotum, Arial, sans-serif;  font-size: 12px; color:#858585; text-decoration: none; line-height:140%;}
+.12p_lec2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#414141; text-decoration: none; line-height:140%;}
+.12p_lec3 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#a4a4a4; text-decoration: none; line-height:140%; font-weight:bold;}
+.12p_n1 { font-family:Verdana; font-size: 12px; color:#858585; text-decoration: none; line-height:140%;}
+.12p_n2 { font-family:Verdana; font-size: 12px; color:#373737; font-weight: bold; text-decoration: none; line-height:140%;}
+
+
+/* 12px링크폰트*/
+.12p_gray1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#858585; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_gray1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#858585; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_gray1  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#858585; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_gray1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#6797b3; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+.12p_n1 a:link {  font-family:Verdana; font-size: 12px; color:#858585; text-decoration: none; line-height:140%;}
+.12p_n1 a:visited { font-family:Verdana; font-size: 12px; color:#858585; text-decoration: none; line-height:140%;}
+.12p_n1 a:active { font-family:Verdana; font-size: 12px; color:#858585; text-decoration: none; line-height:140%;}
+.12p_n1 a:hover { font-family:Verdana; font-size: 12px; color:#858585; text-decoration: none; line-height:140%;}
+
+
+/* 13px폰트*/
+.13p_tit { font-family:"돋움", Dotum, Arial, sans-serif;  font-size: 13px; color:#000000; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+
+/* 14px폰트복사 t*/
+.14p_tit { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 14px; color:#1c85be; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.14p_tit2 {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 14px; color:#000000; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.14p_tit3 {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 14px; color:#954312; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+
+
+/* 2013-01-18 16px폰트 추가*/
+.16p_tit2 { font-family:"돋움", Dotum, Arial, sans-serif;  font-size: 16px; color:#000000; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+/* 2011-02-21 추가
+.login_t1 {font-family: YDIWebDotum.eot;  font-size:11px; color:#878585; line-height:140%;}
+.login_t2 {font-family: YDIWebDotum.eot;  font-weight: bold; font-size:11px; color:#464646; line-height:140%;}
+.login_t3 {font-family: YDIWebDotum.eot;  font-weight: bold; font-size:11px; color:#464646; line-height:140%;}
+.login_t3  a:link {font-family: YDIWebDotum.eot;  font-weight: bold; font-size:11px; color:#464646; text-decoration: underline; line-height:140%;}
+.login_t3  a:visited {font-family: YDIWebDotum.eot;  font-weight: bold; font-size:11px; color:#464646; text-decoration: none; line-height:140%;}
+.login_t3  a:active  {font-family: YDIWebDotum.eot;  font-weight: bold; font-size:11px; color:#464646; text-decoration: none; line-height:140%;}
+.login_t3  a:hover  {font-family: YDIWebDotum.eot;  font-weight: bold; font-size:11px; color:#df5a09; text-decoration: underline; line-height:140%;}
+.login_b1 {font-family: YDIWebDotum.eot;  font-weight: bold; font-size:11px; color:#2a7dbe; line-height:140%;}
+*/
+
+/* 인풋 추가 */
+.lo_input {font-family:dotum,"돋움", arial;font-size:11px; background:#f1f1f1; color:#4e4e4e; HEIGHT: 20px; border: 1px solid #cbcbcb;}
+.pl_input {font-family:dotum,"돋움", arial;font-size:11px; background:#f8f8f8; color:#4e4e4e; HEIGHT: 18px; border: 1px solid #cbcbcb;}
+/* 130131 수정 */
+.pl_input2 {font-family:dotum,"돋움", arial;font-size:11px; background:#333; color:#dfdfdf; HEIGHT: 18px; border: 1px solid #000; padding:3px 0 0 6px;}
+
+
+/* 로그인input
+.id_blur { background: transparent url(http://img.megaut.com/ut_new/img/m_gnb/id_back.gif) no-repeat; width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #c4c4c4; padding:5px;}
+.id_focus { width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #c4c4c4; padding:5px; }
+.pw_blur { background: transparent url(http://img.megaut.com/ut_new/img/m_gnb/pw_back.gif) no-repeat; width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #c4c4c4; padding:5px; }
+.pw_focus { width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #c4c4c4; padding:5px;}
+ */
+.la_12p_t1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#4d4d4d; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+
+/* kyleft css */
+/*사용*/
+.title_img {padding:0 0 8 8; height:30px; vertical-align:bottom}
+.left_menu_num{color:#f93345; margin-left:5px; font-size:11px; font-weight:normal;}
+/*사용*/
+.menu_title {color: #898989; letter-spacing:-1px; font-weight: bold; line-height:120%; padding:3px 0 0 8px; text-align:left;}
+.menu_title a:link {color: #898989; line-height:120%;}
+.menu_title a:active {color: #898989; text-decoration:none; line-height:120%;}
+.menu_title a:visited {color: #898989; text-decoration:none; line-height:120%;}
+.menu_title a:hover {color: #0076cb; text-decoration:none; line-height:120%;}
+/*사용*/
+.s-menu_title {color: #999999; font-size:12px; letter-spacing:-1px; line-height:120%; padding:3px 0 0 8px; text-align:left;}
+.s-menu_title a:link {color: #999999; font-size:12px; line-height:120%;}
+.s-menu_title a:active {color: #999999; font-size:12px; text-decoration:none; line-height:120%;}
+.s-menu_title a:visited {color: #999999; font-size:12px; text-decoration:none; line-height:120%;}
+.s-menu_title a:hover {color: #4a4a4a; font-size:12px; line-height:120%; font-weight: bold; text-decoration:none;}
+/*사용*/
+.s-red_title {color: #4a4a4a; font-size:12px; letter-spacing:-1px; font-weight: bold; line-height:120%; padding:3px 0 0 8px; text-align:left;}
+.s-red_title a:link {color: #4a4a4a; font-size:12px; line-height:120%;}
+.s-red_title a:active {color: #4a4a4a; font-size:12px; text-decoration:none; line-height:120%;}
+.s-red_title a:visited {color: #4a4a4a; font-size:12px; text-decoration:none; line-height:120%;}
+.s-red_title a:hover {color: #4a4a4a; font-size:12px; line-height:120%; text-decoration:none;}
+/*사용*/
+.red_title {color: #0076cb; font-size:12px; letter-spacing:-1px; font-weight: bold; line-height:120%; padding:3px 0 0 8px; text-align:left;}
+.red_title a:link {color: #0076cb; font-size:12px; line-height:120%;}
+.red_title a:active {color: #0076cb;font-size:12px; text-decoration:none; line-height:120%;}
+.red_title a:visited {color: #0076cb;font-size:12px; text-decoration:none; line-height:120%;}
+.red_title a:hover {color: #0076cb;font-size:12px; line-height:120%; text-decoration:none;}
+
+
+
+/* 학원left css */
+.2menu_title {color: #898989; letter-spacing:-1px;  font-weight: bold; line-height:120%; padding:3px 0 0 8px;}
+.2menu_title a:link {color: #898989; line-height:120%;}
+.2menu_title a:active {color: #898989; text-decoration:none; line-height:120%;}
+.2menu_title a:visited {color: #898989; text-decoration:none; line-height:120%;}
+.2menu_title a:hover {color: #009c90; text-decoration:none; line-height:120%;}
+
+.2s-menu_title {color: #999999; font-size:12px; letter-spacing:-1px; line-height:120%; padding-top:3px; padding-bottom:3px;}
+.2s-menu_title a:link {color: #999999; font-size:12px; line-height:120%;}
+.2s-menu_title a:active {color: #999999; font-size:12px; text-decoration:none; line-height:120%;}
+.2s-menu_title a:visited {color: #999999; font-size:12px; text-decoration:none; line-height:120%;}
+.2s-menu_title a:hover {color: #4a4a4a; font-size:12px; line-height:120%; font-weight: bold; text-decoration:none;}
+
+.2green_title {color: #009c90; font-size:12px; letter-spacing:-1px; font-weight: bold; line-height:120%; padding:3px 0 0 8px;}
+.2green_title a:link {color: #009c90; font-size:12px; line-height:120%;}
+.2green_title a:active {color: #009c90; font-size:12px; text-decoration:none; line-height:120%;}
+.2green_title a:visited {color: #009c90; font-size:12px; text-decoration:none; line-height:120%;}
+.2green_title a:hover {color: #009c90; font-size:12px; line-height:120%; text-decoration:none;}
+
+.2s-green_title {color: #4a4a4a; font-size:12px; letter-spacing:-1px; font-weight: bold; line-height:120%; padding:3px 0 0 8px;}
+.2s-green_title a:link {color: #4a4a4a; font-size:12px; line-height:120%;}
+.2s-green_title a:active {color: #4a4a4a; font-size:12px; text-decoration:none; line-height:120%;}
+.2s-green_title a:visited {color: #4a4a4a; font-size:12px; text-decoration:none; line-height:120%;}
+.2s-green_title a:hover {color: #4a4a4a; font-size:12px;; line-height:120%; text-decoration:none;}
+
+/* 종합반/단과-이달의강좌-단과반-실력픅정평가 */
+.12p_green_tit{ font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#0d4917; font-weight: bold;  text-decoration: none; line-height:140%; padding-left:20px;}
+.12p_gray_tit{ font-family:"돋움", Dotum, Arial, sans-serif;  font-size: 12px; color:#3d3d3d; text-decoration: none; line-height:140%; padding-left:20px;}
+.12p_gray_list{ font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#404040; text-decoration: none; font-weight: bold;  line-height:140%; padding-left:20px;  padding-left:10px;}
+.12p_gray_list2{ font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#666666; text-decoration: none; line-height:140%; padding-left:20px; padding-left:10px;}
+.dot_line {border-bottom:#cccccc 1px dotted;}
+.bottom_line {border-bottom:#cccccc 1px solid;}
+.text_box {width:490px; height:80px; padding:10px; border: 1px solid #d9d9d9; font-size:11px;color:#3d3d3d; }
+
+
+/* 폼의 input박스등에 대한 설정 */
+.s_input{ font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px;color:#838383; HEIGHT: 19px; border: 1px solid #cecece;}
+.lo_input2{ font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px;color:#555555; HEIGHT: 19px; border: 1px solid #dedede; background-color:#f2f2f2;}
+.home_input{ font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px;color:#838383; HEIGHT: 18px; border: 1px solid #e0e0df;}
+.home_input2{ font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#838383; HEIGHT: 40px; border: 1px solid #e0e0df;}
+.textarea{border:1px solid #CDCDCD; background:#ffffff; font-size:12px; font-family:"돋움", Dotum, Arial, sans-serif; color:#868585; padding:10px}
+.textarea_2{border:1px solid #CDCDCD; background:#ffffff; font-size:11px; font-family:"돋움", Dotum, Arial, sans-serif; color:#868585; padding:5px}
+.select { background:#ffffff; font-family:"돋움", Dotum, Arial, sans-serif; border:1px #CDCDCD solid; font-size: 8pt; color:#868585;height: 28px}
+
+
+/* 좌측 북마크 */
+.11px_sky { font-size:11px; color:#9e9e9e; line-height:140%;}
+.11px_sky  a:link { font-size:11px; color:#9e9e9e; line-height:140%;}
+.11px_sky  a:visited { font-size:11px; color:#9e9e9e; line-height:140%;}
+.11px_sky  a:active { font-size:11px; color:#9e9e9e; line-height:140%;}
+.11px_sky  a:hover { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+
+.12p_ge { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#3c6c0f; line-height:140%;}
+.12p_bl { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#000000; line-height:140%;}
+.12p_ga { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#555555; line-height:140%;}
+.12p_ga1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#c7c7c7; line-height:140%;}
+
+.12p_white {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#FFFFFF; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_white  a:link {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#FFFFFF; text-decoration: none;line-height:140%;}
+.12p_white  a:visited {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#FFFFFF; text-decoration: none; line-height:140%;}
+.12p_white  a:active {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#FFFFFF; text-decoration: none;line-height:140%;}
+.12p_white  a:hover {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#FFFFFF; text-decoration: underline;line-height:140%;}
+
+.12p_white2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#ffffff; line-height:140%;}
+.12p_white2  a:link  { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#ffffff; line-height:140%;}
+.12p_white2  a:visited  {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#ffffff; line-height:140%;}
+.12p_white2  a:active  { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#ffffff; line-height:140%;}
+.12p_white2  a:hover  { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#ffffff; line-height:140%; text-decoration: underline;}
+
+.12p_or { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#c94e11; line-height:140%; text-decoration: underline;}
+.12p_or  a:link  { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#c94e11; line-height:140%; text-decoration: underline;}
+.12p_or  a:visited  { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#c94e11; line-height:140%; text-decoration: underline;}
+.12p_or  a:active  { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#c94e11; line-height:140%; text-decoration: underline;}
+.12p_or  a:hover  { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; font-weight: bold; color:#c94e11; line-height:140%; text-decoration: underline;}
+
+/* 2011-03-03 추가 */
+.11px_blue3  a:link  { font-size:11px; color:#6797b3; line-height:140%;}
+.11px_blue3  a:visited  { font-size:11px; color:#6797b3; line-height:140%;}
+.11px_blue3  a:active  { font-size:11px; color:#6797b3; line-height:140%;}
+.11px_blue3  a:hover  { font-size:11px; text-decoration: none; color:#6797b3; line-height:140%;}
+
+
+/* 2011-03-11 상단 메뉴 GNB 변경으로 인한 스타일 추가 */
+.11px_gray3_m a:link { font-size:11px; color:#757575; text-decoration: none;line-height:140%;}
+.11px_gray3_m a:visited { font-size:11px; color:#757575; text-decoration: none;line-height:140%;}
+.11px_gray3_m a:active { font-size:11px; color:#757575;text-decoration: none; line-height:140%;}
+.11px_gray3_m a:hover { font-size:11px; color:#757575; text-decoration: none; line-height:140%;}
+
+.11px_gray_m2 { font-size:11px; color:#292929; line-height:140%;}
+
+.11px_gray3_m3 a:link { font-size:11px; color:#757575; text-decoration: underline;line-height:140%;}
+.11px_gray3_m3 a:visited { font-size:11px; color:#757575; text-decoration: underline;line-height:140%;}
+.11px_gray3_m3 a:active { font-size:11px; color:#757575;text-decoration: underline; line-height:140%;}
+.11px_gray3_m3 a:hover { font-size:11px; color:#757575; text-decoration: underline; line-height:140%;}
+
+
+/* ----- ut 스타일 추가---- */
+
+/* ut_11px폰트*/
+@font-face { font-family:dotum;돋움 }
+.ut_11p_g1 {   font-size:11px; color:#bab8b8; line-height:140%;}
+.ut_11p_g2 {   font-size:11px; color:#858585; line-height:140%;}
+.ut_11p_g3 {   font-size:11px; color:#5a5a5a; line-height:140%;}
+.ut_11p_g4 {   font-size:11px; color:#000000; line-height:140%;}
+
+/* 11px_블루*/
+.ut_11p_b1 {   font-size:11px; color:#91bad2; line-height:140%;}
+.ut_11p_b2 {   font-size:11px; color:#5bacda; line-height:140%;}
+.ut_11p_b3 {   font-size:11px; color:#228fce; line-height:140%;}
+.ut_11p_b4 {   font-size:11px; color:#1b55a7; line-height:140%;}
+
+/* 11px_청록*/
+.ut_11p_k1 {   font-size:11px; color:#89c0bc; line-height:140%;}
+.ut_11p_k2 {   font-size:11px; color:#55bab2; line-height:140%;}
+.ut_11p_k3 {   font-size:11px; color:#00a396; line-height:140%;}
+.ut_11p_k4 {   font-size:11px; color:#037d75; line-height:140%;}
+
+/* 11px_기타*/
+.ut_11p_w1 {   font-size:11px; color:#ffffff; line-height:140%;}
+.ut_11p_o1 {   font-size:11px; color:#e98400; line-height:140%;}
+.ut_11p_y1 {   font-size:11px; color:#fff954; line-height:140%;}
+.ut_11p_r1 {   font-size:11px; color:#d10909; line-height:140%;}
+.ut_11p_g1_u {   font-size:11px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_11p_g2_s {   font-size:11px; text-decoration: line-through; color:#858585; line-height:140%;}
+.k_12p_g1 {   font-size:12px; color:#858585; line-height:120%;}
+
+
+/* 교수카페 커리큘럼 */
+.ut_11p_g3_st {   font-size:11px; color:#5a5a5a; line-height:140%; border-left:1px solid #d9d9d9; border-top:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
+
+/* ut_12px폰트*/
+.ut_12p_g1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#bab8b8; line-height:140%;}
+.ut_12p_g2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#858585; line-height:140%;}
+.ut_12p_g3 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5a5a5a; line-height:140%;}
+.ut_12p_g4 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; line-height:140%;}
+.ut_12p_g5 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#505050; line-height:140%;}
+
+
+/* 12px_블루*/
+.ut_12p_b1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#91bad2; line-height:140%;}
+.ut_12p_b2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5bacda; line-height:140%;}
+.ut_12p_b3 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#228fce; line-height:140%;}
+.ut_12p_b4 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#1b55a7; line-height:140%;}
+.ut_12p_b5 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#6797b3; line-height:140%;}
+
+/* 12px_레드*/
+.red_12p_b1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#c80000; line-height:140%;}
+.red_12p_b2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#c80000; line-height:140%;}
+.red_12p_b3 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#c80000; line-height:140%;}
+.red_12p_b4 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#820f0f; line-height:140%;}
+.red_12p_b5 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#820f0f; line-height:140%;}
+
+
+/* 12px_청록*/
+.ut_12p_k1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#89c0bc; line-height:140%;}
+.ut_12p_k2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#55bab2; line-height:140%;}
+.ut_12p_k3 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#00a396; line-height:140%;}
+.ut_12p_k4 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#037d75; line-height:140%;}
+.ut_12p_k5 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#77b0ab; line-height:140%;}
+
+/* 12px_기타*/
+.ut_12p_w1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#ffffff; line-height:140%;}
+.ut_12p_o1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#e98400; line-height:140%;}
+.ut_12p_r1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#0076cb; line-height:140%;}
+.ut_12p_y1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#fff954; line-height:140%;}
+.ut_12p_o2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#e98400; line-height:140%;}
+.ut_12p_r2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#d10909; line-height:140%;}
+.ut_12p_y2 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#fff954; line-height:140%;}
+.ut_12p_g1_u { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_12p_g2_s { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; text-decoration: line-through; color:#858585; line-height:140%;}
+.ut_12p_p1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#4a09d1; line-height:130%;}
+
+
+/* 12px_그레이 자간0_상세내용부분*/
+.ut_12p_g1_e { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#bab8b8; line-height:140%;}
+.ut_12p_g2_e { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#918c8c; line-height:140%;}
+.ut_12p_g3_e { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#5a5a5a; line-height:140%;}
+.ut_12p_g4_e { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#000000; line-height:140%;}
+
+/* ut_13px폰트*/
+.ut_13p_g1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:13px; font-weight: bold; letter-spacing:-1px; color:#000000; line-height:140%;}
+.ut_13p_b1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:13px; font-weight: bold; letter-spacing:-1px; color:#228fce; line-height:140%;}
+.ut_13p_k1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:13px; font-weight: bold; letter-spacing:-1px; color:#00a396; line-height:140%;}
+.ut_13p_w1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:13px; font-weight: bold; letter-spacing:-1px; color:#ffffff; line-height:140%;}
+
+/* ut_14px폰트*/
+.ut_14p_g1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#000000; line-height:140%;}
+.ut_14p_o1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#b63b00; line-height:140%;}
+.ut_14p_b1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#228fce; line-height:140%;}
+.ut_14p_k1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#00a396; line-height:140%;}
+.ut_14p_w1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#ffffff; line-height:140%;}
+
+/* ut_11px숫자폰트*/
+.ut_n_11p_1 { font-family:Verdana; font-size: 11px; color:#858585; letter-spacing:-1px; text-decoration: none; line-height:140%;}
+.ut_n_11p_11 { font-family:Verdana; font-size: 11px; color:#91bad2; letter-spacing:-1px; text-decoration: none; line-height:140%;}
+.ut_n_11p_2 { font-family:Verdana; font-size: 11px; color:#5a5a5a; letter-spacing:-1px; font-weight: bold; text-decoration: none; line-height:140%;}
+.ut_n_11p_22 { font-family:Verdana; font-size: 11px; color:#5bacda; letter-spacing:-1px; font-weight: bold; text-decoration: none; line-height:140%;}
+.ut_11p_orange { font-family:Verdana; font-size: 11px; color:#e98400; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.ut_11p_red { font-family:Verdana; font-size: 11px; color:#d10909; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+/* ut_12px숫자폰트*/
+.ut_n_12p_1 { font-family:Verdana; font-size: 12px; color:#858585; letter-spacing:-1px; text-decoration: none; line-height:140%;}
+.ut_n_12p_2 { font-family:Verdana; font-size: 12px; color:#5a5a5a; letter-spacing:-1px; font-weight: bold; text-decoration: none; line-height:140%;}
+.ut_n_12p_lec { font-family:Verdana; font-size: 12px; color:#636162; letter-spacing:-1px; line-height:140%;}
+.ut_12p_orange { font-family:Verdana; font-size: 12px; color:#e98400; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.ut_12p_red { font-family:Verdana; font-size: 12px; color:#d10909; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+
+/* 11p링크값 */
+.ut_11p_g1  a:link { font-size:11px; color:#bab8b8; text-decoration: none; line-height:140%;}
+.ut_11p_g1  a:visited { font-size:11px; color:#bab8b8; text-decoration: none; line-height:140%;}
+.ut_11p_g1  a:active { font-size:11px; color:#bab8b8; text-decoration: none; line-height:140%;}
+.ut_11p_g1  a:hover { font-size:11px; color:#bab8b8; text-decoration: none; line-height:140%;}
+
+.ut_11p_g2  a:link { font-size:11px; color:#858585; text-decoration: none; line-height:140%;}
+.ut_11p_g2  a:visited {font-size:11px; color:#858585; text-decoration: none; line-height:140%;}
+.ut_11p_g2  a:active {font-size:11px; color:#858585; text-decoration: none; line-height:140%;}
+.ut_11p_g2  a:hover {font-size:11px; color:#858585; text-decoration: none; line-height:140%;}
+
+.ut_11p_g3  a:link {font-size:11px; color:#5a5a5a; text-decoration: none; line-height:140%;}
+.ut_11p_g3  a:visited {font-size:11px; color:#5a5a5a; text-decoration: none; line-height:140%;}
+.ut_11p_g3  a:active {font-size:11px; color:#5a5a5a; text-decoration: none; line-height:140%;}
+.ut_11p_g3  a:hover {font-size:11px; color:#5a5a5a; text-decoration: none; line-height:140%;}
+
+.ut_11p_g4  a:link { font-size:11px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_11p_g4  a:visited { font-size:11px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_11p_g4  a:active { font-size:11px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_11p_g4  a:hover { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+
+.ut_11p_b1  a:link { font-size:11px; color:#91bad2; text-decoration: none; line-height:140%;}
+.ut_11p_b1  a:visited { font-size:11px; color:#91bad2; text-decoration: none; line-height:140%;}
+.ut_11p_b1  a:active { font-size:11px; color:#91bad2; text-decoration: none; line-height:140%;}
+.ut_11p_b1  a:hover { font-size:11px; color:#91bad2; text-decoration: none; line-height:140%;}
+
+.ut_11p_b2  a:link { font-size:11px; color:#5bacda; text-decoration: none; line-height:140%;}
+.ut_11p_b2  a:visited { font-size:11px; color:#5bacda; text-decoration: none; line-height:140%;}
+.ut_11p_b2  a:active { font-size:11px; color:#5bacda; text-decoration: none; line-height:140%;}
+.ut_11p_b2  a:hover {font-size:11px; color:#5bacda; text-decoration: none; line-height:140%;}
+
+.ut_11p_b3  a:link { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_11p_b3  a:visited { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_11p_b3  a:active { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_11p_b3  a:hover { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+
+.ut_11p_b4  a:link { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_11p_b4  a:visited { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_11p_b4  a:active { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_11p_b4  a:hover { font-size:11px; color:#228fce; text-decoration: none; line-height:140%;}
+
+.ut_11p_k1  a:link { font-size:11px; color:#89c0bc; text-decoration: none; line-height:140%;}
+.ut_11p_k1  a:visited { font-size:11px; color:#89c0bc; text-decoration: none; line-height:140%;}
+.ut_11p_k1  a:active { font-size:11px; color:#89c0bc; text-decoration: none; line-height:140%;}
+.ut_11p_k1  a:hover { font-size:11px; color:#89c0bc; text-decoration: none; line-height:140%;}
+
+.ut_11p_k2  a:link { font-size:11px; color:#55bab2; text-decoration: none; line-height:140%;}
+.ut_11p_k2  a:visited { font-size:11px; color:#55bab2; text-decoration: none; line-height:140%;}
+.ut_11p_k2  a:active { font-size:11px; color:#55bab2; text-decoration: none; line-height:140%;}
+.ut_11p_k2  a:hover { font-size:11px; color:#55bab2; text-decoration: none; line-height:140%;}
+
+.ut_11p_k3  a:link { font-size:11px; color:#00a396; text-decoration: none; line-height:140%;}
+.ut_11p_k3  a:visited { font-size:11px; color:#00a396; text-decoration: none; line-height:140%;}
+.ut_11p_k3  a:active { font-size:11px; color:#00a396; text-decoration: none; line-height:140%;}
+.ut_11p_k3  a:hover { font-size:11px; color:#00a396; text-decoration: none; line-height:140%;}
+
+.ut_11p_k4  a:link { font-size:11px; color:#037d75; text-decoration: none; line-height:140%;}
+.ut_11p_k4  a:visited { font-size:11px; color:#037d75; text-decoration: none; line-height:140%;}
+.ut_11p_k4  a:active { font-size:11px; color:#037d75; text-decoration: none; line-height:140%;}
+.ut_11p_k4  a:hover { font-size:11px; color:#037d75; text-decoration: none; line-height:140%;}
+
+.ut_11p_w1  a:link { font-size:11px; color:#ffffff; text-decoration: none; line-height:140%;}
+.ut_11p_w1  a:visited { font-size:11px; color:#ffffff; text-decoration: none; line-height:140%;}
+.ut_11p_w1  a:active { font-size:11px; color:#ffffff; text-decoration: none; line-height:140%;}
+.ut_11p_w1  a:hover { font-size:11px; color:#ffffff; text-decoration: underline; line-height:140%;}
+
+.ut_11p_o1  a:link { font-size:11px; color:#e98400; text-decoration: none; line-height:140%;}
+.ut_11p_o1  a:visited { font-size:11px; color:#e98400; text-decoration: none; line-height:140%;}
+.ut_11p_o1  a:active { font-size:11px; color:#e98400; text-decoration: none; line-height:140%;}
+.ut_11p_o1  a:hover { font-size:11px; color:#e98400; text-decoration: none; line-height:140%;}
+
+.ut_11p_y1  a:link { font-size:11px; color:#fff954; text-decoration: none; line-height:140%;}
+.ut_11p_y1  a:visited { font-size:11px; color:#fff954; text-decoration: none; line-height:140%;}
+.ut_11p_y1  a:active { font-size:11px; color:#fff954; text-decoration: none; line-height:140%;}
+.ut_11p_y1  a:hover { font-size:11px; color:#fff954; text-decoration: none; line-height:140%;}
+
+.ut_11p_r1  a:link { font-size:11px; color:#d10909; text-decoration: none; line-height:140%;}
+.ut_11p_r1  a:visited { font-size:11px; color:#d10909; text-decoration: none; line-height:140%;}
+.ut_11p_r1  a:active { font-size:11px; color:#d10909; text-decoration: none; line-height:140%;}
+.ut_11p_r1  a:hover { font-size:11px; color:#d10909; text-decoration: none; line-height:140%;}
+
+.ut_11p_g1_u  a:link { font-size:11px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_11p_g1_u  a:visited { font-size:11px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_11p_g1_u  a:active { font-size:11px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_11p_g1_u  a:hover { font-size:11px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+
+.ut_11p_orange  a:link { font-family:Verdana; font-size: 11px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+.ut_11p_orange  a:visited { font-family:Verdana; font-size: 11px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+.ut_11p_orange  a:active { font-family:Verdana; font-size: 11px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+.ut_11p_orange  a:hover { font-family:Verdana; font-size: 11px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+
+/* 교수카페 커리큘럼 */
+.ut_11p_g3_st a:link { font-size:11px; color:#5a5a5a; line-height:140%;}
+.ut_11p_g3_st a:visited { font-size:11px; color:#5a5a5a; line-height:140%;}
+.ut_11p_g3_st a:active { font-size:11px; color:#5a5a5a; line-height:140%;}
+.ut_11p_g3_st a:hover { font-size:11px; color:#5a5a5a; line-height:140%;}
+
+/* 12p링크값 */
+.ut_12p_g1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#bab8b8; text-decoration: none; line-height:140%;}
+.ut_12p_g1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#bab8b8; text-decoration: none; line-height:140%;}
+.ut_12p_g1  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#bab8b8; ltext-decoration: none; ine-height:140%;}
+.ut_12p_g1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; letter-spacing:-1px; color:#bab8b8; text-decoration: none; line-height:140%;}
+
+.ut_12p_g2  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#858585; text-decoration: none; line-height:140%;}
+.ut_12p_g2  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#858585; text-decoration: none; line-height:140%;}
+.ut_12p_g2  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#858585; ltext-decoration: none; ine-height:140%;}
+.ut_12p_g2  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#858585; text-decoration: none; line-height:140%;}
+
+.ut_12p_g3  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5a5a5a; text-decoration: none; line-height:140%;}
+.ut_12p_g3  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5a5a5a; text-decoration: none; line-height:140%;}
+.ut_12p_g3  a:active {font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5a5a5a; ltext-decoration: none; ine-height:140%;}
+.ut_12p_g3  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5a5a5a; text-decoration: none; line-height:140%;}
+
+.ut_12p_g4  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_g4  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_g4  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; ltext-decoration: none; ine-height:140%;}
+.ut_12p_g4  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#228fce; text-decoration: none; line-height:140%;}
+
+.ut_12p_b1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#91bad2; text-decoration: none; line-height:140%;}
+.ut_12p_b1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#91bad2; text-decoration: none; line-height:140%;}
+.ut_12p_b1  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#91bad2; ltext-decoration: none; ine-height:140%;}
+.ut_12p_b1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#91bad2; text-decoration: none; line-height:140%;}
+
+.ut_12p_b2  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5bacda; text-decoration: none; line-height:140%;}
+.ut_12p_b2  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5bacda; text-decoration: none; line-height:140%;}
+.ut_12p_b2  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5bacda; ltext-decoration: none; ine-height:140%;}
+.ut_12p_b2  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#5bacda; text-decoration: none; line-height:140%;}
+
+.ut_12p_b3  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_12p_b3  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#228fce; text-decoration: none; line-height:140%;}
+.ut_12p_b3  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#228fce; ltext-decoration: none; ine-height:140%;}
+.ut_12p_b3  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#228fce; text-decoration: none; line-height:140%;}
+
+.ut_12p_b4  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#1b55a7; text-decoration: none; line-height:140%;}
+.ut_12p_b4  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#1b55a7; text-decoration: none; line-height:140%;}
+.ut_12p_b4  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#1b55a7; ltext-decoration: none; ine-height:140%;}
+.ut_12p_b4  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#1b55a7; text-decoration: none; line-height:140%;}
+
+.ut_12p_k1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#89c0bc; text-decoration: none; line-height:140%;}
+.ut_12p_k1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#89c0bc; text-decoration: none; line-height:140%;}
+.ut_12p_k1  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#89c0bc; ltext-decoration: none; ine-height:140%;}
+.ut_12p_k1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#89c0bc; text-decoration: none; line-height:140%;}
+
+.ut_12p_k2  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#55bab2; text-decoration: none; line-height:140%;}
+.ut_12p_k2  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#55bab2; text-decoration: none; line-height:140%;}
+.ut_12p_k2  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#55bab2; ltext-decoration: none; ine-height:140%;}
+.ut_12p_k2  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#55bab2; text-decoration: none; line-height:140%;}
+
+.ut_12p_k3  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#00a396; text-decoration: none; line-height:140%;}
+.ut_12p_k3  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#00a396; text-decoration: none; line-height:140%;}
+.ut_12p_k3  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#00a396; ltext-decoration: none; ine-height:140%;}
+.ut_12p_k3  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#00a396; text-decoration: none; line-height:140%;}
+
+.ut_12p_k4  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#037d75; text-decoration: none; line-height:140%;}
+.ut_12p_k4  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#037d75; text-decoration: none; line-height:140%;}
+.ut_12p_k4  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#037d75; ltext-decoration: none; ine-height:140%;}
+.ut_12p_k4  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; letter-spacing:-1px; color:#037d75; text-decoration: none; line-height:140%;}
+
+.ut_12p_w1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#ffffff; text-decoration: none; line-height:140%;}
+.ut_12p_w1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#ffffff; text-decoration: none; line-height:140%;}
+.ut_12p_w1  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#ffffff; ltext-decoration: none; ine-height:140%;}
+.ut_12p_w1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#ffffff; text-decoration: underline; line-height:140%;}
+
+.ut_12p_o1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#e98400; text-decoration: none; line-height:140%;}
+.ut_12p_o1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#e98400; text-decoration: none; line-height:140%;}
+.ut_12p_o1  a:active {font-family:"돋움", Dotum, Arial, sans-serif;  font-size:12px; letter-spacing:-1px; color:#e98400; ltext-decoration: none; ine-height:140%;}
+.ut_12p_o1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#e98400; text-decoration: none; line-height:140%;}
+
+.ut_12p_r1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#0076cb; text-decoration: none; line-height:140%;}
+.ut_12p_r1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#0076cb; text-decoration: none; line-height:140%;}
+.ut_12p_r1  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#0076cb; ltext-decoration: none; ine-height:140%;}
+.ut_12p_r1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#0076cb; text-decoration: none; line-height:140%;}
+
+.ut_12p_y1  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#fff954; text-decoration: none; line-height:140%;}
+.ut_12p_y1  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#fff954; text-decoration: none; line-height:140%;}
+.ut_12p_y1  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#fff954; ltext-decoration: none; ine-height:140%;}
+.ut_12p_y1  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#fff954; text-decoration: none; line-height:140%;}
+
+.ut_12p_g1_u  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_12p_g1_u  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_12p_g1_u  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+.ut_12p_g1_u  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#bab8b8; text-decoration: underline; line-height:140%;}
+
+.ut_12p_orange  a:link { font-family:Verdana; font-size: 12px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+.ut_12p_orange  a:visited { font-family:Verdana; font-size: 12px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+.ut_12p_orange  a:active { font-family:Verdana; font-size: 12px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+.ut_12p_orange  a:hover { font-family:Verdana; font-size: 12px; color:#e98400; font-weight: bold; text-decoration: underline; letter-spacing:-1px; line-height:140%;}
+
+.k_12p_red {font-family:"돋움", Dotum, Arial, sans-serif; color: #4a4a4a; font-size:12px; letter-spacing:-1px; font-weight: bold; line-height:140%;}
+.k_12p_red a:link {font-family:"돋움", Dotum, Arial, sans-serif; color: #4a4a4a; font-size:12px; line-height:120%;}
+.k_12p_red a:active {font-family:"돋움", Dotum, Arial, sans-serif; color: #4a4a4a; font-size:12px; text-decoration:none; line-height:120%;}
+.k_12p_red a:visited {font-family:"돋움", Dotum, Arial, sans-serif; color: #4a4a4a; font-size:12px; text-decoration:none; line-height:120%;}
+.k_12p_red a:hover {font-family:"돋움", Dotum, Arial, sans-serif; color: #0075EA; font-size:12px; line-height:120%; text-decoration:none;}
+
+
+/* 2011/07/05 추가  */
+.ut_12p_g6 {font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; line-height:140%;}
+.ut_12p_g6  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_g6  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_g6  a:active { font-family:"돋움", Dotum, Arial, sans-serif;  font-size:12px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_g6  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#000000; text-decoration: underline; line-height:140%;}
+
+.ut_12p_k6 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; line-height:140%;}
+.ut_12p_k6  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_k6  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_k6  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_k6  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#037d75; text-decoration: underline; line-height:140%;}
+
+/* 편입정보 > 편입뉴스 > 리스트 페이지 에서 이동 (사용유/무 판단 모름) - 2011/07/05 추가  */
+.update_item { color: #888888; letter-spacing:-1px;	line-height:130%; }
+.update_item a:link { color: #888888; line-height:130%; }
+.update_item a:active { color: #888888; text-decoration:none; line-height:130%; }
+.update_item a:visited { color: #888888;  text-decoration:none; line-height:130%; }
+.update_item a:hover { color: #444444; text-decoration:underline; line-height:130%; }
+.update_item_over { color: #444444; font-weight:bold; letter-spacing:-1px; line-height:130%; }
+
+/* 교수소개 > 교수메인 > 게시판 리뉴얼 - 2011/07/25 추가  */
+.ut_12p_g5  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_g5  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_12p_g5  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; ltext-decoration: none; ine-height:140%;}
+.ut_12p_g5  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#228fce; text-decoration: underline; line-height:140%;}
+
+
+/* 교수소개 > 교수메인 > 메인 페이지 - 2011/07/25 추가  */
+.ut_14p_g1 a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_14p_g1 a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_14p_g1 a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+.ut_14p_g1 a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size:14px; font-weight: bold; letter-spacing:-1px; color:#000000; text-decoration: none; line-height:140%;}
+
+
+/*style에서 가지고 온것 */
+
+.font11 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 11px;}
+.font11_blue { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 11px; color:#598fab;}
+.turquoise { font-family:"돋움", Dotum, Arial, sans-serif; color:#606060; text-decoration: none; line-height:160%;}
+.blue_bold { font-family:"돋움", Dotum, Arial, sans-serif; color:#3e78b7; text-decoration: none; line-height:160%; font-weight: bold}
+.blue { font-family:"돋움", Dotum, Arial, sans-serif; color:#5e86bc; text-decoration: none; line-height:160%;}
+.orange { font-family:"돋움", Dotum, Arial, sans-serif; color:#629ece; text-decoration: none; line-height:160%;} /* 색상 블루로 변경 */
+.orange16 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 14px; color:#296bb5; text-decoration: none; line-height:160%;}
+.red { font-family:"돋움", Dotum, Arial, sans-serif; color:#d13809; text-decoration: none; line-height:160%;}
+
+
+
+/*2011 김영인강 추가 */
+.orange1 { font-family:"돋움", Dotum, Arial, sans-serif; color:#0076cb; text-decoration: none; line-height:160%;}
+.dark_red { font-family:"돋움", Dotum, Arial, sans-serif;font-size: 12px; color:#004170; text-decoration: none; line-height:140%;}
+.dark_pur { font-family:"돋움", Dotum, Arial, sans-serif;font-size:12px; letter-spacing:-2px; color:#4b2da3; line-height:140%;}
+.11p_org4 { font-family:Verdana; font-size: 11px; color:#000000; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.11p_org5 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 11px; color:#000000; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.12p_tea01 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px; color:#000000; line-height:140%;}
+.12p_tea02 { font-family:"돋움", Dotum, Arial, sans-serif;font-size:12px; letter-spacing:-1px; color:#7e7e7e; line-height:140%;}
+
+.12px_gray_u {font-size:12px; color:#7e7e7e; line-height:140%; text-decoration: underline; letter-spacing:-1px; }
+.12px_gray_u  a:link { font-size:12px; color:#7e7e7e; line-height:140%; text-decoration: underline; letter-spacing:-1px; }
+.12px_gray_u  a:visited { font-size:12px; color:#7e7e7e; line-height:140%; text-decoration: underline; letter-spacing:-1px; }
+.12px_gray_u  a:active { font-size:12px; color:#7e7e7e; line-height:140%; text-decoration: underline; letter-spacing:-1px; }
+.12px_gray_u  a:hover { font-size:12px; color:#7e7e7e; line-height:140%; text-decoration: underline; letter-spacing:-1px; }
+
+.12px_red {  font-size:12px; color:#0076cb; line-height:140%; letter-spacing:-1px; font-weight: bold; } /* 색상 블루로 변경 */
+
+/*편입영어 수학 메인*/
+.plog_list {background:url('../lect/bullet_s.gif') no-repeat 0px 8px; width:163px; padding-left:7px; float:left; padding-top:2px; padding-bottom:3px;	height:15px;font-size:11px;	font-family:"돋움", Dotum, Arial, sans-serif;line-height:160%;letter-spacing:-1px;	}
+.plog_date {float:right; width:35px;text-align:left; font-family:arial; font-size:10px;}
+
+.sm_title { letter-spacing:-1px;font-family:"돋움", Dotum, Arial, sans-serif;color:#000000;pposition:relative;background:url('http://image.megacst.com/lect/bullet.gif') no-repeat left 2px; padding-left:7px; font-weight:bold; }
+
+
+.sm_tab1 {width:230px; border:1px #d5d5d5 solid;}
+.sm_tab2 {width:465px; border:1px #d5d5d5 solid;}
+.sm_title1 { letter-spacing:-1px;font-family:"돋움", Dotum, Arial, sans-serif;color:#0076cb;pposition:relative;background:url('http://image.megacst.com/lect/m_dot_red.gif') no-repeat left 2px; padding:10,0,5,15; font-weight:bold;}
+.left10_txt{ padding:2,2,2,10; letter-spacing:-1px}
+
+.left10_txt a:link { letter-spacing:-1px; color:#727272; text-decoration: none;}
+.left10_txt a:visited {letter-spacing:-1px; color:#727272; text-decoration: none;}
+.left10_txt a:active {letter-spacing:-1px; color:#727272; text-decoration: none;}
+.left10_txt a:hover { letter-spacing:-1px; color:#0076cb; text-decoration: none;}
+
+.et_11p_g1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px; color:#858585; line-height:120%; letter-spacing:-1px; text-align:center; padding:3 0 0 0 }
+.et_12p_g1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#858585; text-decoration: none; line-height:140%; letter-spacing:-1px; padding-top:5px}
+.et_12p_b1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#247eb2; font-weight: bold; text-decoration: none; letter-spacing:-2px; line-height:140%;}
+.et_12p_p1 { font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; color:#542980; font-weight: bold; text-decoration: none; letter-spacing:-2px; line-height:140%;}
+
+/*학습법*/
+.sm_tab3 {width:230px; background-color:#8595b7}
+.sm_tab4 {width:465px; background-color:#8595b7}
+.hak_ti{ letter-spacing:-2px; font-family:"돋움", Dotum, Arial, sans-serif; color:#ffffff; background-color:#8595b7; height:27px; padding:3px 0 0 10px; font-weight:bold}
+.hak_ti1{ letter-spacing:-1px; font-family:"돋움", Dotum, Arial, sans-serif; color:#ffffff; background-color:#8595b7; height:27px; padding:2px 0 0 2px; font-weight:bold}
+
+.sm_tab5 {background-color:#ffffff; width:100%; border:1px #e0e0e0 solid; padding:10 0 7 0}
+
+.hak_ti2{ letter-spacing:-2px; font-family:"돋움", Dotum, Arial, sans-serif; color:#6d7d9e; background-color:#6d7d9e; font-weight:bold; line-height:130% ; height:60px; padding:0 0 0 10}
+.hak_ti2 a:link { letter-spacing:-1px; color:#6d7d9e; text-decoration: underline; line-height:130% ;}
+.hak_ti2 a:visited {letter-spacing:-1px; color:#6d7d9e; text-decoration: underline; line-height:130% ;}
+.hak_ti2 a:active {letter-spacing:-1px; color:#6d7d9e; text-decoration: underline; line-height:130% ;}
+.hak_ti2 a:hover { letter-spacing:-1px; color:#6d7d9e; text-decoration: underline; line-height:130% ;}
+
+/*교수소개*/
+.yfont{color:#969595; font-size:10px; letter-spacing:-1px; font-family:Verdana; }
+.sfont{color:#0076cb; font-weight:bold;}
+.tfont{color:#ffffff; font-size:11px; font-family:"돋움", Dotum, Arial, sans-serif;}
+.sufont{color:#4a4a4a; font-size:12px; font-family:"돋움", Dotum, Arial, sans-serif; padding-top:3px;}
+
+.sofont{color:#878787; font-weight:bold;}
+.mfont01{color:#1064af; font-size:11px; font-family:"돋움", Dotum;}
+.mfont02{color:#151515; font-size:16px; font-weight:bold; font-family:"돋움", Dotum;}
+.mfont03{color:#797979; font-size:13px; font-weight:bold; font-family:"돋움", Dotum;}
+.point01{color:#1b64b0; font-size:12px; font-family:"돋움", Dotum, Arial, sans-serif;}
+.point02{color:#228fce; font-size:12px; font-family:"돋움", Dotum, Arial, sans-serif; font-weight:bold;}
+/* 130118 추가 */
+.point03{color:#228fce; font-size:14px; font-family:"돋움", Dotum, Arial, sans-serif; font-weight:bold;}
+.point04{color:#228fce; font-size:16px; font-family:"돋움", Dotum, Arial, sans-serif; font-weight:bold;}
+
+
+/*교수님공지사항*/
+.board02 .list{ position:relative;left:3px; top:28px; border-left:solid 1px #e0e0e0;border-right:solid 1px #e0e0e0;border-top:solid 1px #e0e0e0;  width:453px; height:80px; float:left;}
+.board02 .lastline{border-bottom:solid 1px #e0e0e0;}
+.board02 .list ul li div.t_photo{ padding-top:10px; padding-left:10px; width:65px; float:left;}
+.board02 .list ul li div.txt{ position:absolute; width:365px; left:78px; top:15px;}
+.board02 .list ul li div.txt ul li{position:relative; width:367px;}
+table.td.date{ position:absolute; right:0px; top:0px; color:#969595; }
+table.tb_style2 td{border-bottom: solid 1px #e0e0e0;}
+table#tb_style3 td.line_clean{border:none;}
+
+
+/*font*/
+.left{text-align:left;}
+td.title_txt{font-family:"돋움", Dotum; color:#000000; font-size:12px; font-weight:bold; text-align:left;}
+td.f_w{ font-family:"돋움", Dotum; font-weight:bold; color:#767575;}
+table.txt_left td{ text-align:left;}
+.sky_w_font{color:#098cc3; font-weight:bold; letter-spacing:-0.5px;}
+.sky02_w_font{color:#2873a7; font-weight:bold; letter-spacing:-0.5px;}
+.sfont_lineh{ font-size:11px; line-height:120%;font-family:"돋움", Dotum;}
+.font_lineh{line-height:120%; letter-spacing:-1px;}
+.font_spac{letter-spacing:-1px;}
+.sfont_spac{letter-spacing:-1px;  font-size:11px; font-family:"돋움", Dotum; line-height:130%;}
+.sfont10_spac{letter-spacing:-1.7px;  font-size:11px; font-family:"돋움", Dotum; line-height:120%;}
+.wfont_black{letter-spacing:-1px;  font-size:12px; font-weight:bold; color:#000000; font-family:"돋움", Dotum; }
+.wfont_pink{letter-spacing:-1px; line-height:120%; font-size:12px; font-weight:bold; color:#ac086c; font-family:"돋움", Dotum; }
+.wfont_red{color:#b20500;font-size:12px; font-weight:bold;font-family:"돋움", Dotum; }
+.wfont_red02{color:#b70000;font-weight:bold;font-size:12px;}
+.wfont_white{color:#ffffff;font-size:12px; font-weight:bold; font-family:"돋움", Dotum; }
+.wsfont_red{color:#b20500;font-size:11px; font-weight:bold; font-family:"돋움", Dotum; }
+.wfont_pink02{letter-spacing:-1px; line-height:120%; font-size:12px; font-weight:bold; color:#d10373; font-family:"돋움", Dotum; }
+.wfont{font-weight:bold; }
+.wfont_spac{font-weight:bold;letter-spacing:-0.5px; }
+.unline{ text-decoration:underline;}
+.t_point01{color:#0076cb; font-weight:bold; line-height:30px;}
+.t_point02{color:#898989; letter-spacing:-1px; line-height:18px;}
+.t_point03{color:#898989; letter-spacing:-1px; line-height:18px; font-weight:bold;}
+.t_point04{color:#adadad; font-size:11px;  line-height:18px;}
+.t_point05{color:#898989;  line-height:18px; }
+
+
+/*카피라이트*/
+.copy_bg01{background:url('https://img.kimyoung.co.kr/main/inc/copyright_bg01.gif') no-repeat left top;}
+.copy_bg02{background:url('https://img.kimyoung.co.kr/main/inc/copyright_bg02.gif') no-repeat left top;}
+.selectBox{ border:0 none; }
+
+
+/*2011-10-26 학원메인*/
+.ky_off_g1 a:link, .ky_off_g1 a:visited, .ky_off_g1 a:active {color:#636363; text-decoration:none; cursor:pointer;}
+.ky_off_g1 a:hover{color:#c4161c; text-decoration:none; cursor:pointer;}
+.ky_off_g2 a:link, .ky_off_g2 a:visited, .ky_off_g2 a:active {color: #8a8b8e; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_off_g2 a:hover {color: #c4161c; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_off_g3 a:link, .ky_off_g3 a:visited, .ky_off_g3 a:active {color: #606268; text-decoration:none; cursor:pointer; font-weight:bold;}
+.ky_off_g3 a:hover{color: #c4161c; text-decoration:none; cursor:pointer; font-weight:bold;}
+
+
+/*2011-11-30 단과시간표*/
+.ky_11p_g3{color:#5a5a5a;font-size:11px;line-height:140%;}
+.ky_11p_g2{color:#858585;font-size:11px;letter-spacing:-1px;line-height:140%;}
+.ky_11p_g1{color:#9f9f9f;font-size:11px;line-height:140%;}
+.ky_11p_o1{color:#e98400;font-size:11px;line-height:140%;}
+.ky_12p_k5{color:#3b3b3b;font-size:12px;letter-spacing:-1px;line-height:140%;}
+.ky_12p_o2{color:#e98400;font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; lline-height:140%;}
+.ky_12p_g4{color:#000000;font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px; letter-spacing:-1px;line-height:140%;}
+.ky_12p_g3{color:#5a5a5a;font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px;letter-spacing:-1px;line-height:140%;}
+.ky_12p_g2{color:#5a5a5a;font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px;letter-spacing:-1px;line-height:140%;}
+.ky_12p_w1{color:#ffffff;font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px;letter-spacing:-1px;line-height:140%;}
+.ky_12p_y1{color:#275575;font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px;letter-spacing:-1px;line-height:140%;}
+.style03 {text-align:left;font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color: #7e7e7e;padding-left:10px;border-bottom:1px solid #e0e0e0;}
+
+/* 테이블 타입 */
+.tbl_type1 table{ border-top:2px solid #84B1DB;border-collapse:collapse;font-size: 12px;}
+.tbl_type1 table th{background-color:#F0F3F8; font-weight:bold; color:#598FAB;border-bottom:1px solid #e0e0e0;text-align:center; }
+.tbl_type1 table td { border-bottom:1px solid #e0e0e0;}
+
+.tbl_type2 table{ border-top:2px solid #bfbfbf;border-collapse:collapse;font-size: 12px;}
+.tbl_type2 table table,.tbl_type2 table table td {border:none; }
+.tbl_type2 table th{background-color:#f7f7f7; font-weight:bold; color:#606060;border:1px solid #e0e0e0;text-align:center; }
+.tbl_type2 table td { border:1px solid #e0e0e0;}
+
+.tbl_type3 table{ border-collapse:collapse;font-size: 12px;background-color:#FFFFFF;}
+.tbl_type3 table td { border:1px solid #e0e0e0;}
+.tbl_type3 table td.bgc {background-color:#EFEFEF;}
+.tbl_type3 table td.tit{font-weight:bold; color:#3F6D9A;border:1px solid #91B4D8;font-size: 11px; padding:1px; }
+
+/* Event Layer - */
+/* 장학금 100만원을 잡아라  Event */
+#lab_apply { position:absolute; left:64px; top:37px; left:100px; top:40px; width:149px;	height:217px; z-index:1; }
+
+/* profAll contents(교수소개) */
+.profAll .notice{width:345px; height:93px; ;}
+.profAll .notice .table_b {border:1px solid #e0e0e0; height:70px; padding:7px 10px 0px 10px; letter-spacing:-1px;}
+.profAll .notice .table_b .list td{height:19px; color:#7b7676;}
+.profAll .s_title{ height:21px; border-bottom:1px solid #0076cb;}
+.profAll .line01{height:16px;}
+.profAll .line02{height:27px;}
+
+.visual .vi_p{height:147px; width:426px; margin:67px 15px 18px 259px; ;}
+.visual .vi_p .btn_p{height:68px; }
+.notice{width:226px; height:93px; }
+.notice .table_b {border:1px solid #e0e0e0; height:70px; padding:7px 10px 0px 10px; letter-spacing:-1px;}
+.notice .table_b .list td{height:19px; color:#7b7676;}
+
+.notice1{width:345px; height:93px;}
+.notice1 .table_b {border:1px solid #e0e0e0; height:70px; padding:7px 10px 0px 10px; letter-spacing:-1px;}
+.notice1 .table_b .list td{height:19px; color:#7b7676;}
+
+.notice2{width:340px; height:103px;}
+.notice2 .table_b {border:1px solid #e0e0e0; height:80px; padding:7px 10px 0px 10px; letter-spacing:-1px;}
+.notice2 .table_b .list td{height:19px; color:#7b7676;}
+.notice2 a:hover{color:#0076cb;}
+
+
+
+.s_title{height:21px; border-bottom:1px solid #0076cb;}
+.t_title{height:23px;}
+
+/*리뉴얼인강메인 CSS추가_20120328 */
+.ky_11p_b1{font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px; color:#1064af; line-height:130%; letter-spacing:-1px;text-decoration: none;}
+.ky_11p_b1 a:active {font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px; color:#1064af; line-height:130%;letter-spacing:-1px;text-decoration: none;}
+.ky_11p_b1 a:link {font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px; color:#1064af; line-height:130%;  letter-spacing:-1px;text-decoration: none;}
+.ky_11p_b1 a:visited {font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px; color:#1064af; line-height:130%;  letter-spacing:-1px;text-decoration: none;}
+.ky_11p_b1 a:hover {font-family:"돋움", Dotum, Arial, sans-serif; font-size:11px;color:#1064af;line-height:130%; letter-spacing:-1px;text-decoration: underline;}
+/*리뉴얼인강메인 CSS추가_20120328 */
+
+
+/*2012-03-29 오픈 : 메인레이어메뉴 마우스 오버시 글자색*/
+.ky_off_g4 a:link, .ky_off_g4 a:visited, .ky_off_g2 a:visited, .ky_off_g2 a:active {color: #8a8b8e; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_off_g4 a:hover {color: #005aaa; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_off_g5 a:link, .ky_off_g5 a:visited, .ky_off_g5 a:active {color: #8a8b8e; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_off_g5 a:hover {color: #228fce; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+
+/*학원/교수소개 메인-김영종합반 링크 속성--------------["2011_typo.css"에 추가해주세요!]*/
+.cl  a:link { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 11px; color:#666666; text-decoration: none;line-height:130%;}
+.cl  a:visited { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 11px; color:#666666; text-decoration: none; line-height:130%;}
+.cl  a:active { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 11px; color:#666666; text-decoration: none;line-height:130%;}
+.cl  a:hover { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 11px; color:#666666; text-decoration: none;line-height:130%;}
+
+
+/*--------------------------------------------------------------------------------------------------2011_sub.css 내용--------------------------------------------------------------------------------------------------*/
+
+/*.left{width:160px;}푸터와 충돌*/
+.sum{width:14px;}
+.right{width:96px;}
+.middle{width:700px;}
+
+/*sub01 contents*/
+.sub01 .middle .sum{height:20px;}
+.sub01 .middle .notice{width:346px; height:93px;}
+.sub01 .middle .notice .title{height:16px;}
+.sub01 .middle .notice .table_b {border:1px solid #e0e0e0; height:70px; padding:7px 10px 0px 10px; letter-spacing:-1px;}
+.sub01 .middle .notice .table_b .list td{height:19px; color:#7b7676;;}
+.sub01 .middle .s_title{ height:21px; border-bottom:1px solid #0076cb;}
+.sub01 .middle .img_p01{width:158px; padding:20px 20px 12px 0px; }
+.sub01 .middle .img_p02{width:158px; padding:30px 20px 12px 0px; }
+.sub01 .middle .img_la01{width:158px; padding:20px 0px 12px 0px; }
+.sub01 .middle .img_la02{width:158px; padding:30px 0px 12px 0px; }
+.sub01 .middle .line01{height:16px;}
+.sub01 .middle .line02{height:27px;}
+.sub01 .middle .list_sum{height:30px;}
+
+
+/*sub02 contents*/
+.sub02 .middle .visual{height:232px; background:url('https://img.kimyoung.co.kr/sub02/te_01.gif')}
+.sub02 .middle .visual .vi_p{height:147px; width:426px; margin:67px 15px 18px 259px; ;}
+.sub02 .middle .visual .vi_p .btn_p{height:68px; }
+.sub02 .middle .visual .vi_p .vi_t01{width:59px; height:16px;  padding:3px 4px 0px 0px; background:url('https://img.kimyoung.co.kr/sub02/te_btn02.gif')}
+.sub02 .middle .visual .vi_p .vi_t02{width:360px;}
+.sub02 .middle .visual .vi_p .vi_sum01{height:4px;}
+.sub02 .middle .visual .vi_p .vi_sum02{height:10px;}
+.sub02 .middle .visual .vi_p .wbtn01{width:36px;}
+.sub02 .middle .visual .vi_p .wbtn02{width:34px;}
+.sub02 .middle .visual .vi_p .vi_t03{height:25px;}
+.sub02 .middle .visual .vi_p .vi_t03_bg{width:356px; height:23px; padding:3px 0px 0px 6px; background:url('https://img.kimyoung.co.kr/sub02/te_bg.gif')}
+.sub02 .middle .line_sum{height:20px;}
+.sub02 .middle .list_sum{width:13px;}
+.sub02 .middle .img_sum{padding-right:6px;}
+.sub02 .middle .tap_bg{background:url('https://img.kimyoung.co.kr/sub02/tap_bg.gif')}
+.sub02 .middle .notice{width:226px; height:93px;}
+.sub02 .middle .notice .title{height:16px;}
+.sub02 .middle .notice .table_b {border:1px solid #e0e0e0; height:70px; padding:7px 10px 0px 10px; letter-spacing:-1px;}
+.sub02 .middle .notice .table_b .list td{height:19px; color:#7b7676;;}
+.sub02 .middle .no_bg{height:26px; background:url('https://img.kimyoung.co.kr/sub02/notice_bg.gif')}
+.sub02 .middle .s_title{height:21px; border-bottom:1px solid #0076cb;}
+.sub02 .middle .t_title{height:23px;}
+.sub02 .middle .t_body{height:30px; border-top:2px solid #bfbfbf;border-bottom:1px solid #d8d8d8;}
+.sub02 .middle .w_body01{width:70px;}
+.sub02 .middle .w_body02{width:51px; background:url('https://img.kimyoung.co.kr/sub02/table_bar.gif') no-repeat 0 11px;}
+.sub02 .middle .w_body03{width:381px; background:url('https://img.kimyoung.co.kr/sub02/table_bar.gif') no-repeat 0 11px;}
+.sub02 .middle .w_body04{width:96px; background:url('https://img.kimyoung.co.kr/sub02/table_bar.gif') no-repeat 0 11px;}
+.sub02 .middle .w_body05{width:51px; background:url('https://img.kimyoung.co.kr/sub02/table_bar.gif') no-repeat 0 11px;}
+.sub02 .middle .w_body06{width:51px; background:url('https://img.kimyoung.co.kr/sub02/table_bar.gif') no-repeat 0 11px;}
+.sub02 .middle .h_body01{height:113px; border-bottom:1px solid #e6e6e6;}
+.sub02 .middle .h_body01 .h_b01{height:25px;}
+.sub02 .middle .h_body01 .h_b02{height:18px;}
+.sub02 .middle .h_body02{height:113px; border-bottom:1px solid #e6e6e6; background-color:#f4f4f4;}
+.sub02 .middle .h_body02 .h_b01{height:25px;}
+.sub02 .middle .h_body02 .h_b02{height:18px;}
+
+
+/*sub03*/
+.sub03 .middle .vi_left{width:162px; height:237px; background:url('https://img.kimyoung.co.kr/sub03/vi_bg.gif') no-repeat left bottom;}
+.sub03 .middle .vi_left .star{margin:121px 17px 37px 21px;}
+.sub03 .middle .vi_left .star .hstar01{height:23px;}
+.sub03 .middle .vi_left .star span.hstar02{background-color:#4dbdc8; padding:5px;}
+.sub03 .middle .vi_left .star span.hstar03{background-color:#93d1e1; padding:5px;}
+.sub03 .middle .vi_left .star span.hstar04{background-color:#99ccff; padding:5px;}
+.sub03 .middle .vi_left .star .line_sum{height:5px;}
+.sub03 .middle .line_sum{height:10px;}
+.sub03 .middle .right_sum01{width:10px;}
+.sub03 .middle .right_sum02{width:19px;}
+.sub03 .middle .sutdy_sum{width:13px;}
+.sub03 .middle .tap{width:350px;}
+.sub03 .middle .notice .title{height:16px;}
+.sub03 .middle .notice .table_b {border:1px solid #e0e0e0; height:90px; padding:7px 12px 0px 10px; letter-spacing:-1px;}
+.sub03 .middle .notice .table_b .list td{height:19px; color:#7b7676;;}
+.sub03 .middle .notice_sum{height:23px;}
+.sub03 .middle .add{height:37px; background:url('https://img.kimyoung.co.kr/sub03/no_bg.gif') no-repeat;}
+.sub03 .middle .add .add_p{padding-left:10px;}
+.sub03 .middle .cus{width:204px;}
+
+
+/*김영캠퍼스_board*/
+body.sub03 .board {position:relative; width:470px; height:195px; float:left; background:url('https://img.kimyoung.co.kr/sub03/cam_tap_bg.gif') repeat-x left top;   }
+body.sub03 .board h2 {position:absolute; left:0px; top:3px; }
+body.sub03 #board { position:absolute;  left:0px; top:0px; width:460px;  height:173px; }
+body.sub03 #board img { vertical-align:top; }
+body.sub03 #board div.heading { position:absolute; left:0px; top:0px;  height:26px;  }
+body.sub03 .board .list{ position:relative;left:0px; top:28px; width:475x; height:173px; float:left;}
+/*텝위치*/
+body.sub03 #board div.campus01{position:absolute; left:546px; top:3px;  height:25px; }
+body.sub03 #board div.campus02{position:absolute; left:623px; top:3px;  height:25px;  }
+body.sub03 #board div.wrapper { position:absolute; top:25px; left:0; width:475px; height:173px; }
+/*링크스타일*/
+body.sub03 #board a:link, body.sub03 #board02 ul li a:visited { font-weight:bold; color:#000000;  }
+body.sub03 #board a:hover, body.sub03 #board02 ul li a:active { font-weight:bold;  color:#000000;}
+
+
+/*편입학원_board*/
+body.sub03 .customer {position:relative; width:350px; height:458px; float:left;   }
+body.sub03 .customer h2 {position:absolute; left:0px; top:3px; }
+body.sub03 #customer { position:absolute;  left:0px; top:0px; width:350px;  height:458px; }
+body.sub03 #customer img { vertical-align:top; }
+body.sub03 #customer div.heading { position:absolute; left:0px; top:0px;  height:26px;  }
+body.sub03 #customer .list{ position:relative; background-color:red; width:350px; height:430px; float:left;  background:url('https://img.kimyoung.co.kr/sub03/tap_bg.gif') no-repeat;}
+body.sub03 #customer .list .table01{margin: 45px 0px 41px 20px;}
+body.sub03 #customer .list .table01 .list_sum01{height:20px;}
+body.sub03 #customer .list .table01 .list_sum02{height:83px;}
+body.sub03 #customer .list .table01 .table02{margin:0px 0px 0px 49px; color:#7b767; letter-spacing:-1px;}
+body.sub03 #customer .list .table01 .table02 td{height:25px;}
+/*텝위치*/
+body.sub03 #customer div.cus01{position:absolute; left:18px; top:0px;  height:28px; }
+body.sub03 #customer div.cus02{position:absolute; left:104px; top:0px;  height:26px;  }
+
+body.sub03 #customer div.wrapper { position:absolute; top:28px; left:0; width:350px; height:430px;}
+/*링크스타일*/
+body.sub03 #customer a:link, body.sub03 #customer ul li a:visited {  color:#7b767;  }
+body.sub03 #customer a:hover, body.sub03 #customer ul li a:active { font-weight:bold;  color:#0076cb; letter-spacing:-1px; text-decoration:none;}
+
+/*검색창*/
+.sh_bar01{ background:#ffffff; border:1px solid #cfcfcf; height:20px; width:247px; }
+
+/*font*/
+.title_tt{color:#000000; font-weight:bold;}
+.tfont{color:#ffffff; font-size:11px; font-family:"돋움", Dotum, Arial, sans-serif; }
+.nfont{color:#505050;}
+.point05{color:#393939; font-weight:bold; }
+.point06{color:#8b8b8b; letter-spacing:-0.1em; line-height: 14px;}
+.t_body_f{color:#5a5a5a; font-size:11px; font-weight:bold; letter-spacing:-1px; padding-top:3px; font-weight:bold; font-family:Dotum;}
+.w_body_f01{color:#858585; font-size:11px; letter-spacing:-1px; font-family:Dotum;}
+.w_body_f02{color:#e98400; font-size:11px; letter-spacing:-1px; font-family:Dotum; font-weight:bold}
+.w_body_f03{color:#5bacda; font-size:11px; letter-spacing:-1px; font-family:Dotum;}
+.w_body_f04{color:#000000; letter-spacing:-1px; font-weight:bold; font-family:Dotum;}
+.w_body_f05{color:#858585; font-size:12px; letter-spacing:-1px; font-family:Dotum;}
+.star_f01{color:#ffffff; font-family:Dotum; font-weight:bold;}
+.star_f02{color:#7b7676; font-family:Dotum; font-weight:bold;}
+.ad_f01{color:#000000; font-family:Dotum; font-weight:bold; letter-spacing:-1px;}
+.ad_f02{color:#7b7676; font-family:Dotum; font-size:11px; }
+.ad_f03{color:#228fce; font-size:11px; font-family:Dotum; font-weight:bold;}
+
+/*padding*/
+.padding_top{padding-top:10px;}
+.padding_t20{padding-top:20px}
+.padding_t15{padding-top:15px}
+.padding_blit01{padding:0px 5px 5px 1px;}
+.padding_blit02{padding-top:4px;}
+.padding_l130{padding-left:50px;}
+.padding_l60{padding-left:60px;}
+
+/*--------------------------------------------------------------------------------------------------//2011_sub.css 내용--------------------------------------------------------------------------------------------------*/
+
+/* 2010년 7월 7일 추가 CSS ---------수강 후기 */
+.survey_t { font-size: 11px; letter-spacing:-1; color: #0076cb; }
+.survey_t2 { font-size: 11px; color: #0076cb; text-align:left; padding: 0 0 0 0; margin: 0 0 0 0; position:absolute; }
+.survey_t3 { font-size: 11px; color: #0076cb; text-align:left; padding: 0 0 0 0; margin: -5px 0 0 540px; position:absolute; }
+
+/* 서브 타이틀 라인 */
+.subtitle_bar	{background-color:#dadada; height:2px;}
+/*.title_bar	{background-color:#ae1522; height:2px;}*/
+
+.txt01 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#0076cb; text-decoration: none; font-weight: bold}
+.txt02 { padding-left:8px;}
+.txt03 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#0076cb; text-decoration: none; font-weight: bold}
+.txt04 { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 14px; color:#5e86bc; text-decoration: none;}
+
+
+/*-------------------------------------------------------------------------------------- 게시판 작업시 CSS -------------------------------------------------------------*/
+
+/* 전체서브 중앙 타이틀 클기및 색상줄(20120403 추가) */
+.subtitle1{height:30px; border-bottom:2px solid #0076cb;}
+
+/* 게시판 공통bg*/
+.ky_searchbg{height:46px;padding-bottom:10px; background:url('http://image.megacst.com/tmp_img/report/notice_bg.gif') no-repeat;}
+.ky_board_bar{background:url('http://image.megacst.com/tmp_img/report/notice_bar.gif') no-repeat center;}
+.ky_board_bg{height:32px; background:url('http://image.megacst.com/tmp_img/report/notice_table_1.gif') no-repeat;}
+.ky_board_lt1{border-top:1px solid #e6e6e6; }
+
+/* 게시판 css*/
+.ky_board_s{font-family:"돋움", Dotum, Arial, sans-serif; color:#5a5a5a; font-size:12px; font-weight:bold; letter-spacing:-1px;}
+.ky_board_view{font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#4a4a4a;line-height:180%;padding:20px 15px; margin:0;}
+.ky_board_view2{font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#4a4a4a;line-height:180%;padding:0px 0px; margin:0;}
+.ky_board_01{font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px;line-height:160%; text-decoration:none; margin:0;padding:0;}
+.ky_board_li1{background-color:#f8f8f8; border-bottom:1px solid #e6e6e6}
+.ky_board_li2{border-bottom:1px solid #e6e6e6;}
+.ky_board_t11{color:#ababab; font-size:11px; font-family:Dotum;}
+
+/* board_01s 링크폰트*/
+.ky_board_01 a:link,a:visited,a:active {color:#7e7e7e;}
+.ky_board_01 a:hover {color:#228fce;text-decoration:none;}
+
+/* 셀렉트박스 스타일*/
+.ky_box1{background:#ffffff; border:1px solid #dadada; height:18px;}
+.selectBox11 {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#7e7e7e;text-align:left;font-size:12px;border:1px solid #c9c9c9;background:#fff;vertical-align:bottom;color:#898989;url('js/selectbox.htc')}
+
+
+/*-------------------------------------------------------------------------------------// 게시판 작업시 CSS -------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------- 학력정보 CSS -------------------------------------------------------------*/
+
+.pop_title{color:#ffffff;font-family:"돋움", Dotum, Arial, sans-serif; font-size:13px;font-weight: bold;letter-spacing:-1px;line-height:140%;background:#71a3c9;text-align: center;}
+.pop_title2 {text-align:left;font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color: #000000;padding-left:20px;font-weight:bold;border-bottom-width: 2px;border-bottom-style: solid;border-bottom-color: #dadada;}
+.style01 {text-align:left;font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#7e7e7e;font-size:12px;line-height: 25px;height:30px;border-bottom:1px solid #e0e0e0;padding-left:10px;}
+.style02 {text-align:left;font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color: #7e7e7e;height:30px;padding-left:10px;background-color:#fofofo;border-bottom:1px solid #fff}
+.style03 {text-align:left;font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color: #7e7e7e;padding-left:10px;border-bottom:1px solid #e0e0e0;}
+.style04 {text-align:left;font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color: #7e7e7e;height:30px;border-bottom:1px solid #e0e0e0;padding-left:10px;}
+.se_box01 {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#7e7e7e;background:#ffffff;border:1px solid #cfcfcf;padding-right:5px;width:110px;}
+.se_box02 {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#7e7e7e;background:#ffffff;border:1px solid #cfcfcf;padding-right:5px;width:100px;}
+.se_box03 {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#7e7e7e;background:#ffffff;border:1px solid #cfcfcf;padding-right:5px;width:50px;}
+.ad_font05{font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#7e7e7e;text-align:left;font-size:12px;color:#71a3c9;font-weight:bold;}
+.selectBox1{font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#7e7e7e;text-align:left;font-size:12px;border:1px solid #c9c9c9;background:#fff;vertical-align:bottom;color:#898989;url('js/selectbox.htc')}
+
+/*-------------------------------------------------------------------------------------// 학력정보 CSS -------------------------------------------------------------*/
+
+/* GNB 스타일 추가 */
+.ky_nav_b1, .ky_nav_b2 {font-family:Verdana; font-size: 12px; color:#8a8b8e; letter-spacing:-1px; font-weight: bold; text-decoration: none; line-height:140%;}
+.ky_nav_b1 a:link, .ky_nav_b1 a:visited, .ky_nav_b1 a:active, .ky_nav_b2 a:link, .ky_nav_b2 a:visited, .ky_nav_b2 a:active {color: #8a8b8e; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_nav_b1 a:hover {color: #2ba9b7; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_nav_b2 a:hover {color: #005baa; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_nav_b3 {font-family:Verdana; font-size: 12px; color:#0059aa; letter-spacing:-1px; font-weight: bold; text-decoration: none; line-height:140%;}
+.ky_nav_b3 a:link, .ky_nav_b3 a:visited, .ky_nav_b3 a:active {color: #0059aa; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_nav_b3 a:hover {color: #2ba9b7; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_nav_b4 {font-family:Verdana; font-size: 12px; color:#2ba9b7; letter-spacing:-1px; font-weight: bold; text-decoration: none; line-height:140%;}
+.ky_nav_b4 a:link, .ky_nav_b4 a:visited, .ky_nav_b4 a:active {color: #2ba9b7; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+.ky_nav_b4 a:hover {color: #0059aa; text-decoration:none; cursor:pointer; letter-spacing:-1px}
+
+/* 20120511 추가  */
+.acad_t_bl, .acad_t_gr, .acad_t_sk, .acad_t_pu {text-decoration:none; text-align:left;display: block;letter-spacing: -1px; padding:0; margin:0;}
+.acad_t_bl a:link, .acad_t_bl a:visited, .acad_t_bl a:active, .acad_t_gr a:link, .acad_t_gr a:visited, .acad_t_gr a:active, .acad_t_sk a:link, .acad_t_sk a:visited, .acad_t_sk a:active, .acad_t_pu a:link, .acad_t_pu a:visited, .acad_t_pu a:active {text-decoration:none;letter-spacing: -1px;display: block;}
+.acad_t_bl a:hover {color:#1681c4;text-decoration:none;letter-spacing: -1px;display: block;}
+.acad_t_gr a:hover {color:#68b012;text-decoration:none;letter-spacing: -1px;display: block;}
+.acad_t_sk a:hover {color:#27a1b8;text-decoration:none;letter-spacing: -1px;display: block;}
+.acad_t_pu a:hover {color:#6440a3;text-decoration:none;letter-spacing: -1px;display: block;}
+
+/*2012 모집요강 표 스타일 (2012.04.02 추가)*/
+.m_td_top_11p {
+	font-family:"돋움", Dotum, Arial, sans-serif;
+	font-size:11px;
+	color:#8a8a8a;
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e0e0e0;
+	border-top:2px solid #e0e0e0;
+	font-weight:bold;
+	text-align:center;
+}
+.m_td_top_12p {
+	font-family:"돋움", Dotum, Arial, sans-serif;
+	font-size:12px;
+	color:#8a8a8a;
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e0e0e0;
+	border-top:2px solid #e0e0e0;
+	font-weight:bold;
+	text-align:center;
+}
+.m_td_left_12p {
+	font-family:"돋움", Dotum, Arial, sans-serif;
+	font-size:12px;
+	color:#8a8a8a;
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+	border-top:1px solid #e5e5e5;
+	font-weight:bold;
+	text-align:center;
+}
+.m_td_list {
+	border-right:1px solid #e5e5e5;
+	border-top:1px solid #e5e5e5;
+	text-align:center;
+	padding:4px 0px 4px 0px;
+	line-height:13px;
+}
+.m_td_list_left {
+	border-right:1px solid #e5e5e5;
+	border-top:1px solid #e5e5e5;
+	text-align:left;
+	padding:10px 10px 10px 10px;
+    line-height:18px;
+}
+
+
+.ky_bg_member01 {
+	background-color:#a5c5e1;
+	color:#FFFFFF;
+	padding:5px 0px 5px 10px;
+	font-weight:bold;
+}
+.ky_bg_member02 {
+	background-color:#f4f4f4;
+	border-bottom:1px solid #e6e6e6;
+	padding:5px 0 5px 10px;letter-spacing:-1;
+}
+.ky_bg_member03 {
+	border-bottom:1px solid #e6e6e6;
+	padding:5px 0 5px 10px;letter-spacing:-1;
+}
+.star_b {
+	color:#71a3c9;
+	font-weight:bold;
+	font-family:"돋움", Dotum, Arial, sans-serif;
+}
+.line_gray1{ background-color:#e6e6e6;}
+
+/* 교재 상세 페이지 */
+.tit_rbk11 {font:11px dotum, "돋움", arial;	color:#000;	letter-spacing:-1px;}
+.tit_rbk11 a:link {font:11px dotum, "돋움", arial;color:#000;text-decoration:none;font-weight:bold}
+.tit_rbk11 a:hover {color:#1681c4;}
+.tit_rbk11 a:active, tit_rbk10 a:visited {color:#000;}
+
+.tit_rbk13 {font:13px dotum, "돋움", arial;color:#000;font-weight:bold;letter-spacing:-1px;line-height:100%;}
+.tit_rbk13 a:link {font:13px dotum, "돋움", arial;	color:#000;font-weight:bold;text-decoration:none;line-height:100%}
+.tit_rbk13 a:hover {color:#1681c4;}
+.tit_rbk13 a:visited,tit_rbk13 a:active {color:#000;}
+
+.tit_rbk14 {font:14px dotum, "돋움", arial;color:#000;font-weight:bold;letter-spacing:-1px;font-weight:bold;line-height:100%}
+.tit_rbk14 a:link {font:14px dotum, "돋움", arial;	color:#000;font-weight:bold;text-decoration:none;100%}
+.tit_rbk14 a:hover {color:#1681c4;}
+.tit_rbk14 a:visited,tit_rbk14 a:active {color:#000;}
+
+.12p_skyblue {font:12px dotum, "돋움", arial;color:#009eae;font-weight:bold;}
+.12p_skyblue1 {color:#009eae;font-weight:bold;}
+.darkred_color {color:#c70000;}
+.book_box {	border-top:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf;background:#f4f4f4;}
+.book_box2 {border:1px solid #cfcfcf;padding:5px;}
+
+/*리뉴얼학원메인 CSS추가_20120919 */
+.cbtn_td{padding-top:4px; text-align:center;}
+.cps_btn a:link {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#000000;text-decoration: none;letter-spacing:-1px;}
+.cps_btn a:visited {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#000000;text-decoration: none;letter-spacing:-1px;}
+.cps_btn a:active {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;color:#000000;text-decoration: none;letter-spacing:-1px;}
+.cps_btn a:hover {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px;font-weight:bold;color:#0d79c7;text-decoration: none;letter-spacing:-1px;}
+/*리뉴얼학원메인 CSS추가_20120919 */
+
+
+/*김영적중 모의평가 학원메인 CSS추가_20120926 */
+.sm01 {font-family:"돋움", Dotum, Arial, sans-serif; color:#000;	background:#fafafa;border-bottom:1px solid #dadada; font-weight:bold; letter-spacing:-1px;}
+.sm01 a{color:#000;text-decoration:none;}
+.sm01 a:hover{color:#0076cb;text-decoration:none;}
+
+.sm02 {font-family:"돋움", Dotum, Arial, sans-serif; color:#3a3a3a; border-bottom:1px solid #ececec;letter-spacing:-1;}
+.sm02 a{color:#3a3a3a;text-decoration:none;}
+.sm02 a:hover{color:#3a3a3a;}
+
+.sm03 {font-family:"돋움", Dotum, Arial, sans-serif; ;color:#000;	background:#fafafa; font-weight:bold; letter-spacing:-1px;}
+.sm03 a{color:#000;text-decoration:none;}
+.sm03 a:hover{color:#0076cb;text-decoration:none;}
+
+.sm04 {font-family:"돋움", Dotum, Arial, sans-serif; color:#7b7d7b;	background:#fafafa;border-bottom:1px solid #dadada; letter-spacing:-1px;}
+.sm04 a{color:#000;text-decoration:none;}
+.sm04 a:hover{color:#0076cb;text-decoration:none;}
+
+.sm05 {font-family:"돋움", Dotum, Arial, sans-serif; color:#7b7d7b;	background:#fafafa; letter-spacing:-1px;}
+.sm05 a{color:#000;text-decoration:none;}
+.sm05 a:hover{color:#0076cb;text-decoration:none;}
+
+.f_y3 {font-family:"돋움", Dotum, Arial, sans-serif; color:#026dd0;letter-spacing:-1; padding:0;}
+.f_y3 a{color:#026dd0;text-align:center;}
+.f_y3 a:hover{color:#026dd0;}
+
+.f_y2 {font-family:"돋움", Dotum, Arial, sans-serif; color:#16aab8;letter-spacing:-1; padding:0;}
+.f_y2 a{color:#16aab8; text-align:center;}
+.f_y2 a:hover{color:#16aab8;}
+
+.f_y1 {font-family:"돋움", Dotum, Arial, sans-serif; color:#464675;letter-spacing:-1; padding:0;}
+.f_y1 a{color:#464675;text-align:center;}
+.f_y1 a:hover{color:#464675;}
+.sbg{background:#fbfbfb;}
+/*김영적중 모의평가 학원메인 CSS추가_20120926
+
+.login { font:12px "돋움", Arial; color:#393939; line-height:140%; letter-spacing:-1px; }
+.login a:link { font:12px "돋움", Arial;  color:#393939; line-height:140%; letter-spacing:-1px;}
+.login a:visited { font:12px "돋움", Arial;  font-size:12px; color:#393939; line-height:140%; letter-spacing:-1px}
+.login a:active { font:12px "돋움", Arial; font-size:12px; color:#393939; line-height:140%; letter-spacing:-1px}
+.login a:hover { font:12px "돋움", Arial;  font-size:12px; color:#393939; text-decoration: none; line-height:140%; letter-spacing:-1px}
+*/
+
+/* 학원 공지사항 CSS추가_2012-12-28 */
+.campus{font:12px "돋움"; color:#7e7e7e; line-height:12px; text-decoration:none; padding:0; margin:0;}
+.campus a:visited { font:12px "돋움"; color:#7e7e7e; line-height:12px; text-decoration:none; padding:0; margin:0;}
+.campus a:hover{font:12px "돋움"; color:#0d79c7; line-height:12px; text-decoration:none; font-weight:bold; padding:0; margin:0;}
+.campus a:link {font:12px "돋움"; color:#7e7e7e; line-height:12px; text-decoration:none; padding:0; margin:0;}
+.campus a:active {font:12px "돋움"; color:#7e7e7e; line-height:12px; text-decoration:none; padding:0; margin:0;}
+.campus_on{font:12px "돋움"; color:#0d79c7; line-height:12px; text-decoration:none; font-weight:bold; padding:0; margin:0;}
+/* 학원 공지사항 CSS추가_2012-12-28 */
+
+/*---------------------------------------------------------// megacst 메인 gnb 로그인 CSS (2013.01.05) -------------------------------------------------------------*/
+
+.blink {   font-size:11px; color:#a7a7a7; line-height:140%; letter-spacing:-1px}
+.blink a:link {   font-size:11px; color:#a7a7a7; line-height:140%; letter-spacing:-1px}
+.blink a:visited {   font-size:11px; color:#a7a7a7; line-height:140%; letter-spacing:-1px}
+.blink a:active {   font-size:11px; color:#a7a7a7; line-height:140%; letter-spacing:-1px}
+.blink a:hover {   font-size:11px; color:#a7a7a7; text-decoration: underline; line-height:140%; letter-spacing:-1px}
+
+
+/* GNB 공지사항 */
+.11px_hot {   font-size:11px; color:#393939; line-height:140%;}
+.11px_hot a:link {   font-size:11px; color:#393939; line-height:140%; }
+.11px_hot a:visited {   font-size:11px; color:#393939; line-height:140%; }
+.11px_hot a:active {   font-size:11px; color:#393939; line-height:140%;}
+.11px_hot a:hover {   font-size:11px; color:#393939; text-decoration: none; line-height:140%;}
+
+.11px_hot1 {   font-size:11px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em; }
+.11px_hot1 a:link {   font-size:11px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em;}
+.11px_hot1 a:visited {   font-size:11px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em;}
+.11px_hot1 a:active {   font-size:11px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em;}
+.11px_hot1 a:hover {   font-size:11px; color:#b8cbe8; text-decoration: none; line-height:140%; letter-spacing:-0.1em;}
+
+/* GNB 개인정보 로그인시 */
+.12px_name {font:12px dotum, "돋움", arial;color:#ffffff; letter-spacing:-0.1em; font-weight:none;}
+
+.12px_my {   font-size:12px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em; }
+.12px_my a:link {   font-size:12px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em;}
+.12px_my a:visited {   font-size:12px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em;}
+.12px_my a:active {   font-size:12px; color:#b8cbe8; line-height:140%; letter-spacing:-0.1em;}
+.12px_my a:hover {   font-size:12px; color:#b8cbe8; text-decoration: underline; line-height:140%; letter-spacing:-0.1em;}
+
+/* GNB 로그인input */
+/*.id_blur1 { background: transparent url(http://img.megaut.com/ut_new/img/m_gnb/id_back.gif) no-repeat; width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #0a2b5e; padding:5px;}
+.id_focus1 { width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #c4c4c4; padding:5px; }
+.pw_blur1 { background: transparent url(http://img.megaut.com/ut_new/img/m_gnb/pw_back.gif) no-repeat; width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #0a2b5e; padding:5px; }
+.pw_focus1 { width:100px; height:22px; font-family:"dotum","돋움", "arial";font-size:11px;color:#8f8f8f; HEIGHT: 22px; border: 1px solid #c4c4c4; padding:5px;}*/
+
+
+.bt1_img {padding:0 3px 0 0;}
+.bt2_img {padding:0 27px 0 0;}
+
+
+/*---------------------------------------------------------// megacst 메인 이벤트 댓글 CSS (2013.01.05) -------------------------------------------------------------*/
+
+.event_txt01 { font-family:"돋움", Dotum, Arial, sans-serif;line-height:140%; font-size: 12px; color:#b6b6b6; text-decoration: none;}
+
+/* 단과개강안내 팝업 css */
+.sc_12p{color:#ffffff;font-family:"돋움", Dotum, Arial, sans-serif; font-size:12px;letter-spacing:-1px;line-height:140%;}
+
+
+/* 마이페이지 다운로드 기능개선 */
+.ly_box{position:absolute; right:0px; top:20px; border:5px solid #cdcdcd; width:415px; height:295px; background-color:#fff; text-align:left; letter-spacing:-1px; padding:20px; }
+.ly_box p{color:#4186d3; font-weight:bold; text-decoration:underline;padding:0 0 20px 0; margin:0px;}
+.ly_box em{font-style:normal; color:#4186d3;}
+.ly_box a{position:absolute; right:10px; top:10px;}
+
+/* 강좌 상세 페이지 */
+.cst_16p_tit2 { font-family:dotum,"돋움", arial; font-size: 16px; color:#000000; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.cst_14p_tit { font-family:dotum,"돋움", arial; font-size: 14px; color:#1c85be; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.cst_14p_tit2 { font-family:dotum,"돋움", arial; font-size: 14px; color:#000000; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.cst_14p_tit3 { font-family:dotum,"돋움", arial; font-size: 14px; color:#954312; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.cst_12p_orange {font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#527dbf; font-weight: bold; text-decoration: none; letter-spacing:-1px; line-height:140%;}
+.cst_12p_orange2 { font-family:gulim,"굴림", arial; font-size: 12px; color:#296bb5; font-weight: bold; text-decoration: none; line-height:140%;}
+.cst_12p_lec { font-family:"돋움", Dotum, Arial, sans-serif; font-size: 12px; color:#636162; font-weight: bold; text-decoration: line-through; line-height:140%;}
+.cst_12p_lec1 {font-family:"돋움", Dotum, Arial, sans-serif;  font-size: 12px; color:#858585; text-decoration: none; line-height:140%;}
+
+
+/*---------------------------------------------------------// 합격생 선생님 수강후기 CSS (2015.06.02) -------------------------------------------------------------*/
+.txt_winyear1{color:#1d94c3;}
+.txt_winyear2{color:#5c8f1a;}
+.txt_winyear3{color:#0e917d;}
+.txt_winyear4{color:#7a5ce9;}
+.ky_board_new tr td{padding-top:10px; padding-bottom:10px;}
+.tablepd td{padding-top:10px; padding-bottom:10px;}
+.txt_subject1{color:#333;}
+.inpset{height:18px; margin-right:5px; width:100px;}
+.tablepd5 tr td{padding-top:5px; padding-bottom:5px;}
+
+/*-----------------------------// 수강인증팝업추가 css 20150605-----------------------------*/
+
+/* 01학원소개 > 교수소개 > 약력소개 팝업*/
+.popup.sugang .popwrap01{background-color:#fff;}
+.popup.sugang .pop_head {position:relative; width:auto; height:50px; line-height:50px; padding:0 30px;  background-color:#3c4356;}
+.popup.sugang .pop_head .pop_tit { display:inline-block;  font-size:16px; font-weight:bold; color:#fff; font-family: Malgun Gothic,'맑은 고딕',Helvetica,AppleGothic,dotum,'돋움',sans-serif; margin-top:-3px;}
+.popup.sugang .pop_head .btn_popclose{position:absolute; right:20px; top:14px; width:22px; height:22px;}
+.popup.sugang .pop_conwrap {padding:30px 30px; text-align:center;}
+.popup.sugang .pop_con{width:100%; text-align:left; margin:0 auto; background-color:#fff;}
+.popup.sugang .pop_con .ti_sel{display:block; color:#333; font-size:14px; margin-bottom:10px;}
+
+/* 테이블탭 테이블로이루어진탭*/
+.popup.sugang .tab_synew{border-collapse:collapse; border-spacing:0; border-bottom:2px solid #0074c7; margin:0 0 20px 0;}
+.popup.sugang .tab_synew *{margin:0; padding:0;}
+.popup.sugang .tab_synew td{text-align:center; }
+.popup.sugang .tab_synew td span{display:block;}
+.popup.sugang .tab_synew td span.last{border-right:1px solid #ccc;}
+.popup.sugang .tab_synew td span a{display:block; line-height:14px; font-weight:bold;}
+.popup.sugang .tab_synew td span.line1 a{display:block; background-color:#fff; height:18px; padding:12px 8px 8px 8px; color:#666;  border-top:1px solid #ccc;  border-left:1px solid #ccc;}
+.popup.sugang .tab_synew td span.line1 a:hover,.popup.sugang  .tab_synew td span.line1 a.on {display:block; background-color:#0074c7; height:18px; padding:12px 8px 8px 8px; color:#fff; border-top:1px solid #0074c7;  border-left:1px solid #0074c7;}
+
+/* 수강확인 증명서 기본보더 테이블*/
+.basic_board{width:100%; margin:0; padding:0; color:#7e7e7; border-collapse:collapse;  border-top:1px solid #dddddd; border-left:1px solid #e6e6e6;}
+.basic_board th{text-align:center; letter-spacing:-1px; padding:5px; border-right:1px solid #e6e6e6; border-bottom:1px solid #dddddd; font-size:12px; font-weight:bold; background-color:#fafafa; font-weight:bold;}
+.basic_board td{text-align:left; letter-spacing:-1px; padding:5px; border-right:1px solid #e6e6e6; border-bottom:1px solid #dddddd; font-size:12px;}
+.basic_board.sugang_board1{border-top:2px solid #dddddd; }
+.basic_board.sugang_board1 th, .basic_board.sugang_board1 td{color:#333;}
+.basic_board.sugang_board1 .last th, .basic_board.sugang_board1 .last td{border-bottom:none; }
+
+/* my페이지 쪽지함 20150716_테이블*/
+.memolist_table a{color:#7e7e7e;}
+.memolist_table a:hover{color:#0076d4;}
+.memolist_table a .memolist_subject {font-weight:bold;}
+.memolist_table a .memolist_subject font{color:#5e43ab;font-weight:bold; }
+.memolist_table a:hover .memolist_subject {color:#0076d4; font-weight:bold;}
+.memolist_table a:hover .memolist_subject font {color:#0076d4; font-weight:bold;}
+
+/* 151030_강좌리스트 아이콘 신청 txt 수정 */
+.leclist_btn_play{padding:2px 0 2px 0; display:block; }
+.leclist_btn_play a img{width:56px; height:15px; vertical-align:top;}
+.check_sell{font-size:11px; letter-spacing:-1px; color:#666; line-height:14px; padding:0 2px 0 0;}
+.check_sell p{padding:1px 0; }
+.check_sell p span{margin:0; padding:0;}
+.val2px{vertical-align:2px; *vertical-align:1px;}
+
+/* 151117_강좌리스트 아이콘 신청 txt 수정_승진사이트 인강리스트 표준모드*/
+.check_sell_promotion{font-size:11px; letter-spacing:-1px; color:#666; line-height:14px; padding:0 5px 0 0;}
+.check_sell_promotion p{padding:2px 0;}
+.check_sell_promotion p span{margin-right:5px; _margin-right:0px;}
+.check_sell_promotion .val2px{vertical-align:-2px;}
+
+
+/*-----------------------------// 151204_플레이어스킨 -----------------------------*/
+.player_r_wrap{scrollbar-face-color:#666666;
+  scrollbar-3dlight-color:#383838;
+  scrollbar-highlight-color:#a8a8a8;
+  scrollbar-shadow-color:#a8a8a8;
+  scrollbar-darkshadow-color:#000000;
+  scrollbar-arrow-color:#fffff;
+  scrollbar-track-color:#383838; }
+/* 플레이어스킨 왼쪽*/
+/*.player_l_wrap{background:#2d2d2f; width:100%; height:100%;}
+.player_l_lecinfo {border:1px solid red;  border:1px solid #191919; background:#232325;}
+.player_l_lecinfo tr td{height:30px; line-height:18px; padding:0 10px 0 10px; text-align:left;color:#999; border-bottom:1px solid #191919;line-height:18px; word-break:keep-all; letter-spacing:}
+.player_l_lecinfo tr td .lectitle{color:#ccc; font-weight:bold;}
+.player_l_lecinfo tr.last td{border-bottom:none; background:url(http://img.megacst.com/player/2015_newskin/bg_lecinfo.gif) left top repeat-x;}*/
+
+/* 플레이어스킨 오른쪽*/
+/* 02_01강의목차*/
+.player_r_wrap {background:#2d2d2f; width:100%; height:100%; min-height:650px; }
+.player_r_wrap img{vertical-align:top;}
+.player_r_wrap .ut_11p_g2{font:11px ;color:#cccccc; line-height:16px;}
+.player_r_wrap .ut_12p_g2{font:12px ;color:#cccccc;}
+.player_r_wrap .ut_12p_b4{font-size:12px; color:#22d8ff;}
+.player_r_wrap .txt_title{font-size:12px; color:#fff;}
+.player_r_wrap .play_checkbox{vertical-align:-2px;}
+.player_r_wrap .column_play_r{width:240px; height:100%; vertical-align:top;}
+.player_r_wrap .column_play_r .playcont_r_bnr{padding-bottom:10px; height:32px; vertical-align:top;}
+.player_r_wrap .column_play_r .playcont_r_top{height:40px; }
+.player_r_wrap .column_play_r .playcont_r_bottom{height:15px;}
+
+/* 탭내용시작*/
+.player_r_wrap .column_play_r .column_playcont {background-color:#232325; border:1px solid #191919; border-top:none;  padding:14px 10px 10px 10px;}
+.player_r_wrap .column_play_r .column_playcont .player_basicboard{color:#ccc; background-color:#232325; border:1px solid #505050; border-right:none; border-bottom:none;}
+.player_r_wrap .column_play_r .column_playcont .player_basicboard tr th {padding:4px 5px 1px 5px; border-right:1px solid #505050; border-bottom:1px solid #505050; background-color:#323232;  text-align:center; font-size:11px;  color:#ccc; font-weight:normal;}
+.player_r_wrap .column_play_r .column_playcont .player_basicboard tr td {padding:4px 5px 1px 5px; line-height:16px; border-right:1px solid #505050; border-bottom:1px solid #505050;  font-size:11px;  color:#ccc; font-weight:normal;}
+.player_r_wrap .column_play_r .column_playcont .player_basicboard tr th a{color:#ccc;}
+.player_r_wrap .column_play_r .column_playcont .player_basicboard .select{border:1px solid #666; font-size:11px; color:#333; box-sizing:content-box; font-size:11px; font-family:"돋움",Dotum;}
+.player_r_wrap .column_play_r .column_playcont .player_basicboard .s_input{border:1px solid #666666; background:#191919; height:17px; _height:19px; color:#ccc; box-sizing:content-box;font-size:12px; font-family:"돋움",Dotum;}
+.player_r_wrap .column_play_r .column_playcont .player_basicboard .textarea_2{border:none; background:#191919; color:#ccc; box-sizing:content-box; font-size:12px; font-family:"돋움",Dotum;}
+
+/* 다음 검색*/
+.player_r_wrap .column_play_r .daumsearch_wrap{border:1px solid #191919; background:#323234;}
+.player_r_wrap .column_play_r .daumsearch_wrap .select {border:1px solid #141414; background:#ffffff; height:15px; _height:17px; color:#333; box-sizing:content-box; font-size:11px; font-family:"돋움",Dotum; }
+.player_r_wrap .column_play_r .daumsearch_wrap .s_input{border:1px solid #141414; background:#222222; height:15px; _height:17px; color:#ccc; box-sizing:content-box;font-size:11px; font-family:"돋움",Dotum; }
+
+/* 02_03알파브레인*/
+.player_r_wrap .column_play_r .column_playcont .abrain_board{background:#1e1e21; height:25px;}
+.player_r_wrap .column_play_r .column_playcont .abrain_board .s_input{border:1px solid #666666; background:#191919; height:13px; _height:15px; color:#ccc; box-sizing:content-box;font-size:12px; font-family:"돋움",Dotum;}

@@ -1,0 +1,299 @@
+@charset "euc-kr";
+
+/* 메인 css 작성 */
+*, *:before, *:after{box-sizing:border-box;}
+.mo-view{display:none;}
+
+/* 메인 공통 영역 */
+.main-wrp h3{position: relative;font-size: 20px;font-family: 'Noto Sans KR', sans-serif;font-weight: 600;}
+.main-wrp h3 i{margin-left:10px;vertical-align: text-bottom;}
+.main-wrp h3 i a{display: inline-block;}
+.main-wrp section{position: relative;margin-bottom: 50px; overflow: hidden; /*border-bottom:1px dashed rgb(231, 12, 12);background: rgba(165, 148, 243, 0.226);*/}
+.main-wrp section:first-of-type{margin-bottom: 33px;}
+.main-wrp section .contents-wrp{position: relative;color: #333;width: 1200px;margin: 0 auto;}
+
+/* 상단 비디오, 시험일정 영역 */
+.main-season .gong{color : #0c998d;}
+.main-season .sobang{color : #990c0c;}
+.main-season .army{color : #21c056;}
+.main-season .season-wrp{/*display: flex;flex-direction:row-reverse;*/position: relative;padding-top: 17px;}
+.main-season .video-wrp{width: 65.9%;overflow: inherit;}
+.main-season .video-slider .slick-slide{position: relative;}
+.main-season .video-slider .slick-slide a{display: block;}
+.main-season .video-slider .slick-slide:hover img{filter: brightness(.42);}
+.main-season .video-slider .slick-slide a::before{content: '';display: block; position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); background: url(https://img.megagong.net/lab/common/vd_btn_off.png) no-repeat center;width: 100px;height: 100px;z-index: 2;}
+.main-season .video-slider .slick-slide:hover a::before{background: url(https://img.megagong.net/lab/common/vd_btn_on.png) no-repeat center;}
+.main-season .video-slider .slick-dots{position: absolute;top: -17px;right: 0;} 
+.main-season .video-slider .slick-dots li{display: inline-block; width: 7px;height: 7px;border-radius: 50%;background: #b1b1b1; margin-right: 3px;} 
+.main-season .video-slider .slick-dots li.slick-active{background: #333;} 
+.main-season .video-slider .slick-dots li button{font-size:0;}
+
+.main-season .schedule-wrp{position:absolute;margin-left: 30px;width: calc(34.1% - 30px);background: #f5f5f5;padding: 40px;right: 0; top: 17px;bottom: 0;}
+/* .main-season .schedule-wrp::before{content: '';display: block;position: absolute;right: -45px;bottom: -45px;border-top: 45px solid transparent;border-bottom:  45px solid transparent;border-right: 45px solid transparent;border-left: 45px solid #d4b071;transform: rotate(45deg);} */
+.main-season .schedule-wrp h3{padding-bottom: 20px;margin-bottom: 28px; border-bottom: 1px solid #d0d0d0;font-family: 'Noto Sans KR', sans-serif;}
+.main-season .schedule-wrp ul li {font-size: 15px;margin-bottom: 29px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 100%;}
+.main-season .schedule-wrp ul li:last-child{margin-bottom:0;}
+.main-season .schedule-wrp ul li b{display: block;margin-bottom: 10px;}
+.main-season .schedule-wrp ul li i{font-size: 11px;color: #fff;font-style: normal;border-radius: 30px;padding: 1px 10px;margin-left: 10px;background: #000;}
+.main-season .schedule-wrp ul li span{color:#777;}
+/* .main-season .schedule-wrp .o-scrollbar{overflow:hidden;width: 100%;height: 319px;} */
+.main-season .schedule-wrp .o-scrollbar{height:calc(100% - 50px);}
+.main-season .schedule-wrp .o-scrollbar .mCSB_scrollTools{opacity:1 !important;width:4px;}
+.main-season .schedule-wrp .o-scrollbar .mCSB_scrollTools .mCSB_draggerContainer{background: #fff;}
+.main-season .schedule-wrp .o-scrollbar .mCSB_container{width:100%;}
+.main-season .schedule-wrp .o-scrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:4px;}
+.main-season .schedule-wrp .o-scrollbar .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical{margin: -27px 0 0;right: -30px;} 
+.main-season .schedule-wrp .o-scrollbar .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.main-season .schedule-wrp .o-scrollbar .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.main-season .schedule-wrp .o-scrollbar .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{background-color: #777;border-radius: 0;}
+
+.main-season .banner-wrp{position: relative;margin-left: 30px;width: calc(34.1% - 30px);}
+.main-season .banner-wrp li a{display: block;overflow: hidden;}
+.main-season .banner-wrp li + li{margin-top: 30px;}
+
+/* 기획전 배너 */
+.main-exhibi .exhibi-wrp{padding-top: 17px;}
+.main-exhibi .exhibi-slider img{width: 100%;}
+.main-exhibi .exhibi-slider .slick-dots{position: absolute;top: -17px;right: 0;} 
+.main-exhibi .exhibi-slider .slick-dots li{display: inline-block; width: 7px;height: 7px;border-radius: 50%;background: #b1b1b1; margin-right: 3px;} 
+.main-exhibi .exhibi-slider .slick-dots li.slick-active{background: #333;} 
+.main-exhibi .exhibi-slider .slick-dots li button{font-size:0;}
+
+/* 난공티비 영역 */
+.main-ngtv{padding: 50px 0 60px;background-color: #f5f5f5;}
+.main-ngtv::after{content: '';display: block;position: absolute;top: 0;margin-right: -675px;right: 50%;background: url(https://img.megagong.net/lab/common/bg_nangong.png) no-repeat center;width: 340px;height: 340px;}
+.main-ngtv .nangong-wrp{position: relative;}
+.main-ngtv h3{font-size: 23px;color: #1947ba;padding: 5px 0 5px 046px;margin-bottom: 20px;}
+.main-ngtv h3::before{content: '';display: block;position: absolute;top: 50%;transform: translateY(-50%);left: 0;background: url(https://img.megagong.net/lab/common/logo_nangong.png) no-repeat center; width: 37px;height: 37px;}
+.main-ngtv h3 a{background: #d52020;color: #fff;font-size: 11px;font-style: normal;border-radius: 30px;padding: 3px 10px;}
+.main-ngtv h3 a span{padding-right: 11px;display: block;position: relative;font-family: '맑은 고딕','Malgun Gothic','돋움','Dotum',sans-serif;}
+.main-ngtv h3 a span:before{content: '';display: block;position: absolute;right: 0;top: 50%;transform: translateY(-50%);background: url(https://img.megagong.net/lab/common/arr_subscript.png) no-repeat center;width: 8px;height: 6px;}
+.main-ngtv h3 i{margin-bottom: 6px;display: inline-block;}
+.main-ngtv h4{font-size: 15px;color: #777;position: absolute;right: 10px;width: 700px;font-weight: 600;z-index: 3;/* border-left: 1px solid; */}
+.main-ngtv h4 b{display: block;font-size: 21px;margin-bottom: 7px;padding-bottom: 2px;color: #333;}
+.main-ngtv h4 b span{color: #1947ba;border-bottom: 1px solid #1947ba;}
+.main-ngtv h4 i{font-style: normal;margin-left: 7px;vertical-align: text-bottom;}
+.main-ngtv h4 i a{display: inline-block;font-size: 11px;font-style: normal;border-radius: 30px;padding: 3px 10px;border: 1px solid #777;}
+
+.main-ngtv .slick-slide{position: relative;}
+.main-ngtv .slick-slide::before{content: '';display: block;background: url(https://img.megagong.net/lab/common/vd_btn_nangong.png) no-repeat center;width: 78px;height: 78px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.main-ngtv .ngtv-arrows{display: flex;position: absolute;right: 0;top: 0;width: 40px;border: 1px solid #d0d0d0;background: #fff;z-index: 3;}
+.main-ngtv .ngtv-arrows::before{content: '';display: block;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);width: 1px;height: 10px;background: #d0d0d0;}
+.main-ngtv .ngtv-arrows a{display: block;width: 50%;text-align: center;padding: 5px 0 1px;}
+.main-ngtv .ngtv-slider-wrap{position: relative;z-index: 2;}
+/* 난공티비 좌측 슬라이더 */
+.ngl-slider{width:460px;}
+.ngl-slider img{width:100%;}
+
+/* 난공티비 우측 슬라이더 */
+.main-ngtv .ngr-slider-wrap{width:710px;overflow:hidden;position:absolute;right:0;bottom:0;}
+.main-ngtv .ngr-slider{position:relative;left:-385px;}
+.main-ngtv .ngr-slider .slick-list{overflow:inherit;}
+.main-ngtv .ngr-slider .slick-slide{width:370px;}
+.main-ngtv .ngr-slider .slick-slide > div{padding:0 15px;}
+.main-ngtv .ngr-slider img{width:100%;}
+
+/* 난공티비 팝업 */
+.main-wrp .ngtv_pop{z-index: 102;position: fixed;}
+.main-wrp .ngtv_pop .contentBox{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);z-index: 3;width: 1080px;}
+.main-wrp .ngtv_pop .contentBox .vdo_wrap{position: relative;z-index: 1;cursor: pointer;padding-bottom: 56%;background: #222;overflow: hidden;}
+.main-wrp .ngtv_pop .contentBox .vdo_wrap .vdo{width: 100% !important;height: 100% !important;position: absolute;width: 100%;height: 100%;}
+.main-wrp .ngtv_pop .contentBox iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.main-wrp .ngtv_pop .dimBg{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.5;}
+.main-wrp .ngtv_pop .contentBox .btnClose{position:absolute;background: #000;top: -37px;right: 0px;padding: 6px;width: 34px;height: 34px;box-sizing: border-box;}
+.main-wrp .ngtv_pop .contentBox .btnToday{top: -27px;right: 26px;padding:0 15px;height: 24px;line-height: 24px;background: #444;}
+
+
+/* 힙격분석 컬럼 & 수험가이드 영역 */
+.main-colguide > div{display: flex;}
+.main-colguide > div h3{margin-bottom: 20px;}
+.main-colguide .column-wrp{width: 65.8333%;overflow: hidden;}
+.main-colguide .column-wrp .slick-list{margin-right: -30px;}
+.main-colguide .column-wrp .slick-slide{margin-right: 30px;}
+.main-colguide .guide-wrp{margin-left: 30px;width: calc(34.1667% - 30px);}
+.main-colguide .guide-wrp li{position: relative;width: 100%;background: #f5f5f5;;height: 90px;}
+.main-colguide .guide-wrp li a{display: block;padding: 35px 30px}
+.main-colguide .guide-wrp li::before{content: '';display: block;position: absolute;background: url(https://img.megagong.net/lab/common/bn_arrow1.png) no-repeat center;right: 30px;bottom: 20px;width: 41px;height: 7px;}
+.main-colguide .guide-wrp li span{position: relative;padding-left: 80px;font-size: 17px;display: block;}
+.main-colguide .guide-wrp li span::before{content: '';display: block;position: absolute; background: url(https://img.megagong.net/lab/common/icn_note.png) no-repeat center; left: 0;top: 50%;transform: translateY(-50%); width: 59px;height: 59px;}
+.main-colguide .guide-wrp li + li{margin-top: 20px;}
+.main-colguide .guide-wrp li + li span::before{content: '';display: block;position: absolute; background: url(https://img.megagong.net/lab/common/icn_star.png) no-repeat center; left: 0;top: 50%;transform: translateY(-50%); width: 59px;height: 59px;}
+
+
+/* 전지적 직렬탐구 시점 */
+.main-serial .tit-box{display: flex;margin-bottom: 20px;}
+.main-serial .btns{margin-left: 15px;}
+.main-serial .btns li{float: left;}
+.main-serial .btns li + li{margin-left: 4px;}
+.main-serial .btns li a{font-size: 12px;display: block;padding: 5px 9px;border: 1px solid #d0d0d0;color: #222;}
+.main-serial .btns li a.on{border-color: #777;}
+.main-serial .serial-slider .slick-list {margin-right: -30px;}
+.main-serial .serial-slider .slick-slide{margin-right: 30px;}
+.main-serial .serial-slider img{display: inline-block;width: 100%;}
+.main-serial .serial-arrows{display: flex;position: absolute;right: 0;top: 0;width: 40px;border: 1px solid #d0d0d0;background: #fff;z-index: 3;}
+.main-serial .serial-arrows::before{content: '';display: block;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);width: 1px;height: 10px;background: #d0d0d0;}
+.main-serial .serial-arrows a{display: block;width: 50%;text-align: center;padding: 5px 0 1px;}
+
+/* 시험공고 & 수험뉴스 */
+.main-newsinfo{background: #f5f5f5;padding: 50px 0 60px;}
+.main-newsinfo .contents-wrp{display: flex;justify-content: space-between;}
+.main-newsinfo .news-wrp{width: 48.75%;}
+.main-newsinfo .tit-box{display: flex;justify-content: space-between;margin-bottom: 20px;}
+.main-newsinfo .tit-box ul{display: flex;}
+.main-newsinfo .tit-box ul li:first-child a::before{content: '';display: block;position: absolute; background: #333; width: 1px;height: 9px; right: 0;top: 50%;transform: translateY(-50%);}
+.main-newsinfo .tit-box ul li a{padding-right: 20px;position: relative;color: #b1b1b1;font-size: 20px;font-weight: 600;font-family: 'Noto Sans KR', sans-serif;}
+.main-newsinfo .tit-box ul li + li a{padding-left: 20px;}
+.main-newsinfo .tit-box ul li + li a::before{content: none;}
+.main-newsinfo .tit-box ul li.on a{color: #333;}
+.main-newsinfo .news-wrp .news-list{background: #fff;padding: 41px 30px 44px;}
+.main-newsinfo .news-wrp .news-list li{margin-bottom: 15px;/* border: 1px solid; */}
+.main-newsinfo .news-wrp .news-list li:last-child{margin-bottom:0}
+.main-newsinfo .news-wrp .news-list li a{display: flex;justify-content: space-between;}
+.main-newsinfo .news-wrp .news-list li a i{font-style: normal;border: 1px solid #000;padding: 2px 4px;font-size: 11px;}
+.main-newsinfo .news-wrp .news-list li a p{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 71.42%;font-size: 13px;margin-top: 2px;}
+.main-newsinfo .news-wrp .news-list li a p:hover{font-weight: 600;border-bottom: 1px solid #000;}
+.main-newsinfo .news-wrp .news-list li a span{color: #b1b1b1;font-size: 13px;}
+.main-newsinfo .bnr-wrp{margin: 40px 0 0 30px;width: calc(51.25% - 30px);}
+.main-newsinfo .bnr-wrp li a{display: block;overflow: hidden;}
+.main-newsinfo .bnr-wrp li + li{margin-top: 20px;}
+
+
+/* 기존 공무원 사이트의 css를 수정하는 부분들... */
+.contents-wrp{width:1200px;margin: 0 auto;}
+.subcont_wrp{padding: 0 !important;}
+/* #mContainer #mLnb{display: none !important;} */
+#mContainer.wideC #mContent{width: 1200px;padding: 0;}
+#footer{border-top: none}
+@media screen and (max-width: 1400px){
+    .main-ngtv::after{content: none;}
+}
+@media screen and (max-width: 1200px){
+    .main-wrp{width: 100%;padding: 0 20px;}
+    .main-wrp h3,.main-newsinfo .tit-box ul li a{font-size: 18px;}
+    .main-wrp section .contents-wrp{width: 100%;padding: 0;}
+    
+    .main-season .video-wrp{width: 60%;}
+    .main-season .video-wrp img{width: 100%;}
+    .main-season .video-slider .slick-slide a::before{background-size: contain;width: 25%;height: 25%;}
+    .main-season .schedule-wrp{width: 39%;padding:30px 20px 10px;margin-left: 1%;}
+    .main-season .schedule-wrp h3{padding-bottom: 10px;margin-bottom: 14px;}
+    .main-season .schedule-wrp ul li{margin-bottom: 15px;font-size: 14px;}
+    /* .main-season .schedule-wrp .o-scrollbar{overflow-y: auto;height: 265px;} */
+    .main-season .schedule-wrp .o-scrollbar .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical{margin: 0;right: 0;} 
+    
+    .main-season .banner-wrp{width: 39%;margin-left: 1%;}
+    .main-season .banner-wrp li img{margin: -3% 0 -12%;width: 100%;}
+    .main-season .banner-wrp li + li{margin-top: 6%;}
+
+    .main-ngtv{padding: 50px 0;background: transparent;}
+    .main-ngtv .nangong-wrp {position: relative;margin-bottom: 20px;font-size: 14px;right: auto;}
+    .main-ngtv h3{margin-bottom: 10px;}
+    .main-ngtv h4{position: relative;right: auto;margin-bottom: 20px;font-size: 13px;}
+    .main-ngtv h4 b{padding-bottom: 0;font-size: 18px;}
+    .main-ngtv h4 i a{padding: 1px 10px;vertical-align: sub;}
+    .main-ngtv .ngl-slider{width:40%;}
+    .main-ngtv .ngr-slider-wrap{width:59%;}
+    .main-ngtv .ngr-slider{left:-29.2vw;}
+    .main-ngtv .ngr-slider .slick-slide{width:29vw;}
+    .main-ngtv .ngr-slider .slick-slide > div{padding:0 2%;}
+    .main-ngtv .slick-slide::before{background-size: contain;width: 35%;height: 35%;}
+
+    .main-colguide .guide-wrp li {height: 100%;}
+    .main-colguide .guide-wrp li a{padding: 9.7% 6%;}
+    
+    .main-wrp .ngtv_pop .contentBox{width: 70%;}
+    .main-wrp .ngtv_pop .contentBox iframe{width: 100% !important;}
+
+    .main-newsinfo{padding: 50px 0;background: transparent;}
+    .main-newsinfo .news-wrp{width: 50%;}
+    .main-newsinfo .news-wrp .news-list{background: #f5f5f5;overflow: hidden;padding: 30px;}
+    .main-newsinfo .news-wrp .news-list li a p{width:65%}
+    .main-newsinfo .bnr-wrp{width: 49%;margin: 38px 0 0 1%;overflow: hidden;}
+
+
+    .contents-wrp{width: 100%;padding:0 20px;}
+}
+@media screen and (max-width: 1024px){
+    /* .main-season .schedule-wrp .o-scrollbar{height: 180px;} */
+    
+    .main-colguide .column-wrp{width: 50%;}
+    .main-colguide .column-wrp img{width: 100%;display: inline-block;}
+    .main-colguide .guide-wrp{margin-left: 1%;width: 49%;}
+    .main-newsinfo .bnr-wrp{margin-top: 40px;}
+    .main-newsinfo .bnr-wrp li img{width: 160%;max-width: 160%;margin: -10px 0;}
+}
+@media screen and (max-width: 768px){
+    .main-wrp{padding:0 10px;}
+    .main-wrp section{margin-bottom: 30px;}
+    .main-wrp h3,.main-newsinfo .tit-box ul li a{font-size: 16px;margin-bottom: 10px;}
+    .slick-slide .pc-view,.pc-view{display:none;}
+    .mo-view{display:block;}
+    .slick-slide .mo-view{display:inline-block;}
+    
+    .main-season{display: block;padding-top: 0;}
+    .main-season .season-wrp{display: block;flex-direction: initial;padding-top: 0;}
+    .main-season .video-wrp{width: 100%;}
+
+    .main-season .schedule-wrp{width: 100%;padding: 0;margin: 0 0 30px;position: relative;right: auto;top: auto;}
+    .main-season .schedule-wrp::before{content: none;}
+    .main-season .mo-view{width: 100%;background: #f5f5f5;padding: 10px 15px;}
+    .main-season .mo-view .slick-slider{position: relative;}
+    .main-season .mo-view .slick-slide {font-size: 15px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+    .main-season .mo-view .slick-slide i{font-size: 11px;color: #fff;font-style: normal;border-radius: 30px;padding: 3px 10px;margin-left: 10px;background: #000;display: inline-block;}
+    .main-season .mo-view .slick-slide span{font-size: 15px;color: #777;padding-left: 3px;}
+    .main-season .mo-view .btn{position: absolute;top: 0;right: 0;display: block;width: 100%;height: 39px/*;background: #8f3d3d5c;*/}
+    .main-season .mo-view .btn span{position: absolute;right: 20px;top: 50%;transform: translateY(-50%);font-size: 0;background: url(https://img.megagong.net/lab/common/arr_down.png) no-repeat center;width: 8px;height: 4px;}
+    .main-season .mo-view .btn.on span{transform: rotate(180deg);top: 40%;}
+    .main-season .pc-view.o-scrollbar.on{display: block;height: 155px;background: #fff;position: absolute !important;z-index: 3;top: 39px;left: 0;overflow-y: scroll;width:100%;}
+    .main-season .pc-view ul li{padding: 10px 15px;margin-bottom: 0;border-bottom: 1px solid #f8f8f8;}
+    .main-season .pc-view ul li b{margin-bottom: 5px;display: inline-block;}
+    
+    .main-colguide .column-wrp{width: 100%;}
+    .main-colguide .column-wrp .slick-list{margin-right: -3%;}
+    .main-colguide .column-wrp .slick-slide{margin-right: 3%;}
+    
+    .main-ngtv{background: #fff;padding: 0;}
+    .main-ngtv h3{padding-left: 30px;}
+    .main-ngtv h3 i,.main-ngtv h4{display: none;}
+    .main-ngtv h3::before{background: url(https://img.megagong.net/lab/common/logomo_nangong.png) no-repeat center; width: 25px;height: 25px;}
+    .main-ngtv .ngtv-slider,
+    .main-ngtv .ngtv-arrows{display: none;}
+
+    .main-ngtv .ngl-slider{display:none;}
+    .main-ngtv .ngr-slider-wrap{width:100%;position: relative;}
+    .main-ngtv .ngr-slider{left:0;}
+    .main-ngtv .ngr-slider .slick-slide{width:39.3vw;}
+    .main-ngtv .ngr-slider .slick-slide > div{padding:0 1.5%;}
+    
+    .main-wrp .ngtv_pop{z-index: 100;}
+    .main-wrp .ngtv_pop .contentBox{width: 90%;}
+
+    .main-colguide > div h3{margin-bottom: 10px;}
+    .main-colguide > div h3 i{display: none;}
+
+    .main-serial .serial-wrp{padding-top: 10px;}
+    .main-serial .tit-box{margin-bottom: 10px;}
+    .main-serial .btns{margin: -10px 0 0 10px;}
+    .main-serial .btns li a{padding: 6px 10px;}
+    .main-serial .serial-arrows{display: none;}
+    .main-serial .serial-slider .slick-list {margin-right: -10px;}
+    .main-serial .serial-slider .slick-slide{margin-right: 10px;}
+    .main-serial .serial-slider .slick-dots{margin-top: 20px;} 
+    .main-serial .serial-slider .slick-dots li{display: inline-block; height: 6px;background: #f5f5f5;/*width: 14.28%;*/} 
+    .main-serial .serial-slider .slick-dots li.slick-active{background: #777;} 
+    .main-serial .serial-slider .slick-dots li button{font-size:0;}
+ 
+    .main-newsinfo{background: #fff;padding: 0;}
+    .main-newsinfo .contents-wrp{display: block;}
+    .main-newsinfo .tit-box ul li a{padding-right: 10px;}
+    .main-newsinfo .tit-box ul li + li a{padding: 0 0 0 10px;}
+    .main-newsinfo .news-wrp{width: 100%;}
+    .main-newsinfo .news-wrp .news-list{padding: 20px 15px !important;height: initial !important;}
+    .main-newsinfo .news-wrp .news-list li{margin-bottom: 11px;}
+    .main-newsinfo .news-wrp .news-list li a p{width: 60%;}
+    .main-newsinfo .bnr-wrp{margin: 30px 0 0 0;width: 100%;}
+    .main-newsinfo .bnr-wrp li img{width: 100%;max-width: 100%;margin: 0;}
+
+
+    .contents-wrp{padding: 0 10px;}
+}

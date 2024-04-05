@@ -1,0 +1,62 @@
+@charset 'euc-kr';
+@import "config";
+
+.reviewSwiper {
+  .swiper-wrapper {
+    gap: 36px;
+  }
+  .swiper-slide {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .reviewSwiper {
+    position: relative;
+    overflow: hidden;
+    .swiper-wrapper {
+      gap: 0;
+    }
+    .swiper-slide {
+      flex: 1 0 100%;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .swiper-pagination {
+      display: block;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      top: auto;
+      bottom: auto;
+      margin-top: 1rem;
+      &-bullet {
+        background: #fff;
+        opacity: 1;
+        width: 16px;
+        height: 16px;
+        &-active {
+          background: #118ee5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .reviewSwiper {
+    width: 80%;
+    margin: 0 auto;
+    .swiper-pagination {
+      &-bullet {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}

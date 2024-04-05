@@ -1,0 +1,913 @@
+@charset "euc-kr";
+
+@media (max-width: 1600px){
+	.main_rightbnr{display: none}
+	.miniright_bnr{display: none}
+}
+@media (max-width: 1200px){
+
+	html,body{min-width: 320px}
+	body.disabled {overflow: hidden;position: fixed;width: 100%}
+	body{font-size: 13px;word-break: keep-all;letter-spacing: -0.7px}
+	input[type=checkbox], input[type=radio]{min-width: 15px;min-height: 15px}
+	th,td{letter-spacing: -1px}
+
+	/* 에디터 */
+	edit #smart_editor2{min-width: 320px !important}
+
+	/* 헤더 */
+	#headertop{height: 48px}
+	.mobile_navbtn {padding: 14px 12px 3px;}
+	.hd_logo img{width: 105px}
+	.hd_logo{margin: 0;float: none;position: absolute;top: 15px;left: 52px;}
+	.mb_rightmenu{display: block;position: absolute;top: 7px;right: 15px;}
+	.mb_rightmenu a{display: block;font-size: 15px;font-weight: bold;color: #555555;padding: 10px 0 10px 28px;background: url('https://img.megagong.net/gong/common/mni05.gif') no-repeat 0px 7px;}
+	.glbal_menu{display: block}
+	/* 메인 */
+	.top_bnrzone .inner{width: 100%;overflow: hidden;}
+	.top_bnrzone .inner a{padding-left: 15px;padding-right: 15px;}
+	.top_bnrzone .inner a img{width: 48%;}
+	.top_bnrzone .bnr_txt{margin-top: 12px}
+	.ly_btm_fixed{bottom:65px}
+	.ly_btm_fixed a[title="닫기"]{}
+	.ly_btm_fixed img{width: 340px}
+	.main_wrp{min-width: 320px}
+	.main_topbnr{height: auto;background-color: #040404}
+	.main_topbnr .mtb_inner{width: 100%;overflow: hidden;text-align: center}
+	.main_topbnr .mtb_inner img{width: 100%;}
+	/*.main_topbnr .dday_num{top: 0;left:0;font-size: 14px;-webkit-border-radius: 0;-moz-border-radius: 0;-ms-border-radius: 0;-o-border-radius: 0;border-radius: 0;font-size: 13px;padding: 0;height: 24px;line-height: 24px;background-color: #000;height: 34px;line-height: 34px;width: 100%;top: 0;}
+	.main_topbnr .dday_num span{font-size: 15px;display: inline-block;padding: 0;margin: 0}
+	.main_topbnr .dday_num strong{font-size: 15px;display: inline-block;padding: 0 0 0 10px;margin: 0}*/
+	.main_topbnr .dday_num{left: 5.2%;width:10.6%}
+	.main_topbnr .dday_num span{padding: 15px 0 0}
+	.main_topbnr .dday_num strong{}
+	.secnd_teacher .teacher_rollwrp{width:3600px;margin-left: -1797px}
+	.main_visual{height: 465px;width: 100%;overflow: hidden;padding:40px 0 20px}
+	.main_visual .inner{position: absolute;top: 40px;left: 50%;margin-left: -565px}
+	.main_visual .slick-active{opacity: 0.5}
+	.main_visual .slick-current{opacity: 1}
+	.main_middlebnr{width: 97%;overflow: hidden;margin:0 auto 10px}
+	.main_tcher_exhi{width: 97%;margin:0 auto 40px}
+	.main_tcher_exhi .tcherex_slider .ts_item img{width: 100%}
+	.main_middlebnr .mdbnr_left{width: 33.3%;font-size: 0}
+	.main_middlebnr .mdbnr_left.secnd{padding:0}
+	.main_middlebnr .mdbnr_right{width: 33.3%;float: left;font-size: 0}
+	/* .main_middlebnr a{display:block;margin:0 10px} */
+	.main_middlebnr img{width: 100%}
+	.main_middlebnr .dd_state{left:63%}
+	.secnd_teacher .inner{width: 100%;margin-bottom: 15px}
+	/* .secnd_teacher h3{position: absolute;top: 30px;left: 50%;margin-left: -540px;height: 28px;text-align: center} */
+	.secnd_teacher .teacher_rollwrp{padding-top: 83px}
+	.secnd_teacher .teacher_rollbtn{width: 100%}
+	.secnd_teacher .btn_arrow.sprev{left:0;top: 159px}
+	.secnd_teacher .btn_arrow.snext{right:0;top: 159px}
+	.secnd_banner,.secnd_teacher{width: 97%;margin:0 auto 15px;overflow: hidden}
+	.main_bottomzone{width: 97%;margin:0 auto 100px;border:1px solid #dfdfdf;padding-bottom: 0}
+	.bookstr_wrp{width: 100%}
+	.bookstr_wrp h3{width: 97%;margin:0 auto 25px}
+	/* .bookstr_wrp .inner,.secnd_banner .inner{position: relative;padding: 42px 0 0} */
+	.secnd_banner .inner a img{width: 100%}
+	.bookstr_wrp .bookstr_bnr .tit_link{display:none}
+	.secnd_board{width:100%}
+	.board_wrap{width: 33.3%;padding:0;margin:0;background-color: transparent;height: auto}
+	.board_wrap .inner{background-color: #fff;margin:0 7px 0 7px;padding:20px 20px;height: 260px}
+	.board_wrap:first-child .inner{margin-left: 15px}
+	.board_wrap.supprt_ct .inner{margin-right: 15px}
+	.board_wrap .inner,.board_wrap .ntell_popwrp > div{margin:0;border:0}
+	.board_wrap.supprt_ct .inner ul{display: none}
+	.board_wrap.supprt_ct dl.fir{background-image: none}
+	.board_wrap.supprt_ct dl dt,.board_wrap.supprt_ct dl .call_num{padding-left:0;text-align: center}
+	.board_wrap.supprt_ct dl .call_time{padding-left: 45%}
+	.board_wrap.supprt_ct dl .call_time strong{width: 45%;text-align: center;left:0}
+	.secnd_teacher .hoverpoint{display: none !important}
+	.board_wrap .board_list a{max-width: 90%}
+	.board_wrap .ntell_popwrp{}
+	.board_wrap .ntell_popwrp > div{padding:15px}
+	.board_wrap .ntell_popwrp .m_anno span{padding: 10px 0}
+	.board_wrap .ntell_popwrp .m_anno span{font-size: 15px;line-height: 1.3}
+	.board_wrap .ntell_popwrp .m_anno strong{font-size: 16px;line-height: 1.3}
+	.board_wrap .ntell_popwrp .s_anno{font-size: 13px;}
+	.board_wrap .ntell_popwrp .s_anno br{display: none}
+	.board_wrap .ntell_popwrp a {width: 100%}
+	.board_wrap .ntell_popwrp a span{font-size: 13px;padding:10px 13px}
+	.secnd_teacher .tc_slide > div{margin-right: 5px}
+	/* .secnd_teacher .teacher_slider{margin-right: -6px;} */
+	.secnd_teacher .teacher_slider{margin-right: -3px}
+	.secnd_teacher .slick-arrow{z-index: 1;background-color: #8a8a8a;}
+	.secnd_teacher .slick-prev{left: 0;background-position-x: 6px;}
+	.secnd_teacher .slick-next{right:0;background-position-x: -34px;}
+	.secnd_teacher .slick-dots{display: none !important}
+	.secnd_teacher .slick-dots{z-index: 1;overflow: hidden;font-size: 0;text-align: center;}
+	.secnd_teacher .slick-dots li{display: inline-block;width:15px;height:15px;padding:10px 3px}
+	.secnd_teacher .slick-dots li button{display: block;margin:0 5px;width: 100%;height: 100%;background: url('https://img.megagong.net/gong/main/main_visual_fullsvc_dop.png') no-repeat -17px 0;font-size: 0}
+	.secnd_teacher .slick-dots li.slick-active button{background-position: 0 0}
+	.plus_bnr{width: 30%}
+	.plus_bnr .bnr_img{width: 100%;}
+	.plus_bnr .pluspop_clo{right:8px;top:8px}
+	.main_middlebnr2{width: 97%}
+	.main_middlebnr2 .inner{padding-left: 280px;}
+	.main_middlebnr2 .inner ul{padding-right: 0;float: none}
+	.main_middlebnr2 .inner ul li{width: 25%;background-image: none}
+	.main_middlebnr2 .inner ul li a{padding-left: 0;padding-right: 0}
+	/* // 메인 */
+
+	.hd_wrp{width: 100%}
+	.mobile_navbtn{display: block;}
+	.hd_utility{display: none}
+	.hd_sns{display: none}
+	.wrap_content{width: 100%}
+	.subC,.subC.mypgC,.subC.webclC{background-image: none}
+	.subtitle{background-color: #333;height: 50px;}
+	.subtitle span{padding: 15px 27px 0;font-size: 20px;font-weight: bold}
+	.subtitle span:before,.subtitle span:after{display:none}
+	#mFooter{min-width: 320px}
+	#footer{padding: 20px 0 80px}
+	#footer .ft_wrp{width: 100%}
+	#footer .ft_wrp ul{margin:0px 15px;padding: 10px 0 0;background-position: center 0;text-align: center;background: none !important}
+	#footer .ft_wrp ul li{float: none;display: inline-block;border:0;border-left:1px solid #ddd;line-height: 1.3}
+	#footer .ft_wrp ul li:first-child{border:0}
+	#footer .ft_wrp:first-child ul li{display: inline-block !important}
+	.noticeEdit .board_view img{max-width: 100%;height: auto !important}
+	.noticeEdit .board_view{padding: 30px 0px 20px 0px;word-break: break-all;}
+	.noticeEdit .board_view table{max-width: 100%;width: auto !important;}
+	.noticeEdit .board_view table th *,.noticeEdit .board_view table td *{font-size: 12px !important;letter-spacing: -0.12em;}
+	/*LNB common*/
+	#mContainer #mLnb{float: none;z-index: 1;border: 0;width: 100%;margin: -20px 0 0 0}
+	#mContainer.wideC #mContent{width: 100%;padding: 0;float: none}
+	#mContainer.wideC #mContent .lecture,#mContainer.wideC #mContent .cust{padding: 47px 0 0;margin: 0px 15px 0 15px}
+	#mContainer #mLnb ul li .sub_nav{padding: 0px 0 0;overflow: hidden;border: 0}
+	#mContainer #mLnb ul li .sub_nav li a{padding: 0 0 0 7px;height: 42px;line-height: 42px}
+	#mContainer #mLnb ul li .sub_nav li{float: left;padding: 0 0 0 15px;border: 0}
+	#mContainer #mLnb ul li .sub_nav li:hover a:before, #mContainer #mLnb ul li .sub_nav li.on a:before{display:none}
+	#mContainer #mLnb .nav{margin: 0 13px;border: 1px solid #313131}
+	#mContainer #mLnb > ul > li{padding: 0 15px}
+	#mContainer #mLnb ul li{*zoom:1;text-align: center}
+	#mContainer #mLnb ul li:after,#mContainer #mLnb ul li:before{line-height:0;display:table;content:''}
+	#mContainer #mLnb ul li:after{clear:both}
+	#mContainer #mLnb > ul > li.on{display: block}
+	#mContainer #mLnb > ul > li > a{float:left;width: auto;min-width: 90px;padding-right: 19px;text-align: left}
+	#mContainer #mLnb > ul > li.on > a:before, #mContainer #mLnb > ul > li > a:hover:before{width: 0px;height:0px;border-right: 8px solid transparent;border-bottom: 8px solid #0c998d;bottom: 16px;-ms-transform:rotate(225deg);-webkit-transform:rotate(225deg);-moz-transform:rotate(225deg);-o-transform:rotate(225deg);transform:rotate(225deg)}
+	#mContainer #mLnb > ul > li.on > a{color: #0c998d}
+	#mContainer #mLnb ul li .sub_nav li a:hover, #mContainer #mLnb ul li .sub_nav li.on a{font-weight: bold}
+	#mContainer #mLnb ul li .sub_nav li a{font-size: 13px}
+	/*마이페이지*/
+	#mContainer .mypageNoti{padding:15px 15px 20px;background-color: #eee}
+	.mypageWrap .mypageTop .subtit{font-size: 16px;line-height: 1.5}
+	.mypageWrap .mypageConditions{margin: 10px 0 20px 0;padding:0 15px;border:0}
+	.mypageWrap .mypageTop{padding:0 15px}
+	.mypageWrap .mypageConditions .Btab{border: 1px solid #0c998d;}
+	.mypageWrap .mypageConditions .Btab li,.mypageWrap .mypageConditions .Btab li.first,.mypageWrap .mypageConditions .Btab li.last{width: 33%;padding:0}
+	.mypageWrap .mypageConditions .Btab li.last .message{background-image: none;font-size: 15px}
+	.mypageWrap .mypageConditions .Btab li.last .message_more{top: 7px;right: 15px}
+	.mypageWrap .mypageConditions .Btab li .txt1{padding:0 7px}
+	.mypageWrap .mypageConditions .Btab li .txt2{font-size: 13px}
+	.mypageWrap .mypageConditions .Btab li .txt3{font-size: 15px;font-weight: bold;color: #333;padding: 10px 0}
+	.mypageWrap .mypageConditions .Btab li.last ul{padding-left: 22px}
+	.mypageWrap .mypageConditions .Btab li.last li{width: 90%;padding-left: 7px}
+	.mypageWrap .mypageConditions .mp_banner{top: 0;right: 15px;border: 1px solid #333;font-size: 0;line-height: 0;height: auto;}
+	.mypageWrap .mypageMenu{padding:0 15px}
+	.mypageWrap .mypageMenu ul{border-top:1px solid #e2e4e8;border-left:1px solid #e2e4e8;padding:0;margin-bottom: 20px}
+	.mypageWrap .mypageMenu ul li{width: 25%;border:0;height: auto}
+	.mypageWrap .mypageMenu ul li a{border-right:1px solid #e2e4e8;border-bottom:1px solid #e2e4e8;padding:10px 0;height: auto}
+	#mContainer .mypageNoti .mypagetLec{padding: 18px 20px 0;border: 0}
+	#mContainer .mypageNoti .myNoti{margin:0;border:0;width: 40%;}
+	#mContainer .mypageNoti .mobileInfo{border: 0;width: 30%;margin-left: 0px;border-left: 1px solid #eee;}
+	#mContainer .mypageNoti .gongcntr_number{width: 30%;margin: 0 -2px 0 -2px;border: 0;border-left: 1px solid #eee;}
+	#mContainer .mypageNoti p.tit{font-size: 15px}
+	#mContainer .mypageNoti .mypagetLec .current li{min-height: 82px;padding: 0 0 7px 0;margin: 0 0 7px}
+	#mContainer .mypageNoti .mypagetLec .current li .lecimg img{width: 80px}
+	#mContainer .mypageNoti .mypagetLec .current li .lecname{padding-top: 6px}
+	#mContainer .mypageNoti .mypagetLec .current li .lecname,#mContainer .mypageNoti .mypagetLec .current li .clsname,#mContainer .mypageNoti .mypagetLec .current li .clsdate{padding-left: 95px}
+	#mContainer .mypageNoti .mypagetLec .current li .clsname a{font-size: 14px}
+	#mContainer .mypageNoti .mypagetLec .message_more,#mContainer .mypageNoti .myNoti .noti_more{top:24px;right: 20px}
+	#mContainer .mypageNoti .myNoti .tit{padding:18px 0 0 20px}
+	#mContainer .mypageNoti .myNoti ul{padding: 20px 0 0 25px}
+
+	.payWrap .nav{top:60px;right:15px}
+	.payWrap .paytotal ul li.list1,.payWrap .paytotal ul li.list2,.payWrap .paytotal ul li.list3,.payWrap .paytotal ul li.list4{width: 25%}
+	.payWrap .pay_selec{width: 100%}
+	.payWrap .pay_selec .couponArea{margin: 0 0 20px}
+	.payWrap .conin ul li .mine{background: none;margin-right: 7px}
+	.payWrap .pay_selec .cashArea .conin{height: inherit !important;padding-bottom: 20px}
+	.payWrap .conin{margin-bottom: 30px}
+	.payWrap .total_prc{width: 100%;margin-top: 20px}
+	.page_add_lec .lecSelect2{padding-left: 15px;padding-right: 15px;}
+	.page_add_lec .lecSelect2 .classSel{margin-bottom: 7px;width: 17%}
+	.payWrap .pay_selec .cashArea .p_way{padding: 10px 15px 10px 15px;}
+
+	.mp_padding{padding:0 15px}
+	/*내강의실*/
+	.mypageWrap .myClassSelect{margin-bottom: 25px;padding: 15px;}
+	.mypageWrap .myClassSelect .classSel{width: 20%}
+	.mypageWrap .myClassSelect .techListW{padding: 10px 0 0}
+	.mypageWrap .myClassSelect .techListW ul{width: 100%}
+	.mypageWrap .myClassSelect .techListW ul li{float: none;display: inline-block;font-size: 0;width: 80px}
+	.mypageWrap .myClassTbl .myClass_tbl td{padding:13px 3px}
+	.mypageWrap .myClassTbl .myClass_tbl td span.icon1,.mypageWrap .myClassTbl .myClass_tbl td span.icon2,.mypageWrap .myClassTbl .myClass_tbl td span.icon3,.mypageWrap .myClassTbl .myClass_tbl td span.icon4,.mypageWrap .myClassTbl .myClass_tbl td span.icon5,.mypageWrap .myClassTbl .myClass_tbl td span.icon6{padding:3px 2px !important}
+	.mypageWrap .myClassTbl .myClass_tbl td span.tit{font-size: 14px}
+	.mypageWrap .myClassTbl .myClass_tbl col:last-child,.mypageWrap .myClassTbl .myClass_tbl td:last-child{display: none}
+	.mypageWrap .myArea{padding-bottom: 30px}
+	.mypageWrap .myArea .techContent .techImg{margin-right: 25px;padding:0}
+	.mypageWrap .myArea .techContent .studyTxt{float: none;width: 100%;padding: 0 0 21px}
+	.mypageWrap .myArea .techContent .txt1{padding: 10px 240px 0 170px}
+	.mypageWrap .myArea .techContent .tit{padding: 6px 240px 15px 170px;font-size: 15px;line-height: 1.3}
+	.mypageWrap .myArea .techContent .date{padding: 0 240px 5px 170px}
+	.mypageWrap .myArea .techContent .percent{padding: 0 240px 0 170px}
+	.mypageWrap .myArea .techContent .studyteaImg {position: absolute;top: 20px;left: 46px}
+	.wideBanner .direct_go{display: none}
+	.mypageWrap .passNoti{margin-top: 10px}
+	.indirect_go{margin-top: 40px;display: block;font-size: 0}
+	.indirect_go a{position: relative;display: inline-block;font-size: 14px;padding: 7px 30px 7px 10px;margin-right: 10px;border:1px solid #26BEB1;}
+	.indirect_go span{color: #0c998d}
+	.indirect_go a::before{content: "";position: absolute;top:11px;right:15px;width: 0px;height: 0px;border-right: 8px solid transparent;border-bottom: 8px solid #0c998d;bottom: 16px;-ms-transform: rotate(225deg);-webkit-transform: rotate(225deg);-moz-transform: rotate(225deg);-o-transform: rotate(225deg);transform: rotate(225deg);}
+	.mypageWrap .passNoti .passNotiTxt{width: 100%;display: block;}
+	.mypageWrap .passNoti .passNotiTxt + div{width: 100%;display: block;}
+	.mypageWrap .passNoti .btn_add_lect{display: inline-block;width: 100px}
+	.mypageWrap .passNoti .tit{display: inline-block;width: auto;padding: 20px 15px 0 15px;}
+	.mypageWrap .passNoti .passNotiTxt{padding-bottom: 15px;background-color: #f8f8f8;}
+	.mypageWrap .passNoti .passListW{border-top: 1px solid #ddd;padding:11px 15px}
+	.passListW.lecSelect select{width: 100%}
+	.passNoti .btn_addLec{transform: none;-moz-transform: none;-webkit-transform: none;top: 12px;right: 15px;width: 120px}
+	.mypageWrap .passNoti .passLists li strong{display: block;}
+	.mypageWrap .passNoti .passLists li{height: auto;line-height: 1.4;background-position: left 8px;}
+	.mypageWrap .myArea .bookInfo ul li{position: relative;}
+	.mypageWrap .myArea .bookInfo .bookimg_wrp,.mypageWrap .myArea .bookInfo .bookinfo_wrp{float: none}
+	.mypageWrap .myArea .bookInfo .bookinfo_wrp{padding: 0 0 10px 80px;}
+	.mypageWrap .myArea .bookInfo ul li a.tit{padding: 2px 0 5px;}
+	.mypageWrap .myArea .bookInfo .book_write{display: block;background: none;font-size: 12px;}
+	.mypageWrap .myArea .bookInfo{background-color: #f8f8f8;position: relative;}
+	.mypageWrap .myArea .bookInfo::before{content: "교재 정보";color: #000;font-size: 14px;font-weight: bold;position: absolute;top: 8px;left: 12px;}
+	.mypageWrap .myArea .bookInfo ul{padding: 0 0 0 13px;background: none;border-top: 1px solid #ddd;margin-top: 30px;background-color: #fff;}
+	.mypageWrap .myArea .bookInfo .bookimg_wrp{position: absolute;top: 14px;left: 0;}
+	/* 강사홈 */
+	.techWrap .techDetail .techMore{display: none}
+	.scr_header.m_pofixed{position: fixed;top: 0;z-index: 2;display: block;opacity: 1}
+	.scr_header .sh_inner{width: 100%}
+	.scr_header{background-color: #000}
+	.techWrap{height: 470px;background-size: cover;background-color: #333;overflow: hidden;}
+	.techWrap .techDetail{width:100%}
+	.techWrap .techImg{left: inherit;margin: 0;bottom: 0;right: 50%;width: 400px}
+	.techWrap .techImg img{max-height:440px;max-width: 400px}
+	.techWrap .techDetail .techInfo{float: none;width: initial;position: absolute;top: 0;left: 50%;padding-left: 20px}
+	.tech_content .tcinner{width: 100%;margin: 0 auto 0}
+	.tech_content .tcbanner_zone{width: 100%;margin: -75px auto 60px;height: inherit}
+	.tech_content .tcbannerZin{position: inherit;top: inherit;left: inherit;right: inherit;height: initial;background-color: transparent}
+	.tech_content .tcbannerZin img{position: inherit !important;bottom: inherit !important;width: 100%}
+	.tech_content .tcbannerZin:after,.tech_content .tcbannerZin:before{display: none}
+	.tech_content .tccont.curr_zone img{width: 100%;max-width: 900px}
+	.tech_content .tech_comment .commSort{padding:0 130px 0 0;}
+	.tech_content .tech_comment .commSort:after{display:block;content:'';clear:both}
+	.tech_content .tech_comment .commSort select{width: 100%;float: none}
+	.tech_content .tech_comment .commSort .btn_more{width: 120px}
+	.tech_content{padding-bottom: 0}
+
+
+	/* 공캠인강 */
+	.lecture .lecView{padding:40px 15px 0}
+	.lecture .lecView .lecDetail .lecVideo .playWrap{width: 100%}
+	.lecture .lecView .lecDetail .lecVideo .playWrap .playView{height: auto}
+	.lecture .lecView .lecDetail .lecVideo .playWrap .playView img{width: 100%}
+	.lecture .lecView .lecDetail .lecVideo .playWrap .playView .tech_name img{width: initial}
+	.lecture .lecView .lecDetail .lecVideo .f_right{width: 100%}
+	.lecture .lecView .lecDetail .lecVideo .f_right .vodTbl2{height: initial}
+	.lecture .lecView .lecDetail .lecVideo .f_right .vodTbl2 th,.lecture .lecView .lecDetail .lecVideo .f_right .vodTbl2 td{padding:13px 10px}
+	.lecture .lecView .lecDetail .lecVideo .playWrap .playView .tech_name{right: 10%}
+	.lectlist li .lecBook .bookList .bookMoney{font-size: 14px}
+	.lectlist li .listName{width: 75px}
+	.lectlist li .listWrap{padding:0 0 0 95px}
+	.subTab{padding:15px 0 25px 0}
+	.subTab li a{font-size: 13px}
+	.lecture .lecView .lecbtnWrap .lectAdd{width: 370px}
+	.lectlist li .listName .txt1 span{letter-spacing: -0.2em}
+	/*온라인서점*/
+	.ebook_content{padding-bottom: 0}
+	.ebook_content .ebk_inner{width:100%;}
+	.ebook_content .ebk_lcon .inner, .ebook_content .ebk_vcon .inner{padding: 0 30px}
+	.ebook_content .connav .conod_wrp{padding: 15px 25px 10px}
+	.ebook_content .conbody .ebk_list{margin-left: -30px}
+	.ebook_content .conbody .ebk_list li{width: 33.3%;margin-left: 0}
+	.ebook_content .conbody .ebk_list .ebk_img{width: auto;margin-left: 30px}
+	.ebook_content .conbody .ebk_list dl{margin: 0 0 12px 30px}
+	.ebook_content .conbody .ebk_list .relect{padding: 0 0 0 30px}
+	.ebook_content .conbody .btnstn{margin: 15px 0 0 30px}
+	.ebook_content .conbody .btnstn a{width: 50%}
+	.ebook_content .conbody .ebk_list .ebk_img img{max-height: 228px;max-width: 165px}
+	.ebook_content .connav .subjct{padding-bottom: 7px;border-bottom: 1px solid #ccc;margin-bottom: 15px;padding-top: 2px}
+	.ebook_content .connav .subjct li{width: 110px;margin:0 0 8px}
+	.ebook_content .connav .subjct li a{display: block;padding:0;margin: 0 5px;height: 27px;line-height: 27px;border: 1px solid #aeaeae;font-size: 12px;color: #555;font-weight: 600;
+		border-radius: 30px;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;-o-border-radius: 30px}
+	.ebook_content .connav .subjct li.on a{color: #fff;font-weight: bold;background: #26BEB1;color: #fff;border: 1px solid #0c998d}
+    .ebook_content .connav .subjct li:after{display:none}
+	.ebook_content .connav .subjct li:first-child{margin:0}
+	.ebook_content .connav .subjct_tea{padding-bottom: 7px;padding-top: 2px}
+	.ebook_content .connav .subjct_tea li{width: 110px;margin:0 0 8px}
+	.ebook_content .connav .subjct_tea li a{display: block;padding:0;margin: 0 5px;height: 27px;line-height: 27px;border: 1px solid #aeaeae;font-size: 12px;color: #555;font-weight: 600;
+		border-radius: 30px;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;-o-border-radius: 30px}
+	.ebook_content .connav .subjct_tea li.on a{color: #fff;font-weight: bold;background: #555;color: #fff;border: 1px solid #555}
+    .ebook_content .connav .subjct_tea li:after{display:none}
+	.ebook_content .connav .subjct_tea li:first-child{margin:0}
+	.ebook_content .connav .subjct_tea li:nth-child(10n){margin:0 0 8px}
+	.ebook_content .ebk_inner:before,.ebook_content .ebk_inner:after,.btshade{display: none}
+	.tech_content .tcinner:before,.tech_content .tcinner:after,.tech_content .btshade{display: none}
+	.ebktop_visual{overflow: hidden;}
+	.ebktop_visual .ebk_slider .slick-slide{width: 100%}
+	.ebktop_visual .ebk_slider .inner{width: 100%;position: relative;padding-top: 20px;}
+	.ebook_content .connav .bk_rgt dd.slprice strong{font-size: 14px}
+	.ebook_content .connav .bk_rgt dt{min-width: 123px}
+	.ebktop_visual .ebk_slider .ekp_item img{max-width:900px;margin: 0 auto}
+
+	.pay_innerwrp,.std_innerwrp,.mya_innerwrp,.cart_wrp,.lecfolding_wrp,.bonus_wrp{padding:0 15px}
+
+	.mypageWrap .mypageConditions .mpb_popcls{top:-30px;right: 0}
+
+	/* 풀서비스 메인 top / 20190411  */
+	.main_visual_top .inner{width: 97%;margin-bottom:10px}
+	.main_visual_top .main_left{width: 70%;}
+	.main_visual_top .main_left img{width: 90%}
+	.main_visual_top .main_right{width: 29%;padding: 0 0 0;margin-top: 0;}
+	.main_visual_top .main_right img{width: 100%}
+	.main_visual_top .main_right .sl_item{padding:0 0 20px}
+	.main_visual_top .main_right .sl_item.s01 img{margin-top: 0}
+	.main_visual_top .main_right .slick-dots{bottom: -5px}
+
+}
+
+@media all and (max-width:900px){
+	/* 메인 */
+	.bookstr_wrp .bookstr_bnr{background-image: none;padding-bottom: 70px}
+	.bookstr_wrp .bookstr_bnr::after{background-size: 900px;height: 70px;}
+	.bookstr_wrp .bookstr_bnr::before{position: absolute;top:0;left: 50%;width: 185px;content: "";background: url('https://img.megagong.net/gong/main/main_bookstr_con.jpg') no-repeat -57px -70px;height: 50px;background-size: 688px;margin-left: -100px;display: none}
+	.bookstr_wrp .bookstr_bnr ul{font-size: 0;text-align: center;padding: 0 0 0 0;text-align: center;}
+	.bookstr_wrp .bookstr_bnr ul li{display: inline-block;float: none;}
+	.bookstr_wrp .bookstr_bnr ul li img{width: 110px;}
+	/* .bookstr_wrp .bookstr_bnr ul li img{position: absolute;left:50%;margin-left: -65px} */
+	.secnd_banner .inner a{display: block;margin:0 -9% 0 -8%}
+	.secnd_teacher .tc_slide img{width:100px}
+	.main_tcher_exhi .inner{padding:0 20px}
+	.main_tcher_exhi .slick-prev{left:-12px}
+	.main_tcher_exhi .slick-next{right:-12px}
+	.main_visual_top .inner{width: 100%}
+	.main_visual_top .main_left{width: 100%;overflow: hidden;}
+	.main_visual_top .main_left .sl_item.s01 img{}
+	.main_visual_top .main_right{display: none}
+
+
+
+	/* .main_topbnr .dday_num{left: 5.2%;width: 14.6%;} */
+	.main_topbnr .dday_num span{padding: 16% 0 0}
+	.main_middlebnr2 {background-image: none}
+	.main_middlebnr2 .inner{padding-left: 0}
+	.main_middlebnr2 strong{display: block;background-color: #d3d8f8}
+	.main_middlebnr2 strong span{display: block;text-align: center;background-color: #d3d8f8;height: 58px;line-height: 45px;font-size: 0;background: #eceffe url('https://img.megagong.net/m/2019/0424_goverall/belt_tit.jpg') no-repeat 0px -14px;color: #d3d8f8;width: 250px;margin: 0 auto;}
+
+	/* // 메인 */
+
+	.subcont_wrp .subtit{font-size: 20px;margin-bottom: 15px}
+	.infoSearch select{width:100px}
+	.infoSearch input{width:150px}
+	.infoSearch .btn_find{width:50px}
+	.infoSearch{padding: 15px}
+
+	.mypageWrap .myArea .techContent .studyTxt{padding: 0 0 40px}
+	.mypageWrap .myArea .techContent{padding-bottom: 30px}
+	.mypageWrap .myArea .techContent .tech_btn{width: 122px;height: 32px;line-height: 32px;bottom: 0;top:inherit}
+	.mypageWrap .myArea .techContent .txt1{padding: 10px 20px 0 170px}
+	.mypageWrap .myArea .techContent .tit{padding: 6px 20px 15px 170px;font-size: 15px;line-height: 1.3}
+	.mypageWrap .myArea .techContent .date{padding: 0 20px 5px 170px}
+	.mypageWrap .myArea .techContent .date strong{display: block;margin-bottom: 3px;color: #686868;}
+	.mypageWrap .myArea .techContent .percent{padding: 0 20px 0 170px}
+	.mypageWrap .myArea .techContent .tech_btn.btn1,.mypageWrap .myArea .techContent .tech_btn.btn2{bottom: -1px;width: 50%;top: inherit;left: 170px}
+	.mypageWrap .myArea .techContent .tech_btn.btn1{left: -1px}
+	.mypageWrap .myArea .techContent .tech_btn.btn2{left: inherit;right: -1px}
+	.mypageWrap .myArea .techContent .studyteaImg{left:20px}
+	.mypageWrap .myArea .techContent .techImg{width: 100px;height: 110px}
+	.mypageWrap .myArea .techContent .techImg > img{width: 100px}
+	.mypageWrap .myArea .techContent .txt1{padding: 10px 0 0 110px}
+	.mypageWrap .myArea .techContent .tit{padding: 6px 0 15px 110px;font-size: 15px;line-height: 1.3}
+	.mypageWrap .myArea .techContent .date{padding: 0 0 5px 110px}
+	.mypageWrap .myArea .techContent .percent{padding: 0 0 0 110px}
+	.payWrap .conin ul,.payWrap .conin ul{padding: 20px 20px}
+	.payWrap .bonusArea{padding:25px 0}
+	.payWrap .bonusArea p.bg_bouns{display: block;padding: 0 0 8px;background-image: none}
+	.payWrap .pay_sort{position:relative}
+	.payWrap .pay_sort .dateArea{display: block;margin: 0}
+	.payWrap .pay_sort{position: relative;padding-top: 50px;overflow: hidden;padding: 25px 15px 25px 15px}
+	.payWrap .pay_sort p{display: inline-block;padding: 0 13px 0 0}
+	.payWrap .pay_sort .month_area{margin-left: 0;margin-bottom: 10px}
+	.payWrap .pay_sort .month_area ul{border:0;border-left: 1px solid #3f5a76}
+	.payWrap .pay_sort .month_area ul li{width: 80px;border: 0 !important}
+	.payWrap .pay_sort .month_area ul li a{border-right: 1px solid #3f5a76;border-top: 1px solid #3f5a76;border-bottom: 1px solid #3f5a76}
+	.payWrap .pay_sort .dateArea .d_bx{width: 115px}
+	.payWrap .pay_sort .dateArea .btn_srch{width: 80px}
+	.payWrap .couponArea{padding:25px 0;margin-bottom: 30px}
+	.payWrap .couponArea p.bg_coupon{display: block;padding: 0 0 8px;background-image: none}
+	.payWrap .couponArea .couponList{padding-bottom: 20px}
+	#mContainer .mypageNoti .myNoti{width: 50%;border-right: 1px solid #eee;}
+	#mContainer .mypageNoti .mobileInfo{width: 50%;margin-right: -1px;border: 0;}
+	#mContainer .mypageNoti .gongcntr_number{border-left: 0;margin: 0;background: none;background-color: #fff;width: 100%;border-top: 1px solid #eee;height: 90px;}
+	#mContainer .mypageNoti .gongcntr_number .tit{padding: 22px 0 5px 0;width: 50%;text-align: center;background: none;}
+	#mContainer .mypageNoti .gongcntr_number .cntr_num{width: 50%;margin:0;}
+	#mContainer .mypageNoti .gongcntr_number .cntr_num p{padding: 0px 0 15px 0;text-align: center;font-size: 22px;}
+	#mContainer .mypageNoti .gongcntr_number .cntr_time{position: absolute;top: 0;right: 0;width: 50%;border: 0;border-left: 1px solid #ededed;padding: 21px 0 0;margin-right: -1px;}
+	#mContainer .mypageNoti .gongcntr_number .cntr_time p,#mContainer .mypageNoti .gongcntr_number .cntr_time em{padding: 0 0 6px 0;}
+	/* 강사홈 */
+	.tech_content .tccont.incl_zone{padding:0 20px 40px 20px}
+	.tech_list, .tech_comment, .tech_view, .tech_write{padding:0 15px 25px}
+	.tech_list .tit, .tech_comment .tit, .tech_view .tit, .tech_write .tit{font-size: 20px;margin-bottom: 13px}
+	/* 강좌목록 common */
+	.lectlist li .listTitle .listotal{position: inherit;bottom: inherit;right: inherit;clear: both;float: none;padding: 15px 0 0}
+	/* 공캠인강 */
+	.lecture .lecView .lecDetail .tit .f_left{float: right;width: 100%;padding: 15px 0}
+	.lecture .lecView .lecDetail .tit .f_right{float: left;width: 100%;padding: 10px 0;border: 0;border-top: 1px solid #ccc}
+	.lecture .lecView .lecDetail .tit .f_left .icon{padding: 0 15px 5px}
+	.lecture .lecView .lecDetail .tit .class_tit{padding: 0 15px 5px;font-size: 13px}
+	.lecture .lecView .lecDetail .tit .class_more{padding: 0 15px 0}
+	.lecture .lecView .lecDetail .tit .f_right .tech_txt{padding: 0 15px 0;display: inline-block;vertical-align: bottom}
+	.lecture .lecView .lecDetail .tit .f_right .tech_home{padding: 0 15px 2px;display: inline-block;vertical-align: bottom}
+	.lecture .lecView .lecDetail .tit .f_right .tech_txt p br{display:none}
+	.lecture .lecView .lecDetail .tit .f_right .tech_txt strong{font-size: 14px;padding: 0 0 0 8px}
+	.lecture .lecView .lecDetail .tit .f_right .tech_txt strong span{font-size: 14px}
+	.wideC .lecture .lecList .lectlist li .lecBook .bookList .f_left{width: 100%}
+	.lectlist li .lecBook .bookList .f_right.bookTotal{position: relative;margin-top: 10px;float: left;}
+	.mypageWrap .myArea .techContent .percent{padding-top: 10px}
+	.btn_list.alcenter{text-align: center;font-size: 0}
+	.btn_list.alcenter a{width: 50%;border: 0;margin: 0;padding: 0;height: 38px;line-height: 38px;font-size: 14px}
+	.lecture .lecView .lecTab .tabContent .vodTbl{margin-bottom: 0}
+	/*온라인서점*/
+	.ebook_topwrp,.ebktop_visual,.ebktop_visual .slick-list{height: auto}
+	.ebook_content .ebk_inner{margin-top: 0}
+	.ebktop_visual .ebk_slider{width: 100%;margin-left:0;left:0;position: relative;}
+	.ebktop_visual .ebk_slider .inner{padding-bottom: 20px}
+	.ebktop_visual .ebk_slider .ekp_item img{width:95%;max-width: 800px}
+	.ebook_content .conbody .ebk_list li{width: 50%}
+	.ebook_content .connav .subjct li{width: 16.6%}
+	.ebook_content .connav .subjct li:first-child{margin: -1px}
+	.ebook_content .connav .subjct li a{width: auto;padding: 0 5px;letter-spacing: -0.6px;margin:0 3px}
+	.ebook_content .connav .subjct_tea{overflow: hidden}
+	.ebook_content .connav .subjct_tea li{width: 16.6%}
+	.ebook_content .connav .subjct_tea li:first-child{margin-left: -1px}
+	.ebook_content .connav .subjct_tea li:last-child{border-right:0}
+	.ebook_content .connav .subjct_tea li a{width: auto;padding: 2px 5px;letter-spacing: -0.8px;margin:0 3px}
+	.ebook_content .conbody .ebk_list .ebk_img{padding: 16px 0}
+	.ebook_content .connav .bk_lft{width: 100%}
+	.ebook_content .connav .bk_rgt{padding:360px 0 0}
+	.ebook_content .connav .bk_lft .imgbox{width: 100%;margin-left: -1px;}
+	.ebook_content .connav .bk_lft .btnstn{margin:0}
+	.ebook_content .connav .bk_lft .btnstn a{width: 50%}
+	.ebook_content .connav .bk_rgt dl{width: 100%}
+	.ebook_content .connav .bk_rgt dt{width: 20%}
+	.ebook_content .connav .bk_rgt dd{width: 80%}
+	.ebook_content .conbody .bookvw_tit{font-size: 16px}
+	.ebook_content .conbody .book_onclass,.ebook_content .conbody .book_ontable{margin-bottom: 20px}
+	.lecture .lecView .lecbtnWrap .pass_lec{width:100%;position: relative;margin-bottom: 20px;float: none}
+	.lecture .lecView .lecbtnWrap .pass_sel{padding-right: 140px;float: none}
+	.lecture .lecView .lecbtnWrap .lectAdd{width: 100%}
+	.lecture .lecView .lecbtnWrap .btn_addLec{position: absolute;top:0;right:0;background-color: #e68a2c;border: 1px solid #c16b12;width: 103px}
+	/* 학습지원센터*/
+	.payWrap .payBtn a,.payWrap .payBtn a.btn_order,.payWrap .payBtn a.btn_allOrder{width:50%;border:0;margin: 0}
+	.payWrap .totalTxt.po_top{padding-top: 50px;padding-bottom: 0;}
+	.payWrap .potop_next{margin-top: 10px}
+
+	.ly_btm_fixed.only_mb{display: block}
+
+	.plus_bnr{top:0;-webkit-transform: none;transform: none;width: 45%;max-width: 350px}
+}
+
+@media all and (max-width:768px){
+	/* 헤더 */
+	.welcome_wrp .tit{padding-bottom: 38px;}
+	.welcome_wrp .btn_place{top:inherit;right: inherit;bottom: 0;left: 0;}
+	.welcome_wrp .btn_place a{padding: 6px 14px;}
+	.welcome_wrp .wctit{padding-bottom: 37px}
+	.mobile_navinner{padding-top: 110px}
+	.mb_rightmenu a{font-size: 13px;background-size: 18px;background-position: 0px 9px;padding-left: 25px;}
+	/* 메인 */
+	.ly_btm_fixed{bottom:55px}
+	/* .ly_btm_fixed a[title="닫기"]{bottom:166px !important} */
+	.ly_btm_fixed img{width: 230px}
+	.ly_btm_fixed .stflip img{width: 180px !important}
+	.ly_btm_fixed a[title="닫기"]{bottom:170px !important}
+	.ly_btm_fixed a[title="닫기"] img{width: 27px}
+	.board_wrap{width: 100%}
+	.board_wrap .inner{margin:0;padding-top:0;padding-bottom: 0;height: 240px}
+	.board_wrap:first-child .inner{margin:0;padding-top: 20px;padding-bottom: 0}
+	.board_wrap.supprt_ct .inner{margin:0;padding-top: 0;padding-bottom: 20px;height: 210px}
+	.board_wrap .inner{padding-left: 5px;padding-right: 5px;}
+	.board_wrap .board_list a{font-size: 12px;line-height: 35px}
+	.board_wrap.supprt_ct dl .call_time,.board_wrap.supprt_ct dl .call_time.last{background-color: #f3f3f3;float: left;height: 70px;width: 50%;border: 0;text-align: center;padding: 14px 0 0;border-left: 5px solid #fff;margin-left: -5px;}
+	.board_wrap.supprt_ct dl .call_time strong{width: 100%;}
+	.board_wrap.supprt_ct dl .call_time span{padding: 23px 0 0 0;}
+	.board_wrap.supprt_ct dl .call_time.last strong{top:15px}
+	.bookstr_wrp .bookstr_bnr ul li{width: 25%}
+	.bookstr_wrp .bookstr_bnr ul li:nth-child(5),.bookstr_wrp .bookstr_bnr ul li:nth-child(6){display: none}
+	.bookstr_wrp .bookstr_bnr ul li img{width:100%;max-width: 70%}
+	.bookstr_wrp .bookstr_bnr ul li::after{bottom: -32px;margin-left: -35px;}
+
+	.main_topbnr .dday_num{width: 15%;left:3%}
+
+	.main_topbnr .mtb_inner .mtb_mb{display: inline-block;}
+	.main_topbnr .mtb_inner .mtb_pc{display: none}
+
+	.main_middlebnr .mdbnr_left{width: 100%;margin-bottom: 5px;}
+	.main_middlebnr .mdbnr_right{width: 100%;}
+	.main_middlebnr .mdbnr_left .mr_pc,.main_middlebnr .mdbnr_right .mr_pc{display: none;}
+	.main_middlebnr .mdbnr_left .mr_mb,.main_middlebnr .mdbnr_right .mr_mb{display: inline-block;}
+
+	.main_visual{padding:0 0 0;height: 420px}
+	.main_visual .main_slider{height: 400px}
+	.main_visual .inner{top:20px}
+	.main_visual .slick-list{padding:0 0 !important}
+	.main_visual .ms_item{text-align: center;padding-bottom: 8px}
+	.main_visual .main_slider .slick-center img{transform: scale(1.0);}
+	.main_middlebnr{margin-top: 0}
+	.main_middlebnr .dd_state{background-size: 175px;font-size: 13px;width: 175px;height: 23px;line-height: 23px}
+	.main_middlebnr .dd_state strong{font-size: 13px;}
+	.main_visual_top{padding-top: 15px;}
+	.main_visual_top .main_left .sl_item::before{width: 120px;background-size: 120px}
+	.main_visual_top .main_left .sl_item.s01 a{margin: 0 -60px 0 -60px}
+	.main_visual_top .main_left img{width: 100%}
+	/* .secnd_teacher{height: 280px} */
+	/* .secnd_teacher h3{margin-left: -400px;top:0;} */
+	.secnd_teacher h3 img{width:800px}
+	.secnd_banner{margin-top: 25px}
+	.bookstr_wrp h3 img,.secnd_banner h3 img{width:800px}
+	.bookstr_wrp h3 span{background-size: 160px;width: 160px;height: 20px;top:2px}
+	.secnd_teacher h3 span{background-size: 160px;width: 160px;height: 20px;top:2px;background-position: center -40px}
+	.secnd_banner h3 span{background-size: 160px;width: 160px;height: 20px;top:2px;background-position: center -78px}
+	/* .bookstr_wrp .inner, .secnd_banner .inner{padding-top: 35px} */
+	.secnd_teacher .teacher_rollwrp{padding-top: 50px;margin-left: -1484px;height: 220px;width: 2800px;}
+	.secnd_teacher .btn_arrow.sprev,.secnd_teacher .btn_arrow.snext{top:110px}
+	.main_bottomzone{padding:0 0 0;border:0;margin-bottom: 0}
+	/* .secnd_teacher .tc_slide img{width: 170px} */
+	.secnd_teacher .hoverpoint{width: 200px;height: 200px;background-size: cover;display: none !important}
+	.secnd_teacher .hoverpoint p{padding:52px 10px 15px;font-size: 14px}
+	.board_wrap.supprt_ct h3{margin-bottom: 15px;}
+	.board_wrap.supprt_ct dl.fir{font-size: 0}
+	.board_wrap.supprt_ct dl dt{display: block;text-align: center;padding: 0 0 10px;}
+	.board_wrap.supprt_ct dl .call_num{display: block;text-align: center;padding:0;}
+	.board_wrap.supprt_ct dl .call_num span{font-size: 27px;margin-bottom: 15px;}
+	.board_wrap h3{font-size: 15px}
+	.main_topbnr .dday_num span{padding: 32% 0 0;font-size: 15px}
+	.main_topbnr .dday_num strong{font-size: 15px}
+	.board_wrap .ntell_popwrp {border-top: 2px solid #ddd;height: auto;position: relative;}
+	.board_wrap .ntell_popwrp .m_anno{background-position: 100% 100%;background-size: 70px;padding:15px 0 0;margin-bottom: 10px}
+
+	.main_visual_top .dday_num{padding: 0;width: 97%;max-width: 400px;background: #2566ce;height: auto;position: relative;top: inherit;left: inherit;margin: 0 auto 0;-webkit-border-radius: 30px;border-radius: 30px;padding:10px 0;min-height: 0}
+	.main_visual_top .dday_num.lastm{padding: 10px 0}
+	.main_visual_top .dday_num span{display: inline-block;padding:0 5px;vertical-align:middle;font-size: 16px}
+	.main_visual_top .dday_num strong{display: inline-block;padding:0 5px;vertical-align:middle;font-size: 16px;margin:0}
+	.main_visual_top .dday_num.lastm strong{padding-bottom: 0}
+
+	/* .top_bnrzone .inner a{margin: 0 -4% 0 -4%;} */
+	.main_middlebnr2 .inner ul li{width: 50%;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;margin-left: -1px}
+	.main_middlebnr2 .inner ul li:nth-child(2),.main_middlebnr2 .inner ul li:nth-child(4){border-right: 0}
+	.main_middlebnr2 .inner ul li a{padding:12px 0}
+	/* // 메인 */
+	.lectlist li .listName .name{font-size: 15px}
+	.lectlist li .leclistBtn{padding:10px 0px 10px 8px}
+	.lectlist li .leclistBtn .btn_buy{padding-right: 8px}
+	.infoSearch select{width: 100%;margin: 0 0 7px 0;padding: 0}
+	.infoSearch input{width: 100%;padding: 0;margin: 0 0 7px}
+	.infoSearch .btn_find{width: 100%;margin:0;border: 1px solid #555;}
+	#mContainer #mLnb .nav{padding: 7px 0}
+	#mContainer #mLnb > ul > li > a{float: none;height: 34px;line-height: 34px}
+	#mContainer #mLnb > ul > li.on > a:before, #mContainer #mLnb > ul > li > a:hover:before{bottom: 13px}
+	#mContainer #mLnb ul li .sub_nav li{padding:0 15px 0 0}
+	#mContainer #mLnb ul li .sub_nav li a{padding: 0 0 7px;height: 30px;line-height: 30px}
+	#mContainer #mLnb > ul > li:last-child{border:0}
+	/*마이페이지*/
+	.mypageWrap .mypageTop .subtit,.mypageWrap .mypageTop .subtit .name{text-align: center;font-size: 14px}
+	.mypageWrap .mypageConditions .Btab{padding:0}
+	.mypageWrap .mypageConditions .Btab li.first{width: 50%;padding:11px 0 12px}
+	.mypageWrap .mypageConditions .Btab li{width: 40%;height: 125px}
+	.mypageWrap .mypageConditions .Btab li.last{width: 60%}
+	.mypageWrap .mypageConditions .Btab li.last{margin-right: -1px}
+	.mypageWrap .mypageConditions .Btab li.first{width: 100%;border-bottom:1px solid #d8d8d8;border-right: 0;height: auto}
+	.mypageWrap .mypageConditions .Btab li .txt1{padding:0 !important;font-size: 14px;letter-spacing: -0.1em}
+	.mypageWrap .mypageConditions .Btab li .txt1 br{display: none}
+	.mypageWrap .mypageConditions .Btab li.last .message_more{top: 18px}
+	.mypageWrap .mypageMenu ul li{width: 50%}
+	.mypageWrap .myClassSelect .techListW ul li{width: 70px;margin-left: 3px;margin-right: 3px;margin-bottom: 5px}
+	#mContainer .mypageNoti .mypagetLec .current li{width: 100%}
+	#mContainer .mypageNoti .myNoti,#mContainer .mypageNoti .gongcntr_number{width: 100%}
+	#mContainer .mypageNoti .gongcntr_number .cntr_num p{font-size: 20px}
+	.payWrap .paytotal{margin:25px 0}
+	.payWrap .paytotal ul{height:inherit}
+	.payWrap .paytotal ul li.list3:after{display: none}
+	.payWrap .paytotal ul li.list1,.payWrap .paytotal ul li.list2,.payWrap .paytotal ul li.list3{width: 33.3%;padding:9px 0 9px}
+	.payWrap .paytotal ul li.list1:after,.payWrap .paytotal ul li.list2:after{width: 32px}
+	.payWrap .paytotal ul li.list4{width: 100%;border-top:1px solid #ededed;padding:10px 0 10px}
+	.payWrap .paytotal ul li.list1:after{background-position-y: -3px;background-size: 710px;background-position-x: -169px;}
+	.payWrap .paytotal ul li.list2:after{background-position-y: -3px;background-size: 710px;background-position-x: -338px}
+	.payWrap .paytotal ul li p strong{font-size: 15px}
+	.payWrap .payBtn{text-align: center}
+	.payWrap .payList .btn_area {text-align: right}
+	.payWrap .payList_tbl1 .pay_tbl tbody tr td{padding:14px 3px}
+	.payWrap .payList_top{padding-top: 25px}
+	.payWrap .payList_top{margin-bottom: 13px}
+	.payWrap .couponArea p{display:block;padding: 0 0 10px}
+	.payWrap .pay_selec .txt{padding-bottom: 0;font-size: 16px;letter-spacing: -0.5px}
+	.payWrap .payList_top .txt{font-size: 18px}
+	.payWrap .conin ul, .payWrap .conin ul{padding:12px}
+	.payWrap .conin ul li input[type="text"]{width:80px}
+	.payWrap .conin ul li .btn_choice{width: 65px;font-size: 13px;letter-spacing: -0.5px}
+	.payWrap .conin{margin-top: 15px}
+	.payWrap .info_in{padding:15px 20px}
+	.payWrap .total_prc ul {padding: 15px 20px 20px}
+	.payWrap .pay_selec .cashArea .p_way{padding:10px 12px 15px;margin-bottom: 15px}
+	.payWrap .pay_selec .cashArea .p_way ul li{margin-bottom: 4px}
+	.payWrap .pay_selec .cashArea .p_way_con .m_state{padding:0 20px}
+	.payWrap .pay_selec .cashArea .p_way_con .m_state ul li{margin-bottom: 6px}
+	.payWrap .bonusArea p{font-size: 16px}
+	.payWrap .bonusArea p.bg_bouns{padding:0 0 5px}
+	.payWrap .cashTit{font-size: 18px}
+	.payWrap .pay_sort .dateArea .btn_srch{width: 65px}
+	.payWrap .couponArea p{font-size: 16px;}
+	.payWrap .conin ul li p{letter-spacing: -1px;font-size: 13px}
+	.payWrap .couponArea .dc_tit{float: none;text-align: left}
+	.payWrap .couponArea p.bg_coupon{padding:0 0 5px}
+	.payWrap .couponArea .coupon_add{position: relative;text-align: left;padding: 25px 20px 0;margin-left: 0}
+	.payWrap .couponArea .coupon_add .tit{display: block;text-align: center;font-size: 17px}
+	.payWrap .couponArea .coupon_add .couponInp{padding: 0;margin: 0 0 9px;width: 100%;height: 36px;line-height: 36px;text-align: center}
+	.payWrap .couponArea .coupon_add .btn_couponAdd{width: 100%;display: block;text-align: center;height: 36px;line-height: 36px}
+	.payWrap .couponArea .coupon_add .couponInp input{width: 90%;margin: 0 auto;text-align: center}
+	.mypageWrap .mypageConditions .Btab li .txt3,.mypageWrap .mypageConditions .Btab li.last .message{font-size: 14px}
+	.mypageWrap .mypageConditions .Btab li .txt3{padding-bottom: 20px}
+	.mypageWrap .mypageConditions .Btab li.last .message{padding-top: 10px}
+	.payWrap .nav li .icon{margin-right: 3px}
+	.payWrap .nav li.list2{width: 100px}
+	.payWrap .nav li.list1{width: 100px}
+	.payWrap .layerPop.pop_coupon{width:96%;top:10% !important}
+	.payWrap .total_prc .tit{font-size: 17px;padding:0 15px}
+	.payWrap .total_prc ul li p{font-size: 14px}
+	.payWrap .total_prc .sum_price span{font-size: 28px}
+	.payWrap .total_prc .btn_pay{font-size: 20px}
+	.payWrap .pay_selec .cashArea .btn_cashInfo{letter-spacing: -0.8px}
+	.mypageWrap .mypageMenu ul li a span,#mContainer .mypageNoti .mypagetLec .current li .clsname a,.payWrap .paytotal ul li p,.payWrap .pay_selec .cashArea .p_way_con .m_state .txt,.payWrap .pay_selec .cashArea .p_way ul li label{font-size: 13px}
+	#mContainer .mypageNoti .mypagetLec{padding:18px 15px 0}
+	#mContainer .mypageNoti .mypagetLec .current li .lecimg img{width:65px}
+	#mContainer .mypageNoti .mypagetLec .current li .lecname, #mContainer .mypageNoti .mypagetLec .current li .clsname, #mContainer .mypageNoti .mypagetLec .current li .clsdate{padding-left: 75px}
+	#mContainer .mypageNoti .mypagetLec .current li .clsname a{width: 100%;margin-bottom: 10px}
+	#mContainer .mypageNoti .mypagetLec .current li .lecname{padding-top: 3px}
+	#mContainer .mypageNoti .mypagetLec .current li .lecname{font-size: 12px}
+	#mContainer .mypageNoti .mypagetLec .current li{padding: 0}
+	#mContainer .mypageNoti .gongcntr_number .tit{padding-top: 40px;background-size: 30px}
+	#mContainer .mypageNoti .gongcntr_number .tit{padding: 13px 0 8px 0;background: none;font-size: 13px;}
+	#mContainer .mypageNoti .gongcntr_number .cntr_time{padding: 15px 0 15px;}
+	#mContainer .mypageNoti .gongcntr_number .cntr_time p, #mContainer .mypageNoti .gongcntr_number .cntr_time em{padding: 0 0 6px;}
+	#mContainer .mypageNoti .gongcntr_number{height: 80px}
+	#mContainer .mypageNoti .mobileInfo{width: 100%;margin:0;height: 135px;}
+	#mContainer .mypageNoti .mobileInfo .txt{font-size: 15px;border-top: 1px solid #eee;padding: 18px 0 10px;}
+	/* 내 강의실 */
+	.mypageWrap .myClassSelect .classSel{width: 45%;margin-bottom: 7px}
+	.page_add_lec .lecSelect2 .classSel{width: 42%;margin:0 4px 7px}
+	.mypageWrap .myArea .techContent{padding:15px 15px}
+	.mypageWrap .myArea .techContent .tit,.mypageWrap .myArea .techContent .txt1,.mypageWrap .myArea .techContent .date,.mypageWrap .myArea .techContent .percent{padding-left: 120px}
+	.mypageWrap .myClassTbl .myClass_tbl2 tbody td .tbl_btn.btn_Down.mb_icon{border: 0;background: url(https://img.megagong.net/new/mypage/btn_down.gif) 0 0 no-repeat;padding: 0;width: 37px;height: 37px;text-indent: -9999em;}
+	.payWrap .payList_tbl1 .pay_tbl tbody tr td .modify{width: 38px}
+	.payWrap .payList_tbl1 .pay_tbl tbody tr td .btn_modify{width: 36px}
+	.payWrap .payList_tbl1 .pay_tbl tbody tr td.btn a{width: 47px;font-size: 11px}
+	.mypageWrap .myClassTit .f_left .txt{font-size: 13px}
+	.mypageWrap .myClassTit .sortTab{float: none;padding: 15px 0 7px;}
+	.mypageWrap .myClassTit #ordarea{float: none;clear: both;}
+	.mypageWrap .myClassTit .f_right ul li{padding: 0;width: 33%;text-align: center;background: none}
+	.mypageWrap .myClassTit .f_right ul li a{display: inline-block;padding: 0 10px 0 20px;font-size: 14px;background: url(https://img.megagong.net/new/mypage/myclassSort.png) no-repeat left 1px;}
+	.mypageWrap .myClassTit .f_right ul li.on a{background-position: 0 -12px}
+	.mypageWrap .myClassTbl .myClass_tbl td span.tit,.mypageWrap .passNoti .tit,.mypageWrap .passNoti .btn_add_lect span,.mypageWrap .myClassTbl .myClass_tbl td .rate{font-size: 12px}
+	.mypageWrap .myClassTbl .myClass_tbl td{padding:10px 3px}
+	.mypageWrap .passNoti .btn_add_lect{float: right;margin:12px 12px 0 0}
+	.mypageWrap .passNoti .tit{padding-top: 16px}
+	.mypageWrap .mypageConditions .mp_banner a{display: block;padding:0 0}
+	.subtitle{background-color: #333;height: 45px;}
+	.subtitle span{padding: 13px 27px 0;font-size: 18px}
+	.mypageWrap .myArea .techContent .techImg,.mypageWrap .myArea .techContent .techImg > img{width: 85px;margin:0}
+	.mypageWrap .myArea .techContent .btn_home{bottom:20px}
+	.mypageWrap .myArea .techContent .tit, .mypageWrap .myArea .techContent .txt1, .mypageWrap .myArea .techContent .date, .mypageWrap .myArea .techContent .percent{padding-left: 100px}
+	.mypageWrap .myArea .techContent .tit{font-size: 13px;padding-bottom: 5px;line-height: 1.4}
+	.mypageWrap .myArea .techContent .txt1{font-size: 12px;padding-top:0}
+	.mypageWrap .myArea .techContent .txt1 span{font-size: 12px}
+	.mp_padding{padding:0 10px}
+	.mypageWrap .myClassTbl .myClass_tbl2 tbody td .downPop{width:300px;right: -67px}
+	/*강사홈*/
+	.techWrap{height: 367px}
+	.tech_content .tcbanner_zone{margin:-75px auto 30px}
+	.tech_content .tccont.curr_zone{padding: 0 0 30px 0}
+	.scr_header .sh_inner ul li span{font-size: 14px}
+	.tech_content .tccont.curr_zone h4{background-size: cover;margin:0 15px}
+	.techWrap .techDetail .techInfo{padding-top: 70px;padding-left: 0;width: 50%}
+	.techWrap .techDetail .techInfo .tit img{max-height: 121px}
+	.techWrap .techDetail .techInfo .tit:after{top: 164px}
+	.techWrap .techImg{width: 50%;left: 0;right: inherit}
+	.techWrap .techImg img{max-width: 300px;max-height: 340px}
+	.lecture .lecView .lecDetail .lecPlay .vodTbl1 td.aL input[type="checkbox"]{display: block;margin:0 0 5px}
+	.commonTab > ul li a{padding:10px 8px !important;font-size: 13px}
+	.tech_content .tech_comment .commentImg ul{padding:15px 15px}
+	.tech_content .tech_comment .commentImg .btn{font-size: 13px;line-height: 1.5;top: 50%;right: 15px;width: 100px;padding: 16px 8px 0;background-color: #1eb9ac;height: 55px;-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);transform: translateY(-50%);}
+	.tech_content .tech_comment .commentImg ul li{padding: 0 130px 5px 20px;}
+	.cbuy_btn, .cbuy_btn:hover,.prevw_btn,.cart_btn, .cart_btn:hover{padding:7px 5px;letter-spacing:-0.13em}
+	.lectlist li .listTitle .listotal,.lectlist li .lecBook .bookList .f_right{width:180px}
+	.lectlist li .listTitle .subject a{font-size: 13px}
+	.lectlist li .lecBook{padding-bottom: 12px}
+	.lectlist li .lecBook{padding:10px 0 12px}
+	.tbl_6 th,.tbl_6 td{padding:8px 3px}
+	.lectlist li .listName{left:0}
+	.lectlist li .listTitle.nobook{padding-bottom: 10px}
+	.lectlist li{padding:12px 0 0 0;}
+	.lectlist li .listTitle .icon{padding-bottom: 5px}
+	.lectlist li .listTitle .icon span{padding:1px 3px;font-size: 11px}
+	.lecture .lecView .lecTab .tabContent .lecInfo2 li{padding:15px 0 20px 25px}
+	.lecture .lecView .lecTab .tabContent .lecInfo2 .book_imgbox .book_thumb{width: 80px;height: 108px}
+	.lecture .lecView .lecTab .tabContent .lecInfo2 .book_comm{padding:0px 0 0 70px}
+	.lecture .lecView .lecTab .tabContent .lecInfo2 .book_imgbox{top:15px;left:0;}
+	.lecture .lecView .lecDetail .lecVideo .playWrap .playView .tech_name span.subj,.lecture .lecView .lecDetail .lecVideo .playWrap .playView .tech_name span.name{font-size: 18px}
+	.lecture .lecView .lecTab .tabContent .lecInfo2 .book_comm .bookMid span{display: block;background: none !important}
+	.lecture .lecView .lecTab .tabContent .lecInfo2 .book_comm .bookTop span.book_bg{display: block;background: none !important}
+
+	.thome_qna col:last-child,.thome_qna th:last-child,.thome_qna td:last-child{display: none}
+	.thome_qna col:nth-child(1),.thome_qna th:nth-child(1),.thome_qna td:nth-child(1){width: 11%}
+	.thome_qna col:nth-child(3),.thome_qna th:nth-child(3),.thome_qna td:nth-child(3){width: 15%}
+	.thome_qna col:nth-child(4),.thome_qna th:nth-child(4),.thome_qna td:nth-child(4){width: 18%}
+	.thome_qna td[colspan="5"]{display: none;}
+	.thome_qna td[colspan="4"]{display: table-cell;}
+	.thome_experi col:last-child,.thome_experi th:last-child,.thome_experi td:last-child{display: none}
+	.thome_experi td[colspan="5"]{display: none;}
+	.thome_experi td[colspan="4"]{display: table-cell;}
+	.thome_notice col:last-child,.thome_notice th:last-child,.thome_notice td:last-child{display: none}
+	.thome_notice td[colspan="5"]{display: none;}
+	.thome_notice td[colspan="4"]{display: table-cell;}
+	/*온라인서점*/
+	.ebook_content .ebk_inner{width: 100%}
+	.ebook_content .conbody .ebk_list .ebk_img img{max-height: 155px;max-width: 110px}
+	.ebook_content .connav .subjct li{width:20%}
+	.ebook_content .connav .subjct_tea li{width:20%}
+	.ebook_content .connav .subjct_tea li a{padding:0}
+	.ebook_content .ebk_inner{padding: 40px 0;margin: 0 auto 0;}
+	.ebook_content .conhead a.prebuy_btn{top: 47px;right: 0;z-index: 1}
+	.ebktop_visual .ebk_slider .ekp_item img{max-width:700px;margin: 0 auto}
+	.ebook_content .connav .conod_wrp{background-color: #fff;padding:0}
+	.ebook_content .connav .subjct{border-top: 1px solid #ddd;padding-top: 15px}
+	.ebook_content .connav .subjct_tea{border-bottom: 1px solid #ddd}
+	.ebook_content .conbody .ebk_list dl{margin-bottom: 10px;padding-bottom: 10px}
+	.ebook_content .conbody .ebk_list .ebk_img{padding:7px 0 7px}
+	.ebook_content .connav .bk_rgt dt{padding:8px 7px 8px 7px;min-width: 85px;font-size: 13px}
+	.ebook_content .connav .bk_rgt dd{padding:8px 7px 8px 7px;font-size: 13px}
+	.ebook_content .conbody .book_onclass li{padding:10px 80px 10px 10px}
+	.ebook_content .conbody .book_ontable .bot_inner{padding:0 10px 20px 10px}
+	.ebook_content .connav .bk_rgt .tit{font-size: 15px;padding-left: 0}
+	.ebook_content .connav.bkdetail{margin-bottom: 20px}
+	.ebook_content .conbody .bookvw_tit{font-size: 14px;height: 30px;line-height: 30px;}
+	.ebook_content .conbody .bookvw_tit:after{right: -30px;border-right: 30px solid transparent;border-bottom: 30px solid #777;}
+	.ebook_content .conbody .book_onclass em{right:10px}
+	.layerPop.ebook_noti{width: 96%}
+	.layerPop.ebook_noti .pop_body .body_cont .imgMiddle{margin:10px 0}
+	.layerPop.ebook_noti .pop_body .body_cont .imgMiddle img{width: 100%}
+	.layerPop.ebook_noti .pop_body .body_cont .tit{margin-bottom: 5px}
+	.layerPop.ebook_noti .pop_body .body_cont .pop_list{margin-bottom: 7px}
+	.layerPop.ebook_noti .pop_body .body_cont .pop_bgnoti{padding:7px}
+	.layerPop.ebook_noti{top:20px !important}
+	a.delifree_btn{margin-left: 0;margin-top: 10px;display: block;width:max-content}
+	.ebook_content .conbody .ebk_list .ebk_img.evt_on::before,.ebook_content .connav .bk_lft .imgbox.evt_on::before{background-size: 50px;width:51px}
+	.ebook_content .conbody .book_relalist .brl_inner ul{padding:20px 15px}
+	.ebook_content .conbody .book_relalist .brl_inner ul li{width: 50%;border: 0;border-bottom: 1px dashed #ddd;padding: 0 0 15px 0px;}
+	.ebook_content .conbody .book_relalist .brl_inner ul li .brl_link img{width: 103px;height: 135px;}
+	.ebook_content .conbody .ebk_list dt a{height: 1.4em;text-overflow: ellipsis;white-space: nowrap;display: block;}
+	.ebook_content .conbody .btnstn a{font-size: 14px}
+	.ebook_content .conhead h4{font-size: 16px}
+	/* 학습지원센터 */
+	.cust01Tbl1 col:last-child,.cust01Tbl1 td:last-child,.cust01Tbl1 th:last-child,.cust03Tbl1 col:last-child,.cust03Tbl1 td:last-child,.cust03Tbl1 th:last-child{display: none}
+	.cust01Tbl1 col:nth-child(4){width: 20%}
+	.cust03Tbl1 col:nth-child(1),.cust03Tbl1 th:nth-child(1),.cust03Tbl1 td:nth-child(1),.cust03Tbl1 col:nth-child(4),.cust03Tbl1 th:nth-child(4),.cust03Tbl1 td:nth-child(4){display: none}
+	.cust03Tbl1 td[colspan="6"]{display: none;}
+	.cust03Tbl1 td[colspan="3"]{display: table-cell;}
+	.Comment .comment_write .btn_write{width: 75px}
+	.Comment .comment_write{padding-right: 96px}
+
+	.lecture_downwrp a{height: 30px;line-height: 30px;padding:0 15px}
+
+	#se2_iframe{height: 100px !important}
+
+	.subC .ntell_popwrp{top:400px;height: auto;width: 300px;margin-left: -150px}
+	.subC .ntell_popwrp > div{padding:20px 15px}
+	.subC .ntell_popwrp .m_anno{background-size: 70px;padding: 43px 0 15px;background-position: 0 0}
+	.subC .ntell_popwrp .m_anno span, .subC .ntell_popwrp .m_anno strong{font-size: 16px;}
+	.subC .ntell_popwrp .s_anno{font-size: 13px}
+	.subC .ntell_popwrp button {position: absolute;top: 20px;right: 15px;}
+
+	/* 가로 폭 조정 */
+	.ebook_content .ebk_lcon .inner, .ebook_content .ebk_vcon .inner{padding-left:15px;padding-right:15px}
+
+	#footer .ft_wrp{margin-bottom: 0}
+	#footer .ft_wrp ul{margin:0}
+	#footer .ft_wrp ul li{border:0;letter-spacing: -0.15em;padding:0 5px}
+	#footer .ft_wrp ul li:nth-child(1),#footer .ft_wrp ul li:nth-child(2),#footer .ft_wrp ul li:nth-child(6),#footer .ft_wrp ul li:nth-child(10){display: block}
+	#footer .ft_wrp a{font-weight: bold;}
+	#footer .ft_wrp ul{background-size:100px;padding:10px 0 0}
+
+	.paging a, .paging strong{padding:3px 7px}
+
+	.plus_bnr{width: 55%;max-width: 300px}
+
+
+	/* member 1904 */
+	.member_cont .memcont_inner{width: 97%;padding-top: 0}
+	.member_menu{border-bottom: 0;border-right: 0;margin-bottom: 25px}
+	.mbmenu_inner li{width: 33.3%}
+	.mbmenu_inner a{height: 37px;line-height: 37px;border-bottom: 1px solid #ccc;border-right: 1px solid #ccc}
+	.member_cont .top_tit{font-size: 18px;margin-bottom: 20px;}
+	.member_cont .ank_lst{padding: 20px}
+	.member_cont .ank_lst.alldt dl{width: 100%}
+	.member_cont .ank_lst.alldt dt{margin-bottom: 9px}
+	.member_dtcont .subtitle_member{padding:7px 0;font-size: 12px;margin-bottom: 10px}
+	.member_dtcont .subtxt_member .circle_num{padding-left: 0;text-indent: 0}
+	.member_cont .ank_lst dl,.member_cont .ank_lst dl.c4,.member_cont .ank_lst dl.c5{width: 100%;min-height: auto;margin-bottom: 15px}
+	.member_dtcont .idntity_box{padding:15px}
+	.member_dtcont .idntity_box p{margin-bottom: 10px;}
+	.member_dtcont .idntity_box p label{padding-left: 0;padding-top: 20px;}
+	.member_dtcont .idntity_box p label .tit{width: 70px;top:0}
+	.member_dtcont .memb_modifytbl table select.trp,.member_dtcont .memb_modifytbl .s_input.trp{max-width: none;margin-bottom: 7px}
+	.member_dtcont .modi_btn{width: 100%;padding:0 1px;margin-bottom: 7px}
+	.member_dtcont .memb_modifytbl .s_input,.member_dtcont .memb_modifytbl .route_sel select{max-width: none;}
+	.member_dtcont .memb_modifytbl .s_input.trp.eml{width: 91%}
+	.member_dtcont .memb_modifytbl .post_num{width: 100%}
+	.member_dtcont .memb_modifytbl .post_txt{width: 100%;max-width: none;}
+	.member_dtcont .last_btnbox a{display: inline-block;width: 50%}
+	.member_dtcont .last_btnbox a span{font-size: 13px;}
+	/* // member 1904 */
+}
+
+@media all and (max-width:640px){
+	.main_middlebnr .dd_state{left:60%;top: 5px;background-image: none;width: 115px;height: 17px;line-height: 17px;}
+	.main_visual_top .main_left .sl_item::before{width: 90px;background-size: 90px}
+	.top_bnrzone .inner a{margin: 0 0;text-align: center;padding: 15px 0 10px}
+	.top_bnrzone .inner a img{float: none;display: block;width: 85%;margin:0 auto 5px}
+	.glbal_menu .gm_inner ul li{height: 55px;}
+	.glbal_menu .gm_inner ul li a span{padding: 36px 0 0;}
+	.glbal_menu .gm_inner ul li.glb_key1 a{background-position:center 10px;background-size: 20px;}
+	.glbal_menu .gm_inner ul li.glb_key2 a{background-position:center 5px;background-size: 26px;}
+	.glbal_menu .gm_inner ul li.glb_key3 a{background-position:center 5px;background-size: 31px;}
+	.glbal_menu .gm_inner ul li.glb_key4 a{background-position:center 5px;background-size: 22px;}
+	.glbal_menu .gm_inner ul li.glb_key5 a{background-position:center 5px;background-size: 31px;}
+	.main_topbnr .dday_num span{padding: 24% 0 0;font-size: 13px;letter-spacing: -0.13em}
+	.main_topbnr .dday_num strong{font-size: 13px;}
+
+	.payWrap .pay_sort .dateArea .d_bx{width: 119px}
+	.ebook_content .conbody .ebk_list{margin-left: 0}
+	.ebook_content .conbody .ebk_list li{width: 100%;margin-bottom: 25px}
+	.ebook_content .conbody .ebk_list dl{margin-left: 0}
+	.ebook_content .conbody .ebk_list .relect{padding-left: 0}
+	.ebook_content .conbody .btnstn{margin-left: 0}
+	.ebook_content .conbody .ebk_list .ebk_img{margin:0 auto 15px}
+	.techWrap{height: 280px}
+	.techWrap .techImg{left: inherit;right: 0px;}
+	.techWrap .techImg img{max-height: 230px}
+	.techWrap .techDetail .techInfo{padding-left: 0;margin-left: 0;padding-top: 26px;width: 100%;left: 0;}
+	.techWrap .techDetail .techInfo .tit:after{top: 137px;left: 20px;}
+	.techWrap .techDetail .techInfo .tit img{max-height: 100px;max-width: 100%;margin-left: 20px;}
+	.techWrap .techDetail .techInfo .txt_name{padding-top: 45px;font-size: 16px;display: none}
+	.techWrap .techDetail .techInfo .detail_info{padding-top: 73px;padding-left: 20px;}
+	.techWrap .techDetail .techInfo .detail_info p{padding-right: 20px}
+	.techWrap .techDetail .techInfo .txt_name strong{font-size:16px}
+	.techWrap .techDetail .techInfo .detail_info p a{font-size: 15px}
+	.techWrap .techDetail .techInfo .detail_info p:nth-child(2):before{display: none}
+	.scr_header .sh_inner ul li span{padding: 0 7px;display: block;font-size: 13px;letter-spacing: -0.5px}
+	.scr_header .sh_inner ul li:last-child:before,.scr_header .sh_inner ul:before{display: none}
+	.scr_header .sh_inner ul li a{height: 50px;line-height: 50px}
+	.scr_header .sh_inner{overflow-y: auto}
+	.scr_header .sh_inner ul{width: 700px}
+	.scr_header .sh_inner ul li span:after{top: 23px;right: 15px}
+	.payWrap .conin ul li .mine{width: auto;padding:0;margin-right: 3px;font-size: 13px}
+	.payWrap .conin ul li .mine strong{font-size: 13px}
+	.payWrap .pay_selec .cashArea .p_way ul li{padding-right: 15px}
+	.ebook_content .conbody .btnstn a{height: 36px;line-height: 36px}
+	.ebook_content .conbody .ebk_list .ebk_img img{max-height: 135px;max-width: 100px}
+	.ebook_content .connav .bk_rgt{padding-top: 270px}
+	.ebook_content .connav .bk_lft .imgbox{height: 210px}
+	.ebook_content .connav .bk_lft .imgbox img{width: 140px !important;height: 188px;margin:10px 0}
+	.ebook_content .connav .subjct li{width:25%}
+	.ebook_content .connav .subjct_tea li{width:25%}
+	.mypageWrap .mypageConditions .mp_banner{width: 100%;text-align: right;right:0;top:0;border: 0;}
+	.mypageWrap .mypageConditions .mp_banner a{padding: 0 12px 0 10px;}
+	.mypageWrap .mypageConditions .mp_banner img{width: 100%;border: 1px solid #333;}
+	.payWrap .conin ul li input[type="text"]{width: 65px}
+	.payWrap .pay_sort .month_area ul li{width: 60px}
+	.payWrap .pay_sort .dateArea .btn_srch{width: 250px;display: block;margin:7px auto 0}
+	.bookstr_wrp .bookstr_bnr ul li img{}
+	.bookstr_wrp .bookstr_bnr ul li::after{width: 70px;background-position-x: -38px;margin-left: -47px;bottom: -59px;}
+	/* .bookstr_wrp .bookstr_bnr ul li{height: 150px} */
+	/* .bookstr_wrp .bookstr_bnr{height: 170px} */
+	.lecture .lecView .lecbtnWrap .btn_addLec{width:88px;padding:0}
+	.lecture .lecView .lecbtnWrap .pass_sel{padding-right: 92px}
+	.tech_content .tech_comment .commentImg ul{padding:15px 15px 40px}
+	.tech_content .tech_comment .commentImg .btn{font-size: 13px;border: 0;line-height: 30px;top: inherit;bottom:0;right: 0px;width: 100%;height: 30px;background-color: #1eb9ac;border: 0;padding: 0;-moz-transform:none;-webkit-transform:none;transform:none;}
+	.tech_content .tech_comment .commentImg ul li{padding: 0 130px 5px 20px;}
+	.mypageWrap .myClassTit .f_right ul li a{font-size: 12px;padding-left: 14px}
+	.commonTab > ul li a{padding:10px 6px !important;font-size: 12px}
+
+	/*가로 폭 조정*/
+	.pay_innerwrp,.std_innerwrp,.mya_innerwrp,.cart_wrp,.lecfolding_wrp,.lecture .lecView,#mContainer .mypageNoti,.bonus_wrp,.mypageWrap .mypageConditions,.ebook_content .ebk_lcon .inner, .ebook_content .ebk_vcon .inner{padding-left:10px;padding-right: 10px}
+	#mContainer #mLnb .nav,#mContainer.wideC #mContent .lecture, #mContainer.wideC #mContent .cust{margin:0 10px}
+
+	.tech_content .tccont.incl_zone{padding:0 10px 25px 10px}
+
+
+}

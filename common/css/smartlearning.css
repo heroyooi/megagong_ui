@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+
+/*전체*/
+#mContainer #mLnb{display:none;} /*left메뉴 히든*/
+
+/*member*/
+.member_cont .memcont_inner .top_tit{display:none;} /* 상단 타이틀 제거 */
+
+/*lecture*/
+.lecture .lecView .lecDetail .tit .f_right .tech_home a {visibility: hidden;} /*홈링크제거*/
+.lecture .lecView .lecDetail .lecPlay {display: none;} /*강좌/교재영역제거*/
+.lecture .lecView .lecNoti ul li a {display: none;} /*문의개시판제거*/
+
+/*cast*/
+.cast_view .title_wrp > .date > strong {
+    display: none !important;
+}
+.cast_view .btn_list {display: none;} /*view*/
+
+/*book*/
+/*.sbody .ebk_list li .b_img > a{pointer-events:none;}*/ /*list*/
+/*.sbody .ebk_list li .b_info a{pointer-events:none;}*/ /*list*/
+.sbody .ebk_list li .b_info .btn {display: none;} /*list*/
+.sbody .ebk_list li .b_info dl dd.price {display: none;} /*list*/
+
+.ebk_view .view_head a {display: none;} /*view*/
+.ebk_view .btn_rgzone {display: none;} /*view*/
+.view_detail .v_right dl dd.price {display: none;} /*view*/
+.view_detail .v_right dl dd.quantity {display: none;} /*view*/
+.view_detail .v_right .btn {display: none;} /*view*/
+
+/*chrlist*/
+.lectlist li .listTitle .listotal {display: none;}
+.lectlist li .leclistBtn .btn_buy {display: none;}
+.lectlist li .lecBook .bookList .f_right {display: none;}
+.lectlist li .leclistBtn .f_left {float: right;}

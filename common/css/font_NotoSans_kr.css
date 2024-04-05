@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'NotoSans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url('https://img.megagong.net/fonts_i/NotoSsKR-Light.woff2') format('woff2'),url('https://img.megagong.net/fonts_i/NotoSsKR-Light.woff') format('woff'),url('https://img.megagong.net/fonts_i/NotoSsKR-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans KR';
+    font-style: normal;
+    font-weight: 200;
+    src: url('https://img.megagong.net/fonts_i/NotoSsKR-DemiLight.woff2') format('woff2'),url('https://img.megagong.net/fonts_i/NotoSsKR-DemiLight.woff') format('woff'),url('https://img.megagong.net/fonts_i/NotoSsKR-DemiLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans KR';
+    font-style: normal;
+    font-weight: normal;
+    src:  url('https://img.megagong.net/fonts_i/NotoSsKR-Medium.woff2') format('woff2'),url('https://img.megagong.net/fonts_i/NotoSsKR-Medium.woff') format('woff'),url('https://img.megagong.net/fonts_i/NotoSsKR-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://img.megagong.net/fonts_i/NotoSsKR-Bold.woff2') format('woff2'),url('https://img.megagong.net/fonts_i/NotoSsKR-Bold.woff') format('woff'),url('https://img.megagong.net/fonts_i/NotoSsKR-Bold.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'NotoSans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url('https://img.megagong.net/fonts_i/NotoSsKR-Black.woff2') format('woff2'),url('https://img.megagong.net/fonts_i/NotoSsKR-Black.woff') format('woff'),url('https://img.megagong.net/fonts_i/NotoSsKR-Black.otf') format('opentype');
+}

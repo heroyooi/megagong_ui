@@ -1,0 +1,318 @@
+@charset "euc-kr";
+
+.cust .csMainTopWrap{margin-bottom:20px;}
+.cust .csMainTopWrap ul{}
+.cust .csMainTopWrap ul li{float:left;width:180px;padding-left:100px;height:150px;}
+.cust .csMainTopWrap ul li.first{background:#eeeeee url('https://img.megagong.net/new/cust/bg-list1.png') no-repeat 20px 20px;}
+.cust .csMainTopWrap ul li.center{margin:0 13px;background:#eeeeee url('https://img.megagong.net/new/cust/bg-list2.png') no-repeat 20px 20px;}
+.cust .csMainTopWrap ul li.last{background:#eeeeee url('https://img.megagong.net/new/cust/bg-list3.png') no-repeat 20px 20px;}
+.cust .csMainTopWrap ul li p{padding:22px 0 5px 0;font-size:18px;line-height:22px;color:#000000;font-weight:bold;}
+.cust .csMainTopWrap ul li span{display:block;height:42px;padding-bottom:10px;color:#000;font-size:13px;line-height:16px;}
+.cust .csMainTopWrap ul li .btn_more{display:block;width:84px;height:24px;line-height:24px;background:#000;color:#fff;text-align:center;}
+
+.cust .searchWrap{position:relative;height:78px;background:#e7f2fa url('https://img.megagong.net/help/csCenter_searchImg.gif') no-repeat 39px 16px;border:1px solid #b3d2e9}
+.cust .searchWrap .searchForm{position:relative;padding:16px 0 0 180px;}
+.cust .searchWrap .searchForm div{display:inline-block;float:left;}
+.cust .searchWrap .searchForm .searchSelect{margin-right:10px}
+.cust .searchWrap .searchForm .searchSelect select{width:100px;height:30px;padding-left:10px}
+.cust .searchWrap .searchForm .searchInput{}
+.cust .searchWrap .searchForm .searchInput span{display:block;padding-top:7px;color:#308ed2;font-size:11px;}
+.cust .searchWrap .searchForm .searchInput input{width:334px;height:24px;padding-left:10px;}
+.cust .searchWrap a.btn_search{position:absolute;top:20px;right:10px;display:block;}
+
+.cust .searchList{margin-top:20px}
+.cust .searchList ul{margin:0 auto}
+.cust .searchList ul li{float:left;}
+.cust .searchList ul li a{display:block;width:143px;height:35px;text-indent:-99999px;background:url('https://img.megagong.net/new/cust/csCenter_quickGoBtn.png') no-repeat left top}
+.cust .searchList ul li.dirBt01 a{}
+.cust .searchList ul li.dirBt02 a{background-position:-143px top}
+.cust .searchList ul li.dirBt03 a{background-position:-286px top}
+.cust .searchList ul li.dirBt04 a{background-position:-429px top}
+.cust .searchList ul li.dirBt05 a{background-position:right top}
+
+.cust .botConWrap{margin-top:20px;border:1px solid #ddd}
+.cust .botConWrap .bestqWrap{width:648px;margin:0 auto;padding-top:20px;}
+.cust .botConWrap .bestqWrap .bestqtit{position:relative;}
+.cust .botConWrap .bestqWrap .bestqtit .tit{padding:7px 0 0 18px}
+.cust .botConWrap .bestqWrap .bestqtit .btn_help{position:absolute;top:0;right:0;}
+.cust .botConWrap .bestqList{margin:16px 0 20px 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.cust .botConWrap .bestqList ol{}
+.cust .botConWrap .bestqList ol li{padding:10px 20px 8px 20px;border-bottom:1px dashed #ddd}
+.cust .botConWrap .bestqList ol li.last{border-bottom:none}
+.cust .botConWrap .bestqList ol li span{display:inline-block;margin:0px 3px 0 0;width:13px;height:13px;background:url('https://img.megagong.net/help/csCenter_num.gif') no-repeat;text-indent:-999999px;}
+.cust .botConWrap .bestqList ol li span.best02{background-position:-13px 0;}
+.cust .botConWrap .bestqList ol li span.best03{background-position:-26px 0;}
+.cust .botConWrap .bestqList ol li span.best04{background-position:-39px 0;}
+.cust .botConWrap .bestqList ol li span.best05{background-position:right 0;}
+.cust .botConWrap .bestqList ol li p{display:inline-block;}
+.cust .botConWrap .bestqList ol li p strong{font-weight:bold;color:#7e7e7e}
+.cust .botConWrap .bestqList ol li p a{display:inline;font-size:12px;line-height:16px;color:#7e7e7e}
+.cust .botConWrap .bestqList ol li p a:hover,
+.cust .botConWrap .bestqList ol li p a:hover strong{color:#0076cb}
+
+.cust .botConWrap .noticeWrap{position:relative;margin-bottom:20px;}
+.cust .botConWrap .noticeWrap .notice{width:auto;}
+.cust .botConWrap .noticeWrap .notice .tit{position:relative;margin-bottom:0;padding-left:20px;height:39px;line-height:39px;border:1px solid #ddd}
+.cust .botConWrap .noticeWrap .notice .btn_more{display:inline-block;position:absolute;top:15px;right:11px;height:10px;}
+.cust .botConWrap .noticeWrap .notice .notiList{border:1px solid #ddd;border-top:none}
+.cust .botConWrap .noticeWrap .notice .notiList ul{padding:13px 15px 10px 15px;}
+.cust .botConWrap .noticeWrap .notice .notiList ul li{padding:0 0 0 8px;margin:0 0 7px 0;background:url('https://img.megagong.net/etc/130124/ic_notice.gif') no-repeat left 45%}
+.cust .botConWrap .noticeWrap .notice .notiList ul li a{display:inline-block;width:260px;line-height:16px;}
+.cust .botConWrap .noticeWrap .notice .notiList ul li a:hover,
+.cust .botConWrap .noticeWrap .notice .notiList ul li a:hover strong{color:#0076cb}
+.cust .botConWrap .noticeWrap .notice .notiList ul li span{display:inline-block;vertical-align:top;padding-top:5px;}
+.cust .botConWrap .noticeWrap .notice .notiList ul li strong{padding-right:5px;font-weight:bold;}
+.cust .botConWrap .noticeWrap .self{position:relative;width:320px;}
+.cust .botConWrap .noticeWrap .self .tit{padding-left:20px;height:39px;line-height:39px;margin-bottom:0;border:1px solid #ddd}
+.cust .botConWrap .noticeWrap .self .bullet{position:absolute;top:17px;right:10px;}
+.cust .botConWrap .noticeWrap .self .bullet ul{}
+.cust .botConWrap .noticeWrap .self .bullet ul li{float:left;width:;}
+.cust .botConWrap .noticeWrap .self .bullet ul li a{display:block;width:10px;height:10px;text-indent:-9999999px;margin-right:5px;background:url('https://img.megagong.net/main_201304/indi.gif') no-repeat}
+.cust .botConWrap .noticeWrap .self .bullet ul li a.sel {background:url('https://img.megagong.net/main_201304/indi_on.gif') no-repeat}
+.cust .botConWrap .noticeWrap .selfList{height:96px;padding:13px 15px 10px 15px;border:1px solid #ddd;border-top:none;}
+.cust .botConWrap .noticeWrap .selfList ul{display:none;}
+.cust .botConWrap .noticeWrap .selfList ul.show{display:block}
+.cust .botConWrap .noticeWrap .selfList ul li{padding:0 0 5px 4px;line-height:16px;}
+.cust .botConWrap .noticeWrap .selfList ul li a.btn_down{display:block;padding:10px 0 0 10px}
+.cust .botConWrap .noticeWrap .selfList ul li span{font-weight:bold;font-size:14px;}
+.cust .botConWrap .noticeWrap .selfList ul li span.pointQ{color:#f0562d}
+.cust .botConWrap .noticeWrap .selfList ul li span.pointA{color:#0076cb}
+
+.cust .csMainbottomWrap{margin-top:20px;}
+.cust .csMainbottomWrap ul{}
+.cust .csMainbottomWrap ul li{float:left;width:248px;padding-left:30px;height:148px;border:1px solid #eeeeee}
+.cust .csMainbottomWrap ul li.center{margin:0 13px;}
+.cust .csMainbottomWrap ul li p{padding:22px 0 10px 0;font-size:18px;line-height:22px;color:#000000;font-weight:bold;}
+.cust .csMainbottomWrap ul li span.call{display:block;padding-bottom:10px;color:#1da4fc;font-size:18px;line-height:22px;font-weight:bold}
+.cust .csMainbottomWrap ul li span.time{display:block;color:#000;font-size:13px;line-height:17px;}
+
+.cust .tit{font-size:17px;line-height:22px;font-weight:bold;margin-bottom:20px}
+
+.cust .cust01 .infoSearch{text-align:center}
+.cust .cust01 .infoSearch select{width:100px;height:25px;padding-left:10px;}
+.cust .cust01 .infoSearch input{width:200px;height:19px;padding-left:10px;vertical-align:top}
+.cust .cust01 .infoNotice{margin-bottom:20px}
+.cust .cust01 .infoNotice .info_tbl_6 td .wideTxt{display:inline-block;width:380px;}
+
+.cust .cust02 .infoSearch{position:relative;}
+.cust .cust02 .infoSearch input{width:540px;height:27px;padding:0 10px;margin:0 5px 10px 0;font-size:12px;color:#666;border:2px solid #707070}
+.cust .cust02 .infoSearch #helptxt{position:absolute;top:23px;left:130px;}
+.cust .cust02 .infoSearch .searchWord{display:inline-block;margin:0 auto}
+.cust .cust02 .infoSearch .searchWord p{padding-right:15px;font-size:12px;line-height:18px;color:#666;font-weight:bold}
+.cust .cust02 .infoSearch .searchWord ul{}
+.cust .cust02 .infoSearch .searchWord ul li{float:left;background:url('https://img.megagong.net/main/150401/bullet_login.gif') no-repeat right 6px}
+.cust .cust02 .infoSearch .searchWord ul li a{padding:0 15px;font-size:12px;line-height:18px;}
+.cust .cust02 .infoSearch .searchWord ul li.last{background:none}
+.cust .cust02 .cust02Noti{margin-top:40px;padding:20px 10px 20px 20px;border:1px solid #ddd;}
+.cust .cust02 .cust02Noti .tit{padding-bottom:10px;font-size:14px;line-height:28px;font-weight:bold;}
+.cust .cust02 .cust02Noti .f_right{padding-top:40px}
+.cust .cust02 .cust02Noti p{font-size:12px;color:#666;line-height:18px;}
+.cust .cust02 .cust02Noti p a{}
+.cust .cust02 .cust02Noti p a span{color:#0074c7}
+
+.cust .cust02 .commonTab{}
+.cust .cust02 .commonTab li a{padding:12px 15px;min-width:50px;}
+.cust .cust02 .commonTab .faqList{}
+.cust .cust02 .commonTab .faqList li{float:left;background:url('https://img.megagong.net/main/150401/bullet_login.gif') no-repeat right 6px}
+.cust .cust02 .commonTab .faqList li.last{background:none}
+.cust .cust02 .commonTab .faqList li a{padding:0 10px;font-size:12px;line-height:18px;}
+.cust .cust02 .commonTab .faqList li.on a{font-weight:bold}
+.cust .cust02 .commonTab .faqList li a:hover,
+.cust .cust02 .commonTab .faqList li.on a:hover{color:#0074c7}
+.cust .cust02 .commonTab .tab_container #tab14{display:block}
+.cust .cust02 .commonTab .tab_container .listSort{padding:15px 0;}
+.cust .cust02 .commonTab .tab_container .faq{border-top:1px solid #ddd;}
+.cust .cust02 .commonTab .tab_container .faq li{border-bottom:1px solid #ddd;}
+.cust .cust02 .commonTab .tab_container .faq li .q{background:#f7f7f7 url('https://img.megagong.net/help/201601/btn_show.png') no-repeat 98% center;}
+.cust .cust02 .commonTab .tab_container .faq li .q a{display:block;padding:20px;}
+.cust .cust02 .commonTab .tab_container .faq li .q a span{color:#0074c7;font-size:12px;line-height:18px}
+.cust .cust02 .commonTab .tab_container .faq li .q a .txt_q{display:inline-block;padding-right:10px}
+.cust .cust02 .commonTab .tab_container .faq li .a{overflow:hidden;padding:20px;border-top:1px solid #ddd;}
+.cust .cust02 .commonTab .tab_container .faq li .a .txt{font-size:12px;line-height:18px}
+.cust .cust02 .commonTab .tab_container .faq li .a .txt1{font-size:12px;line-height:18px;font-weight:bold}
+.cust .cust02 .commonTab .tab_container .faq li .a .img{padding:15px 0 10px 0}
+.cust .cust02 .commonTab .tab_container .faq li .a .txt1 .color{font-weight:bold}
+.cust .cust02 .commonTab .tab_container .faq li .a .color{color:#ff0000}
+.cust .cust02 .commonTab .tab_container .faq li .a .color2{background: #ffef00; color: #0075c8}
+.cust .cust02 .commonTab .tab_container .faq li .a .color3{color:#0000ff}
+.cust .cust02 .commonTab .tab_container .faq li .a ul{padding-top:10px}
+.cust .cust02 .commonTab .tab_container .faq li .a ul li{border-bottom:none;padding-bottom:5px;}
+
+.cust .cust03 .tit{margin-bottom:10px}
+.cust .cust03 .infoSearch{margin:10px 0}
+.cust .cust03 .infoSearch select{width:150px;}
+.cust .cust03 .infoSearch select.title{width:100px;}
+.cust .cust03 .infoSearch input{width:200px;}
+.cust .cust03 .btn_faq{padding:0 0 10px 0;text-align:right;}
+.cust .cust03 .btn_faq a{display:block;}
+.cust .cust03 .cust03Tbl1{}
+.cust .cust03 .cust03Tbl1 .btn_list{padding:10px 0 0 0;text-align:right}
+.cust .cust03 .pagenav{padding-bottom:30px;}
+.cust .cust03 .cust03MyQ{position:relative;margin-bottom:20px;border-bottom:1px solid #d9d9d9;}
+.cust .cust03 .cust03MyQ .Qcount{position:absolute;top:5px;right:0;}
+.cust .cust03 .cust03MyQ .Qcount .color{color:#ff3333}
+.cust .cust03 .cust03Tbl1 .myQselect{padding-bottom:10px;text-align:right}
+.cust .cust03 .cust03Tbl1 .myQselect select{width:90px;height:25px;}
+
+.cust .cust03 .cust03Tbl2 select{height:25px;width:160px;}
+.cust .cust03 .cust03Tbl2 input{height:25px;width:415px;padding-left:10px;}
+.cust .cust03 .cust03Tbl2 input[type="file"]{border:1px solid #a9a9a9}
+.cust .cust03 .cust03Edit{margin-top:20px;border:1px solid #ddd}
+.cust .cust03 .cust03Tbl3{margin-top:20px;}
+.cust .cust03 .cust03Tbl3 td p{font-weight:bold;color:#7e7e7e;font-size:12px;line-height:18px;}
+.cust .cust03 .cust03Tbl3 td select{height:25px;width:60px;}
+.cust .cust03 .cust03Tbl3 td input[type="text"]{height:25px;width:71px;padding-left:10px;}
+.cust .cust03 .cust03Tbl3 td .checkWrap{display:inline-block;padding-left:20px}
+.cust .cust03 .cust03Tbl3 td input.email{width:225px;padding-left:10px;}
+.cust .cust03 .btn_list{padding-top:20px;text-align:right;}
+
+
+.cust .cust04{}
+.cust .cust04 .tit2{padding-bottom:10px}
+.cust .cust04 .custReserv .txt{padding-bottom:13px;font-size:18px;color:#000;border-bottom:2px solid #000;}
+.cust .cust04 .custReserv .txt strong{font-size:18px;color:#000;font-weight:bold}
+.cust .cust04 .custReserv .reserv_day{margin:0 0 40px 0;padding:40px 10px 10px 10px;background:#eeeef0}
+.cust .cust04 .custReserv .reserv_day ul{padding-bottom:10px}
+.cust .cust04 .custReserv .reserv_day ul li{position:relative;float:left;padding-left:5px;}
+.cust .cust04 .custReserv .reserv_day ul li.today .tag_today{display:block}
+.cust .cust04 .custReserv .reserv_day ul li .tag_today{display:none;position:absolute;left:11px;top:-19px}
+.cust .cust04 .custReserv .reserv_day .day_desc{display:none;padding:20px 30px;color:#555;font-size:12px;background:#fff;}
+.cust .cust04 .custReserv .reserv_day .day_desc.show{display:block}
+.cust .cust04 .custReserv .reserv_day .day_desc ul{}
+.cust .cust04 .custReserv .reserv_day .day_desc ul li{float:none;padding-left:0;font-size:12px;line-height:18px;}
+.cust .cust04 .custReserv .reserv_every{margin:0 0 40px 0;padding:20px;border:1px solid #d9d9d9;border-top:none;}
+.cust .cust04 .custReserv .reserv_every ul{}
+.cust .cust04 .custReserv .reserv_every ul li{font-size:12px;line-height:18px;color:#555;}
+.cust .cust04 .custReserv .cust04Tbl1 table{border-top:none}
+.cust .cust04 .custReserv .cust04Tbl1 table td{padding-left:20px;text-align:left}
+.cust .cust04 .custReserv .cust04Tbl1 table td ul{}
+.cust .cust04 .custReserv .cust04Tbl1 table td ul li{float:left;width:50px;}
+.cust .cust04 .custReserv .cust04Tbl1 table td ul li.first{width:80px;}
+.cust .cust04 .custReserv .cust04Tbl1 table td ul li.second{width:150px;}
+.cust .cust04 .custReserv .cust04Tbl1 table td span{display:inline-block;font-size:11px;color:#999;}
+.cust .cust04 .custReserv .cust04Tbl1 table td .info_modi{display:inline-block;font-size:11px;color:#3373d4}
+.cust .cust04 .custReserv .cust04Tbl1 table td select{width:140px;height:30px;}
+.cust .cust04 .custReserv .cust04Tbl1 table td textarea{padding:10px}
+.cust .cust04 .custReserv .cust04Btn{text-align:right;padding:15px 0 20px 0}
+.cust .cust04 .custReserv .cust04Btn a{display:inline-block;padding:5px 16px 0 16px;height:23px;font-weight:bold;border:1px solid #125cb1;background:#1e6dc9;color:#fff;}
+.cust .cust04 .custReserv .cust04Btn a span{color:#fff}
+.cust .cust04 .info_box{margin:10px 0 20px 0;padding:20px;border:1px solid #ddd}
+.cust .cust04 .info_box ul{}
+.cust .cust04 .info_box ul li{padding:0 0 5px 10px;font-size:12px;color:#7e7e7e;background:url('https://img.megagong.net/tmp_img/img/ic_blue02.gif') no-repeat left 5px}
+.cust .cust04 .cust04Btn{padding:20px 0;text-align:center;}
+
+/*학원상담하기 팝업*/
+.layerPop .addr_new{position:relative;}
+.layerPop .addr_new .btn_print{position:absolute;top:10px;right:10px;}
+.layerPop .addr_new .mapTxt{margin-top:20px;padding-left:30px}
+.layerPop .addr_new .mapTxt .tit{margin-bottom:10px;font-size:14px;color:#333;line-height:20px;font-weight:bold}
+.layerPop .addr_new .mapTxt ul.address{margin-bottom:20px;}
+.layerPop .addr_new .mapTxt ul.address li{font-size:12px;color:#666;line-height:18px}
+.layerPop .addr_new .mapTxt ul.address li strong{font-weight:bold}
+.layerPop .addr_new .mapTxt ul.traffic li{padding:10px 10px 10px 150px;margin-bottom:10px;font-size:12px;line-height:18px;}
+.layerPop .addr_new .mapTxt ul.traffic li.subway{background:url('https://img.megagong.net/etc/150914_2/ico_01.jpg') no-repeat left center}
+.layerPop .addr_new .mapTxt ul.traffic li.bus{background:url('https://img.megagong.net/etc/150914_2/ico_02.jpg') no-repeat left center}
+.layerPop .addr_new .mapTxt ul.traffic li.car{background:url('https://img.megagong.net/etc/150914_2/ico_03.jpg') no-repeat left center}
+.layerPop .addr_new .mapTxt ul.traffic li .color1{color:#9d7a1e;}
+.layerPop .addr_new.mapTxt ul.traffic li .color2{color:#4a6bc8;}
+.layerPop .addr_new .mapBtn{padding:50px 0;text-align:center}
+.layerPop .addr_new .pop_bottom{padding:10px 0;text-align:center;background:#7a7a7a}
+
+.cust .cust05{}
+.cust .cust05 .cust05Tab{padding:20px 0 40px 0}
+.cust .cust05 .cust05Tit{position:relative;}
+.cust .cust05 .cust05Tit p{display:inline-block;padding:10px 0;}
+.cust .cust05 .cust05Tab{text-align:center}
+.cust .cust05 .cust05Tit .btn_advice{position:absolute;top:0px;right:0}
+.cust .cust05 .cust05Tit2{padding-bottom:20px;text-align:right}
+.cust .cust05 .cust05Cont{padding:20px;margin:15px 0;border:1px solid #dadada}
+.cust .cust05 .cust05Cont p{font-size:12px;line-height:18px;color:#7e7e7e}
+.cust .cust05 .cust05Cont .txt01{margin-bottom:10px;font-size:13px;line-height:18px;font-weight:bold;color:#228fce}
+.cust .cust05 .cust05Cont .txt02{margin-bottom:10px;font-size:12px;font-weight:bold;color:#7e7e7e}
+.cust .cust05 .cust05Cont .txt03{margin-bottom:20px;font-size:11px;color:#bab8b8;line-height:16px}
+.cust .cust05 .cust05Cont ol{}
+.cust .cust05 .cust05Cont ol li{font-size:12px;line-height:18px;color:#7e7e7e;}
+.cust .cust05 .cust05Cont ol li.pdtop{padding-top:10px;}
+.cust .cust05 .cust05Cont ol li span{display:block;font-size:11px;color:#bab8b8;line-height:16px}
+.cust .cust05 .contBox{margin:15px 0;padding:10px;background:#f2f2f2}
+.cust .cust05 .contBox span{display:block;font-size:12px;line-height:18px;color:#7e7e7e;}
+.cust .cust05 .contBox span.txt04{padding-top:10px;}
+.cust .cust05 .contBox span.bold{font-weight:bold}
+.cust .cust05 .contBox span.underline{padding-top:5px;font-weight:bold;text-decoration:underline}
+.cust .cust05 .contBox ul{}
+.cust .cust05 .contBox ul li{font-size:12px;line-height:18px;color:#7e7e7e;}
+.cust .cust05 .cust05Btn{text-align:center;}
+.cust .cust05 .cust05Btn a{display:inline-block;}
+.cust .cust05 .cust05Tbl1{}
+.cust .cust05 .cust05Tbl1 table{}
+.cust .cust05 .cust05Tbl1 table td{text-align:left}
+.cust .cust05 .cust05Tbl1 table td ul{}
+.cust .cust05 .cust05Tbl1 table td ul li{float:left;width:100px;}
+.cust .cust05 .cust05Tbl1 table td ul li.center{width:120px;}
+.cust .cust05 .cust05Tbl1 table td input[type=text]{width:550px;padding-left:10px;height:30px;color:#7e7e7e}
+.cust .cust05 .cust05Tbl1 table td select{width:120px;height:30px;color:#7e7e7e}
+.cust .cust05 .cust05Tbl1 table td .refundtxtA{margin-top:10px;width:550px;padding:10px;color:#7e7e7e}
+.cust .cust05 .cust05Tbl1 table td .txt_color{display:block;padding-top:5px;color:#FF5E00}
+.cust .cust05 .cautionTxt{padding:10px}
+.cust .cust05 .cautionTxt .txtBold{display:block;padding-bottom:15px;font-size:12px;color:#c80000;line-height:18px;font-weight:bold}
+.cust .cust05 .cautionTxt ul{padding:0 10px 20px 0px}
+.cust .cust05 .cautionTxt ul li{font-size:12px;color:#7e7e7e;line-height:18px}
+.cust .cust05 .cautionTxt ul li.last{font-weight:bold}
+.cust .cust05 .cautionImg{margin-bottom:20px;border:1px solid #dfdfdf;background:#f8f8f8}
+.cust .cust05 .cust05Tbl2 table td .wideTxt{display:inline-block;width:400px;}
+.cust .cust05 .cust05Tbl2 table td .icon{display:inline-block;padding-top:5px;vertical-align:top}
+.cust .cust05 .noticeView{margin-top:10px;}
+
+.cust .cust06{}
+.cust .cust06 .tit2{margin-bottom:20px;}
+.cust .cust06 .cust06Tbl1{margin:10px 0 20px 0;}
+.cust .cust06 .cust06Tbl1 .tbl{border-top:2px solid #ddd;border-right:none;border-left:none;}
+.cust .cust06 .cust06Tbl1 .tbl th{border-right:none}
+.cust .cust06 .cust06Tbl1 .tbl td{border-right:none;}
+.cust .cust06 .cust06Tbl1 .tbl td a{color:#0074c7}
+.cust .cust06 .cust06Tbl1 .tbl td a:hover{text-decoration:underline}
+.cust .cust06 .imgMiddle{margin:20px 0;text-align:center;}
+.cust .cust06 .info_box1{}
+.cust .cust06 .info_box1 ul{}
+.cust .cust06 .info_box1 ul li{font-size:13px;color:#666;line-height:18px;}
+.cust .cust06 .info_box1 ul li p{display:inline-block;padding:5px 0 0 12px;vertical-align:middle}
+.cust .cust06 .cust06Tbl2{margin-bottom:20px;border-top:1px solid #ddd;border-left:1px solid #ddd}
+.cust .cust06 .cust06Tbl3{margin-bottom:20px;}
+.cust .cust06 .cust06Tbl5{border-top:1px solid #ddd;border-left:1px solid #ddd}
+.cust .cust06 .cust06Tbl5 thead th{padding:10px 8px;background:#f7f7f7;font-weight:bold;border-bottom:1px solid #ddd;border-right:1px solid #ddd}
+
+.cust .cust99 .tit{padding-bottom:10px;}
+.cust .cust99 .txtWrap{padding:10px 0 0 0}
+.cust .cust99 .txtWrap p{font-size:12px;line-height:18px}
+.cust .cust99 .txtWrap span{display:inline;text-decoration:underline}
+.cust .cust99 .txtWrap .txt{padding:10px 0 20px 0;}
+.cust .cust99 .txtWrap .txt1{padding:10px 0 30px 0;}
+.cust .cust99 .txtWrap .txt2{margin:10px 0;padding:10px;background:#efefef;border:1px solid #e0e0e0}
+.cust .cust99 .txtWrap .txt3{padding:20px 0 10px 0}
+.cust .cust99 .cust99Tbl{padding:5px 0 10px 0;}
+.cust .cust99 .cust99Tbl .custTbl{}
+.cust .cust99 .cust99Tbl .custTbl tr{border-bottom:1px solid #fff}
+.cust .cust99 .cust99Tbl .custTbl tr.last{border-bottom:none}
+.cust .cust99 .cust99Tbl .custTbl td{background:#efefef;padding:10px 10px 10px 20px;text-align:center;font-size:12px;line-height:18px;vertical-align:middle}
+.cust .cust99 .cust99Tbl .custTbl td.first{border-right:1px solid #fff}
+.cust .cust99 .cust99Tbl .custTbl td.aL{text-align:left}
+.cust .cust99 .txtWrap .addTxt{padding:30px 0 0 0}
+.cust .cust99 .txtWrap .addTxt p.txt5{padding-bottom:5px;}
+.cust .cust99 .txtWrap .addTxt .txt4{margin:10px 0;padding:10px 10px 10px 20px;background:#efefef;}
+.cust .cust99 .txtWrap .addTxt .txt4 dl{padding-bottom:10px;}
+.cust .cust99 .txtWrap .addTxt .txt4 dt{padding-left:10px;font-size:12px;line-height:18px;text-decoration:underline;background:url('https://img.megagong.net/help/ball_blue.gif') no-repeat left center;}
+.cust .cust99 .txtWrap .addTxt .txt4 dd{font-size:12px;line-height:18px;}
+
+/*소방 학원상담*/
+.wideC .cust .botConWrap .bestqWrap{width:800px}
+.wideC .cust .botConWrap .noticeWrap .notice .notiList ul li a{width:336px}
+.wideC .cust .botConWrap .noticeWrap .self{width:390px;}
+.wideC .cust04 .acadImg{padding-bottom:40px;}
+.wideC .cust04 .custReserv .txt{padding-bottom:13px;font-size:18px;color:#000;border-bottom:2px solid #000}
+.wideC .cust04 .custReserv .txt strong{font-weight:bold;font-size:18px;color:#000;}
+.cust04 .tabBtn{padding-top:15px;}
+.cust04 .tabBtn div{display:inline-block;}
+.cust04 .tabBtn div a{display:block;width:114px;height:26px;line-height:26px;}
+.cust04 .custReserv .cust04Tbl1 table td span.btnS{color:#fff}
+.cust04 .tabBtn div.btn_cst1 a{background:#cf2b12;}
+.cust04 .tabBtn div.btn_cst2 a{background:#000000;}

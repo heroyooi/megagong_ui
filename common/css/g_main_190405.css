@@ -1,0 +1,147 @@
+@charset "euc-kr";
+
+/* .inner::after{content:'';display:block;clear: both} */
+.main_wrp{width:100%;min-width: 1080px;margin:0 auto}
+
+/* 메인 탑 배너 */
+.main_topbnr{position: relative;background-color: #1c1c1c;height: 120px;margin: 0}
+/*.main_topbnr::before{content: "";width: 50%;position: absolute;top:0;left:0;background-color: #17468a;height: 100%}*/
+.main_topbnr .mtb_inner{position: relative;width: 1080px;margin:0 auto;overflow: hidden;}
+.main_topbnr .mtb_inner .mtb_mb{display: none}
+.main_topbnr .mtb_inner .mtb_link{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.main_topbnr .mtb_inner a{position: absolute;width: 100%;height: 100%;text-indent: 0;font-size: 0;top:0;left:0}
+.main_topbnr .mtb_inner .mtb_link.con3 a{width: 33.3%}
+.main_topbnr .mtb_inner .mtb_link.con3 a:nth-child(1){left:0}
+.main_topbnr .mtb_inner .mtb_link.con3 a:nth-child(2){left:33.3%}
+.main_topbnr .mtb_inner .mtb_link.con3 a:nth-child(3){left:66.6%}
+.main_topbnr.con_one .mtb_inner a{text-indent: 0}
+.main_topbnr .dday_num{position: absolute;font-size: 15px;top: 0;left: 6.2%;color: #fff;text-align: center;font-weight: bold;width: 91px;letter-spacing: -0.5px;height: 95px;width: 95px;/*left: 3.2%;*//*width: 109px;*/}
+.main_topbnr .dday_num span{line-height: 1;display: block;color: #272846;font-size: 16px;font-weight: bold;padding: 22px 0 0 0;letter-spacing: -0.07em;;text-indent: 0}
+.main_topbnr .dday_num strong{display: block;font-size: 23px;color: #272846;margin-top: 5px;text-indent: 0}
+.main_topbnr.con_one .mtb_inner a{float: none;width: 100%;display: block}
+.main_topbnr.con_one::before{display: none}
+/* 메인 비쥬얼 */
+.main_visual{position: relative;background-color: #f1f1f1;padding: 40px 0 180px}
+.main_visual .inner{position: relative;width: 1130px;margin:0 auto}
+.main_visual .main_slider{height: 462px;overflow: hidden;}
+.main_visual .main_slider img{width: 328px;transition: all 0.5s ease-in-out;-moz-box-shadow: 5px 5px 3px #cacaca;-webkit-box-shadow: 5px 5px 3px #cacaca;box-shadow: 5px 5px 3px #cacaca;-webkit-transform:scale(1.0);-ms-transform:scale(1.0);-moz-transform:scale(1.0);-o-transform:scale(1.0);transform:scale(1.0)}
+.main_visual .ms_arrow.sprev{position: absolute;top: 185px;left: -30px;background: url('https://img.megagong.net/gong/main/main_tealeft.png') no-repeat 0 0;font-size:0;text-indent:-99999px;width: 37px;height: 67px}
+.main_visual .ms_arrow.snext{position: absolute;top: 185px;right: -30px;background: url('https://img.megagong.net/gong/main/main_tearight.png') no-repeat 0 0;font-size:0;text-indent:-99999px;width: 37px;height: 67px}
+.main_visual .slick-arrow,.main_visual .slick-dot{display: none !important}
+.main_visual .slick-list{padding:39px 0 45px !important;margin-left: 25px;margin-right: -15px}
+.main_visual .main_slider .slick-center img{transition: all 0.5s ease-in-out;-webkit-transform:scale(1.2);-ms-transform:scale(1.2);-moz-transform:scale(1.2);-o-transform:scale(1.2);transform:scale(1.2);-moz-box-shadow: 4px 5px 3px #8f8f8f;-webkit-box-shadow: 4px 5px 3px #8f8f8f;box-shadow: 4px 5px 3px #8f8f8f}
+
+/* 메인 비쥬얼 풀서비스*/
+.main_visual_fullsvc{position: relative;background-color: #f1f1f1;padding: 40px 0 180px}
+.main_visual_fullsvc .inner{position: relative;width: 1080px;margin:0 auto}
+.main_visual_fullsvc .inner::after{line-height:0;display:table;content:'';clear:both}
+.main_visual_fullsvc .inner .fullsvc_bnr{float: left;}
+.main_visual_fullsvc .inner .fullsvc_bnr a{display: block;font-size: 0;line-height: 0}
+.main_visual_fullsvc .inner .fullsvc_bnr img{-moz-box-shadow: 5px 5px 3px #cacaca;-webkit-box-shadow: 5px 5px 3px #cacaca;box-shadow: 5px 5px 3px #cacaca;}
+.main_visual_fullsvc .main_slider_fullsvc{width:395px;float: right;-moz-box-shadow: 5px 5px 3px #cacaca;-webkit-box-shadow: 5px 5px 3px #cacaca;box-shadow: 5px 5px 3px #cacaca;}
+.main_visual_fullsvc .main_slider_fullsvc .slick-track{}
+.main_visual_fullsvc .main_slider_fullsvc .slick-arrow{display: none !important}
+.main_visual_fullsvc .main_slider_fullsvc .slick-dots{position: absolute;top: 15px;right: 15px;z-index: 1;}
+.main_visual_fullsvc .main_slider_fullsvc .slick-dots li{float: left;}
+.main_visual_fullsvc .main_slider_fullsvc .slick-dots li button{display: block;margin:0 5px;width:14px;height:14px;background: url('https://img.megagong.net/gong/full/full_main_dot.png') no-repeat -17px 0;font-size: 0}
+.main_visual_fullsvc .main_slider_fullsvc .slick-dots li.slick-active button{background-position: 0 0}
+.main_visual_fullsvc .main_slider_fullsvc {font-size: 0;line-height: 0}
+
+/* 메인 중간배너 */
+.main_middlebnr{position: relative;width: 1080px;margin: -150px auto 39px}
+.main_middlebnr img{-moz-box-shadow: 5px 5px 3px #cacaca;-webkit-box-shadow: 5px 5px 3px #cacaca;box-shadow: 5px 5px 3px #cacaca}
+.main_middlebnr .dd_state{width: 218px;height: 28px;text-align: center;line-height: 28px;color: #fff;font-size: 15px;background: url('https://img.megagong.net/gong/main/dd_state_bg.png') no-repeat 0 0;left: 63%;top:11%;position: absolute;}
+.main_middlebnr .dd_state strong{font-weight: bold;font-size: 15px;color: #fdd000}
+.main_middlebnr a {font-size: 0;position: absolute;width: 100%;height: 100%;}
+.main_middlebnr.con3{}
+.main_middlebnr.con3 a{position: absolute;width: 33.3%;height: 100%;font-size: 0;color: #fff;margin:0}
+.main_middlebnr.con3 a.a2{left:33.3%}
+.main_middlebnr.con3 a.a3{left:66.6%}
+/* 공캠 선생님 */
+.sec_teacher{position: relative;height: 385px;width: 100%;overflow: hidden}
+.sec_teacher .inner{position: relative;width: 1080px;margin:0 auto 0}
+.sec_teacher h3{margin:0 0 30px}
+.sec_teacher .teacher_rollwrp{position: absolute;width: 4000px;left:50%;margin-left: -1978px;height: 280px}
+.sec_teacher .teacher_rollbtn{position: relative;width: 1080px;margin: 0px auto 0;padding: 0px 0 0}
+.sec_teacher .slick-arrow,.sec_teacher .slick-dot{display: none !important}
+.sec_teacher .btn_arrow{position: absolute;width:55px;height: 55px}
+.sec_teacher .btn_arrow.sprev{top: 100px;left: -38px;background: url('https://img.megagong.net/gong/main/teacher_rollbtn.png') no-repeat 0 0;font-size:0;text-indent:-99999px;background-position: 0 0}
+.sec_teacher .btn_arrow.snext{top: 100px;right: -38px;background: url('https://img.megagong.net/gong/main/teacher_rollbtn.png') no-repeat 0 0;font-size:0;text-indent:-99999px;background-position: -60px 0px}
+.sec_teacher .teacher_slider strong{display: block;text-align: center;font-size: 15px;padding-top: 20px;padding-right: 40px;color:#0e9e8c}
+.sec_teacher .teacher_slider strong span{font-size: 15px;color:#555;padding-right: 7px}
+.sec_teacher .tc_slide{position: relative}
+.sec_teacher .hoverpoint{background: url('https://img.megagong.net/gong/main/hovbg.png') no-repeat 0 0;width: 243px;height: 243px;position: absolute;top: 0;left: 0}
+.sec_teacher .hoverpoint p{position: relative;padding: 75px 20px 15px;color: #fff;line-height: 1.3;text-align: center;margin: 0 0 15px;font-size: 16px;font-weight: normal}
+.sec_teacher .hoverpoint p::after{content:'';display:block;position: absolute;bottom: 0;left:50%;width:8px;height: 1px;background-color: #fff;margin-left: -4px}
+.sec_teacher .hoverpoint strong{display: block;height: 20px;padding:0 0 20px;background: url('https://img.megagong.net/gong/main/hovpoint.png') no-repeat center bottom;color: #fff;font-size: 16px;font-weight: normal}
+
+/* 메인하단 */
+.main_bottomzone{background-color: #e9f4ec;padding: 40px 0 60px}
+
+/* 온라인서점 */
+.bookstr_bnr{position: relative;height: 230px}
+.bookstr_wrp{position: relative;width: 1080px;margin:0 auto 0}
+.bookstr_wrp h3{margin:0 0 15px}
+.bookstr_wrp .bookstr_bnr{position: relative;height: 230px;background: url('https://img.megagong.net/gong/main/main_bookstr_con.jpg') no-repeat 0 0}
+.bookstr_wrp .bookstr_bnr ul{padding:30px 0 0 470px}
+.bookstr_wrp .bookstr_bnr ul::after{content:'';display:block;clear: both}
+.bookstr_wrp .bookstr_bnr ul li{float: left;width: 190px;position: relative;height: 200px;cursor: pointer}
+.bookstr_wrp .bookstr_bnr ul li::after{position: absolute;bottom: 0;right: 10px;width: 100px;height: 115px;background: url('https://img.megagong.net/gong/main/main_bookstr_bestico.png') no-repeat 0 bottom;content: ""}
+.bookstr_wrp .bookstr_bnr .tit_link{position: absolute;top: 0;left: 0;width: 467px;height: 230px;text-indent: -9999em}
+
+/* 공캠 배너 */
+.sec_banner{position: relative;width: 1080px;margin:40px auto 0}
+.sec_banner h3{margin-bottom: 14px}
+.sec_banner.firstc{margin-top: 0;margin-bottom: 30px}
+
+/* 메인 게시판 */
+.sec_board{position: relative;width: 1080px;margin:40px auto 0}
+.sec_board::after{content:'';display:block;clear: both}
+.board_wrap{position: relative;float:left;background-color: #fff;width:350px;height: 330px;margin-left: 15px;padding: 45px 26px 45px 26px;box-sizing: border-box}
+.board_wrap:first-child{margin-left: 0}
+.board_wrap h3{position: relative;padding-left:4px;height: 38px;font-size: 18px;font-weight: bold;line-height: 38px;border-bottom:2px solid #000}
+.board_wrap h3 .btn_more{position: absolute;top:14px;right:3px;width:50px;height: 11px;background: url('https://img.megagong.net/gong/main/btn_more.png') no-repeat 0 0;font-size:0;text-indent:-99999px}
+.board_wrap .board_list{max-height: 199px;overflow: hidden}
+.board_wrap .board_list li{width:100%;border-top:1px solid #e2e2e2}
+.board_wrap .board_list li:first-child{border-top:none}
+.board_wrap .board_list a{display: block;font-size: 14px;color:#000;line-height: 39px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width: 90%;text-decoration: none}
+.board_wrap.supprt_ct h3{margin-bottom: 25px}
+.board_wrap.supprt_ct dl{border-left: 1px solid #e5e5e5;margin-right: -1px}
+.board_wrap.supprt_ct dl dt{padding-bottom: 10px;font-weight: bold;font-size: 14px;padding-left: 120px;letter-spacing: -0.5px;padding-top: 7px}
+.board_wrap.supprt_ct dl dd{padding-left: 15px}
+.board_wrap.supprt_ct dl .call_num{padding: 0 0 8px 120px}
+.board_wrap.supprt_ct dl .call_num strong{display: inline-block;border: 1px solid #ddd;padding: 2px 2px;font-size: 11px;line-height: 1;margin-bottom: 5px}
+.board_wrap.supprt_ct dl .call_num span{display:block;font-size: 31px;color: #888;font-weight: bold;margin-bottom: 20px;letter-spacing: -0.6px}
+.board_wrap.supprt_ct dl .call_time{position: relative;font-size: 12px;color: #777;background-color: #f8f8f8;padding-bottom: 7px;border: 1px solid #efefef;padding-top: 14px;padding-left: 120px;border-bottom: 0}
+.board_wrap.supprt_ct dl .call_time.last{border-top: 0;padding-top: 5px;border-bottom: 1px solid #efefef;padding-bottom: 15px}
+.board_wrap.supprt_ct dl .call_time strong{position: absolute;top: 15px;left: 60px;font-size: 11px;letter-spacing: -0.5px;line-height: 1.4;color: #555}
+.board_wrap.supprt_ct dl .call_time.last strong{top: 5px}
+.board_wrap.supprt_ct dl .call_time span{padding: 0;display: block;line-height: 1.4;font-size: 12px;line-height: -0.5px;color: #555}
+.board_wrap.supprt_ct dl .call_time.aln{padding-top: 14px}
+.board_wrap.supprt_ct dl .call_time.aln strong{top:14px;left:15px}
+.board_wrap.supprt_ct ul{overflow: hidden;clear: both;padding: 35px 0 0;margin-left: -10px}
+.board_wrap.supprt_ct ul::after{content:'';display:block;clear: both}
+.board_wrap.supprt_ct ul li{float: left;width: 33.333%}
+.board_wrap.supprt_ct ul li a{display: block;padding: 7px 0;text-align: center;border: 1px solid #ccc;margin-left: 8px;font-weight: bold}
+.board_wrap.supprt_ct dl.fir{border:0;background: #fff url('https://img.megagong.net/new/mypage/gong_contactphn.jpg') no-repeat 40px 3px}
+.board_wrap .ntell_popwrp{position: absolute;top:0;left: 0;width: 100%;height: 100%;background-color: #fff;}
+.board_wrap .ntell_popwrp > div{position: relative;padding:28px 30px;text-align: center;}
+.board_wrap .ntell_popwrp .m_anno{padding: 54px 0 15px;text-align: center;background: url('https://img.megagong.net/gong/common/ntell_bg.png') no-repeat 93% 0;}
+.board_wrap .ntell_popwrp .m_anno span{display: block;border-top: 2px solid #0f9e8c;border-bottom: 2px solid #0f9e8c;color: #1e1e1e;padding: 13px 0 13px;font-size: 21px;font-weight: bold;line-height: 1.3;letter-spacing: -0.05em;}
+.board_wrap .ntell_popwrp .m_anno strong{display: block;font-size: 21px;font-weight: bold;line-height: 1.3;letter-spacing: -0.05em;color: #0f9e8c}
+.board_wrap .ntell_popwrp .s_anno{font-size: 15px;color: #272727;line-height: 1.4;letter-spacing: -0.05em;padding-bottom: 15px}
+.board_wrap .ntell_popwrp a {display: block;width: 260px;margin:0 auto;background-color: #0f9e8c;}
+.board_wrap .ntell_popwrp a span{padding:11px 15px;display: block;font-size: 16px;color: #fff;letter-spacing: -0.05em;}
+.board_wrap .ntell_popwrp a span img{vertical-align: middle;margin-top: -1px}
+
+/* 플로팅 배너 */
+.ly_btm_fixed{position: fixed;bottom:0px;right:0;z-index: 100}
+.ly_btm_fixed .crdwrp{position: relative;/*-webkit-transition: 0.6s all;transition: 0.6s all;text-align: center;-webkit-transform-style: preserve-3d;transform-style: preserve-3d;*/}
+/* .crdwrp.stflip {-webkit-transform: rotateY(180deg);transform: rotateY(180deg)}
+.crdwrp.stflip img{-webkit-transform: rotateY(180deg);transform: rotateY(180deg)} */
+.crdwrp.stflip {/* -webkit-animation: sfopacity 0.1s ease-in alternate;-moz-animation: sfopacity 0.1s ease-in alternate;animation: sfopacity 0.1s ease-in alternate;*/}
+.crdwrp .bnnr_flp{position: absolute;bottom: 0;right: 0;-webkit-transition: 0.6s all;transition: 0.6s all}
+.crdwrp .bnnr_flp.c01,.crdwrp .bnnr_flp.c02{opacity: 0;z-index: 0;-webkit-transition: 0.6s all;transition: 0.6s all}
+.crdwrp .bnnr_flp.c01.ovview,.crdwrp .bnnr_flp.c02.ovview{opacity: 1;-webkit-transition: 0.6s all;transition: 0.6s all;z-index: 1}
+
+.mobile_navbtn.on{top:-44px}

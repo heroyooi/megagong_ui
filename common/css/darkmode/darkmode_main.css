@@ -1,0 +1,71 @@
+@charset "euc-kr";
+
+/*
+
+1 layer background color : #181818
+2 layer background color : #202020
+3 layer background color : #252525
+
+1 highlight text color : #e9e9e9
+2 highlight text color : #bbbbbb
+3 normal text color : #8c8c8c
+
+common border color : #404040
+
+*/
+
+/* ---------------------- background ---------------------- */
+body.darkmode .launching_wrap, 
+body.darkmode .launching_wrap .bnr_total, 
+body.darkmode .launching_wrap .new_lineup_zone, 
+body.darkmode .banner_zone .bnr_total .inner,
+body.darkmode .familyCampus,
+body.darkmode .board_wrap,
+body.darkmode .board_wrap h3,
+body.darkmode .familyCampus .part_1 h3 span{background: #181818;}
+body.darkmode .main_wrp .main_lecture .link_wrap .item a,
+body.darkmode .main_wrp .examInfo_wrp,
+body.darkmode .main_wrp .examInfo_wrp .info_list li,
+body.darkmode .main_wrp .examInfo_wrp .info_list li a{background: #202020;}
+/* // ---------------------- background ---------------------- */
+
+
+/* ---------------------- border-color ---------------------- */
+body.darkmode .main_wrp .main_lecture .link_wrap .item a,
+body.darkmode .main_wrp .examInfo_wrp .info_list li a{border: 1px solid #404040;}
+body.darkmode .main_wrp .examInfo_wrp h3.cmmn_tit,
+body.darkmode .main_shortcut .comment_wrap,
+body.darkmode .main_news .news_wrap,
+body.darkmode .main_news .news_slider .item{border-color:#404040;}
+/* // ---------------------- border-color ---------------------- */
+
+
+
+
+/* ---------------------- color ---------------------- */
+body.darkmode .main_wrp h3.cmmn_tit{color:#e9e9e9}
+body.darkmode .main_wrp .sub_teacher .minor_slider .point,
+body.darkmode .main_wrp .sub_teacher .minor_slider .tea_name,
+body.darkmode .main_wrp .main_event .event_slider .point strong,
+body.darkmode .main_wrp .main_cast .cast_slider .item .info,
+body.darkmode .main_wrp .examInfo_wrp .info_list li a,
+body.darkmode .main_wrp .examInfo_wrp .info_list li a span,
+body.darkmode .main_wrp .examInfo_wrp .examInfo_cont .info_lab ul,
+body.darkmode .main_wrp .examInfo_wrp .examInfo_cont .info_lab li.first{color:#8c8c8c}
+body.darkmode .main_wrp .main_cast .cast_slider .item .point .name {/*color: #377dbf;*/}
+/* // ---------------------- color ---------------------- */
+
+
+
+
+
+/* ---------------------- main ---------------------- */
+body.darkmode .main_wrp .sub_teacher .minor_slider .item a{background: #202020;border-color: #404040;}
+body.darkmode .main_wrp .sub_teacher .minor_slider .tea_img::before{background: linear-gradient(0deg, rgb(32,32,32,1) 0%, rgba(32,32,32,0.5) 40%, rgba(32,32,32,0) 100%);}
+body.darkmode .main_wrp .sub_teacher .minor_slider .tiny{opacity: 0.2;}
+body.darkmode .main_wrp h3.cmmn_tit .more_view{opacity: 0.5;background-image: url(https://img.megagong.net/m/2021/0201_main_new/more_view_examinfo.png);}
+.main_wrp .examInfo_wrp .examInfo_cont .info_lab li::before{opacity: 0.3;}
+.main_news .news_wrap .news_slider::before{background: #404040;}
+.main_news .news_wrap .controlBox{background: none;}
+/* // ---------------------- main ---------------------- */
+

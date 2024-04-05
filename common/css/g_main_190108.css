@@ -1,0 +1,103 @@
+@charset "euc-kr";
+
+/* CSS Document */
+html, body {font-family:'¸¼Àº °íµñ',Malgun Gothic; -webkit-text-size-adjust:none;}
+.blind {overflow:hidden; visibility:hidden; position:absolute; left:-9999px; width:0; height:0; font-size:0; line-height:0; text-indent:-9999px;}
+.column-top, .column-footer {min-width:1080px; -webkit-text-size-adjust:none;}
+.container{min-width:1080px;overflow: hidden;width: 100%}/* ±èÇý¸² width°ª Ãß°¡ 1204*/
+.container .inner{position:relative;width:1080px;margin: 0 auto;box-sizing: border-box}
+.main_content{background:#f0f2f4 url('https://img.megagong.net/gong/main/bg_main.jpg') no-repeat center 48px;padding-bottom: 60px}
+
+/* ¸ÞÀÎ ºñÁê¾ó */
+.main_visual{position: relative;overflow:hidden}
+.main_visual .inner{}
+.main_visual .visual_txt{margin-bottom: 40px}
+.main_visual .vs_btn{}
+.main_visual .vs_prev{left:50%;margin-left: -596px}
+.main_visual .vs_next{right:50%;margin-right: -596px}
+.main_visual .main_slider{height: 870px;overflow: hidden;z-index: 0}
+.main_visual .main_slider .vs_slide{width:100%;height: 870px}
+.main_visual .main_slider .vs_slide img{vertical-align: top;margin:140px 0 0 56px;display: inline-block;}
+.main_visual .main_slider .item01{background:#312c2c url('https://img.megagong.net/gong/main/bg_visual_01.jpg') no-repeat center 0}
+.main_visual .main_slider .item02{background:#a77881 url('https://img.megagong.net/gong/main/bg_visual_02.jpg') no-repeat center 0}
+.main_visual .main_slider .item03{background:#76797e url('https://img.megagong.net/gong/main/bg_visual_03.jpg') no-repeat center 0}
+.main_visual .main_slider .item04{background:#928781 url('https://img.megagong.net/gong/main/bg_visual_04.jpg') no-repeat center 0}
+.main_visual .main_slider .item05{background:#6c4b78 url('https://img.megagong.net/gong/main/bg_visual_05.jpg') no-repeat center 0}
+.main_visual .main_slider .item06{background:#9e9c9d url('https://img.megagong.net/gong/main/bg_visual_06.jpg') no-repeat center 0}
+.main_visual .main_slider .item07{background:#504846 url('https://img.megagong.net/gong/main/bg_visual_07.jpg') no-repeat center 0}
+.main_visual .main_slider .item08{background:#504846 url('https://img.megagong.net/gong/main/bg_visual_08.jpg') no-repeat center 0}
+.main_visual .main_slider .item09{background:#504846 url('https://img.megagong.net/gong/main/bg_visual_09.jpg') no-repeat center 0}
+.main_visual .main_slider .item10{background:#504846 url('https://img.megagong.net/gong/main/bg_visual_10.jpg') no-repeat center 0}
+.main_visual .main_slider .item11{background:#676191 url('https://img.megagong.net/gong/main/bg_visual_11.jpg') no-repeat center 0}
+.main_visual .main_slider .item12{background:#b99c96 url('https://img.megagong.net/gong/main/bg_visual_12.jpg') no-repeat center 0}
+.main_visual .main_slider .item13{background:#5f544e url('https://img.megagong.net/gong/main/bg_visual_13.jpg') no-repeat center 0}
+.main_visual .main_slider .item14{background:#4c6054 url('https://img.megagong.net/gong/main/bg_visual_14.jpg') no-repeat center 0}
+.main_visual .main_slider .inner{height: 870px}
+.main_visual .slick-dots{position: absolute;top:661px;left:50%;margin-left: -481px;}
+.main_visual .slick-dots li{display:inline-block;margin-left: 8px;cursor: pointer;width:15px;height: 15px;border-radius: 8px;background-color: #fff;font-size: 0;text-indent: -99999px;opacity: 0.5}
+.main_visual .slick-dots li:first-child{margin-left: 0}
+.main_visual .slick-dots li.slick-active{width:265px;opacity: 1}
+.main_visual .slick-arrow{position: absolute;display: block;top:265px;width:66px;height: 265px}
+.main_visual .slick-arrow.slick-prev{left:50%;margin-left:-596px;background-image: url('https://img.megagong.net/gong/main/btn_prev.png');background-repeat: no-repeat;z-index: 1;text-indent: -9999em}
+.main_visual .slick-arrow.slick-next{right:50%;margin-right:-596px;background-image: url('https://img.megagong.net/gong/main/btn_next.png');background-repeat: no-repeat;background-position-x: right;text-indent: -9999em}
+
+/* °øÄ· ¼±»ý´Ô */
+.sec_teacher{position: relative}
+.sec_teacher::before{position: absolute;top: 0;display: block;content: "";z-index: 0;width:1080px;height: 600px;margin:0 auto;background-color: #333250;box-sizing: border-box;left:50%;transform:translateX(-50%);}
+.sec_teacher .inner{position: relative;width:100%;margin-top: -48px;height: 600px;padding-top:31px;}
+.sec_teacher .inner h3{margin-bottom: 31px;text-align: center;z-index: 1}
+.teacher_rollwrp{position: absolute;top: 70px;width:100%;width: 1920px;left: 50%;margin-left: -959px;}
+.teacher_slider{position:relative;height: 515px;font-size: 0;margin:0 15px;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.teacher_slider .tc_slide.active{width: 335px;margin:0 60px;text-align: center;}
+.teacher_slider .tc_slide img{width: 205px;-webkit-transition: all 200ms ease;-moz-transition: all 200ms ease;-ms-transition: all 200ms ease;-o-transition: all 200ms ease;transition: all 200ms ease;}
+.teacher_slider .tc_slide.active img{width: 305px}
+.teacher_rollwrp .btn_arrow{position: absolute;display: block;top: 2px;width: 67px;height: 511px;z-index: 1;}
+.teacher_rollwrp .btn_arrow.sprev{left:50%;margin-left:-252px;text-indent: -9999em;background:#333250 url(https://img.megagong.net/gong/main/btn_prev.png) no-repeat 20px center;}
+.teacher_rollwrp .btn_arrow.snext{right:50%;margin-right:-246px;text-indent: -9999em;background:#333250 url(https://img.megagong.net/gong/main/btn_next.png) no-repeat 20px center;}
+.teacher_rollwrp .slick-arrow{text-indent: -9999em}
+.teacher_slider01 .tc_slide,.teacher_slider02 .tc_slide{padding:10px 0}
+.tcroll_01{position:absolute;left: -185px;}
+.tcroll_02{position:absolute;left: 50%;margin-left: -183px;}
+.tcroll_03{position:absolute;right: -208px;}
+.teacher_slider01{width:900px;}
+.teacher_slider02{width:335px}
+.teacher_slider03{width:900px;}
+.teacher_slider.teacher_slider02 .tc_slide img{width:335px}
+.teacher_slider02 img{width:335px}
+.teacher_slider02 .slick-slide img{display: block;-webkit-perspective: 2000px;perspective: 2000px;-webkit-transform-style: preserve-3d;-webkit-transform: rotateY(90deg);transform-style: preserve-3d;transform: rotateY(90deg);transition: all 1s ease;}
+.teacher_slider02 .slick-slide.slick-active img{-webkit-transform-style: preserve-3d;-webkit-transform: rotateY(0deg);transform-style: preserve-3d;transform: rotateY(0deg);transition: all 1s ease;}
+/*.teacher_slider .slick-track{height: 510px}
+.teacher_slider .slick-arrow{position: absolute;display: block;top:210px;width:37px;height:66px;z-index: 1;}
+.teacher_slider .slick-arrow.slick-prev{left:50%;margin-left:-230px;text-indent: -9999em;background:url(https://img.megagong.net/gong/main/btn_prev.png) no-repeat;}
+.teacher_slider .slick-arrow.slick-next{right:50%;margin-right:-230px;text-indent: -9999em;background:url(https://img.megagong.net/gong/main/btn_next.png) no-repeat;}
+.teacher_slider .slick-slide img{margin:0 auto;-ms-transform:scale(0.67);-moz-transform:scale(0.67);-o-transform:scale(0.67);-webkit-transform:scale(0.67);transform:scale(0.67);cursor: pointer;-moz-box-shadow: 0px 0px 19px #a7a7a7;-webkit-box-shadow: 0px 0px 19px #a7a7a7;box-shadow: 0px 0px 19px #a7a7a7;}
+.teacher_slider .slick-slide.slick-center img{-ms-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-webkit-transform:scale(1);transform:scale(1);-webkit-transition: all 200ms ease;-moz-transition: all 200ms ease;-ms-transition: all 200ms ease;-o-transition: all 200ms ease;transition: all 200ms ease;}
+.teacher_slider .slick-slide.slick-center a{display: block;width:100%;}
+.teacher_slider .slick-slide{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.teacher_slider .slick-slide.slick-center{width:400px !important;}*/
+
+/* °øÄ· ¹è³Ê */
+.sec_banner{margin-top: 40px}
+.sec_banner h3{margin-bottom: 14px}
+.sec_board{margin-top: 40px}
+
+/* ¸ÞÀÎ °Ô½ÃÆÇ */
+.sec_board .board_wrap{float:left;background-color: #fff;width:520px;height: 330px;margin-left: 40px;padding:42px 30px 49px 32px;box-sizing: border-box}
+.sec_board .board_wrap:first-child{margin-left: 0}
+.sec_board .inner::after{content:'';display:block;clear: both}
+.sec_board .board_wrap h3{position: relative;padding-left:4px;height: 38px;font-size: 18px;font-weight: bold;line-height: 38px;border-bottom:2px solid #000;}
+.sec_board .board_wrap h3 .btn_more{position: absolute;top:14px;right:3px;width:50px;height: 11px;background: url('https://img.megagong.net/gong/main/btn_more.png') no-repeat 0 0;font-size:0;text-indent:-99999px}
+.sec_board .board_wrap .board_list{max-height: 199px;overflow: hidden}
+.sec_board .board_wrap .board_list li{width:100%;border-top:1px solid #e2e2e2}
+.sec_board .board_wrap .board_list li:first-child{border-top:none}
+.sec_board .board_wrap .board_list a{display: block;font-size: 14px;color:#000;line-height: 39px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width: 96%;text-decoration: none}
+
+/* ÇÃ·ÎÆÃ ¹è³Ê */
+.ly_btm_fixed{position: fixed;bottom:0;right:0;z-index: 100}
+.ly_btm_fixed .crdwrp{position: relative;/*-webkit-transition: 0.6s all;transition: 0.6s all;text-align: center;-webkit-transform-style: preserve-3d;transform-style: preserve-3d;*/}
+/* .crdwrp.stflip {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+.crdwrp.stflip img{-webkit-transform: rotateY(180deg);transform: rotateY(180deg);} */
+.crdwrp.stflip {/* -webkit-animation: sfopacity 0.1s ease-in alternate;-moz-animation: sfopacity 0.1s ease-in alternate;animation: sfopacity 0.1s ease-in alternate;*/}
+.crdwrp .bnnr_flp{position: absolute;bottom: 0;right: 0;-webkit-transition: 0.6s all;transition: 0.6s all;}
+.crdwrp .bnnr_flp.c01,.crdwrp .bnnr_flp.c02{opacity: 0;z-index: 0;-webkit-transition: 0.6s all;transition: 0.6s all;}
+.crdwrp .bnnr_flp.c01.ovview,.crdwrp .bnnr_flp.c02.ovview{opacity: 1;-webkit-transition: 0.6s all;transition: 0.6s all;z-index: 1}

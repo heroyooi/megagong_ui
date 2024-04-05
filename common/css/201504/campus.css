@@ -1,0 +1,303 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------------------
+| 경찰기숙 ?��브메?��
+|.............................................................................*/
+#camMainWrap * { margin: 0px; padding: 0px; }
+#camMainWrap h1 { font-size: 12px; }
+#camMainWrap h2 { font-size: 12px; }
+#camMainWrap h3 { font-size: 12px; }
+#camMainWrap h4 { font-size: 12px; }
+#camMainWrap a:hover { text-decoration: none; }
+#camMainWrap img { vertical-align: top; }
+#camMainWrap table { border-collapse: collapse; border-spacing: 0; }
+#camMainWrap hr { display: none; }
+#camMainWrap { width: 100%; }
+#camMainWrap .tabnav { height: 35px; overflow: hidden; }
+#camMainWrap .tabnav li { text-align: center; float: left; }
+#camMainWrap .tabnav li a {	background: url("http://img.megagong.net/main/150401/bg_tabletab.jpg") repeat-y right top rgb(236, 236, 236); height: 34px; text-align: center; line-height: 34px; border-top-color: rgb(225, 225, 225); border-bottom-color: rgb(225, 225, 225); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; display: block; }
+#camMainWrap .tabnav li a:hover { height: 34px; text-align: center; color: rgb(51, 51, 51); line-height: 34px; border-top-color: rgb(51, 51, 51); border-bottom-color: rgb(225, 225, 225); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; display: block; background-color: rgb(255, 255, 255); }
+#camMainWrap .tabnav li.on a { height: 34px; text-align: center; color: rgb(51, 51, 51); line-height: 34px; border-top-color: rgb(51, 51, 51); border-bottom-color: rgb(225, 225, 225); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; display: block; background-color: rgb(255, 255, 255); }
+#camMainWrap a .ico_n { color: rgb(249, 51, 69); font-family: Malgun Gothic,"맑�?? 고딕",Dotum,"?��???"; font-size: 11px; }
+#camMainWrap .page { top: 15px; height: 17px; right: 20px; position: absolute; }
+#camMainWrap .page a { text-indent: -99999px; float: left; background-image: url("http://img.megagong.net/main/150401/btn_pagectr.gif"); background-repeat: no-repeat; }
+#camMainWrap .page a.prev { width: 17px; height: 17px; }
+#camMainWrap .page a.next { background-position: -17px 0px; width: 16px; height: 17px; }
+#camMainWrap .page a.more { background-position: -33px 0px; width: 17px; height: 17px; margin-left: 5px; }
+#camMainWrap .page span { height: 17px; color: rgb(187, 187, 187); line-height: 17px; letter-spacing: 0px; font-family: "tahoma",sans-serif; font-size: 11px; font-weight: normal; margin-right: 8px; float: left; }
+#camMainWrap .page strong { color: rgb(132, 134, 157); }
+
+ /* ?��브메?�� 메인?�� ?��?���??�� 빅배?��?�� */
+.bigBnr_Img { overflow:hidden; width:700px; height:260px;}
+.bigBnr_Img li { float:left;width:700px; height:260px; position:relative;}
+.bigBnr_list { overflow:hidden; border-bottom:1px solid #000; height:39px; }
+.bigBnr_list ul { width:700px; height:39px; background-color:#616574;}
+.bigBnr_list ul li { float:left; text-align:center; vertical-align:middle; letter-spacing:-1; font-size:11px; line-height:39px; font-family:dotum,'?��???'; color:#e9e9e9; height:39px; }
+.bigBnr_list ul li span { display:block; }
+.bigBnr_list ul li span a { color:#f0f0f0; background:url(http://img.megagong.net/main/150401/bg_line_mainbnr.gif) no-repeat right top #9498a3; }
+.bigBnr_list ul li span a.on { color:#fff;background-color:#5d6571; }
+.bigBnr_list ul li span a:hover { color:#fff;background-color:#5d6571; }
+.bigBnr_list ul li span.line a { display:block; height:39px; padding:10px 5px 10px 5px; }
+.bigBnr_list ul.list2 li { width:350px; }
+.bigBnr_list ul.list2 li.last { width:350px; }
+.bigBnr_list ul.list3 li { width:233px; }
+.bigBnr_list ul.list3 li.last { width:234px; }
+
+/* ?��?�� Big 배너 */
+#camMainWrap .topBanner { width: 700px; height: 300px; padding-bottom: 10px; overflow: hidden; position: relative; }
+#camMainWrap .topBanner .rolling_controll_wrap { top: 10px; right: 10px; overflow: hidden; position: absolute; z-index: 1; }
+#camMainWrap .topBanner .rolling_controll_wrap .rolling_controll { width: 15px; height: 15px; overflow: hidden; float: left; }
+#camMainWrap .topBanner .rolling_controll_wrap .rolling_btns { float: left; }
+#camMainWrap .topBanner .rolling_controll_wrap .rolling_btns li { width: 15px; height: 15px; text-align: right; float: left; }
+#camMainWrap .topBanner .rolling_controll_wrap .rolling_btns li a { margin: 0px 0px 0px 5px; height: 15px; text-align: right; padding-top: 3px; display: block; }
+#camMainWrap .topBanner .pro_nav .btn_prev { left: 0px; top: 50%; margin-top: -12px; position: absolute; z-index: 1; }
+#camMainWrap .topBanner .pro_nav .btn_next { top: 50%; right: 0px; margin-top: -12px; position: absolute; z-index: 1; }
+#camMainWrap .topBanner .rolling-list { width: 700px; height: 300px; overflow: hidden; }
+
+#camMainWrap .topBanner .rolling-list li a p { left: 0px; width: 700px; height: 30px; text-align: center; bottom: 0px; padding-top: 10px; font-family: Malgun Gothic,"맑�?? 고딕",Dotum,"?��???"; position: absolute; _height: 40px; }
+#camMainWrap .topBanner .rolling-list li a .stamp01 { right: 10px; bottom: 30px; position: absolute; }
+
+/* 공�???��?�� & ?��?��?��?��보기 */
+#camMainWrap .column_camnews { width: 700px; height: 276px; overflow: hidden; margin-bottom: 20px; }
+#camMainWrap .column_camnews h3 { text-align: left; color: rgb(51, 51, 51); padding-bottom: 13px; font-family: Malgun Gothic,"맑�?? 고딕",Dotum,"?��???"; font-size: 14px; font-weight: bold; }
+#camMainWrap .column_camnews .col_L { padding: 17px 20px 20px; border: 1px solid rgb(221, 221, 221); width: 308px; height: 237px; margin-right: 20px; float: left; position: relative; _height: 279px; _width: 350px; }
+#camMainWrap .column_camnews .col_L .tabnav { margin: 0px 0px 10px; width: 309px; border-left-color: rgb(225, 225, 225); border-left-width: 1px; border-left-style: solid; }
+#camMainWrap .column_camnews .col_L .tabnav li a { width: 154px; font-family: Malgun Gothic,"맑�?? 고딕",Dotum,"?��???"; font-size: 12px; }
+#camMainWrap .column_camnews .col_L .notice_list { width: 309px; }
+#camMainWrap .column_camnews .col_L .notice_list ul li { background: url("http://img.megagong.net/main/150401/bg_dotline.gif") repeat-x left bottom; height: 31px; text-align: left; line-height: 31px; }
+#camMainWrap .column_camnews .col_L .notice_list ul li a { background: url("http://img.megagong.net/main/150401/ico_1x1.gif") no-repeat left 13px; width: 280px; height: 31px; text-align: left; color: rgb(68, 68, 68); line-height: 31px; overflow: hidden; padding-left: 8px; display: inline-block; white-space: nowrap; word-wrap: normal !important; text-overflow: ellipsis; -o-text-overflow: ellipsis; }
+#camMainWrap .column_camnews .col_L .notice_list ul li a:hover { background: url("http://img.megagong.net/main/150401/ico_1x1.gif") no-repeat left 13px; width: 280px; height: 31px; text-align: left; color: rgb(51, 115, 212); line-height: 31px; overflow: hidden; padding-left: 8px; display: inline-block; white-space: nowrap; word-wrap: normal !important; text-overflow: ellipsis; -o-text-overflow: ellipsis; }
+#camMainWrap .column_camnews .col_L .notice_list ul li .ico_new2 img { margin-top: 10px; }
+#camMainWrap a .ico_n { color: rgb(249, 51, 69); font-family: Malgun Gothic,"맑�?? 고딕",Dotum,"?��???"; font-size: 11px; }
+#camMainWrap .column_camnews .col_R { padding: 17px 20px 20px 0px; width: 310px; height: 237px; border-top-color: rgb(102, 102, 102); border-bottom-color: rgb(221, 221, 221); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; float: left; position: relative; _height: 279px; _width: 330px; }
+#camMainWrap .column_camnews .col_R .page { top: 15px; height: 17px; right: 0px; position: absolute; }
+
+#camMainWrap .relationWrap { margin: 0px 0px 50px; height: 59px; clear: both; border-top-color: rgb(218, 218, 218); border-bottom-color: rgb(218, 218, 218); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; }
+#camMainWrap .relation { margin: 14px 0px 0px 13px; }
+#camMainWrap .relation .margin0 { margin-right: 0px; }
+#camMainWrap .smTit07 { background: url("http://img.megagong.net/campus/acaMain_organ_tit.gif") no-repeat; margin: 9px 0px 0px; width: 43px; height: 12px; text-indent: -20000px; }
+#camMainWrap .relation li { margin-right: 50px; float: left; display: block; }
+#camMainWrap .relation li a { height: 29px; text-indent: -20000px; display: block; }
+#camMainWrap .rel01 { background: url("http://img.megagong.net/campus/acaMain_organ01.gif") no-repeat; width: 69px; }
+#camMainWrap .rel03 { background: url("http://img.megagong.net/campus/acaMain_organ03.gif") no-repeat; width: 92px; }
+#acaMainWrap .rel04 { background: url("http://img.megagong.net/campus/acaMain_organ04.gif") no-repeat; width: 78px; }
+#camMainWrap .rel05 { background: url("http://img.megagong.net/campus/acaMain_organ05.gif") no-repeat; width: 63px; }
+#camMainWrap .rel06 { background: url("http://img.megagong.net/campus/acaMain_organ06.gif") no-repeat; width: 59px; }
+
+
+
+/*============================// 201130 기숙?��?���? ?��?�� cst============================*/
+
+/* 공통*/
+
+.ul_01 {padding:5px 5px 5px 20px; margin: 0px;} /* KMJ 추�?? */
+.ul_01 li {line-height:20px; background:url(http://img.megagong.net/campus_new/icon_bul_01.gif) no-repeat left 10px; padding-left: 8px; }
+
+.box01 { background-color: #f5f5f5; padding: 20px; margin: 0px; display: block; } /* KMJ 추�?? */
+.box02 { border: 1px solid #ddd; padding: 20px; margin: 0px; display: block; }
+
+/*------------------------------------------------------------------------------
+| ?��?��
+|.............................................................................*/
+.md_pointtext00{color:#0074c7;}/*?��????��?��?��*/
+.md_pointtext01{color:#1c7dc1;}/*밝�???��?��*/
+.md_pointtext02{color:#ea0900;}/*빨강*/
+.md_pointtext03{color:#333333;}/*�??��*/
+.md_pointtext04{color:#008460;}/*초록*/
+.md_pointtext05{color:#52a991;}/*밝�??초록*/
+.md_12p_g1 {font-size:12px; color:#111; text-decoration:none; letter-spacing:-1px;}
+.md_12p_g3 {font-size:12px; color:#333; text-decoration:none; letter-spacing:-1px;}
+.md_12p_g6 {font-size:12px; color:#666; text-decoration:none; }
+.md_14p_g3 {font-size:14px; color:#333; text-decoration:none; letter-spacing:-1px;}
+.md_12p_g3b {font-size:12px; color:#111; text-decoration:none; letter-spacing:-1px; font-weight:bold;}
+.md_12p_g3b {font-size:12px; color:#333; text-decoration:none; letter-spacing:-1px; font-weight:bold;}
+.md_14p_g3b {font-size:14px; color:#333; text-decoration:none; letter-spacing:-1px; font-weight:bold;}
+.md_16p_g1b {font-size:16px; color:#111; text-decoration:none; letter-spacing:-1px; font-weight:bold;font-family:'Malgun Gothic', Arial, Helvetica, sans-serif; line-height:140%;}
+.md_16p_g1 {font-size:16px; color:#111; text-decoration:none; letter-spacing:-1px; font-family:'Malgun Gothic', Arial, Helvetica, sans-serif; line-height:140% ;}
+.md_12p_b {font-size:12px; color:#0074c7; text-decoration:none; letter-spacing: 0px;}/*블루*/
+.md_12p_bb{font-size:12px; color:#0074c7; text-decoration:none; letter-spacing: 0px; font-weight:bold;}
+.md_14p_b {font-size:14px; color:#0074c7; text-decoration:none; letter-spacing: 0px;}
+.md_14p_bb {font-size:14px; color:#0074c7; text-decoration:none; letter-spacing: 0px;font-weight:bold;}
+
+/* 블릿?��?�� ?��?�� ?��?�� */
+.column_icotitleM{background:url(http://img.megagong.net/common/ico_txtblit_01.gif) no-repeat left 1px ; font-size:14px; color:#111; padding-bottom:10px; padding-left:20px; letter-spacing:-1px; font-weight:bold; text-align:left;}
+.column_icotitleS{background:url(http://img.megagong.net/common/ico_txtblit_02.gif) no-repeat left 2px ; font-size:12px; color:#333; padding-bottom:10px; padding-left:8px; letter-spacing:-1px; font-weight:bold;text-align:left;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.column_icotitleM{background:url(http://img.megagong.net/common/ico_txtblit_01.gif) no-repeat left 2px ; font-size:14px; color:#111; padding-bottom:10px; padding-left:20px; letter-spacing:-1px; font-weight:bold;text-align:left;}
+.column_icotitleS{background:url(http://img.megagong.net/common/ico_txtblit_02.gif) no-repeat left 3px ; font-size:12px; color:#333; padding-bottom:10px; padding-left:8px; letter-spacing:-1px; font-weight:bold; text-align:left;}
+}
+.contitle { color:#111; letter-spacing:-1px; padding-bottom:2px; font-family: "Malgun Gothic", Arial, Helvetica, sans-serif; font-size:21px; font-weight:bold; margin: 0px 0px 18px 0;}
+.contxt{color:#666; margin-bottom:20px;}
+.column_title{ font-size:14px; color:#0074c7; letter-spacing:-1px; padding-bottom:10px; letter-spacing:-1px; font-weight:bold; text-align:left;  } /* KMJ 추�?? */
+
+/* ========== ?��?�� ========== */
+.input_txt_b{
+	vertical-align:middle; box-sizing:content-box; 
+    padding:0 0 0px 3px; height:23px; _height:25px; line-height:23px; _line-height:25px; border:1px solid #cccccc; color:#666; 
+    font-family:'dotum', Arial, Helvetica,sans-serif; font-size:12px;} 
+.select_b{
+	vertical-align:middle; box-sizing:content-box; 
+	padding:0px 0 0px 3px; height:23px; _height:25px; line-height:23px; _line-height:25px; border:1px solid #cccccc; color:#666; 
+    background: #ffffff;
+    font-family:'dotum', Arial, Helvetica,sans-serif; font-size:12px;}
+.textarea_b {
+	vertical-align:top;   box-sizing:content-box;
+    padding:5px; border:1px solid #ccc; color:#666;
+	font-family:'dotum', Arial, Helvetica,sans-serif; font-size:12px;}
+	
+/*------------------------------------------------------------------------------
+| 게시?��
+|.............................................................................*/
+
+/* 게시?�� 목록LIST  ?��쪽에 ?��?�� ?��?���?*/
+table.t_lista{border-top:1px solid #333; border-bottom:none; text-align:center;}
+table.t_lista tr th, table.t_lista tr td{
+	padding:12px 5px 8px 5px;  border-bottom:1px solid #ddd; 
+	font-size:12px;}
+table.t_lista tr th{color:#666; background-color:#f8f8f8; letter-spacing:-1px;}
+table.t_lista tr td{color:#666;}
+table.t_lista a{color:#666;}
+table.t_lista a:hover{color:#0074c7;}
+
+/* 보더?��?���? �?????��?�� #333*/
+table.t_border1 { border-top:1px solid #333; border-bottom:none; text-align:center; border-left:1px solid #ddd; }
+table.t_border1 tr th, table.t_border1 td { padding:12px 10px 8px 10px;  border-bottom:1px solid #ddd; font-size:12px; }
+table.t_border1 tr th { color:#666; background-color:#f8f8f8; letter-spacing:-1px; border-right:1px solid #ddd; }
+table.t_border1 tr td { color:#666; border-right:1px solid #ddd; }
+table.t_border1 a { color:#666; }
+table.t_border1 a:hover {color:#0074c7;}
+
+/* 보더?��?���? 밝�???��?��#ddd*/
+table.t_border2 { border-top:1px solid #ddd; border-bottom:none; text-align:center; border-left:1px solid #ddd; }
+table.t_border2 tr th, table.t_border2 td{ padding:12px 10px 8px 10px;  border-bottom:1px solid #ddd; font-size:12px; }
+table.t_border2 tr th { color:#666; background-color:#f8f8f8; letter-spacing:-1px; border-right:1px solid #ddd; }
+table.t_border2 tr td { color:#666; border-right:1px solid #ddd; }
+table.t_border2 a { color:#666; }
+table.t_border2 a:hover {color:#0074c7;}
+
+/* 보더 td�? ?��쪽정?��?��?��경우*/
+table.tdaL td{text-align:left;}
+
+/*------------------------------------------------------------------------------
+| ?��브페?���? ???
+|.............................................................................*/
+
+.subcont_wrap{text-align:left; padding-bottom:50px; min-height:650px;}
+
+
+
+
+/*------------------------------------------------------------------------------
+| 02_모집과정
+|.............................................................................*/
+/* ========== ?��?��?��?��========== */
+/* ?��?��?��?�� ?��?��?�� ?��*/
+.section_sch {width:100%; padding:13px 0 13px 0;  background:#f8f8f8; overflow:hidden; border-top:1px solid #333;}
+.section_sch fieldset{ margin:0; padding:0; border:0 none; }
+
+/* SELECT BOX*/
+.section_sch .group_month{ float:left; margin:0 15px 0 20px;}
+.section_sch .group_month .srch_year_box{ width:98px; _width:100px; border:1px solid #ccc; background:#fff;}
+.section_sch .group_month .srch_year_box select{
+    width:98px; 
+    height:23px; 
+    margin:0; 
+    border:0 none; 
+    font-size:12px; 
+	color:#666;
+	}
+/* CALENDER */
+.section_sch .month_box {float:left;}
+.section_sch .month_box ul{overflow:hidden; margin:0; padding:0;}
+.section_sch .month_box ul li{float:left;}
+.section_sch .month_box ul li a{display:block; padding:4px 11px 2px 11px; font-size:12px; color:#666; font-family:"dotum";}
+.section_sch .month_box ul li a:hover{color:#0074c7;}
+.section_sch .month_box ul li.on a{background:#0074c7; color:#fff;}
+
+/* ?��?��?��?���? */
+.section_cal_li {border-bottom:1px solid #ddd; padding:30px 0 ;}
+.calmonth_top { margin-bottom:10px; font-family:"MalGun Gothic","맑�??고딕",dotum;;}
+.calmonth_top strong{color:#333; font-size:21px;}
+.calmonth_top span {color:#999; font-size:14px;}
+table.t_schedule {border-top:1px solid #ddd; margin-right:30px;}
+table.t_schedule th {border-bottom:1px solid #ddd; text-align:center; font-size:11px;  color:#666; font-weight:bold; font-family:dotum; height:26px; padding-top:4px;}
+table.t_schedule td {text-align:right; text-align:center; height:30px;font-family:Tahoma;font-size:11px; color:#666;}
+table.t_schedule td.sun {color:#c71d01;}
+table.t_schedule td.on {background:#dae9ff;}
+/* ?��측일?��?��?��?���? */
+.detail_wrap{background:#f8f8f8; padding:20px;}
+.detail_wrap ul {margin:0; padding:0;}
+.detail_wrap ul li {background:url(http://img.megagong.net/campus/ico_dot2.gif) no-repeat 0px 6px ; padding-left:7px; }
+.detail_wrap ul li .date {color:#0074c7; padding-right: 10px;}
+.detail_wrap ul li .desc {color:#333;}
+
+/*------------------------------------------------------------------------------
+| 03_?��격�??리시?��?��
+|.............................................................................*/
+
+/*------------------------------------------------------------------------------
+| 04_?��?��?��?��
+|.............................................................................*/
+/* ========== 03_?��?���??��?��북신�? ========== */
+/* pdf?���??���?*/
+.etc_wrap{}
+.etc_wrap table{border:1px solid #ddd;}
+.etc_wrap table tr td{padding:20px;}
+.etc_wrap table tr td p{}
+
+/* 개인?��보수집박?��*/
+.box_wrap {border:1px solid #ddd; height:98px; _height:100px; overflow:hidden;} 
+
+/* 개인?��보입?��?��?���? ?��백조?��*/
+table.t_lista.apply tr th{ text-align:left; padding-left:15px; }
+table.t_lista.apply tr td{padding-left:15px; }
+
+/*------------------------------------------------------------------------------
+| 06_?��?��?���?
+|.............................................................................*/
+
+.gisukmap_wrap{width:100%;}
+.gisukmap_wrap .gisukmap{border:1px solid #ddd; height:400px;}
+
+
+
+/*------------------------------------------------------------------------------
+| 20170401_ ?��?��?��?��?��
+|.............................................................................*/
+.advicepage_wrap .header_wrap {width:100%; padding:20px 0;  background:#2e3e5f; text-align:center;}
+.advicepage_wrap .header_wrap h3.page_title {margin:0; padding:0; font-size:21px; font-family:Malgun Gothic,"맑�?? 고딕",Dotum,"?��???"; font-weight:bold; letter-spacing:-1px; color:#fff;}
+.advicepage_wrap .centercont_wrap {width:100%;}
+.advicepage_wrap .centercont_inner {padding:40px;}
+.advicepage_wrap .col_box {float:left; margin-right:20px; padding:3px 0;}
+.advicepage_wrap .txt_b {font-weight:bold;padding-right:5px;}
+.advicepage_wrap .t_border2 tr th {color:#333;}
+.advicepage_wrap .t_border2 tr td {color:#555;}
+.advicepage_wrap .t_border2 tr.bg_g td{background:#f2f2f2;}
+.advicepage_wrap .t_border2.thm tr th{ font-weight:normal; font-size:12px;}
+
+/* ========== ?��?��바이?�� 버튼 ========== */
+
+.bt_cst1{display:inline-block; *display:inline; *zoom:1; margin-left:1px;}
+.bt_cst1 a, .bt_cst1 a:hover{display:inline-block; height:21px; _height:30px; padding:7px 16px 0 16px; font-weight:bold; font-family:'dotum', Arial, Helvetica, sans-serif; margin:0; font-size:12px; }
+.bt_cst1.bg1 a{display:inline-block; border:1px solid #555555 ; background:#666666; color:#fff;} /*진회?��*/
+.bt_cst1.bg2 a{display:inline-block; border:1px solid #bbbbbb ; background:#f1f1f1; color:#666;} /*밝�??*/
+.bt_cst1.bg3 a{display:inline-block; border:1px solid #0074c7 ; background:#0074c7; color:#fff;} /*?��?��*/
+.bt_cst1.bg4 a{display:inline-block; border:1px solid #d60f17 ; background:#ea0900; color:#fff;} /*빨강*/
+.bt_cst1.prev a{background:url(http://img.megagong.net/gum/common/btn_arrow_prev.png) no-repeat 8px 10px #f1f1f1; }
+.bt_cst1.next a{background:url(http://img.megagong.net/gum/common/btn_arrow_next.png) no-repeat 45px 10px #f1f1f1; }
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.bt_cst1 a, .bt_cst1 a:hover{display:inline-block; height:23px; _height:30px; padding:5px 16px 0 16px; font-weight:bold; font-family:'dotum', Arial, Helvetica, sans-serif; margin:0; font-size:12px; }	
+}
+@media \0screen{
+.bt_cst1 a, .bt_cst1 a:hover{display:inline-block; height:23px; _height:30px; padding:5px 16px 0 16px; font-weight:bold; font-family:'dotum', Arial, Helvetica, sans-serif; margin:0; font-size:12px; }	
+}
+
+/* ========== ?��?��바이?�� ?��?��?��?��?�� ========== */
+.advicepop_wrap {position:absolute; left:50%; top:50%;  background:#fff; z-index:1}
+.advicepop_wrap .advicepop_cont{background:#fff; padding:30px; border:5px solid #000;}
+.advicepop_wrap .advicepop_cont .btn_close {position:absolute; right:10px; top:10px; z-index:1}
+
+
+
+

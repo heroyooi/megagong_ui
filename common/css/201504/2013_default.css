@@ -1,0 +1,170 @@
+﻿/* @charset "euc-kr"; */
+/* BODY 문서 속성 */
+body, input, select, textarea, td {font-size:9pt; font-family:"돋움",Dotum,Arial,Helvetica,sans-serif; text-decoration: none; color: #7e7e7e; /*line-height:160%;*/}
+td {font-size:12px;color:#7e7e7e;font-family:"돋움",Dotum,Arial,Helvetica,sans-serif;line-height:160%;}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+	/* IE 전용, 스크롤바 속성 */
+	scrollbar-face-color       : #f4f4f4;
+	scrollbar-highlight-color  : #ffffff;
+	scrollbar-shadow-color     : #b4b4b4;
+	scrollbar-darkshadow-color : #ffffff;
+	scrollbar-3dlight-color    : #ffffff;
+	scrollbar-track-color      : #eeeeee;
+	scrollbar-arrow-color      : #b3b3b3;
+}
+
+
+/* 링크관련 속성 */
+#html a {outline:none;}
+a:link    {font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; text-decoration: none; color: #7e7e7e; outline:none;}  /*font-size:9pt; line-height:160%;*/
+a:active  {font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; text-decoration: none; color: #7e7e7e; } /*font-size:9pt; line-height:160%;*/
+a:visited {font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; text-decoration: none; color: #7e7e7e; } /*font-size:9pt; line-height:160%;*/
+a:hover   {font-family:"돋움",Dotum, Arial, Helvetica, sans-serif; text-decoration: none; color:#0076cb; } /*font-size:9pt; line-height:160%;*/
+
+form {margin:0px;}
+
+/* 모든 이미지 두께 0 으로 설정 */
+img { border: none; } 
+
+/* DIV  리스트 스타일 설정 */
+ol,ul,li {list-style:none;}
+
+/* P 스타일 설정 */
+p {MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px}
+
+/*png */
+.png24 { tmp:expression(setPng24(this)); }
+
+/* 정렬 */ 
+.aL {text-align:left;}
+.aC {text-align:center;}
+.aR {text-align:right;}
+.aJ {text-align:justify;}
+.aT {vertical-align:top;}
+.aM {vertical-align:middle;}
+.aB {vertical-align:bottom;}
+.aB2 {vertical-align:baseline;}
+.fL	 {float:left;}
+.fR	 {float:right;}
+.fC	 {clear:both;}
+.fC2 {clear:both; width:100%; overflow:auto; overflow:hidden;}
+
+
+/* 속성 */
+.hand		{cursor:pointer;}
+.overflow	{overflow:auto; overflow:hidden;}
+.none		{display:none;}
+.pos_rel	{position:relative;}
+
+/* 더보기 */
+.more {float:right;}
+
+/* blank px */ 
+.pt2 {padding-top:2px;}
+.pt4 {padding-top:4px;}
+.pt5 {padding-top:5px;}
+.pt7 {padding-top:7px;}
+.pt8 {padding-top:8px;}
+.pt10 {padding-top:10px;}
+.pb5{padding-bottom:5px;}
+.pb10 {padding-bottom:10px;}
+.pl7{padding-left:7px;}
+.pl5 {padding-left:5px;}
+.pl10 {padding-left:10px;}
+.pl15 {padding-left:15px;}
+.pl20 {padding-left:20px;}
+.pl40 {padding-left:40px;}
+.pl45 {padding-left:45px;}
+.pl60 {padding-left:60px;}
+.pl75 {padding-left:75px;}
+.pr10 {padding-right:10px;}
+.pr90 {padding-right:90px;}
+
+/* margin */
+.mt1m	{margin-top:-1px;}
+.mt2m	{margin-top:-2px;}
+.mt3m	{margin-top:-3px;}
+.mt4m	{margin-top:-4px;}
+.mt5m	{margin-top:-5px;}
+.mt8m	{margin-top:-8px;}
+.mt10m	{margin-top:-10px;}
+.mt23m	{margin-top:-23px;}
+.mt0	{margin-top:0px;}
+.mt1	{margin-top:1px}
+.mt2	{margin-top:2px}
+.mt3	{margin-top:3px}
+.mt5	{margin-top:5px;}
+.mt7	{margin-top:7px;}
+.mt10	{margin-top:10px;}
+.mt12	{margin-top:12px;}
+.mt15	{margin-top:15px;}
+.mt20	{margin-top:20px;}
+.mt25	{margin-top:25px;}
+.mt30	{margin-top:30px;}
+.mt35	{margin-top:35px;}
+.mt40	{margin-top:40px;}
+.mt45	{margin-top:45px;}
+.mt50	{margin-top:50px;}
+.mt60	{margin-top:60px}
+.mt80	{margin-top:80px}
+
+.mb2	{margin-bottom:2px;}
+.mb3	{margin-bottom:3px;}
+.mb5	{margin-bottom:5px;}
+.mb7	{margin-bottom:7px;}
+.mb10	{margin-bottom:10px;}
+.mb15	{margin-bottom:15px;}
+.mb20	{margin-bottom:20px;}
+.mb25	{margin-bottom:25px;}
+.mb30	{margin-bottom:30px;}
+.mb40	{margin-bottom:40px;}
+.mb50	{margin-bottom:50px;}
+.mb180	{margin-bottom:180px;}
+
+.ml0	{margin-left:0;}
+.ml3	{margin-left:3px;}
+.ml5	{margin-left:5px;}
+.ml7	{margin-left:7px;}
+.ml10	{margin-left:10px;}
+.ml12	{margin-left:12px;}
+.ml15	{margin-left:15px;}
+.ml18	{margin-left:18px;}
+.ml20	{margin-left:20px;}
+.ml25	{margin-left:25px;}
+.ml30	{margin-left:30px;}
+.ml35	{margin-left:35px;}
+.ml45	{margin-left:45px;}
+.ml50	{margin-left:50px}
+
+.mr0	{margin-right:0px;}
+.mr1	{margin-right:1px;}
+.mr3	{margin-right:3px;}
+.mr5	{margin-right:5px;}
+.mr10	{margin-right:10px;}
+.mr15	{margin-right:15px;}
+.mr20	{margin-right:20px;}
+.mr25	{margin-right:25px;}
+.mr30	{margin-right:30px;}
+.mr40	{margin-right:40px;}
+
+.bh15 {height:15px;}
+.bh10 {height:10px;}
+.bh5 {height:5px;}
+
+.txt_ver { vertical-align:-2px;}
+.txt_ver1 { vertical-align:2px;}
+
+.txt02 { padding-left:8px;}
+
+.mail1	{padding: 10 10 20 35;}
+.mail2		{padding:29 10 0 25}
+.mail3	{padding:17 0 12 20}
+.mail4	{padding:5,0,7,0}
+.mail5	{padding:10 0 5 10}
+.mail6	{padding:0 0 5 0; }
+

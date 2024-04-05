@@ -1,0 +1,1085 @@
+@charset "euc-kr";
+
+.banner_zone{position: relative;}
+.banner_zone .img_mb{display: none}
+
+/* 메인 상단 대배너 (패스) */
+.banner_zone .main_special{position: relative;background: #100d42;text-align: center;margin: 0 0 10px;}
+.banner_zone .main_special.gong{background: #353541}
+.banner_zone .main_special .inner{position: relative;width: 1080px;margin: 0 auto;padding: 0 210px 0 0;box-sizing: border-box;}
+.banner_zone .main_special .left_zone{position: relative;text-align: left;}
+.banner_zone .main_special .left_zone a{display:block;overflow: hidden;}
+.banner_zone .main_special .left_zone .day_point{position: absolute;top: 50%;left: 0;display: block;text-align: center;padding: 0;width: 14.667%;height: 70%;font-weight: bold;font-size:18px;line-height: 1.4;color:#fea894;border: 1px solid #766dff;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%);z-index: 1;box-sizing: border-box;background: url(https://img.megagong.net/m/2020/0326_sobang_new/pass_clock.png) no-repeat center 32px;}
+.banner_zone .main_special .left_zone .day_point::before,.banner_zone .main_special .left_zone .day_point::after{content: "";display: block;position: absolute;top: -7px;left: 7%;width: 3px;height: 14px;background: #766dff;}
+.banner_zone .main_special.sobang .left_zone .day_point.n0519{border-color: #ce667a;color:#b5f841;background-image: url(https://img.megagong.net/m/2020/0519_pass/sobang/pass_clock.png);}
+.banner_zone .main_special.sobang .left_zone .day_point.n0519::before,.banner_zone .main_special.sobang .left_zone .day_point.n0519::after{background: #ce667a;}
+.banner_zone .main_special.sobang .left_zone .day_point.n0624{border-color: #00ffff;color:#00ffff;background-image: url(https://img.megagong.net/m/2020/0623_sb_pass/pass_clock.png);}
+.banner_zone .main_special.sobang .left_zone .day_point.n0624::before,.banner_zone .main_special.sobang .left_zone .day_point.n0624::after{background: #00ffff;}
+.banner_zone .main_special.sobang .left_zone .day_point.n0624 .last_txt {position:absolute;bottom:0;left:0;right:0;background-color:#f6ee32;}
+.banner_zone .main_special.sobang .left_zone .day_point.n0624 .last_txt img {display:block;margin:0 auto;}
+
+.banner_zone .main_special .left_zone .day_point::after{left: 91%;}
+.banner_zone .main_special .day_point span.redtxt{display: block;animation: changeC_pass 0.5s ease 0.5s infinite alternate;/*padding:70% 0 0;*/padding:65% 0 0;}
+.banner_zone .main_special.sobang .day_point.n0519 span.redtxt{animation: changeC_pass_sobang 0.5s ease 0.5s infinite alternate;}
+.banner_zone .main_special.sobang .day_point.n0624 span.redtxt{animation: changeC_pass_sobang2 0.5s ease 0.5s infinite alternate;}
+.banner_zone .main_special .day_point span.bottomtxtend{animation: changeC_pass 0.5s ease 0.5s infinite alternate;display:inline-block; padding-bottom:31%;}
+.banner_zone .main_special .right_zone .day_point{display: none;position: absolute;top: 50%;left: 3%;text-align: center;padding: 0 4px;width: 29%;height: 53%;font-weight: bold;border: 1px solid #fff;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%);z-index: 1;box-sizing: border-box;margin-top: 0;}
+.banner_zone .main_special .right_zone .day_point::before{content: "";position: absolute;top:50%;right: -7px;margin-top: -5px;display: block;width: 10px;height: 10px;background-color: #3d35c6;border-top: 1px solid #fff;border-right: 1px solid #fff;transform: rotate(45deg);}
+.banner_zone .main_special.gong .right_zone .day_point::before{background-color: #151358;}
+
+.banner_zone .main_special .right_zone .day_point::after{content: "";display: inline-block;width: 1%;height: 102%;vertical-align:middle;}
+.banner_zone .main_special .right_zone .day_point span.redtxt{display: block;padding: 0 6px 0 0;animation: changeC_pass 0.5s ease 0.5s infinite alternate;}
+.banner_zone .main_special .right_zone .day_point > span{display: inline-block;vertical-align: middle;width: 98%;}
+.banner_zone .main_special.gong .right_zone .day_point span.redtxt{animation: changeC_pass_gong 0.5s ease 0.5s infinite alternate;}
+.banner_zone .main_special .right_zone .day_point span.bottomtxtend{animation: changeC_pass_gong 0.5s ease 0.5s infinite alternate;}
+@keyframes changeC_pass {0% { color:#132f56 } 50% { color:#132f56 } 51% { color:#fff } 100% { color:#fff }}
+@keyframes changeC_pass_sobang {0% { color:#b5f841 } 50% { color:#b5f841 } 51% { color:#fff } 100% { color:#fff }}
+@keyframes changeC_pass_sobang2 {0% { color:#00ffff } 50% { color:#00ffff } 51% { color:#fff } 100% { color:#fff }}
+@keyframes changeC_pass_gong {0% { color:#3ffb93 } 50% { color:#3ffb93 } 51% { color:#fff } 100% { color:#fff }}
+.banner_zone .main_special .special_link{position: absolute;top: 50%;left: 60%;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%);width: 36.326%;}
+.banner_zone .main_special .special_link a{position: absolute;top: 0;left: 0;width: 100%;height: 50px;display: block;box-sizing: border-box;font-size: 0;background: #fff;opacity: 0;}
+.banner_zone .main_special .special_link a.link1{top:0}
+.banner_zone .main_special .special_link a.link2{top: 51px;}
+.banner_zone .main_special .special_link a.link3{top: 101px;height: 67px;}
+.banner_zone .main_special .direc_evt{display: none}
+.banner_zone .main_special .right_zone{position:absolute;top:0;right:0;width: 210px;text-align: right;box-sizing: border-box;}
+
+/* 공무원 메가패스 배너 1013 */
+.banner_zone .main_special.gong {margin-bottom:0;}
+.banner_zone .main_special.gong .inner {padding:0;}
+.banner_zone .main_special.gong .left_zone .day_point {font-size:17px;color:#2f53ec;border-color:#fff;width: 11.667%;left:50%;-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);transform: translate(-50%,-50%);background-color:rgba(255, 255, 255, .8);}
+.banner_zone .main_special.gong .left_zone .day_point{background-image: url(https://img.megagong.net/m/2020/1013_7rank_pass/pass_clock_1013.png)}
+.banner_zone .main_special.gong .left_zone .day_point::before,.banner_zone .main_special.gong .left_zone .day_point::after{background:#fcfcfc;opacity:.6;}
+.banner_zone .main_special.gong .day_point span.redtxt {font-size:20px;}
+.banner_zone .spcial_pc_evt {background-color:#cdcdcd;text-align:right;}
+.banner_zone .spcial_pc_evt .inner {position:relative;height:40px;}
+.banner_zone .spcial_pc_evt .inner img {position:absolute;left:0;bottom:0;}
+.banner_zone .spcial_pc_evt .inner .spcial_btn {font-size:0;padding:6px 0;}
+.banner_zone .spcial_pc_evt .inner .spcial_btn li {display:inline-block;text-align:left;}
+.banner_zone .spcial_pc_evt .inner .spcial_btn li:nth-child(1) {background-color:#a863ff;}
+.banner_zone .spcial_pc_evt .inner .spcial_btn li:nth-child(2) {background-color:#de774e;margin-left:8px;}
+.banner_zone .spcial_pc_evt .inner .spcial_btn li a {display:block;min-width:134px;height:28px;line-height:28px;padding:0 10px;font-weight:300;font-size:16px;color:#ffffff;background:url("https://img.megagong.net/m/2020/1013_7rank_pass/spcial_btn_arrow.png") no-repeat center right 10px;}
+.banner_zone .m_spcial_tabs {display:none;}
+
+/* 공무원 메가패스 배너 1013 - mobile */
+.main_special.gong .inner .left_zone .special_tab_m {display:none;}
+
+/* 군무원 배너 추가 1019 */
+.banner_zone .main_special.army{background: #2f4b2c}
+.banner_zone .main_special.army .left_zone .day_point{height: 54%;border-color: rgba(255, 255, 255, .6);color:#fdb61e;background-image: url(https://img.megagong.net/m/2020/1019_pass/army/pass_clock.png);}
+.banner_zone .main_special.army .left_zone .day_point::before,
+.banner_zone .main_special.army .left_zone .day_point::after{background:rgba(255, 255, 255, .6);}
+.banner_zone .main_special.army .day_point span.redtxt{display: block;padding: 70% 0 0;font-size:20px;animation: changeC_pass_army 0.5s ease 0.5s infinite alternate;}
+@keyframes changeC_pass_army {0% { color:#fdb61e } 50% { color:#fdb61e } 51% { color:#fff } 100% { color:#fff }}
+.banner_zone .main_special.army .day_point span.bottomtxt {font-size:17px;}
+.banner_zone .main_special.army .right_zone {top:50%;transform: translateY(-50%);}
+/* // 메인 상단 대배너 (패스) */
+
+.banner_zone .bnr_total{position: relative;text-align: center;}
+.banner_zone .bnr_total::after{content: "";display: block;clear: both;}
+.banner_zone .bnr_total .inner{position: relative;width: 1080px;margin: 0 auto;background: #fff;box-sizing: border-box;}
+.banner_zone .bnr_total .inner::after{content: "";display: block;clear: both;}
+.banner_zone .bnr_total h3{position:absolute;top:-9999em;left:-9999em;text-indent: -9999em}
+.banner_zone .bnr_total .main_teacher h3{display:none}
+.banner_zone .bnr_total .slider{position: relative;box-sizing: border-box;}
+.banner_zone .bnr_total .slider ul{overflow: hidden;}
+
+/* 메인 기획전 배너 */
+.banner_zone .bnr_total .main_exhibitions{position: relative;float: left;width: 560px;max-height: 270px;overflow: hidden;margin: 0 0 10px;}
+.banner_zone .bnr_total .main_exhibitions .slick-arrow{display:none !important}
+.banner_zone .bnr_total .main_exhibitions .sld_tab{margin-top: 0;position: absolute;bottom:0;left: 0;width: 100%;z-index: 1;}
+.banner_zone .bnr_total .main_exhibitions .sld_tab .slick-track{transform: translate3d(0, 0, 0) !important;width: 100% !important}
+.banner_zone .bnr_total .main_exhibitions .sld_tab::after{display: block;content: "";clear: both;}
+.banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide{cursor: pointer;background-color: rgba( 0, 0, 0, 0.3);}
+.banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide a{display: block;height: 30px;line-height: 30px;padding:0 0;position: relative;font-size: 12px;font-weight: normal;text-align: center;color: #cccccc;box-sizing: border-box;letter-spacing: -1.2px;}
+.banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide a::before{content: "";position: absolute;top:50%;right:0;-webkit-transform: translateY(-50%);transform: translateY(-50%);display: block;width: 1px;height: 12px;background-color: #b7c1c1;}
+.banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide:last-child a::before{display: none}
+.banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide.slick-current.slick-active a{color:#fff;font-weight:bold;}
+.banner_zone .bnr_total .main_exhibitions.con1 .sld_tab .slick-slide{width: 100% !important}
+.banner_zone .bnr_total .main_exhibitions.con2 .sld_tab .slick-slide{width: 50% !important}
+.banner_zone .bnr_total .main_exhibitions.con3 .sld_tab .slick-slide{width: 33.3% !important}
+.banner_zone .bnr_total .main_exhibitions.con4 .sld_tab .slick-slide{width: 25% !important}
+.banner_zone .bnr_total .main_exhibitions.con5 .sld_tab .slick-slide{width: 20% !important}
+.banner_zone .bnr_total .main_exhibitions.con6 .sld_tab .slick-slide{width: 20% !important}
+.banner_zone .bnr_total .main_exhibitions.con7 .sld_tab .slick-slide{width: 16.6% !important}
+.banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide a br{display: none}
+.banner_zone.visual{padding:30px 0;margin:0 0 30px;background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 100%);}
+.banner_zone.visual .bnr_total .inner{background: none;}
+.banner_zone .bnr_total .main_exhibitions .slider_counting{text-align: center;position: absolute;bottom: 13px;left: 50%;width: auto;padding: 5px 23px;font-size: 0;background-color: rgba( 0, 0, 0, 0.1);-webkit-transform: translateX(-50%);-moz-transform: translateX(-50%);transform: translateX(-50%);border-radius: 30px;}
+.banner_zone .bnr_total .main_exhibitions .slider_counting > strong, .banner_zone .bnr_total .main_exhibitions .slider_counting > span{font-size: 13px;color:#fff;line-height: 7px;font-weight: normal;}
+.banner_zone .bnr_total .main_exhibitions .slider_counting .arrow{display:block !important}
+.banner_zone .bnr_total .main_exhibitions .slider_counting .arrow.prev{position: absolute;top: 3px;left: 6px;font-size: 10px;color: #fff;}
+.banner_zone .bnr_total .main_exhibitions .slider_counting .arrow.next{position: absolute;top: 3px;right: 6px;font-size: 10px;color: #fff;}
+
+/* // 메인 기획전 배너 */
+
+/* 메인 이벤트 배너 */
+.banner_zone .bnr_total .main_events{max-height: 270px;overflow:hidden;}
+.banner_zone .bnr_total .main_events.evnt1{float: left;width: 290px;margin-left: 10px;margin-bottom: 10px;}
+.banner_zone .bnr_total .main_events.evnt2{float: left;width: 210px;margin-left: 10px;margin-bottom: 10px;}
+.banner_zone .bnr_total .main_events.evnt1 .for_mo{display:none}
+.banner_zone .bnr_total .main_events .slick-arrow{display:none !important;}
+.banner_zone .bnr_total .main_events .slick-dots{text-align: center;position: absolute;bottom:13px;left: 50%;width: auto;/*padding: 5px 12px;*/padding: 5px 10px;font-size: 0;background-color: rgba( 0, 0, 0, 0.1);-webkit-transform: translateX(-50%);-moz-transform: translateX(-50%);transform: translateX(-50%);border-radius: 30px;}
+.banner_zone .bnr_total .main_events .slick-dots li{display: inline-block;padding: 0 3px;}
+.banner_zone .bnr_total .main_events .slick-dots li button{display: block;width: 8px;height: 8px;background-color: #fff;opacity: 0.5;font-size: 0;-webkit-border-radius: 100%;border-radius: 100%;}
+.banner_zone .bnr_total .main_events .slick-dots li.slick-active button{opacity:1;}
+.banner_zone .bnr_total .main_eventsTxt{display: none;float: none;clear: both;margin: 0 0 30px;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li{position: relative;border: 1px solid #efefef;border-radius: 7px;padding: 7px 10px 8px;margin: 0 0 7px;-webkit-box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);-moz-box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li a{position: relative;display: block;box-sizing: border-box;padding: 4px 0 4px 50px;text-align: left;font-size: 13px;overflow: hidden;text-overflow: ellipsis;max-width: 99%;white-space: nowrap;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.imgbnr a{padding: 0;text-align: center;}
+.banner_zone .bnr_total .main_eventsTxt em{position: absolute;top: 50%;left:0;border: 1px solid #e34e78;color: #e34e78;font-size: 12px;letter-spacing: -0.07em;font-style: normal;font-weight: bold;height: 16px;line-height: 16px;width: 40px;vertical-align: middle;text-align: center;margin-top: -8px;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special{border-color:#ff7f0b;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special::before{content:"";display:block;position:absolute;top:0;left:0;background:#ff7f0b;width: 80px;height:100%;z-index: 0;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special::after{content: "";position: absolute;top: 50%;left: 75px;margin-top: -4px;width: 0px;height: 0px;border-right: 7px solid transparent;border-bottom: 7px solid #ff7f0b;-ms-transform: rotate(-135deg);-webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);transform: rotate(-135deg);}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special em{background: #ff7f0b;color: #fff;border: 0;left:8px}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special a{padding-left: 84px;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special a strong{color:#ff7f0b}
+
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special.tea_no::before {content:none;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special.tea_no::after {content:none;}
+.banner_zone .bnr_total .main_eventsTxt .slider ul li.special.tea_no a {padding-left:0;text-align:center;}
+/* // 메인 이벤트 배너 */
+
+/* 학원 클래스 안내 */
+.main_academy{}
+.main_academy .inner{width: 1080px;margin: 0;margin: 0 auto 10px;background: #e4f7ff;}
+.main_academy h3{font-size: 18px;color: #fff;font-weight: normal;text-align: center;padding: 20px 0 30px;background: #2286c6 url(https://img.megagong.net/m/2020/1105_nangongRNW/academy_bg1.png) repeat-x 0 100%;}
+.main_academy h3.sobang{}
+.main_academy h3 span{display: inline-block;position: relative;padding:0 45px}
+.main_academy h3 span::before, .main_academy h3 span::after{content:"";display:block;position: absolute;top: 50%;left: 0;width: 34px;height: 8px;margin: -4px 0 0;background:url(https://img.megagong.net/m/2020/1105_nangongRNW/academy_dot.png) no-repeat 0 0;}
+.main_academy h3 span::after{left: inherit;right: 0;}
+.main_academy h3 span strong{color: #5bfdff;}
+.main_academy ul{margin: -10px 0 0;padding: 0 0 20px;}
+.main_academy ul::after{content: "";display:block;clear: both;}
+.main_academy ul li{position: relative;float: left;background: #fff;width: 320px;margin: 0 0 0 30px;-webkit-box-shadow: 3px 3px 5px 0px rgba(100,100,100,0.1);-moz-box-shadow: 3px 3px 5px 0px rgba(100,100,100,0.1);box-shadow: 3px 3px 5px 0px rgba(100,100,100,0.1);}
+.main_academy ul li::before{content:"";display:block;position: absolute;top: 12px;left: 30px;width: 64px;height: 64px;margin: -4px 0 0;background: url(https://img.megagong.net/m/2020/1105_nangongRNW/academy_icon1.png) no-repeat 0 0;z-index: 0;}
+.main_academy ul li:nth-child(2)::before{background-image: url(https://img.megagong.net/m/2020/1105_nangongRNW/academy_icon2.png)}
+.main_academy ul li:nth-child(3)::before{background-image: url(https://img.megagong.net/m/2020/1105_nangongRNW/academy_icon3.png)}
+.main_academy ul li a{position: relative;display: block;padding: 20px 0 20px 50px;font-size: 15px;text-align: center;background: url(https://img.megagong.net/m/2020/1105_nangongRNW/academy_go.png) no-repeat 93% center;}
+.main_academy ul li a br{display:none}
+.main_academy ul li strong{display: block;font-size: 18px;color: #2286c6;padding: 5px 0 0;}
+/* // 학원 클래스 안내 */
+
+/* 메인 선생님 홍보 배너 */
+.banner_zone .main_teacher{position: relative;clear: both;}
+.banner_zone .main_teacher::after{content: "";display: block;clear: both;}
+.banner_zone .main_teacher .left_zone{position: relative;float: left;width: 560px;margin-bottom: 20px;}
+.banner_zone .main_teacher .left_zone .slick-arrow{display:none !important;}
+.banner_zone .main_teacher .slider{position: relative;height: 180px;}
+.banner_zone .main_teacher .left_zone .slider .slick-slide > a{position: relative;display: block;padding: 35px 30px 50px;text-align: left;overflow: hidden;}
+.banner_zone .main_teacher .left_zone .newtea{position: absolute;top: 0;left:0;padding:5px 7px;background-color: #108f2e;color: #fff;font-size: 11px;letter-spacing: -0.07em;font-weight: normal !important;font-style: normal;}
+.banner_zone .main_teacher .left_zone .tit{position: relative;display: block;font-size: 21px;margin: 0 0 12px;line-height: 1.2;font-weight: bold;}
+.banner_zone .main_teacher .left_zone .sub_tit{position: relative;display: block;font-size: 14px;margin: 0 0 8px;}
+.banner_zone .main_teacher .left_zone .sub_tit .tiny{position: absolute;font-size: 10px;top: -4px;padding-left: 2px;color: #323133;}
+.banner_zone .main_teacher .left_zone .tea_name{display: block;font-size: 11px;}
+.banner_zone .main_teacher .left_zone .tea_name .tiny2{color: #323133;font-size: 11px;opacity: 0.6;}
+.banner_zone .main_teacher .left_zone .tea_name .tiny2 .br640{display: none;}
+.banner_zone .main_teacher .left_zone .tea_img{display: block;position:absolute;bottom:0;right:0;max-width: 50%;}
+.banner_zone .main_teacher .left_zone .tea_img .point{position: absolute;top:10px;right:7px;max-width: 26%;}
+.banner_zone .main_teacher .left_zone .slick-arrow{display:none !important}
+.banner_zone .main_teacher .sld_tab{margin-top: 0;position: absolute;bottom:0;left: 0;width: 100%;z-index: 1;margin: 0 auto;}
+.banner_zone .main_teacher .sld_tab .slick-track{transform: translate3d(0, 0, 0) !important;width: 100% !important}
+.banner_zone .main_teacher .sld_tab::after{display: block;content: "";clear: both;}
+.banner_zone .main_teacher .sld_tab .slick-slide{cursor: pointer;background-color: rgba( 180, 180, 180, 0.8);}
+.banner_zone .main_teacher .sld_tab .slick-slide a{display: block;height: 30px;line-height: 30px;padding:0 0;position: relative;font-size: 13px;font-weight: normal;text-align: center;color: #fff;opacity: 1;}
+.banner_zone .main_teacher .sld_tab .slick-slide.slick-current.slick-active{background-color: rgba( 0, 0, 0, 0.8);}
+.banner_zone .main_teacher .sld_tab .slick-slide.slick-current.slick-active a{color:#fff;font-weight:bold;opacity:1;}
+.banner_zone .main_teacher .con1 .sld_tab .slick-slide {width: 100% !important}
+.banner_zone .main_teacher .con2 .sld_tab .slick-slide {width: 50% !important}
+.banner_zone .main_teacher .con3 .sld_tab .slick-slide {width: 33.3% !important}
+.banner_zone .main_teacher .con4 .sld_tab .slick-slide {width: 25% !important}
+.banner_zone .main_teacher .con5 .sld_tab .slick-slide {width: 20% !important}
+.banner_zone .main_teacher .con6 .sld_tab .slick-slide {width: 20% !important}
+.banner_zone .main_teacher .con7 .sld_tab .slick-slide {width: 16.6% !important}
+.banner_zone .main_teacher .right_zone{position: relative;width: 510px;float: left;margin-left: 10px;margin-bottom: 20px;box-sizing: border-box;background: #fff;}
+.banner_zone .main_teacher .right_zone .slider .slick-slide > a{position: relative;display: block;padding: 90px 10px 50px;text-align: center;}
+.banner_zone .main_teacher .right_zone .slider .slick-slide > a::before{content: "";position: absolute;top: 0;right:0;display: block;width: 1px;height: 100%;background: url(https://img.megagong.net/m/2020/0326_sobang_new/teacher_line.png) no-repeat 100% 0;}
+.banner_zone .main_teacher .right_zone .slider .slick-current + .slick-slide > a::before,.banner_zone .main_teacher .right_zone .slider .slick-slide.last > a::before{display: none !important}
+.banner_zone .main_teacher .right_zone .newtea{position: absolute;top: 0;left:0;padding:5px 7px;background-color: #108f2e;color: #fff;font-size: 12px;letter-spacing: -0.07em;font-weight: normal !important;font-style: normal;z-index: 1}
+.banner_zone .main_teacher .right_zone .tit{position: relative;display: block;font-size: 13px;margin: 0 0 6px;line-height: 1.2;font-weight: bold;letter-spacing: -0.06em;z-index: 1;/* text-shadow: 0px 0px 2px #faffd9; */}
+.banner_zone .main_teacher .right_zone .tit br{display: none}
+.banner_zone .main_teacher .right_zone .sub_tit{position: relative;display: block;font-size: 13px;margin: 0 0 2px;z-index: 1;position: relative;display: block;}
+.banner_zone .main_teacher .right_zone .tea_name{position: relative;display: block;font-size: 11px;z-index: 1;}
+.banner_zone .main_teacher .right_zone .newtea{position: absolute;top: 0;left:0;padding:5px 7px;background-color: #108f2e;color: #fff;font-size: 12px;letter-spacing: -0.07em;font-weight: normal !important;font-style: normal;width: 32px;}
+.banner_zone .main_teacher .right_zone .newtea.icon{width: 32px;height: 32px;background: url('https://img.megagong.net/m/2020/0326_sobang_new/tea_new.png') 0 0 no-repeat;z-index: 1;font-size: 0;background-color: transparent;top: 10px;left: inherit;right: 10px;}
+.banner_zone .main_teacher .right_zone .newtea.evt{background: #e34e78;left: 48px;}
+.banner_zone .main_teacher .right_zone .tea_img{display: block;position:absolute;top: 0;left: 0;width: 100%;z-index: 0;}
+.banner_zone .main_teacher .right_zone .tea_img::before{content:"";position:absolute;bottom:0;left: 5%;width: 90%;height: 61px;background: url(https://img.megagong.net/m/2020/0326_sobang_new/tea_gradient.png) repeat-x 100% 0;background-size: 100% 100%;}
+.banner_zone .main_teacher .right_zone .tea_img img{display: inline-block;max-height: 130px;max-width: 35%;}
+.banner_zone .main_teacher .right_zone .slider{border:1px solid #ddd}
+.banner_zone .main_teacher .right_zone .slider > .slick-arrow{position: absolute;top: 50%;display: block;width: 26px;height: 29px;background-image:url('https://img.megagong.net/m/2020/0214_newbnr/arrow.png');z-index: 1;font-size: 0;line-height: 0;margin: -15px 0 0;opacity: 0.7;}
+.banner_zone .main_teacher .right_zone .slider > .slick-prev{left:0}
+.banner_zone .main_teacher .right_zone .slider > .slick-next{right:0px;background-position: 100% 0}
+.banner_zone .main_teacher .right_zone .txt_bnr{background: #fff;}
+.banner_zone .main_teacher .right_zone .slider .slick-slide > a.txt_bnr{padding: 36px 0 50px;}
+.banner_zone .main_teacher .right_zone .txt_bnr .sub_tit{position: relative;display: block;font-size: 15px;margin: 0 0 2px;line-height: 1.2;font-weight: bold;color: #0073bd;z-index: 1;letter-spacing: -0.07em;}
+.banner_zone .main_teacher .right_zone .txt_bnr .sub_tit br{display: none}
+.banner_zone .main_teacher .right_zone .txt_bnr .tit{position: relative;display: inline-block;font-size: 13px;margin: 0 0 2px;z-index: 1;opacity: 0.9;padding: 0 0 1px;font-weight: normal;border-bottom: 1px solid #1a1a1a;}
+.banner_zone .main_teacher .right_zone .txt_bnr .logo_img{position: relative;display: block;font-size: 13px;margin: 0 0 28px;line-height: 1.2;font-weight: bold;z-index: 1;}
+.banner_zone .main_teacher .right_zone .txt_bnr .logo_img img{display: inline-block;max-height: 26px;}
+.banner_zone .main_teacher .recomm_zone{display: none;clear: both;margin: 0 auto;width: 96%;padding: 15px 2%;background: #eaeaec;}
+.banner_zone .main_teacher .recomm_zone::after{content: "";display: block;clear: both;}
+.banner_zone .main_teacher .recomm_zone > div{float: left;width: 50%;}
+.banner_zone .main_teacher .recomm_zone > div a{position: relative;display: block;font-weight: bold;padding: 15px 10px;background: #838daf;}
+.banner_zone .main_teacher .recomm_zone > div a .sub_tit{font-size: 13px;}
+.banner_zone .main_teacher .recomm_zone > div a .tit{font-size: 14px;color: #fff;display: block;padding: 6px 0 0;}
+.banner_zone .main_teacher .recomm_zone > div a .tit::before{content: "";position: absolute;top: 0;right:0;display: block;width: 1px;height: 100%;background: #eaeaec;}
+/* // 메인 선생님 홍보 배너 */
+
+/* 메인 선생님 홍보 배너 renewal20 */
+.banner_zone .main_teacher.renewal20 h3{display:block}
+.banner_zone .bnr_total .teacher_title{position:relative;margin: 0 0 15px;height: 20px;text-align: center;top: inherit;left: inherit;text-indent: 0;display: block;padding: 20px 0 0;}
+.banner_zone .bnr_total .teacher_title::before{content: "";position: absolute;top: 50%;left:0;display: block;margin: 10px 0 0 0;width: 50%;height: 2px;background-color: #dddddd;}
+.banner_zone .bnr_total .teacher_title::after{content: "";position: absolute;top: 50%;right:0;width: 50%;height: 2px;margin: 10px 0 0 0;background-color: #dddddd;}
+.banner_zone .bnr_total .teacher_title span{position: relative;display: block;width: 710px;background: #fff;z-index: 1;font-size: 0;line-height: 1;margin: 0 auto;border: 2px solid #ddd;border-width: 0 2px 0 2px;text-align: center;color: #555;padding: 2px 23px 2px 23px;box-sizing: border-box;}
+.banner_zone .bnr_total .teacher_title strong{background: url(https://img.megagong.net/m/2020/0214_newbnr/teacher_title_bg.png) no-repeat 0 0;display: inline-block;width: 300px;height: 20px;font-size: 0;}
+.banner_zone .bnr_total .teacher_title strong img{display:none}
+.banner_zone .bnr_total .teacher_title em{background: url(https://img.megagong.net/m/2020/0214_newbnr/teacher_title_bg.png) no-repeat -305px 0px;display: inline-block;width: 349px;height: 20px;font-size: 0;margin: 0 0 0 6px;}
+
+.banner_zone .bnr_total .teacher_title.gong {height:31px;padding:0;}
+.banner_zone .bnr_total .teacher_title.gong::before{content: "";position: absolute;top: 50%;left:0;display: block;transform:translateY(-50%);margin:0;width: 100%;height: 13px;background: url(https://img.megagong.net/m/2020/0214_newbnr/teacher_title_line_bg.png) repeat-x left center;}
+.banner_zone .bnr_total .teacher_title.gong::after{content: none;}
+.banner_zone .bnr_total .teacher_title.gong span {width:543px;border:0;}
+.banner_zone .bnr_total .teacher_title.gong strong{background: url(https://img.megagong.net/m/2020/0214_newbnr/teacher_title_bg2.png) no-repeat 0 0;display: inline-block;width: 506px;height: 27px;font-size: 0;}
+.banner_zone .bnr_total .teacher_title.gong em {display:none;}
+
+.banner_zone .main_teacher.renewal20{padding:0 0 0 60px;margin: 0 0 40px;}
+.banner_zone .main_teacher.renewal20 .for_moView{display: none}
+.banner_zone .main_teacher.renewal20 .tc_incont::after{content:"";display: block;clear: both;}
+.banner_zone .main_teacher.renewal20 .left_zone .slider a{position: relative;text-align: left;}
+.banner_zone .main_teacher.renewal20 .left_zone .slider a{padding: 50px 0 15px;display: block;height: 245px;box-sizing: border-box;margin: 0 0 0 25px;}
+.banner_zone .main_teacher.renewal20 .subject_tab{position: absolute;top: 0;left: 0;width: 60px;text-align: center;z-index: 1;}
+.banner_zone .main_teacher.renewal20 .subject_tab li a{display: block;background: #ccc;color: #fff;height: 35px;line-height: 35px;font-size: 12px;}
+.banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(2) a{height: 36px;}
+.banner_zone .main_teacher.renewal20.sobang .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(2) a{line-height: 1.3;height: 62px;box-sizing: border-box;padding: 14px 0 0;}
+.banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(2) a{line-height: 1.3;height: 49px;box-sizing: border-box;padding: 10px 0 0;}
+.banner_zone .main_teacher.renewal20 .subject_tab li a.type2{line-height: 30px !important;}
+.banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(1) a{height: 61px;}
+.banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(1) a{height: 51px;}
+.banner_zone .main_teacher.renewal20 .subject_tab li.on a,.banner_zone .main_teacher.renewal20.sobang .subject_tab li.on a{background: #333;color: #fff !important;}
+.banner_zone .main_teacher.renewal20 .teacher_zone{position:relative;}
+.banner_zone .main_teacher.renewal20 .slider{height: auto;border-color: #efefef;border: 1px solid #efefef;}
+.banner_zone .main_teacher.renewal20 .slider .slick-list{height:245px;overflow:hidden}
+.banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider{background-color: #F5F1FD;}
+.banner_zone .main_teacher.renewal20 .right_zone.comm_techer.type2 .slider{background: #f2fbf9;}
+.banner_zone .main_teacher.renewal20 .tc_incont{display:none}
+.banner_zone .main_teacher.renewal20 .tc_incont.on{display:block}
+.banner_zone .main_teacher.renewal20 .left_zone{width: 510px;background: #f6f6f6;margin: 0;}
+.banner_zone .main_teacher.renewal20.sobang .left_zone.major{background: #f8f9f3;}
+.banner_zone .main_teacher.renewal20 .left_zone.major{background: #f5f1fc;}
+.banner_zone .main_teacher.renewal20 .left_zone.minor{margin: 0 0 0 2px;width: 508px;}
+.banner_zone .main_teacher.renewal20 .left_zone .newtea{display:inline-block;border:1px solid #1f963c;color:#1f963c;background: none;top: 25px;left: 0;padding: 0 0;width: 48px;height: 16px;line-height: 16px;text-align: center;-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;margin: 0 1px 0 0;margin: 0 0 10px;background: none;}
+.banner_zone .main_teacher.renewal20 .left_zone .newtea.evt{border-color:#c53e8c;color:#c53e8c;background: none;}
+.banner_zone .main_teacher.renewal20 .left_zone .newtea.justsb,.banner_zone .main_teacher.renewal20 .right_zone .newtea.justsb{position: absolute;top: 0;right: 10px;width: 36px;height: 39px;background: url(https://img.megagong.net/m/2020/0804_sobang/justsb_bg.png) no-repeat 0 0;-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;color: #fff;border: 0;left: inherit;line-height: 1.2;padding: 3px 0 0;margin: 0;font-size: 11px;}
+.banner_zone .main_teacher.renewal20 .left_zone .sub_tit{text-decoration: underline;margin: 0 0 12px;font-size: 15px;}
+.banner_zone .main_teacher.renewal20 .left_zone .tit{font-size: 27px;margin: 0 0 45px 0;color:#5a5a5a;}
+.banner_zone .main_teacher.renewal20 .left_zone .tit.mt{margin: 45px 0 45px 0;}
+.banner_zone .main_teacher.renewal20 .left_zone.major .tit{color:#9104d6;}
+.banner_zone .main_teacher.renewal20 .left_zone.major .tit em { font-style:normal; color:#d50000;}
+.banner_zone .main_teacher.renewal20.sobang .left_zone.major .tit{color:#738112;}
+.banner_zone .main_teacher.renewal20 .left_zone .tea_name{font-size:12px}
+.banner_zone .main_teacher.renewal20 .tea_name strong{border-left: 1px solid #afafaf;padding: 0 0 0 5px;margin: 0 0 0 3px;} 
+.banner_zone .main_teacher.renewal20 .left_zone .tea_name .tiny2{display:block;padding: 10px 0 0;font-size: 10px;}
+.banner_zone .main_teacher.renewal20 .left_zone .tea_img{width: 39%;right: 2%;}
+.banner_zone .main_teacher.renewal20 .left_zone .tea_img.left{width: 39%;right: 0%;}
+.banner_zone .main_teacher.renewal20 .right_zone{width: 508px;margin: 0 0 0 2px;background: #f6f6f6;}
+.banner_zone .main_teacher.renewal20 .right_zone.comm_techer{width: 1020px;background: #fff;margin: 0 0 0 -2px;}
+.banner_zone .main_teacher.renewal20 .right_zone .slider .tc_item{box-sizing: border-box;}
+.banner_zone .main_teacher.renewal20 .right_zone .slider a{position: relative;padding: 50px 10px 38px 0;margin: 0 0 0 30px;display: block;box-sizing: border-box;text-align: left;height: 245px;/* border: 1px solid #efefef; */}
+.banner_zone .main_teacher.renewal20 .right_zone .slider .txt_bnr, .banner_zone .main_teacher.renewal20 .left_zone.major .slider .txt_bnr{background-image: url(https://img.megagong.net/m/2020/0214_newbnr/txt_bnr_bg.png);background-position: 100% 100%;background-repeat:no-repeat;background-color: transparent;}
+.banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider a{margin: 0 0 0 30px;border: 0;}
+.banner_zone .main_teacher.renewal20 .right_zone .slick-slide.slick-current.slick-active a{border-right: 1px solid #ececec;}
+.banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slick-slide.slick-current.slick-active + .slick-slide a{border-right: 1px solid #ececec;}
+.banner_zone .main_teacher.renewal20 .right_zone .newtea{display:inline-block;border:1px solid #1f963c;color:#1f963c;background: none;top: 25px;left: 0;padding: 0 0;width: 48px;height: 16px;line-height: 16px;text-align: center;-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;margin: 0 1px 0 0;margin: 0 0 10px;}
+.banner_zone .main_teacher.renewal20 .right_zone .newtea.evt{border-color:#c53e8c;color:#c53e8c;background: none;}
+.banner_zone .main_teacher.renewal20 .right_zone .newtea.icon{border: 0;width: 44px;height: 44px;position: absolute;top: 50%;left: 100%;margin: -22px 0 0 3px;}
+.banner_zone .main_teacher.renewal20 .right_zone .sub_tit{text-decoration: underline;margin: 0 0 12px;font-size: 13px;line-height: 1.2;}
+.banner_zone .main_teacher.renewal20 .right_zone .txt_bnr .sub_tit{color: #222;font-weight: normal;}
+.banner_zone .main_teacher.renewal20 .right_zone .tit{font-size: 21px;margin: 0 0 35px 0;color: #555;height: 75px;font-weight: bold;}
+.banner_zone .main_teacher.renewal20 .right_zone .txt_bnr .tit{border: 0}
+.banner_zone .main_teacher.renewal20 .right_zone .txt_bnr .tit::before, .banner_zone .main_teacher.renewal20 .left_zone.major .txt_bnr .tit::before{content:"";display:block;position:absolute;bottom: -16px;left:0;height: 18px;width: 55px;background: url(https://img.megagong.net/m/2020/0214_newbnr/txt_bnr_arrow.png) 0 0 no-repeat;}
+.banner_zone .main_teacher.renewal20 .right_zone .tit br{display:block}
+.banner_zone .main_teacher.renewal20 .right_zone .tea_name{font-size:12px;display: inline-block;}
+.banner_zone .main_teacher.renewal20 .right_zone .tea_name .tiny2{display:block;padding: 10px 0 0;font-size: 10px;}
+.banner_zone .main_teacher.renewal20 .right_zone .tea_img{width: 60%;right: 0;left: inherit;right: 0;top: inherit;bottom: 1px;}
+.banner_zone .main_teacher.renewal20 .right_zone.comm_techer .tea_img{width: 46%;right: 5%;}
+.banner_zone .main_teacher.renewal20 .right_zone .txt_bnr .tea_img{height: 27px;bottom: 30px;right: inherit;left: 0;}
+.banner_zone .main_teacher.renewal20 .right_zone .tea_img::before{display:none}
+.banner_zone .main_teacher.renewal20 .right_zone .tea_img img{max-height: 100%;max-width: 100%;}
+
+.tea_tipS { display:block; position:relative; z-index:5; padding-left:5px; margin-top:10px; font-size:10px; line-height:130%; /*color:#323133;*/ color:#7e7e7e; text-shadow: -1px 0 rgba(242,251,249,.8), 0 1px rgba(242,251,249,.8), 1px 0 rgba(242,251,249,.8), 0 -1px rgba(242,251,249,.8); }
+.tea_tipS:before { content:"*"; position:absolute; top:0; left:0; }
+
+/* // 메인 선생님 홍보 배너 renewal20 */
+
+
+
+/*** 20201207_new_pass ***/
+.main_special_new .inner {width:1080px;margin:0 auto;}
+.main_special_new .pc_spc_wrap {position:fixed;z-index:90;bottom:0;left:0;right:0;width:100%;}
+.main_special_new.gong .pc_spc_wrap .timer_wrap {position:absolute;z-index: 90;top:0;bottom:0;left:0;right:0;margin:auto;width:100px;height:100px;border-radius:50%;background-color:#2affe2;text-align:center;}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer {display:table-cell;vertical-align: middle;height: 100px;}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer .redtxt {display:inline-block;width:100%;vertical-align: middle;font-weight:bold;font-size:18px;color:#333380; /*line-height:25px;*/}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer .bottomtxt {display:inline-block;width:100%;vertical-align: middle;font-weight:bold;font-size:15px;color:#ff2a00; /*line-height:20px;*/}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer .redtxt.end{animation: change_g_new_pass1 0.5s ease 0.5s infinite alternate;}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer .bottomtxt.end{color:#333380;animation: change_g_new_pass1 0.5s ease 0.5s infinite alternate;}
+@keyframes change_g_new_pass1 {0% { color:#132f56 } 50% { color:#132f56 } 51% { color:#ff2a00; } 100% { color:#ff2a00; }}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer .rolling{width: 100px;height: 100px; overflow: hidden;line-height: 100px;}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer .rolling .redtxt{line-height: 1.5;}
+.main_special_new.gong .pc_spc_wrap .timer_wrap .timer .rolling .bottomtxt{font-size:27px;margin-top: -5%;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_top {background:url("https://img.megagong.net/m/2020/1207_pass/pc_spc_top_bg.png") no-repeat center;background-size:100% 100%;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_line {background-color:#04173a;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_line .inner {position:relative;padding:2px 0;height:30px;box-sizing:border-box;line-height:22px;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_line .inner > img {display:inline-block;vertical-align: middle;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_line .inner ul {position:absolute;right:0;top:2px;font-size:0;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_line .inner ul li {display:inline-block;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_line .inner ul li+li {margin-left:8px;}
+.main_special_new.gong .pc_spc_wrap .pc_spc_line .inner ul li a {display:block;}
+
+
+.main_special_new .m_spc_wrap {display:none;}
+.main_special_new .m_spc_wrap .m_spc_sd li {position:relative;padding:0 4% 10px;box-sizing:border-box;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_sobang {padding:0 4% 4%;}
+.main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap {position:absolute;z-index: 90;top:12%;left:4%;width: 16%;height: 48%;text-align:center;}
+.main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap .timer {position:absolute;top:50%;left:0;width:100%;transform: translateY(-50%);}
+.main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap .timer .redtxt {display:inline-block;width:100%;font-weight:bold;font-size:15px;color:#ffffff;line-height:1.2;}
+.main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap .timer .bottomtxt {display:inline-block;width:100%;font-weight:bold;font-size:15px;color:#ffde00;line-height:1.4;}
+.main_special_new .m_spc_wrap .m_spc_sd li .btm_direc_evt {position:relative;padding:2% 0;}
+.main_special_new .m_spc_wrap .m_spc_sd li .btm_direc_evt:before {content:'';position:absolute;top:0;left:0;right:0;width:100%;height:1px;background:url("https://img.megagong.net/m/2020/1207_pass/line_bg.png") repeat-x left top;}
+.main_special_new .m_spc_wrap .m_spc_sd li .btm_direc_evt:after {content:'';position:absolute;bottom:0;left:0;right:0;width:100%;height:1px;background:url("https://img.megagong.net/m/2020/1207_pass/line_bg.png") repeat-x left top;}
+.main_special_new .m_spc_wrap .m_spc_sd .slick-dots {position:absolute;top:6px;right:10px;font-size:0;}
+.main_special_new .m_spc_wrap .m_spc_sd .slick-dots li {display:inline-block;width:8px;height:8px;background-color:#757575;border-radius:50%;padding:0;}
+.main_special_new .m_spc_wrap .m_spc_sd .slick-dots li+li {margin-left:6px;}
+.main_special_new .m_spc_wrap .m_spc_sd .slick-dots li.slick-active {background-color:#fff;}
+.main_special_new .m_spc_wrap .m_spc_sd .slick-dots li button {font-size:0;}
+
+/* .main_special_new.sobang .pc_spc_wrap .pc_spc_top {background-color:#3c302e;} */
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top {background-color:#8a1400;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner {position:relative;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap {position:absolute;top:0;left:0;bottom:0;height:100%;width:116px;background:url("https://img.megagong.net/m/2020/1207_pass/sobang_time_bg.png") no-repeat center;background-size: auto 100%;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer {position:absolute;top:50%;left:0;width:100%;transform: translateY(-50%);text-align:center;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .redtxt {display:inline-block;width:100%;vertical-align: middle;font-weight:bold;font-size:16px;color:#ffffff;line-height:25px;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .bottomtxt {display:inline-block;width:100%;vertical-align: middle;font-weight:bold;font-size:15px;color:#ff0006;line-height:20px;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .redtxt.end{animation: change_s_new_pass1 0.5s ease 0.5s infinite alternate;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .bottomtxt.end{color:#ffffff;animation: change_s_new_pass1 0.5s ease 0.5s infinite alternate;}
+@keyframes change_s_new_pass1 {0% { color:#ffffff; } 50% { color:#ffffff; } 51% { color:#ff0006; } 100% { color:#ff0006; }}
+@keyframes change_s_new_pass2 {0% { color:#ff0006; } 50% { color:#ff0006; } 51% { color#ffffff; } 100% { color#ffffff; }}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .rolling{width:100%;height: 100%;overflow: hidden;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .rolling .redtxt{margin-top: 10%;line-height: 1.5;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .rolling .bottomtxt{font-size: 27px;line-height: 3;}
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .subway {position:absolute;top:-8px;right:99px;-webkit-animation: ani_subway 1s infinite;animation: ani_subway 1s infinite;}
+
+@-webkit-keyframes ani_subway {
+    0% {top:-8px}
+    50% {top:-12px}
+}
+@keyframes ani_subway {
+    0% {top:-8px}
+    50% {top:-12px}
+}
+
+
+.main_special_new .m_spc_wrap .m_spc_sd li.m_nine_rank {background-color:#333380;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_nine_rank .timer_wrap {background:url("https://img.megagong.net/m/2020/1207_pass/m_spc_timer_9rank.png") no-repeat center;background-size:100% auto;}
+
+.main_special_new .m_spc_wrap .m_spc_sd li.m_seven_rank {background-color:#7b1f1f;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_seven_rank .timer_wrap {background:url("https://img.megagong.net/m/2020/1207_pass/m_spc_timer_7rank.png") no-repeat center;background-size:100% auto;}
+
+/* .main_special_new .m_spc_wrap .m_spc_sd li.m_sobang {background-color:#3c302e;} */
+.main_special_new .m_spc_wrap .m_spc_sd li.m_sobang {background:#8a1400 url("https://img.megagong.net/m/2020/1207_pass/pass_visual_sobang_bg.png") no-repeat top right;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_sobang .timer_wrap {background:url("https://img.megagong.net/m/2020/1207_pass/m_spc_timer_sobang.png") no-repeat center;background-size:100% auto;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_sobang .btm_direc_evt:before {content:'';position:absolute;top:0;left:0;right:0;width:100%;height:1px;background:url("https://img.megagong.net/m/2020/1207_pass/m_spc_timer_soabng.png") repeat-x left top;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_sobang .btm_direc_evt:after {content:'';position:absolute;bottom:0;left:0;right:0;width:100%;height:1px;background:url("https://img.megagong.net/m/2020/1207_pass/m_spc_timer_soabng.png") repeat-x left top;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_sobang .timer_wrap .timer .bottomtxt {color:#ff0006;}
+
+/* 2021-01-18 군무원 추가 */
+.main_special_new .m_spc_wrap .m_spc_sd li.m_army {background:#00704c url("https://img.megagong.net/m/2021/0105_pass/pass_visual_army_bg.png") no-repeat top right;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_army .timer_wrap {background:url("https://img.megagong.net/m/2021/0105_pass/m_spc_timer_army.png") no-repeat center;background-size:100% auto;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_army .btm_direc_evt:before {content:'';position:absolute;top:0;left:0;right:0;width:100%;height:1px;background:url("https://img.megagong.net/m/2021/0105_pass/m_spc_bar_army.png") repeat-x left top;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_army .btm_direc_evt:after {content:'';position:absolute;bottom:0;left:0;right:0;width:100%;height:1px;background:url("https://img.megagong.net/m/2021/0105_pass/m_spc_bar_army.png") repeat-x left top;}
+.main_special_new .m_spc_wrap .m_spc_sd li.m_army .timer_wrap .timer .bottomtxt {color:#00ffde;}
+
+
+/* 2020-12-15 */
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top {background:#34149f;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top .inner {position:relative;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top .inner:before {content:'';position:absolute;top:0;right:0;width:164px;height:120px;background: url("https://img.megagong.net/m/2020/1214_pass/pc_main_ban_gift.png") no-repeat top right;background-size:100% auto;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top .inner:after { content:""; display:block; position:absolute; top:0; right:0; width:53px; height:47px; background: url("https://img.megagong.net/m/2020/1214_pass/icon_limit.png") no-repeat top right;  }
+.main_special_new.gong .pc_spc_wrap.n1215 .timer_wrap {right:auto;bottom:auto;top:10px;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_line {background-color:#04173a;}
+
+.main_special_new .m_spc_wrap .m_spc_sd li {padding:0 4% 4px;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_nine_rank {background:#34149f url("https://img.megagong.net/m/2020/1214_pass/pass_visual_9rank_bg.png") no-repeat left top;background-size:100% 100%;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_nine_rank:before {content:'';position:absolute;z-index:1;right:4%;top:0;bottom:0;width:17%;height:100%;background: url("https://img.megagong.net/m/2020/1214_pass/pass_visual_9rank_gift.png") no-repeat center;background-size:auto 100%;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_seven_rank {background:#0b0d5a url("https://img.megagong.net/m/2020/1214_pass/pass_visual_7rank_bg.png") no-repeat left top;background-size:100% 100%;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_seven_rank:before {content:'';position:absolute;z-index:1;right:4%;top:0;bottom:0;width:17%;height:100%;background: url("https://img.megagong.net/m/2020/1214_pass/pass_visual_9rank_gift.png") no-repeat center;background-size:auto 100%;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li i.finish { position:absolute; top:11%; right:5px; z-index:5; width:9%; }
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li i.finish img { width:100%;}
+
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_seven_rank .timer_wrap {background:url("https://img.megagong.net/m/2020/1207_pass/m_spc_timer_9rank.png") no-repeat center;background-size:100% auto;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li .timer_wrap .timer .bottomtxt {color:#2affe2;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li .btm_direc_evt:after {content:none;}
+
+/* 2021-01-11 소방 추가 */
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_sobang:before {content:'';position:absolute;z-index:1;right:4%;top:0;bottom:0;width:17%;height:93%;background: url("https://img.megagong.net/m/2021/0105_pass/sobang/pass_visual_sobang_gift.png") no-repeat center;background-size:auto 100%;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_sobang .timer_wrap .timer .bottomtxt {color:#ff0006;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_sobang {padding:0 4% 4%;}
+
+/* 2021-01-18 군무원 추가 */
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_army:before {content:'';position:absolute;z-index:1;right:4%;top:0;bottom:0;width:17%;height:93%;background: url("https://img.megagong.net/m/2021/0105_pass/pass_visual_army_gift.png") no-repeat center;background-size:auto 100%;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_army .timer_wrap .timer .bottomtxt {color:#00ffde;}
+.main_special_new .m_spc_wrap.n1215 .m_spc_sd li.m_army {padding:0 4% 4%;}
+
+/*소방캠퍼스 -  메인 하단 대배너 (패스) - 하단 고정 띠배너*/
+.main_special_new.sobangcampus .pc_spc_wrap .pc_spc_top {background-color:#992020;}
+.main_special_new.sobangcampus .pc_spc_wrap .pc_spc_top .inner {position:relative;}
+.main_special_new.sobangcampus .moveIcon { position:absolute; top:2%; left:7%; width:40px; height:40px; overflow:hidden; }
+.main_special_new.sobangcampus .moveIcon img:last-child { display:none; }
+.main_special_new.sobangcampus .moveIcon.on img:last-child { display:block; }
+.main_special_new.sobangcampus .moveIcon.on img:first-child { display:none; }
+
+
+
+/* 2021-02-09 */
+
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li i.finish { position:absolute; top:11%; right:5px; z-index:5; width:9%; }
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li i.finish img { width:100%;}
+
+
+
+/*소방 0209*/
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_sobang .timer_wrap {background:url("https://img.megagong.net/m/2021/0209_pass/sobang/m_spc_timer.png") no-repeat center;background-size:100% auto;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_sobang {background:#fff url("https://img.megagong.net/m/2021/0209_pass/sobang/pass_visual_sobang_bg.png") no-repeat center center;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_sobang:before {content:'';position:absolute;z-index:1;right:4%;top:0;bottom:0;width:17%;height:93%;background: url("https://img.megagong.net/m/2021/0209_pass/sobang/pass_visual_sobang_gift.png") no-repeat center;background-size:auto 100%;}
+
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_sobang {padding:0 4%;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_sobang .timer_wrap .timer .bottomtxt { color:#1dffc2; }
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li .timer_wrap { top:25%; }
+
+/*공무원 0209*/
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong .timer_wrap {background:url("https://img.megagong.net/m/2021/0209_pass/m_spc_timer_gong.png") no-repeat center;background-size:100% auto;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong {background:#fff url("https://img.megagong.net/m/2021/0209_pass/pass_visual_gong_bg.png") no-repeat center center;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong:before {content:'';position:absolute;z-index:1;right:4%;top:0;bottom:0;width:17%;height:100%;background: url("https://img.megagong.net/m/2021/0209_pass/pass_visual_gong_gift.png") no-repeat center;background-size:auto 100%;}
+
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong {padding:0 4%;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong .timer_wrap .timer .bottomtxt { color:#05ccf7; }
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li .timer_wrap { top:27%; }
+/* .main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong .top_txt img { max-width:110%; margin-left:-5%; } */
+.main_special_new .m_spc_wrap.n0209 .top_txt img { max-width:110%; margin-left:-5%; }
+
+.main_special_new .m_spc_wrap.n0209 .top_txt.gong { position:relative; }
+.main_special_new .m_spc_wrap.n0209 .top_txt.gong a { position:absolute; top:42%; width:28%; height:35%; font-size:0; }
+.main_special_new .m_spc_wrap.n0209 .top_txt.gong a.link1 { left:22%; }
+.main_special_new .m_spc_wrap.n0209 .top_txt.gong a.link2 { left:50%; }
+
+/*0209 파이널 배너 추가*/
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final {background:#071226;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final .inner {position:relative;}
+.main_special_new.gong .pc_spc_wrap.n1215 .timer_wrap {right:auto;bottom:auto;top:10px;}
+.main_special_new.gong .pc_spc_wrap .slick-dots {position:absolute;top:11px;right:10px;font-size:0;}
+.main_special_new.gong .pc_spc_wrap .slick-dots li {display:inline-block;width:8px;height:8px;background-color: #b4b4b4;border-radius:50%;padding:0;}
+.main_special_new.gong .pc_spc_wrap .slick-dots li+li {margin-left:6px;}
+.main_special_new.gong .pc_spc_wrap .slick-dots li.slick-active {background-color: #40cbf6;}
+.main_special_new.gong .pc_spc_wrap .slick-dots li button {font-size:0;}
+/*0216 파이널 배너 추가*/
+.pc_spc_wrap .slick-list{overflow: inherit;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 {background: linear-gradient(90deg, #092e72 50%, #40116d 50%);}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap {position:absolute;z-index: 90;top: 0;bottom:0;left:0;right:0;margin:auto;width: 75px;height: 75px;border-radius:50%;background-color:#2affe2;text-align:center;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap .timer {display:table-cell;vertical-align: middle;height: 75px;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap .timer .redtxt {font-size:15px;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap .timer .bottomtxt {font-size:13px;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap .timer .redtxt.end{animation: change_g_new_pass1 0.5s ease 0.5s infinite alternate;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap .timer .bottomtxt.end{color:#333380;animation: change_g_new_pass1 0.5s ease 0.5s infinite alternate;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .inner{/*line-height: 27px;*/text-align: center;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .inner .subway {position:absolute;top:-8px;left:99px;-webkit-animation: ani_subway 1s infinite;animation: ani_subway 1s infinite;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .inner .buds{position: absolute;top: -6px;left: 32.5%;display: block;}
+.main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .inner .finish,
+.main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .finish  { position:absolute; top:-10px; right:5px; }
+
+
+/*공무원 파이널 0209*/
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong_final .timer_wrap {background:url("https://img.megagong.net/m/2021/0209_pass/m_spc_timer_gong.png") no-repeat center;background-size:100% auto;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong_final {background:#fff url("https://img.megagong.net/m/2021/0209_final_pass/gong/pass_visual_gong_bg.jpg") no-repeat center center;padding:0 4% 0;}
+.main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong_final .timer_wrap .timer .bottomtxt {display:inline-block;width:100%;font-weight:bold;font-size:15px;color:#05ccf7;line-height:1.4;}
+
+
+
+@media all and (max-width: 1600px){
+
+}
+
+@media (max-width: 1200px){
+
+    .banner_zone{margin: 0 0 40px;}
+    .banner_zone.visual{background:#fff;padding-bottom:0}
+    .banner_zone .bnr_total{background: #eaeaec;}
+    .banner_zone.visual .bnr_total{background: #fff;}
+    .banner_zone .bnr_total h3{position:relative;top:inherit;left:inherit;text-indent: 0;font-size: 19px;text-align: left;margin: 0 0 12px;padding: 0;}
+    .banner_zone.visual .bnr_total h3{display:none}
+
+    /* 메인 상단 대배너 (패스) */
+    .banner_zone .main_special{margin: 0 0 20px}
+    .banner_zone .main_special .inner{width: 100%;padding: 0 19.445% 0 0;}
+    .banner_zone .main_special .right_zone{width: 19.445%}
+    .banner_zone .main_special .left_zone .day_point{left: 2%;background-size: 44%;width: 13%;}
+    .banner_zone .main_special .left_zone .day_point > span{font-size: 16px;}
+    /* .banner_zone .main_special .left_zone .day_point span.redtxt{padding: 78% 0 0;} */
+    .banner_zone .main_special .left_zone .day_point span.redtxt{padding: 68% 0 0;}
+    .banner_zone .main_special.sobang .left_zone .day_point.n0624 {background-position:center 19%;}
+    .banner_zone .main_special .special_link{left:63%}
+    /* // 메인 상단 대배너 (패스) */
+
+
+    .banner_zone .bnr_total .inner{width: 100%;padding: 0 2%;}
+    .banner_zone.visual .bnr_total .inner{}
+    .banner_zone .main_bnrzone1, .banner_zone .main_bnrzone2{width: 97%;margin: 0 auto;}
+    .banner_zone .main_bnrzone1::after, .banner_zone .main_bnrzone2::after{content:"";display:block;clear:both}
+
+    /* 메인 기획전 배너 */
+    .banner_zone .bnr_total .main_exhibitions{max-height: 300px}
+    .banner_zone .bnr_total .main_exhibitions{width: 51.5%;}
+    .banner_zone .bnr_total .main_exhibitions .slick-slide img{width:100%}
+    .banner_zone .bnr_total .main_exhibitions .sld_tab {bottom:3px;}
+    .banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide a{line-height: 1.2;height: 36px;padding: 4px 0 0;}
+    .banner_zone .bnr_total .main_exhibitions .sld_tab .slick-slide a br{display: block;}
+    /* // 메인 기획전 배너 */
+
+    /* 메인 이벤트 배너 */
+    .banner_zone .bnr_total .main_events{max-height: 300px}
+    .banner_zone .bnr_total .main_events.evnt1{width: 26.8%;margin-left: 1%;}
+    .banner_zone .bnr_total .main_events.evnt2{width: 19.4%;margin-left: 1%;}
+    .banner_zone .bnr_total .main_events .slick-slide img{width:100%}
+    .banner_zone .bnr_total .main_events .slick-dots{/*padding: 3px 10px;*/padding: 3px 6px;min-width: 110px;bottom: 4%;width: 50%;}
+    .banner_zone .bnr_total .main_events .slick-dots li button{width:10px;height:10px}
+   .banner_zone .bnr_total .main_events .slider img{width:100%}
+    /* // 메인 이벤트 배너 */
+
+    /* 메인 선생님 홍보 배너 */
+    .banner_zone .bnr_total .main_teacher h3{font-size: 15px;padding: 10% 0 12% 10px;color: #fffecb;line-height: 1.5;}
+    .banner_zone .bnr_total .main_teacher h3 strong{display:block;font-size: 20px;}
+    .banner_zone .main_teacher .left_zone{width: 51.7%}
+    .banner_zone .main_teacher .left_zone .tea_img{right: 0%;max-width: 44%;}
+    .banner_zone .main_teacher .left_zone .tea_img .point{top: 20px;}
+    .banner_zone .main_teacher .left_zone .slider .slick-slide > a{padding: 35px 20px 50px;}
+    .banner_zone .main_teacher .right_zone{width: 47%;margin-left: 1%;}
+    .banner_zone .main_teacher .right_zone .slider .slick-slide > a{padding: 80px 4px 40px;}
+    .banner_zone .main_teacher .right_zone span{letter-spacing: -0.1em}
+    .banner_zone .main_teacher .right_zone .tea_img{top: 5px;}
+    .banner_zone .main_teacher .right_zone .txt_bnr .sub_tit{font-size: 13px}
+    /* // 메인 선생님 홍보 배너 */
+
+    /* 메인 선생님 홍보 배너 renewal20 */
+    .banner_zone .main_teacher.renewal20{margin: 0 0 0;}
+    .banner_zone .main_teacher.renewal20 .left_zone{margin-bottom: 0;}
+    .banner_zone .main_teacher.renewal20 .left_zone, .banner_zone .main_teacher.renewal20 .left_zone.minor{width:50%;margin:0}
+    .banner_zone .main_teacher.renewal20 .left_zone .tea_img{max-width: 36%;right: 0;}
+    .banner_zone .main_teacher.renewal20 .left_zone .tit{font-size: 24px;}
+    .banner_zone .main_teacher.renewal20 .right_zone .tit{font-size:18px}
+    .banner_zone .main_teacher.renewal20 .right_zone{width:50%;margin: 0;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer{width:100%}
+    /* // 메인 선생님 홍보 배너 renewal20 */
+
+
+    /* 공무원 메가패스 배너 1013 */
+    .banner_zone .spcial_pc_evt .inner img {left:2%;}
+    .banner_zone .spcial_pc_evt .inner .spcial_btn {padding:6px 2%;}
+
+    
+    /* 학원 클래스 안내 */
+    .main_academy{}
+    .main_academy .inner{width: 96%;padding: 0 0 16px;}
+    .main_academy h3{padding: 20px 0 37px;}
+    .main_academy h3.sobang{}
+    .main_academy h3 span{}
+    .main_academy h3 span::before, .main_academy h3 span::after{}
+    .main_academy h3 span::after{}
+    .main_academy h3 span strong{}
+    .main_academy ul{padding: 0 3% 0 1%;}
+    .main_academy ul::after{}
+    .main_academy ul li{margin: 0 0 0 2%;width: 31.3%;}
+    .main_academy ul li::before{top: -18px;left: 50%;margin: 0 0 0 -32px;}
+    .main_academy ul li a{padding: 50px 0 14px;font-size: 14px;background-image: url(https://img.megagong.net/m/2020/1105_nangongRNW/academy_go_m.png);background-position: 100% 100%;}
+    .main_academy ul li strong{font-size: 15px;}
+    /* // 학원 클래스 안내 */
+
+
+    /* 20201207_new_pass */
+    .main_special_new .pc_spc_wrap {bottom:65px;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .inner .buds{top:-8%;max-width: 12%;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .inner .finish img,
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .finish img { width:6vw; }
+}
+
+@media (max-width: 1080px){
+    /* 20201207_new_pass */
+    .main_special_new .inner {width:100%;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap {width:80px;height:80px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer {height:80px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .redtxt {font-size:16px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .bottomtxt {font-size:14px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .rolling{width: 80px;height: 80px;line-height: 75px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .rolling .bottomtxt {font-size:25px;}
+
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .subway {width: 14%;right: 9%; padding-top:8px; }
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap {width: 11%;}
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .redtxt {font-size:16px;}
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .bottomtxt {font-size:14px;}
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .rolling .redtxt{/* margin-top: 10%; */}
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .rolling .bottomtxt{font-size: 25px;}
+
+    /* 2020-12-15 */
+    .main_special_new.gong .pc_spc_wrap.n1215 .timer_wrap {left:.5%;width:90px;height:90px;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .timer_wrap .timer {height:90px;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top .inner:before {width:16%;}
+
+
+}
+
+@media all and (max-width:992px){
+    /* 군무원 배너 추가 1019 */
+    .banner_zone .main_special.army .day_point span.redtxt {font-size:17px;padding:80% 0 0;}
+
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final{padding-bottom: 0.3%;}
+}
+@media all and (max-width:900px){
+    /* 메인 상단 대배너 (패스) */
+    .banner_zone .main_special .day_point{height: 140px;padding: 59px 10px 0;background-position: center 15px;}
+
+    
+    /* // 메인 상단 대배너 (패스) */
+            
+    /* 메인 선생님 홍보 배너 renewal20 */
+    .banner_zone .main_teacher.renewal20 .subject_tab li a, .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(2) a{height: 51px;line-height: 51px;}
+    .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(1) a{height: 52px;}
+    .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(2) a{height: 53px;}
+    .banner_zone .main_teacher.renewal20.sobang .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(2) a{height: 90px;padding: 28px 0 0;}
+    .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(2) a{height: 72px;padding: 21px 0 0;}
+    .banner_zone .main_teacher.renewal20 .left_zone, .banner_zone .main_teacher.renewal20 .left_zone.minor{margin-bottom: 0;}
+    .banner_zone .main_teacher.renewal20 .left_zone, .banner_zone .main_teacher.renewal20 .left_zone.minor{width:100%}
+    .banner_zone .main_teacher.renewal20 .left_zone .slider a{padding: 35px 0 10px;height: 178px;}
+    .banner_zone .main_teacher.renewal20 .left_zone .tit{font-size: 20px;margin: 0 0 20px;}
+    .banner_zone .main_teacher.renewal20 .left_zone .tit.mt{margin: 20px 0 20px;}
+    .banner_zone .main_teacher.renewal20 .left_zone .tea_img{max-width: 140px;right: 10%;}
+    .banner_zone .main_teacher.renewal20 .right_zone .tit{margin: 0 0 10px;}
+    .banner_zone .main_teacher.renewal20 .right_zone .tea_img{max-width: 120px;right: 4%;} 
+    .banner_zone .main_teacher.renewal20 .right_zone .slider a{padding: 35px 10px 10px 0;height: 178px;}
+    .banner_zone .main_teacher.renewal20 .right_zone .newtea, .banner_zone .main_teacher.renewal20 .right_zone .newtea.evt{top: 10px;}
+    .banner_zone .main_teacher.renewal20 .left_zone .newtea{top: 10px;}
+    .banner_zone .main_teacher.renewal20 .right_zone{width:100%}
+    .banner_zone .main_teacher.renewal20 .slider .slick-list{height:178px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider .slick-list{height: 360px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider{height: 360px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider a{height: 359px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .tea_img{max-width: 65%;width: 65%;text-align: right;}
+    /* // 메인 선생님 홍보 배너 renewal20 */
+
+
+    
+    /* 공무원 메가패스 배너 1013 */
+    .banner_zone .spcial_pc_evt .inner .spcial_btn li a {min-width:100px;}
+
+    /* 20201207_new_pass */
+    .main_special_new.gong .pc_spc_wrap .timer_wrap {width:70px;height:70px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer {height:70px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .redtxt {font-size:15px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .bottomtxt {font-size:13px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .rolling{width: 70px;height: 70px;line-height: 65px;}
+    .main_special_new.gong .pc_spc_wrap .timer_wrap .timer .rolling .bottomtxt {font-size:22px;}
+
+    .main_special_new.gong .pc_spc_wrap .pc_spc_line .inner > img {width:46%;}
+    .main_special_new.gong .pc_spc_wrap .pc_spc_line .inner ul li {width: 48%;}
+    .main_special_new.gong .pc_spc_wrap .pc_spc_line .inner ul li a img {width:100%;} 
+
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .redtxt {font-size:13px;line-height:1.2;}
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .bottomtxt {font-size:13px;line-height:1.2;}
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .rolling .redtxt{/* margin-top:8% */}
+    .main_special_new.sobang .pc_spc_wrap .pc_spc_top .inner .timer_wrap .timer .rolling .bottomtxt{font-size:22px}
+
+    .main_special_new.gong .pc_spc_wrap.n1215 .timer_wrap {top:11%;width:80px;height:80px;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .timer_wrap .timer {height:80px;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_line .inner > img {width:57%;}
+
+    /*0209 파이널 배너 추가*/
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final {padding-bottom: 0.8%;}
+
+    /* 2021-02-16 파이널 메가패스*/
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap{width: 70px;height: 70px;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final.d0216 .timer_wrap .timer{height: 70px;}
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_line .inner > img{width:44%;}
+
+    .main_special_new.gong .pc_spc_wrap.n1215 .pc_spc_top_final{padding-bottom: 0.8%;}
+}   
+@media (max-width: 768px){
+    .banner_zone{background: #eaeaec;margin:0}
+    .banner_zone.visual{padding: 20px 0 0;margin: 0;}
+    .banner_zone .img_mb{display: block}
+    .banner_zone .img_pc{display: none}
+
+    .banner_zone .bnr_total .inner{margin: 0;}
+    .banner_zone .bnr_total h3{font-size:17px;padding: 30px 0 0;}
+    .banner_zone .bnr_total .inner.secnd{padding: 15px 0 0;}
+
+    /* 메인 상단 대배너 (패스) */
+    .banner_zone .main_special{margin:0 0 10px}
+    .banner_zone .main_special .inner{padding: 0;}
+    .banner_zone .main_special .left_zone .maintxt.d0624{position: relative;display: block;overflow: hidden;margin:0 auto 0 2%;}
+    .banner_zone .main_special .left_zone .maintxt{position: relative;display: block;overflow: hidden;margin: 0 -32% 0 0%;}
+    .banner_zone .main_special .left_zone .maintxt img{max-width: none;display: block;width: 100%;}
+    .banner_zone .main_special .right_zone{position: relative;top: inherit;right: inherit;width: 100%;background: #3d35c6;padding: 0 0 0 35%;}
+    .banner_zone .main_special.gong .right_zone{background: #151358;}
+    .banner_zone .main_special .direc_evt{position: relative;display: block;padding: 12px 0;margin: 0 2%;}
+    .banner_zone .main_special .direc_evt a{position:relative;display:block;padding: 6px 0 6px 0;}
+    .banner_zone .main_special .direc_evt::before{content:"";position:absolute;top:0;left:0;width: 100%;height: 1px;background: url(https://img.megagong.net/m/2020/0326_sobang_new/pass_linkline.png) repeat-x 0 0;}
+    .banner_zone .main_special .direc_evt::after{content:"";position:absolute;bottom:0;left:0;width: 100%;height: 1px;background: url(https://img.megagong.net/m/2020/0326_sobang_new/pass_linkline.png) repeat-x 0 0;}
+    .banner_zone .main_special.sobang .direc_evt::before,.banner_zone .main_special.sobang .direc_evt::after{background-image: url(https://img.megagong.net/m/2020/0623_sb_pass/pass_linkline.png);}
+    .banner_zone .main_special.gong .direc_evt::before,.banner_zone .main_special.gong .direc_evt::after{background-image: url(https://img.megagong.net/m/2020/0810_pass/pass_linkline_0814.png);}
+    .banner_zone .main_special .left_zone{padding: 0 0 5%;}
+    .banner_zone .main_special .left_zone .day_point{width: 18%;height: 47.079%;background-position: center 20%;margin-top: -9.5%;background-size: 48%;}
+    .banner_zone .main_special .left_zone .day_point{line-height: 1.2}
+    /* .banner_zone .main_special.gong .left_zone .day_point{border-color:#a5acad;}
+    .banner_zone .main_special.gong .left_zone .day_point::before,.banner_zone .main_special.gong .left_zone .day_point::after{background: #a5acad;} */
+    .banner_zone .main_special .right_zone .day_point > span{font-size: 16px;color: #fff884}
+    .banner_zone .main_special.gong .right_zone .day_point > span{color: #3ffb93}
+    .banner_zone .main_special .right_zone .day_point{display:block;font-size: 0;}
+    .banner_zone .main_special .right_zone .day_point span.redtxt{display: inline-block;padding: 0 5px 0 0}
+    .banner_zone .main_special .special_link .event{display: none}
+    .banner_zone .main_special .special_link{width: 19%;position: absolute;right: 2%;left: inherit;margin-top: -9.5%;}
+    .banner_zone .main_special .special_link a{padding: 0;height: 50%;}
+    .banner_zone .main_special .special_link a.link1{top:0}
+    .banner_zone .main_special .special_link a.link2{top: 50%;}
+    .banner_zone .main_special .special_link a.link3{display: none}
+    .banner_zone .main_special .left_zone .day_point span.redtxt{padding: 67% 0 0;}
+    .banner_zone .main_special.sobang .left_zone .day_point.n0624 {padding-bottom: 22%;}
+    .banner_zone .main_special .left_zone .day_point{margin-top: -7.5%;}
+
+    
+    /* 군무원 배너 추가 1019 */
+    .banner_zone .main_special.army .direc_evt a {padding:0;}
+    .banner_zone .main_special.army .direc_evt::before{content:"";position:absolute;top:0;left:0;width: 100%;height: 1px;background: url(https://img.megagong.net/m/2020/1019_pass/army/pass_linkline.png) repeat-x 0 0;}
+    .banner_zone .main_special.army .direc_evt::after{content:"";position:absolute;bottom:0;left:0;width: 100%;height: 1px;background: url(https://img.megagong.net/m/2020/1019_pass/army/pass_linkline.png) repeat-x 0 0;}
+    .banner_zone .main_special.army .left_zone .day_point {height:48%;margin-top: -6.5%;background-position: center 25%;}
+    .banner_zone .main_special.army .left_zone .day_point span.redtxt {padding:73% 0 0!important;font-size:16px;}
+    .banner_zone .main_special.army .day_point span.bottomtxt {font-size:16px;}
+    /* // 메인 상단 대배너 (패스) */
+
+    /* 메인 기획전 배너 */
+    .banner_zone .bnr_total .main_exhibitions .sld_tab{display: none}
+    .banner_zone .bnr_total .main_exhibitions{width: 100%}
+    .banner_zone .bnr_total .main_exhibitions .slider .slick-list{padding:0 30% 0 0;}
+    .banner_zone .bnr_total .main_exhibitions .slider .slick-list a{display: block;border-radius: 1rem;overflow: hidden;margin: 0 3% 0 0;}
+    .banner_zone .bnr_total .main_events.evnt1,.banner_zone .bnr_total .main_events.evnt2{display: none}
+    .banner_zone.visual .bnr_total .main_events.evnt1{display:block;width: 100%;margin: 0 0 10px;}
+    .banner_zone .bnr_total .main_events.evnt1 .for_pc{display:none}
+    .banner_zone .bnr_total .main_events.evnt1 .for_mo{display:block}
+        .banner_zone .bnr_total .main_events .slick-dots{
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    right: 10px;
+    left: inherit;
+    bottom: 8px;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+}
+    .banner_zone .bnr_total .main_events .slick-dots li button{
+    background: #555;
+}
+    .banner_zone .bnr_total .main_eventsTxt{display: block;}
+    .banner_zone .bnr_total .main_exhibitions .slider_counting{display:none}
+    /* // 메인 기획전 배너 */
+
+    /* 메인 선생님 홍보 배너 */
+    .banner_zone .bnr_total .main_teacher .inner{padding:0}
+    .banner_zone .bnr_total .main_teacher h3{position: relative;display:block;background: #cd5358 url(https://img.megagong.net/m/2020/0326_sobang_new/main_teacher_mbbg2.png) no-repeat 0 0;background-size: 100%;margin: 0;padding: 10% 0 12% 4.5%;}
+    .banner_zone .bnr_total .main_teacher.gong h3{background: #3354e2 url(https://img.megagong.net/m/2020/0326_gong_new/main_teacher_mbbg2.png) no-repeat 0 0;}
+    .banner_zone .bnr_total .main_teacher h3::before{content:"";position:absolute;bottom: 17px;right: 11.5%;width: 28%;height: 85%;background: url(https://img.megagong.net/m/2020/0326_sobang_new/main_teacher_mbbg_illu.png) no-repeat 100% 0;background-size: 100% 100%;}
+    .banner_zone .bnr_total .main_teacher.gong h3::before{background-image: url(https://img.megagong.net/m/2020/0326_gong_new/main_teacher_mbbg_illu.png);}
+    .banner_zone .main_teacher .left_zone{width: 100%;}
+    .banner_zone .main_teacher .left_zone .newtea{left: 9px;top: 12px;}
+    .banner_zone .main_teacher .left_zone .slider{margin: 0;height: auto;}
+    .banner_zone .main_teacher .left_zone .slider .slick-slide{background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 100%) !important;}
+    .banner_zone .main_teacher .left_zone .slider .slick-slide > a{padding: 38px 2.5% 30px;}
+    .banner_zone .main_teacher .left_zone .tit{font-size: 17px;line-height: 1.4;margin: 0 0 20px;}
+    .banner_zone .main_teacher .left_zone  span{letter-spacing: -0.05em}
+    .banner_zone .main_teacher .left_zone .tea_img{right: 8%;max-width: 45%;}
+    .banner_zone .main_teacher .left_zone .sld_tab{position: relative;bottom: inherit;left: inherit;width: 96%;border-radius: 15px;overflow: hidden;margin: -17px auto 0;}
+    .banner_zone .main_teacher .left_zone .sld_tab{background:#fff;padding: 2px;}
+    .banner_zone .main_teacher .left_zone .sld_tab .slick-slide{border-radius:15px;overflow:hidden}
+    .banner_zone .main_teacher .left_zone .sld_tab .slick-slide a{color: #636363;}
+    .banner_zone .main_teacher .left_zone .sld_tab .slick-slide{background-color: rgb(255, 255, 255);}
+    .banner_zone .main_teacher .left_zone.con4 .sld_tab .slick-slide:nth-child(1){width: 31% !important;}
+    .banner_zone .main_teacher .left_zone.con4 .sld_tab .slick-slide:nth-child(2),.banner_zone .main_teacher .left_zone.con4 .sld_tab .slick-slide:nth-child(3),.banner_zone .main_teacher .left_zone.con4 .sld_tab .slick-slide:nth-child(4){width: 23% !important;}
+    .banner_zone .main_teacher .left_zone .sld_tab .slick-slide.slick-current.slick-active{background:#cd5358;}
+    .banner_zone .main_teacher .right_zone{width: 100%;}
+    .banner_zone .main_teacher .right_zone .slider{border: 0;height: auto;padding: 0 2%;}
+    .banner_zone .main_teacher .right_zone .sld_tab{position: relative;bottom: inherit;left: inherit;padding: 0 2%;}
+    .banner_zone .main_teacher .right_zone .sld_tab .slick-slide{width:auto !important;margin:0 10px 15px 0;border-radius: 8px;border: 1px solid #efefef;-webkit-box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);-moz-box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);}
+    .banner_zone .main_teacher .sld_tab .slick-slide{background: #fff}
+    .banner_zone .main_teacher .sld_tab .slick-slide a{padding: 0 6px}
+    .banner_zone .main_teacher .left_zone .sld_tab .slick-slide a{padding: 0 0}
+    .banner_zone .main_teacher .sld_tab .slick-slide{background-color: rgba(255, 255, 255);}
+    .banner_zone .main_teacher .sld_tab .slick-slide a{color: #636363;}
+    .banner_zone .main_teacher .sld_tab .slick-slide.slick-current.slick-active{background:#cd5358;border:0}
+    .banner_zone .main_teacher.gong .sld_tab .slick-slide.slick-current.slick-active{background:#375cea;}
+    .banner_zone .main_teacher .right_zone{width: 100%;margin-left: 0}
+    .banner_zone .main_teacher .right_zone .slider .slick-slide > a{padding: 85px 0 15px;}
+    .banner_zone .main_teacher .right_zone .slider .slick-slide > a.txt_bnr{padding: 29px 10px 26px;}
+    .banner_zone .main_teacher .right_zone .slider .slick-slide > a::before{background-image: url(https://img.megagong.net/m/2020/0326_sobang_new/teacher_line_dot.png);background-repeat: repeat-y;height: 100%;top: 0;right: 0;background-color: #fff;background-size: auto;background-position: center;width: 10px;}
+    .banner_zone .main_teacher .recomm_zone{display: block;}
+    .banner_zone .main_teacher .right_zone .newtea.evt{left: 0;top: 23px;}
+    .banner_zone .main_teacher .right_zone .newtea.evt.solo{top:0}
+    .banner_zone .main_teacher .right_zone .tea_img{top: 0;}
+    .banner_zone .main_teacher .right_zone .tea_img::before{background-size: 100% 35px;height: 35px;margin: 0 0 -3px;}
+    .banner_zone .main_teacher .right_zone .tea_img img{width: 79px;max-width: 100%;}
+    /* // 메인 선생님 홍보 배너 */
+        
+    /* 메인 선생님 홍보 배너 renewal20 */
+    .banner_zone .main_teacher.renewal20{padding: 0;}
+    .banner_zone .main_teacher.renewal20 .teacher_zone{margin: 0 0 13%;}
+    .banner_zone .main_teacher.renewal20.sobang .teacher_zone{margin: 0 0 35px;}
+    .banner_zone .main_teacher.renewal20 .for_moView .teacher_zone.type2{margin:0}
+    .banner_zone .main_teacher.renewal20 .for_pcView{display: none;}
+    .banner_zone .main_teacher.renewal20 .for_moView{display: block;}
+    .banner_zone .bnr_total .teacher_title{position: relative;display:block;background: #cd5358 url(https://img.megagong.net/m/2020/0326_sobang_new/main_teacher_mbbg2.png) no-repeat 0 0;background-size: 100%;margin: 0;padding: 10% 0 12% 4.5%;}
+    .banner_zone .bnr_total .teacher_title{background: #3354e2 url(https://img.megagong.net/m/2020/0326_gong_new/main_teacher_mbbg2.png) no-repeat 0 0;padding: 7% 4.5% 10% 4.5%;height: auto;}
+    .banner_zone .bnr_total .teacher_title.sobang {background: #cd5358 url(https://img.megagong.net/m/2020/0326_sobang_new/main_teacher_mbbg2.png) no-repeat 0 0;}
+    .banner_zone .bnr_total .teacher_title::before{content:"";position:absolute;bottom: 17px;right: 11.5%;width: 28%;height: 85%;background: url(https://img.megagong.net/m/2020/0326_sobang_new/main_teacher_mbbg_illu.png) no-repeat 100% 0;background-size: 100% 100%;top: inherit;left: inherit;margin: 0;}
+    .banner_zone .bnr_total .teacher_title.gong {background: #3354e2 url(https://img.megagong.net/m/2020/0326_gong_new/main_teacher_mbbg2.png) no-repeat 0 0;padding: 7% 4.5% 10% 4.5%;height: auto;}
+    .banner_zone .bnr_total .teacher_title.gong::before{transform:none;background-image: url(https://img.megagong.net/m/2020/0326_gong_new/main_teacher_mbbg_illu.png);}
+    
+    
+
+    
+    .banner_zone .bnr_total .teacher_title strong{display:block;}
+    .banner_zone .bnr_total .teacher_title::after{display:none}
+    .banner_zone .bnr_total .teacher_title span{background: none;padding: 0;border: 0;width: 100%;}
+    .banner_zone .bnr_total .teacher_title strong{width: 100%;height: auto;padding: 0 23% 0 0;margin: 0 0 9px;background: none;box-sizing: border-box;}
+    .banner_zone .bnr_total .teacher_title strong img{display: block;}
+    .banner_zone .bnr_total .teacher_title em{display: block;text-align: left;background: none;font-size: 15px;color: #fffecb;font-style: normal;margin: 0;line-height: 1.4;width: 100%;height: auto;}
+
+    .banner_zone .main_teacher.renewal20 .subject_tab{position: relative;bottom: inherit;left: inherit;width: 96%;border-radius: 15px;overflow: hidden;margin: -17px auto 0;background: #fff;padding: 2px;}
+    .banner_zone .main_teacher.renewal20 .subject_tab li, .banner_zone .main_teacher.renewal20.sobang .subject_tab li{width:20%;float: left;border-radius: 15px;overflow: hidden;}
+    .banner_zone .main_teacher.renewal20.sobang .subject_tab li{width: 23%;}
+    .banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(1){width: 31%;}
+    .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li{width: 17%;}
+    .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(1){width: 31%;}
+    .banner_zone .main_teacher.renewal20 .subject_tab li a, .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(2) a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20.sobang .subject_tab li:nth-child(2) a{display: block;height: 30px;line-height: 30px;padding: 0 0;position: relative;font-size: 13px;font-weight: normal;text-align: center;color: #fff;opacity: 1;color: #636363;background: transparent;}
+    .banner_zone .main_teacher.renewal20 .subject_tab li a, .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20 .subject_tab li:nth-child(2) a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(1) a, .banner_zone .main_teacher.renewal20.sobang.n_0120 .subject_tab li:nth-child(2) a{display: block;height: 30px;line-height: 30px;padding: 0 0;position: relative;font-size: 13px;font-weight: normal;text-align: center;color: #fff;opacity: 1;color: #636363;background: transparent;}
+    .banner_zone .main_teacher.renewal20 .subject_tab li.on{background: #375cea;}
+    .banner_zone .main_teacher.renewal20.sobang .subject_tab li.on{background: #cd5358;}
+    .banner_zone .main_teacher.renewal20.sobang .subject_tab li a br{display:none}
+    .banner_zone .main_teacher.renewal20 .subject_tab li.on a,.banner_zone .main_teacher.renewal20.sobang .subject_tab li.on a{background: transparent;}
+    .banner_zone .main_teacher.renewal20 .slider .slick-list{height:167px}
+    .banner_zone .main_teacher.renewal20 .slider{background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 100%) !important;border: 0;}
+    .banner_zone .main_teacher.renewal20 .slider a{padding: 38px 2.5% 30px;}
+    .banner_zone .main_teacher.renewal20 .left_zone.major .slider a{height:167px;padding: 35px 0 10px;margin: 0 0% 0 5%;}
+    .banner_zone .main_teacher.renewal20 .left_zone .txt_bnr .tea_img{right: inherit;right: 4%;width: 90px;bottom: 6%;}
+    .banner_zone .main_teacher.renewal20 .left_zone.major .txt_bnr .tit::before{bottom: -30px;}
+    .banner_zone .main_teacher.renewal20 .left_zone .tea_name .tiny2{margin: 0;padding: 7px 0 0;}
+    .banner_zone .main_teacher.renewal20 .left_zone .tea_img{right: 1%;max-width: 130px;}
+    .banner_zone .main_teacher.renewal20 .left_zone .sub_tit{font-size: 13px;}
+    .banner_zone .main_teacher.renewal20 .left_zone .tit{font-size: 17px;margin: 0 0 15px 0;color:#5a5a5a;}
+    
+    .banner_zone .main_teacher.renewal20 .left_zone.major .slick-dots{display:inline-block;font-size:inherit;position: absolute;bottom: -23px;left: 0;text-align: center;width: 100%;}
+    .banner_zone .main_teacher.renewal20 .left_zone.major .slick-dots li{display:inline-block;margin:1px 2px 0 !important;vertical-align:top;}
+    .banner_zone .main_teacher.renewal20 .left_zone.major .slick-dots li button{width:12px;height:12px;border-radius:100%;background: #fff;text-indent:-9999px;vertical-align:middle;display:inline;margin:0;border: 1px solid #a0a0a0;}
+    .banner_zone .main_teacher.renewal20 .left_zone.major .slick-dots li.slick-active button{background: #a0a0a0;}
+    .banner_zone .main_teacher.renewal20 .subject_tab.type2{margin: 0 0 15px 0;padding: 0;}
+	.banner_zone .main_teacher.renewal20 .subject_tab.type2::after{content:"";clear:both;display:block}
+	.banner_zone .main_teacher.renewal20 .subject_tab.type2 li{width:auto !important;border-radius: 8px;border: 1px solid #efefef;-webkit-box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);-moz-box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);box-shadow: 3px 3px 5px 0px rgba(209,209,209,0.2);margin: 0 10px 15px 0;display: block;height: 30px;line-height: 30px;position: relative;font-size: 13px;font-weight: normal;text-align: center;color: #636363;opacity: 1;float: left;padding: 0 10px;}
+    .banner_zone .main_teacher.renewal20 .subject_tab.type2 li a, .banner_zone .main_teacher.renewal20 .subject_tab.type2 li:nth-child(1) a, .banner_zone .main_teacher.renewal20 .subject_tab.type2 li:nth-child(2) a{padding: 0 6px;height: 30px;line-height: 30px;}
+    .banner_zone .main_teacher.renewal20 .subject_tab.type2{background-color: rgba(255, 255, 255);margin: 0 0 15px;padding: 0 2%;}
+    .banner_zone .main_teacher.renewal20 .subject_tab.type2 li.on a{background: #375cea;color:#fff;border: 0;}
+    .banner_zone .main_teacher.renewal20 .left_zone.major .tit, .banner_zone .main_teacher.renewal20.sobang .left_zone.major .tit{color:#5a5a5a}
+    .banner_zone .main_teacher.renewal20.sobang .left_zone.major .tc_item.number1 .tit{color:#738112;}
+    .banner_zone .main_teacher.renewal20 .left_zone.major .tc_item.number1 .tit{color:#9104d6}
+    .banner_zone .main_teacher.renewal20 .right_zone .tit{font-size: 15px;height: 56px;margin: 0 0 15px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider a{background: linear-gradient(0deg, rgba(245,242,251,1) 0%, rgba(255,255,255,1) 100%) !important;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer.type2 .slider a{background: linear-gradient(0deg, rgba(242,251,249,1) 0%, rgba(255,255,255,1) 100%) !important;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider{padding:0;height: auto;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider .slick-list{height: 177px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slider a{height: 177px;margin:0;border: 0 !important;padding: 25px 0 10px 0;margin: 0 0 0 10%;}
+    .banner_zone .main_teacher.renewal20 .right_zone .slider > .slick-arrow{margin: -18px 0 0;}
+    .banner_zone .main_teacher .right_zone .slider > .slick-prev{left: -3px;}
+    .banner_zone .main_teacher .right_zone .slider > .slick-next{right: -3px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .slick-slide.slick-current.slick-active a:before{content:"";display:block;position:absolute;bottom: 0;right: 0;width: 1px;height: 100%;border-radius: 100% 100%;background: linear-gradient(0deg, rgb(216, 216, 216) 0%, rgba(255,255,255,1) 100%) !important;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .tea_img{max-width: 120px;}
+    .banner_zone .main_teacher.renewal20 .right_zone .tea_img img{width:100%}
+    .banner_zone .main_teacher.renewal20 .right_zone .newtea, .banner_zone .main_teacher.renewal20 .right_zone .newtea.evt{top:0}
+    .banner_zone .main_teacher.renewal20 .right_zone .newtea{left: 0;}
+    .banner_zone .main_teacher.renewal20 .right_zone .newtea.evt{left: 10%;}
+    .banner_zone .main_teacher.renewal20 .left_zone .newtea.justsb{display: inline-block;border: 1px solid #ff4800;color: #fff;padding: 0 0;width: 58px;height: 16px;line-height: 16px;text-align: center;-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;margin: 0 0 10px;top: 10px;right: inherit;background: #ff4800;}
+    .banner_zone .main_teacher.renewal20 .left_zone .newtea.justsb br{display:none}
+    .banner_zone .main_teacher.renewal20 .left_zone .newtea.justsb_bk{left:65px}
+    .banner_zone .main_teacher.renewal20 .right_zone .tea_name{color:#555}
+    .banner_zone .main_teacher.renewal20 .right_zone .tea_name strong{display:block;border: 0;margin: 0;padding: 3px 0 0;}
+    .banner_zone .main_teacher.renewal20 .right_zone .sub_tit{font-size:12px;letter-spacing: -0.12em;}
+    .banner_zone .bnr_total .teacher_title.gong::before{right: 7%;width: 26%;height: 80%;}
+
+    /*추가*/
+    .banner_zone .main_teacher.renewal20 .right_zone .tit.ver2 { height:35px; margin-bottom:10px; }
+    .banner_zone .main_teacher.renewal20 .right_zone .tea_tipS.ver2 { font-size:.8px; letter-spacing:-.9px; }
+
+    /* // 메인 선생님 홍보 배너 renewal20 */
+
+    /* 학원 클래스 안내 */
+    .main_academy .inner{}
+    .main_academy h3{padding: 15px 0 35px;font-size: 15px;}
+    .main_academy ul{padding: 0 1% 0 0%;}
+    .main_academy ul li{margin: 0 0 0 1%;width: 32.3%;}
+    .main_academy ul li::before{top: -18px;left: 50%;margin: 0 0 0 -32px;/* background-size: 57px; */}
+    .main_academy ul li a{font-size: 13px;/* background-size: 18px; */line-height: 1.2;}
+    .main_academy ul li a br{display:block}
+    .main_academy ul li strong{font-size: 13px;}
+    /* // 학원 클래스 안내 */
+
+    .banner_zone .main_special .day_point span.redtxt {padding:60% 0 0!important;}
+
+    /* 공무원 메가패스 배너 1013 */
+    .banner_zone .spcial_pc_evt {display:none;}
+    .banner_zone .main_special.gong {margin-bottom:0;}
+    .banner_zone .main_special.gong .inner {padding:0;}
+    .banner_zone .main_special.gong .left_zone {padding-bottom:0;}
+    .banner_zone .main_special.gong .left_zone .day_point {margin-top:-9.5%;background-position:center 25%;padding-bottom: 5%;font-size:16px;color:#0efafd;width: 20%;height:auto;left:2%;-webkit-transform: translate(0,-50%);-moz-transform: translate(0,-50%);transform: translate(0,-50%);background-size: 48%;background-color:transparent;}
+    .banner_zone .main_special.gong .left_zone .day_point{background-image: url(https://img.megagong.net/m/2020/1013_7rank_pass/pass_clock_1013_2.png)}
+    .banner_zone .main_special.gong .day_point span.redtxt {font-size:18px;padding: 73% 0 0!important;}
+    @keyframes changeC_pass {0% { color:#0efafd } 50% { color:#0efafd } 51% { color:#fff } 100% { color:#fff }}
+    .banner_zone .main_special.gong .left_zone .day_point > .bottomtxt {display:inline-block;margin-top:3%;}
+    .banner_zone .m_spcial_tabs {display:block;position:relative;}
+    .banner_zone .m_spcial_tabs ul {position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;overflow:hidden;}
+    .banner_zone .m_spcial_tabs ul li {float:left;width:50%;height:100%;}
+    .banner_zone .m_spcial_tabs ul li a {display:block;height:100%;text-indent: -9999px;}
+
+    /* 공무원 메가패스 배너 1013 - mobile */
+    .banner_zone .main_special .left_zone .maintxt.d0814.special_main_pc {display:none;}
+    .main_special.gong .inner .left_zone .special_tab_m {display:block;padding-bottom:12%;}
+    .banner_zone .main_special.gong .direc_evt::before, .banner_zone .main_special.gong .direc_evt::after {
+        background-image: url(https://img.megagong.net/m/2020/1013_7rank_pass/line_bg.png);
+    }
+    .banner_zone .main_special.gong .direc_evt a {padding:0;}
+    .special_tab_m_wrap .slick-dots {overflow:hidden;position:absolute;bottom:0;left:0;width:100%;height: 11%;z-index:3;}
+    .special_tab_m_wrap .slick-dots li {float:left;width:50%;height: 100%;}
+    .special_tab_m_wrap .slick-dots li:nth-child(1) {background: url(https://img.megagong.net/m/2020/1013_7rank_pass/pass_m_btns1_off.jpg) no-repeat center;background-size:100% auto ;}
+    .special_tab_m_wrap .slick-dots li:nth-child(2) {background: url(https://img.megagong.net/m/2020/1013_7rank_pass/pass_m_btns2_off.jpg) no-repeat center;background-size:100% auto ;}
+    .special_tab_m_wrap .slick-dots li.slick-active:nth-child(1) {background: url(https://img.megagong.net/m/2020/1013_7rank_pass/pass_m_btns1_on.jpg) no-repeat center;background-size:100% auto;}
+    .special_tab_m_wrap .slick-dots li.slick-active:nth-child(2) {background: url(https://img.megagong.net/m/2020/1013_7rank_pass/pass_m_btns2_on.jpg) no-repeat center;background-size:100% auto;}
+    .special_tab_m_wrap .slick-dots li button {display:block;width:100%;height:100%;font-size:0;cursor: pointer;}
+
+    /* 공무원 선생님 타이틀 */
+    .banner_zone .bnr_total .teacher_title.gong {display:block;}
+    .banner_zone .bnr_total .teacher_title.gong::before {content: "";position: absolute;bottom: 17px;right: 11.5%;width: 28%;height: 85%;background: url(https://img.megagong.net/m/2020/0326_sobang_new/main_teacher_mbbg_illu.png) no-repeat 100% 0;background-size: 100% 100%;top: inherit;left: inherit;margin: 0;}
+    .banner_zone .bnr_total .teacher_title.gong span {margin:0;width:100%;}
+    .banner_zone .bnr_total .teacher_title.gong strong {background:none;width: 100%;height:auto;padding: 0 58% 0 0;}
+    .banner_zone .bnr_total .teacher_title.gong em{display:block;}
+
+    /* 20201207_new_pass */
+    .main_special_new .pc_spc_wrap {display:none;}
+    .main_special_new .m_spc_wrap {display:block;}
+
+    
+
+}
+
+@media all and (max-width:640px){
+    /* 메인 상단 대배너 (패스) */
+    .banner_zone .main_special .left_zone{padding: 0 0 5%;}
+    .banner_zone .main_special .special_link{margin-top: -7.5%;}
+    .banner_zone .main_special .left_zone .day_point > span,.banner_zone .main_special .right_zone .day_point > span{font-size:13px;}
+    .banner_zone .main_special .left_zone .day_point{margin-top: -7.5%;background-position: center 22%;background-size: 40%;padding: 0 0px 1%;vertical-align: bottom;}
+    .banner_zone .main_special .direc_evt{padding: 5px 0;}
+    .banner_zone .main_special .right_zone .day_point{height: 67%;}
+    .banner_zone .main_special .right_zone .day_point::before{width: 5px;height: 5px;right: -4px;margin-top: -3px;}
+    .banner_zone .main_special .right_zone .day_point span.redtxt{padding: 0 5px 0 0}
+    .banner_zone .main_special .right_zone .day_point > span{font-size:13px}
+    .banner_zone .main_special .left_zone .day_point{line-height: 1.1}
+    /* .banner_zone .main_special .left_zone .day_point span.redtxt{padding: 57% 0 0;} */
+    .banner_zone .main_special .left_zone .day_point span.redtxt{padding: 55% 0 0!important;}
+
+    
+    
+    /* 군무원 배너 추가 1019 */
+    .banner_zone .main_special.army .left_zone .day_point {height:50%;margin-top: -5.5%;}
+    .banner_zone .main_special.army .left_zone .day_point span.redtxt {padding:70% 0 0!important;font-size:13px;}
+    .banner_zone .main_special.army .day_point span.bottomtxt {font-size:13px;}
+    /* // 메인 상단 대배너 (패스) */
+
+    /* 메인 기획전 배너 */
+    .banner_zone .bnr_total .main_exhibitions .slider .slick-list{padding:0 18% 0 0;}
+    /* // 메인 기획전 배너 */
+
+    /* 메인 선생님 홍보 배너 */
+    .banner_zone .main_teacher .left_zone .tea_img{right:0}
+    .banner_zone .main_teacher .left_zone .sub_tit{font-size: 13px}
+    .banner_zone .main_teacher .right_zone .sld_tab .slick-slide{margin-right: 5px}
+    .banner_zone .bnr_total .main_teacher h3{padding: 9% 0 12% 4.5%;}
+    .banner_zone .bnr_total .main_teacher h3::before{width: 27%;height: 81%;}
+    /* // 메인 선생님 홍보 배너 */
+
+    
+    .banner_zone .main_teacher .left_zone .tea_name .tiny2{display: block;margin-top: 5px;font-size: 10px;}
+    .banner_zone .main_teacher .left_zone .tea_name .tiny2 .br640{display: block}
+
+    /* 메인 선생님 홍보 배너 renewal20 */
+    .banner_zone .main_teacher.renewal20 .left_zone .tea_img{max-width: 120px;}
+    .banner_zone .main_teacher.renewal20 .right_zone.comm_techer .tea_img{max-width: 100px;}
+    .banner_zone .main_teacher.renewal20 .subject_tab.type2{margin:0}
+    .banner_zone .bnr_total .teacher_title strong{padding: 0 10% 0 0;}
+    .banner_zone .bnr_total .teacher_title em{font-size: 14px;}
+    /* // 메인 선생님 홍보 배너 renewal20 */
+
+    
+    /* 공무원 메가패스 배너 1013 */
+    .banner_zone .main_special.gong .left_zone .day_point {font-size:13px;padding-bottom:10%;}
+    .banner_zone .main_special.gong .day_point span.redtxt {font-size:13px;line-height:1.2;}
+
+    
+    /* 공무원 메가패스 배너 1013 - mobile */
+	.banner_zone .main_special.gong .direc_evt {padding:12px 0;}
+    .banner_zone .main_special.gong .day_point span.redtxt {font-size:14px;padding:65% 0 0!important;}
+    .banner_zone .main_special.gong .left_zone .day_point {font-size:14px;padding-bottom:5%;}
+
+    /* 20201207_new_pass */
+    .main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap .timer .redtxt {font-size:14px;}
+    .main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap .timer .bottomtxt {font-size:14px;}
+    .main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong_final .timer_wrap .redtxt {font-size:14px;}
+    .main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong_final .timer_wrap .timer .bottomtxt{font-size:14px;}
+
+
+}
+@media all and (max-width:480px){
+    .banner_zone .main_special .left_zone .day_point span.redtxt{padding: 53% 0 0!important;}
+    .banner_zone .main_special .left_zone .day_point > span {line-height: .8;}
+
+    /* 공무원 메가패스 배너 1013 - mobile */
+	.banner_zone .main_special.gong .direc_evt {padding:6px 0;}
+    .banner_zone .main_special.gong .day_point span.redtxt {font-size:13px;padding:65% 0 0!important;}
+    .banner_zone .main_special.gong .left_zone .day_point {font-size:13px;padding-bottom:5%;}
+
+    /* 20201207_new_pass */
+    .main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap .timer .redtxt {font-size:10px;}
+    .main_special_new .m_spc_wrap .m_spc_sd li .timer_wrap .timer .bottomtxt {font-size:10px;}
+    .main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong_final .timer_wrap .redtxt {font-size:10px;}
+    .main_special_new .m_spc_wrap.n0209 .m_spc_sd li.m_gong_final .timer_wrap .timer .bottomtxt{font-size:10px;}
+
+
+
+    
+    /*추가*/
+    .banner_zone .main_teacher.renewal20 .right_zone .tea_tipS.ver2 br { display:none; }
+    
+
+
+
+
+}
+@media all and (max-width:440px){
+    .banner_zone .main_teacher.renewal20 .right_zone .tit{font-size: 14px;}
+    .banner_zone .main_teacher .right_zone .tit br,.banner_zone .main_teacher .right_zone .txt_bnr .sub_tit br{display: block}
+    .banner_zone .main_special .right_zone .day_point span.redtxt{display: block;padding:0 0 3px}
+    .banner_zone .main_special .right_zone .day_point > span,.banner_zone .main_special .left_zone .day_point > span, .banner_zone .main_special .right_zone .day_point > span{font-size: 12px}
+
+    
+    .banner_zone .main_special .left_zone .day_point > span{padding: 51% 0 0!important;font-size:11px;line-height:.6;}
+    .banner_zone .main_special.gong .left_zone .day_point > .bottomtxt {display:inline;}
+}

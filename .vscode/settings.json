@@ -1,0 +1,20 @@
+{
+  "files.autoGuessEncoding": true,
+  "files.encoding": "euckr",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.scrollToSwitchTabs": true,
+
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true,
+
+}

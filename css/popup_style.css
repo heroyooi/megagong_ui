@@ -1,0 +1,61 @@
+/* 메인 우측 하단 팝업 */
+
+.main_exhibi a{display:block;}
+.main_exhibi{position: relative;top: 0;left: 0%; width: auto; z-index: 2;}
+.main_exhibi.main_exhibi_pass{width: 241px;z-index: 3;}
+.main_exhibi .close{z-index: 1;position: absolute;right: 0;top: 0;width: 55px;height: 39px;display: block; }
+.main_exhibi.main_exhibi_pass .close{width: 17px;height: 17px;padding: 3px;bottom: 190px;right: 5px;}
+.main_exhibi.main_exhibi_pass .slick-arrow {display:none!important;}
+.main_exhibi.main_exhibi_pass .item {position: relative;text-align: center;}
+.main_exhibi.main_exhibi_pass .item img {display:inline-block;}
+.main_exhibi.main_exhibi_pass .bnr_link {position: absolute; width: 100%; height: 180px; left: 0; bottom: 0;}
+.main_exhibi.main_exhibi_pass .slick-dots {position:absolute;bottom:-15px;left:0;right:0;font-size:0;text-align: center;}
+.main_exhibi.main_exhibi_pass .slick-dots li {display:inline-block;margin:0 2px;}
+.main_exhibi.main_exhibi_pass .slick-dots button {width:8px;height: 8px;border-radius: 50%;background:#000;opacity:.6;font-size:0;}
+.main_exhibi.main_exhibi_pass .slick-dots .slick-active button {opacity: 1;}
+@media (max-width: 1200px){
+    .main_exhibi{display: none;}
+}
+
+
+/* 오늘 하루 보지 않기 */
+
+.mok_hd_pop {position:relative;z-index:5;width:240px;}
+.mok_hd_pop.main {margin-left:350px;}
+.mok_hd_pop .btn_close {position:absolute;top:-19px;right:0;width:22px;height:20px;line-height:18px;padding:0 5px;font-size:0;background:#fff url(https://img.megagong.net/m/2022/0503_interviewMock/icon_x_03.png) no-repeat center;border:1px solid #cfcfcf;box-sizing:border-box;}
+.mok_hd_pop .btn_close img {vertical-align: middle;display:inline-block;}
+.mok_hd_pop .btn_day_close {position:absolute;top:-19px;right:24px;height:20px;line-height:18px;padding:0 8px;font-weight:bold;font-size:11px;color:#a7a7a7;background:#fff;border:1px solid #cfcfcf;box-sizing:border-box;}
+
+@media (max-width: 1200px) {
+.mok_hd_pop {display:none;}
+    }
+
+
+/* 오늘 하루 닫기 */
+
+.cmg_popup_wrap .img_area .btn_link.view{left:149px;top:238px;width:138px;height:26px;}
+.cmg_popup_wrap .img_area .btn_link.go{left:128px;top:454px;width:180px;height:26px;}
+@media screen and (max-width: 768px) {
+  .cmg_popup_wrap .img_area .btn_link.view{left:35%;top:43%;width:30.5%;height:4.5%;}
+  .cmg_popup_wrap .img_area .btn_link.go{left:30%;top:81.4%;width:40%;height:4.5%;}
+}
+
+/* 유투브 팝업 */
+
+.briefing_layer { position: fixed; display:block; top: 0; left: 0; width: 100%; height: 100%; z-index: 102; }
+.briefing_layer .dimBg{position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: #000;opacity: 0.9;cursor: pointer;}
+.briefing_layer .briefing_pop_layer {display: block;width: 1280px;height: 700px;position: absolute;top: 50%;left: 50%;z-index: 10;transform: translate(-50%, -50%);}
+.brfpop_container,.brflayer_content {position: relative;height: 100%;}
+.brfpop_container:after {display: block;clear: both;content: '';}
+.briefing_layer .btnClose{position: absolute;top: -30px;right: 30px;border: 1px solid #fff;padding: 3px;color:#fff;}
+.briefing_layer .btnClose2{position: absolute;top: -30px;right: 0;border: 1px solid #fff;padding: 3px 8px;color:#fff;}
+
+@media (max-width: 1280px) {
+.brflayer_content img{width: 100%;}
+.briefing_layer .briefing_pop_layer{width: 80%;height: 50vw;}
+
+}
+@media (max-width: 768px) {
+.brflayer_content img.pc{display: none;}
+.briefing_layer .briefing_pop_layer{width: 95%;}
+}

@@ -1,0 +1,60 @@
+@charset "euc-kr";
+
+/*
+
+1 layer background color : #181818
+2 layer background color : #202020
+3 layer background color : #252525
+
+1 highlight text color : #e9e9e9
+2 highlight text color : #bbbbbb
+3 normal text color : #8c8c8c
+
+common border color : #404040
+
+*/
+
+
+/* ---------------------- background ---------------------- */
+body.darkmode{background: #181818;}
+body.darkmode #headertop, 
+body.darkmode #headertop .hd_top, 
+body.darkmode #headertop .hd_top .homep_link ul,
+body.darkmode .side_quickMenu,
+body.darkmode .side_quickMenu .quick_close{background:#202020}
+/* // ---------------------- background ---------------------- */
+
+
+
+/* ---------------------- border-color ---------------------- */
+body.darkmode #headertop .hd_top,
+body.darkmode #headertop .hd_utility,
+body.darkmode #headertop .hd_top .homep_link div .road1, 
+body.darkmode #headertop .hd_top .homep_link ul,
+body.darkmode .side_quickMenu .quick_close a{border-color: #404040;border-right-color: #404040;border-left-color: #404040;border-top-color: #404040;border-bottom-color: #404040;}
+body.darkmode #headertop .hd_top .login_wrap .login_after li::before,
+body.darkmode .hd_top .dday_wrap::before{background-color: #404040;}
+body.darkmode #headertop .hd_utility nav, 
+body.darkmode #headertop .hd_utility .mnu_list > li a{border: 0;}
+body.darkmode .side_quickMenu,
+body.darkmode .side_quickMenu dl{border-color: #404040;}
+/* // ---------------------- border-color ---------------------- */
+
+
+
+
+/* ---------------------- color ---------------------- */
+body.darkmode{color:#8c8c8c}
+body.darkmode #headertop,
+body.darkmode .side_quickMenu dl dd a,
+body.darkmode .side_quickMenu .counting{color:#8c8c8c}
+body.darkmode #headertop .hd_utility nav, 
+body.darkmode #headertop .hd_utility .mnu_list > li a, 
+body.darkmode .side_quickMenu h1{color:#e9e9e9;}
+
+
+/* // ---------------------- color ---------------------- */
+
+
+
+

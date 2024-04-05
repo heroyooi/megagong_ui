@@ -1,0 +1,134 @@
+@charset "euc-kr";
+
+.acad{}
+/*학원시설안내*/
+.acad01{}
+.acad01 .acadTop{}
+.acad01 .acadTop .acadTab{position:relative;}
+.acad01 .acadTop .acadTab ul{position:absolute;top:0;left:0;height:90px;}
+.acad01 .acadTop .acadTab ul li{float:left;width:87px;height:90px;margin-right:1px}
+.acad01 .acadTop .acadTab ul li a{display:block;width:87px;height:90px;}
+.acad01 .acadBottom{background:#fff;border:1px solid #cecfd3;}
+
+/*학원위치 및 연락처*/
+.acad02{}
+.acad02 .tit{margin-bottom:20px}
+.acad02 .acadMap{}
+.acad02 .acadMap .mapImg{background:#fff;border:1px solid #dddddd;text-align:center}
+.acad02 .acadMap .mapTxt{margin-top:30px}
+.acad02 .acadMap .mapTxt .tit{margin-bottom:10px;font-size:14px;color:#333;line-height:20px;font-weight:bold}
+.acad02 .acadMap .mapTxt ul.address{margin-bottom:40px;}
+.acad02 .acadMap .mapTxt ul.address li{font-size:12px;color:#666;line-height:18px}
+.acad02 .acadMap .mapTxt ul.address li strong{font-weight:bold}
+.acad02 .acadMap .mapTxt ul.traffic{}
+.acad02 .acadMap .mapTxt ul.traffic li{padding:10px 10px 10px 150px;margin-bottom:20px;font-size:12px;line-height:18px;}
+.acad02 .acadMap .mapTxt ul.traffic li.subway{background:url('https://img.megagong.net/etc/150914_2/ico_01.jpg') no-repeat left center}
+.acad02 .acadMap .mapTxt ul.traffic li.bus{background:url('https://img.megagong.net/etc/150914_2/ico_02.jpg') no-repeat left center}
+.acad02 .acadMap .mapTxt ul.traffic li.car{background:url('https://img.megagong.net/etc/150914_2/ico_03.jpg') no-repeat left center}
+.acad02 .acadMap .mapTxt ul.traffic li .color1{color:#9d7a1e;}
+.acad02 .acadMap .mapTxt ul.traffic li .color2{color:#4a6bc8;}
+.acad02 .acadMap .mapBtn{padding:50px 0;text-align:center}
+
+/*소방학원*/
+.acad .acadHeader{width:100%;height:300px;background:#144145;}
+.acad .acadHeader .wrap_content{width:1084px;height:300px;background:url('https://img.megagong.net/new/acad/sobang-header.jpg') no-repeat center center}
+.acad .acadHeader .wrap_content ul{position:absolute;top:210px;left:50px}
+.acad .acadHeader .wrap_content ul li{float:left;width:130px;height:28px;line-height:28px;margin-right:10px;border:1px solid #8da7a9;text-align:center;}
+.acad .acadHeader .wrap_content ul li a{display:block;color:#fff;font-size:14px;line-height:28px;}
+.acad .acadHeader .wrap_content ul li.last{margin-right:0;}
+.acad .acadHeader .wrap_content ul li.on{border:1px solid #d4b290;background:#d4b290}
+.acad .acadHeader .wrap_content ul li.on a{color:#212e2f;font-weight:bold}
+
+.acad .acadInfo{}
+.acad .acadInfo .wrap_content{width:1000px;}
+.acad .acadInfo .wrap_content .acadTit{position:relative;}
+.acad .acadInfo .wrap_content .acadTit .monthTit{position:absolute;top:120px;left:95px;font-size:100px;line-height:120px;color:#000000;font-weight:bold;letter-spacing:-8px}
+.acad .acadInfo .wrap_content .acadInfo{width:940px;margin:0 auto;border-top:2px solid #144145;padding-bottom:85px;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl{border-bottom:1px solid #144145}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr{border-bottom:1px solid #cccccc}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr th.first,
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.first{border-right:1px solid #cccccc}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr th{padding:15px 0;color:#144145;font-size:18px;font-weight:bold;line-height:20px;text-align:center;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td{padding:15px 0 15px 50px;font-size:15px;line-height:18px;vertical-align: top}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td .tblTxt3{font-size:18px;line-height:22px;font-weight:bold;color:#076770}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td .discount{display:inline-block;margin:28px 0 10px 134px;width:194px;height:25px;background:#144145;font-size:15px;line-height:25px;color:#ffffff;text-align:center;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td .discount.right{margin:28px 0 10px 130px;width:230px;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgBlue{padding:15px 0;background:#edfffe;text-align:center}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgBlue .tblTxt1{padding-bottom:5px;font-size:19px;line-height:22px;color:#474747;font-weight:bold;letter-spacing: -1px}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgBlue .tblTxt2{padding-bottom:5px;font-size:16px;line-height:20px;color:#474747;letter-spacing: -1px}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgBlue .price{padding-bottom:10px;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgBlue .price .price1{display:inline-block;width:150px;color:#a3c0be;font-size:30px;line-height:40px;background:url('https://img.megagong.net/new/acad/bg-price.png') no-repeat 17px center}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgBlue .price .price2{display:inline-block;color:#144145;font-weight:bold;font-size:45px;line-height:55px}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgBlue .tblstar{color:#858585;font-size:13px;line-height:15px;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td.bgYellow{background:#fffded}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tbody tr:last-child{border-bottom:none}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul{}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul li{padding:0 0 5px 10px;font-size:15px;line-height:18px;color:#474747;background:url('https://img.megagong.net/new/acad/bg-list.png') no-repeat left 7px}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul.list2 li{float:left;width:47%;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul li span{vertical-align: top}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul li .subjectTxt{display:inline-block;width:110px;font-size:15px;line-height:18px;color:#474747;}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul li .price3{display:inline-block;width:100px;padding-left:8px;color:#bdbdbd;font-size:16px;line-height:20px;background:url('https://img.megagong.net/new/acad/bg-price2.png') no-repeat left center}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul li .price3.big{width:120px;pdading-left:5px;background:url('https://img.megagong.net/new/acad/bg-price3.png') no-repeat left center}
+.acad .acadInfo .wrap_content .acadInfo .acadInfo_tbl tr td ul li .price4{display:inline-block;color:#144145;font-weight:bold;font-size:18px;line-height:22px;}
+.acad .acadInfo .wrap_content .acadInfo .acadCall{position:relative;;padding-top:36px;text-align:center;}
+.acad .acadInfo .wrap_content .acadInfo .acadCall a.btn_Call{position:absolute;top:36px;right:112px;width:243px;height:50px;background:url('https://img.megagong.net/new/common/transparent.png')}
+.acad .acadMap{}
+.acad .acadMap .wrap_content{width:1000px;}
+.acad .acadMap .wrap_content .sobangMap{padding:90px 0 130px 0;text-align:center;}
+
+/*소방 단과학원*/
+.acad .dan_wrap{width:100%;margin:0 auto;text-align:center;}
+.acad .dan_wrap .dan_top{margin-bottom:30px;background:url('https://img.megagong.net/etc/2018/0117_1/dan/dan_img01_bg.jpg') center top no-repeat #eff2f5}
+.acad .dcol_wrap{width:1000px;margin:0 auto;text-align:center; background:#fff;}
+.acad .acad_tab01 a {display:block;  font-size:16px; line-height:60px; text-align:center; color:#333; padding:0; height:60px; background-color:#e6e6e6;}
+.acad .acad_tab01 a:hover {display:block; font-size:16px; font-weight:bold; line-height:60px; text-align:center; color:#fff; padding:0; height:60px; background-color:#0047cc;}
+.acad .acad_tab01 a.on, .acad_tab01 a.on:hover{font-weight:bold; color:#fff !important; background-color:#0047cc;}
+.dcol_wrap .t_border1{border-top:1px solid #333; border-bottom:none; text-align:center; border-left:1px solid #ddd;}
+.dcol_wrap tr th, table.t_border1 td { padding:12px 10px 12px 10px;  border-bottom:1px solid #ddd; font-size:12px; }
+.dcol_wrap tr th { color:#666; background-color:#f8f8f8; letter-spacing:-1px; border-right:1px solid #ddd; }
+.dcol_wrap tr td { color:#666; border-right:1px solid #ddd; vertical-align:middle}
+.dcol_wrap tr td p,
+.dcol_wrap tr td span{line-height:20px;}
+.dcol_wrap .acad_tab01 tr td{border-right: 0;padding-right: 1px;padding-left: 0}
+.acad .dan_wrap .floatB{right:2% !important}
+
+.sobangTab > tr:nth-child(1) td a{width:50%}
+.sobangTab > tr:nth-child(1) td a.on{}
+.acad .sobangTab a{float:left;width:50%}
+.acad .sobangTab tr:nth-child(2) a{float:left;position:relative;width: auto;background:none;height: auto;line-height: 1;padding-top: 20px;margin-right: 20px;font-size:14px}
+.acad .sobangTab tr:nth-child(2) a::before{content:'';position: absolute;display:block;width: 1px;margin-top: 2px;height: 14px;background: #333333;right: -10px;z-index: 99;}
+.acad .sobangTab tr:nth-child(2) a:nth-child(3)::before{display:none}
+.acad .sobangTab tr:nth-child(2) a.on{color:#0047cc !important;padding-bottom: 2px;border-bottom: 1px solid #0047cc;}
+.acad .sobangTab tr:nth-child(2) a:hover{color:#0047cc !important;}
+/*#sel_tec{position: relative;width: 140px;padding: 2px 0;height: 24px;line-height: 24px;}*/
+
+
+/*두줄탭*/
+.acad #tabTbl{margin-top:10px;}
+.acad #tabTbl th{font-size:13px;line-height:16px;border:1px solid #d9dadc;font-weight:bold;color:#696969;vertical-align: middle;padding:0}
+.acad #tabTbl th.tbl_th{background:#f2f3f5;color:#696969;height:42px;}
+.acad #tabTbl th.tbl_th {}
+.acad #tabTbl th.tbl_th2{border:1px solid #d9dadc;font-weight:bold;color:#696969;background:#f2f3f5;vertical-align: middle}
+.acad #tabTbl th.tbl_th2 a{height:58px;line-height:58px;padding-top:0}
+.acad #tabTbl th a{display:block;padding-top:40px;height:61px;background:#f2f3f5;font-weight:bold;color:#696969}
+.acad #tabTbl th a:hover,
+.acad #tabTbl th a.on{background:#333333;color:#fff}
+
+/*한줄 탭*/
+.acad #tabTbl.one th.tbl_th{height:29px;}
+.acad #tabTbl.one th.tbl_th2 a{height:31px;line-height:31px;padding-top:0;}
+.acad #tabTbl.one th a{padding-top:23px;height:38px;}
+
+
+.acad #schPrint{margin:20px 0}
+.acad #schPrint .tbl{}
+.acad #schPrint .tbl td {position:relative;border-bottom:1px solid #ddd;border-right:1px solid #ddd;background:transparent}
+.acad #schPrint .tbl td .btn_more{position:absolute;top:20px;right:20px}
+.acad #schPrint .tbl td .txt1{display:block;color:#e98400;text-decoration:line-through;}
+.acad #schPrint .tbl td .txt2{display:block;color:#e98400;font-weight:bold}
+.acad #schPrint .tbl td .txt3{color:#5a5a5a;}
+.acad #schPrint .tbl td .sub_tit{font-weight:bold;color:#000}
+.acad #schPrint .txt{margin-top:20px;/*padding:10px 0 10px 10px;*/background:#0000cd;color:#fff;text-align:left;font-weight:bold}
+.acad #schPrint .txt span{color:#ffff00;font-weight:bold}
+.acad #schPrint .tabC.open{display:block}
+.btn_wrap{padding-top:20px}

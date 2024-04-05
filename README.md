@@ -53,9 +53,9 @@ Megasource를 통해 배포
 </html>
 ```
 
-- **js/commonUtils.js** 상단에 파이어베이스 설정 부분은 **js/commonUtils.js.bak230131** 파일 참고하여 난독화
 - **js/modules.js** 파일 내용은 **js/modules/blog.js, js/modules/post.js, js/modules/user.js** 3파일의 내용을 난독화 사이트에 연달아 붙여서 난독화해서 만든다.
 - [JS 난독화 사이트](https://obfuscator.io)
+- 위 3가지 파일 모듈 수정사항이 생기는 경우 위 과정을 거친 다음에 통으로 메가 소스를 통해서 배포한다.
 
 
 ## 관리자

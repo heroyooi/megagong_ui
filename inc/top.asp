@@ -7,6 +7,9 @@ lab_main = "https://lab.megagong.net"
 gongssel_main = "https://gongssel.megagong.net"
 dev_main = "https://dev.megagong.net"
 
+https   =  fncRequestVariables("https")
+hostnm  =  fncRequestVariables("HTTP_HOST")
+
 Dim dp1, dp2
 
 Function fncRequestCookie(varParam)

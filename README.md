@@ -20,9 +20,42 @@
 - master: [개발 브랜치](https://uidev.megagong.net)
 - legacy: [2023년부터 운영하고있는 초기 소스](https://ui.megagong.net)
 
+
 ## 배포
 
 Megasource를 통해 배포
+
+### 배포 전 암호화
+
+- **inc/bottom.asp** 파일 내용 참고
+```html
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+  <script src="/js/moment.js"></script>
+  <script src="/js/moment-with-locales.min.js"></script>
+  <script src="/js/crypto-js.min.js"></script>
+  <script src="/js/toastr.min.js"></script>
+  <!--<script src="/js/smoothScroll.js"></script>-->
+  <script src="/js/prism.js"></script>
+  <script src="/js/commonUtils.js"></script>
+  <% If inStr(hostnm, "dev") > 0 Then %>
+  <script src="/js/modules/blog.js"></script><!-- 블로그 -->
+  <script src="/js/modules/post.js"></script><!-- 게시글 -->
+  <script src="/js/modules/user.js"></script><!-- 회원 -->
+  <% Else %>
+  <script src="/js/modules.js"></script>
+  <% End if %>
+  <script src="<%=url_main%>/common/js/eventCommon.js"></script>
+
+</body>
+</html>
+```
+
+- **js/commonUtils.js** 상단에 파이어베이스 설정 부분은 **js/commonUtils.js.bak230131** 파일 참고하여 난독화
+- **js/modules.js** 파일 내용은 **js/modules/blog.js, js/modules/post.js, js/modules/user.js** 3파일의 내용을 난독화 사이트에 연달아 붙여서 난독화해서 만든다.
+- [JS 난독화 사이트](https://obfuscator.io)
 
 
 ## 관리자

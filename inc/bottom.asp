@@ -9,12 +9,12 @@
   <!--<script src="/js/smoothScroll.js"></script>-->
   <script src="/js/prism.js"></script>
   <script src="/js/commonUtils.js"></script>
-  <% If 1=2 Then %><!-- 배포 할 경우 1=1로, 완료 이후 1=2 -->
-  <script src="/js/modules.js"></script>
-  <% Else %>
+  <% If inStr(hostnm, "dev") > 0 Then %>
   <script src="/js/modules/blog.js"></script><!-- 블로그 -->
   <script src="/js/modules/post.js"></script><!-- 게시글 -->
   <script src="/js/modules/user.js"></script><!-- 회원 -->
+  <% Else %>
+  <script src="/js/modules.js"></script>
   <% End if %>
   <script src="<%=url_main%>/common/js/eventCommon.js"></script>
 

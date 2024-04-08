@@ -172,10 +172,13 @@ End if
               <li class="anonymous"><a href="/signup.asp">SIGNUP</a></li>
             </ul>-->
             <ul class="nav_list">
+              <li><a href="/items/button.asp" style="color:#000">RENEWAL TEST</a></li>
+              <!--
               <li><a href="/items/button.asp">COMPONENT</a></li>
               <li><a href="/pages/teacher.asp">PAGE</a></li>
               <li><a href="/blog.asp">BLOG</a></li>
               <li id="js_test"><a href="/js_test.asp">JS TEST</a></li>
+              -->
             </ul>
             <ul class="util_list">
               <li class="authorized profile" style="display:none;"><span>È«±æµ¿</span>(<em>honggildong</em>)´Ô È¯¿µÇÕ´Ï´Ù.</li>

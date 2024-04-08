@@ -20,7 +20,7 @@ https://greensock.com/docs/v3/Eases
           <div class="glass"></div>
 
           <div class="top_msg">
-            <span>RENEWAL</span>
+            <span>RENEWAL1</span>
             <span>MEGASTUDY</span>
             <span>MEGAGONG</span>
             <span>COMPONENT GUIDE</span>

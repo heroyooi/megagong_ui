@@ -20,7 +20,7 @@ https://greensock.com/docs/v3/Eases
           <div class="glass"></div>
 
           <div class="top_msg">
-            <span>MEGASTUDY</span>
+            <span>MEGASTUDY aaa</span>
             <span>MEGAGONG</span>
             <span>COMPONENT GUIDE</span>
           </div>

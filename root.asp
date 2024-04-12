@@ -9,7 +9,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="/js/utils.js"></script>
 
-<!-- #include virtual = "/components/index.asp"-->
+<!-- #include virtual = "/app/index.asp"-->
 
 <script type="text/babel">
     'use strict';

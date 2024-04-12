@@ -22,7 +22,7 @@ dp2 = 1
             <hr/>-->
             
             <div class="page_text_wrap">
-                <p class="page_head">버튼 - 기본형 업데이트</p> 
+                <p class="page_head">버튼 - 기본형</p> 
                 <button class="code_open"><span class="open_bg"></span><span class="open_shape"></span></button>
                 
                 <div class="issue-box-wrap"></div><!-- 채팅박스 동적으로 생성 -->

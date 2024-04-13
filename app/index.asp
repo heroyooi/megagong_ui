@@ -1,10 +1,11 @@
 <!-- #include virtual = "/app/common/Header.asp"-->
+<!-- #include virtual = "/app/common/Footer.asp"-->
 <!-- #include virtual = "/app/common/Aside.asp"-->
 
-<!-- #include virtual = "/app/pages/Main.asp"-->
-<!-- #include virtual = "/app/pages/Component.asp"-->
-<!-- #include virtual = "/app/pages/Page.asp"-->
-<!-- #include virtual = "/app/pages/Blog.asp"-->
+<!-- #include virtual = "/app/layout/MainLayout.asp"-->
+<!-- #include virtual = "/app/layout/ComponentLayout.asp"-->
+<!-- #include virtual = "/app/layout/PageLayout.asp"-->
+<!-- #include virtual = "/app/layout/BlogLayout.asp"-->
 
 <!-- #include virtual = "/app/component/ButtonComponent.asp"-->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
@@ -20,13 +21,14 @@
         
     }, []);
     return (
-        <HashRouter basename="/">
-            <Header />
-            <Route path="/" exact component={Main} />
-            <Route path="/component/:cid" component={Component} />
-            <Route path="/page/:pid" component={Page} />
-            {/*<Route path="/blog" component={Blog} />*/}
-        </HashRouter>
+      <HashRouter basename="/">
+        <Header />
+        <Route path="/" exact component={MainLayout} />
+        <Route path="/component/:cid" component={ComponentLayout} />
+        <Route path="/page/:pid" component={PageLayout} />
+        {/*<Route path="/blog" component={BlogLayout} />*/}
+        <Footer />
+      </HashRouter>
     )
   };
 </script>

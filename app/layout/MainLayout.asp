@@ -1,13 +1,16 @@
 <script type="text/babel">
     'use strict';
 
-    function Main() {
+    function MainLayout() {
 
       useEffect(() => {
         Lab.top();
         Lab.main();
         // Lab.showCode();
         return () => {
+          $('body').removeClass('main');
+          $('body').removeClass('gsap');
+          $('.header_wrp').removeClass('on');
         }
       }, []);
 

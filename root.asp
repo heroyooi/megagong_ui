@@ -23,3 +23,5 @@
       <ComponentGuide />
     );
 </script>
+
+</div><!-- #wrap -->

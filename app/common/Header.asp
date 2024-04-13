@@ -1,19 +1,7 @@
-<style>
-  .header_wrp {background: none;}
-  .header_wrp .header {border-bottom:none; }
-  @media screen and (max-width: 1200px) {
-    .header_wrp .btn_menu2 {display: none;}
-    .header_wrp .header h1 a {justify-content: flex-start;}
-  }
-</style>
-
 <script type="text/babel">
     'use strict';
 
     function Header() {
-        useEffect(() => {
-
-        }, []);
         return (
           <>
             <header className="header_wrp">

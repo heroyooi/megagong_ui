@@ -6,14 +6,15 @@
     {id: 'exam', title: '진단평가'},
   ]
   
-  function Page() {
+  function PageLayout() {
     const { pid } = useParams();
     const location = useLocation();
 
     return (
-      <>
-      {pid === 'button' && <Button />}
-      </>
+      <AsideProvider>
+        <Aside />
+        {pid === 'button' && <Button />}
+      </AsideProvider>
     )
   }
 </script>

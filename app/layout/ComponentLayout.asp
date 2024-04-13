@@ -6,7 +6,7 @@
     {id: 'tab', title: 'ег'},
   ]
   
-  function Component() {
+  function ComponentLayout() {
     const { cid } = useParams();
     const location = useLocation();
 

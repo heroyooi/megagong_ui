@@ -170,10 +170,9 @@ const Lab =
         document.querySelector('body').className = 'gsap';
         history.scrollRestoration = 'manual'; // 진입 시 스크롤 위치 초기화
 
-        $(document).ready(function () {
-          //헤더 텍스트 컬러
-          $('.header_wrp').addClass('on');
-        });
+        //헤더 텍스트 컬러
+        $('.header_wrp').addClass('on');
+        $('body').addClass('main');
 
         $(window).on('load', function () {
           var hash = window.location.hash;

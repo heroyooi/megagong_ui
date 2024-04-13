@@ -1,14 +1,20 @@
 <script type="text/babel">
   'use strict';
   function Aside() {
+    const { dp1, dp2 } = useAside();
+
+    useEffect(() => {
+      Lab.aside();
+    }, []);
+
     return (
       <div className="guide-aside">
         <ul>
-          <li className="big_nav sec<%If dp1=2 then%> on<%End if%>"><a href="javascript:void(0);"><i className='bx bxs-customize'></i>컴포넌트<span></span></a></li>
+          <li className={dp1 == 2 ? "big_nav sec on" : "big_nav sec"}><a href="javascript:void(0);"><i className='bx bxs-customize'></i>컴포넌트<span></span></a></li>
           <li className="small_nav_wrap sec">
             <ul className="small_nav_wrap_ul sec">
-              <li className="small_nav sec<%If dp1=2 and dp2=1 then%> on<%End if%>"><a href="/items/button.asp">버튼<span></span></a></li>
-              <li className="small_nav sec<%If dp1=2 and dp2=2 then%> on<%End if%>"><a href="/items/tab.asp">탭<span></span></a></li>
+              <li className={dp1 == 2 && dp2 == 1 ? "small_nav sec on" : "small_nav sec"}><Link to="/component/button">버튼<span></span></Link></li>
+              <li className={dp1 == 2 && dp2 == 2 ? "small_nav sec on" : "small_nav sec"}><Link to="/component/tab">탭<span></span></Link></li>
               <li className="small_nav sec<%If dp1=2 and dp2=3 then%> on<%End if%>"><a href="/items/popup.asp">팝업<span></span></a></li>
               <li className="small_nav sec<%If dp1=2 and dp2=4 and dp3=1 then%> on<%End if%>"><a href="/items/slide.asp">슬라이드 - Slick<span></span></a></li>
               <li className="small_nav sec<%If dp1=2 and dp2=4 and dp3=2 then%> on<%End if%>"><a href="/items/slide_swiper.asp">슬라이드 - Swiper<span></span></a></li>

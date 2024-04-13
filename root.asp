@@ -7,7 +7,6 @@
 
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script src="/js/utils.js"></script>
 
 <!-- #include virtual = "/app/index.asp"-->
 

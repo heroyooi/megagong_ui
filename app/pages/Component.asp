@@ -11,10 +11,10 @@
     const location = useLocation();
 
     return (
-      <>
-      <Aside />
-      {cid === 'button' && <Button />}
-      </>
+      <AsideProvider>
+        <Aside />
+        {cid === 'button' && <ButtonComponent />}
+      </AsideProvider>
     )
   }
 </script>

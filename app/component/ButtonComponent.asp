@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button() {
+  function ButtonComponent() {
     useEffect(() => {
       Lab.top();
       Lab.showCode();

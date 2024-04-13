@@ -5,7 +5,10 @@
 
       useEffect(() => {
         Lab.top();
+        Lab.main();
         // Lab.showCode();
+        return () => {
+        }
       }, []);
 
       return (
@@ -464,5 +467,5 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-<script src="/js/main.production.js"></script>
 <script src="/js/smoothScroll.js"></script>
+<!-- <script src="/js/main.production.js"></script> -->

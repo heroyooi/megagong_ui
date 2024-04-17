@@ -17,7 +17,7 @@
     const root = ReactDOM.createRoot(container);
 
     const { useState, useCallback, useMemo, useEffect, useRef, useContext } = React;
-    const { HashRouter, BrowserRouter, Route, Link, useParams, useLocation, withRouter } = ReactRouterDOM;
+    const { HashRouter, BrowserRouter, Route, Link, useParams, useLocation, useHistory, withRouter } = ReactRouterDOM;
 
     root.render(
       <ComponentGuide />

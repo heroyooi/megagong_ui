@@ -2,15 +2,18 @@
     'use strict';
 
     function MainLayout() {
-
       useEffect(() => {
         Lab.top();
         Lab.main();
         // Lab.showCode();
+
+        document.querySelector('.header_wrp h1').addEventListener('click', Lab.top);
+
         return () => {
           $('body').removeClass('main');
           $('body').removeClass('gsap');
           $('.header_wrp').removeClass('on');
+          document.querySelector('.header_wrp h1').removeEventListener('click', Lab.top);
         }
       }, []);
 

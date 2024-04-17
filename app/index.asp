@@ -5,6 +5,7 @@
 <!-- #include virtual = "/app/layout/MainLayout.asp"-->
 <!-- #include virtual = "/app/layout/ComponentLayout.asp"-->
 <!-- #include virtual = "/app/layout/PageLayout.asp"-->
+<!-- #include virtual = "/app/layout/LoginLayout.asp"-->
 <!-- #include virtual = "/app/layout/BlogLayout.asp"-->
 
 <!-- #include virtual = "/app/component/ButtonComponent.asp"-->
@@ -18,7 +19,7 @@
   
   function ComponentGuide() {
     useEffect(() => {
-        
+      Lab.onAuthStateChanged();
     }, []);
     return (
       <HashRouter basename="/">
@@ -27,6 +28,7 @@
         <Route path="/component/:cid" component={ComponentLayout} />
         <Route path="/page/:pid" component={PageLayout} />
         {/*<Route path="/blog" component={BlogLayout} />*/}
+        <Route path="/login" component={LoginLayout} />
         <Footer />
       </HashRouter>
     )

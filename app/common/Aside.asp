@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
   function Aside() {
-    const { dp1, dp2 } = useAside();
+    const { dp1, dp2, dp3 } = useAside();
 
     useEffect(() => {
       Lab.aside();
@@ -15,10 +15,10 @@
             <ul className="small_nav_wrap_ul sec">
               <li className={dp1 == 2 && dp2 == 1 ? "small_nav sec on" : "small_nav sec"}><Link to="/component/button">버튼<span></span></Link></li>
               <li className={dp1 == 2 && dp2 == 2 ? "small_nav sec on" : "small_nav sec"}><Link to="/component/tab">탭<span></span></Link></li>
-              <li className="small_nav sec<%If dp1=2 and dp2=3 then%> on<%End if%>"><a href="/items/popup.asp">팝업<span></span></a></li>
-              <li className="small_nav sec<%If dp1=2 and dp2=4 and dp3=1 then%> on<%End if%>"><a href="/items/slide.asp">슬라이드 - Slick<span></span></a></li>
-              <li className="small_nav sec<%If dp1=2 and dp2=4 and dp3=2 then%> on<%End if%>"><a href="/items/slide_swiper.asp">슬라이드 - Swiper<span></span></a></li>
-              <li className="small_nav sec<%If dp1=2 and dp2=5 then%> on<%End if%>"><a href="/items/list.asp">리스트<span></span></a></li>
+              <li className={dp1 == 2 && dp2 == 3 ? "small_nav sec on" : "small_nav sec"}><a href="/items/popup.asp">팝업<span></span></a></li>
+              <li className={dp1 == 2 && dp2 == 4 && dp3 == 1 ? "small_nav sec on" : "small_nav sec"}><a href="/items/slide.asp">슬라이드 - Slick<span></span></a></li>
+              <li className={dp1 == 2 && dp2 == 4 && dp3 == 2 ? "small_nav sec on" : "small_nav sec"}><a href="/items/slide_swiper.asp">슬라이드 - Swiper<span></span></a></li>
+              <li className={dp1 == 2 && dp2 == 5 ? "small_nav sec on" : "small_nav sec"}><a href="/items/list.asp">리스트<span></span></a></li>
               <li className="small_nav sec<%If dp1=2 and dp2=6 then%> on<%End if%>"><a href="/items/table.asp">표(테이블)<span></span></a></li>
               <li className="small_nav sec<%If dp1=2 and dp2=7 then%> on<%End if%>"><a href="/items/icon.asp">아이콘<span></span></a></li>
               <li className="small_nav sec<%If dp1=2 and dp2=8 then%> on<%End if%>"><a href="/items/form.asp">폼<span></span></a></li>

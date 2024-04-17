@@ -2,6 +2,25 @@
     'use strict';
 
     function Header() {
+        const history = useHistory();
+
+        const logoutAction = async () => {
+          if ($items.length) {
+            $items.hide();
+          }
+          console.log(1)
+          await authService.signOut();
+          deleteCookie(FBU_EMAIL);
+          deleteCookie(FBU_PWD);
+          await userRef.doc(USER_DOC_ID).update({
+            loggedIn: false,
+            logDate: Date.now(),
+          });
+          Lab.refreshUser();
+          history.push('/');
+          console.log(2)
+        }
+
         return (
           <>
             <header className="header_wrp">
@@ -19,9 +38,9 @@
                   </ul>
                   <ul className="util_list">
                     <li className="authorized profile" style={{ display: "none" }}><span>È«±æµ¿</span>(<em>honggildong</em>)´Ô È¯¿µÇÕ´Ï´Ù.</li>
-                    <li className="authorized logout" style={{ display: "none" }}><a onClick="logoutAction(); return false;" href="#" className="btn"><i className='bx bx-log-out'></i></a></li>
-                    <li className="anonymous"><a href="/login.asp">LOGIN</a></li>
-                    <li className="anonymous"><a href="/signup.asp">SIGNUP</a></li>
+                    <li className="authorized logout" style={{ display: "none" }} onClick={logoutAction}><a className="btn"><i className='bx bx-log-out'></i></a></li>
+                    <li className="anonymous"><Link to="/login">LOGIN</Link></li>
+                    <li className="anonymous"><Link to="/signup">SIGNUP</Link></li>
                   </ul>
                 </nav>
                 <button type="button" className="btn_menu">

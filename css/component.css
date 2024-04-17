@@ -170,22 +170,23 @@ body.main .header_wrp .header {border-bottom:none; }
 
 
 /* ?뜝?룞?삕?뜝?룞?삕 ?뜝?뙎釉앹삕?뜝?룞?삕?뒌?뜝? ?뜝?룞?삕?뜝?룞?삕?뜝?룞?삕?뜝?*/
-.guide-aside ul li.small_nav { padding-left: 9px; display: none; transition: 0.2s; font-size: 15px; font-weight: 400; height: 45px; line-height: 44px; /*border-bottom: 1px solid #dcdcdc; */position: relative; } 
+.guide-aside ul li.small_nav { padding-left: 9px;  transition: 0.2s; font-size: 15px; font-weight: 400; height: 45px; line-height: 44px; /*border-bottom: 1px solid #dcdcdc; */position: relative; } 
 .guide-aside ul li.small_nav::after { content: ""; width: 4px; background: #4cc2ff; display: block; height: 0%; position: absolute; left: 0px; transition: 0.5s; top: 0px; } 
 .guide-aside ul li.small_nav a { transition: 0.4s; color: #000000b5; width: 100%; display: inline-block; } 
 .guide-aside ul li.small_nav:nth-child(1) { /* border-top: 1px solid #dcdcdc; */}
 .guide-aside ul li.small_nav:hover { border-radius: 0px; } 
 .guide-aside ul li.small_nav:hover::after { height: 100%; } 
 .guide-aside ul li.small_nav_wrap:hover { background: transparent; } 
-.guide-aside ul li.small_nav_wrap { height: 0px; transition: 0.5s; box-sizing: border-box; width: 92%; } 
+.guide-aside ul li.small_nav_wrap { transition: 0.5s; box-sizing: border-box; width: 92%; height: auto;} 
 .guide-aside ul li.small_nav_wrap.fir.on { height: 100%; padding: 10px 10px 10px 33px; } 
 .guide-aside ul.small_nav_wrap_ul.fir.on { height: 100%; } 
 .guide-aside ul.small_nav_wrap_ul.fir.on li.small_nav_wrap_ul { height: 100%}
 .guide-aside ul.small_nav_wrap_ul.fir.on li.small_nav.fir { display: block; } 
-.guide-aside ul li.small_nav_wrap.sec.on { height: 100%; padding: 10px 10px 10px 33px; } 
-.guide-aside ul.small_nav_wrap_ul.sec.on { height: 100%; } 
-.guide-aside ul.small_nav_wrap_ul.sec.on li.small_nav_wrap_ul { height: 100%}
-.guide-aside ul.small_nav_wrap_ul.sec.on li.small_nav.sec { display: block; } 
+.guide-aside ul li.small_nav_wrap.sec { height: 100%; padding: 10px 10px 10px 33px; } 
+.guide-aside ul li.small_nav_wrap.srd { height: 100%; padding: 10px 10px 10px 33px; } 
+.guide-aside ul.small_nav_wrap_ul.sec { height: 100%; } 
+.guide-aside ul.small_nav_wrap_ul.sec li.small_nav_wrap_ul { height: 100%}
+.guide-aside ul.small_nav_wrap_ul.sec li.small_nav.sec { display: block; } 
 .guide-aside ul li.small_nav_wrap.srd.on { height: 100%; padding: 10px 10px 10px 33px; } 
 .guide-aside ul.small_nav_wrap_ul.srd.on { height: 100%; } 
 .guide-aside ul.small_nav_wrap_ul.srd.on li.small_nav_wrap_ul { height: 100%}

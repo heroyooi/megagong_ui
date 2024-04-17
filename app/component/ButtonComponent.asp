@@ -2,9 +2,13 @@
   'use strict';
 
   function ButtonComponent() {
+    const { setDp1, setDp2 } = useAside();
+
     useEffect(() => {
       Lab.top();
       Lab.showCode();
+      setDp1(2);
+      setDp2(1);
     }, []);
 
     return (
@@ -12,15 +16,7 @@
       <div className="page_wrap" id="page_wrap">
 
         <div className="page_inner">
-            <div className="page_name_wrap">
-                <h3 className="page_name">BUTTON</h3>
-                <h3 className="page_name_sub">버튼</h3>
-                <p className="page_sub_text">메가공무원 사이트에서 통상적으로 사용되는 버튼 컴포넌트입니다.<br />
-                사용되는 페이지의 디자인 및 용도에 맞게 다양한 변형이 가능합니다.
-                </p>
-              <div className="page_print"><input type="button" value="인쇄하기" id="print" onClick="window.print()"/></div>
-
-            </div>
+            <PageHeader name="Button" sub="버튼" text="메가공무원 사이트에서 통상적으로 사용되는 버튼 컴포넌트입니다.<br />사용되는 페이지의 디자인 및 용도에 맞게 다양한 변형이 가능합니다." />
             
             <div className="page_text_wrap">
                 <p className="page_head">버튼 - 기본형</p> 

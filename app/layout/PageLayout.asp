@@ -13,7 +13,7 @@
     return (
       <AsideProvider>
         <Aside />
-        {pid === 'button' && <Button />}
+        {pid === 'teacher' && <TeacherPage />}
       </AsideProvider>
     )
   }

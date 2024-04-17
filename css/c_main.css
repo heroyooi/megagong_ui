@@ -249,10 +249,7 @@ body.gsap .page_foot .guide_down:hover a {color: #d6d6d6;}
 .header_wrp #gnb .nav_list li:hover::after {
   width: 100%;
 }
-.header_wrp #gnb .nav_list li#js_test, .mo_menu_wrp .nav_list li#js_test {
-  display: none;
-  
-}
+
 .nav_list li#js_test a {
   color: #6c7ce9;
   font-weight: 700;

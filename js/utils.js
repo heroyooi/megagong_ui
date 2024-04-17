@@ -507,19 +507,19 @@ const Lab =
           $('#user_timer_signup').text(moment(user.metadata.creationTime).format('YYYY-MM-DD'));
       
           // 오리지널 헤더
-          $('.user_info#authorized').find('span').text(user.displayName);
-          $('.user_info#authorized').find('em').text(user.email);
-          $('.user_info#anonymous').hide();
-          $('.user_info#authorized').show();
+          // $('.user_info#authorized').find('span').text(user.displayName);
+          // $('.user_info#authorized').find('em').text(user.email);
+          // $('.user_info#anonymous').hide();
+          // $('.user_info#authorized').show();
       
           // 리뉴얼 헤더
-          $('#gnb li.authorized').find('span').text(user.displayName);
-          $('#gnb li.authorized').find('em').text(user.email);
-          $('#gnb li.anonymous').hide();
-          $('#gnb li.authorized').show();
+          // $('#gnb li.authorized').find('span').text(user.displayName);
+          // $('#gnb li.authorized').find('em').text(user.email);
+          // $('#gnb li.anonymous').hide();
+          // $('#gnb li.authorized').show();
       
           // if (USER_ID === FBU_ADMIN_UID) { // JS TEST 완성 후 이 조건 삭제
-            $('.nav_list li#js_test').show();
+            // $('.nav_list li#js_test').show();
           // }
       
           $('.util_list').addClass('on');
@@ -533,9 +533,9 @@ const Lab =
           USER_ID = user.uid;
           Lab.addUser();
         } else {
-          $('#gnb li.anonymous').show();
-          $('#gnb li.authorized').hide();
-          $('.nav_list li#js_test').hide();
+          // $('#gnb li.anonymous').show();
+          // $('#gnb li.authorized').hide();
+          // $('.nav_list li#js_test').hide();
         }
       },
       addUser: async () => {

@@ -3,12 +3,12 @@
 
     function Header() {
         const history = useHistory();
+        const { user, setUser } = useAuth();
 
         const logoutAction = async () => {
           if ($items.length) {
             $items.hide();
           }
-          console.log(1)
           await authService.signOut();
           deleteCookie(FBU_EMAIL);
           deleteCookie(FBU_PWD);
@@ -16,9 +16,9 @@
             loggedIn: false,
             logDate: Date.now(),
           });
-          Lab.refreshUser();
+          // Lab.refreshUser();
           history.push('/');
-          console.log(2)
+          setUser(null);
         }
 
         return (
@@ -34,13 +34,21 @@
                     <li><Link to="/component/button">COMPONENT</Link></li>
                     <li><Link to="/page/teacher">PAGE</Link></li>
                     <li><Link to="/blog">BLOG</Link></li>
-                    <li id="js_test"><a href="/js_test">JS TEST</a></li>
+                    {user && <li id="js_test"><Link to="/js_test">JS TEST</Link></li>}
                   </ul>
                   <ul className="util_list">
-                    <li className="authorized profile" style={{ display: "none" }}><span>È«±æµ¿</span>(<em>honggildong</em>)´Ô È¯¿µÇÕ´Ï´Ù.</li>
-                    <li className="authorized logout" style={{ display: "none" }} onClick={logoutAction}><a className="btn"><i className='bx bx-log-out'></i></a></li>
-                    <li className="anonymous"><Link to="/login">LOGIN</Link></li>
-                    <li className="anonymous"><Link to="/signup">SIGNUP</Link></li>
+                    {user
+                      ? (
+                        <>
+                          <li className="authorized profile"><span>{user.displayName}</span>(<em>{user.email}</em>)´Ô È¯¿µÇÕ´Ï´Ù.</li>
+                          <li className="authorized logout" onClick={logoutAction}><a className="btn"><i className='bx bx-log-out'></i></a></li>
+                        </>
+                      ) : (
+                        <>
+                          <li className="anonymous"><Link to="/login">LOGIN</Link></li>
+                          <li className="anonymous"><Link to="/signup">SIGNUP</Link></li>
+                        </>
+                      )}
                   </ul>
                 </nav>
                 <button type="button" className="btn_menu">

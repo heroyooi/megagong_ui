@@ -21,6 +21,7 @@ const css = `.btn_wrap .btn {display: block;width: 130px;height: 40px;line-heigh
       <PageContent
         title="버튼 - 기본형"
         desc="게시글 작성 및 질문 등의 용도를 가진 버튼들은 지정된 고유의 CSS를 유지하여 모두 동일한 디자인이 되도록 작업합니다. <br />별도로 지정된 상황 외에는, 기본적으로 모든 버튼은 중앙 혹은 오른쪽에 정렬하도록 합니다."
+        image="/images/btn.png"
         html={html}
         css={css}
         items={["시스템버튼","게시글작성","게시판버튼"]}

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, html, css, items, link }) {
+  function PageContent({ title, desc, image, html, css, items, link }) {
     const { user } = useAuth();
     const refCode = useRef(null);
     const [view, onView] = useCode(false, refCode);
@@ -20,7 +20,7 @@
         )}
         
         <div className="issue-box-wrap"></div>
-        <div className="position_site"><img src="/images/btn.png" alt='버튼위치' /></div>
+        <div className="position_site"><img src={image} alt='-' /></div>
 <div className="code-box html"><Styled>{jsx}</Styled></div>
 <p className="page_text" dangerouslySetInnerHTML={{ __html: desc }} />
 

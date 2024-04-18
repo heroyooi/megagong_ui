@@ -83,6 +83,7 @@ const css = `
       <PageContent
         title="버튼 - 슬라이드 좌우형"
         desc="슬라이드에 사용되는 좌, 우측 버튼의 예시입니다. <br />슬라이드 버튼의 경우, 반응형을 고려하여 사이즈를 책정하고 및 버튼의 색상을 지정하는 것을 권장합니다."
+        image="/images/btn2.png"
         html={html}
         css={css}
         items={["슬라이드버튼","넘기기버튼","화살표"]}

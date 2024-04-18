@@ -1,5 +1,7 @@
 <!-- #include virtual = "/app/component/button/Button1.asp"-->
 <!-- #include virtual = "/app/component/button/Button2.asp"-->
+<!-- #include virtual = "/app/component/button/Button3.asp"-->
+<!-- #include virtual = "/app/component/button/Button4.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -23,140 +25,8 @@
             
             <Button1 />
             <Button2 />
-
-            <div className="page_text_wrap">
-                <p className="page_head">버튼 - 구매</p> 
-                <button className="code_open"><span className="open_bg"></span><span className="open_shape"></span></button>
-                
-                <div className="issue-box-wrap"></div>
-                <div className="position_site"><img src="/images/btn3.png" alt='버튼위치' /></div>
-                
-
-<div className="code-box html"><ul className="btns_list">
-    <li className="buy" style={{ display: "block" }}>
-        <div id="pass_bnr_btn_wrap7">   
-            <a href="javascript:;" onclick="go_fbuy(34, 6976);">구매하기</a>
-        </div> 
-    </li>                  
-</ul>
-<br />
-<ul className="btns_list2">
-    <li>
-        <a href="javascript:;" className="btn">
-            <div className="btn_in">
-                <span className="txt1">Change Your Days, Change Your Result!</span>
-                <span className="txt2">2023대비 FINAL 학습전략</span>
-            </div>
-        </a>
-    </li>
-</ul>
-<br />
-<ul className="btns_list3">
-    <li>
-        <a href="javascript:void(0);" className="purchase_btn" onclick="go_fbuy(1, 7094);">메가패스 구매하기</a>
-    </li>
-</ul></div>
-
-{/*<style>.btns_list { margin-top: 0;justify-content: center;    display: flex; flex-wrap: wrap; text-align: center; font-family: "NotoSans KR";}
-.btns_list li { position: relative;}
-.btns_list li {width: 100%;margin: 0;}
-.btns_list li a {font-size: 20px;color: #fff; background: #000;padding: 30px 0;}
-.btns_list a {display: block;}
-.btns_list li a::before {content: '';display: block;position: absolute; right: 0;top: 50%; transform: translateY(-50%);background: url(https://img.megagong.net/m/2022/1219_pass/btn_arr.png) no-repeat center; width: 72px; height: 80px;}
-
-.btns_list2 {width: 100%;text-align: center; font-family: "NotoSans KR"; border:1px solid #268490;}
-.btns_list2 li .btn {display: block; background-color: #ffffff;padding: 20px 0;}
-.btns_list2 li .btn .btn_in {position: relative;}
-.btns_list2 li .btn span {display: block;}
-.btns_list2 li .btn .txt1 {font-size: 17px;color: #268490;}
-.btns_list2 li .btn .txt2 {font-size: 26px;font-weight: 900; color: #111;}
-.btns_list2 li .btn .btn_in:after { content: '';display: block; width: 90px; height: 100%; background: url(https://img.megagong.net/m/2023/0109_finalpass/btn_arrow_black.png) 50% 50% no-repeat; position: absolute; right: 0; top: 0; border-left: 1px solid #b7b7b7;}
-
-.btns_list3 .purchase_btn {text-align: center; font-family: "NotoSans KR";display: block;background-color: #268490;font-size: 22px;font-weight: 700; color: #fff;padding: 25px 72px; position: relative;}
-.btns_list3 .purchase_btn:after { width: 72px;background: url(https://img.megagong.net/m/2023/0109_finalpass/btn_arrow_white.png) 50% 50% no-repeat; position: absolute; right: 0;top: 50%;   margin-top: -16px; height: 32px; display: block;  content: ''; border-left: 1px solid #68a9b2;}
-
-
-
-@media screen and (max-width: 1200px) {
-    .btns_list li a{font-size: 18px;}
-    .btns_list2 li .btn .btn_in {padding-right: 60px;}
-    .btns_list2 li .btn .txt1 {font-size: 1.6vw;}
-    .btns_list2 li .btn .txt2 {font-size: 2.2vw;}
-    .btns_list2 li .btn .btn_in:after {width: 60px;}
-}
-
-@media screen and (max-width: 768px) {
-    .btns_list li a{font-size: 18px;padding: 15px 36px 15px 0;}
-    .btns_list3 .purchase_btn {font-size: 18px;padding: 20px 72px;}
-}
-
-@media screen and (max-width: 576px) {
-    .btn_wrp a.btn_base {font-size: 14px;}
-    .btns_list2 li .btn .btn_in {padding-right: 30px;}
-    .btns_list2 li .btn .txt1 {font-size: 14px;}
-    .btns_list2 li .btn .txt2 {font-size: 16px;}
-    .btns_list2 li .btn .btn_in:after {width: 30px;background-size: 6px auto;}
-}
-</style>*/}
-
-<p className="page_text">메가패스 등 여러 이벤트 페이지에서 사용되는 사각형 형태의 버튼 양식입니다. <br /> 
-디자인 시안의 색상에 맞게 Color 코드변경 및 상세 수정을 권장합니다.</p>
-
-
-<pre className="language-html html act"></pre>
-<pre className="language-css act"></pre>
-
-                <div className="page_bot_wrap">
-                    <a className="use_link" href="<%=url_main%>//s/gong/pass/final_2023.asp#eventWrap" target="_blank"><i className='bx bx-link'></i>EXAMPLE</a>
-                    <div className="cap_tag">
-                        <ul>
-                            <li><p>#구매하기</p> </li>
-                            <li><p>#사각형</p> </li>
-                            <li><p>#메가패스</p> </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-            <div className="page_text_wrap">
-                <p className="page_head">버튼 - 라운드형</p> 
-                <button className="code_open"><span className="open_bg"></span><span className="open_shape"></span></button>
-                
-                <div className="issue-box-wrap"></div>
-                <div className="position_site"><img src="/images/btn3.png" alt='버튼위치' /></div>
-                
-
-<div className="code-box html"><div className="round_btn_wrap">
-    <a href="javascript:openPop_popup1();" title="인증하기" className="btn_round">인증하기
-        <i>-</i>
-    </a>
-</div></div>
-
-{/*<style>.btn_round {display: block;background: #000; color: #fff;font-size: 24px;line-height: 75px; height: 75px;font-weight: bold; border-radius: 7px; position: relative;text-align: center; font-family: "NotoSans KR";}
-.btn_round i { background: url(https://img.megagong.net/m/2022/0708_trans/coupon_btn_icon.png) 0 0 no-repeat; width: 17px; height: 27px; margin: 25px 0 0 60px; position: absolute; top: 0; left: 50%; font-size: 0;}
-</style>*/}
-
-<p className="page_text">여러 이벤트 페이지에서 사용되는 둥근 형태의 버튼 양식입니다.<br /> 
-디자인 시안의 색상에 맞게 Color 코드변경 및 상세 수정을 권장합니다. </p>
-
-<pre className="language-html html act"></pre>
-<pre className="language-css act"></pre>
-
-                <div className="page_bot_wrap">
-                    <a className="use_link" href="<%=url_main%>/event/2023/02090007/index.asp#eventWrap" target="_blank"><i className='bx bx-link'></i>EXAMPLE</a>
-                    <div className="cap_tag">
-                        <ul>
-                            <li><p>#인증하기</p> </li>
-                            <li><p>#둥근느낌</p> </li>
-                            <li><p>#프로모션</p> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <Button3 />
+            <Button4 />
 
             <div className="page_text_wrap">
                 <p className="page_head">버튼 - hover 컬러</p> 

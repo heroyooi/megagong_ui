@@ -1,8 +1,9 @@
 <!-- @@ COMMON -->
-<!-- #include virtual = "/app/common/Header.asp"-->
-<!-- #include virtual = "/app/common/Footer.asp"-->
-<!-- #include virtual = "/app/common/Aside.asp"-->
-<!-- #include virtual = "/app/common/PageHead.asp"-->
+<!-- #include virtual = "/app/common/menu/Header.asp"-->
+<!-- #include virtual = "/app/common/menu/Footer.asp"-->
+<!-- #include virtual = "/app/common/menu/Aside.asp"-->
+<!-- #include virtual = "/app/common/page/PageHead.asp"-->
+<!-- #include virtual = "/app/common/page/PageContent.asp"-->
 <!-- // @@ COMMON -->
 
 
@@ -21,6 +22,10 @@
 <!-- #include virtual = "/app/component/ButtonComponentRenew.asp"--><!-- 삭제 예정 -->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
 <!-- // @@ COMPONENT -->
+
+<!-- @@ HOOKS -->
+<!-- #include virtual = "/app/component/hooks/useCode.asp"-->
+<!-- // @@ HOOKS -->
 
 
 <!-- @@ PAGE -->

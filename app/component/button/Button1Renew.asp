@@ -11,7 +11,7 @@
 
     return (
       <div className="page_text_wrap" id="button1">
-        <p className="page_head">버튼 - yerin</p> 
+        <p className="page_head  w-96 h-10 bg-gradient-to-r from-zinc-600 to-mainColor-500">버튼 - yerin</p> 
         {user && <button className="code_open"><span className="open_bg"></span><span className="open_shape"></span></button>}
         
         <div className="issue-box-wrap"></div>

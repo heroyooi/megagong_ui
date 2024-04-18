@@ -35,10 +35,25 @@
 <script>
 tailwind.config = {
   theme: {
-    fontFamily: {
+    extend: {
+      fontFamily: {
       'gapyeongHanseokbong' : ['GapyeongHanseokbongR'],
       'sans' : ['Pretendard']
+      },
+      colors: {
+          mainColor: {
+              500: '#3333ff',
+          },
+      },
+      screens: {
+        'sm': { max: '1200px' },
+        'md': { max: '992px' },
+        'lg': { max: '768px' },
+        'xl': { max: '576px' },
+        '2xl': { max: '375px' },
+      },
     }
+    
   }
 }
 </script>

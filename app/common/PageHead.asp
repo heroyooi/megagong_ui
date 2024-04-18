@@ -8,7 +8,7 @@
       }, []);
 
       return (
-        <div className="page_name_wrap">
+        <div className="page_name_wrap border-mainColor-500">
             <h3 className="page_name">{name}</h3>
             <h3 className="page_name_sub">{sub}</h3>
             <p className="page_sub_text" dangerouslySetInnerHTML={{__html: text}} />

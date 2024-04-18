@@ -133,6 +133,8 @@ i.bx.bx-plus {
     width: 85%;
 } */
 .page_wrap .page_name_wrap {
+    /* border-image: linear-gradient(to top, #7687ff, #000000) 1; */
+    border-image: linear-gradient(to top, #7687ff, #464646) 1;
 }
 .page_wrap .page_name {
     font-family: 'Montserrat';
@@ -165,7 +167,7 @@ i.bx.bx-plus {
     font-size: 19px;
     font-weight: 800;
     /* background: #464646; */
-
+    background: linear-gradient(270deg, rgb(116 133 251) -1%, rgb(70 70 70) 38%);
     padding: 5px 50px 5px 60px;
     margin: 0 10px 0 -60px;
     border-radius: 50px;

@@ -620,7 +620,7 @@ i.bx.bx-copy-alt { margin-right: 6%; margin-left: -1%; font-size: 20px; vertical
 /* ??úù??ô•??®„Öº?Çï ??úù?Î£???Çï??úù?Î£???Çï??úù?Î£???Çï ??úù?Î£???Çï??úù?Î£???Çï css??úù??ôó?Îº???Çï */
 .page_wrap { width: 100%; height: 100%; overflow-x: hidden; position: relative; font-family: 'NotoSans KR'; } 
 .page_wrap .page_inner { width: 84%; margin: 0 0px 0 30px; padding: 120px 0; } 
-.page_wrap .page_name_wrap { margin-bottom: 70px; border-left: 10px solid blue; padding-left: 20px;  position: relative; } 
+.page_wrap .page_name_wrap { margin-bottom: 70px; border-left: 10px solid blue; padding-left: 20px; border-image: linear-gradient(to top, #6fceff, #a9b4ff) 1; position: relative; } 
 .page_wrap .page_name_wrap ~ pre{display:none;}
 .page_wrap .page_name { font-size: 35px; text-align: left; text-transform: uppercase; font-weight: 900; letter-spacing: -1px; } 
 .page_wrap .page_name_sub { font-size: 24px; color: #000000ad; text-align: left; } 

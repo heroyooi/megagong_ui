@@ -127,32 +127,4 @@ End if
       </div>
     </div>
     <div class="wrap">
-      <div class="guide-header" style="display: none;">
-        <div class="guide-h-inner">
-            <h1><!--<img src="/images/h1.png" alt="메가공무원" />--><a href="/index.asp"><img src="/images/logo3.png" alt='메가공무원' width="35"></a></h1>
-            <span class="desc"><a href="/index.asp">COMPONENT GUIDE</a></span>
-            
-            <!-- 로그인 후 -->
-            <ul class="user_info pending" id="authorized" style="display: none;">
-                <li class="user txt"><span>홍길동</span>(<em>honggildong</em>)님 환영합니다.</li>
-                <li class="user icon"><i class='bx bxs-user' ></i></li>
-                <li><a onclick="logoutAction(); return false;" href="#" class="btn"><p><i class='bx bx-log-out' style='color:#0000003d;' ></i></p></a></li>
-            </ul>
-            
-            <!-- 로그인 후 -->
-            <ul class="user_info pending" id="anonymous">
-                <li><a href="/login.asp">로그인</a></li>
-                <li><a href="/signup.asp">회원가입</a></li>
-            </ul>
-            
-
-            <!--
-            <div class="manage-user-area" style="display: none;">
-              <h2>회원 관리 <span>(최근 접속 순)</span></h2>
-              <ul class="user-list"></ul>
-              <a href="#" class="btn_close">닫기</a>
-            </div>
-            -->
-        </div>
-      </div>
       

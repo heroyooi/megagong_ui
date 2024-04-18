@@ -14,6 +14,7 @@
       <AsideProvider>
         <Aside />
         {cid === 'button' && <ButtonComponent />}
+        {cid === 'buttonrenew' && <ButtonComponentRenew />}
       </AsideProvider>
     )
   }

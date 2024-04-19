@@ -4,6 +4,7 @@
     function Header() {
         const history = useHistory();
         const { user, setUser } = useAuth();
+        const [activeMenu, setActiveMenu] = useState(false);
 
         const logoutAction = async () => {
           if ($items.length) {
@@ -19,6 +20,29 @@
           // Lab.refreshUser();
           history.push('/');
           setUser(null);
+          setActiveMenu(false);
+        }
+
+        useEffect(() => {
+          if (activeMenu) {
+            document.querySelector('.header_wrp').classList.add('open_menu');
+            document.body.classList.add('no_scroll');
+          } else {
+            document.querySelector('.header_wrp').classList.remove('open_menu');
+            document.body.classList.remove('no_scroll');
+          }
+
+          return () => {
+            document.body.classList.remove('no_scroll');
+          }
+        }, [activeMenu]);
+
+        const toggleMenu = () => {
+          setActiveMenu(prev => !prev);
+        }
+        const closeMenu = (link) => () => {
+          history.push(link);
+          setActiveMenu(false);
         }
 
         return (
@@ -51,19 +75,40 @@
                       )}
                   </ul>
                 </nav>
-                <button type="button" className="btn_menu">
+                <button type="button" className="btn_menu" onClick={toggleMenu}>
                   <div className="shape">
-                    {/*<svg vid="menu_btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" xml:space="preserve">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" xmlSpace="preserve">
                       <g>
                         <rect x="0" y="0" width="18" height="2" rx="1"/>
                         <rect x="0" y="6" width="18" height="2" rx="1"/>
                         <rect x="0" y="12" width="18" height="2" rx="1"/>
                       </g>
-                    </svg>*/}
+                    </svg>
                   </div>
                 </button>
                 <div className="mo_dimm"></div>
-                <div className="mo_menu_wrp"></div>
+                <div className="mo_menu_wrp">
+                  <ul className="nav_list">
+                    <li onClick={closeMenu('/component/button')}><a>COMPONENT</a></li>
+                    <li onClick={closeMenu('/page/teacher')}><a>PAGE</a></li>
+                    <li onClick={closeMenu('/blog')}><a>BLOG</a></li>
+                    {user && <li onClick={closeMenu('/js_test')}><a>JS TEST</a></li>}
+                  </ul>
+                  <ul className="util_list">
+                    {user
+                      ? (
+                        <>
+                          <li className="authorized profile"><span>{user.displayName}</span>(<em>{user.email}</em>)님 환영합니다.</li>
+                          <li className="authorized logout" onClick={logoutAction}><a className="btn"><i className='bx bx-log-out'></i></a></li>
+                        </>
+                      ) : (
+                        <>
+                          <li onClick={closeMenu('/login')} className="anonymous"><a>LOGIN</a></li>
+                          <li onClick={closeMenu('/signup')} className="anonymous"><a>SIGNUP</a></li>
+                        </>
+                      )}
+                  </ul>
+                </div>
               </div>
             </header>
 

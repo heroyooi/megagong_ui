@@ -524,7 +524,7 @@ const Lab =
       
           $('.util_list').addClass('on');
       
-          $('.mo_menu_wrp').html($('#gnb ul').clone());
+          // $('.mo_menu_wrp').html($('#gnb ul').clone());
       
           // $('.popup_tweet .items .user').find('em.name').text(user.displayName);
           // $('.popup_tweet .items .user').find('em.email').text(`(${user.email})`);
@@ -616,7 +616,7 @@ const Lab =
                     $('#signupEmailAuthPage').find('#input_id').focus();
                   }
                 }
-                $('.mo_menu_wrp').html($('#gnb ul').clone());
+                // $('.mo_menu_wrp').html($('#gnb ul').clone());
                 $('.util_list').addClass('on');
               }
               if (PAGE_JS_TEST) {
@@ -725,7 +725,7 @@ const Lab =
               getBlogItem(); // blog.js 파일 내부에 들어갈 경우 수정, 삭제 버튼이 가려짐
               getBlogCommentItem();
             }
-            $('.mo_menu_wrp').html($('#gnb ul').clone());
+            // $('.mo_menu_wrp').html($('#gnb ul').clone());
             setTimeout(function(){
               $('.util_list').addClass('on');
             }, 700);

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button4() {
+  function Button4({ title }) {
 
 const html = `<div class="round_btn_wrap">
     <a href="javascript:openPop_popup1();" title="인증하기" class="btn_round">인증하기
@@ -15,7 +15,7 @@ const css = `.btn_round {display: block;background: #000; color: #fff;font-size:
 
     return (
       <PageContent
-        title="버튼 - 라운드형"
+        title={title}
         desc="여러 이벤트 페이지에서 사용되는 둥근 형태의 버튼 양식입니다. <br />디자인 시안의 색상에 맞게 Color 코드변경 및 상세 수정을 권장합니다."
         image="/images/btn3.png"
         html={html}

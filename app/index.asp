@@ -4,6 +4,7 @@
 <!-- #include virtual = "/app/common/menu/Aside.asp"-->
 <!-- #include virtual = "/app/common/page/PageHead.asp"-->
 <!-- #include virtual = "/app/common/page/PageContent.asp"-->
+<!-- #include virtual = "/app/common/page/PageAnk.asp"-->
 <!-- // @@ COMMON -->
 
 
@@ -23,6 +24,7 @@
 
 <!-- @@ HOOKS -->
 <!-- #include virtual = "/app/component/hooks/useCode.asp"-->
+<!-- #include virtual = "/app/component/hooks/useScrollNavi.asp"-->
 <!-- // @@ HOOKS -->
 
 

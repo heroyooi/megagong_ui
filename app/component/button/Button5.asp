@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button5() {
+  function Button5({ title }) {
 
 const html = `<ul class="info_list notosans">
     <li><a href="https://lab.megagong.net/l/gong/guide/guide.asp" title="공무원 가이드" target="_blank"><span>공무원 가이드</span></a></li>

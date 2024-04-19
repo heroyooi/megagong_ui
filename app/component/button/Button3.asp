@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button3() {
+  function Button3({ title }) {
 
 const html = `
 <ul class="btns_list">
@@ -73,7 +73,7 @@ const css = `.btns_list { margin-top: 0;justify-content: center;    display: fle
 
     return (
       <PageContent
-        title="버튼 - 구매"
+        title={title}
         desc="메가패스 등 여러 이벤트 페이지에서 사용되는 사각형 형태의 버튼 양식입니다. <br />디자인 시안의 색상에 맞게 Color 코드변경 및 상세 수정을 권장합니다."
         image="/images/btn3.png"
         html={html}

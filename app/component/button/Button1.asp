@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button1() {
+  function Button1({ title }) {
 
 const html = `<div className="btn_list">
   <a href="javascript:;" class="cmn_btn">내가쓴글 보기</a>
@@ -19,7 +19,7 @@ const css = `.btn_wrap .btn {display: block;width: 130px;height: 40px;line-heigh
 
     return (
       <PageContent
-        title="버튼 - 기본형"
+        title={title}
         desc="게시글 작성 및 질문 등의 용도를 가진 버튼들은 지정된 고유의 CSS를 유지하여 모두 동일한 디자인이 되도록 작업합니다. <br />별도로 지정된 상황 외에는, 기본적으로 모든 버튼은 중앙 혹은 오른쪽에 정렬하도록 합니다."
         image="/images/btn.png"
         html={html}

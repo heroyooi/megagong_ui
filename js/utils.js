@@ -455,10 +455,10 @@ const Lab =
 
         // 우측 네비게이션
         if ($('.ank').length) {
-          $('.ank').append(
-            '<button><i class="bx bx-chevrons-down"></i></button>'
-          );
-          $('.ank').append('<ul></ul>');
+          // $('.ank').append(
+          //   '<button><i class="bx bx-chevrons-down"></i></button>'
+          // );
+          // $('.ank').append('<ul></ul>');
           if ($popup_tweet_item.length) {
             // $tweet_select_item.append('<option value="0">' + isPathname.toUpperCase() + ' 타입 선택</option>');
             $('.select_wrap').append(

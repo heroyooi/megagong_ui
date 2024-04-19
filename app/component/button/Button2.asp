@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button2() {
+  function Button2({ title }) {
 
 const html = `
 <button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>
@@ -81,7 +81,7 @@ const css = `
 
     return (
       <PageContent
-        title="버튼 - 슬라이드 좌우형"
+        title={title}
         desc="슬라이드에 사용되는 좌, 우측 버튼의 예시입니다. <br />슬라이드 버튼의 경우, 반응형을 고려하여 사이즈를 책정하고 및 버튼의 색상을 지정하는 것을 권장합니다."
         image="/images/btn2.png"
         html={html}

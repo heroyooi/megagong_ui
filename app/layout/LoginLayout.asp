@@ -75,7 +75,14 @@
     const history = useHistory();
 
     useEffect(() => {
+      document.querySelector('.header_wrp').classList.add('relative');
+      document.querySelector('.header_wrp .btn_menu2').classList.add('hide');
       Lab.top();
+
+      return () => {
+        document.querySelector('.header_wrp').classList.remove('relative');
+        document.querySelector('.header_wrp .btn_menu2').classList.remove('hide');
+      }
     }, []);
 
     const loginAction = async (e) => {

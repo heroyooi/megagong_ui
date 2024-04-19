@@ -5,6 +5,7 @@
         const history = useHistory();
         const { user, setUser } = useAuth();
         const [activeMenu, setActiveMenu] = useState(false);
+        const [activeLnb, setActiveLnb] = useState(false);
 
         const logoutAction = async () => {
           if ($items.length) {
@@ -33,9 +34,22 @@
           }
 
           return () => {
+            document.querySelector('.header_wrp').classList.remove('open_menu');
             document.body.classList.remove('no_scroll');
           }
         }, [activeMenu]);
+
+        useEffect(() => {
+          if (activeLnb) {
+            document.querySelector('.guide-aside')?.classList.add('open_nav');
+          } else {
+            document.querySelector('.guide-aside')?.classList.remove('open_nav');
+          }
+
+          return () => {
+            document.querySelector('.guide-aside')?.classList.remove('open_nav');
+          }
+        }, [activeLnb]);
 
         const toggleMenu = () => {
           setActiveMenu(prev => !prev);
@@ -49,7 +63,7 @@
           <>
             <header className="header_wrp">
               <div className="header">
-                <button type="button" className="btn_menu2">
+                <button type="button" className="btn_menu2" onClick={() => setActiveLnb(prev => !prev)}>
                   <i className='bx bx-plus'></i>
                 </button>
                 <h1 className="logo"><Link to="/">COMPONENT GUIDE</Link></h1>

@@ -51,6 +51,7 @@ body.v-fixed .guide-header { top: -81px; }
 
 /* ??úù?Î£???Çï??úù?Î£???Çï??úù?Î£???Çï ??úù?Î£???Çï??úù? */
 .header_wrp { position: fixed; left: 0; top: 0; width: 100%; z-index: 10; font-family: "Montserrat", 'NotoSans KR', sans-serif; } 
+.header_wrp.relative{position: relative;}
 .header_wrp .header { display: flex; align-items: center; justify-content: space-between; padding: 30px; color: #000; } 
 .header_wrp .header::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; backdrop-filter: blur(0.5em); } 
 .header_wrp .header h1 { position: relative; z-index: 1; } 
@@ -66,6 +67,7 @@ body.v-fixed .guide-header { top: -81px; }
 .header_wrp #gnb li.logout { margin-left: 10px; } 
 .header_wrp .btn_menu { display: none; width: 24px; height: auto; position: relative; z-index: 1; } 
 .header_wrp .btn_menu2 { display: none; width: 40px; height: auto; position: relative; z-index: 1;    color: #000; } 
+.header_wrp .btn_menu2.hide{display:none !important;}
 .header_wrp .btn_menu .shape { -webkit-transition: -webkit-transform 0.3s ease-out; transition: -webkit-transform 0.3s ease-out; transition: transform 0.3s ease-out; transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; } 
 .header_wrp .btn_menu .shape svg { display: block; width: 100%; } 
 .header_wrp .btn_menu .shape svg rect { fill: #000; -webkit-transition: -webkit-transform 0.3s ease-out; transition: -webkit-transform 0.3s ease-out; transition: transform 0.3s ease-out; transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; } 

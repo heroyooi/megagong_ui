@@ -11,7 +11,7 @@
 
     return (
       <div className="page_text_wrap">
-        <p className="page_head">{title}</p> 
+        <p className="page_head w-96 h-10 bg-gradient-to-r from-zinc-600 to-mainColor-500">{title}</p> 
         {user && (
           <button className="code_open" onClick={onView}>
             <span className={view ? "open_bg on" : "open_bg"}></span>

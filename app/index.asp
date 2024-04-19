@@ -9,7 +9,6 @@
 
 <!-- @@ LAYOUT -->
 <!-- #include virtual = "/app/layout/MainLayout.asp"-->
-<!-- #include virtual = "/app/layout/MainLayoutRenew.asp"--><!-- 삭제 예정 -->
 <!-- #include virtual = "/app/layout/ComponentLayout.asp"-->
 <!-- #include virtual = "/app/layout/PageLayout.asp"-->
 <!-- #include virtual = "/app/layout/LoginLayout.asp"-->
@@ -19,7 +18,6 @@
 
 <!-- @@ COMPONENT -->
 <!-- #include virtual = "/app/component/ButtonComponent.asp"-->
-<!-- #include virtual = "/app/component/ButtonComponentRenew.asp"--><!-- 삭제 예정 -->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
 <!-- // @@ COMPONENT -->
 
@@ -78,7 +76,6 @@ tailwind.config = {
       <HashRouter basename="/">
         <Header />
         <Route path="/" exact component={MainLayout} />
-        <Route path="/renew" component={MainLayoutRenew} />
         <Route path="/component/:cid" component={ComponentLayout} />
         <Route path="/page/:pid" component={PageLayout} />
         {/*<Route path="/blog" component={BlogLayout} />*/}

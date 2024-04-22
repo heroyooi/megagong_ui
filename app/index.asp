@@ -49,6 +49,9 @@ tailwind.config = {
           mainColor: {
               500: '#3333ff',
           },
+          mainColor_gray: {
+              500: '#eee',
+          },
       },
       screens: {
         'sm': { max: '1200px' },

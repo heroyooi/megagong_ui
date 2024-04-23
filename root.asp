@@ -18,7 +18,7 @@
     const container = document.getElementById('root');
     const root = ReactDOM.createRoot(container);
 
-    const { useState, useCallback, useMemo, useEffect, useRef, useContext, createElement } = React;
+    const { useState, useCallback, useMemo, useEffect, useLayoutEffect, useRef, useContext, createElement } = React;
     const { HashRouter, BrowserRouter, Route, Link, useParams, useLocation, useHistory, withRouter } = ReactRouterDOM;
 
     root.render(

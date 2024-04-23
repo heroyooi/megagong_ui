@@ -2,12 +2,15 @@
   'use strict';
 
   function Tweet() {
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(true);
     const [tweets, setTweets] = useState([]);
-    const { user } = useAuth();
+    const [tweetValue, setTweetValue] = useState('');
+    const { user, admin } = useAuth();
+    const tweetInput = useRef(null);
+    const tweetBox = useRef(null);
+    const tweetList = useRef(null);
 
     useEffect(() => {
-      console.log({FBU_ADMIN_UID, USER_ID})
       tweetRef
         .orderBy("createdAt", "asc")
         .onSnapshot((snapshot) => {
@@ -15,22 +18,100 @@
             id: doc.id,
             ...doc.data(),
           }));
+          setTweets([]);
           tweetArray.forEach((tweet) => {
             setTweets(
               prev => [
                 ...prev,
                 {
                   id: tweet.id,
+                  creatorId: tweet.creatorId,
                   option: tweet.optionValue,
                   author: tweet.author,
                   text: tweet.text,
+                  createdAt: tweet.createdAt,
                 }
               ]
             )
-          })
-        })
-              
+          });
+          snapshot.docChanges().forEach((change) => {
+            if (change.type === 'removed' || change.type === 'modified') {
+            }
+            if (change.type === 'added') {
+            }
+          });
+        });
     }, []);
+
+    useEffect(() => {
+      if (tweetBox.current.scrollTop >= tweetList.current.clientHeight - tweetBox.current.clientHeight - 400) {
+        setTimeout(() => {
+          tweetBox.current.scrollTo({
+            top: tweetList.current.clientHeight,
+          })
+          tweetInput.current.focus();
+        }, 150);
+      }
+    }, [tweets]);
+
+    const handleSubmit = useCallback(() => {
+      const tweetObj = {
+        text: tweetValue,
+        createdAt: Date.now(),
+        author: user.displayName,
+        creatorId: user.uid,
+      }
+      tweetRef.add(tweetObj).then(() => {
+        tweetBox.current.scrollTo({
+            top: tweetList.current.clientHeight,
+        });
+        setTweetValue('');
+      });
+    }, [tweetValue]);
+
+    const handleKeyPress = (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault(); // 기본 동작(새 줄 추가) 방지
+        handleSubmit();
+      }
+    };
+
+    const handleChange = useCallback((e) => {
+      setTweetValue(e.target.value);
+    }, []);
+
+    const DateHTML = (author, createdAt, id) => {
+      if (admin) {
+        return (
+          <span className="tweet_span owner staff">
+            <div className="wrap_design">
+              <span className="author">{author != '' ? author : '손님'}</span>
+              <span className="time">{moment(createdAt).format('YY-MM-DD a h:mm')}</span>
+            </div>
+          </span>
+        )
+      }
+      if (author == '') {
+        return (
+          <span className="tweet_span">
+            <div className="wrap_design">
+              <span className="author">손님</span>
+              <span className="time">{moment(createdAt).format('YY-MM-DD a h:mm')}</span>
+            </div>
+          </span>
+        )
+      } else {
+        console.log('>>', id, user?.uid)
+        return (
+          <span className={id == user?.uid ? "tweet_span owner staff" : "tweet_span staff"}>
+            <div className="wrap_design">
+              <span className="author">{author}</span>
+              <span className="time">{moment(createdAt).format('YY-MM-DD a h:mm')}</span>
+            </div>
+          </span>
+        )
+      }
+    }
 
     return (
       <div className={active ? "popup_tweet on" : "popup_tweet"} id="all"> 
@@ -49,22 +130,41 @@
           <p className="tweet_m_close"><i className='bx bx-x'></i></p>
           <p className="page_text">
             <div className="guide-inner-left">
-              <div className="code-box">
-                <ul className="tweet-list">
-                  {tweets.map((tweet, index) => 
-                    <li key={tweet.id}>
-                      <div className="wrap_tweet_box">
-                        <span className="ttype">{tweet.text}</span>
-                        <span className="tid">{tweet.id}</span>
-                        <span className="tweet">{tweet.text}</span>
-                      </div>
-                    </li>
-                  )}
+              <div className="code-box" ref={tweetBox}>
+                <ul className="tweet-list" ref={tweetList}>
+                  {tweets.map((tweet, index) => {
+                    const { id, text, author, createdAt, creatorId } = tweet;
+                    console.log('2 >> ',  user?.uid == creatorId || admin)
+                    return (
+                      <>
+                      <li className={(user?.uid == creatorId) || admin ? "owner" : ""} key={id}>
+                        <div className="wrap_tweet_box">
+                          <span className="ttype">{text}</span>
+                          <span className="tid">{id}</span>
+                          <span className="tweet">{text}</span>
+                        </div>
+                        {(user?.uid == creatorId) || admin && (
+                          <>
+                          <span className="btns btns1">
+                            <button className="btn edit"><i className='bx bxs-edit'></i></button>
+                            <button className="btn delete"><i className='bx bx-trash'></i></button>
+                          </span>
+                          <span className="btns btns2">
+                            <button className="btn edit"><i className='bx bx-check-circle' style={{color: '#aab4ff;'}} ></i></button>
+                            <button className="btn cancel"><i className='bx bx-message-square-x'  ></i></button>
+                          </span>
+                          </>
+                        )}
+                      </li>
+                      {DateHTML(author, createdAt, creatorId)}
+                      </>
+                    )
+                  })}
                 </ul>
               </div>
               <div className="input-area">
-                <input type="text" className="tweet" placeholder="의견을 남겨주세요." />
-                <button className="btn action"><span>등록</span></button>
+                <input type="text" className="tweet" placeholder="의견을 남겨주세요." value={tweetValue} onChange={handleChange} ref={tweetInput} onKeyPress={handleKeyPress} />
+                <button className="btn action" onClick={handleSubmit}><span>등록</span></button>
               </div>
             </div>
           </p>

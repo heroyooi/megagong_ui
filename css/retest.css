@@ -81,54 +81,50 @@ i.bx.bx-plus {
 
 
 /* .guide-aside */
-.guide-aside {
+/* .guide-aside {
     box-shadow: none;
-    /* background: #282828; */
     border-right: none;
     background: linear-gradient(0deg, rgb(69 69 69) 10%, rgb(44 44 44) 57%);
-}
-.guide-aside ul li a {
+} */
+/* .guide-aside ul li a {
     color: #fff;
-}
-.guide-aside ul li.small_nav a {
+} */
+/* .guide-aside ul li.small_nav a {
     color: #888;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-.guide-aside ul li i {
+} */
+/* .guide-aside ul li i {
     color: #fff;
-}
+} */
 /* .guide-aside ul li.on, .guide-aside ul li:hover {
     background: linear-gradient(90deg, rgb(110 126 237 / 53%) 46%, rgb(0 212 255 / 0%) 100%);
 } */
 /* .guide-aside ul li.small_nav::after {
     background: #7485fb;
 } */
-.guide-aside ul li.small_nav.on a {
+/* .guide-aside ul li.small_nav.on a {
     color: #ffffff;
-}
-.guide-aside ul li.on.big_nav a, .guide-aside ul li:hover.big_nav a {
+} */
+/* .guide-aside ul li.on.big_nav a, .guide-aside ul li:hover.big_nav a {
     color: #ffffff;
 }
 .guide-aside ul li.on i, .guide-aside ul li:hover i {
     color: #ffffff;
-}
-.guide-aside ul li.on.small_nav a, .guide-aside ul li:hover.small_nav a {
+} */
+/* .guide-aside ul li.on.small_nav a, .guide-aside ul li:hover.small_nav a {
     color: #ffffff;
-}
+} */
 
 /* .page_wrap */
-.page_wrap {
+/* .page_wrap {
     width: calc(100% - 250px);
     margin-left: 250px;
-    /* background: #000; */
     color: #fff;
-    /* background: linear-gradient(262deg, rgb(116 133 251) -18%, rgb(0 0 0) 17%); */
-    /* background: linear-gradient(262deg, rgb(116 133 251) -60%, rgb(70 70 70) 17%); */
     background: linear-gradient(227deg, rgb(155 155 155) -1%, rgb(70 70 70) 8%);
     
-}
+} */
 /* .page_wrap .page_inner {
     width: 85%;
 } */

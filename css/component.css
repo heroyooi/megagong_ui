@@ -703,7 +703,7 @@ a.go { text-align: center; display: block; font-size: 13px; margin-top: 3px; col
 .popup_tweet_board .page_head_wrap .tweet_item a.up { margin-right: 8px; } 
 .tweet_icon { font-size: 30px; padding: 28% 25%; color: #4cc2ff; line-height: 10px; } 
 .tweet_icon i.bx-x { display: none; font-size: 40px; margin: -5px; } 
-.popup_tweet { transition: 0.5s; cursor: pointer; position: fixed; bottom: 50px; right: 105px; z-index: 3; width: 60px; height: 60px; background: #fff; box-shadow: 0px 0px 10px rgb(110 162 255 / 36%); border-radius: 50%; display: none; } 
+.popup_tweet { transition: 0.5s; cursor: pointer; position: fixed; bottom: 50px; right: 105px; z-index: 3; width: 60px; height: 60px; background: #fff; box-shadow: 0px 0px 10px rgb(110 162 255 / 36%); border-radius: 50%; } 
 .popup_tweet.on { right: 505px; } 
 .popup_tweet_board { position: fixed; right: -66px; top: 0px; width: 0px; background: #fff; box-shadow: 0px 0px 10px rgb(0 0 0 / 32%); z-index: 2; transition: 0.5s; padding: 118px 5px 50px 30px; box-sizing: border-box; } 
 .popup_tweet_board.on { width: 430px; right: 0px; overflow: scroll; overflow-x: hidden; } 

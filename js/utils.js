@@ -465,30 +465,30 @@ const Lab =
               '<a href="javascript:void(0);" value="0" class="fir selected">타입 선택</a>'
             );
           }
-          $page_wrap.each(function (index) {
-            $(this).addClass('board' + (index + 1));
-            var headText = $(this).find('.page_head').text();
-            $('.ank ul').append(
-              `<li class="ank_list"><a href="javascript:void(0);" onClick="fnMove(${
-                index + 1
-              })">#${index + 1} ${headText}</a></li>`
-            );
-            if ($popup_tweet_item.length) {
-              // $tweet_select_item.append('<option value=' + (index + 1) + '>' + headText + '</option>');
-              $tweet_select_item.append(
-                '<li value=' + (index + 1) + '>' + headText + '</li>'
-              );
-            }
-          });
+          // $page_wrap.each(function (index) {
+          //   $(this).addClass('board' + (index + 1));
+          //   var headText = $(this).find('.page_head').text();
+          //   $('.ank ul').append(
+          //     `<li class="ank_list"><a href="javascript:void(0);" onClick="fnMove(${
+          //       index + 1
+          //     })">#${index + 1} ${headText}</a></li>`
+          //   );
+          //   if ($popup_tweet_item.length) {
+          //     // $tweet_select_item.append('<option value=' + (index + 1) + '>' + headText + '</option>');
+          //     $tweet_select_item.append(
+          //       '<li value=' + (index + 1) + '>' + headText + '</li>'
+          //     );
+          //   }
+          // });
         }
 
-        $('.ank button').on('click', function () {
-          if ($('.ank ul').hasClass('close_list')) {
-            $('.ank ul').removeClass('close_list');
-          } else {
-            $('.ank ul').addClass('close_list');
-          }
-        });
+        // $('.ank button').on('click', function () {
+        //   if ($('.ank ul').hasClass('close_list')) {
+        //     $('.ank ul').removeClass('close_list');
+        //   } else {
+        //     $('.ank ul').addClass('close_list');
+        //   }
+        // });
       },
 
       // user
@@ -845,7 +845,9 @@ const Lab =
                 <span class="author">${tweet.author !== '' ? tweet.author : '손님'}</span>
                 <span class="time">${moment(tweet.createdAt).format('YY-MM-DD a h:mm')}</span>
                 </div>
-                `
+                `;
+                console.log(' > ', FBU_ADMIN_UID)
+                console.log(' > ', USER_ID)
                 if (FBU_ADMIN_UID === USER_ID) { // 관리자인 경우
                   // $tweet_list_all.append(`<li class="owner">${defaultHtml}${btnHtml}</li>`);
                   $tweet_list_all.append(`<li class="owner">${defaultHtml}${btnHtml}</li><span class="tweet_span owner staff">${dateHtml}</span>`);

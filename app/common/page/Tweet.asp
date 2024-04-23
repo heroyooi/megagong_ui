@@ -3,9 +3,33 @@
 
   function Tweet() {
     const [active, setActive] = useState(false);
+    const [tweets, setTweets] = useState([]);
+    const { user } = useAuth();
 
     useEffect(() => {
-      
+      console.log({FBU_ADMIN_UID, USER_ID})
+      tweetRef
+        .orderBy("createdAt", "asc")
+        .onSnapshot((snapshot) => {
+          const tweetArray = snapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          }));
+          tweetArray.forEach((tweet) => {
+            setTweets(
+              prev => [
+                ...prev,
+                {
+                  id: tweet.id,
+                  option: tweet.optionValue,
+                  author: tweet.author,
+                  text: tweet.text,
+                }
+              ]
+            )
+          })
+        })
+              
     }, []);
 
     return (
@@ -26,7 +50,17 @@
           <p className="page_text">
             <div className="guide-inner-left">
               <div className="code-box">
-                <ul className="tweet-list"></ul>
+                <ul className="tweet-list">
+                  {tweets.map((tweet, index) => 
+                    <li key={tweet.id}>
+                      <div className="wrap_tweet_box">
+                        <span className="ttype">{tweet.text}</span>
+                        <span className="tid">{tweet.id}</span>
+                        <span className="tweet">{tweet.text}</span>
+                      </div>
+                    </li>
+                  )}
+                </ul>
               </div>
               <div className="input-area">
                 <input type="text" className="tweet" placeholder="의견을 남겨주세요." />

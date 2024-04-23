@@ -84,11 +84,13 @@ tailwind.config = {
     return (
       <HashRouter basename="/">
         <Header />
-        <Route path="/" exact component={MainLayout} />
-        <Route path="/component/:cid" component={ComponentLayout} />
-        <Route path="/page/:pid" component={PageLayout} />
-        {/*<Route path="/blog" component={BlogLayout} />*/}
-        <Route path="/login" component={LoginLayout} />
+        <div id="container">
+          <Route path="/" exact component={MainLayout} />
+          <Route path="/component/:cid" component={ComponentLayout} />
+          <Route path="/page/:pid" component={PageLayout} />
+          {/*<Route path="/blog" component={BlogLayout} />*/}
+          <Route path="/login" component={LoginLayout} />
+        </div>
         <Footer />
       </HashRouter>
     )

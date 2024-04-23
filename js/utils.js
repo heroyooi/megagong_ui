@@ -846,8 +846,6 @@ const Lab =
                 <span class="time">${moment(tweet.createdAt).format('YY-MM-DD a h:mm')}</span>
                 </div>
                 `;
-                console.log(' > ', FBU_ADMIN_UID)
-                console.log(' > ', USER_ID)
                 if (FBU_ADMIN_UID === USER_ID) { // 관리자인 경우
                   // $tweet_list_all.append(`<li class="owner">${defaultHtml}${btnHtml}</li>`);
                   $tweet_list_all.append(`<li class="owner">${defaultHtml}${btnHtml}</li><span class="tweet_span owner staff">${dateHtml}</span>`);

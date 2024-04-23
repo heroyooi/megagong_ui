@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, html, css, items, link }) {
+  function PageContent({ title, desc, image, html, css, js, items, link }) {
     const { user } = useAuth();
     const refCode = useRef(null);
     const [view, onView] = useCode(false, refCode);
@@ -26,7 +26,8 @@
 
 {<div style={view ? { display: "block" } : { display: "none" }} ref={refCode}>
   <pre className="language-html"><code className="language-html">{html}</code></pre>
-  <pre className="language-css"><code className="language-css">{css}</code></pre>
+  {css && <pre className="language-css"><code className="language-css">{css}</code></pre>}
+  {js && <pre className="language-js"><code className="language-js">{js}</code></pre>}
 </div>}
         <div className="page_bot_wrap flex justify-between items-center lg:block">
             <a className="use_link text-mainColor-500 rounded-full border-solid border-2 border-mainColor-500 pl-4 pr-5 py-1.5 align-middle lg:w-full lg:text-center lg:mb-1" href="<%=url_main%>/megagong.asp" target="_blank">

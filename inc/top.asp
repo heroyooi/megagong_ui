@@ -81,6 +81,7 @@ End if
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/main/megagong_main_gong_v21_3.css" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/js/jquery/plug-in/swiper.css" />
   <!--<link rel="stylesheet" type="text/css" href="<%=url_main%>/common/js/jQuery/plug-in/slick.css" />-->
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common_lab.css">
 
   <link type="text/css" rel="stylesheet" href="/css/reset.css" />
   <link type="text/css" rel="stylesheet" href="/css/renew_overview.css" />
@@ -101,6 +102,8 @@ End if
   <script type="text/javascript" src="<%=url_main%>/common/js/common.js"></script>
   <script type="text/javascript" src="<%=url_main%>/common/js/common_k_crazytiger.js"></script>
   <script type="text/javascript" src="<%=url_main%>/common/js/kollus.videogateway-controller.min.js"></script>
+  <script src="<%=url_main%>/common/js/ui_lab.js"></script>
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript" src="https://cdn.tiny.cloud/1/ei8uwj5xt3ytcx7vv25y1ozx6qrlh6day39weu1cvu46hvi9/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   <script type="text/javascript" src="https://cdn.tiny.cloud/1/ei8uwj5xt3ytcx7vv25y1ozx6qrlh6day39weu1cvu46hvi9/tinymce/6/plugins.min.js" referrerpolicy="origin"></script>

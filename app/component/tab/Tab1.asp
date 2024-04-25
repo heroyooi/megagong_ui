@@ -21,10 +21,6 @@ const html = `<div class="tab-upper">
 
 const js = `LUI.tabUI();`;
 
-    useEffect(() => {
-      LUI.tabUI();
-    }, []);
-
     return (
       <PageContent
         title={title}

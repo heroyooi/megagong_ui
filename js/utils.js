@@ -878,7 +878,7 @@ const Lab =
           $loading_all.fadeOut(200);
           $loading_all_ui.fadeOut(200);
         }
-      }
+      },
     };
   })(window.jQuery, window, document);
 

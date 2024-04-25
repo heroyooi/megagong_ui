@@ -32,7 +32,7 @@ const css = `.info_list {font-weight: 200;display: flex;flex-wrap: wrap;justify-
 
     return (
       <PageContent
-        title="버튼 - 라운드형"
+        title={title}
         desc="메가공무원 메인 하단에서 사용되는 링크 이동 버튼입니다.<br /> Hover할 경우, Background의 색상이 큰 폭으로 변경되며, 이를 통하여 사용자가 원활하게 기능을 인식할 수 있도록 돕습니다. <br />디자인 시안의 색상에 맞게 Color 코드변경 및 상세 수정을 권장합니다."
         image="/images/btn4.png"
         html={html}

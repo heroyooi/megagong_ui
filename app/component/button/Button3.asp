@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button3({ title }) {
+  function Button3({ title, onChange }) {
 
 const html = `
 <ul class="btns_list">
@@ -80,6 +80,7 @@ const css = `.btns_list { margin-top: 0;justify-content: center;    display: fle
         css={css}
         items={["구매하기","사각형","메가패스"]}
         link="<%=url_main%>/s/gong/pass/final_2023.asp#eventWrap"
+        onChange={onChange}
       />
     )
   }

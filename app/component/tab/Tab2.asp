@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Tab2({ title }) {
+  function Tab2({ title, onChange }) {
 
 const html = `<link type="text/css" rel="stylesheet" href="<%=url_main%>/teacher/curr/curr.css" />
 
@@ -33,6 +33,7 @@ const js = `$(document).on('click', '.curr_zone#sample .tab_btn li', function(){
         js={js}
         items={["커리큘럼","사각형","강사홈"]}
         link="<%=url_main%>/teacher/home.asp?bcode=pt1969"
+        onChange={onChange}
       />
     )
   }

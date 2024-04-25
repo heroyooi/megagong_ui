@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button2({ title }) {
+  function Button2({ title, onChange }) {
 
 const html = `
 <button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>
@@ -88,6 +88,7 @@ const css = `
         css={css}
         items={["슬라이드버튼","넘기기버튼","화살표"]}
         link="<%=url_main%>"
+        onChange={onChange}
       />
     )
   }

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
   
-  function useScrollNavi(position, refs, setState, margin) {
+  function useScrollNavi(position, refs, setState, margin, callback) {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const id = searchParams.get('id');
@@ -20,7 +20,7 @@
           position.current[index] = ref.offsetTop - margin;
         });
       }, 250);
-    }, [refs.current, position.current]);
+    }, [refs.current, position.current, callback]);
 
     useEffect(() => {
       // console.log('>> ', refs.current.length, position.current)
@@ -52,7 +52,7 @@
         window.removeEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
       };
-    }, [refs.current, position.current]);
+    }, [refs.current, position.current, callback]);
 
     return null;
   }

@@ -24,7 +24,6 @@
 <!-- // @@ COMPONENT -->
 
 <!-- @@ HOOKS -->
-<!-- #include virtual = "/app/component/hooks/useCode.asp"-->
 <!-- #include virtual = "/app/component/hooks/usePageInit.asp"-->
 <!-- #include virtual = "/app/component/hooks/useScrollNavi.asp"-->
 <!-- // @@ HOOKS -->

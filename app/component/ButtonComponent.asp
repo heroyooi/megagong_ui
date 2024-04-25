@@ -30,22 +30,23 @@
         component: Button5
       },
     ]
-    
-    
+   
     const componentRefs = useRef(Array(componentArray.length).fill(null));
     const componentPosition = useRef([]);
     const [componentActive, setComponentActive] = useState(0);
 
     const { user } = useAuth();
+
+    const toggleCode = () => {}
     usePageInit(2, 1);
-    useScrollNavi(componentPosition, componentRefs, setComponentActive, 120);
+    useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     return (
       <>
       <div className="page_wrap w-[calc(100%-15rem)] ml-60 h-full overflow-x-hidden relative" id="page_wrap">
         <div className="page_inner w-5/6 ml-8 pt-32">
             <PageHeader name="Button" sub="버튼" text="메가공무원 사이트에서 통상적으로 사용되는 버튼 컴포넌트입니다.<br />사용되는 페이지의 디자인 및 용도에 맞게 다양한 변형이 가능합니다." />
-            {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={item.title} /></div>)}
+            {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={item.title} onChange={toggleCode} /></div>)}
             {/*<Tweet />*/}
         </div>
       </div>

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button4({ title }) {
+  function Button4({ title, onChange }) {
 
 const html = `<div class="round_btn_wrap">
     <a href="javascript:openPop_popup1();" title="인증하기" class="btn_round">인증하기
@@ -22,6 +22,7 @@ const css = `.btn_round {display: block;background: #000; color: #fff;font-size:
         css={css}
         items={["인증하기","둥근느낌","프로모션"]}
         link="<%=url_main%>/event/2023/02090007/index.asp#eventWrap"
+        onChange={onChange}
       />
     )
   }

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button5({ title }) {
+  function Button5({ title, onChange }) {
 
 const html = `<ul class="info_list notosans">
     <li><a href="https://lab.megagong.net/l/gong/guide/guide.asp" title="공무원 가이드" target="_blank"><span>공무원 가이드</span></a></li>
@@ -39,6 +39,7 @@ const css = `.info_list {font-weight: 200;display: flex;flex-wrap: wrap;justify-
         css={css}
         items={["마우스효과","그라디언트","메인하단"]}
         link="<%=url_main%>"
+        onChange={onChange}
       />
     )
   }

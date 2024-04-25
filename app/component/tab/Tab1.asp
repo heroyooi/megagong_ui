@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Tab1({ title }) {
+  function Tab1({ title, onChange }) {
 
 const html = `<div class="tab-upper">
   <div class="inner">
@@ -30,6 +30,7 @@ const js = `LUI.tabUI();`;
         js={js}
         items={["합격전략","사각형","탭"]}
         link="<%=lab_main%>/l/gong/guide/guide.asp"
+        onChange={onChange}
       />
     )
   }

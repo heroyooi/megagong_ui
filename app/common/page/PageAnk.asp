@@ -8,7 +8,7 @@
         top: position.current[index],
         behavior: 'smooth',
       });
-    }, []);
+    }, [position]);
 
     return (
       <div className="ank">

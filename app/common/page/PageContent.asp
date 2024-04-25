@@ -1,10 +1,26 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, html, css, js, items, link }) {
+  function PageContent({ title, desc, image, html, css, js, items, link, onChange }) {
     const { user } = useAuth();
     const refCode = useRef(null);
-    const [view, onView] = useCode(false, refCode);
+    const [view, setView] = useState(false);
+
+    useEffect(() => {
+      if (view && refCode.current) {
+        window.scrollTo({
+          top: refCode.current.offsetTop - (80 + 50),
+          behavior: 'smooth'
+        });
+      }
+    }, [view])
+
+    const onView = () => {
+      setView(prev => !prev);
+      if (typeof onChange == 'function') {
+        onChange();
+      }
+    }
 
     const jsx = createElement('div', { dangerouslySetInnerHTML: { __html: html } });
     const Styled = window.styled.div`${css}`;

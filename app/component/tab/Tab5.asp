@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Tab5({ title }) {
+  function Tab5({ title, onChange }) {
 
 const html = `<div class="bg_top tab5">
   <div class="inner">
@@ -153,6 +153,7 @@ $(document).on('click', '.tab5 .tab_base li', function(e){
         js={js}
         items={["자동롤링","이벤트","첫번째탭부터"]}
         link="https://gongssel.megagong.net/c/gongssel/schedule/2022/overall9/index.asp"
+        onChange={onChange}
       />
     )
   }

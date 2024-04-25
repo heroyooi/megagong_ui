@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Tab3({ title }) {
+  function Tab3({ title, onChange }) {
 
 const html = `<div class="gob_tab_wrap">
   <ul class="tab_list clearfix">
@@ -42,6 +42,7 @@ const js = `$(document).on('click', '.gob_tab_wrap .tab_list li', function(){
         js={js}
         items={["강좌추천","사각형","링크이동"]}
         link="<%=url_main%>/vod/vod_chr_list.asp"
+        onChange={onChange}
       />
     )
   }

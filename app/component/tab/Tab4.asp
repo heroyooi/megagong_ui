@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Tab4({ title }) {
+  function Tab4({ title, onChange }) {
 
 const html = `<link type="text/css" rel="stylesheet" href="<%=url_main%>/book/style.css" />
 
@@ -23,6 +23,7 @@ const html = `<link type="text/css" rel="stylesheet" href="<%=url_main%>/book/st
         html={html}
         items={["온라인서점","라운드","과목별"]}
         link="<%=url_main%>/book/bookshop.asp"
+        onChange={onChange}
       />
     )
   }

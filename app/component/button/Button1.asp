@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Button1({ title }) {
+  function Button1({ title, onChange }) {
 
 const html = `<div className="btn_list">
   <a href="javascript:;" class="cmn_btn">내가쓴글 보기</a>
@@ -26,6 +26,7 @@ const css = `.btn_wrap .btn {display: block;width: 130px;height: 40px;line-heigh
         css={css}
         items={["시스템버튼","게시글작성","게시판버튼"]}
         link="<%=url_main%>/teacher/qna/qna.asp"
+        onChange={onChange}
       />
     )
   }

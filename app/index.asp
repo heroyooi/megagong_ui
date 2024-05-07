@@ -21,6 +21,7 @@
 <!-- @@ COMPONENT -->
 <!-- #include virtual = "/app/component/ButtonComponent.asp"-->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
+<!-- #include virtual = "/app/component/PopupComponent.asp"-->
 <!-- // @@ COMPONENT -->
 
 <!-- @@ HOOKS -->

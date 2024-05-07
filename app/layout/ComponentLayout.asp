@@ -4,6 +4,7 @@
   const componentMenus = [
     {id: 'button', title: '¹öÆ°'},
     {id: 'tab', title: 'ÅÇ'},
+    {id: 'popup', title: 'ÆË¾÷'},
   ]
   
   function ComponentLayout() {
@@ -15,6 +16,7 @@
         <Aside />
         {cid === 'button' && <ButtonComponent />}
         {cid === 'tab' && <TabComponent />}
+        {cid === 'popup' && <PopupComponent />}
       </AsideProvider>
     )
   }

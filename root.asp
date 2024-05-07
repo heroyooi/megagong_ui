@@ -4,6 +4,7 @@
 <script src="//unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.3.0/react-router-dom.js"></script>
 <script src="//unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script> -->
 
 <script src="//unpkg.com/styled-components/dist/styled-components.min.js"></script>
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>

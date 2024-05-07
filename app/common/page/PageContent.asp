@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, html, css, js, items, link, onChange }) {
+  function PageContent({ title, desc, image, html, css, js, excCss = '', items, link, onChange }) {
     const { user } = useAuth();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
@@ -23,7 +23,7 @@
     }
 
     const jsx = createElement('div', { dangerouslySetInnerHTML: { __html: html } });
-    const Styled = window.styled.div`${css}`;
+    const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
       eval(js);

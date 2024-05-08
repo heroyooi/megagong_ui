@@ -3,7 +3,7 @@
 
   function Popup1({ title, onChange }) {
 
-const html = `<div id="mcg_fixbn" class="mcg_fixbn">
+const html = `<div id="mcg_fixbn">
   <a href="javascript:;" onclick="mainHide('#mcg_fixbn')" class="close"><img src="<%=img_main%>/common/btn_close_right_bottom_bnr.png" alt="´Ý±â"></a>
 
   <div class="mcg_fixbn commonSlider">

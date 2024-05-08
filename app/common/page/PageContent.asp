@@ -26,9 +26,11 @@
     const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
-      setTimeout(() => {
+      const timeout = setTimeout(() => {
         eval(js);
       }, 250);
+
+      return () => clearTimeout(timeout);
     }, []);
 
     return (

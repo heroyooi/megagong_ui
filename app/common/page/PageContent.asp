@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, html, css, js, excCss = '', items, link, onChange, version = 'general' }) {
+  function PageContent({ title, desc, image, html, css, js, outJs, excCss = '', items, link, onChange, version = 'general' }) {
     const { user, mode } = useAuth();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
@@ -35,8 +35,17 @@
         }, 300);
       }
       
-      return () => clearTimeout(timeout.current);
+      return () => {
+        clearTimeout(timeout.current);
+        eval(outJs);
+      }
     }, [view, js, onChange]);
+
+    // useEffect(() => {
+    //   return () => {
+    //     eval(outJs);
+    //   }
+    // }, [outJs, onChange])
 
     const onCopy = (code) => () => {
       var tempTextArea = document.createElement("textarea");

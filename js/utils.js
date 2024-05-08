@@ -961,3 +961,5 @@ function closeCmegaPopupYoutubeToday() {
   setCookiePopupToday('todayPopupYoutubeCookie', 'close', 1);
   closeCmegaPopup('popupYoutube');
 }
+
+let timeout = null;

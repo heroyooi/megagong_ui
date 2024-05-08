@@ -224,18 +224,17 @@ const css = `#headertop .hd_utility.v23_1 nav{width: 1080px !important;} /*¼­ºêÆ
   #headertop .hd_mo_utility.fixed .mo_gnb nav .slider .item.fullservice a {color: #fff;}
 }`;
 
-const excCss = `
-#headertop{font-family:'¸¼Àº °íµñ','Malgun Gothic','µ¸¿ò','Dotum',sans-serif;}
+const excCss = `#headertop{font-family:'¸¼Àº °íµñ','Malgun Gothic','µ¸¿ò','Dotum',sans-serif;}
 #headertop .hd_utility.v23_1 .mnu_list3 li.book,
 #headertop .hd_utility.v23_1 .mnu_list3 li.current,
-#headertop .hd_utility.v23_1 .mnu_list3.d0420 li{padding:11px 15px;}
-`;
+#headertop .hd_utility.v23_1 .mnu_list3.d0420 li{padding:11px 15px;}`;
 
-const js = `
-setInterval(function(){
+const js = `function inifiniteLoop() {
   $('#headertop .fullser_wrap .hd_utility.v23_1 .mnu_list3.d0420 li.pass').toggleClass('on');
   $(".toggleImg2").toggleClass("on");
-}, 500);
+  timeout = setTimeout(inifiniteLoop, 500);
+}
+inifiniteLoop();
 
 $('.pass_mini_slide').not('.slick-initialized').slick({
   autoplay: true,
@@ -307,6 +306,8 @@ $(document).on('click', '#hd_MoUtility .mo_gnb nav .item.hasMenu', function(e){
 	
 })`;
 
+const outJs = `clearTimeout(timeout);`;
+
     return (
       <PageContent
         title={title}
@@ -316,6 +317,7 @@ $(document).on('click', '#hd_MoUtility .mo_gnb nav .item.hasMenu', function(e){
         css={css}
         excCss={excCss}
         js={js}
+        outJs={outJs}
         items={["GNB","2µª½º","PC, ¸ð¹ÙÀÏ º°µµ"]}
         link="<%=url_main%>/teacher/qna/qna.asp"
         onChange={onChange}

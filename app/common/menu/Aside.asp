@@ -21,11 +21,16 @@
           <li className={`big_nav sec py-3 text-base font-bold pl-10 cursor-pointer text-white ${dp1 == 2 ? "on bg-gradient-to-r from-mainColor-500" : ""}`} onClick={changeDp1(2)}><a href="javascript:void(0);"><i className='bx bxs-customize mr-2.5 text-xl align-bottom'></i>컴포넌트<span></span></a></li>
           {dp1 == 2 && <li className="small_nav_wrap sec box-border w-full h-full py-2.5 pl-7 pr-2.5">
             <ul className="small_nav_wrap_ul sec [&>li]:after:bg-mainColor-500 [&>li]:after:h-full [&>li]:text-base [&>li]:flex [&>li]:relative [&_a]:pl-4 [&_a]:py-2 [&_a]:w-full [&_a]:block [&_a]:transition [&_a]:duration-150 [&_a]:ease-out [&_a]:truncate [&_a]:text-sm">
+              {/*
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 1 ? "on text-white" : ""}`}><Link to="/component/button" className="">버튼<span></span></Link></li>
+              
+              */}
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 1 ? "on text-white" : ""}`}><Link to="/component/menu" className="">메뉴<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 2 ? "on text-white" : ""}`}><Link to="/component/tab" className="">탭<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 ? "on text-white" : ""}`}><Link to="/component/popup" className="">팝업<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/slide" className="">슬라이드 - Slick<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/slide_swiper" className="">슬라이드 - Swiper<span></span></Link></li>
+              {/*
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/list" className="">리스트<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/component/table" className="">표(테이블)<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 7 ? "on text-white" : ""}`}><Link to="/component/icon" className="">아이콘<span></span></Link></li>
@@ -36,6 +41,7 @@
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 12 ? "on text-white" : ""}`}><Link to="/component/calendar" className="">달력<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 13 ? "on text-white" : ""}`}><Link to="/component/effect" className="">특수 효과<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 14 ? "on text-white" : ""}`}><Link to="/component/checkbox" className="">체크박스<span></span></Link></li>
+              */}
             </ul>
           </li>}
           <li className={`big_nav srd py-3 text-base font-bold pl-10 cursor-pointer text-white ${dp1 == 3 ? "on bg-gradient-to-r from-mainColor-500" : ""}`} onClick={changeDp1(3)}><a href="javascript:void(0);"><i className='bx bxs-layout mr-2.5 text-xl align-bottom'></i>페이지<span></span></a></li>

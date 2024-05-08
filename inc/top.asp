@@ -6,6 +6,8 @@ dimg_main = "https://design.megagong.net/image"
 lab_main = "https://lab.megagong.net"
 gongssel_main = "https://gongssel.megagong.net"
 dev_main = "https://dev.megagong.net"
+hcode = "gong"
+h_gubn = "gong"
 
 https   =  fncRequestVariables("https")
 hostnm  =  fncRequestVariables("HTTP_HOST")
@@ -48,6 +50,40 @@ ElseIf instr(fncRequestVariables("path_info"),"/blog_detail.asp") > 0 Then
   h_tit = "메가공무원 기술 블로그 상세"
   h_des = "메가공무원 퍼블리싱팀의 기술 블로그 상세 페이지입니다."
 End if
+
+Function getParamTxt(ByVal paramName, ByVal initValue, ByVal chkReplace)
+	'파라미터명, 초기값, 따옴표치환, 제한글자수, 
+    Dim tmp
+    tmp = Trim(Request(paramName))
+
+    If tmp = "" Then
+        getParamTxt = initValue
+    Else
+		If chkReplace = 1 Then
+			tmp = Replace(tmp, "'", "''")			
+			'sql 인줵션 제거
+			tmp = Replace_Param_Exec(tmp)
+		End If
+
+
+		getParamTxt = tmp
+    End If
+End Function
+
+lo_now_date  = getParamTxt( "now", "", 1)
+'' 접속자가 관리자인 경우 타이머 확인 가능
+If lo_now_date = "" Then
+  lo_now_date = now()
+Else
+  If ucase(fncrequestCookie("mem_type"))="E" Then
+    lo_now_date = lo_now_date
+  Else
+    lo_now_date = now()
+  End IF
+End If
+  'lo_now_date = replace(replace(lo_now_date,"오전",""),"오후","")
+lo_now_date = Year(lo_now_date)&"-"&Right("0"&Month(lo_now_date),2)&"-"&Right("0"&day(lo_now_date),2)& " " & Right("0"&hour(lo_now_date),2)&":"& Right("0"&minute(lo_now_date),2)&":"& Right("0"&second(lo_now_date),2)
+
 %>
 
 <!DOCTYPE HTML>

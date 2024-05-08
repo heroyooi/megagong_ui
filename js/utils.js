@@ -884,16 +884,40 @@ const Lab = window.Lab || (function ($, window, document, undefined) {
   Lab.init();
 })();
 
+//**사용방법: javascript:; onclick="mainHide('#아이디명');" 
+function mainHide(target){ 
+  $(target).hide();
+}
+
+//**사용방법: javascript:; onclick="mainShow('#아이디명');" 
+function mainShow(target){ 
+  $(target).show();
+}
+
+//**사용방법: javascript:; onclick="mainTodayHide('쿠키명', '#아이디명')" 
+function mainTodayHide(cookie, id){ 
+  setCookie(cookie, "close", 1);
+  $(id).hide();
+}  
+
+//**사용방법: mainToggle('#아이디명');
+function mainToggle(target){ 
+  $(target).toggleClass('on');
+}
+
+//**사용방법: mainBlink('#selector', 'sec')
+function mainBlink(selector, sec){ 
+  setInterval(function(){
+      $(selector).toggleClass('on');
+  }, sec);
+}
+
 
 // 메가공무원 함수 - 사용처(http://localhost/#/component/popup)
 const deleteCookieAndReload = function(name) {
   const date = new Date();
   document.cookie = name + "= " + "; expires=" + date.toUTCString() + "; path=/";
   location.reload();
-}
-
-function mainHide(target){ 
-  $(target).hide();
 }
 
 function mok_close() {
@@ -921,4 +945,19 @@ function closeCmegapopupDimToday() {
 
 function closeCmegaDimPopup() {
   $('.mfp-close').trigger('click');
+}
+
+if(getCookie('todayPopupVideoCookie') == 'close'){
+  closeCmegaPopup('popupVideo');
+}
+function closeCmegaPopupVideoToday() {
+  setCookiePopupToday('todayPopupVideoCookie', 'close', 1);
+  closeCmegaPopup('popupVideo');
+}
+if(getCookie('todayPopupYoutubeCookie') == 'close'){
+  closeCmegaPopup('popupYoutube');
+}
+function closeCmegaPopupYoutubeToday() {
+  setCookiePopupToday('todayPopupYoutubeCookie', 'close', 1);
+  closeCmegaPopup('popupYoutube');
 }

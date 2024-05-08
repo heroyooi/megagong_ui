@@ -2,6 +2,7 @@
   'use strict';
 
   const componentMenus = [
+    {id: 'menu', title: '¸Þ´º'},
     {id: 'button', title: '¹öÆ°'},
     {id: 'tab', title: 'ÅÇ'},
     {id: 'popup', title: 'ÆË¾÷'},
@@ -14,7 +15,8 @@
     return (
       <AsideProvider>
         <Aside />
-        {cid === 'button' && <ButtonComponent />}
+        {cid === 'menu' && <MenuComponent />}
+        {/* cid === 'button' && <ButtonComponent /> */}
         {cid === 'tab' && <TabComponent />}
         {cid === 'popup' && <PopupComponent />}
       </AsideProvider>

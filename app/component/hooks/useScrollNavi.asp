@@ -17,7 +17,7 @@
           window.scrollTo({ top: position.current[id - 1] });
           setState(id - 1);
           goUI.current = true;
-        }, 300);
+        }, 500);
         return () => clearTimeout(timeout1.current);
       }
     }, [id, refs.current, position.current, callback])
@@ -28,7 +28,7 @@
           // console.log('>> ', ref.offsetTop);
           position.current[index] = ref.offsetTop - margin;
         });
-      }, 250);
+      }, 600);
       return () => clearTimeout(timeout2.current);
     }, [refs.current, position.current, callback]);
 

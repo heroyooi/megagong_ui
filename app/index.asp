@@ -14,11 +14,11 @@
 <!-- #include virtual = "/app/layout/ComponentLayout.asp"-->
 <!-- #include virtual = "/app/layout/PageLayout.asp"-->
 <!-- #include virtual = "/app/layout/LoginLayout.asp"-->
-<!-- #include virtual = "/app/layout/BlogLayout.asp"-->
 <!-- // @@ LAYOUT -->
 
 
 <!-- @@ COMPONENT -->
+<!-- #include virtual = "/app/component/MenuComponent.asp"-->
 <!-- #include virtual = "/app/component/ButtonComponent.asp"-->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
 <!-- #include virtual = "/app/component/PopupComponent.asp"-->

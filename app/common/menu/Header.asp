@@ -71,7 +71,7 @@
                   <ul className="nav_list">
                     <li><Link to="/component/button">COMPONENT</Link></li>
                     <li><Link to="/page/teacher">PAGE</Link></li>
-                    <li><Link to="/blog">BLOG</Link></li>
+                    {/* <li><Link to="/blog">BLOG</Link></li> */}
                     {user && <li id="js_test"><Link to="/js_test">JS TEST</Link></li>}
                   </ul>
                   {mode == 'authenticate' && (<ul className="util_list">
@@ -105,7 +105,7 @@
                   <ul className="nav_list">
                     <li onClick={closeMenu('/component/button')}><a>COMPONENT</a></li>
                     <li onClick={closeMenu('/page/teacher')}><a>PAGE</a></li>
-                    <li onClick={closeMenu('/blog')}><a>BLOG</a></li>
+                    {/* <li onClick={closeMenu('/blog')}><a>BLOG</a></li> */}
                     {user && <li onClick={closeMenu('/js_test')}><a>JS TEST</a></li>}
                   </ul>
                   {mode == 'authenticate' && (<ul className="util_list">

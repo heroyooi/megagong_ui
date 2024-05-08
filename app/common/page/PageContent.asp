@@ -1,17 +1,18 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, html, css, js, excCss = '', items, link, onChange }) {
+  function PageContent({ title, desc, image, html, css, js, excCss = '', items, link, onChange, version = 'general' }) {
     const { user, mode } = useAuth();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
     const timeout = useRef(null);
+    const initJS = useRef(false);
 
     useEffect(() => {
       if (view && refCode.current) {
         window.scrollTo({
           top: refCode.current.offsetTop - (80 + 50),
-          behavior: 'smooth'
+          // behavior: 'smooth'
         });
       }
     }, [view])
@@ -27,11 +28,28 @@
     const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
-      timeout.current = setTimeout(() => {
-        eval(js);
-      }, 500);
+      if (!initJS.current || onChange) {
+        timeout.current = setTimeout(() => {
+          initJS.current = true;
+          eval(js);
+        }, 300);
+      }
+      
       return () => clearTimeout(timeout.current);
-    }, [view, js]);
+    }, [view, js, onChange]);
+
+    const onCopy = (code) => () => {
+      var tempTextArea = document.createElement("textarea");
+      tempTextArea.value = code;
+      tempTextArea.style.position = "absolute";
+      tempTextArea.style.left = "-9999px";
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempTextArea);
+
+      toastr.success('코드가 클립보드에 복사되었습니다.');
+    }
 
     return (
       <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border">
@@ -44,17 +62,17 @@
         )}
         
         <div className="issue-box-wrap mt-7"></div>
-        <div className="position_site px-36 overflow-hidden mb-6 bg-mainColor_gray-500"><img src={image} alt='-' /></div>
-<div className="code-box html w-full m-auto clear-both p-10 border-solid border-y-2 border-slate-200"><Styled>{jsx}</Styled></div>
+        {image && <div className="position_site px-36 overflow-hidden mb-6 bg-mainColor_gray-500"><img src={image} alt='-' /></div>}
+<div className={`code-box html w-full m-auto clear-both border-y-2 border-slate-200 ${version != 'no-padding' && "p-10 border-solid"}`}><Styled>{jsx}</Styled></div>
 <p className="page_text text-black my-8 text-base font-light" dangerouslySetInnerHTML={{ __html: desc }} />
 
 {<div style={view ? { display: "block" } : { display: "none" }} ref={refCode}>
-  <pre className="language-html"><code className="language-html">{html}</code></pre>
-  {css && <pre className="language-css"><code className="language-css">{css}</code></pre>}
-  {js && <pre className="language-js"><code className="language-js">{js}</code></pre>}
+  <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(html)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-html"><code className="language-html">{html}</code></pre></div>
+  {css && <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(css)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-css"><code className="language-css">{css}</code></pre></div>}
+  {js && <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(js)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-js"><code className="language-js">{js}</code></pre></div>}
 </div>}
         <div className="page_bot_wrap flex justify-between items-center lg:block">
-            <a className="use_link text-mainColor-500 rounded-full border-solid border-2 border-mainColor-500 pl-4 pr-5 py-1.5 align-middle lg:w-full lg:text-center lg:mb-1" href="<%=url_main%>/megagong.asp" target="_blank">
+            <a className="use_link text-mainColor-500 rounded-full border-solid border-2 border-mainColor-500 pl-4 pr-5 py-1.5 align-middle lg:w-full lg:text-center lg:mb-1" href={link} target="_blank">
               <i className="bx bx-link text-mainColor-500 text-xl mr-1 align-sub"></i>EXAMPLE
             </a>
             <div className="cap_tag lg:w-full">

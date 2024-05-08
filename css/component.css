@@ -12,9 +12,9 @@ body,
 #wrap { height: 100%}
 
 /* ??ï¿½ï¿½?ï¿????ï¿½ï¿½?ï¿????ï¿½ï¿½??ï¿½ï¿½ï¿??ê¾©ì‚• */
-body::-webkit-scrollbar { border-radius: 25px; background: transparent; } 
+/* body::-webkit-scrollbar { border-radius: 25px; background: transparent; } 
 body::-webkit-scrollbar-track { border-radius: 25px; background: transparent; } 
-body::-webkit-scrollbar-thumb { background: #a7a7a7; border-radius: 25px; background-clip: padding-box; border: 5px solid transparent; } 
+body::-webkit-scrollbar-thumb { background: #a7a7a7; border-radius: 25px; background-clip: padding-box; border: 5px solid transparent; }  */
 body.no_scroll { overflow: hidden; } 
 
 /* guide-header ??ï¿½ï¿½?ï¿????ï¿½ï¿½??ï¿½ï¿½? ??ï¿½ï¿½?ï¿????ï¿½ï¿½??ï¿½ï¿½?ï¿????ï¿½ï¿½ css */
@@ -1250,3 +1250,5 @@ li.no_data { color: #bebebe; text-align: center; }
 .imo_wrap { float: left; margin-right: 35px; width: 19%}
 .member_name { font-weight: 700; font-size: 17px; margin-bottom: 10px}
 
+.demo-title{font-size:18px;font-weight:500;margin-top:30px;}
+.demo-title:first-child{margin-top:0;}

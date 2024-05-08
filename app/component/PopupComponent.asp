@@ -1,4 +1,7 @@
 <!-- #include virtual = "/app/component/popup/Popup1.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup2.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup3.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup4.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -9,13 +12,23 @@
         title: "¸ÞÀÎ ¿ìÃø ÇÏ´Ü ÆË¾÷",
         component: Popup1
       },
+      {
+        title: "»ó´Ü ¿À´Ã ÇÏ·ç º¸Áö ¾Ê±â",
+        component: Popup2
+      },
+      {
+        title: "Áß¾Ó ¿À´Ã ÇÏ·ç ´Ý±â ÆË¾÷",
+        component: Popup3
+      },
+      {
+        title: "µõ ÆË¾÷",
+        component: Popup4
+      },
     ]
     
-    const { setDp1, setDp2 } = useAside();
     const componentRefs = useRef(Array(componentArray.length).fill(null));
     const componentPosition = useRef([]);
     const [componentActive, setComponentActive] = useState(0);
-    const [activeAnk, setActiveAnk] = useState(true);
 
     const { user } = useAuth();
 

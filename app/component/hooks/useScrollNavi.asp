@@ -2,24 +2,34 @@
   'use strict';
   
   function useScrollNavi(position, refs, setState, margin, callback) {
+
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const id = searchParams.get('id');
+    const goUI = useRef(false);
+    const timeout1 = useRef(null);
+    const timeout2 = useRef(null);
 
     useEffect(() => {
-      if (id) {
-        window.scrollTo({ top: position.current[id - 1] });
-        setState(id - 1);
+      if (id && !goUI.current) {
+        window.scrollTo(0, 0);
+        timeout1.current = setTimeout(() => {
+          window.scrollTo({ top: position.current[id - 1] });
+          setState(id - 1);
+          goUI.current = true;
+        }, 300);
+        return () => clearTimeout(timeout1.current);
       }
-    }, [id])
+    }, [id, refs.current, position.current, callback])
 
     useEffect(() => {
-      setTimeout(() => {
+      timeout2.current = setTimeout(() => {
         refs.current.forEach((ref, index) => {
           // console.log('>> ', ref.offsetTop);
           position.current[index] = ref.offsetTop - margin;
         });
       }, 250);
+      return () => clearTimeout(timeout2.current);
     }, [refs.current, position.current, callback]);
 
     useEffect(() => {

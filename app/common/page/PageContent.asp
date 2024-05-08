@@ -2,9 +2,10 @@
   'use strict';
 
   function PageContent({ title, desc, image, html, css, js, excCss = '', items, link, onChange }) {
-    const { user } = useAuth();
+    const { user, mode } = useAuth();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
+    const timeout = useRef(null);
 
     useEffect(() => {
       if (view && refCode.current) {
@@ -26,17 +27,16 @@
     const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
-      const timeout = setTimeout(() => {
+      timeout.current = setTimeout(() => {
         eval(js);
-      }, 250);
-
-      return () => clearTimeout(timeout);
-    }, []);
+      }, 500);
+      return () => clearTimeout(timeout.current);
+    }, [view, js]);
 
     return (
       <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border">
         <p className="page_head bg-gradient-to-r from-zinc-600 to-mainColor-500 text-white text-lg font-extrabold rounded-full py-1 pr-12 pl-14 mr-2.5 -ml-14 inline-block">{title}</p> 
-        {user && (
+        {(mode == 'anonymous' || user) && (
           <button className="code_open" onClick={onView}>
             <span className={view ? "open_bg on" : "open_bg"}></span>
             <span className={view ? "open_shape on" : "open_shape"}></span>

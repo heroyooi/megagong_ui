@@ -3,7 +3,7 @@
 
     function Header() {
         const history = useHistory();
-        const { user, setUser } = useAuth();
+        const { user, setUser, mode } = useAuth();
         const [activeMenu, setActiveMenu] = useState(false);
         const [activeLnb, setActiveLnb] = useState(false);
 
@@ -74,7 +74,7 @@
                     <li><Link to="/blog">BLOG</Link></li>
                     {user && <li id="js_test"><Link to="/js_test">JS TEST</Link></li>}
                   </ul>
-                  <ul className="util_list">
+                  {mode == 'authenticate' && (<ul className="util_list">
                     {user
                       ? (
                         <>
@@ -87,7 +87,7 @@
                           <li className="anonymous"><Link to="/signup">SIGNUP</Link></li>
                         </>
                       )}
-                  </ul>
+                  </ul>)}
                 </nav>
                 <button type="button" className="btn_menu" onClick={toggleMenu}>
                   <div className="shape">
@@ -108,7 +108,7 @@
                     <li onClick={closeMenu('/blog')}><a>BLOG</a></li>
                     {user && <li onClick={closeMenu('/js_test')}><a>JS TEST</a></li>}
                   </ul>
-                  <ul className="util_list">
+                  {mode == 'authenticate' && (<ul className="util_list">
                     {user
                       ? (
                         <>
@@ -121,7 +121,7 @@
                           <li onClick={closeMenu('/signup')} className="anonymous"><a>SIGNUP</a></li>
                         </>
                       )}
-                  </ul>
+                  </ul>)}
                 </div>
               </div>
             </header>

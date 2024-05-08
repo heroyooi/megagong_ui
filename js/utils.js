@@ -573,7 +573,7 @@ const Lab = window.Lab || (function ($, window, document, undefined) {
             if (user.emailVerified) {
               // 의견 남기기 UI
               $tweet_loading_all.show();
-              $('.code_open').show();
+              // $('.code_open').show();
               $('.page_name_wrap ~ pre').show();
               $('.guide_down').show();
               USER_NAME = user.displayName;
@@ -712,7 +712,7 @@ const Lab = window.Lab || (function ($, window, document, undefined) {
           $tweet_list_item.hide();
           $tweet_input_item.hide();
           
-          $('.code_open').hide();
+          // $('.code_open').hide();
           $('.page_name_wrap ~ pre').hide();
           $('.guide_down').hide();
           if (!PAGE_BLOG && !PAGE_BLOG_DETAIL) {
@@ -885,25 +885,40 @@ const Lab = window.Lab || (function ($, window, document, undefined) {
 })();
 
 
-// 메가공무원 함수 - 사용처(/component/popup)
+// 메가공무원 함수 - 사용처(http://localhost/#/component/popup)
+const deleteCookieAndReload = function(name) {
+  const date = new Date();
+  document.cookie = name + "= " + "; expires=" + date.toUTCString() + "; path=/";
+  location.reload();
+}
+
 function mainHide(target){ 
   $(target).hide();
 }
 
-// 
-function popup1Script(){
-  var mcgBn_lng = $('#mcg_fixbn .item').length;
-  if (!mcgBn_lng) {
-      $('#mcg_fixbn .close').css({display:"none", opacity:0})
-  } else {
-      $('#mcg_fixbn .close').css({display:"block", opacity:1})
-  }
-  $('.mcg_fixbn.commonSlider').not('.slick-initialized').slick({
-      infinite: true,
-      autoplaySpeed: 3000,
-      autoplay:true,
-      arrows: false,
-      draggable: true,
-      dots: true,
-  });
+function mok_close() {
+  $("#mok_hd_pop").hide();
+}
+function mok_day_close() {
+  setCookie("mok_hd_pop_one", "close", 1);
+  // setCookieToday('mok_hd_pop_one', 'close', 1);
+  mok_close();
+}
+
+function closeCmegaPopupToday() {
+  setCookiePopupToday('todayPopupCookie', 'close', 1);
+  closeCmegaPopup('popupToday');
+}
+
+if(getCookie('todayPopupDimCookie') == 'close'){
+  closeCmegaDimPopup('popupDim');
+}
+function closeCmegapopupDimToday() {
+  setCookiePopupToday('todayPopupDimCookie', 'close', 1);
+  closeCmegaDimPopup('popupDim');
+    $('.mfp-close').trigger('click');
+}
+
+function closeCmegaDimPopup() {
+  $('.mfp-close').trigger('click');
 }

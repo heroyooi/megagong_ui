@@ -8,6 +8,7 @@
   function AuthProvider({ children }) {
     const [admin, setAdmin] = useState(false);
     const [user, setUser] = useState(null);
+    const [mode, setMode] = useState('anonymous'); // anonymous, authenticate
 
     useEffect(() => {
       console.log('user > ', user);
@@ -15,7 +16,7 @@
     }, [user])
 
     return (
-      <AuthContext.Provider value={{ user, setUser, admin }}>
+      <AuthContext.Provider value={{ user, setUser, admin, mode }}>
         {children}
       </AuthContext.Provider>
     )

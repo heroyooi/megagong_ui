@@ -26,7 +26,9 @@
     const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
-      eval(js);
+      setTimeout(() => {
+        eval(js);
+      }, 250);
     }, []);
 
     return (

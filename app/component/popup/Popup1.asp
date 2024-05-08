@@ -5,38 +5,55 @@
 
 const html = `<div id="mcg_fixbn" class="mcg_fixbn">
   <a href="javascript:;" onclick="mainHide('#mcg_fixbn')" class="close"><img src="<%=img_main%>/common/btn_close_right_bottom_bnr.png" alt="닫기"></a>
+
   <div class="mcg_fixbn commonSlider">
     <div class="item">
-        <a href="https://www.youtube.com/watch?v=8OiVrxFaOhI" title="[긴급편성] 세무직, 앞으로 어떻게 준비할 것인가" class="bnr-link" target="_blank"></a>
-        <div class="img_wrap"><img src="<%=img_main%>/m/2024/0326_gong/main_bnr1.png" alt="[긴급편성] 세무직, 앞으로 어떻게 준비할 것인가 LIVE▶ 4/1(월) 오후 7시 공개!"></div>
+        <a href="/s/gong/event/2021/05270068/index.asp#eventWrap" title="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!" class="bnr-link" target="_blank"></a>
+        <div class="img_wrap"><img src="<%=img_main%>/m/2024/0502_gongpass/bnr_gong1.png" alt="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!"></div>
     </div>
     <div class="item">
-        <a href="/s/gong/event/2023/12180141/index.asp" title="2025 출제기조 전환 완벽 반영 입문 특강 문학 베이스" class="bnr-link" target="_blank"></a>
-        <div class="img_wrap"><img src="<%=img_main%>/m/2024/0326_gong/main_bnr4.png" alt="2025 출제기조 전환 완벽 반영 입문 특강 문학 베이스 LIVE▶ 4/27(토) 오후 2시 공개!"></div>
+        <a href="/s/gong/event/2021/05270068/index.asp#eventWrap" title="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!" class="bnr-link" target="_blank"></a>
+        <div class="img_wrap"><img src="<%=img_main%>/m/2024/0502_gongpass/bnr_gong1.png" alt="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!"></div>
+    </div>
+    <div class="item">
+        <a href="/s/gong/event/2021/05270068/index.asp#eventWrap" title="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!" class="bnr-link" target="_blank"></a>
+        <div class="img_wrap"><img src="<%=img_main%>/m/2024/0502_gongpass/bnr_gong1.png" alt="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!"></div>
     </div>
   </div>
-</div>
+</div>`;
 
-<div onload="popup1Script()"></div>`;
+const css = `#mcg_fixbn{position: fixed;top:auto; bottom: 24px; right: .5%;width: 240px;z-index: 3;}
+.mcg_fixbn.commonSlider{display: none !important;}
+.mcg_fixbn.commonSlider.slick-initialized {display: inline-block !important;}
+.mcg_fixbn.commonSlider a {display:block;}
+.mcg_fixbn.commonSlider a.bnr-link {position: absolute; width: 100%; height: 180px; bottom: 0; left: 0;}
+.mcg_fixbn.commonSlider .close{z-index: 6;position: absolute; right: 5px; top: -27px; width: 17px; height: 17px; display: none;}
+.mcg_fixbn.commonSlider .slick-arrow {display:none!important;}
+.mcg_fixbn.commonSlider .item {position: relative;text-align: center;}
+.mcg_fixbn.commonSlider .item .img_wrap {display: flex; height: 100%; align-items: flex-end;}
+.mcg_fixbn.commonSlider .item img {display:inline-block;}
+.mcg_fixbn.commonSlider .slick-dots {position:absolute;bottom:-15px;left:0;right:0;font-size:0;text-align: center;}
+.mcg_fixbn.commonSlider .slick-dots li {display:inline-block;margin:0 2px;}
+.mcg_fixbn.commonSlider .slick-dots button {width:8px;height: 8px;border-radius: 50%;background:#000;opacity:.5;font-size:0;}
+.mcg_fixbn.commonSlider .slick-dots .slick-active button {opacity: 1;}
 
-const css = `.mcg_fixbn{position: fixed;top:auto; bottom: 24px; right: .5%;width: 240px;z-index: 3;}
-.mcg_fixbn a {display:block;}
-.mcg_fixbn a.bnr-link {position: absolute; width: 100%; height: 180px; bottom: 0; left: 0;}
-.mcg_fixbn .close{z-index: 6;position: absolute; right: 5px; bottom: 190px; width: 17px; height: 17px; padding: 3px; display: none;}
-.mcg_fixbn .slick-arrow {display:none!important;}
-.mcg_fixbn .item {position: relative;text-align: center; height: 204px;}
-.mcg_fixbn .item .img_wrap {display: flex; height: 100%; align-items: flex-end;}
-.mcg_fixbn .item img {display:inline-block;}
-.mcg_fixbn .slick-dots {position:absolute;bottom:-15px;left:0;right:0;font-size:0;text-align: center;}
-.mcg_fixbn .slick-dots li {display:inline-block;margin:0 2px;}
-.mcg_fixbn .slick-dots button {width:8px;height: 8px;border-radius: 50%;background:#000;opacity:.5;font-size:0;}
-.mcg_fixbn .slick-dots .slick-active button {opacity: 1;}`;
+@media (max-width: 1200px){
+    #mcg_fixbn{display: none;}
+}`;
 
-const excCss = `.mcg_fixbn{position: relative;}
-.mcg_fixbn .close{display: block;}
+const excCss = `#mcg_fixbn{position: relative;bottom:initial;right:initial;}
+.mcg_fixbn.commonSlider .close{display: block;}
 `;
 
-const js = `popup1Script()`;
+const js = `// 배너 하나도 없을때 안보임 처리 
+$('.mcg_fixbn.commonSlider').not('.slick-initialized').slick({
+    infinite: true,
+    autoplaySpeed: 3000,
+    autoplay:true,
+    arrows: false,
+    draggable: true,
+    dots: true,
+});`;
 
     return (
       <PageContent

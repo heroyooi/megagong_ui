@@ -49,7 +49,7 @@ const css = `.mcg_fixbn{position: fixed;top:auto; bottom: 24px; right: .5%;width
     .mcg_fixbn{display: none;}
 }`;
 
-const excCss = `.mcg_fixbn{position:relative;bottom:initial;}
+const excCss = `.mcg_fixbn{position:relative;bottom:initial;height:209px;}
 .mcg_fixbn .close{box-sizing:content-box;right:0;}
 `;
 

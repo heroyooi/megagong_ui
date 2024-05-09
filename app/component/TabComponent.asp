@@ -42,7 +42,7 @@
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     return (
-      <PageProvider>
+      <>
         <div className="page_wrap w-[calc(100%-15rem)] ml-60 h-full overflow-x-hidden relative" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
             <PageHeader name="Tab" sub="탭" text="메가공무원 사이트에서 공통적으로 사용되고 있는 탭 요소 컴포넌트입니다. <br />사용자 경험을 높이기 위해, 탭 버튼을 클릭할 경우 직관적인 색상의 변화를 통해 현재 탭의 정보를 사용자에게 전달합니다." />
@@ -51,7 +51,7 @@
           </div>
         </div>
         <PageAnk position={componentPosition} data={componentArray} active={componentActive} />
-      </PageProvider>
+      </>
     )
   }
 </script>

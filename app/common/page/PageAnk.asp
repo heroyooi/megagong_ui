@@ -7,7 +7,6 @@
     
     const listEl = useRef(null);
     const goComponent = useCallback((index) => () => {
-      initCode.current = true;
       moveComponent(position, index);
     }, [position, active]);
     

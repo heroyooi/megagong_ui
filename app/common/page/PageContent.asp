@@ -32,8 +32,11 @@
     useEffect(() => {
       if (!initJS.current || initCode.current) {
         initCode.current = false;
-        console.log(12345)
+        if (timeout2.current) {
+          clearTimeout(timeout2.current);
+        }
         timeout2.current = setTimeout(() => {
+          console.log(12345);
           initJS.current = true;
           eval(js);
         }, 300);
@@ -65,7 +68,7 @@
     }
 
     return (
-      <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border">
+      <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border overflow-hidden">
         <p className="page_head bg-gradient-to-r from-zinc-600 to-mainColor-500 text-white text-lg font-extrabold rounded-full py-1 pr-12 pl-14 mr-2.5 -ml-14 inline-block">{title}</p> 
         {/*(mode == 'anonymous' || user) && ( */}
           <button className="code_open" onClick={onView}>

@@ -5,13 +5,14 @@
     // const { user, mode } = useAuth();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
-    const timeout = useRef(null);
+    const timeout1 = useRef(null);
+    const timeout2 = useRef(null);
     const initJS = useRef(false);
 
     useEffect(() => {
-      if (view && refCode.current) {
+      if (view) {
         window.scrollTo({
-          top: refCode.current.offsetTop - (80 + 50),
+          top: refCode.current.offsetTop - (80 + 30),
           behavior: 'smooth'
         });
       }
@@ -29,14 +30,14 @@
 
     useEffect(() => {
       if (!initJS.current || onChange) {
-        timeout.current = setTimeout(() => {
+        timeout2.current = setTimeout(() => {
           initJS.current = true;
           eval(js);
         }, 300);
       }
       
       return () => {
-        clearTimeout(timeout.current);
+        clearTimeout(timeout2.current);
         eval(outJs);
       }
     }, [view, js, onChange]);

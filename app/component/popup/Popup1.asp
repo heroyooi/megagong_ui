@@ -3,21 +3,7 @@
 
   function Popup1({ title, onChange }) {
 
-const html = `<h3 class="demo-title">1개만 있을 경우</h3>
-
-<div id="mcg_fixbn" class="mcg_fixbn">
-  <a href="javascript:;" onclick="mainHide('#mcg_fixbn')" class="close"><img src="<%=img_main%>/common/btn_close_right_bottom_bnr.png" alt="닫기"></a>
-
-  <div class="mcg_fixbn commonSlider">
-    <div class="item">
-        <a href="/s/gong/event/2021/05270068/index.asp#eventWrap" title="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!" class="bnr-link" target="_blank"></a>
-        <div class="img_wrap"><img src="<%=img_main%>/m/2024/0502_gongpass/bnr_gong1.png" alt="2024 국가직 9급 필기 합격 인증하고 아이패드, 상품권 받아가세요!"></div>
-    </div>
-  </div>
-</div>
-
-<h3 class="demo-title">2개 이상 있을 경우</h3>
-<div id="mcg_fixbn" class="mcg_fixbn">
+const html = `<div id="mcg_fixbn" class="mcg_fixbn">
   <a href="javascript:;" onclick="mainHide('#mcg_fixbn')" class="close"><img src="<%=img_main%>/common/btn_close_right_bottom_bnr.png" alt="닫기"></a>
 
   <div class="mcg_fixbn commonSlider">

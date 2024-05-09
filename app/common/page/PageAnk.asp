@@ -3,12 +3,19 @@
 
   function PageAnk({ position, data, active }) {
     const [activeAnk, setActiveAnk] = useState(true);
+    const timeout = useRef(null);
     const listEl = useRef(null);
     const goComponent = useCallback((index) => () => {
-      window.scrollTo({
-        top: position.current[index],
-        behavior: 'smooth',
-      });
+      timeout.current = setTimeout(() => {
+        window.scrollTo({
+          top: position.current[index],
+          // behavior: 'smooth',
+        });
+      }, 500);
+
+      return () => {
+        clearTimeout(timeout.current);
+      }
     }, [position, active]);
     
     useEffect(() => {

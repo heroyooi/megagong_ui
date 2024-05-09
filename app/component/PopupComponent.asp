@@ -8,6 +8,7 @@
 <!-- #include virtual = "/app/component/popup/Popup8.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup9.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup10.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup11.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -53,6 +54,10 @@
       {
         title: "모달 팝업 - 자세히 보기",
         component: Popup10
+      },
+      {
+        title: "원형 슬라이드 팝업",
+        component: Popup11
       },
     ]
     

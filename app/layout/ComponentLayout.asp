@@ -6,6 +6,7 @@
     {id: 'button', title: '¹öÆ°'},
     {id: 'tab', title: 'ÅÇ'},
     {id: 'popup', title: 'ÆË¾÷'},
+    {id: 'swiper', title: '½½¶óÀÌµå - Swiper'},
   ]
   
   function ComponentLayout() {
@@ -19,6 +20,7 @@
         {/* cid === 'button' && <ButtonComponent /> */}
         {cid === 'tab' && <TabComponent />}
         {cid === 'popup' && <PopupComponent />}
+        {cid === 'swiper' && <SwiperComponent />}
       </AsideProvider>
     )
   }

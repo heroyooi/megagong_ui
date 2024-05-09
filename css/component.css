@@ -50,7 +50,7 @@ body.v-fixed .guide-header { top: -81px; }
 .guide-header i.bx.bx-log-out { font-size: 20px; } 
 
 /* ??ï¿½ï¿½?ï¿????ï¿½ï¿½??ï¿½ï¿½?ï¿????ï¿½ï¿½??ï¿½ï¿½?ï¿????ï¿½ï¿½ ??ï¿½ï¿½?ï¿????ï¿½ï¿½??ï¿½ï¿½? */
-.header_wrp { position: fixed; left: 0; top: 0; width: 100%; z-index: 10; font-family: "Montserrat", 'NotoSans KR', sans-serif; } 
+.header_wrp { position: fixed; left: 0; top: 0; width: 100%; z-index: 11; font-family: "Montserrat", 'NotoSans KR', sans-serif; } 
 .header_wrp.relative{position: relative;}
 .header_wrp .header { display: flex; align-items: center; justify-content: space-between; padding: 30px; color: #000; } 
 .header_wrp .header::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; backdrop-filter: blur(0.5em); } 

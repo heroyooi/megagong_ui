@@ -3,6 +3,7 @@
 
   function PageContent({ title, desc, image, image2, html, css, js, outJs, excCss = '', items, link, onChange, version = 'general' }) {
     // const { user, mode } = useAuth();
+    const { initCode } = usePage();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
     const timeout1 = useRef(null);
@@ -13,7 +14,7 @@
       if (view) {
         window.scrollTo({
           top: refCode.current.offsetTop - (80 + 30),
-          behavior: 'smooth'
+          // behavior: 'smooth'
         });
       }
     }, [view, js])
@@ -29,7 +30,9 @@
     const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
-      if (!initJS.current || onChange) {
+      if (!initJS.current || initCode.current) {
+        initCode.current = false;
+        console.log(12345)
         timeout2.current = setTimeout(() => {
           initJS.current = true;
           eval(js);
@@ -40,7 +43,7 @@
         clearTimeout(timeout2.current);
         eval(outJs);
       }
-    }, [view, js, onChange]);
+    }, [view, js, onChange, initCode.current]);
 
     // useEffect(() => {
     //   return () => {

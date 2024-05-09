@@ -36,6 +36,7 @@
 
 <!-- @@ CONTEXT -->
 <!-- #include virtual = "/app/context/AsideContext.asp"-->
+<!-- #include virtual = "/app/context/PageContext.asp"-->
 <!-- // @@ CONTEXT -->
 
 <script src="https://cdn.tailwindcss.com"></script>

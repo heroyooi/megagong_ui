@@ -2,20 +2,13 @@
   'use strict';
 
   function PageAnk({ position, data, active }) {
+    const { initCode, moveComponent } = usePage();
     const [activeAnk, setActiveAnk] = useState(true);
-    const timeout = useRef(null);
+    
     const listEl = useRef(null);
     const goComponent = useCallback((index) => () => {
-      timeout.current = setTimeout(() => {
-        window.scrollTo({
-          top: position.current[index],
-          // behavior: 'smooth',
-        });
-      }, 500);
-
-      return () => {
-        clearTimeout(timeout.current);
-      }
+      initCode.current = true;
+      moveComponent(position, index);
     }, [position, active]);
     
     useEffect(() => {

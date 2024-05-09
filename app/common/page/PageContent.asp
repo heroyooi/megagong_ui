@@ -30,13 +30,13 @@
     const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
-      if (!initJS.current || initCode.current) {
+      if (!initJS.current || initCode.current || onChange) {
         initCode.current = false;
-        if (timeout2.current) {
-          clearTimeout(timeout2.current);
-        }
+        // if (timeout2.current) {
+        //   clearTimeout(timeout2.current);
+        // }
         timeout2.current = setTimeout(() => {
-          console.log(12345);
+          console.log('> initJS');
           initJS.current = true;
           eval(js);
         }, 300);

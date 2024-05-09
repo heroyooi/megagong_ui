@@ -7,21 +7,17 @@
 
   function PageProvider({ children }) {
     const timeout = useRef(null);
-    const clickAnk = useRef(0);
     const initCode = useRef(false);
 
     const moveComponent = (position, index) => {
-      // setTimeout(() => {
-        // window.scrollTo(0, 0);
-        window.scrollTo({
-          top: position.current[index],
-          behavior: 'smooth',
-        });
-      // }, 500);
+      window.scrollTo({
+        top: position.current[index],
+        behavior: 'smooth',
+      });
     }
 
     return (
-      <PageContext.Provider value={{ clickAnk, initCode, moveComponent }}>
+      <PageContext.Provider value={{ initCode, moveComponent }}>
         {children}
       </PageContext.Provider>
     )

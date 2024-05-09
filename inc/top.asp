@@ -202,6 +202,7 @@
 </head>
 <body>
   <div id="wrap">
+    <!--
     <div class="co-loading" style="background:rgba(0, 0, 0, 0.5); position:fixed; left: 0; top:0; width: 100%; height: 100%; z-index: 999;"></div>
     <div class="co-loading_ui">
       <div class="span_loading_wrap">
@@ -211,5 +212,6 @@
         <span class="span_loading"></span>
       </div>
     </div>
+    -->
     <div class="wrap">
       

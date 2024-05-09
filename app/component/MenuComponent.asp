@@ -25,8 +25,6 @@
     const componentPosition = useRef([]);
     const [componentActive, setComponentActive] = useState(0);
 
-    const { user } = useAuth();
-
     const toggleCode = () => {}
     usePageInit(2, 1);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);

@@ -11,7 +11,6 @@
     const [mode, setMode] = useState('anonymous'); // anonymous, authenticate
 
     useEffect(() => {
-      console.log('user > ', user);
       setAdmin(FBU_ADMIN_UID === user?.uid);
     }, [user])
 

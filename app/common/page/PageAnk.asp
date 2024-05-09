@@ -7,9 +7,9 @@
     const goComponent = useCallback((index) => () => {
       window.scrollTo({
         top: position.current[index],
-        // behavior: 'smooth',
+        behavior: 'smooth',
       });
-    }, [position]);
+    }, [position, active]);
     
     useEffect(() => {
       const pos = listEl.current.children[active - 1]?.offsetTop;

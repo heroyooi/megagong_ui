@@ -7,6 +7,7 @@
 <!-- #include virtual = "/app/component/popup/Popup7.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup8.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup9.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup10.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -49,13 +50,17 @@
         title: "팝업 호출 - 페이드업·다운 & 컨텐츠 고정",
         component: Popup9
       },
+      {
+        title: "모달 팝업 - 자세히 보기",
+        component: Popup10
+      },
     ]
     
     const componentRefs = useRef(Array(componentArray.length).fill(null));
     const componentPosition = useRef([]);
     const [componentActive, setComponentActive] = useState(0);
 
-    const { user } = useAuth();
+    // const { user } = useAuth();
 
     const toggleCode = () => {}
     usePageInit(2, 3);

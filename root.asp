@@ -11,7 +11,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <!-- #include virtual = "/app/index.asp"-->
-<!-- #include virtual = "/app/context/AuthContext.asp"-->
+<!-- include virtual = "/app/context/AuthContext.asp"-->
 
 <script type="text/babel">
     'use strict';
@@ -23,9 +23,11 @@
     const { HashRouter, BrowserRouter, Route, Link, useParams, useLocation, useHistory, withRouter } = ReactRouterDOM;
 
     root.render(
-      <AuthProvider>
+      <>
+        {/*<AuthProvider>*/}
         <ComponentGuide />
-      </AuthProvider>
+        {/*</AuthProvider>*/}
+      </>
     );
 </script>
 

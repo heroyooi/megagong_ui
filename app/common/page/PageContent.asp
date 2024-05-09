@@ -2,7 +2,7 @@
   'use strict';
 
   function PageContent({ title, desc, image, image2, html, css, js, outJs, excCss = '', items, link, onChange, version = 'general' }) {
-    const { user, mode } = useAuth();
+    // const { user, mode } = useAuth();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
     const timeout = useRef(null);
@@ -12,10 +12,10 @@
       if (view && refCode.current) {
         window.scrollTo({
           top: refCode.current.offsetTop - (80 + 50),
-          // behavior: 'smooth'
+          behavior: 'smooth'
         });
       }
-    }, [view])
+    }, [view, js])
 
     const onView = () => {
       setView(prev => !prev);
@@ -63,12 +63,12 @@
     return (
       <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border">
         <p className="page_head bg-gradient-to-r from-zinc-600 to-mainColor-500 text-white text-lg font-extrabold rounded-full py-1 pr-12 pl-14 mr-2.5 -ml-14 inline-block">{title}</p> 
-        {(mode == 'anonymous' || user) && (
+        {/*(mode == 'anonymous' || user) && ( */}
           <button className="code_open" onClick={onView}>
             <span className={view ? "open_bg on" : "open_bg"}></span>
             <span className={view ? "open_shape on" : "open_shape"}></span>
           </button>
-        )}
+        {/*)}*/}
         
         <div className="issue-box-wrap mt-7"></div>
         {image && <div className="position_site px-36 overflow-hidden mb-6 bg-mainColor_gray-500"><img src={image} alt='-' /></div>}

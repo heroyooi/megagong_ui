@@ -228,7 +228,7 @@ End Function
             </div>
         </div>
     </div>
-</div>
+  </div>
 </header>`;
 
 const css = `.toggleImg2 img:nth-child(1) {display: none;}
@@ -238,7 +238,36 @@ const css = `.toggleImg2 img:nth-child(1) {display: none;}
 
 const excCss = ``;
 
-const js = `function inifiniteLoop() {
+const js = `var window_width = $(window).width();
+var depth2_swiper = undefined;
+function responSwiper() {
+    //swiper 호출타입으로 구분 
+    if (window_width < 1024 && depth2_swiper == undefined) {
+        depth2_swiper = new Swiper(".depth2-swiper", {
+            slidesPerView: 'auto',
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            simulateTouch: true,     
+            //scrollbar: {
+            //    el: '.depth2-swiper .swiper-scrollbar',
+            //    draggable: true,
+            //},                    
+        });
+    } else if (window_width >= 1024 && depth2_swiper != undefined) {
+        depth2_swiper.destroy();
+        depth2_swiper = undefined;
+    }
+}
+responSwiper();
+
+//실시간 브라우저 width 갱신
+$(window).on('resize', function () {
+    window_width = $(window).width();
+    responSwiper();
+});
+            
+function inifiniteLoop() {
   $(".depth2-wrp .toggleImg2").toggleClass("on");
   timeout = setTimeout(inifiniteLoop, 500);
 }

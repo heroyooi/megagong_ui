@@ -32,9 +32,9 @@
     useEffect(() => {
       if (!initJS.current || initCode.current || onChange) {
         initCode.current = false;
-        // if (timeout2.current) {
-        //   clearTimeout(timeout2.current);
-        // }
+        if (timeout2.current) {
+          clearTimeout(timeout2.current);
+        }
         timeout2.current = setTimeout(() => {
           console.log('> initJS');
           initJS.current = true;

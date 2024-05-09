@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Menu1({ title, onChange }) {
+  function MenuGnb({ title, onChange }) {
 
 const html = `<header id="headertop" class="gong">
   <div id="header_wrap" class="hd_wrp online v21_2 main fullser_wrap">
@@ -231,7 +231,7 @@ const excCss = `#headertop{font-family:'¸¼Àº °íµñ','Malgun Gothic','µ¸¿ò','Dotum
 
 const js = `function inifiniteLoop() {
   $('#headertop .fullser_wrap .hd_utility.v23_1 .mnu_list3.d0420 li.pass').toggleClass('on');
-  $(".toggleImg2").toggleClass("on");
+  $("#header_utility .mnu_list .toggleImg2").toggleClass("on");
   timeout = setTimeout(inifiniteLoop, 500);
 }
 inifiniteLoop();

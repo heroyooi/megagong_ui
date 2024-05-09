@@ -54,7 +54,6 @@
               <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/page/fullservice" className="">풀서비스<span></span></Link></li>
             </ul>
           </li>}
-          <li className={`big_nav srd py-3 text-base font-bold pl-10 cursor-pointer text-white  ${dp1 == 4 ? "on bg-gradient-to-r from-mainColor-500" : ""}`} onClick={changeDp1(4)}><Link to="/blog"><i className='bx bxs-detail mr-2.5 text-xl align-bottom'></i>블로그<span></span></Link></li>
         </ul>
       </div>
 

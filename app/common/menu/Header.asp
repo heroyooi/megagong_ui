@@ -72,22 +72,7 @@
                     <li><Link to="/component/button">COMPONENT</Link></li>
                     <li><Link to="/page/teacher">PAGE</Link></li>
                     {/* <li><Link to="/blog">BLOG</Link></li> */}
-                    {user && <li id="js_test"><Link to="/js_test">JS TEST</Link></li>}
                   </ul>
-                  {mode == 'authenticate' && (<ul className="util_list">
-                    {user
-                      ? (
-                        <>
-                          <li className="authorized profile"><span>{user.displayName}</span>(<em>{user.email}</em>)님 환영합니다.</li>
-                          <li className="authorized logout" onClick={logoutAction}><a className="btn"><i className='bx bx-log-out'></i></a></li>
-                        </>
-                      ) : (
-                        <>
-                          <li className="anonymous"><Link to="/login">LOGIN</Link></li>
-                          <li className="anonymous"><Link to="/signup">SIGNUP</Link></li>
-                        </>
-                      )}
-                  </ul>)}
                 </nav>
                 <button type="button" className="btn_menu" onClick={toggleMenu}>
                   <div className="shape">
@@ -103,25 +88,10 @@
                 <div className="mo_dimm"></div>
                 <div className="mo_menu_wrp">
                   <ul className="nav_list">
-                    <li onClick={closeMenu('/component/button')}><a>COMPONENT</a></li>
+                    <li onClick={closeMenu('/component/menu')}><a>COMPONENT</a></li>
                     <li onClick={closeMenu('/page/teacher')}><a>PAGE</a></li>
                     {/* <li onClick={closeMenu('/blog')}><a>BLOG</a></li> */}
-                    {user && <li onClick={closeMenu('/js_test')}><a>JS TEST</a></li>}
                   </ul>
-                  {mode == 'authenticate' && (<ul className="util_list">
-                    {user
-                      ? (
-                        <>
-                          <li className="authorized profile"><span>{user.displayName}</span>(<em>{user.email}</em>)님 환영합니다.</li>
-                          <li className="authorized logout" onClick={logoutAction}><a className="btn"><i className='bx bx-log-out'></i></a></li>
-                        </>
-                      ) : (
-                        <>
-                          <li onClick={closeMenu('/login')} className="anonymous"><a>LOGIN</a></li>
-                          <li onClick={closeMenu('/signup')} className="anonymous"><a>SIGNUP</a></li>
-                        </>
-                      )}
-                  </ul>)}
                 </div>
               </div>
             </header>

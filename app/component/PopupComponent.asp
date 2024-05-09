@@ -6,6 +6,7 @@
 <!-- #include virtual = "/app/component/popup/Popup6.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup7.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup8.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup9.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -43,6 +44,10 @@
       {
         title: "팝업 호출 - 페이드인 & 컨텐츠 고정",
         component: Popup8
+      },
+      {
+        title: "팝업 호출 - 페이드업·다운 & 컨텐츠 고정",
+        component: Popup9
       },
     ]
     

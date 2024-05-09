@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, html, css, js, outJs, excCss = '', items, link, onChange, version = 'general' }) {
+  function PageContent({ title, desc, image, image2, html, css, js, outJs, excCss = '', items, link, onChange, version = 'general' }) {
     const { user, mode } = useAuth();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
@@ -72,6 +72,7 @@
         
         <div className="issue-box-wrap mt-7"></div>
         {image && <div className="position_site px-36 overflow-hidden mb-6 bg-mainColor_gray-500"><img src={image} alt='-' /></div>}
+        {image2 && <div className="position_site px-36 overflow-hidden mb-6 bg-mainColor_gray-500"><img src={image2} alt='-' /></div>}
 <div className={`code-box html w-full m-auto clear-both border-y-2 border-slate-200 ${version != 'no-padding' && "p-10 border-solid"}`}><Styled>{jsx}</Styled></div>
 <p className="page_text text-black my-8 text-base font-light" dangerouslySetInnerHTML={{ __html: desc }} />
 

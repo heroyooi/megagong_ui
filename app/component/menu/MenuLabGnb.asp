@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Menu2({ title, onChange }) {
+  function MenuLabGnb({ title, onChange }) {
 
 const html = `
 <%
@@ -238,7 +238,13 @@ const css = `.toggleImg2 img:nth-child(1) {display: none;}
 
 const excCss = ``;
 
-const js = ``;
+const js = `function inifiniteLoop() {
+  $(".depth2-wrp .toggleImg2").toggleClass("on");
+  timeout = setTimeout(inifiniteLoop, 500);
+}
+inifiniteLoop();`;
+
+const outJs = `clearTimeout(timeout);`;
 
     return (
       <PageContent
@@ -249,6 +255,7 @@ const js = ``;
         css={css}
         excCss={excCss}
         js={js}
+        outJs={outJs}
         items={["GNB","2µª½º","¹ÝÀÀÇü"]}
         link="<%=lab_main%>"
         onChange={onChange}

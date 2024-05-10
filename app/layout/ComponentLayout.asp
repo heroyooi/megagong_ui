@@ -20,6 +20,7 @@
         {/* cid === 'button' && <ButtonComponent /> */}
         {cid === 'tab' && <TabComponent />}
         {cid === 'popup' && <PopupComponent />}
+        {cid === 'dev-popup' && <DevPopupComponent />}
         {cid === 'swiper' && <SwiperComponent />}
       </AsideProvider>
     )

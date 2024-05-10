@@ -116,7 +116,7 @@ Call DBClose(Rs)
 
 <div class="pocket_pop cart <% if mode = "window" then %> detail <% end if %>">
     <% if mode = "popup" then %>
-    <a href="javascript:void(0);" onclick="fncLayerClose();" class="close_pocket">팝업 닫기</a>
+    <a href="javascript:;" onclick="fncLayerClose();" class="close_pocket">팝업 닫기</a>
     <% end if %>
     <ol class="cart_list" id="list_<%=ccd%>">
         <% ' 강좌 li에 class="on"%>
@@ -174,7 +174,7 @@ Call DBClose(Rs)
                 <strong class="p_tit">
                 <%=b_bnm%>
                 <% if mode = "window" then %>
-                <a href="javascript:void(0);" onclick="<%=preview_act%>" title="미리보기">미리보기</a>
+                <a href="javascript:;" onclick="<%=preview_act%>" title="미리보기">미리보기</a>
                 <% end if %>
                 </strong>
                 <span class="p_price">
@@ -197,7 +197,7 @@ Call DBClose(Rs)
                 <%=b_bnm%>
                 <% if mode = "window" then %>
                 <!--
-                <a href="javascript:void(0);" onclick="<%=preview_act%>" title="미리보기">미리보기</a>
+                <a href="javascript:;" onclick="<%=preview_act%>" title="미리보기">미리보기</a>
                 -->
                 <% end if %>
                 </strong>
@@ -234,25 +234,25 @@ Call DBClose(Rs)
     <ul class="btn_wrap" id="btn_wrap_<%=ccd%>">
 
         <% if mode = "window" then %>
-        <li><a href="javascript:void(0);" onclick="fncGoPay('C', <%=ccd %>);" title="장바구니" class="cart">장바구니</a></li>
-        <li><a href="javascript:void(0);" onclick="fncGoPay('P', <%=ccd %>);" title="바로 결제" class="pay">바로 결제</a></li>
+        <li><a href="javascript:;" onclick="fncGoPay('C', <%=ccd %>);" title="장바구니" class="cart">장바구니</a></li>
+        <li><a href="javascript:;" onclick="fncGoPay('P', <%=ccd %>);" title="바로 결제" class="pay">바로 결제</a></li>
         <% else %>
             <% if mpcd = "" then %>
-            <li><a href="javascript:void(0);" onclick="fncGoPay(<%=area_no %>, 'C', <%=ccd %>);" title="장바구니" class="cart">장바구니</a></li>
-            <li><a href="javascript:void(0);" onclick="fncGoPay(<%=area_no %>, 'P', <%=ccd %>);" title="바로 결제" class="pay">바로 결제</a></li>
+            <li><a href="javascript:;" onclick="fncGoPay(<%=area_no %>, 'C', <%=ccd %>);" title="장바구니" class="cart">장바구니</a></li>
+            <li><a href="javascript:;" onclick="fncGoPay(<%=area_no %>, 'P', <%=ccd %>);" title="바로 결제" class="pay">바로 결제</a></li>
             <% else %>
-            <li><a href="javascript:void(0);" onclick="fncPickGoPay(<%=area_no %>, 'C', <%=ccd %>, <%=mpcd%>);" title="장바구니" class="cart">장바구니</a></li>
-            <li><a href="javascript:void(0);" onclick="fncPickGoPay(<%=area_no %>, 'P', <%=ccd %>, <%=mpcd%>);" title="바로 결제" class="pay">바로 결제</a></li>
+            <li><a href="javascript:;" onclick="fncPickGoPay(<%=area_no %>, 'C', <%=ccd %>, <%=mpcd%>);" title="장바구니" class="cart">장바구니</a></li>
+            <li><a href="javascript:;" onclick="fncPickGoPay(<%=area_no %>, 'P', <%=ccd %>, <%=mpcd%>);" title="바로 결제" class="pay">바로 결제</a></li>
             <% end if %>
         <% end if %>
 
         <% if pno <> "" and ino <> "" then %>
             <% if isStudying then %>
-                <li><a href="javascript:void(0);" onclick="alert('\'<%=cnm%>\' 강좌는 현재 수강 중입니다.');return false;" title="패스 담기" class="pass">패스 담기</a></li>
+                <li><a href="javascript:;" onclick="alert('\'<%=cnm%>\' 강좌는 현재 수강 중입니다.');return false;" title="패스 담기" class="pass">패스 담기</a></li>
             <% elseif pdf = "" then %> 
-                <li><a href="javascript:void(0);" onclick="open_pop('#popup_not');" title="패스 담기" class="pass">패스 담기</a></li>
+                <li><a href="javascript:;" onclick="open_pop('#popup_not');" title="패스 담기" class="pass">패스 담기</a></li>
             <% else %>
-                <li><a href="javascript:void(0);" onclick="fncGoCartPass(<%=pno %>, <%=ino %>);" title="패스 담기" class="pass">패스 담기</a></li>
+                <li><a href="javascript:;" onclick="fncGoCartPass(<%=pno %>, <%=ino %>);" title="패스 담기" class="pass">패스 담기</a></li>
             <% end if %>
         <% end if %>
     </ul>   
@@ -271,7 +271,7 @@ Call DBClose(Rs)
             </div>
             <ul class="btn_list">
                 <li><a href="/mypage/study/my_pass.asp?popupYn=Y">수강 기간 설정</a></li>
-                <li><a href="javascript:void(0);"" onclick="fncGoCartPass(<%=pno %>, <%=ino %>);">기본 수강일로 수강</a></li>
+                <li><a href="javascript:;"" onclick="fncGoCartPass(<%=pno %>, <%=ino %>);">기본 수강일로 수강</a></li>
             </ul>
         </div>
         <div class="hidden_pop" onclick="close_pop('#popup_not');"></div>
@@ -287,8 +287,8 @@ Call DBClose(Rs)
                 <p>강좌 담기가 완료되었습니다.<br>내 강의실로 이동하시겠습니까?</p>
             </div>
             <ul class="btn_list">
-                <li><a href="javascript:void(0);" onclick="fncMegaGoLink('/mypage/study/my_study.asp', 'funNavigateMyLecture', '');">확인</a></li>
-                <li><a href="javascript:void(0);" onclick="window.location.reload();">취소</a></li>
+                <li><a href="javascript:;" onclick="fncMegaGoLink('/mypage/study/my_study.asp', 'funNavigateMyLecture', '');">확인</a></li>
+                <li><a href="javascript:;" onclick="window.location.reload();">취소</a></li>
             </ul>
         </div>
         <div class="hidden_pop" onclick="close_pop('#popup_ok');"></div>

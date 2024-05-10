@@ -171,7 +171,7 @@
 					</li>
 					<li <% if gmenu = "5" Then %>class="on"<% End if %>><a class="mli_link" href="javascript:;" title="종합반">종합반</a><!-- <span class="hd_bubble"><img src="<%=img_main%>/c/sobang/main/hd_bubble.png" alt="프리미엄 학습관"></span>-->
 						<ul>
-							<li class="dep2_pre"><a href="javascript:void(0);" >관리형 종합 CLASS</a></li>
+							<li class="dep2_pre"><a href="javascript:;" >관리형 종합 CLASS</a></li>
 							<li class="dep2">
 								<a href="/c/sobang/academy/burning.asp">
 									<%If CDate(lo_now_date) < CDate("2021-03-16") then%>
@@ -207,14 +207,14 @@
 							<%end if%>
 
 							<%If CDate(lo_now_date) < CDate("2021-05-17") then%>
-							<li class="dep2_pre"><a href="javascript:void(0);" >재도전수험생 전용</a></li>
+							<li class="dep2_pre"><a href="javascript:;" >재도전수험생 전용</a></li>
 							<li class="dep2">
 								<a href="/c/sobang/academy/rechallenge.asp#eventWrap" >
 									ㆍ<span style="display: inline-block;vertical-align: top;">리-챌린지 CLASS<img src="<%=img_main%>/common/ic_new.gif" alt="새로운 게시글" style="vertical-align:middle;margin-left:3px;display:inline-block">
 									<br/>(11개월 과정)</span>
 								</a>
 							</li>
-							<li class="dep2_pre"><a href="javascript:void(0);" >관리형 면접반</a></li>
+							<li class="dep2_pre"><a href="javascript:;" >관리형 면접반</a></li>
 							<li class="dep2">
 								<a href="/c/sobang/event/2021/04020002/index.asp#eventWrap" >
 									ㆍ<span style="display: inline-block;vertical-align: top;">합격드림팀<img src="<%=img_main%>/common/ic_new.gif" alt="새로운 게시글" style="vertical-align:middle;margin-left:3px;display:inline-block">
@@ -222,7 +222,7 @@
 								</a>
 							</li>
 							<%end if%>
-							<li class="dep2_pre"><a href="javascript:void(0);" >21년 관리형 면접반</a></li>
+							<li class="dep2_pre"><a href="javascript:;" >21년 관리형 면접반</a></li>
 							<li class="dep2">
 								<a href="/c/sobang/event/2021/04020002/index.asp#eventWrap" >
 									ㆍ<span style="display: inline-block;vertical-align: top;">합격드림팀<img src="<%=img_main%>/common/ic_new.gif" alt="새로운 게시글" style="vertical-align:middle;margin-left:3px;display:inline-block">

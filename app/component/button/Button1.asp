@@ -11,7 +11,7 @@ const html = `<div className="btn_list">
   <a href="javascript:fncBrdWrite();" class="cmn_btn c_green">질문하기</a>
 </div>
 <div class="btn_wrap">
-  <a href="javascript:void(0);" style={{cursor: "pointer"}} onClick="goRegister();" class="btn">수강후기 <br class="mo_576" />작성하기</a>
+  <a href="javascript:;" style={{cursor: "pointer"}} onClick="goRegister();" class="btn">수강후기 <br class="mo_576" />작성하기</a>
 </div>`;
 
 const css = `.btn_wrap .btn {display: block;width: 130px;height: 40px;line-height: 40px;font-size: 14px;color: #fff;background-color: #129490;font-weight: 600;text-align: center;}

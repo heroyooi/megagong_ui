@@ -24,9 +24,9 @@ subUrl = "/l/" + h_gubn
         <nav role="navigation" class="nav">
         
             <ul class="depth1-wrp <%=h_gubn%>">
-                <li><a class="<%if h_dcd = "4" then%> on <%end if%>" href="javascript:void(0);" onclick="labMain(4);" title="공무원">공무원</a></li>
-                <li><a class="<%if h_dcd = "3" then%> on <%end if%>" href="javascript:void(0);" onclick="labMain(3);" title="소방">소방</a></li>
-                <li><a class="<%if h_dcd = "5" then%> on <%end if%>" href="javascript:void(0);" onclick="labMain(5);" title="군무원">군무원</a></li>
+                <li><a class="<%if h_dcd = "4" then%> on <%end if%>" href="javascript:;" onclick="labMain(4);" title="공무원">공무원</a></li>
+                <li><a class="<%if h_dcd = "3" then%> on <%end if%>" href="javascript:;" onclick="labMain(3);" title="소방">소방</a></li>
+                <li><a class="<%if h_dcd = "5" then%> on <%end if%>" href="javascript:;" onclick="labMain(5);" title="군무원">군무원</a></li>
             </ul>
             <script>
                 function labMain(g) {
@@ -91,7 +91,7 @@ subUrl = "/l/" + h_gubn
                     <li <% if instr(1, NowUrl, "/guide/guide.asp") > 0 Then %>class="current"<% End if %>><a href="<%=subUrl%>/guide/guide.asp">시험제도</a></li>
                     <li <% if instr(1, NowUrl, "/guide/schedule.asp") > 0 Then %>class="current"<% End if %>><a href="<%=subUrl%>/guide/schedule.asp">시험일정</a></li>
                     <li <% if instr(1, NowUrl, "/guide/series.asp") > 0 Then %>class="current"<% End if %>><a href="<%=subUrl%>/guide/series.asp">모집정보</a></li>
-                    <li><a href="javascript:void(0);">전지적 직렬탐구시점</a></li>
+                    <li><a href="javascript:;">전지적 직렬탐구시점</a></li>
                 </ul>
                 <ul class="depth3-box">
                     <li class="depth3"><a href="javascript:;">9급 진단평가<i></i></a></li>

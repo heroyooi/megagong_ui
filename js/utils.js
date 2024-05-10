@@ -460,14 +460,14 @@ const Lab = window.Lab || (function ($, window, document, undefined) {
         if ($popup_tweet_item.length) {
           // $tweet_select_item.append('<option value="0">' + isPathname.toUpperCase() + ' 타입 선택</option>');
           $('.select_wrap').append(
-            '<a href="javascript:void(0);" value="0" class="fir selected">타입 선택</a>'
+            '<a href="javascript:;" value="0" class="fir selected">타입 선택</a>'
           );
         }
         // $page_wrap.each(function (index) {
         //   $(this).addClass('board' + (index + 1));
         //   var headText = $(this).find('.page_head').text();
         //   $('.ank ul').append(
-        //     `<li class="ank_list"><a href="javascript:void(0);" onClick="fnMove(${
+        //     `<li class="ank_list"><a href="javascript:;" onClick="fnMove(${
         //       index + 1
         //     })">#${index + 1} ${headText}</a></li>`
         //   );
@@ -963,3 +963,183 @@ function closeCmegaPopupYoutubeToday() {
 }
 
 let timeout = null;
+
+// S: 메가공무원 함수 - 사용처(http://localhost/#/component/dev-popup)
+var isNoticePopupDimm = false;
+
+function openNoticePopup() {
+  var q = window.confirm('팝업을 띄우시겠습니까?');
+  if (q) {
+    isNoticePopupDimm = true;
+    openMegaPopup('popupFadeInNotice', 4, false, true);
+  }
+}
+
+function closeNoticePopup() {
+  var q = window.confirm('알림신청을 하지 않고 팝업을 닫으시겠습니까?');
+  if (q) {
+    isNoticePopupDimm = false;
+    $.magnificPopup.close();
+  }
+}
+
+function completeNotice() {
+  alert('알림 신청이 완료되었습니다.');
+  $.magnificPopup.close();
+}
+
+//파일 업로드
+var getFileExtention = function(filename) {
+  return filename.substring(filename.lastIndexOf('.')+1, filename.length) || filename;
+}
+
+var maxSize = 5 * 1024 * 1024;//5MB  
+var ChangeFile = function(obj, filename_field) {
+  if (typeof obj.files[0] !== "undefined") {
+      var file_ext = getFileExtention(obj.files[0].name.toLowerCase());
+      if (file_ext != 'jpg' && file_ext != 'jpeg' && file_ext != 'gif' && file_ext != 'png') {
+          alert('JPG, JPEG, GIF 또는 PNG 확장자 파일만 업로드 가능합니다.');
+          obj.files[0].value = null;
+          tempHtml = "<input type='file' id='attfile' name='attfile' value='' onchange=\"ChangeFile(this, 'filename')\">";
+          $('#attfile').replaceWith(tempHtml);         
+          document.getElementById('attfile_ori_name').value='';       
+          document.getElementById(filename_field).value="인증 이미지를 업로드해 주세요.";
+          return;
+      } else {
+          //첨부파일 사이즈 체크      
+          if(obj.files[0].size > maxSize){
+              tempHtml = "<input type='file' id='attfile' name='attfile' value='' onchange=\"ChangeFile(this, 'filename')\">";
+              $('#attfile').replaceWith(tempHtml);     
+              document.getElementById('attfile_ori_name').value='';                  
+              alert("첨부파일은 5MB 이하로 등록이 가능합니다.");
+              return;
+          }
+          document.getElementById(filename_field).value=obj.files[0].name;
+          fncFileUPloadNew('','board','event','<%=evt_cd%>','attfile', ',', 'N', 'Y');                               
+      }
+      $("#btn_fileDel").show();
+
+  } else {
+      document.getElementById(filename_field).value="인증 이미지를 업로드해 주세요.";
+      document.getElementById('attfile').value='';
+      document.getElementById('attfile_ori_name').value='';
+  }
+}
+
+function fncFileUPloadNew(form_id,dir,sub_dir,sub_sub_dir,id_str, delim, date_yn, rename_yn) {
+  if( (id_str == "" || id_str == undefined) || (delim == "" || delim == undefined) ) {
+      return false;
+  }                        
+  var target_tot = id_str.split(delim).length;
+
+  var proc_chk_tot = 0;
+  id_str.split(delim).forEach(function(i) {
+      var id_txt = "filename";
+          
+      if(i!=""){
+          var formData = new FormData();
+
+          formData.append("dir",dir);
+          formData.append("sub_dir",sub_dir);
+          formData.append("sub_sub_dir",sub_sub_dir);
+          formData.append("attfile", jQuery("#"+i)[0].files[0]);
+          formData.append("new_yn","Y");
+          formData.append("date_yn",date_yn);
+          formData.append("rename_yn",rename_yn);
+          formData.append("filesize","5");
+
+          var tmp_file_name = $("#"+i).val();                
+          var file_name = tmp_file_name.substring(tmp_file_name.lastIndexOf("\\")+1);
+          var file_main = document.domain.indexOf('dev') < 0 ? 'https://file.megagong.net' : 'https://filedev.megagong.net';
+      
+          jQuery.ajax({
+              url : file_main+"/file/file_upload_j.asp"
+              , type : "POST"
+              , processData : false
+              , contentType : false
+              , xhrFields: {
+                  withCredentials: true
+              }
+              //, contentType: 'application/x-www-form-urlencoded; charset=euc-kr'
+              , data : formData
+          })
+          .done(function(json) {
+                  var obj = JSON.parse(json);
+                  
+                  a=obj;
+                  if(obj["err_code"] < 0) {
+                      $("#"+id_txt).val("첨부파일을 등록해주세요.");
+                      alert(obj["upload_msg"]);
+                      return false;
+
+                  } else {
+                      $("#"+i+"_name").val(obj["file_info"]["file_name"]);
+                      $("#"+i+"_size").val(obj["file_info"]["file_size"]);
+                      $("#"+i+"_url").val(obj["file_info"]["file_url"]);
+
+                      $("#"+i+"_ori_name").val(file_name);
+                  }
+          })
+          .fail(function() {
+              proc_chk_tot++;
+
+              if(proc_chk_tot == target_tot) {
+                  //document.myform.submit();
+                  if(form_id!="") {
+                  document.getElementById(form_id).submit();
+                  }
+              }
+          })
+          .always(function() {
+              proc_chk_tot++;
+
+              if(proc_chk_tot == target_tot) {
+                  if(form_id!="") {
+                      document.getElementById(form_id).submit();
+                  }
+              }
+          });
+      }
+  });
+}
+
+function openSamplePopup2() {
+  var q = window.confirm('팝업을 띄우시겠습니까? 개발 팝업2');
+  if (q) {
+    openMegaPopup('popupSample', 5, false, true);
+  }
+}
+
+function closeSamplePopup2() {
+  var q = window.confirm('신청을 하지 않고 팝업을 닫으시겠습니까? 개발 팝업2');
+  if (q) {
+    isNoticePopupDimm = false;
+    $.magnificPopup.close();
+  }
+}
+
+function completeSample2() {
+  alert('신청이 완료되었습니다.');
+  $.magnificPopup.close();
+}
+
+function openSamplePopup3() {
+  var q = window.confirm('팝업을 띄우시겠습니까? 개발 팝업3');
+  if (q) {
+    openMegaPopup('popupSample', 6, false, true);
+  }
+}
+
+function closeSamplePopup3() {
+  var q = window.confirm('신청을 하지 않고 팝업을 닫으시겠습니까? 개발 팝업3');
+  if (q) {
+    isNoticePopupDimm = false;
+    $.magnificPopup.close();
+  }
+}
+
+function completeSample3() {
+  alert('신청이 완료되었습니다.');
+  $.magnificPopup.close();
+}
+// E: 메가공무원 함수 - 사용처(http://localhost/#/component/dev-popup)

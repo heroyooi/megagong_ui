@@ -46,7 +46,7 @@ dp2 = 6
                 <span>채점 후 확인할 수 있습니다.</span>
             
                 <!--<a href="./marking.asp?go=full_tab" title="채점하기">-->
-                <a href="javascript:void(0);" title="채점하기">
+                <a href="javascript:;" title="채점하기">
             
                     채점하러 가기 →
                 </a>

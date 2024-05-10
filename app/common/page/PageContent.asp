@@ -89,11 +89,11 @@
   {js && <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(js)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-js"><code className="language-js">{js}</code></pre></div>}
 </div>}
         <div className="page_bot_wrap flex justify-between items-center lg:block">
-            <a className="use_link text-mainColor-500 rounded-full border-solid border-2 border-mainColor-500 pl-4 pr-5 py-1.5 align-middle lg:w-full lg:text-center lg:mb-1" href={link} target="_blank">
+            {link && <a className="use_link text-mainColor-500 rounded-full border-solid border-2 border-mainColor-500 pl-4 pr-5 py-1.5 align-middle lg:w-full lg:text-center lg:mb-1 shrink-0" href={link} target="_blank">
               <i className="bx bx-link text-mainColor-500 text-xl mr-1 align-sub"></i>EXAMPLE
-            </a>
-            <div className="cap_tag lg:w-full">
-                <ul className="flex lg:justify-between">
+            </a>}
+            <div className="cap_tag lg:w-full flex flex-row w-[100%]">
+                <ul className="flex lg:justify-between flex flex-1 justify-end">
                     {items.map((item, index) => <li className="text-mainColor-500 rounded-full border-solid border-2 border-mainColor-500 pl-4 pr-5 py-1.5 align-middle flex items-center ml-2.5 font-extrabold lg:ml-0" key={index}>#{item}</li>)}
                 </ul>
             </div>

@@ -56,7 +56,7 @@ cur_gift_dt = month(now_date) & "월 " & day(now_date) & "일"
 
             <div class="clickEvtBtn">
                 <% if winnerYn <> "Y" then %>
-                <a href="javascript:void(0);" onclick="applyX();" class="btnApply">
+                <a href="javascript:;" onclick="applyX();" class="btnApply">
                     <img src="<%=img_main%>/m/2022/0712_plower3362/evt1_btn.png" alt="선착순 교재 무료 신청하기">
                 </a>
                 <% else %>
@@ -66,7 +66,7 @@ cur_gift_dt = month(now_date) & "월 " & day(now_date) & "일"
                 <% end if %>
 
             </div>
-            <p class="textEvt">* 페이지 하단의 유의사항을 반드시 확인하세요. <a href="javascript:void(0);" onclick="getResult();">내 당첨내역 보기 ></a></p>
+            <p class="textEvt">* 페이지 하단의 유의사항을 반드시 확인하세요. <a href="javascript:;" onclick="getResult();">내 당첨내역 보기 ></a></p>
             
             <%if not isClickEvent then%>
             <!--선착순 마감시-->

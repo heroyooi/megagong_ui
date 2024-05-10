@@ -862,9 +862,9 @@ Response.ContentType = "text/html; charset=euc-kr"
     <div class="condition_btn" <% If grp_cd = "663" or grp_cd="674,675" or grp_cd="656" or grp_cd="688" Then %>style="display:none;" <%End If %>>
         <% ' 열기 클릭시 class="on" %>
         <% if tab_yn <> "Y" then %>
-            <a href="javascript:void(0);" id="tec_step_tab_<%=area_no %>" data-tab="Y" title="선생님/학습단계 열기">선생님/학습단계 열기</a>
+            <a href="javascript:;" id="tec_step_tab_<%=area_no %>" data-tab="Y" title="선생님/학습단계 열기">선생님/학습단계 열기</a>
         <% else %>
-            <a href="javascript:void(0);" id="tec_step_tab_<%=area_no %>" data-tab="N" class="on" title="선생님/학습단계 닫기">선생님/학습단계 닫기</a>
+            <a href="javascript:;" id="tec_step_tab_<%=area_no %>" data-tab="N" class="on" title="선생님/학습단계 닫기">선생님/학습단계 닫기</a>
         <% end if %>
     </div>
 </div>
@@ -1120,7 +1120,7 @@ Response.ContentType = "text/html; charset=euc-kr"
                                         </li>
                                         <% end if %>                              
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(<%=area_no %>, <%=ccd %>);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(<%=area_no %>, <%=ccd %>);" class="cart_btn" title="장바구니">장바구니</a>
                                 </div>
                             </div>
 
@@ -1416,7 +1416,7 @@ Response.ContentType = "text/html; charset=euc-kr"
                                         </li>
                                         <% end if %>                              
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(<%=area_no %>, <%=ccd %>);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(<%=area_no %>, <%=ccd %>);" class="cart_btn" title="장바구니">장바구니</a>
                                 </div>
                             </div>
 
@@ -1698,7 +1698,7 @@ Response.ContentType = "text/html; charset=euc-kr"
                                     </li>
                                     <% end if %>                              
                                 </ul>
-                                <a href="javascript:void(0);" onclick="fncCartLayer(<%=area_no %>, <%=ccd %>);" class="cart_btn" title="장바구니">장바구니</a>
+                                <a href="javascript:;" onclick="fncCartLayer(<%=area_no %>, <%=ccd %>);" class="cart_btn" title="장바구니">장바구니</a>
                             </div>
                         </div>
 

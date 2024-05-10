@@ -29,9 +29,9 @@ dp2 = 5
     <div class="tab_wrap">
         <div class="tab_box">
             <ul class="tab_list clearfix tab3" id="tab_list">
-                <li class="on"><a href="javascript:void(0);"><span>정답 입력 및 오답 확인</span></a></li>
-                <li><a href="javascript:void(0);"><span>누적 성적 및 유형별 정답률</span></a></li>
-                <li><a href="javascript:void(0);"><span>유사 유형 검색 서비스</span></a></li>
+                <li class="on"><a href="javascript:;"><span>정답 입력 및 오답 확인</span></a></li>
+                <li><a href="javascript:;"><span>누적 성적 및 유형별 정답률</span></a></li>
+                <li><a href="javascript:;"><span>유사 유형 검색 서비스</span></a></li>
             </ul>
         </div>
         <div class="tab_area">

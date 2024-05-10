@@ -9,6 +9,8 @@
 <!-- #include virtual = "/app/component/popup/Popup9.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup10.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup11.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup12.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup13.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -19,10 +21,10 @@
         title: "¸ÞÀÎ ¿ìÃø ÇÏ´Ü ÆË¾÷",
         component: Popup1
       },
-      {
-        title: "»ó´Ü ¿À´Ã ÇÏ·ç º¸Áö ¾Ê±â",
-        component: Popup2
-      },
+      // {
+      //   title: "»ó´Ü ¿À´Ã ÇÏ·ç º¸Áö ¾Ê±â",
+      //   component: Popup2
+      // },
       {
         title: "Áß¾Ó ¿À´Ã ÇÏ·ç ´Ý±â ÆË¾÷",
         component: Popup3
@@ -59,6 +61,14 @@
         title: "¿øÇü ½½¶óÀÌµå ÆË¾÷",
         component: Popup11
       },
+      {
+        title: "ÀÌº¥Æ® ¾à°ü ÆË¾÷ - Áß¾Ó µõ ÆË¾÷",
+        component: Popup12
+      },
+      {
+        title: "ÀÌº¥Æ® ¾à°ü ÆË¾÷ - tiny ÆË¾÷",
+        component: Popup13
+      },
     ]
     
     const { initCode } = usePage();
@@ -69,7 +79,7 @@
     // const { user } = useAuth();
 
     const toggleCode = () => {}
-    usePageInit(2, 3);
+    usePageInit(2, 3, 1);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     useEffect(() => {

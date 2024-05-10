@@ -8,12 +8,12 @@ const html = `<% If fncRequestCookie("main_exhibi_lab") = "" then %>
       <a href="javascript:;" class="close"></a>
       <div class="exhibi_sd">
           <div class="item">
-              <a href="javascript:void(0);" title="초시생 가이드북 무료 다운로드">
+              <a href="javascript:;" title="초시생 가이드북 무료 다운로드">
                   <img src="/images/pop_sample.png" alt="초시생 가이드북 무료 다운로드">
               </a>
           </div>          
           <div class="item">
-              <a href="javascript:void(0);" title="메가패스 7일 무료체험 지금 신청하기">
+              <a href="javascript:;" title="메가패스 7일 무료체험 지금 신청하기">
                   <img src="/images/pop_sample2.png" alt="메가패스 7일 무료체험 지금 신청하기">
               </a>
           </div>             

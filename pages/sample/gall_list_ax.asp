@@ -78,7 +78,7 @@ call dbclose(objrs)
                 </div>
                 <p>
                     <% if (trim(ED_MEM_ID) = trim(cook_id) or ucase(fncrequestCookie("mem_type"))="E") and not isEvent then %>
-                    <a href="javascript:void(0);" title="昏力" onclick="delX(<%=ED_DTL_CD%>)">[昏力]</a>
+                    <a href="javascript:;" title="昏力" onclick="delX(<%=ED_DTL_CD%>)">[昏力]</a>
                     <% end if %>
                     <span><%=tmpNM%></span><span><%=REG_DT%></span>
                 </p>

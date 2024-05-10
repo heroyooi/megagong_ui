@@ -22,7 +22,7 @@
                                 <div class="mg_filebox clfix">
                                     <div class="filename">
                                         <input type="text" id="filename" name="filename" value="인증 이미지를 업로드해 주세요.">
-                                        <a id="btn_fileDel" href="javascript:void(0);" onclick="document.getElementById('filename').value='인증 이미지를 업로드해 주세요.';document.getElementById('attfile').value='';document.getElementById('attfile_ori_name').value=''; $('#btn_fileDel').show();" title="삭제">[삭제]</a>
+                                        <a id="btn_fileDel" href="javascript:;" onclick="document.getElementById('filename').value='인증 이미지를 업로드해 주세요.';document.getElementById('attfile').value='';document.getElementById('attfile_ori_name').value=''; $('#btn_fileDel').show();" title="삭제">[삭제]</a>
                                     </div>
                                     <div class="filebtn">
                                         <label for="attfile" style="cursor:pointer">파일 선택</label>

@@ -153,7 +153,7 @@ Response.ContentType = "text/html; charset=euc-kr"
 <% if isarray(ar_pkg) then %>
     <div class="pocket_pop package <% if mode = "window" then %> detail<% end if %>">
         <% if mode = "popup" then %>
-        <a href="javascript:void(0);" onclick="fncLayerClose();" class="close_pocket">팝업 닫기</a>
+        <a href="javascript:;" onclick="fncLayerClose();" class="close_pocket">팝업 닫기</a>
         <% end if %>
         
         <ol class="cart_list" id="list_<%=pkg_cd%>">
@@ -238,7 +238,7 @@ Response.ContentType = "text/html; charset=euc-kr"
                     <strong class="p_tit">
                     <%=b_bnm%>
                     <% if mode = "window" then %>
-                    <!--<a href="javascript:void(0);" onclick="<%=preview_act%>" title="미리보기">미리보기</a>-->
+                    <!--<a href="javascript:;" onclick="<%=preview_act%>" title="미리보기">미리보기</a>-->
                     <% end if %>
                     </strong>
                     <span class="p_price">
@@ -265,7 +265,7 @@ Response.ContentType = "text/html; charset=euc-kr"
                     <%=b_bnm%>
                     <% if mode = "window" then %>
                     <!--
-                    <a href="javascript:void(0);" onclick="<%=preview_act%>" title="미리보기">미리보기</a>
+                    <a href="javascript:;" onclick="<%=preview_act%>" title="미리보기">미리보기</a>
                     -->
                     <% end if %>
                     </strong>
@@ -307,9 +307,9 @@ Response.ContentType = "text/html; charset=euc-kr"
 
         <ul class="btn_wrap" id="btn_wrap_<%=pkg_cd%>">
         <% if mode = "window" then %>
-            <li><a href="javascript:void(0);" onclick="fncPkgPay('pkg', <%=pkg_cd%>, <%=buy_ok%>);" title="바로 결제" class="pay">바로 결제</a></li>
+            <li><a href="javascript:;" onclick="fncPkgPay('pkg', <%=pkg_cd%>, <%=buy_ok%>);" title="바로 결제" class="pay">바로 결제</a></li>
         <% else %>
-            <li><a href="javascript:void(0);" onclick="fncPkgPay(<%=area_no %>, 'pkg', <%=pkg_cd%>, <%=buy_ok%>, <%=mpcd%>);" title="바로 결제" class="pay">바로 결제</a></li>
+            <li><a href="javascript:;" onclick="fncPkgPay(<%=area_no %>, 'pkg', <%=pkg_cd%>, <%=buy_ok%>, <%=mpcd%>);" title="바로 결제" class="pay">바로 결제</a></li>
         <% end if %>
         </ul>
 

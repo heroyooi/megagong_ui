@@ -4,8 +4,8 @@
     <h4><span><img src="<%=img_main%>/m/2022/1130_shin242/evt1_subtit.png" alt="교재 리뷰 모아보기"></span></h4>
     <div class="type_lst">
         <ul>
-            <li id="list1" class="on"><a href="javascript:void(0);" onclick="getList('')" title="전체">전체</a></li>
-            <li id="list2"><a href="javascript:void(0);" <% if cook_id = "" then %> onclick="alert('로그인이 필요합니다.');location.href='<%=url_main%>/member/login.asp';return false;" <% else %> onclick="getList('my')" <% end if %> title="나의 리뷰 보기">나의 리뷰 보기</a></li>
+            <li id="list1" class="on"><a href="javascript:;" onclick="getList('')" title="전체">전체</a></li>
+            <li id="list2"><a href="javascript:;" <% if cook_id = "" then %> onclick="alert('로그인이 필요합니다.');location.href='<%=url_main%>/member/login.asp';return false;" <% else %> onclick="getList('my')" <% end if %> title="나의 리뷰 보기">나의 리뷰 보기</a></li>
         </ul>
     </div>
     <div id="gallery_list"></div>

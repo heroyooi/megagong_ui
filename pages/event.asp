@@ -110,7 +110,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 19977);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 19977);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -223,7 +223,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 19422);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 19422);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -336,7 +336,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 19424);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 19424);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -435,7 +435,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 20129);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 20129);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -583,7 +583,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 19977);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 19977);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -696,7 +696,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 19422);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 19422);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -809,7 +809,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 19424);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 19424);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -908,7 +908,7 @@ dp2 = 4
                                         </li>
 
                                     </ul>
-                                    <a href="javascript:void(0);" onclick="fncCartLayer(3, 20129);" class="cart_btn" title="장바구니">장바구니</a>
+                                    <a href="javascript:;" onclick="fncCartLayer(3, 20129);" class="cart_btn" title="장바구니">장바구니</a>
                                     </div>
                                 </div>
 
@@ -1656,7 +1656,7 @@ $(document).ready(function () {
                         <input id="url" name="url" type="text" onclick="tbox_click();" value="" placeholder="소문낸 URL을 등록해 주세요!" title="작성칸">
                     </div>
                     <div class="btn_wrap">
-                        <a href="javascript:void(0);" onclick="snsEvent();" title="등록하기" class="btn_sns">등록하기</a>
+                        <a href="javascript:;" onclick="snsEvent();" title="등록하기" class="btn_sns">등록하기</a>
                     </div>
                 </div>
                 <div class="info_wrap">
@@ -1989,8 +1989,8 @@ URL 공유 이벤트 등에 주로 사용되며 페이지의 디자인 방향성에 따라 색상 및 작은 구
         <h4><span><img src="https://img.megagong.net/m/2022/1130_shin242/evt1_subtit.png" alt="교재 리뷰 모아보기"></span></h4>
         <div class="type_lst">
             <ul>
-                <li id="list1" class="on"><a href="javascript:void(0);" onclick="getList('')" title="전체">전체</a></li>
-                <li id="list2"><a href="javascript:void(0);" onclick="alert('로그인이 필요합니다.');location.href='https://www.megagong.net/member/login.asp';return false;" title="나의 리뷰 보기">나의 리뷰 보기</a></li>
+                <li id="list1" class="on"><a href="javascript:;" onclick="getList('')" title="전체">전체</a></li>
+                <li id="list2"><a href="javascript:;" onclick="alert('로그인이 필요합니다.');location.href='https://www.megagong.net/member/login.asp';return false;" title="나의 리뷰 보기">나의 리뷰 보기</a></li>
             </ul>
         </div>
         <div id="gallery_list">
@@ -2101,7 +2101,7 @@ URL 공유 이벤트 등에 주로 사용되며 페이지의 디자인 방향성에 따라 색상 및 작은 구
                                     <div class="mg_filebox clfix">
                                         <div class="filename">
                                             <input type="text" id="filename" name="filename" value="인증 이미지를 업로드해 주세요.">
-                                            <a id="btn_fileDel" href="javascript:void(0);" onclick="document.getElementById('filename').value='인증 이미지를 업로드해 주세요.';document.getElementById('attfile').value='';document.getElementById('attfile_ori_name').value=''; $('#btn_fileDel').show();" title="삭제">[삭제]</a>
+                                            <a id="btn_fileDel" href="javascript:;" onclick="document.getElementById('filename').value='인증 이미지를 업로드해 주세요.';document.getElementById('attfile').value='';document.getElementById('attfile_ori_name').value=''; $('#btn_fileDel').show();" title="삭제">[삭제]</a>
                                         </div>
                                         <div class="filebtn">
                                             <label for="attfile" style="cursor:pointer">파일 선택</label>
@@ -2641,13 +2641,13 @@ URL 공유 이벤트 등에 주로 사용되며 페이지의 디자인 방향성에 따라 색상 및 작은 구
                             <img src="https://img.megagong.net/m/common/btn_tbprev.gif" alt="이전">
                         </a>
                         <strong>1</strong>
-                        <a href="javascript:void(0);">
+                        <a href="javascript:;">
                             2
                         </a>
-                        <a href="javascript:void(0);">
+                        <a href="javascript:;">
                             3
                         </a>
-                        <a href="javascript:void(0);">
+                        <a href="javascript:;">
                             <img src="https://img.megagong.net/m/common/btn_tbnext.gif" alt="다음 10개 페이지">
                         </a>
                     </div>

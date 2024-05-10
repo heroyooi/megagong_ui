@@ -173,7 +173,7 @@ const getPostsItem = async () => {
           $('.page_text_wrap').eq(tweet.optionValue - 1).find('.issue-box-wrap').append(`
             <div class="issue-box${tweet.completed ? ' completed' : ''}" data-id=${tweet.id} data-comments='${JSON.stringify(tweet.comments)}'>
               <div class="issue_wrap">
-                <a href="javascript:void(0);" class="issue_icon_user${tweet.comments.length > 0 ? ' exist' : ''}">${tweet.author}${tweet.comments.length > 0 ? `<em>${tweet.comments.length}</em>` : ''}</a>
+                <a href="javascript:;" class="issue_icon_user${tweet.comments.length > 0 ? ' exist' : ''}">${tweet.author}${tweet.comments.length > 0 ? `<em>${tweet.comments.length}</em>` : ''}</a>
                 <div class="issue_con">
                   <a href="#" class="login_close_btn"><i class="bx bx-x" style="color:#c9c9c9"></i></a>
                   ${tweet.creatorId === USER_ID ? `<a href="#" class="btn-del-issue"><i class="bx bx-trash"></i></a>` : ''}

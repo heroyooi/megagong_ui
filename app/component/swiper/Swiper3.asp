@@ -1,47 +1,45 @@
 <script type="text/babel">
   'use strict';
 
-  function Swiper2({ title, onChange }) {
+  function Swiper3({ title, onChange }) {
 
-const html = `<div class="mega_swiper mega_swiper_autoplay">
+const html = `<div class="mega_swiper mega_swiper_vertical">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">Slide 1</div>
 		<div class="swiper-slide">Slide 2</div>
 		<div class="swiper-slide">Slide 3</div>
+		<div class="swiper-slide">Slide 4</div>
+		<div class="swiper-slide">Slide 5</div>
+		<div class="swiper-slide">Slide 6</div>
+		<div class="swiper-slide">Slide 7</div>
+		<div class="swiper-slide">Slide 8</div>
+		<div class="swiper-slide">Slide 9</div>
 	</div>
 	<div class="swiper-pagination"></div>
-	<div class="swiper-button-prev"></div>
-	<div class="swiper-button-next"></div>
 </div>`;
 
-const css = `.mega_swiper {
+const css = `.mega_swiper.mega_swiper_vertical {
 	position: relative;
+	height: 180px;
 	overflow: hidden;
 }
 .mega_swiper .swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background-color: #eee;
-	padding: 50px 0;
 }`;
 
 const excCss = `.mega_swiper .swiper-slide {
   text-align: center;
 }`;
 
-const js = `new Swiper('.mega_swiper_autoplay', {
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
+const js = `var swiper = new Swiper(".mega_swiper_vertical", {
+	direction: "vertical",
 	pagination: {
 		el: ".swiper-pagination",
-	},
-	autoplay: {
-		delay: 3000, //◀ 안써도 3초 기본세팅상태
-		disableOnInteraction: true, //◀ 안써도 true 기본세팅상태
-		pauseOnMouseEnter: false, //◀ 안써도 false 기본세팅상태
-		reverseDirection: false, //◀ 안써도 false 기본세팅상태
-		stopOnLastSlide: false, //◀ 안써도 false 기본세팅상태
-		waitForTransition: true //◀ 안써도 true 기본세팅상태
+		clickable: true,
 	},
 });`;
 
@@ -57,7 +55,7 @@ const outJs = ``;
         excCss={excCss}
         js={js}
         outJs={outJs}
-        items={["반응형 슬라이드", "자동"]}
+        items={["반응형 슬라이드", "세로"]}
         // link="<%=dev_url_main%>/event/@template/index_swiper.asp"
         onChange={onChange}
         version="no-padding"

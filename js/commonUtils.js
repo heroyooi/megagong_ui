@@ -290,12 +290,12 @@ if ($('.ank').length) {
   $('.ank').append('<ul></ul>');
   if ($popup_tweet_item.length) {
     // $tweet_select_item.append('<option value="0">' + isPathname.toUpperCase() + ' 타입 선택</option>');
-    $('.select_wrap').append('<a href="javascript:void(0);" value="0" class="fir selected">타입 선택</a>');
+    $('.select_wrap').append('<a href="javascript:;" value="0" class="fir selected">타입 선택</a>');
   }
   $page_wrap.each(function(index){
     $(this).addClass('board'+(index+1));
     var headText = $(this).find('.page_head').text();
-    $('.ank ul').append(`<li class="ank_list"><a href="javascript:void(0);" onclick="fnMove(${index + 1})">#${index + 1} ${headText}</a></li>`);
+    $('.ank ul').append(`<li class="ank_list"><a href="javascript:;" onclick="fnMove(${index + 1})">#${index + 1} ${headText}</a></li>`);
     if ($popup_tweet_item.length) {
       // $tweet_select_item.append('<option value=' + (index + 1) + '>' + headText + '</option>');
       $tweet_select_item.append('<li value=' + (index + 1) + '>' + headText + '</li>');

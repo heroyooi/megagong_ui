@@ -269,7 +269,7 @@ Call dbclose(objrs)
 							<% end if %>
 
                             <% if cdate(lo_now_date) >= cdate("2022-09-19") then %>
-							<li class="dep2_pre"><a href="javascript:void(0);" >경채 초시생 강추 (NEW)</a></li>
+							<li class="dep2_pre"><a href="javascript:;" >경채 초시생 강추 (NEW)</a></li>
 							<li class="dep2">
 								<a href="/c/sobang/event/2022/09190014/index.asp#eventWrap" >
 									ㆍ<span style="display: inline-block;vertical-align: top;letter-spacing:-.15em;margin-left:-3px">5개월 경채 단독반(이론시작)<img src="<%=img_main%>/common/ic_new.gif" alt="새로운 게시글" style="vertical-align:middle;margin-left:3px;display:inline-block"></span>
@@ -280,7 +280,7 @@ Call dbclose(objrs)
 
 							
 							<%If cdate(lo_now_date) < cdate("2022-09-11") then %>
-							<li class="dep2_pre"><a href="javascript:void(0);" >재도전 수험생 전용</a></li>
+							<li class="dep2_pre"><a href="javascript:;" >재도전 수험생 전용</a></li>
 							<li class="dep2">
 								<a href="/c/sobang/event/2022/04250006/index.asp#eventWrap" >
 									ㆍ<span style="display: inline-block;vertical-align: top;">리챌린지 시즌3<img src="<%=img_main%>/common/ic_new.gif" alt="새로운 게시글" style="vertical-align:middle;margin-left:3px;display:inline-block"></span>

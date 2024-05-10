@@ -32,14 +32,14 @@ dp2 = 1
     <div class="wrap_inner">
         <div class="tab_square_wrap pcView">
             <ul class="tab_square tab_square_4">
-                <li><a href="javascript:void(0);" onclick="clickTab('sub', '61');"><span>국어</span></a></li>
-                <li><a href="javascript:void(0);" onclick="clickTab('sub', '62');"><span>영어</span></a></li>
-                <li><a href="javascript:void(0);" onclick="clickTab('sub', '63');"><span>한국사</span></a></li>
-                <li><a href="javascript:void(0);" onclick="clickTab('sub', '85');"><span>PSAT</span></a></li>
-                <li class="on"><a href="javascript:void(0);" onclick="clickTab('cate', '1');"><span>행정직</span></a></li>
-                <li><a href="javascript:void(0);" onclick="clickTab('cate', '2');"><span>기술직</span></a></li>
-                <li><a href="javascript:void(0);" onclick="clickTab('sub', '86/87');"><span>한국사/영어<br>검정</span></a></li>
-                <li><a href="javascript:void(0);" onclick="clickTab('sub', '84');"><span>면접</span></a></li>
+                <li><a href="javascript:;" onclick="clickTab('sub', '61');"><span>국어</span></a></li>
+                <li><a href="javascript:;" onclick="clickTab('sub', '62');"><span>영어</span></a></li>
+                <li><a href="javascript:;" onclick="clickTab('sub', '63');"><span>한국사</span></a></li>
+                <li><a href="javascript:;" onclick="clickTab('sub', '85');"><span>PSAT</span></a></li>
+                <li class="on"><a href="javascript:;" onclick="clickTab('cate', '1');"><span>행정직</span></a></li>
+                <li><a href="javascript:;" onclick="clickTab('cate', '2');"><span>기술직</span></a></li>
+                <li><a href="javascript:;" onclick="clickTab('sub', '86/87');"><span>한국사/영어<br>검정</span></a></li>
+                <li><a href="javascript:;" onclick="clickTab('sub', '84');"><span>면접</span></a></li>
             </ul>
         </div>
         <div class="tab_square_mo_wrap moView">
@@ -47,28 +47,28 @@ dp2 = 1
                 <div class="tab_square_mo swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" onclick="clickTab('sub', '61');">국어</a>
+                            <a href="javascript:;" onclick="clickTab('sub', '61');">국어</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" onclick="clickTab('sub', '62');">영어</a>
+                            <a href="javascript:;" onclick="clickTab('sub', '62');">영어</a>
                         </div>
                         <div class="swiper-slide on">
-                            <a href="javascript:void(0);" onclick="clickTab('sub', '63');">한국사</a>
+                            <a href="javascript:;" onclick="clickTab('sub', '63');">한국사</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" onclick="clickTab('sub', '85');">PSAT</a>
+                            <a href="javascript:;" onclick="clickTab('sub', '85');">PSAT</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" onclick="clickTab('cate', '1');">행정직</a>
+                            <a href="javascript:;" onclick="clickTab('cate', '1');">행정직</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" onclick="clickTab('cate', '2');">기술직</a>
+                            <a href="javascript:;" onclick="clickTab('cate', '2');">기술직</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" onclick="clickTab('sub', '86/87');">한국사/영어 검정</a>
+                            <a href="javascript:;" onclick="clickTab('sub', '86/87');">한국사/영어 검정</a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" onclick="clickTab('sub', '84');">면접</a>
+                            <a href="javascript:;" onclick="clickTab('sub', '84');">면접</a>
                         </div>
                     </div>
                     <div class="swiper-scrollbar"></div>
@@ -83,27 +83,27 @@ dp2 = 1
                 </span>
             </div>
             <ul id="sub_list">
-                <li id="cateSub_64" class="on"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '64');"> 행정학 </a></li>
-                <li id="cateSub_65"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '65');"> 행정법 </a></li>
-                <li id="cateSub_81"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '81');"> 경제학 </a></li>
-                <li id="cateSub_70"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '70');"> 공직선거법 </a></li>
-                <li id="cateSub_82"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '82');"> 관세법 </a></li>
-                <li id="cateSub_91"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '91');"> 교육학 </a></li>
-                <li id="cateSub_73"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '73');"> 교정학 </a></li>
-                <li id="cateSub_92"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '92');"> 국제법 </a></li>
-                <li id="cateSub_60"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '60');"> 국제정치학 </a></li>
-                <li id="cateSub_72"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '72');"> 노동법 </a></li>
-                <li id="cateSub_89"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '89');"> 민법 </a></li>
-                <li id="cateSub_88"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '88');"> 민사소송법 </a></li>
-                <li id="cateSub_83"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '83');"> 사회복지학 </a></li>
-                <li id="cateSub_68"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '68');"> 세법 </a></li>
-                <li id="cateSub_94"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '94');"> 심리학 </a></li>
-                <li id="cateSub_71"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '71');"> 지방자치론 </a></li>
-                <li id="cateSub_93"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '93');"> 직업상담심리학 </a></li>
-                <li id="cateSub_69"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '69');"> 헌법 </a></li>
-                <li id="cateSub_90"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '90');"> 형법 </a></li>
-                <li id="cateSub_74"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '74');"> 형사소송법 </a></li>
-                <li id="cateSub_66"><a href="javascript:void(0);" onclick="clickTab('cate_sub', '66');"> 회계학 </a></li>
+                <li id="cateSub_64" class="on"><a href="javascript:;" onclick="clickTab('cate_sub', '64');"> 행정학 </a></li>
+                <li id="cateSub_65"><a href="javascript:;" onclick="clickTab('cate_sub', '65');"> 행정법 </a></li>
+                <li id="cateSub_81"><a href="javascript:;" onclick="clickTab('cate_sub', '81');"> 경제학 </a></li>
+                <li id="cateSub_70"><a href="javascript:;" onclick="clickTab('cate_sub', '70');"> 공직선거법 </a></li>
+                <li id="cateSub_82"><a href="javascript:;" onclick="clickTab('cate_sub', '82');"> 관세법 </a></li>
+                <li id="cateSub_91"><a href="javascript:;" onclick="clickTab('cate_sub', '91');"> 교육학 </a></li>
+                <li id="cateSub_73"><a href="javascript:;" onclick="clickTab('cate_sub', '73');"> 교정학 </a></li>
+                <li id="cateSub_92"><a href="javascript:;" onclick="clickTab('cate_sub', '92');"> 국제법 </a></li>
+                <li id="cateSub_60"><a href="javascript:;" onclick="clickTab('cate_sub', '60');"> 국제정치학 </a></li>
+                <li id="cateSub_72"><a href="javascript:;" onclick="clickTab('cate_sub', '72');"> 노동법 </a></li>
+                <li id="cateSub_89"><a href="javascript:;" onclick="clickTab('cate_sub', '89');"> 민법 </a></li>
+                <li id="cateSub_88"><a href="javascript:;" onclick="clickTab('cate_sub', '88');"> 민사소송법 </a></li>
+                <li id="cateSub_83"><a href="javascript:;" onclick="clickTab('cate_sub', '83');"> 사회복지학 </a></li>
+                <li id="cateSub_68"><a href="javascript:;" onclick="clickTab('cate_sub', '68');"> 세법 </a></li>
+                <li id="cateSub_94"><a href="javascript:;" onclick="clickTab('cate_sub', '94');"> 심리학 </a></li>
+                <li id="cateSub_71"><a href="javascript:;" onclick="clickTab('cate_sub', '71');"> 지방자치론 </a></li>
+                <li id="cateSub_93"><a href="javascript:;" onclick="clickTab('cate_sub', '93');"> 직업상담심리학 </a></li>
+                <li id="cateSub_69"><a href="javascript:;" onclick="clickTab('cate_sub', '69');"> 헌법 </a></li>
+                <li id="cateSub_90"><a href="javascript:;" onclick="clickTab('cate_sub', '90');"> 형법 </a></li>
+                <li id="cateSub_74"><a href="javascript:;" onclick="clickTab('cate_sub', '74');"> 형사소송법 </a></li>
+                <li id="cateSub_66"><a href="javascript:;" onclick="clickTab('cate_sub', '66');"> 회계학 </a></li>
             </ul>
         </div>
         <div class="tea_list_wrap">
@@ -308,7 +308,7 @@ tabTextBox.find('.tab_label').on('click', function(){
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" class="btn_more_display">기획전</a>
+                            <a href="javascript:;" class="btn_more_display">기획전</a>
                             <ul class="tec_display_list">
                                 <li>
                                     <a href="<%=url_main%>/s/gong/event/2021/08260111/index.asp" target="_blank" title="절대적 1위로 입증된<br>전한길 클래스 ">
@@ -373,7 +373,7 @@ tabTextBox.find('.tab_label').on('click', function(){
                         </p>
                         <div class="btns_wrap">
                             <a class="btn" href="javascript:GongcampusFreePlay('E', 4022, '', '');" title="대표영상">대표영상</a>
-                            <a class="btn" href="javascript:void(0);" onclick="window.open('<%=url_main%>/teacher/popup/profile.asp?bCode=jeonhangil', '_tec', 'left=100,top=100,width=500,height=480');" title="프로필">프로필</a>
+                            <a class="btn" href="javascript:;" onclick="window.open('<%=url_main%>/teacher/popup/profile.asp?bCode=jeonhangil', '_tec', 'left=100,top=100,width=500,height=480');" title="프로필">프로필</a>
                         </div>
                         <div class="tec_display_wrap">
                             <div class="tit_area">
@@ -637,7 +637,7 @@ $('#floSlider').slick({
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="javascript:void(0);" class="btn_more_display">기획전</a>
+                            <a href="javascript:;" class="btn_more_display">기획전</a>
                             <ul class="tec_display_list">
                                 <li>
                                     <a href="<%=url_main%>/s/gong/event/2021/08260111/index.asp" target="_blank" title="절대적 1위로 입증된<br>전한길 클래스 ">
@@ -702,7 +702,7 @@ $('#floSlider').slick({
                         </p>
                         <div class="btns_wrap">
                             <a class="btn" href="javascript:GongcampusFreePlay('E', 4022, '', '');" title="대표영상">대표영상</a>
-                            <a class="btn" href="javascript:void(0);" onclick="window.open('<%=url_main%>/teacher/popup/profile.asp?bCode=jeonhangil', '_tec', 'left=100,top=100,width=500,height=480');" title="프로필">프로필</a>
+                            <a class="btn" href="javascript:;" onclick="window.open('<%=url_main%>/teacher/popup/profile.asp?bCode=jeonhangil', '_tec', 'left=100,top=100,width=500,height=480');" title="프로필">프로필</a>
                         </div>
                         <div class="tec_display_wrap">
                             <div class="tit_area">
@@ -1450,7 +1450,7 @@ if (bnnr_slider_cnt > 1) {
                                                                     </li>
                                                                     
                                                                 </ul>
-                                                                <a href="javascript:void(0);" onclick="fncPickCartLayer(1, 19422, 198);" class="cart_btn" title="장바구니">장바구니</a>
+                                                                <a href="javascript:;" onclick="fncPickCartLayer(1, 19422, 198);" class="cart_btn" title="장바구니">장바구니</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1508,7 +1508,7 @@ if (bnnr_slider_cnt > 1) {
                                                                     </li>
                                                                     
                                                                 </ul>
-                                                                <a href="javascript:void(0);" onclick="fncPickCartLayer(1, 19424, 198);" class="cart_btn" title="장바구니">장바구니</a>
+                                                                <a href="javascript:;" onclick="fncPickCartLayer(1, 19424, 198);" class="cart_btn" title="장바구니">장바구니</a>
                                                             </div>
                                                         </div>
                                                     </div>

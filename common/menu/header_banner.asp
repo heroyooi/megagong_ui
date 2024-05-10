@@ -1595,7 +1595,7 @@
                     <li><a href="/s/gong/pass/tech_sale_2022.asp#eventWrap" alt="Àü»êÁ÷" ></a></li>
                     <li><a href="/s/gong/pass/engi_sale_2022.asp#eventWrap" alt="Åä¸ñÁ÷" ></a></li>
                     <% if cdate(lo_now_date) >= cdate("2022-01-03 00:00") then %>
-                    <li class="clo"><a onclick="winterOff();" href="javascript:void(0);" alt="´Ý±â"></a></li>
+                    <li class="clo"><a onclick="winterOff();" href="javascript:;" alt="´Ý±â"></a></li>
                     <%end if%>
                 </ul>
                 <div class="lnk_mo">

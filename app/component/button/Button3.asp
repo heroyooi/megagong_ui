@@ -25,7 +25,7 @@ const html = `
 <br />
 <ul class="btns_list3">
     <li>
-        <a href="javascript:void(0);" class="purchase_btn" onclick="go_fbuy(1, 7094);">메가패스 구매하기</a>
+        <a href="javascript:;" class="purchase_btn" onclick="go_fbuy(1, 7094);">메가패스 구매하기</a>
     </li>
 </ul>`;
 

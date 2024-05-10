@@ -52,7 +52,7 @@ Call dbclose(objrs)
                                     <li <% if instr(1, NowUrl, "/l/gong/guide.asp") > 0 Then %>class="current"<% End if %>><a href="/l/gong/guide.asp">시험제도</a></li>
                                     <li <% if instr(1, NowUrl, "/l/gong/schedule.asp") > 0 Then %>class="current"<% End if %>><a href="/l/gong/schedule.asp">시험일정</a></li>
                                     <li <% if instr(1, NowUrl, "/l/gong/series.asp") > 0 Then %>class="current"<% End if %>><a href="/l/gong/series.asp">모집정보</a></li>
-                                    <li><a href="javascript:void(0);">전지적 직렬탐구시점</a></li>
+                                    <li><a href="javascript:;">전지적 직렬탐구시점</a></li>
                                 </ul>
                             </li>
                             <li>

@@ -71,7 +71,7 @@ RSClose(Rs)
 
 %>
     <% if mode = "popup" then %>
-    <a href="javascript:void(0);" onclick="fncLayerClose();" class="close_pocket">팝업 닫기</a>
+    <a href="javascript:;" onclick="fncLayerClose();" class="close_pocket">팝업 닫기</a>
     <% end if %>
     
     <%
@@ -97,7 +97,7 @@ RSClose(Rs)
     <% if mode = "window" and ori_ky <> "" then %>
         <li>
             <strong class="lc_tit">OT</strong>
-                <a href="javascript:void(0);" onclick="GongcampusFreePlay(40, <%=ccd %>, '', '');" class="lc_go" title="플레이어 창 재생">플레이어 재생</a>
+                <a href="javascript:;" onclick="GongcampusFreePlay(40, <%=ccd %>, '', '');" class="lc_go" title="플레이어 창 재생">플레이어 재생</a>
             <span class="btn">
             </span>
         </li>
@@ -124,24 +124,24 @@ RSClose(Rs)
         <li>
             <strong class="lc_tit"><%=m_lnm%></strong>
             <% if mode = "popup" then %>
-                <a href="javascript:void(0);" onclick="GongcampusFreePlay(55, <%=ccd %>, <%=m_lcd %>, <%=m_stm %>);" class="lc_go for_pc" title="플레이어 창 재생">플레이어 재생</a>
-                <a href="javascript:void(0);" onclick="fucPrevwLayer('<%=area_no %>', '<%=ccd %>', <%=m_lcd %>);" class="lc_go for_mo" title="플레이어 창 재생">플레이어 재생</a>
+                <a href="javascript:;" onclick="GongcampusFreePlay(55, <%=ccd %>, <%=m_lcd %>, <%=m_stm %>);" class="lc_go for_pc" title="플레이어 창 재생">플레이어 재생</a>
+                <a href="javascript:;" onclick="fucPrevwLayer('<%=area_no %>', '<%=ccd %>', <%=m_lcd %>);" class="lc_go for_mo" title="플레이어 창 재생">플레이어 재생</a>
             <% else %>
-                <a href="javascript:void(0);" onclick="GongcampusFreePlay(55, <%=ccd %>, <%=m_lcd %>, <%=m_stm %>);" class="lc_go" title="플레이어 창 재생">플레이어 재생</a>
+                <a href="javascript:;" onclick="GongcampusFreePlay(55, <%=ccd %>, <%=m_lcd %>, <%=m_stm %>);" class="lc_go" title="플레이어 창 재생">플레이어 재생</a>
             <% end if %>
             <span class="btn">
             <% if m_tit = "1" then %>
                 <% if m_fl1 <> "" then %>
-                <a href="javascript:void(0);" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl1 %>', '<%=m_fn1%>');">다운로드</a>
+                <a href="javascript:;" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl1 %>', '<%=m_fn1%>');">다운로드</a>
                 <% end if %>
                 <% if m_fl2 <> "" then %>
-                <a href="javascript:void(0);" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl2 %>', '<%=m_fn2%>');">다운로드</a>
+                <a href="javascript:;" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl2 %>', '<%=m_fn2%>');">다운로드</a>
                 <% end if %>
                 <% if m_fl3 <> "" then %>
-                <a href="javascript:void(0);" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl3 %>', '<%=m_fn3%>');">다운로드</a>
+                <a href="javascript:;" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl3 %>', '<%=m_fn3%>');">다운로드</a>
                 <% end if %>
                 <% if m_fl4 <> "" then %>
-                <a href="javascript:void(0);" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl4 %>', '<%=m_fn4%>');">다운로드</a>
+                <a href="javascript:;" title="다운로드" onclick="fncMegaDownload('/mas/lec/<%=m_fl4 %>', '<%=m_fn4%>');">다운로드</a>
                 <% end if %>
             </span>
         <% end if %>    

@@ -1,5 +1,8 @@
 <!-- #include virtual = "/app/component/swiper/Swiper1.asp"-->
 <!-- #include virtual = "/app/component/swiper/Swiper2.asp"-->
+<!-- #include virtual = "/app/component/swiper/Swiper3.asp"-->
+<!-- #include virtual = "/app/component/swiper/Swiper4.asp"-->
+<!-- #include virtual = "/app/component/swiper/Swiper5.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -13,6 +16,18 @@
       {
         title: "Swiper 기본형 + 자동슬라이드",
         component: Swiper2
+      },
+      {
+        title: "Swiper 세로 방향 슬라이드",
+        component: Swiper3
+      },
+      {
+        title: "Swiper 간격 슬라이드 (per view)",
+        component: Swiper4
+      },
+      {
+        title: "Swiper 탭 슬라이드 (tab) 1. 기본 버전",
+        component: Swiper5
       },
     ]
    

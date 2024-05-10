@@ -1,8 +1,9 @@
 <%
 	' ▒▒▒ 소스 경로 : 작성 규격 - url_{폴더명} ▒▒▒
 	Dim url_main
+      dev_url_main = "https://dev.megagong.net"
   if inStr(hostnm, "dev") > 0 Then
-    url_main	        = "https://dev.megagong.net"
+      url_main	        = "https://dev.megagong.net"
       sobang_main	        = "https://sobangdev.megagong.net"
       campus_main	        = "https://campusdev.megagong.net"
       ansung_main	        = "https://ansungdev.megagong.net"
@@ -15,35 +16,36 @@
   Else
       if inStr(hostnm, "171.") > 0 Then
         url_main	        = "https://www171.megagong.net"
-          sobang_main	        = "https://sobang171.megagong.net"
-          campus_main	        = "https://campus171.megagong.net"
-          ansung_main	        = "https://ansung171.megagong.net"
-          sobangcampus_main	= "https://sobangcampus171.megagong.net"
-          gongssel_main       = "https://gongssel171.megagong.net"
-          ngbr_main           = "https://ngbr171.megagong.net"
-          army_main           = "https://army171.megagong.net"
+        sobang_main	        = "https://sobang171.megagong.net"
+        campus_main	        = "https://campus171.megagong.net"
+        ansung_main	        = "https://ansung171.megagong.net"
+        sobangcampus_main	= "https://sobangcampus171.megagong.net"
+        gongssel_main       = "https://gongssel171.megagong.net"
+        ngbr_main           = "https://ngbr171.megagong.net"
+        army_main           = "https://army171.megagong.net"
       Elseif inStr(hostnm, "172.") > 0 Then
         url_main	        = "https://www172.megagong.net"
-          sobang_main	        = "https://sobang172.megagong.net"
-          campus_main	        = "https://campus172.megagong.net"
-          ansung_main	        = "https://ansung172.megagong.net"
-          sobangcampus_main	= "https://sobangcampus172.megagong.net"
-          gongssel_main       = "https://gongssel172.megagong.net"
-          ngbr_main           = "https://ngbr172.megagong.net"
-          army_main           = "https://army172.megagong.net"
+        sobang_main	        = "https://sobang172.megagong.net"
+        campus_main	        = "https://campus172.megagong.net"
+        ansung_main	        = "https://ansung172.megagong.net"
+        sobangcampus_main	= "https://sobangcampus172.megagong.net"
+        gongssel_main       = "https://gongssel172.megagong.net"
+        ngbr_main           = "https://ngbr172.megagong.net"
+        army_main           = "https://army172.megagong.net"
       Else
         url_main	        = "https://www.megagong.net"
-          sobang_main	        = "https://sobang.megagong.net"
-          campus_main	        = "https://campus.megagong.net"
-          ansung_main	        = "https://ansung.megagong.net"
-          sobangcampus_main	= "https://sobangcampus.megagong.net"
-          gongssel_main       = "https://gongssel.megagong.net"
-          ngbr_main           = "https://ngbr.megagong.net"
-          army_main           = "https://army.megagong.net"
-          lab_main           = "https://lab.megagong.net"
-          job_main           = "https://www.megajob.co.kr"
+        sobang_main	        = "https://sobang.megagong.net"
+        campus_main	        = "https://campus.megagong.net"
+        ansung_main	        = "https://ansung.megagong.net"
+        sobangcampus_main	= "https://sobangcampus.megagong.net"
+        gongssel_main       = "https://gongssel.megagong.net"
+        ngbr_main           = "https://ngbr.megagong.net"
+        army_main           = "https://army.megagong.net"
+        lab_main           = "https://lab.megagong.net"
+        job_main           = "https://www.megajob.co.kr"
       End if
   End if
+  
   hcode = "gong"
   h_gubn = "gong"
 

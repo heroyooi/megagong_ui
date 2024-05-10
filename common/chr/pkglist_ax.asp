@@ -672,7 +672,7 @@ Response.ContentType = "text/html; charset=euc-kr"
                                     </li>
                                 <% end if %>
                                 </ul>
-                                <a href="javascript:void(0);" onclick="fncPkgLayer(<%=area_no %>, <%=pkg_cd %>, 0);" class="cart_btn" title="搬力">搬力</a>
+                                <a href="javascript:;" onclick="fncPkgLayer(<%=area_no %>, <%=pkg_cd %>, 0);" class="cart_btn" title="搬力">搬力</a>
                             </div>
                         </div>
                     </div>

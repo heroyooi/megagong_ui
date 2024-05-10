@@ -1,8 +1,4 @@
 <!-- #include virtual = "/app/component/tab/Tab1.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab2.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab3.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab4.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab5.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -12,22 +8,6 @@
       {
         title: "합격전략LAB 반응형 탭 메뉴",
         component: Tab1
-      },
-      {
-        title: "커리큘럼 내부 탭",
-        component: Tab2
-      },
-      {
-        title: "링크이동 탭",
-        component: Tab3
-      },
-      {
-        title: "온라인 서점 검색",
-        component: Tab4
-      },
-      {
-        title: "자동 롤링 탭",
-        component: Tab5
       },
     ]
     

@@ -1573,8 +1573,9 @@ background-position: 0 0;
   
   .top_msg_wrp video {
     width: inherit;
+    min-height: 100vh;
     object-fit: cover;
-    margin: 0 0 0 -20%;
+    /* margin: 0 0 0 -20%; */
   }
 
   .glass3 {
@@ -1965,7 +1966,7 @@ body.gsap .page_foot .guide_down {
 }
 @media screen and (max-width: 768px) {
   .top_msg_wrp video {
-    margin: 0 0 0 -30%;
+    /* margin: 0 0 0 -30%; */
   }
 
   .top_msg span {

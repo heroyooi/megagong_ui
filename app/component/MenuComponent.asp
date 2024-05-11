@@ -1,4 +1,5 @@
 <!-- #include virtual = "/app/component/menu/MenuHcode.asp"-->
+<!-- #include virtual = "/app/component/menu/MenuUtil.asp"-->
 <!-- #include virtual = "/app/component/menu/MenuGnb.asp"-->
 <!-- #include virtual = "/app/component/menu/MenuLabGnb.asp"-->
 
@@ -10,6 +11,10 @@
       {
         title: "메가공무원 - 직렬 메뉴",
         component: MenuHcode
+      },
+      {
+        title: "메가공무원 - 유틸 메뉴",
+        component: MenuUtil
       },
       {
         title: "메가공무원 - GNB",

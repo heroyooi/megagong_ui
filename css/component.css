@@ -1251,3 +1251,8 @@ li.no_data { color: #bebebe; text-align: center; }
 
 .demo-title{font-size:18px;font-weight:500;margin-top:30px;}
 .demo-title:first-child{margin-top:0;}
+
+/* slick example */
+#popupSlide .slick-arrow{position:absolute;width:54px;height:54px;font-size:0;top:50%;margin-top:-27px;z-index:1;}
+#popupSlide .slick-arrow.slick-prev{background:url(https://img.megagong.net/m/2022/0907_paper/btn_prev.png) 0 0 no-repeat;left:-30px;}
+#popupSlide .slick-arrow.slick-next{background:url(https://img.megagong.net/m/2022/0907_paper/btn_next.png) 0 0 no-repeat;right:-30px;}

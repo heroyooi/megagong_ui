@@ -7,13 +7,11 @@
 <!-- #include virtual = "/app/component/slide/Swiper7.asp"-->
 <!-- #include virtual = "/app/component/slide/Swiper8.asp"-->
 <!-- #include virtual = "/app/component/slide/Swiper9.asp"-->
-<!-- #include virtual = "/app/component/slide/Slick1.asp"-->
-<!-- #include virtual = "/app/component/slide/Slick2.asp"-->
 
 <script type="text/babel">
   'use strict';
 
-  function SlideComponent() {
+  function SwiperComponent() {
     const componentArray = [
       {
         title: "Swiper 기본형",
@@ -55,14 +53,6 @@
         title: "Swiper 스크롤",
         component: Swiper9
       },
-      {
-        title: "Slick 기본형",
-        component: Slick1
-      },
-      {
-        title: "Slick 기본형 - 전환 효과 + 자동재생",
-        component: Slick2
-      },
     ]
    
     const componentRefs = useRef(Array(componentArray.length).fill(null));
@@ -70,14 +60,14 @@
     const [componentActive, setComponentActive] = useState(0);
 
     const toggleCode = () => {}
-    usePageInit(2, 4);
+    usePageInit(2, 4, 1);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     return (
       <>
         <div className="page_wrap w-[calc(100%-15rem)] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
-            <PageHeader name="Slide" sub="슬라이드" text="웹사이트의 대표 슬라이드 컴포넌트입니다." />
+            <PageHeader name="Slide - Swiper" sub="슬라이드 - 스와이퍼" text="메가공무원에서 주로 사용하는 대표 슬라이드 컴포넌트입니다." />
             {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} error={item.error} errorLink={item.errorLink} onChange={toggleCode} /></div>)}
             {/*<Tweet />*/}
           </div>

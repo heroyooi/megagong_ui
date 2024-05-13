@@ -6,7 +6,8 @@
     {id: 'button', title: '버튼'},
     {id: 'tab', title: '탭'},
     {id: 'popup', title: '팝업'},
-    {id: 'slide', title: '슬라이드'},
+    {id: 'swiper', title: '슬라이드 - Swiper'},
+    {id: 'slick', title: '슬라이드 - Slick'},
   ]
   
   function ComponentLayout() {
@@ -20,7 +21,8 @@
         {cid === 'tab' && <TabComponent />}
         {cid === 'popup' && <PopupComponent />}
         {cid === 'dev-popup' && <DevPopupComponent />}
-        {cid === 'slide' && <SlideComponent />}
+        {cid === 'swiper' && <SwiperComponent />}
+        {cid === 'slick' && <SlickComponent />}
       </AsideProvider>
     )
   }

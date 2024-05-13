@@ -18,7 +18,7 @@ const html = `<div class="slick-basic-wrap">
 const css = `.slick-basic-wrap{position: relative;}
 .slick-basic-wrap .slick-basic{display: none;}
 .slick-basic-wrap .slick-basic.slick-initialized{display: block;}
-.slick-basic-wrap .slick-basic .item .inner{display:block;background-color:rgb(238, 238, 238);padding:50px 0;text-align:center;margin:0 5px;}
+.slick-basic-wrap .slick-basic .item .inner{margin:0 5px;}
 .slick-basic-wrap .sliderArrow a{position: absolute; top: 50%;transform: translate(0, calc(-50%)); left: -1.5%;}
 .slick-basic-wrap .sliderArrow a + a{transform: rotate(180deg) translate(0, calc(50%));left: auto;right: -1.5%;}
 
@@ -49,6 +49,7 @@ const css = `.slick-basic-wrap{position: relative;}
 
 const excCss = `.slick-basic-wrap{max-height:153px;}
 .slick-basic-wrap .slick-basic{display: block;}
+.slick-basic-wrap .slick-basic .item .inner{display:block;background-color:rgb(238, 238, 238);padding:50px 0;text-align:center;}
 `;
 
 const js = `$('.slick-basic').not('.slick-initialized').slick({

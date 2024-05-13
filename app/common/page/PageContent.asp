@@ -14,7 +14,7 @@
       if (view) {
         window.scrollTo({
           top: refCode.current.offsetTop - (80 + 30),
-          // behavior: 'smooth'
+          behavior: 'smooth'
         });
       }
     }, [view, js])

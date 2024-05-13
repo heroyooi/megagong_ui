@@ -6,7 +6,7 @@
     {id: 'button', title: '버튼'},
     {id: 'tab', title: '탭'},
     {id: 'popup', title: '팝업'},
-    {id: 'swiper', title: '슬라이드 - Swiper'},
+    {id: 'slide', title: '슬라이드'},
   ]
   
   function ComponentLayout() {
@@ -17,11 +17,10 @@
       <AsideProvider>
         <Aside />
         {cid === 'menu' && <MenuComponent />}
-        {/* cid === 'button' && <ButtonComponent /> */}
         {cid === 'tab' && <TabComponent />}
         {cid === 'popup' && <PopupComponent />}
         {cid === 'dev-popup' && <DevPopupComponent />}
-        {cid === 'swiper' && <SwiperComponent />}
+        {cid === 'slide' && <SlideComponent />}
       </AsideProvider>
     )
   }

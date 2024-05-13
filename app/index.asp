@@ -23,7 +23,7 @@
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
 <!-- #include virtual = "/app/component/PopupComponent.asp"-->
 <!-- #include virtual = "/app/component/DevPopupComponent.asp"-->
-<!-- #include virtual = "/app/component/SwiperComponent.asp"-->
+<!-- #include virtual = "/app/component/SlideComponent.asp"-->
 <!-- // @@ COMPONENT -->
 
 <!-- @@ HOOKS -->

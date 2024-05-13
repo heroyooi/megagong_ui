@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, image2, html, css, js, outJs, excCss = '', items, link, onChange, version = 'general' }) {
+  function PageContent({ title, desc, image, image2, html, css, js, outJs, excCss = '', items, link, error, errorLink, onChange, version = 'general' }) {
     // const { user, mode } = useAuth();
     const { initCode } = usePage();
     const refCode = useRef(null);
@@ -80,7 +80,12 @@
         <div className="issue-box-wrap mt-7"></div>
         {image && <div className="position_site px-36 overflow-hidden mb-6 bg-mainColor_gray-500"><img src={image} alt='-' /></div>}
         {image2 && <div className="position_site px-36 overflow-hidden mb-6 bg-mainColor_gray-500"><img src={image2} alt='-' /></div>}
-<div className={`code-box html w-full m-auto clear-both border-y-2 border-slate-200 ${version != 'no-padding' && "p-10 border-solid"}`}><Styled>{jsx}</Styled></div>
+<div className={`code-box html relative w-full m-auto clear-both border-y-2 border-slate-200 ${version != 'no-padding' && "p-10 border-solid"}`}>
+  <Styled>{jsx}</Styled>
+  {error && <div className="absolute left-0 top-0 w-full h-full bg-black z-10 opacity-75">
+    <p className="text-white text-sm flex h-full justify-center items-center flex-col">리액트 환경에서 정상적으로 구동이 되지 않습니다. <br /><a href={errorLink} target="_blank">데모 페이지 가기 &gt;</a></p>
+  </div>}
+</div>
 <p className="page_text text-black my-8 text-base font-light" dangerouslySetInnerHTML={{ __html: desc }} />
 
 {<div style={view ? { display: "block" } : { display: "none" }} ref={refCode}>

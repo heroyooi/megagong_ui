@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Swiper6({ title, onChange }) {
+  function Swiper6({ title, error, errorLink, onChange }) {
 
 const html = `<div class="mega_swiper_thumb_list">
 	<div class="swiper-wrapper">
@@ -69,6 +69,8 @@ const outJs = ``;
         outJs={outJs}
         items={["반응형 슬라이드", "탭", "썸네일"]}
         // link="<%=dev_url_main%>/event/@template/index_swiper.asp"
+				error={error}
+				errorLink={errorLink}
         onChange={onChange}
         version="no-padding"
       />

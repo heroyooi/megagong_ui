@@ -8,6 +8,7 @@
     {id: 'popup', title: '팝업'},
     {id: 'swiper', title: '슬라이드 - Swiper'},
     {id: 'slick', title: '슬라이드 - Slick'},
+    {id: 'player', title: '영상 플레이어'},
   ]
   
   function ComponentLayout() {
@@ -23,6 +24,7 @@
         {cid === 'dev-popup' && <DevPopupComponent />}
         {cid === 'swiper' && <SwiperComponent />}
         {cid === 'slick' && <SlickComponent />}
+        {cid === 'player' && <PlayerComponent />}
       </AsideProvider>
     )
   }

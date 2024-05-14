@@ -31,6 +31,7 @@
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/dev-popup" className="">개발 팝업<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/swiper" className="">슬라이드 - Swiper<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/slick" className="">슬라이드 - Slick<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/player" className="">영상 플레이어<span></span></Link></li>
               {/*
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/list" className="">리스트<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/component/table" className="">표(테이블)<span></span></Link></li>

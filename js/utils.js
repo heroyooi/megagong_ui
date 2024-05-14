@@ -961,7 +961,13 @@ function closeCmegaPopupYoutubeToday() {
   setCookiePopupToday('todayPopupYoutubeCookie', 'close', 1);
   closeCmegaPopup('popupYoutube');
 }
-
+if(getCookie('todayPopupPassServiceCookie') == 'close'){
+  closeCmegaPopup('popupPass');
+}
+function closeTodaypopupPass() {
+  setCookiePopupToday('todayPopupPassServiceCookie', 'close', 1);
+  closeCmegaPopup('popupPass');
+}
 let timeout = null;
 
 // S: 메가공무원 함수 - 사용처(http://localhost/#/component/dev-popup)

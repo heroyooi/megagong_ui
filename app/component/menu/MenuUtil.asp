@@ -17,10 +17,19 @@ const html = `<div id="headertop">
           </ul>
       </form>
       <!-- 로그인 전 정보 영역 -->
-      <div class="dday_wrap">
-        
-      </div> 
     </div>
+    <div class="dday_wrap">
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">국가직 5급 1차 <strong>D-45</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">경찰 1차 <strong>D-50</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">국가직 9급 <strong>D-55</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">소방공무원 <strong>D-60</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">지방직 9급 <strong>D-65</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">국가직 5급 2차 <strong>D-70</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">법원직 9급 <strong>D-75</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">국가직 7급 1차 <strong>D-80</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">국가직 7급 2차 <strong>D-85</strong></div>
+        <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">지방직 7급 <strong>D-172</strong></div>
+      </div> 
   </div>
 </div>`;
 
@@ -30,7 +39,20 @@ const excCss = `
 #headertop .hd_top{overflow:hidden;}
 `;
 
-const js = ``;
+const js = `(function($){
+    $('.dday_wrap').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false,
+        speed: 200,
+        autoplaySpeed: 3000,
+        autoplay: true,
+        rows: 0,
+        vertical: true
+    });
+})(jQuery);`;
 
 const outJs = ``;
 

@@ -3,46 +3,81 @@
 
   function Popup2({ title, onChange }) {
 
-const html = `<% if fncRequestCookie("mok_hd_pop_one") = "" then%>
-<div id="mok_hd_pop" class="mok_hd_pop">
-  <a href="#none" title="메가공무원 모의면접">
-    <img src="<%=img_main%>/m/2022/0503_interviewMock/pop_mok.png" class="" style="cursor:pointer;" alt="메가공무원 모의면접">
-  </a>
-  <button type="button" class="btn_day_close" onClick="mok_day_close();">오늘 하루 보지 않기</button>
-	<button type="button" class="btn_close" onclick="mok_close();">닫기</button>
+const html = `<div class="pop_btn_wrap">
+  <a class="mg_btn_base sm mg_txt" href="#" onclick="deleteCookieAndReload('todayPopupPassServiceCookie'); return false;">오늘 하루 닫기 팝업 관련 쿠키값 초기화</a>
 </div>
-<% end if%>`;
 
-const css = `
-.mok_hd_pop {position:relative;z-index:5;width:240px;}
-.mok_hd_pop.main {margin-left:350px;}
-.mok_hd_pop .btn_close {position:absolute;top:-19px;right:0;width:22px;height:20px;line-height:18px;padding:0 5px;font-size:0;background:#fff url(https://img.megagong.net/m/2022/0503_interviewMock/icon_x_03.png) no-repeat center;border:1px solid #cfcfcf;box-sizing:border-box;}
-.mok_hd_pop .btn_close img {vertical-align: middle;display:inline-block;}
-.mok_hd_pop .btn_day_close {position:absolute;top:-19px;right:24px;height:20px;line-height:18px;padding:0 8px;font-weight:bold;font-size:11px;color:#a7a7a7;background:#fff;border:1px solid #cfcfcf;box-sizing:border-box;}`;
+<%if fncRequestCookie("todayPopupPassServiceCookie") = "" then%>
+<div class="cmg_popup_wrap cmg_fullpage no_fixed popup_pass" id="popupPass">
+    <div class="cmg_popup_inner dim">
+	    <span class="dim_bg">-</span>
+        <div class="content_inner">
+            <div class="banner_popup_btn">
+                <button class="mg_btn_base sm" onclick="closeTodaypopupPass();">오늘 하루 보지 않기</button>
+                <button class="mg_btn_base sm close" onclick="closeCmegaPopup('popupPass')">닫기</button>
+            </div>
+            <div class="banner_wrapper">
+                <img src="<%=img_main%>/m/2024/0514_pass/gong/pass_pop1.jpg" alt="메가패스 선물대첩 5-5-5 이벤트">
+                <div class="btn_wrapper">
+                    <a href="<%=url_main%>/s/gong/pass/sale_2025.asp#eventWrap" title="공무원 메가패스">공무원 메가패스 <img src="<%=img_main%>/m/2024/0514_pass/gong/pop_arrow.png" alt="-"></a>
+                    <a href="<%=url_main%>/s/gong/pass/total_tech_sale_2025.asp#eventWrap" title="기술직 메가패스">기술직 메가패스 <img src="<%=img_main%>/m/2024/0514_pass/gong/pop_arrow.png" alt="-"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%End if%>`;
+
+const css = `.popup_pass .cmg_popup_inner.dim { display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: initial; padding: 0 !important; background-color: rgba(0, 0, 0, 0.8); } 
+.popup_pass.dimm-opacity-50 .cmg_popup_inner.dim{background-color:  rgba(0, 0, 0, 0.5);}
+.popup_pass .content_inner { width: 660px;font-family: 'NotoSans KR';} 
+.popup_pass .content_inner .moVer {display: none;}
+.popup_pass .content_inner .banner_popup_btn { display: flex; flex-direction: row; align-items: center; justify-content: flex-end; width: 100%; margin-bottom: 5px; position: relative; z-index: 1;} 
+.popup_pass .content_inner .banner_popup_btn button { margin-right: 5px; } 
+.popup_pass .content_inner .banner_popup_btn button:last-of-type { margin-right: 0; } 
+.popup_pass .content_inner .banner_popup_btn button.mg_btn_base.sm {} 
+.popup_pass .content_inner .banner_wrapper { position: relative;} 
+.popup_pass .content_inner .banner_wrapper .btn_wrapper {display: flex; flex-wrap: wrap;background:#000}
+.popup_pass .content_inner .banner_wrapper .btn_wrapper a {position:relative;display:flex;flex: 1;height: 60px;justify-content: center;align-items: center;color: #fff;font-size: 16px;border:1px solid #777777}
+.popup_pass .content_inner .banner_wrapper .btn_wrapper a img{position:absolute;top:50%;right:15px;margin:-9px 0 0}
+.popup_pass .dim_bg{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+
+@media screen and (max-width: 1200px){
+    .popup_pass .content_inner { width: 96%; max-width: 550px; } 
+}
+@media screen and (max-width: 576px) {
+    .popup_pass .content_inner .banner_wrapper .btn_wrapper a {font-size: 14px;height:50px}
+}`;
 
 const excCss = `
+.cmg_popup_wrap.cmg_fullpage{position:relative;}
+.cmg_popup_wrap.cmg_fullpage.no_fixed .cmg_popup_inner{padding:30px 2% 60px !important;}
 `;
 
-const js = `function mok_close() {
-  $("#mok_hd_pop").hide();
+const js = `if(getCookie('todayPopupPassServiceCookie') == 'close'){
+    closeCmegaPopup('popupPass');
 }
-function mok_day_close() {
-  setCookie("mok_hd_pop_one", "close", 1);
-  // setCookieToday('mok_hd_pop_one', 'close', 1);
-  mok_close();
-}`;
+function closeTodaypopupPass() {
+    setCookiePopupToday('todayPopupPassServiceCookie', 'close', 1);
+    closeCmegaPopup('popupPass');
+}
+
+$('.popup_pass .dim_bg').on('click', function(){
+  $('.popup_pass .mg_btn_base.close').trigger('click');
+});`;
 
     return (
       <PageContent
         title={title}
-        desc="메가스터디 공무원 메인 홈페이지에서 사용되는 팝업 기능입니다.<br />주로 메인사이트 우측 상단부에서 사용되며 '오늘 하루 보지 않기' 버튼을 통해 하루동안 팝업을 차단하는 기능을 제공합니다."
-        image="/images/popup2.png"
+        desc=""
+        image="/images/popup3.png"
         html={html}
         css={css}
         excCss={excCss}
         js={js}
-        items={["하루보지않기","상단팝업","배너"]}
-        link="<%=url_main%>/megagong.asp"
+        items={["하루보지않기","중앙팝업"]}
+        link="<%=url_main%>/megagong.asp?now=2024-05-14 09:00"
         onChange={onChange}
       />
     )

@@ -21,10 +21,10 @@
         title: "메인 우측 하단 팝업",
         component: Popup1
       },
-      // {
-      //   title: "상단 오늘 하루 보지 않기",
-      //   component: Popup2
-      // },
+      {
+        title: "중앙 오늘 하루 닫기 팝업 - 초기 로드",
+        component: Popup2
+      },
       {
         title: "중앙 오늘 하루 닫기 팝업",
         component: Popup3

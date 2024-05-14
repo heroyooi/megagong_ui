@@ -13,25 +13,25 @@ const html = `<header id="headertop" class="gong">
           <li class="depview"><a class="mli_link" href="/vod/vod_chr_list.asp?mcode=5&amp;grd_fg=9" title="수강신청">수강신청 </a></li>
           <li><a class="mli_link" href="/teacher/index.asp" title="선생님">선생님</a></li>
           <li>
-            <a class="mli_link" href="https://labdev.megagong.net/l/gong.asp" target="_blank" title="수험정보">수험정보</a>
+            <a class="mli_link" href="<%=lab_main%>/l/gong.asp" target="_blank" title="수험정보">수험정보</a>
             <ul class="custom">
-              <li><a href="https://labdev.megagong.net/l/gong/pass_opinion/index.asp" title="합격수기">합격수기</a></li>
-              <li><a href="https://labdev.megagong.net/l/gong/guide/guide.asp" title="수험 가이드">수험 가이드</a></li>
-              <li><a href="https://labdev.megagong.net/l/gong/guide/schedule.asp" title="시험 일정">시험 일정</a></li>
-              <li><a href="https://labdev.megagong.net/l/gong/statistic/pass.asp" title="경쟁률 &amp; 합격선">경쟁률 &amp; 합격선</a></li>
-              <li><a href="https://labdev.megagong.net/l/share/quizbank/index.asp" title="문제은행 서비스">문제은행 서비스</a></li>
-              <li><a href="https://labdev.megagong.net/l/share/exam/gong/2024/index.asp#eventWrap" title="9급 기초진단평가">9급 기초진단평가</a></li>
+              <li><a href="<%=lab_main%>/l/gong/pass_opinion/index.asp" title="합격수기">합격수기</a></li>
+              <li><a href="<%=lab_main%>/l/gong/guide/guide.asp" title="수험 가이드">수험 가이드</a></li>
+              <li><a href="<%=lab_main%>/l/gong/guide/schedule.asp" title="시험 일정">시험 일정</a></li>
+              <li><a href="<%=lab_main%>/l/gong/statistic/pass.asp" title="경쟁률 &amp; 합격선">경쟁률 &amp; 합격선</a></li>
+              <li><a href="<%=lab_main%>/l/share/quizbank/index.asp" title="문제은행 서비스">문제은행 서비스</a></li>
+              <li><a href="<%=lab_main%>/l/share/exam/gong/2024/index.asp#eventWrap" title="9급 기초진단평가">9급 기초진단평가</a></li>
             </ul>
           </li>
           <li>
             <span class="menu_icn mockexam toggleImg2" style="left:5px;">
-              <img src="https://design.megagong.net/image/m/2024/0429_gongexam/icon_gong1_1.png" alt="지방직 신청 중!" class="on">
-              <img src="https://design.megagong.net/image/m/2024/0429_gongexam/icon_gong1_2.png" alt="지방직 신청 중!" class="off">
+              <img src="<%=img_main%>/m/2024/0429_gongexam/icon_gong1_1.png" alt="지방직 신청 중!" class="on">
+              <img src="<%=img_main%>/m/2024/0429_gongexam/icon_gong1_2.png" alt="지방직 신청 중!" class="off">
             </span>
             <a class="mli_link" href="/s/gong/mockexam/2024_1/?top=mainCon1" title="전국 모의고사">전국 모의고사</a>
           </li>
           <li>
-            <a class="mli_link" href="https://labdev.megagong.net/l/gong/explain/explain.asp?dt=20240323" title="기출해설">기출해설</a>
+            <a class="mli_link" href="<%=lab_main%>/l/gong/explain/explain.asp?dt=20240323" title="기출해설">기출해설</a>
           </li>
           <li class="last">
             <a class="mli_link new_popup_open v2" href="javascript:mainShow('.new_popup.gong');" title="초시생 추천!"><span class="start_txt">초시생 추천!</span></a>
@@ -44,8 +44,8 @@ const html = `<header id="headertop" class="gong">
             <li class="book">
               <a href="javascript:;" title="e-교재 & 서점"><span>e-교재 & 서점</span></a>
               <ul class="custom w145">
-                <li><a href="<%=url_main %>/event/2024/03140015/index.asp#eventWrap" target="_blank" title="e-교재">e-교재</a></li>
-                <li><a href="<%=url_main %>/book/bookshop.asp" target="_blank" title="온라인서점">온라인서점</a></li>
+                <li><a href="<%=url_main%>/event/2024/03140015/index.asp#eventWrap" target="_blank" title="e-교재">e-교재</a></li>
+                <li><a href="<%=url_main%>/book/bookshop.asp" target="_blank" title="온라인서점">온라인서점</a></li>
               </ul>
             </li>
             <li class="current"><a href="javascript:;" title="공무원학원"><span>공무원학원</span></a>

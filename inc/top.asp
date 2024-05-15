@@ -189,9 +189,11 @@
   <script src="<%=url_main%>/common/js/ui_lab.js"></script>
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!--
   <script type="text/javascript" src="https://cdn.tiny.cloud/1/ei8uwj5xt3ytcx7vv25y1ozx6qrlh6day39weu1cvu46hvi9/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   <script type="text/javascript" src="https://cdn.tiny.cloud/1/ei8uwj5xt3ytcx7vv25y1ozx6qrlh6day39weu1cvu46hvi9/tinymce/6/plugins.min.js" referrerpolicy="origin"></script>
   <script src="/js/clipboard.min.js"></script>
+  -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S77S8CZ1C5"></script>
   <script>

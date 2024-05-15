@@ -1,6 +1,7 @@
 const Lab = window.Lab || (function ($, window, document, undefined) {
   return {
     init: () => {
+      const $header = $('.header_wrp');
       toastr.options = {
         timeOut: 2000,
         positionClass: 'toast-bottom-center',
@@ -457,12 +458,12 @@ const Lab = window.Lab || (function ($, window, document, undefined) {
         //   '<button><i class="bx bx-chevrons-down"></i></button>'
         // );
         // $('.ank').append('<ul></ul>');
-        if ($popup_tweet_item.length) {
-          // $tweet_select_item.append('<option value="0">' + isPathname.toUpperCase() + ' 타입 선택</option>');
-          $('.select_wrap').append(
-            '<a href="javascript:;" value="0" class="fir selected">타입 선택</a>'
-          );
-        }
+        // if ($popup_tweet_item.length) {
+        //   // $tweet_select_item.append('<option value="0">' + isPathname.toUpperCase() + ' 타입 선택</option>');
+        //   $('.select_wrap').append(
+        //     '<a href="javascript:;" value="0" class="fir selected">타입 선택</a>'
+        //   );
+        // }
         // $page_wrap.each(function (index) {
         //   $(this).addClass('board' + (index + 1));
         //   var headText = $(this).find('.page_head').text();

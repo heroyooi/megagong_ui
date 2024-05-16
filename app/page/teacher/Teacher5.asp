@@ -364,7 +364,7 @@ const html = `<div id="curr" class="tccont curr_zone">
 const css = `.char_zone{margin:0 0 20px;}
 .tiny_txt{text-align:right;color:#bbb;font-size:11px;margin:20px 0 -16px;}
 .line{font-weight:normal;border-bottom:1px solid #000;}
-.tech_content .tccont.curr_zone{text-align:center;}`;
+.teaCurr .curr_tit{text-align:center;}`;
 
 const excCss = `img{display: inline;vertical-align:top;}
 .tech_content .board_wrap h3{box-sizing:content-box;}

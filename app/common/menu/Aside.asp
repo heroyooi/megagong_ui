@@ -20,27 +20,28 @@
           {dp1 == 2 && <li className="small_nav_wrap sec box-border w-full h-full py-2.5 pl-7 pr-2.5">
             <ul className="small_nav_wrap_ul sec [&>li]:after:bg-mainColor-500 [&>li]:after:h-full [&>li]:text-base [&>li]:flex [&>li]:relative [&_a]:pl-4 [&_a]:py-2 [&_a]:w-full [&_a]:block [&_a]:transition [&_a]:duration-150 [&_a]:ease-out [&_a]:truncate [&_a]:text-sm">
               {/*
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 1 ? "on text-white" : ""}`}><Link to="/component/button" className="">버튼<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 1 ? "on text-white" : ""}`}><Link to="/component/button">버튼<span></span></Link></li>
               
               */}
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 1 ? "on text-white" : ""}`}><Link to="/component/menu" className="">메뉴<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 2 ? "on text-white" : ""}`}><Link to="/component/tab" className="">탭<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/popup" className="">퍼블 팝업<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/dev-popup" className="">개발 팝업<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/swiper" className="">슬라이드 - Swiper<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/slick" className="">슬라이드 - Slick<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/player" className="">영상 플레이어<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 1 ? "on text-white" : ""}`}><Link to="/component/menu">메뉴<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/component/banner">배너<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 2 ? "on text-white" : ""}`}><Link to="/component/tab">탭<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/popup">퍼블 팝업<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/dev-popup">개발 팝업<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/swiper">슬라이드 - Swiper<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/slick">슬라이드 - Slick<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/player">영상 플레이어<span></span></Link></li>
               {/*
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/list" className="">리스트<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/component/table" className="">표(테이블)<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 7 ? "on text-white" : ""}`}><Link to="/component/icon" className="">아이콘<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 8 ? "on text-white" : ""}`}><Link to="/component/form" className="">폼<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 9 ? "on text-white" : ""}`}><Link to="/component/player" className="">동영상<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 10 ? "on text-white" : ""}`}><Link to="/component/chart" className="">차트<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 11 ? "on text-white" : ""}`}><Link to="/component/selectbox" className="">셀렉트박스<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 12 ? "on text-white" : ""}`}><Link to="/component/calendar" className="">달력<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 13 ? "on text-white" : ""}`}><Link to="/component/effect" className="">특수 효과<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 14 ? "on text-white" : ""}`}><Link to="/component/checkbox" className="">체크박스<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/list">리스트<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/component/table">표(테이블)<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 7 ? "on text-white" : ""}`}><Link to="/component/icon">아이콘<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 8 ? "on text-white" : ""}`}><Link to="/component/form">폼<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 9 ? "on text-white" : ""}`}><Link to="/component/player">동영상<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 10 ? "on text-white" : ""}`}><Link to="/component/chart">차트<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 11 ? "on text-white" : ""}`}><Link to="/component/selectbox">셀렉트박스<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 12 ? "on text-white" : ""}`}><Link to="/component/calendar">달력<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 13 ? "on text-white" : ""}`}><Link to="/component/effect">특수 효과<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 14 ? "on text-white" : ""}`}><Link to="/component/checkbox">체크박스<span></span></Link></li>
               */}
             </ul>
           </li>}

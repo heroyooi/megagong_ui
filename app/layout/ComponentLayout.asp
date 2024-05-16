@@ -3,6 +3,7 @@
 
   const componentMenus = [
     {id: 'menu', title: '¸Þ´º'},
+    {id: 'banner', title: '¹è³Ê'},
     {id: 'button', title: '¹öÆ°'},
     {id: 'tab', title: 'ÅÇ'},
     {id: 'popup', title: 'ÆË¾÷'},
@@ -19,6 +20,7 @@
       <AsideProvider>
         <Aside />
         {cid === 'menu' && <MenuComponent />}
+        {cid === 'banner' && <BannerComponent />}
         {cid === 'tab' && <TabComponent />}
         {cid === 'popup' && <PopupComponent />}
         {cid === 'dev-popup' && <DevPopupComponent />}

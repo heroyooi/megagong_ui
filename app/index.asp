@@ -19,6 +19,7 @@
 
 <!-- @@ COMPONENT -->
 <!-- #include virtual = "/app/component/MenuComponent.asp"-->
+<!-- #include virtual = "/app/component/BannerComponent.asp"-->
 <!-- #include virtual = "/app/component/ButtonComponent.asp"-->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
 <!-- #include virtual = "/app/component/PopupComponent.asp"-->

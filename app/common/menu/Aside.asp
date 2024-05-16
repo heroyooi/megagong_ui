@@ -2,7 +2,7 @@
   'use strict';
   function Aside() {
     const history = useHistory();
-    const { dp1, dp2, dp3, setDp1 } = useAside();
+    const { dp1, dp2, dp3, setDp1, setDp2 } = useAside();
 
     useEffect(() => {
       Lab.aside();
@@ -10,9 +10,7 @@
 
     const changeDp1 = (dp1) => (e) => {
       setDp1(dp1);
-      if (dp1 == 4) {
-        history.push('/blog');
-      }
+      setDp2(0);
     }
 
     return (

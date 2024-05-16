@@ -67,7 +67,6 @@ const outJs = ``;
         items={["반응형 슬라이드", "구간별 제어", "unslick"]}
         link="<%=dev_url_main%>/test/guide/slick.asp"
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

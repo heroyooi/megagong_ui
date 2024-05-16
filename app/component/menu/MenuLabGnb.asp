@@ -288,7 +288,6 @@ const outJs = `clearTimeout(timeout);`;
         items={["GNB","2뎁스","반응형"]}
         link="<%=lab_main%>"
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

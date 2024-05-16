@@ -51,7 +51,6 @@ const outJs = ``;
         items={["유틸메뉴","직렬 메뉴"]}
         link="<%=url_main%>/teacher/qna/qna.asp"
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

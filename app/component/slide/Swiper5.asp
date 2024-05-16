@@ -101,7 +101,6 @@ const outJs = ``;
         items={["반응형 슬라이드", "탭", "자동재생"]}
         // link="<%=dev_url_main%>/event/@template/index_swiper.asp"
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

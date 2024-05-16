@@ -92,7 +92,6 @@ const outJs = ``;
         items={["반응형 슬라이드", "기본형", "슬릭"]}
         link="<%=dev_url_main%>/event/2023/06200020/index.asp#eventWrap"
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

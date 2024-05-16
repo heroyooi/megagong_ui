@@ -36,7 +36,7 @@
 
     return (
       <>
-        <div className="page_wrap w-[calc(100%-15rem)] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
+        <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
             <PageHeader name="Menu" sub="메뉴" text="웹사이트의 다양한 메뉴에 접근할 수 있는 메뉴 컴포넌트입니다." />
             {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} onChange={toggleCode} /></div>)}

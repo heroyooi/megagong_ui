@@ -86,7 +86,6 @@ const outJs = ``;
 				error={error}
 				errorLink={errorLink}
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

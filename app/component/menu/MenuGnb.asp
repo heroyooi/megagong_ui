@@ -321,7 +321,6 @@ const outJs = `clearTimeout(timeout);`;
         items={["GNB","2뎁스","PC, 모바일 별도"]}
         link="<%=url_main%>/teacher/qna/qna.asp"
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

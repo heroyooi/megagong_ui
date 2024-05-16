@@ -28,7 +28,7 @@
 
     return (
       <>
-        <div className="page_wrap w-[calc(100%-15rem)] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
+        <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
             <PageHeader name="Player" sub="플레이어" text="메가공무원 사이트에서 공통적으로 사용되고 있는 영상 플레이어 관련 컴포넌트입니다." />
             {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={item.title} error={item.error} errorLink={item.errorLink} onChange={toggleCode} /></div>)}

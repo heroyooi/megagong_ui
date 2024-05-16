@@ -60,7 +60,6 @@ const outJs = ``;
         items={["반응형 슬라이드", "초기화", "beforeChange"]}
         link="<%=dev_url_main%>/test/guide/slick.asp"
         onChange={onChange}
-        version="no-padding"
       />
     )
   }

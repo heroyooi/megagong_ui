@@ -65,7 +65,7 @@
 
     return (
       <>
-        <div className="page_wrap w-[calc(100%-15rem)] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
+        <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
             <PageHeader name="Slide - Swiper" sub="슬라이드 - 스와이퍼" text="메가공무원에서 주로 사용하는 대표 슬라이드 컴포넌트입니다." />
             {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} error={item.error} errorLink={item.errorLink} onChange={toggleCode} /></div>)}

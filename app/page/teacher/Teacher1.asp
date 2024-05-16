@@ -15,6 +15,7 @@ const html = `<div class="wrap_content tec_renew">
                 <li><a href="javascript:void(0);" onclick="clickTab('cate', '2');"><span>기술직</span></a></li>
                 <li><a href="javascript:void(0);" onclick="clickTab('sub', '86/87');"><span>한국사/영어<br>검정</span></a></li>
                 <li><a href="javascript:void(0);" onclick="clickTab('sub', '84');"><span>면접</span></a></li>
+                <li><a href="javascript:void(0);" onclick="clickTab('sub', 'B5');"><span>마인드코칭</span></a></li>
             </ul>
         </div>
         <div class="tab_square_mo_wrap moView">

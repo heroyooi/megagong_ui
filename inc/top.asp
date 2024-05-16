@@ -75,7 +75,7 @@
 
   Dim img_main, img_common, img_prof, img_vod, img_mypage, img_search, img_player
 	if inStr(fncRequestVariables("HTTP_HOST"), "dev") > 0 then
-		img_main	= "https://design.megagong.net/image"
+		img_main	= "https://img.megagong.net"
 	Else
         img_main	= "https://img.megagong.net"
         'img_main	= "https://image.megagong.net"

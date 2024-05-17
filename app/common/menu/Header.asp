@@ -69,8 +69,8 @@
                 <h1 className="logo"><Link to="/">COMPONENT GUIDE</Link></h1>
                 <nav id="gnb">
                   <ul className="nav_list">
-                    <li><Link to="/component/menu">COMPONENT</Link></li>
-                    <li><Link to="/page/teacher">PAGE</Link></li>
+                    <li><Link to="/component/popup">COMPONENT</Link></li>
+                    <li><Link to="/page/common/menu">PAGE</Link></li>
                     {/* <li><Link to="/blog">BLOG</Link></li> */}
                     {/*user && <li id="js_test"><Link to="/js_test">JS TEST</Link></li>*/}
                   </ul>
@@ -103,8 +103,8 @@
                 <div className="mo_dimm"></div>
                 <div className="mo_menu_wrp">
                   <ul className="nav_list">
-                    <li onClick={closeMenu('/component/menu')}><a>COMPONENT</a></li>
-                    <li onClick={closeMenu('/page/teacher')}><a>PAGE</a></li>
+                    <li onClick={closeMenu('/component/popup')}><a>COMPONENT</a></li>
+                    <li onClick={closeMenu('/page/common/menu')}><a>PAGE</a></li>
                   </ul>
                 </div>
               </div>

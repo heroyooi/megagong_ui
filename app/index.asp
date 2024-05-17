@@ -13,14 +13,10 @@
 <!-- #include virtual = "/app/layout/MainLayout.asp"-->
 <!-- #include virtual = "/app/layout/ComponentLayout.asp"-->
 <!-- #include virtual = "/app/layout/PageLayout.asp"-->
-<!-- #include virtual = "/app/layout/LoginLayout.asp"-->
 <!-- // @@ LAYOUT -->
 
 
 <!-- @@ COMPONENT -->
-<!-- #include virtual = "/app/component/MenuComponent.asp"-->
-<!-- #include virtual = "/app/component/BannerComponent.asp"-->
-<!-- #include virtual = "/app/component/ButtonComponent.asp"-->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
 <!-- #include virtual = "/app/component/PopupComponent.asp"-->
 <!-- #include virtual = "/app/component/DevPopupComponent.asp"-->
@@ -36,6 +32,8 @@
 
 
 <!-- @@ PAGE -->
+<!-- #include virtual = "/app/page/CommonPage.asp"-->
+<!-- #include virtual = "/app/page/MainPage.asp"-->
 <!-- #include virtual = "/app/page/TeacherPage.asp"-->
 <!-- // @@ PAGE -->
 
@@ -93,10 +91,9 @@ tailwind.config = {
         <div id="container">
           <PageProvider>
             <Route path="/" exact component={MainLayout} />
-            <Route path="/component/:cid" component={ComponentLayout} />
-            <Route path="/page/:pid" component={PageLayout} />
-            {/*<Route path="/blog" component={BlogLayout} />*/}
-            <Route path="/login" component={LoginLayout} />
+            <Route path="/component/:cid" exact component={ComponentLayout} />
+            <Route path="/page/:pid" exact component={PageLayout} />
+            <Route path="/page/:pid/:cid" exact component={PageLayout} />
           </PageProvider>
         </div>
         <Footer />

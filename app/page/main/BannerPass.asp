@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Banner1({ title, onChange }) {
+  function BannerPass({ title, onChange }) {
 
 const html = `<div class="main_wrp">
   <div id="main_pass" class="main_pass notosans">

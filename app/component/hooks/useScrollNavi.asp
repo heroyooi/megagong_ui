@@ -26,7 +26,7 @@
       timeout2.current = setTimeout(() => {
         refs.current.forEach((ref, index) => {
           // console.log('>> ', ref.offsetTop);
-          position.current[index] = ref.offsetTop - margin;
+          position.current[index] = ref?.offsetTop - margin;
         });
       }, 600);
       return () => clearTimeout(timeout2.current);

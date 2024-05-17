@@ -1,18 +1,15 @@
 <script type="text/babel">
   'use strict';
 
-  const pageMenus = [
-    {id: 'teacher', title: '선생님'},
-    {id: 'exam', title: '진단평가'},
-  ]
-  
   function PageLayout() {
-    const { pid } = useParams();
+    const { pid, cid } = useParams();
     const location = useLocation();
 
     return (
       <AsideProvider>
         <Aside />
+        {pid === 'common' && <CommonPage cid={cid} />}
+        {pid === 'main' && <MainPage cid={cid} />}
         {pid === 'teacher' && <TeacherPage />}
       </AsideProvider>
     )

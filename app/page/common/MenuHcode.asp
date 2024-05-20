@@ -42,7 +42,7 @@ const outJs = ``;
       <PageContent
         title={title}
         desc="메뉴 컴포넌트는 메가공무원 사이트를 이용하는 학생들이 필요로 하는 정보와 서비스를 쉽게 찾을 수 있도록 구성되어 있습니다."
-        // image="/images/btn.png"
+        image="/images/demo/menu_hcode.png"
         html={html}
         css={css}
         excCss={excCss}

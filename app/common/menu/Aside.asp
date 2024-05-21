@@ -48,25 +48,25 @@
           {dp1 == 3 && <li className="small_nav_wrap srd box-border w-full h-full py-2.5 pl-7 pr-2.5">
             <ul className="small_nav_wrap_ul srd [&>li]:after:bg-mainColor-500 [&>li]:after:h-full [&>li]:text-base [&>li]:flex [&>li]:relative [&_a]:pl-4 [&_a]:py-2 [&_a]:w-full [&_a]:block [&_a]:transition [&_a]:duration-150 [&_a]:ease-out [&_a]:truncate [&_a]:text-sm">
               <li className={`small_nav srd flex-col ${dp1 == 3 && dp2 == 1 ? "on" : ""}`}>
-                <Link to="/page/common/menu" className={`${dp1 == 3 && dp2 == 1 ? "text-white" : ""}`} onClick={changeDp(3, 1, 1)}>공통<span></span></Link>
+                <Link to="/page/common/menu" className={`dep2_wrap ${dp1 == 3 && dp2 == 1 ? "text-white on" : ""}`} onClick={changeDp(3, 1, 1)}>공통<span></span></Link>
                 <ul className="pl-4">
-                  <li className={`small_nav srd hover:text-white flex-col ${dp1 == 3 && dp2 == 1 && dp3 == 1 ? "on text-white" : ""}`}>
+                  <li className={`small_nav srd hover:text-white flex-col dep3_wrap ${dp1 == 3 && dp2 == 1 && dp3 == 1 ? "on text-white bg-gradient-to-r from-mainColor-500" : ""}`}>
                     <Link to="/page/common/menu" className="" onClick={changeDp(3, 1, 1)}>메뉴<span></span></Link>
                   </li>
-                  <li className={`small_nav srd hover:text-white flex-col ${dp1 == 3 && dp2 == 1 && dp3 == 2 ? "on text-white" : ""}`}>
+                  <li className={`small_nav srd hover:text-white flex-col dep3_wrap ${dp1 == 3 && dp2 == 1 && dp3 == 2 ? "on text-white bg-gradient-to-r from-mainColor-500" : ""}`}>
                     <Link to="/page/common/banner" className="" onClick={changeDp(3, 1, 2)}>배너<span></span></Link>
                   </li>
                 </ul>
               </li>
               <li className={`small_nav srd flex-col ${dp1 == 3 && dp2 == 2 ? "on" : ""}`}>
-                <Link to="/page/main/banner" className={`${dp1 == 3 && dp2 == 2 ? "text-white" : ""}`} onClick={changeDp(3, 2, 1)}>메인<span></span></Link>
+                <Link to="/page/main/banner" className={`dep2_wrap ${dp1 == 3 && dp2 == 2 ? "text-white on" : ""}`} onClick={changeDp(3, 2, 1)}>메인<span></span></Link>
                 <ul className="pl-4">
-                  <li className={`small_nav srd hover:text-white flex-col ${dp1 == 3 && dp2 == 2 && dp3 == 1 ? "on text-white" : ""}`}>
+                  <li className={`small_nav srd hover:text-white flex-col dep3_wrap ${dp1 == 3 && dp2 == 2 && dp3 == 1 ? "on text-white bg-gradient-to-r  from-mainColor-500" : ""}`}>
                     <Link to="/page/main/banner" className="" onClick={changeDp(3, 2, 1)}>배너<span></span></Link>
                   </li>
                 </ul>
               </li>
-              <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 3 ? "on text-white" : ""}`}><Link to="/page/teacher" className="">선생님<span></span></Link></li>
+              <li className={`small_nav srd hover:text-white dep2_wrap ${dp1 == 3 && dp2 == 3 ? "on text-white dep2_wrap" : ""}`}><Link to="/page/teacher" className="">선생님<span></span></Link></li>
               {/*<li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 4 ? "on text-white" : ""}`}><Link to="/page/exam" className="">진단평가<span></span></Link></li>
               <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/page/mockexam" className="" text-sm>모의고사<span></span></Link></li>
               <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/page/event" className="">선생님 이벤트&amp;프로모션<span></span></Link></li>

@@ -168,6 +168,7 @@
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common_lab.css">
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/tech.css">
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/teacher/curr/curr.css">
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/event_common.css">
 
   <link type="text/css" rel="stylesheet" href="/css/reset.css" />
   <link type="text/css" rel="stylesheet" href="/css/renew_overview.css" />

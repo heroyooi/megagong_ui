@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, image2, html, css, js, outJs, excCss = '', items, link, error, errorLink, onChange, version = 'general' }) {
+  function PageContent({ title, desc, image, image2, html, css, js, outJs, excCss = '', items, link, error, errorLink, onChange }) {
     // const { user, mode } = useAuth();
     const { initCode } = usePage();
     const refCode = useRef(null);

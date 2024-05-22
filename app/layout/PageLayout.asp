@@ -11,6 +11,7 @@
         {pid === 'common' && <CommonPage cid={cid} />}
         {pid === 'main' && <MainPage cid={cid} />}
         {pid === 'teacher' && <TeacherPage />}
+        {pid === 'mockexam' && <MockexamPage />}
       </AsideProvider>
     )
   }

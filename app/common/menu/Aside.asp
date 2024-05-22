@@ -67,8 +67,10 @@
                 </ul>
               </li>
               <li className={`small_nav srd hover:text-white dep2_wrap ${dp1 == 3 && dp2 == 3 ? "on text-white dep2_wrap" : ""}`}><Link to="/page/teacher" className="">선생님<span></span></Link></li>
+              <li className={`small_nav srd hover:text-white dep2_wrap ${dp1 == 3 && dp2 == 4 ? "on text-white dep2_wrap" : ""}`}><Link to="/page/mockexam" className="">전국 모의고사<span></span></Link></li>
+              
               {/*<li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 4 ? "on text-white" : ""}`}><Link to="/page/exam" className="">진단평가<span></span></Link></li>
-              <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/page/mockexam" className="" text-sm>모의고사<span></span></Link></li>
+              
               <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/page/event" className="">선생님 이벤트&amp;프로모션<span></span></Link></li>
               <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 7 ? "on text-white" : ""}`}><Link to="/page/fullservice" className="">풀서비스<span></span></Link></li>*/}
             </ul>

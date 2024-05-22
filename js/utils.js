@@ -970,6 +970,7 @@ function closeTodaypopupPass() {
   closeCmegaPopup('popupPass');
 }
 let timeout = null;
+let interval = null;
 
 // S: 메가공무원 함수 - 사용처(http://localhost/#/component/dev-popup)
 var isNoticePopupDimm = false;

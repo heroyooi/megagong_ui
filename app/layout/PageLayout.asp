@@ -12,6 +12,7 @@
         {pid === 'main' && <MainPage cid={cid} />}
         {pid === 'teacher' && <TeacherPage />}
         {pid === 'mockexam' && <MockexamPage />}
+        {pid === 'event' && <EventPage cid={cid} />}
       </AsideProvider>
     )
   }

@@ -38,7 +38,7 @@
 
     return (
       <>
-        <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0" id="page_wrap">
+        <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0 pb-[150px]" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
               <PageHeader name="Dev Popup" sub="개발 팝업" text="개발 팝업은 팝업 내부에 개발적인 요소가 있을 때 사용하는 컴포넌트입니다." />
               {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} onChange={toggleCode} /></div>)}

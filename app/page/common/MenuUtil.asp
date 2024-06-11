@@ -6,17 +6,19 @@
 const html = `<div id="headertop">
   <div class="hd_top">
     <div class="login_wrap">
-      <!-- 로그인 전 정보 영역 -->
-      <form name="frmLogin_top" method="post" action="<%=url_main%>/member/login_sql.asp?site_gubun=gong">
-          <ul class="login_after">
-              <li><a href="/help/faq/" title="학습지원센터" style="color:#1e6dc9;font-weight: bold;"> 학습지원센터 </a></li>
-              <li><a href="<%=url_main%>/member/login.asp">로그인</a></li>
-              <li><a href="<%=url_main%>/member/agree.asp">회원가입</a></li>
-              <li><a href="<%=url_main%>/member/login.asp?r_url=%2Fmypage%2F">마이페이지</a></li>
-              <li><a href="<%=url_main%>/mypage/pay/my_cart.asp">장바구니</a></li>
-          </ul>
-      </form>
-      <!-- 로그인 전 정보 영역 -->
+      <ul class="login_after">
+        <li><a href="/help/faq/" title="학습지원센터"> 학습지원센터 </a></li>
+        <li><a href="/mypage/" title="마이페이지"> 마이페이지 </a></li>
+        <li><a href="/mypage/study/my_study.asp"> 내 강의실 </a></li>
+        <li><a href="/mypage/paper/my_paper.asp">쪽지</a></li>
+        <li><a href="https://dev.megagong.net/mypage/pay/my_cart.asp">장바구니</a></li>
+        <li><a href="/member/logout_sql.asp"> 로그아웃</a></li>
+      </ul>
+      <ul class="sns_list hdtop">
+        <li class="blog"><a href="https://blog.naver.com/gongcamp" target="_blank">블로그</a></li>
+        <li class="instagram"><a href="https://www.instagram.com/megagong" target="_blank">인스타그램</a></li>
+        <li class="youtube"><a href="https://www.youtube.com/channel/UCkY2Tq32Mpy8Qq-QljPFLag" target="_blank">유튜브</a></li>
+      </ul>
     </div>
     <div class="dday_wrap">
         <div class="dday_txt" onclick="window.open('<%=lab_main%>/l/gong/guide/schedule.asp')">국가직 5급 1차 <strong>D-45</strong></div>
@@ -36,7 +38,8 @@ const html = `<div id="headertop">
 const css = ``;
 
 const excCss = `
-#headertop .hd_top{overflow:hidden;}
+#headertop .hd_top{overflow:hidden;padding-right:120px;}
+#headertop .sns_list.hdtop{right:0;}
 `;
 
 const js = `(function($){
@@ -60,7 +63,7 @@ const outJs = ``;
       <PageContent
         title={title}
         desc="메뉴 컴포넌트는 메가공무원 사이트를 이용하는 학생들이 필요로 하는 정보와 서비스를 쉽게 찾을 수 있도록 구성되어 있습니다."
-        // image="/images/btn.png"
+        image="/images/demo/menu_utilmenu.png"
         html={html}
         css={css}
         excCss={excCss}

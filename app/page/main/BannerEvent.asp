@@ -269,7 +269,7 @@ $(window).on('resize', function() {
         css={css}
         excCss={excCss}
         js={js}
-        items={["패스상품","메인배너"]}
+        items={["이벤트 배너","메인 배너"]}
         link="<%=url_main%>/megagong.asp"
         onChange={onChange}
       />

@@ -1,3 +1,4 @@
+<!-- #include virtual = "/app/page/main/BannerRightSky.asp"-->
 <!-- #include virtual = "/app/page/main/BannerMegaPass.asp"-->
 <!-- #include virtual = "/app/page/main/BannerMegasPick.asp"-->
 <!-- #include virtual = "/app/page/main/BannerEvent.asp"-->
@@ -27,6 +28,10 @@
         {
           title: "이 달의 새 강좌",
           component: BannerMonthNew
+        },
+        {
+          title: "우측 상단 배너",
+          component: BannerRightSky
         },
       ];
       sub = "메인 - 배너";

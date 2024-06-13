@@ -481,7 +481,7 @@ $(document).on('click', function(e){
         css={css}
         excCss={excCss}
         js={js}
-        items={["이 달의 새 강좌","메인배너"]}
+        items={["이 달의 새 강좌", "메인 배너"]}
         link="<%=url_main%>/megagong.asp"
         onChange={onChange}
       />

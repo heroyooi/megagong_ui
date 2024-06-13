@@ -76,6 +76,7 @@ End if
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/font_NotoSans_kr.css" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common.css" />
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_component.css" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/mypage.css" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_respons.css" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/main/megagong_main_gong_v21_3.css" />

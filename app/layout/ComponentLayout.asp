@@ -16,6 +16,7 @@
         {cid === 'swiper' && <SwiperComponent />}
         {cid === 'slick' && <SlickComponent />}
         {cid === 'player' && <PlayerComponent />}
+        {cid === 'column' && <ColumnComponent />}
       </AsideProvider>
     )
   }

@@ -73,7 +73,8 @@ val4css = Year(lo_now_date)&Right("0"&Month(lo_now_date),2)&Right("0"&day(lo_now
     <% ' // º»°íµñ ÆùÆ® ---- E %>
     
 
-    <link type="text/css" rel="stylesheet" href="/common/css/megagong_common.css?now=<%=val4css%>" />
+    <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common.css?now=<%=val4css%>" />
+    <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_component.css?now=<%=val4css%>" />
     <!-- <link rel="stylesheet" type="text/css" href="/common/js/jQuery/plug-in/swiper.min.css?ndt=2018-06-28" /> -->
     <link rel="stylesheet" type="text/css" href="/common/js/jQuery/plug-in/slick.css" />
     <link rel="stylesheet" type="text/css" href="/common/js/jQuery/plug-in/magnific-popup.min.css" />

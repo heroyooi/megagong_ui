@@ -3,7 +3,8 @@
 
   function Popup14({ title, onChange }) {
 
-const html = `<div class="" id="popupErrorNotice">
+const html = `<% If fncRequestCookie("todayPopupErrorNotice") = "" then %>
+<div class="" id="popupErrorNotice">
   <div class="cmg_popup_inner">
     <div class="mg_btn_wrap right top dim">
     <button class="mg_btn_base sm" onclick="closeCmegaPopupTeacherTeaserToday();">¿À´Ã ÇÏ·ç ´Ý±â</button>
@@ -15,7 +16,8 @@ const html = `<div class="" id="popupErrorNotice">
         <a href="javascript:fnc_cpn();">ÄíÆù ´Ù¿î ¹Þ±â ></a>
     </div>
   </div>
-</div>`;
+</div>
+<% end if %>`;
 
 const css = `#popupErrorNotice {position: absolute;left: 50%;top: 30px;z-index: 2;margin-left: 285px;width:316px}
 #popupErrorNotice .mg_btn_base.sm{background: #fff; color: #000; border-color: #000; font-size: 11px; padding: 4px 10px; margin: 0 2px 3px;} 

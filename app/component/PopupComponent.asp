@@ -12,6 +12,7 @@
 <!-- #include virtual = "/app/component/popup/Popup12.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup13.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup14.asp"-->
+<!-- #include virtual = "/app/component/popup/Popup15.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -73,6 +74,10 @@
       {
         title: "ÄíÆù ÆË¾÷ - ¿À´Ã ÇÏ·ç ´Ý±â",
         component: Popup14
+      },
+      {
+        title: "È¯½Â ÆË¾÷ - ¿À´Ã ÇÏ·ç ´Ý±â",
+        component: Popup15
       },
     ]
     

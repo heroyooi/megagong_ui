@@ -51,7 +51,7 @@ tailwind.config = {
   theme: {
     extend: {
       fontFamily: {
-      'gapyeongHanseokbong' : ['GapyeongHanseokbongR'],
+      // 'gapyeongHanseokbong' : ['GapyeongHanseokbongR'],
       'sans' : ['Pretendard']
       },
       colors: {

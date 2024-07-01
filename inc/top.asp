@@ -159,7 +159,6 @@
   
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/font_NotoSans_kr.css" />
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/font_NotoSans_kr_google.css">
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common.css" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_component.css" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/mypage.css" />

@@ -1151,3 +1151,9 @@ function completeSample3() {
   $.magnificPopup.close();
 }
 // E: 메가공무원 함수 - 사용처(http://localhost/#/component/dev-popup)
+
+function replaceSpecialTags(string) {
+  let result = string.replace(/&lt;%/g, "<%");
+  result = result.replace(/%&gt;/g, "%>");
+  return result;
+}

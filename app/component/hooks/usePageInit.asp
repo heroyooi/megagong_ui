@@ -1,5 +1,7 @@
 <script type="text/babel">
   'use strict';
+
+  
   
   function usePageInit(dp1, dp2, dp3) {
     const { setDp1, setDp2, setDp3 } = useAside();

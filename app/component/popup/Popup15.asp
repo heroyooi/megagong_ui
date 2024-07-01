@@ -3,7 +3,7 @@
 
   function Popup15({ title, onChange }) {
 
-const html = `<div id="popupDiscountNotice">
+const html = `<% If fncRequestCookie("todayPopupDiscountCookie") = "" then %><div id="popupDiscountNotice">
   <div class="cmg_popup_inner">
       <div class="mg_btn_wrap right top dim">
       <button class="mg_btn_base sm" onclick="closeCmegaPopupToday();">¿À´Ã ÇÏ·ç ´Ý±â</button>
@@ -42,7 +42,7 @@ const html = `<div id="popupDiscountNotice">
           </div>
       </div>
   </div>
-</div>`;
+</div><% end if %>`;
 
 const css = `.pop_20240702 {background-color:#fff;padding: 20px;box-sizing: border-box;text-align: center; border:1px solid #000;}
 .pop_20240702 .blue {color: #0082ff;}

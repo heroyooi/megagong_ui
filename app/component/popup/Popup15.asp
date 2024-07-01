@@ -53,6 +53,7 @@ const css = `.pop_20240702 {background-color:#fff;padding: 20px;box-sizing: bord
 .pop_20240702 .txt02.cir:before {display: inline-block; content: ""; width: 30px; height:30px; background-image:url(https://design.megagong.net/image/m/2024/0702_main/plus.png); background-size: 100% 100%; background-repeat:no-repeat; background-position: center center;}
 .pop_20240702 .gray_box {padding: 20px 0;width: 100%;background-color:#efefef;}
 .pop_20240702 .txt01.d_day {margin: 20px 0;}
+
 #popupDiscountNotice {position: absolute;left: 50%;top: 250px;z-index: 15;margin-left: 285px;width:316px}
 #popupDiscountNotice .mg_btn_base.sm{background: #fff; color: #000; border-color: #000; font-size: 11px; padding: 4px 10px; margin: 0 2px 3px;} 
 #popupDiscountNotice .img_area{position: relative;} 

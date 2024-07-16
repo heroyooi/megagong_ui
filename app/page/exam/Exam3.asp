@@ -939,7 +939,7 @@ function modifyInfo() {
 }
 
 function startExam() {
-    if (!confirm('응시 완료 후 응시 정보를 수정할 수 없습니다. \n응시하시겠습니까?')) return;
+    if (!confirm('응시 완료 후 응시 정보를 수정할 수 없습니다. 응시하시겠습니까?')) return;
     
     $.ajax({
         type: "POST",

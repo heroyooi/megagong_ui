@@ -1157,3 +1157,111 @@ function replaceSpecialTags(string) {
   result = result.replace(/%&gt;/g, "%>");
   return result;
 }
+
+// S: 사용처(http://localhost/#/page/exam?id=4)
+// 탭 변경 로직
+function changeTabOn() {
+  $(".result_tab ul li").removeClass("on");
+  $("#tab_"+curr_subj_cd).addClass("on");
+  responsiveAnswerZone();
+}
+
+// 과목탭 클릭 함수
+function getTabSubj(scd) {
+  curr_subj_cd = scd;
+  curr_idx = 1;  
+
+  changeTabOn();
+
+  $(".question_zone .question").children("div").hide();
+  $("#q" + curr_subj_cd + "_" + curr_idx).show();
+
+  LRbuttonHideShow(curr_idx);
+}
+getTabSubj(10);
+
+// 이전, 다음 문항 가져오기
+function getQno(mode) {  
+  $(".question_zone .question").children("div").hide();
+
+  if (mode == 'prev') {  
+      if (curr_subj_cd == 10 && curr_idx <= 1) {  
+          return;
+      } else if (curr_idx == 1) {  
+          curr_subj_cd--;
+          curr_idx = 5;
+          changeTabOn();  // 탭 변경 처리
+      } else {  
+          curr_idx--;
+      }
+      $("#q" + curr_subj_cd + "_" + curr_idx).show();
+  }
+  if (mode == 'next') {
+      if (curr_subj_cd == 12 && curr_idx >= 5) {  
+          return;
+      } else if (curr_idx == 5) {  
+          curr_subj_cd++;
+          curr_idx = 1;
+          changeTabOn();  // 탭 변경 처리
+      } else {  
+          curr_idx++;
+      }
+      $("#q" + curr_subj_cd + "_" + curr_idx).show();
+  }
+
+  LRbuttonHideShow(curr_idx);
+}
+
+// 좌우 버튼 노출, 숨김 처리
+function LRbuttonHideShow(idx) {
+  if (curr_subj_cd == 10 && idx <= 1) {  // 왼쪽 넘기기 버튼
+      $("#btn_prev_subj").hide();
+  } else {
+      $("#btn_prev_subj").show();
+  }
+
+  if (curr_subj_cd == 12 && idx >= 5) {  // 오른쪽 넘기기 버튼
+      $("#btn_next_subj").hide();
+  } else {
+      $("#btn_next_subj").show();
+  }
+}
+
+// 반응형인 경우에만 과목별 답안지 숨김 or 보임
+function responsiveAnswerZone() {
+  if ($(window).width() <= 1200) {
+      $(".answer_sheet .tbl_wrap").hide();
+      if (curr_subj_cd == 10) $(".answer_sheet .kor").show();
+      if (curr_subj_cd == 11) $(".answer_sheet .eng").show();
+      if (curr_subj_cd == 12) $(".answer_sheet .his").show();
+  } else {
+      $(".answer_sheet .tbl_wrap").show();
+  }
+}
+
+// 답안 체크 저장
+function setAns(t, s, q, a) {  
+  $(t).parents().parents().children("td").removeClass("on");
+  $(t).parents().addClass("on");
+
+  $.ajax({
+      type: "POST",
+      url: "./apply_proc.asp",
+      data: {mode: "set_ans", subj_cd: s, q_no: q, a_no: a, now: "2024-07-16 12:55:43"},
+      dataType: "json"
+  }).done(function(data) {
+      var pickLength = $(".tbl_wrap table tbody tr td.on").length;
+      // console.log(pickLength)
+      if (pickLength >= 15) {
+          $("#apply_btn").show();
+      }
+      
+      if(data.msg) {
+          alert(data.msg);
+      }
+      if(data.result == "fail") {
+          location.href="./apply_result.asp";
+      }
+  });
+}
+// E: 사용처(http://localhost/#/page/exam?id=4)

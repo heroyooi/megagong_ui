@@ -2,12 +2,11 @@
 <!-- #include virtual = "/app/common/menu/Header.asp"-->
 <!-- #include virtual = "/app/common/menu/Footer.asp"-->
 <!-- #include virtual = "/app/common/menu/Aside.asp"-->
-<!-- #include virtual = "/app/common/page/PageHead.asp"-->
+<!-- #include virtual = "/app/common/page/PageHeader.asp"-->
 <!-- #include virtual = "/app/common/page/PageContent.asp"-->
 <!-- #include virtual = "/app/common/page/PageAnk.asp"-->
 <!-- #include virtual = "/app/common/page/Tweet.asp"-->
 <!-- // @@ COMMON -->
-
 
 <!-- @@ LAYOUT -->
 <!-- #include virtual = "/app/layout/MainLayout.asp"-->

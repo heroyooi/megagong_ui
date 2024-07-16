@@ -2,6 +2,9 @@
 <!-- #include virtual = "/app/page/exam/Exam2.asp"-->
 <!-- #include virtual = "/app/page/exam/Exam3.asp"-->
 <!-- #include virtual = "/app/page/exam/Exam4.asp"-->
+<!-- #include virtual = "/app/page/exam/Exam5.asp"-->
+<!-- #include virtual = "/app/page/exam/Exam6.asp"-->
+<!-- #include virtual = "/app/page/exam/Exam7.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -23,6 +26,18 @@
       {
         title: "진단평가 응시",
         component: Exam4
+      },
+      {
+        title: "진단 결과 분석",
+        component: Exam5
+      },
+      {
+        title: "직렬 선택 가이드",
+        component: Exam6
+      },
+      {
+        title: "과목별 특징 및 학습법",
+        component: Exam7
       },
     ]
     

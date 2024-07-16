@@ -1265,3 +1265,59 @@ function setAns(t, s, q, a) {
   });
 }
 // E: 사용처(http://localhost/#/page/exam?id=4)
+
+// S: 사용처(http://localhost/#/page/exam?id=5)
+function qst_popupOn(subj_nm) {
+  if($("#questnPop").css("display") == "none"){
+      $("#questnPop").show();
+      //wrapWindowByMask();
+      // $("body").bind('touchmove', function(e){e.preventDefault()});
+  }else{
+      $("questnPop").hide();
+      // $("body").unbind('touchmove');
+  }
+  return false;
+}
+
+function showQst(subj_cd,qno) {
+  $("#questionBox .question").children("div").hide();
+  $("#questionBox .answer_box").children("div").hide();
+  $("#q" + subj_cd + "_" + qno).show();
+  $("#a" + subj_cd + "_" + qno).show();
+
+  qst_popupOn();
+
+  $('div.scroll_box').animate({scrollTop : 0}, 0);
+}
+
+function openSubjGuide(tab, sub) {
+  if (sub == '0') {
+      alert('준비 중입니다.');
+      return;
+  }
+  window.open('about:blank').location.href="/l/exam/gong/2024_2/subject_guide.asp?tab=" + tab + "&s" + tab + "=" + sub;
+}
+
+function qst_popupOn2(subj_nm, dpt_kbn) {
+  // 행정직
+  if (dpt_kbn == '1') {
+      
+  }
+  // 기술직
+  if (dpt_kbn == '2') {
+      
+  }
+
+  $(".subj_nm[data-title=" + subj_nm +"]").show();
+
+  if($("#questnPop2").css("display") == "none"){
+      $("#questnPop2").show();
+      //wrapWindowByMask();
+      // $("body").bind('touchmove', function(e){e.preventDefault()});
+  }else{
+      $("questnPop2").hide();
+      // $("body").unbind('touchmove');
+  }
+  return false;
+}
+// E: 사용처(http://localhost/#/page/exam?id=5)

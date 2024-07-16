@@ -61,7 +61,9 @@
                   </li>
                 </ul>
               </li>
-              <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/page/exam">진단평가<span></span></Link></li>
+              <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}>
+                <Link to="/page/exam">진단평가<span></span></Link>
+              </li>
               {/*
               
               <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/page/event">선생님 이벤트&amp;프로모션<span></span></Link></li>

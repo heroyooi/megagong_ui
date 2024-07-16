@@ -38,6 +38,7 @@
 <!-- #include virtual = "/app/page/TeacherPage.asp"-->
 <!-- #include virtual = "/app/page/MockexamPage.asp"-->
 <!-- #include virtual = "/app/page/EventPage.asp"-->
+<!-- #include virtual = "/app/page/ExamPage.asp"-->
 <!-- // @@ PAGE -->
 
 <!-- @@ CONTEXT -->

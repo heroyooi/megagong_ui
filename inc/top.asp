@@ -2,6 +2,7 @@
 	' ▒▒▒ 소스 경로 : 작성 규격 - url_{폴더명} ▒▒▒
 	Dim url_main
       dev_url_main = "https://dev.megagong.net"
+      dev_lab_main = "https://labdev.megagong.net"
   if inStr(hostnm, "dev") > 0 Then
       url_main	        = "https://dev.megagong.net"
       sobang_main	        = "https://sobangdev.megagong.net"

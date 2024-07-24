@@ -26,7 +26,7 @@
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 4 && dp3 == 2 ? "on text-white" : ""}`}><Link to="/component/slick">슬라이드 - Slick<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 2 ? "on text-white" : ""}`}><Link to="/component/tab">탭<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 5 ? "on text-white" : ""}`}><Link to="/component/player">영상 플레이어<span></span></Link></li>
-              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/component/column">칼럼<span></span></Link></li>
+              <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/component/column">칼럼 게시판<span></span></Link></li>
             </ul>
           </li>}
           <li className={`big_nav srd py-3 text-base font-bold pl-10 cursor-pointer text-white ${dp1 == 3 ? "on bg-gradient-to-r from-mainColor-500" : ""}`} onClick={changeDp(3, 0, 0)}><a href="javascript:;"><i className='bx bxs-layout mr-2.5 text-xl align-bottom'></i>페이지<span></span></a></li>

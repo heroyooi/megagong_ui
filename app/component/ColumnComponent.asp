@@ -1,5 +1,9 @@
+<!-- #include virtual = "/app/component/column/BoardSelect.asp"-->
 <!-- #include virtual = "/app/component/column/ColumnList.asp"-->
-<!-- include virtual = "/app/component/column/ColumnView.asp"-->
+<!-- #include virtual = "/app/component/column/BoardView.asp"-->
+<!-- #include virtual = "/app/component/column/BoardComment.asp"-->
+<!-- #include virtual = "/app/component/column/BoardCommentNone.asp"-->
+<!-- #include virtual = "/app/component/column/PrevNext.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -7,8 +11,28 @@
   function ColumnComponent() {
     const componentArray = [
       {
+        title: "셀렉트박스",
+        component: BoardSelect
+      },
+      {
         title: "칼럼게시판 목록",
         component: ColumnList
+      },
+      {
+        title: "게시글",
+        component: BoardView
+      },
+      {
+        title: "댓글",
+        component: BoardComment
+      },
+      {
+        title: "댓글 - 데이터 없음",
+        component: BoardCommentNone
+      },
+      {
+        title: "이전글, 다음글",
+        component: PrevNext
       },
     ]
     

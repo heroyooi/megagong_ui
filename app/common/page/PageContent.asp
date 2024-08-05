@@ -17,17 +17,20 @@
           behavior: 'smooth'
         });
       }
-    }, [view, js])
+    }, [view])
 
-    const onView = () => {
+    const onView = useCallback(() => {
       setView(prev => !prev);
       if (typeof onChange == 'function') {
         onChange();
       }
-    }
+    }, [onChange]);
 
-    const jsx = createElement('div', { dangerouslySetInnerHTML: { __html: html } });
-    const Styled = window.styled.div`${css}${excCss}`;
+    const jsx = useMemo(() => createElement('div', { dangerouslySetInnerHTML: { __html: html } }), [html]);
+    const Styled = useMemo(() => window.styled.div`${css}${excCss}`, [css, excCss]);
+
+    // const jsx = createElement('div', { dangerouslySetInnerHTML: { __html: html } });
+    // const Styled = window.styled.div`${css}${excCss}`;
 
     useEffect(() => {
       if (!initJS.current || initCode.current || onChange) {
@@ -46,7 +49,7 @@
         clearTimeout(timeout2.current);
         eval(outJs);
       }
-    }, [view, js, onChange, initCode.current]);
+    }, [view, js, onChange, initCode]);
 
     // useEffect(() => {
     //   return () => {
@@ -54,7 +57,7 @@
     //   }
     // }, [outJs, onChange])
 
-    const onCopy = (code) => () => {
+    const onCopy = useCallback((code) => () => {
       var tempTextArea = document.createElement("textarea");
       tempTextArea.value = code;
       tempTextArea.style.position = "absolute";
@@ -65,7 +68,7 @@
       document.body.removeChild(tempTextArea);
 
       toastr.success('코드가 클립보드에 복사되었습니다.');
-    }
+    }, []);
 
     return (
       <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border overflow-hidden">

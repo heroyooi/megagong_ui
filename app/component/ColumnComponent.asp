@@ -1,5 +1,7 @@
 <!-- #include virtual = "/app/component/column/BoardSelect.asp"-->
-<!-- #include virtual = "/app/component/column/ColumnList.asp"-->
+<!-- #include virtual = "/app/component/column/ColumnListAll.asp"-->
+<!-- #include virtual = "/app/component/column/ColumnListTeacher.asp"-->
+<!-- #include virtual = "/app/component/column/ColumnListNone.asp"-->
 <!-- #include virtual = "/app/component/column/BoardView.asp"-->
 <!-- #include virtual = "/app/component/column/BoardComment.asp"-->
 <!-- #include virtual = "/app/component/column/BoardCommentNone.asp"-->
@@ -15,8 +17,16 @@
         component: BoardSelect
       },
       {
-        title: "칼럼게시판 목록",
-        component: ColumnList
+        title: "게시판 목록 - 전체",
+        component: ColumnListAll
+      },
+      {
+        title: "게시판 목록 - 강사",
+        component: ColumnListTeacher
+      },
+      {
+        title: "게시판 목록 - 데이터 없음",
+        component: ColumnListNone
       },
       {
         title: "게시글",

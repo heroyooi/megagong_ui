@@ -51,8 +51,8 @@ const outJs = ``;
         excCss={excCss}
         js={js}
         outJs={outJs}
-        items={["유틸메뉴","직렬 메뉴"]}
-        link="<%=url_main%>/teacher/qna/qna.asp"
+        items={["좌측메뉴","LNB"]}
+        link="<%=url_main%>/vod/vod_chr_list.asp?mcode=5&grd_fg=9&cate_cd=3"
         onChange={onChange}
       />
     )

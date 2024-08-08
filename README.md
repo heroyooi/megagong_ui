@@ -67,7 +67,8 @@ Megasource를 통해 배포
 ## 개발자
 
 - 김혜림(krimu@megastudy.net)
-- 윤혜란(ena@megastudy.net)
 - 최희주(hitu@megastudy.net)
 - 서예린(seoyerin@megastudy.net)
 - 권영원(now@megastudy.net)
+- 박하나(hana2107@megastudy.net)
+- 김미진(mijin_dev@megastudy.net)

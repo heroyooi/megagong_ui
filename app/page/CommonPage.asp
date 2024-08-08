@@ -3,6 +3,7 @@
 <!-- #include virtual = "/app/page/common/MenuGnb.asp"-->
 <!-- #include virtual = "/app/page/common/MenuLabGnb.asp"-->
 <!-- #include virtual = "/app/page/common/BannerSkyLeft.asp"-->
+<!-- #include virtual = "/app/page/common/MenuLnb.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -28,6 +29,10 @@
         {
           title: "메가공무원|합격전략연구소 - GNB",
           component: MenuLabGnb
+        },
+        {
+          title: "메가공무원|LNB",
+          component: MenuLnb
         },
       ]
       sub = "공통 - 메뉴";

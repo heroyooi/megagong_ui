@@ -54,16 +54,17 @@
               <li className={`small_nav srd hover:text-white dep2_wrap ${dp1 == 3 && dp2 == 3 ? "on text-white dep2_wrap" : ""}`}><Link to="/page/teacher">선생님<span></span></Link></li>
               <li className={`small_nav srd hover:text-white dep2_wrap ${dp1 == 3 && dp2 == 4 ? "on text-white dep2_wrap" : ""}`}><Link to="/page/mockexam">전국 모의고사<span></span></Link></li>
               <li className={`small_nav srd flex-col ${dp1 == 3 && dp2 == 5 ? "on" : ""}`}>
-                <Link to="/page/event/period" className={`dep2_wrap ${dp1 == 3 && dp2 == 5 ? "text-white on" : ""}`} onClick={changeDp(3, 5, 1)}>이벤트<span></span></Link>
+                <Link to="/page/event/lecture" className={`dep2_wrap ${dp1 == 3 && dp2 == 5 ? "text-white on" : ""}`} onClick={changeDp(3, 5, 2)}>이벤트<span></span></Link>
                 <ul className="pl-4">
+                  <li className={`small_nav srd hover:text-white flex-col dep3_wrap ${dp1 == 3 && dp2 == 5 && dp3 == 2 ? "on text-white bg-gradient-to-r  from-mainColor-500" : ""}`}>
+                    <Link to="/page/event/lecture" onClick={changeDp(3, 5, 2)}>강좌 목록<span></span></Link>
+                  </li>
                   <li className={`small_nav srd hover:text-white flex-col dep3_wrap ${dp1 == 3 && dp2 == 5 && dp3 == 1 ? "on text-white bg-gradient-to-r  from-mainColor-500" : ""}`}>
                     <Link to="/page/event/period" onClick={changeDp(3, 5, 1)}>이벤트 기간<span></span></Link>
                   </li>
                 </ul>
               </li>
-              <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}>
-                <Link to="/page/exam">진단평가<span></span></Link>
-              </li>
+              <li className={`small_nav srd hover:text-white dep2_wrap ${dp1 == 3 && dp2 == 6 ? "on text-white dep2_wrap" : ""}`}><Link to="/page/exam" onClick={changeDp(3, 6, 0)}>진단평가<span></span></Link></li>
               {/*
               
               <li className={`small_nav srd hover:text-white ${dp1 == 3 && dp2 == 6 ? "on text-white" : ""}`}><Link to="/page/event">선생님 이벤트&amp;프로모션<span></span></Link></li>

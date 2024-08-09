@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, image2, prevHtml = '', html, nextHtml = '', css, js, outJs, excCss = '', items, link, error, errorLink, onChange }) {
+  function PageContent({ title, desc, image, image2, prevHtml = '', html, realHtml, nextHtml = '', css, js, outJs, excCss = '', items, link, error, errorLink, onChange }) {
     // const { user, mode } = useAuth();
     const { initCode } = usePage();
     const refCode = useRef(null);
@@ -92,8 +92,8 @@
 <p className="page_text text-black my-8 text-base font-light" dangerouslySetInnerHTML={{ __html: desc }} />
 
 {<div style={view ? { display: "block" } : { display: "none" }} ref={refCode}>
-  <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(`${prevHtml}\n${html}\n${nextHtml}`)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-html">
-    {prevHtml != '' || nextHtml != '' ? <code className="language-html">{`${prevHtml}\n${html}\n${nextHtml}`}</code> : <code className="language-html">{html}</code>}
+  <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={realHtml ? onCopy(`${realHtml}`) : onCopy(`${prevHtml}\n${html}\n${nextHtml}`)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-html">
+    {realHtml ? <code className="language-html">{realHtml}</code> : prevHtml != '' || nextHtml != '' ? <code className="language-html">{`${prevHtml}\n${html}\n${nextHtml}`}</code> : <code className="language-html">{html}</code>}
   </pre></div>
   {css && <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(css)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-css"><code className="language-css">{css}</code></pre></div>}
   {js && <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(js)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-js"><code className="language-js">{js}</code></pre></div>}

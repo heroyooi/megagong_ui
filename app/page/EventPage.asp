@@ -1,3 +1,7 @@
+<!-- #include virtual = "/app/page/event/EventLecture1.asp"-->
+<!-- #include virtual = "/app/page/event/EventLecture2.asp"-->
+<!-- #include virtual = "/app/page/event/EventLecture3.asp"-->
+
 <!-- #include virtual = "/app/page/event/EventPeriod1.asp"-->
 <!-- #include virtual = "/app/page/event/EventPeriod2.asp"-->
 <!-- #include virtual = "/app/page/event/EventPeriod3.asp"-->
@@ -13,7 +17,24 @@
     let componentArray = [];
     let sub = "";
     let text = "";
-    if (cid == "period") {
+    if (cid == "lecture") {
+      componentArray = [
+        {
+          title: "강좌 목록",
+          component: EventLecture1
+        },
+        {
+          title: "강좌 목록 - 이벤트 종료딤",
+          component: EventLecture2
+        },
+        {
+          title: "강좌 목록 - 탭",
+          component: EventLecture3
+        },
+      ]
+      sub = "이벤트 풀페이지 - 강좌 목록";
+      text = "메가공무원의 이벤트 풀페이지에서 사용하는 강좌 목록 컴포넌트입니다.";
+    } else if (cid == "period") {
       componentArray = [
         {
           title: "이벤트 기간 - 타입1",
@@ -60,6 +81,8 @@
 
     if (cid == "period") {
       usePageInit(3, 5, 1);
+    } else if (cid == "lecture") {
+      usePageInit(3, 5, 2);
     }
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 

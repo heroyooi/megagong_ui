@@ -31,7 +31,7 @@
           component: MenuLabGnb
         },
         {
-          title: "메가공무원|LNB",
+          title: "메가공무원 - LNB",
           component: MenuLnb
         },
       ]

@@ -19,7 +19,13 @@ const html = `
               <li><a href="/s/gong/event/2023/12260149/index.asp#eventWrap" title="공무원 T-PASS">공무원 T-PASS</a></li>
             </ul>
           </li>
-          <li class="depview"><a class="mli_link" href="/vod/vod_chr_list.asp?mcode=5&amp;grd_fg=9" title="전체 강좌">전체 강좌 </a></li>
+          <li class="depview">
+            <a class="mli_link" href="/vod/vod_chr_list.asp?mcode=5&amp;grd_fg=9" title="전체 강좌">전체 강좌 </a>
+            <ul class="custom">
+							<li><a href="/vod/vod_chr_list.asp?mcode=5&amp;grd_fg=9" title="행정직/기술직">행정직/기술직</a></li>
+							<li><a href="/vod/vod_chr_list.asp?mcode=5&amp;grd_fg=9&amp;cate_cd=3" title="법원직">법원직</a></li>
+						</ul>
+          </li>
           <li><a class="mli_link" href="/teacher/index.asp" title="선생님">선생님</a></li>
           <li>
             <a class="mli_link" href="https://labdev.megagong.net/l/gong.asp" target="_blank" title="수험정보">수험정보</a>

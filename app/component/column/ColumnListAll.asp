@@ -103,7 +103,6 @@ const html = `<div class="board-list-wrap board_list_wrap">
 
 const css = ``;
 const excCss = `.board_list_wrap .table_list .table_td.teacher .tea_img {margin: 0 auto 5px;}
-[class*=board-list-wrap] .table-list .table_td.title {width: 770px;}
 [class*=board-list-wrap] .table_td.data .type1 {border: none; margin: 0;}
 [class*=board-list-wrap] .table_td.data .type2 {border: none; margin: 0;}
 `;

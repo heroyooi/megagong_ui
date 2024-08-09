@@ -208,7 +208,7 @@ body.main .header_wrp .header {border-bottom:none; }
 .code-box.css { display: none; border: none; } 
 .code-box.js { border: none; display: none; } 
 .popup_tweet_board .code-box { border: 1px solid #d1d1d19c; padding: 40px; margin-bottom: 10px; position: relative; border-radius: 9px; } 
-.code-box h4 { font-size: 20px; color: #222; font-weight: normal; margin-bottom: 40px; font-weight: 700; } 
+/* .code-box h4 { font-size: 20px; color: #222; font-weight: normal; margin-bottom: 40px; font-weight: 700; }  */
 .code-box h4 button { width: 20px; height: 20px; background: url(https://gw.alipayobjects.com/zos/rmsportal/wSAkBuJFbdxsosKKpqyq.svg) 50% 50% no-repeat; background-size: auto 16px; display: inline-block; vertical-align: top; margin-left: 10px; opacity: 0.3; transition: opacity 0.2s; font-size: 0; } 
 .code-box h4 button:hover { opacity: 0.5; } 
 .code-box h4.on button { opacity: 1; } 

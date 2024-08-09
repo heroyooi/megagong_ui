@@ -11,6 +11,9 @@
 <!-- #include virtual = "/app/page/event/EventPeriod6.asp"-->
 <!-- #include virtual = "/app/page/event/EventGift.asp"-->
 
+<!-- #include virtual = "/app/page/event/EventTitle1.asp"-->
+<!-- #include virtual = "/app/page/event/EventTitle2.asp"-->
+
 <script type="text/babel">
   'use strict';
 
@@ -72,6 +75,19 @@
       ]
       sub = "이벤트 풀페이지 - 이벤트 기간 & 선물";
       text = "메가공무원의 이벤트 풀페이지에서 사용하는 이벤트 기간 & 선물 컴포넌트입니다.";
+    } else if (cid == "title") {
+      componentArray = [
+        {
+          title: "타이틀",
+          component: EventTitle1
+        },
+        {
+          title: "다양한 타이틀 (이벤트 종료 포함)",
+          component: EventTitle2
+        },
+      ];
+      sub = "이벤트 풀페이지 - 타이틀";
+      text = "메가공무원의 이벤트 풀페이지에서 사용하는 타이틀 컴포넌트입니다.";
     }
     
     
@@ -88,6 +104,8 @@
       usePageInit(3, 5, 1);
     } else if (cid == "lecture") {
       usePageInit(3, 5, 2);
+    } else if (cid == "title") {
+      usePageInit(3, 5, 3);
     }
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
@@ -97,7 +115,7 @@
 
     return (
       <>
-        <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0 pb-[150px]" id="page_wrap">
+        <div className="page_wrap w-[1536px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0 pb-[150px]" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
               <PageHeader name="Event" sub={sub} text={text} />
               {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} onChange={toggleCode} /></div>)}

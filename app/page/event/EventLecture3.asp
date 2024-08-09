@@ -845,7 +845,7 @@ const realHtml = `<div class="lectureTab">
 
 const css = ``;
 
-const excCss = `.container_info{border:1px solid #ddd;}`;
+const excCss = ``;
 
 const js = `EUI.lecTabUI();`;
 

@@ -1,6 +1,7 @@
 <!-- #include virtual = "/app/page/event/EventLecture1.asp"-->
 <!-- #include virtual = "/app/page/event/EventLecture2.asp"-->
 <!-- #include virtual = "/app/page/event/EventLecture3.asp"-->
+<!-- #include virtual = "/app/page/event/EventLectureSkeleton.asp"-->
 
 <!-- #include virtual = "/app/page/event/EventPeriod1.asp"-->
 <!-- #include virtual = "/app/page/event/EventPeriod2.asp"-->
@@ -30,6 +31,10 @@
         {
           title: "강좌 목록 - 탭",
           component: EventLecture3
+        },
+        {
+          title: "강좌 목록 - 스켈레톤",
+          component: EventLectureSkeleton
         },
       ]
       sub = "이벤트 풀페이지 - 강좌 목록";

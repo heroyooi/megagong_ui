@@ -507,7 +507,7 @@ const realHtml = `<div class="lecture">
 
 const css = ``;
 
-const excCss = `.container_info{border:1px solid #ddd;}`;
+const excCss = ``;
 
 const js = ``;
 

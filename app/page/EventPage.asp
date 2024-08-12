@@ -15,6 +15,10 @@
 <!-- #include virtual = "/app/page/event/EventTitle2.asp"-->
 <!-- #include virtual = "/app/page/event/EventTitle3.asp"-->
 
+<!-- #include virtual = "/app/page/event/EventShare1.asp"-->
+<!-- #include virtual = "/app/page/event/EventShare2.asp"-->
+<!-- #include virtual = "/app/page/event/EventShare3.asp"-->
+
 <script type="text/babel">
   'use strict';
 
@@ -93,6 +97,23 @@
       ];
       sub = "이벤트 풀페이지 - 타이틀";
       text = "메가공무원의 이벤트 풀페이지에서 사용하는 타이틀 컴포넌트입니다.";
+    } else if (cid == "share") {
+      componentArray = [
+        {
+          title: "공유하기 - 기본형1",
+          component: EventShare1
+        },
+        {
+          title: "공유하기 - 기본형2",
+          component: EventShare2
+        },
+        {
+          title: "공유하기 - 기본형3",
+          component: EventShare3
+        },
+      ];
+      sub = "이벤트 풀페이지 - 공유하기 이벤트";
+      text = "메가공무원의 이벤트 풀페이지에서 사용하는 공유하기 컴포넌트입니다.";
     }
     
     
@@ -105,12 +126,14 @@
 
     const toggleCode = () => {}
 
-    if (cid == "period") {
+    if (cid == "title") {
       usePageInit(3, 5, 1);
     } else if (cid == "lecture") {
       usePageInit(3, 5, 2);
-    } else if (cid == "title") {
+    } else if (cid == "period") {
       usePageInit(3, 5, 3);
+    } else if (cid == "share") {
+      usePageInit(3, 5, 4);
     }
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 

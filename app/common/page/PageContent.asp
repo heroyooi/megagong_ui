@@ -71,7 +71,7 @@
     }, []);
 
     return (
-      <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border overflow-hidden">
+      <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border overflow-hidden lg:p-0 lg:pt-2">
         <p className="page_head bg-gradient-to-r from-zinc-600 to-mainColor-500 text-white text-lg font-extrabold rounded-full py-1 pr-12 pl-14 mr-2.5 -ml-14 inline-block">{title}</p> 
         {/*(mode == 'anonymous' || user) && ( */}
           <button className="code_open" onClick={onView}>
@@ -98,7 +98,7 @@
   {css && <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(css)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-css"><code className="language-css">{css}</code></pre></div>}
   {js && <div className="relative"><button className="btn-copy absolute right-4 top-4 left-[initial] flex items-center shrink" onClick={onCopy(js)}><i className="bx bx-copy-alt"></i>COPY</button><pre className="language-js"><code className="language-js">{js}</code></pre></div>}
 </div>}
-        <div className="page_bot_wrap flex justify-between items-center lg:block">
+        <div className="page_bot_wrap flex justify-between items-center lg:block lg:p-2">
             {link && <a className="use_link text-mainColor-500 rounded-full border-solid border-2 border-mainColor-500 pl-4 pr-5 py-1.5 align-middle lg:w-full lg:text-center lg:mb-1 shrink-0" href={link} target="_blank">
               <i className="bx bx-link text-mainColor-500 text-xl mr-1 align-sub"></i>EXAMPLE
             </a>}

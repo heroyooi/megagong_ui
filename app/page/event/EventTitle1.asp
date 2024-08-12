@@ -23,8 +23,6 @@ const html = `<div class="eventWrap">
 
         </div>
     </div><!-- .evCon3 E -->
-
-
 </div>`;
 
 const realHtml = `<p class="mini_tit clamp-title2 mb_re">"행정법 공부에 뛰어들기 너무 무서워요 <img src="<%=img_main%>/m/2024/0805_ysw7/icon_con2.png" alt="" /> "</p>
@@ -60,7 +58,7 @@ const css = `.clamp-title { font-size:44px; }
 }
 `;
 
-const excCss = `img{display:inline;}
+const excCss = `img { display:inline; }
 .eventWrap .inner { padding: 70px 0; } 
 .evCon2 { background: linear-gradient(0deg, rgba(196,251,232,1) 0%, rgba(255,255,255,1) 100%); } 
 .evCon3 { background: #2c2c2c url(https://image.megagong.net/m/2024/0805_ysw7/bg_con3.jpg) center center no-repeat; background-size: cover; }`;

@@ -13,6 +13,7 @@
 
 <!-- #include virtual = "/app/page/event/EventTitle1.asp"-->
 <!-- #include virtual = "/app/page/event/EventTitle2.asp"-->
+<!-- #include virtual = "/app/page/event/EventTitle3.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -78,12 +79,16 @@
     } else if (cid == "title") {
       componentArray = [
         {
-          title: "타이틀",
+          title: "컨텐츠 타이틀",
           component: EventTitle1
         },
         {
-          title: "다양한 타이틀 (이벤트 종료 포함)",
+          title: "컨텐츠 타이틀",
           component: EventTitle2
+        },
+        {
+          title: "이벤트 타이틀",
+          component: EventTitle3
         },
       ];
       sub = "이벤트 풀페이지 - 타이틀";

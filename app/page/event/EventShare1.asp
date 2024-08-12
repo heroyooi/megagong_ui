@@ -119,16 +119,14 @@ const html = `<div class="eventBoard">
         </div>
         <button class="btnClose">ÆË¾÷ ´Ý±â</button>
     </div>
-</div>
-
-<input type="text" id="copyurl" style="position:absolute; left:-9999px;" value="https://www.megagong.net<%=request.servervariables("path_info")%>">`;
+</div>`;
 
 const css = `.eventBtns{margin-bottom:65px;}`;
 
 const excCss = `.eventBoard{background-color:#fff8db;}`;
 
 const js = `$(function(){
-    // ÆË¾÷ ¿­±â
+    // ?? ??
     $.fn.verticalMiddle = function (popupNum) {
         if ($('.dim_bnrwrp_wrap').css('display') == 'none') {
             if ($('body > .dim_bnrwrp_wrap').length == 0) {
@@ -142,7 +140,7 @@ const js = `$(function(){
             $(document).verticalMiddle();
         };
     });
-    // ÆË¾÷ ´Ý±â
+    // ?? ??
     $('.dim_bnrwrp_wrap .dim_popup > button, .clickPop .btnConfirm, .clickPop2 .btnConfirm, .clickPop3 .btnConfirm').on('click', function (e) {
         e.preventDefault();
         $('.dim_bnrwrp_wrap').hide().removeClass('on');
@@ -153,20 +151,20 @@ const js = `$(function(){
 });
 
 var loginShareEvent = function() {
-    alert('·Î±×ÀÎ ÈÄ Âü¿© °¡´ÉÇÕ´Ï´Ù.');
+    alert('??? ? ?? ?????.');
     document.location.href = "/member/login.asp";
 }
 
 var finishShareEvent = function() {
-    alert("ÀÌº¥Æ®°¡ Á¾·áµÇ¾ú½À´Ï´Ù.");
+    alert("???? ???????.");
 }
-// °øÀ¯ÀÌ¹ÌÁö
+// ?????
 function DownloadImg() {
     <% if isEnd then %>
         finishShareEvent();
         return;
     <% end if %>
-    fncDownload("/userdown/event/202211/evt_3120/download.jpg", ""); 
+    fncDownload("/userdown/event/202408/evt_3874/download.jpg", ""); 
 }
 
 function tbox_click(){
@@ -180,53 +178,61 @@ function tbox_click(){
 }  
 
 function is_url(str) {
-    var pattern_kor = /[¤¡-¤¾|¤¿-¤Ó|°¡-ÆR]/;
+    var pattern_kor = /[?-?|?-?|?-?]/;
     return pattern_kor.test(str);
 }
 
 
-// URL ¼Ò¹®³»±â ÀÌº¥Æ®
+// URL ???? ???
 function snsEvent(){
-    if($('#url').val().trim().length < 1){
-        alert('¼Ò¹®³½ URLÀ» µî·ÏÇØ ÁÖ¼¼¿ä!');
+    <%if isEnd then%>
+        finishShareEvent();
         return false;
-    }
-
-    if (is_url($('#url').val())) {
-        alert('ÀÔ·Â ³»¿ëÀ» È®ÀÎÇØÁÖ¼¼¿ä.');
-        $('#url').focus();
+    <%elseif cook_id="" then%>
+        loginShareEvent();
         return false;
-    }
-    
-    if ($('#url').val().length < 10 || $('#url').val().length > 200) {
-        alert('¼Ò¹® ³½ URLÀº 10ÀÚ ÀÌ»ó 200ÀÚ ÀÌÇÏ·Î ÀÛ¼º °¡´ÉÇÕ´Ï´Ù.');
-        return false;
-    }
-
-    if (!confirm("µî·ÏÇÏ½Ã°Ú½À´Ï±î?")) {
-        return false;
-    } 		
-
-    var params = {
-        mode: "sns",
-        url: escape($('#url').val())
-    }
-    console.log(params);
-    $.ajax({
-        type: "POST",
-        url: "./proc.asp",
-        data: params,
-        dataType: "json"
-    }).done(function(data) {
-        if(data.result == "succ") {
-            $('#url').val('');
+    <%else%>
+        if($('#url').val().trim().length < 1){
+            alert('??? URL? ??? ???!');
+            return false;
         }
-        if(data.msg) {
-            alert(data.msg);
+
+        if (is_url($('#url').val())) {
+            alert('?? ??? ??????.');
+            $('#url').focus();
+            return false;
         }
-    });
+        
+        if ($('#url').val().length < 10 || $('#url').val().length > 200) {
+            alert('?? ? URL? 10? ?? 200? ??? ?? ?????.');
+            return false;
+        }
+
+        if (!confirm("?????????")) {
+            return false;
+        } 		
+
+        var params = {
+            mode: "sns",
+            url: escape($('#url').val())
+        }
+        console.log(params);
+        $.ajax({
+            type: "POST",
+            url: "./proc.asp",
+            data: params,
+            dataType: "json"
+        }).done(function(data) {
+            if(data.result == "succ") {
+                $('#url').val('');
+            }
+            if(data.msg) {
+                alert(data.msg);
+            }
+        });
+    <%end if%>
 }
-// ÇöÀç ÆäÀÌÁö  url º¹»çÇÏ±â
+// ?? ???  url ????
 function copyToClipboard(el) {
     // resolve the element
     el = (typeof el === 'string') ? document.querySelector(el) : el;
@@ -259,20 +265,17 @@ function copyToClipboard(el) {
     }
     el.blur();
 }
-// ÆäÀÌÁö  url º¹»çÇÏ±â
+// ???  url ????
 function urlCopy() {
-    copyToClipboard('#copyurl');
-    alert('URL º¹»ç ¿Ï·á! ¼Ò¹®±Û¿¡ ²À! ³Ö¾îÁÖ¼¼¿ä.');
-}    
-// µî·Ï ÇöÈ²º¸±â
-const mockupData = {
-    "data": [
-        {"ROW_":4,"sns_kind":null,"sns_url":"https://www.naver.com/","REG_DT":"2022-11-25","REG_TM":"10:00:50"},
-        {"ROW_":3,"sns_kind":null,"sns_url":"http://www.naer.comaaa","REG_DT":"2022-11-25","REG_TM":"09:11:46"},
-        {"ROW_":2,"sns_kind":null,"sns_url":"http://daum.net","REG_DT":"2022-06-21","REG_TM":"15:11:11"},
-        {"ROW_":1,"sns_kind":null,"sns_url":"http://www.naver.com","REG_DT":"2022-06-20","REG_TM":"09:55:36"}
-    ]
+    <%if isEnd then%>
+        finishShareEvent();
+        return;
+    <%else%>
+        copyToClipboard('#copyurl');
+        alert('URL ?? ??!\n???? ?! ?????.');
+    <%end if%>
 }
+// ?? ????
 var GetMySns = function(e) {
     e.preventDefault();
     var that = $(this);
@@ -484,6 +487,7 @@ const outJs = ``;
         // desc="ÀÌº¥Æ® Ç®ÆäÀÌÁö¿¡¼­ »ç¿ëÇÏ´Â ÀÌº¥Æ® ±â°£ ÄÄÆ÷³ÍÆ®µéÀÔ´Ï´Ù."
         // image="/images/btn.png"
         html={html}
+        nextHtml={replaceSpecialTags(`<input type="text" id="copyurl" style="position:absolute; left:-9999px;" value="https://www.megagong.net&lt;%=request.servervariables('path_info')%&gt;">`)}
         css={css}
         excCss={excCss}
         js={js}

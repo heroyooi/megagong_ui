@@ -71,9 +71,7 @@ const html = `<div class="eventBoard">
             <% End if %>
         </div>
     </div>
-</div><!-- .eventBoard -->
-
-<input type="text" id="copyurl" style="position:absolute; left:-9999px;" value="https://www.megagong.net<%=request.servervariables("path_info")%>">`;
+</div><!-- .eventBoard -->`;
 
 const css = `.eventBtns{margin-bottom:65px;}`;
 
@@ -272,6 +270,7 @@ const outJs = ``;
         // desc="이벤트 풀페이지에서 사용하는 이벤트 기간 컴포넌트들입니다."
         // image="/images/btn.png"
         html={html}
+        nextHtml={replaceSpecialTags(`<input type="text" id="copyurl" style="position:absolute; left:-9999px;" value="https://www.megagong.net&lt;%=request.servervariables('path_info')%&gt;">`)}
         css={css}
         excCss={excCss}
         js={js}

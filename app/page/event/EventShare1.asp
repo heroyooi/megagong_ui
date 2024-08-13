@@ -126,7 +126,7 @@ const css = `.eventBtns{margin-bottom:65px;}`;
 const excCss = `.eventBoard{background-color:#fff8db;}`;
 
 const js = `$(function(){
-    // ?? ??
+    // ÆË¾÷ ¿­±â
     $.fn.verticalMiddle = function (popupNum) {
         if ($('.dim_bnrwrp_wrap').css('display') == 'none') {
             if ($('body > .dim_bnrwrp_wrap').length == 0) {
@@ -140,7 +140,7 @@ const js = `$(function(){
             $(document).verticalMiddle();
         };
     });
-    // ?? ??
+    // ÆË¾÷ ´Ý±â
     $('.dim_bnrwrp_wrap .dim_popup > button, .clickPop .btnConfirm, .clickPop2 .btnConfirm, .clickPop3 .btnConfirm').on('click', function (e) {
         e.preventDefault();
         $('.dim_bnrwrp_wrap').hide().removeClass('on');
@@ -151,14 +151,14 @@ const js = `$(function(){
 });
 
 var loginShareEvent = function() {
-    alert('??? ? ?? ?????.');
+    alert('·Î±×ÀÎ ÈÄ Âü¿© °¡´ÉÇÕ´Ï´Ù.');
     document.location.href = "/member/login.asp";
 }
 
 var finishShareEvent = function() {
-    alert("???? ???????.");
+    alert("ÀÌº¥Æ®°¡ Á¾·áµÇ¾ú½À´Ï´Ù.");
 }
-// ?????
+// °øÀ¯ÀÌ¹ÌÁö
 function DownloadImg() {
     <% if isEnd then %>
         finishShareEvent();
@@ -178,12 +178,12 @@ function tbox_click(){
 }  
 
 function is_url(str) {
-    var pattern_kor = /[?-?|?-?|?-?]/;
+    var pattern_kor = /[¤¡-¤¾|¤¿-¤Ó|°¡-ÆR]/;
     return pattern_kor.test(str);
 }
 
 
-// URL ???? ???
+// URL ¼Ò¹®³»±â ÀÌº¥Æ®
 function snsEvent(){
     <%if isEnd then%>
         finishShareEvent();
@@ -193,22 +193,22 @@ function snsEvent(){
         return false;
     <%else%>
         if($('#url').val().trim().length < 1){
-            alert('??? URL? ??? ???!');
+            alert('¼Ò¹®³½ URLÀ» µî·ÏÇØ ÁÖ¼¼¿ä!');
             return false;
         }
 
         if (is_url($('#url').val())) {
-            alert('?? ??? ??????.');
+            alert('ÀÔ·Â ³»¿ëÀ» È®ÀÎÇØÁÖ¼¼¿ä.');
             $('#url').focus();
             return false;
         }
         
         if ($('#url').val().length < 10 || $('#url').val().length > 200) {
-            alert('?? ? URL? 10? ?? 200? ??? ?? ?????.');
+            alert('¼Ò¹® ³½ URLÀº 10ÀÚ ÀÌ»ó 200ÀÚ ÀÌÇÏ·Î ÀÛ¼º °¡´ÉÇÕ´Ï´Ù.');
             return false;
         }
 
-        if (!confirm("?????????")) {
+        if (!confirm("µî·ÏÇÏ½Ã°Ú½À´Ï±î?")) {
             return false;
         } 		
 
@@ -232,7 +232,7 @@ function snsEvent(){
         });
     <%end if%>
 }
-// ?? ???  url ????
+// ÇöÀç ÆäÀÌÁö  url º¹»çÇÏ±â
 function copyToClipboard(el) {
     // resolve the element
     el = (typeof el === 'string') ? document.querySelector(el) : el;
@@ -265,17 +265,18 @@ function copyToClipboard(el) {
     }
     el.blur();
 }
-// ???  url ????
+// ÆäÀÌÁö  url º¹»çÇÏ±â
 function urlCopy() {
     <%if isEnd then%>
         finishShareEvent();
         return;
     <%else%>
         copyToClipboard('#copyurl');
-        alert('URL ?? ??!\n???? ?! ?????.');
+        alert('URL º¹»ç ¿Ï·á! ¼Ò¹®±Û¿¡ ²À! ³Ö¾îÁÖ¼¼¿ä.');
     <%end if%>
-}
-// ?? ????
+}    
+// µî·Ï ÇöÈ²º¸±â
+var mockupData = {"data":[{"ROW_":4,"sns_kind":null,"sns_url":"https://www.naver.com/","REG_DT":"2022-11-25","REG_TM":"10:00:50"},{"ROW_":3,"sns_kind":null,"sns_url":"http://www.naer.comaaa","REG_DT":"2022-11-25","REG_TM":"09:11:46"},{"ROW_":2,"sns_kind":null,"sns_url":"http://daum.net","REG_DT":"2022-06-21","REG_TM":"15:11:11"},{"ROW_":1,"sns_kind":null,"sns_url":"http://www.naver.com","REG_DT":"2022-06-20","REG_TM":"09:55:36"}]}
 var GetMySns = function(e) {
     e.preventDefault();
     var that = $(this);
@@ -292,7 +293,7 @@ var GetMySns = function(e) {
     $('#my_sns_data tbody').html('').append(html);
     $(document).verticalMiddle(that.attr('popupId'));
 
-    that.on('click', GetMySns); // add handler back after ajax
+    that.on('click', GetMySns);
 }
 $('.btnUrl').on('click', GetMySns);`;
 

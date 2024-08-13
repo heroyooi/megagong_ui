@@ -8,11 +8,12 @@
       Lab.aside();
     }, []);
 
-    const changeDp = (dp1, dp2, dp3) => (e) => {
+    const changeDp = useCallback((dp1, dp2, dp3) => (e) => {
       setDp1(dp1);
       setDp2(dp2);
       setDp3(dp3);
-    }
+      window.scrollTo(0, 0);
+    }, []);
 
     return (
       <div className="guide-aside fixed top-0 left-0 w-60 h-full pt-32 z-[4] overflow-y-auto transition ease-in-out delay-150 box-border bg-gradient-to-t from-mainColor_gray-600 to-mainColor_gray-700 text-neutral-400">

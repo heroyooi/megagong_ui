@@ -23,7 +23,7 @@ const html = `<div class="board-list-wrap board_list_wrap">
 </div>`;
 
 const css = ``;
-const excCss = ``;
+const excCss = `.board-list-wrap {line-hegith: 1;}`;
 
 const js = ``;
 

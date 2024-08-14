@@ -70,7 +70,7 @@ const outJs = ``;
         js={js}
         outJs={outJs}
         items={["이벤트 타이틀","시스템"]}
-        link="<%=url_main%>/s/gong/event/2024/08120090/index.asp#event"
+        link="<%=url_main%>/s/gong/event/2024/08200091/index.asp#eventWrap"
         onChange={onChange}
       />
     )

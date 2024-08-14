@@ -132,7 +132,7 @@
   End If
     'lo_now_date = replace(replace(lo_now_date,"오전",""),"오후","")
   lo_now_date = Year(lo_now_date)&"-"&Right("0"&Month(lo_now_date),2)&"-"&Right("0"&day(lo_now_date),2)& " " & Right("0"&hour(lo_now_date),2)&":"& Right("0"&minute(lo_now_date),2)&":"& Right("0"&second(lo_now_date),2)
-
+  val4css = Year(lo_now_date)&Right("0"&Month(lo_now_date),2)&Right("0"&day(lo_now_date),2)& Right("0"&hour(lo_now_date),2)& Right("0"&minute(lo_now_date),2)
 %>
 
 <!DOCTYPE HTML>
@@ -159,27 +159,27 @@
   <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
   
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/font_NotoSans_kr.css" />
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common.css" />
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_component.css" />
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/mypage.css" />
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_respons.css" />
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/font_NotoSans_kr.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_component.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/mypage.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_respons.css?now=<%=val4css%>" />
   <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/js/jquery/plug-in/swiper.css" />
   <!--<link rel="stylesheet" type="text/css" href="<%=url_main%>/common/js/jQuery/plug-in/slick.css" />-->
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common_lab.css">
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/tech.css">
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/teacher/curr/curr.css">
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/event_common.css">
-  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/main/megagong_main_v24.css" />
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common_lab.css?now=<%=val4css%>">
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/tech.css?now=<%=val4css%>">
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/teacher/curr/curr.css?now=<%=val4css%>">
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/event_common.css?now=<%=val4css%>">
+  <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/main/megagong_main_v24.css?now=<%=val4css%>" />
 
-  <link type="text/css" rel="stylesheet" href="/css/reset.css" />
-  <link type="text/css" rel="stylesheet" href="/css/renew_overview.css" />
-  <link type="text/css" rel="stylesheet" href="/css/aos.css" />
-  <link type="text/css" rel="stylesheet" href="/css/component.css" />
-  <link type="text/css" rel="stylesheet" href="/css/c_main.css" />
-  <link type="text/css" rel="stylesheet" href="/css/mega.css">
-  <link type="text/css" rel="stylesheet" href="/css/toastr.css">
-  <link type="text/css" rel="stylesheet" href="/css/retest.css"><!-- 서브 디자인 수정 테스트용 파일-->
+  <link type="text/css" rel="stylesheet" href="/css/reset.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="/css/renew_overview.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="/css/aos.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="/css/component.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="/css/c_main.css?now=<%=val4css%>" />
+  <link type="text/css" rel="stylesheet" href="/css/mega.css?now=<%=val4css%>">
+  <link type="text/css" rel="stylesheet" href="/css/toastr.css?now=<%=val4css%>">
+  <link type="text/css" rel="stylesheet" href="/css/retest.css?now=<%=val4css%>"><!-- 서브 디자인 수정 테스트용 파일-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <script type="text/javascript" src="<%=url_main%>/common/js/jQuery/jquery-3.3.1.min.js"></script>

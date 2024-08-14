@@ -18,7 +18,7 @@ const html = `<div class="eventWrap">
                 </div>
             </div>
         </div>
-    </div><!-- .evCon3 E -->
+    </div><!-- .event E -->
 </div>`;
 
 const css = `/* °øÅë */

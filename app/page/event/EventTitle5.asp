@@ -13,7 +13,7 @@ const html = `<div class="eventWrap">
                 <div class="sub_tit"><b>메가공무원과 카톡 친구</b> 맺은 화면을 캡처하여 인증하면 <br class="show-576"><b>푸짐한 선물</b>을 드려요! <br>기존 친구, 새로운 친구 <b>모두 참여 가능</b>합니다.</div>
             </div>
         </div>
-    </div><!-- .evCon3 E -->
+    </div><!-- .event E -->
 
     <div class="evSection evCon4 event">
         <div class="inner">
@@ -24,7 +24,7 @@ const html = `<div class="eventWrap">
                 <div class="sub_tit"><b>메가공무원 카톡 친구</b> 추가 이벤트를 널리 알려주세요. <br>정성스럽게 작성할 수록, <br class="show-576">더 많은 친구들에게 <b>소문 낼수록 당첨 확률 UP!</b></div>
             </div>
         </div>
-    </div><!-- .evCon4 E -->
+    </div><!-- .event E -->
 </div>`;
 
 const css = `/* 공통 */
@@ -49,6 +49,8 @@ const css = `/* 공통 */
   .evSection .con_tit h4 {font-size: clamp(22px, 5.5vmin, 55px);}
   .evSection .con_tit .sub_tit {font-size: clamp(15px, 2.4vmin, 22px);}
   .evSection .con_tit h4 + .sub_tit {margin-top: 2%;}
+
+  .event .con_tit .event_tag {font-size: clamp(16px, 4vmin, 40px); margin-bottom: 3%;}
 }
 `;
 

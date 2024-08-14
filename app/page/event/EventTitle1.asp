@@ -78,7 +78,7 @@ const outJs = ``;
         excCss={excCss}
         js={js}
         outJs={outJs}
-        items={["이벤트 타이틀","타이틀 + 아이콘"]}
+        items={["컨텐츠 타이틀","타이틀 + 아이콘"]}
         link="<%=url_main%>/event/2024/08050029/index.asp#eventWrap"
         onChange={onChange}
       />

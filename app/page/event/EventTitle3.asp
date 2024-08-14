@@ -7,13 +7,11 @@ const html = `<div class="eventWrap">
     <div class="evSection evCon7" id="event">
         <div class="inner">
             <span class="event_mark"><img src="<%=img_main %>/m/2024/0805_ysw7/event_mark.png" alt=""></span>
-
 						<p class="mini_tit clamp-title2 y_ver">★신규 강좌 개강 기념★</p>
 						<h4 class="con_tit wh_ver">
 							2025 양승우 행정법 기본이론 <br class="show-992">'이.암.기' 강좌 <br>소문내고 선물 받아가세요!
 							<% if 1=1 then %><i class="end"></i><% end if %><!--이벤트 종료 아이콘-->
 						</h4>
-
 						<p class="wh_ver event_text">
 							양승우 선생님의 새롭게 개편된 <br class="show-576">행정법 기본이론 강좌를 널리 알려주세요. <br>
 							이벤트를 참여해주신 분들 중 추첨을 통해 선물을 드리며, <br>
@@ -80,7 +78,7 @@ const outJs = ``;
         excCss={excCss}
         js={js}
         outJs={outJs}
-        items={["이벤트 타이틀","다양한 색상"]}
+        items={["이벤트 타이틀","이미지"]}
         link="<%=url_main%>/event/2024/08050029/index.asp#eventWrap"
         onChange={onChange}
       />

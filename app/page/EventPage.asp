@@ -14,6 +14,8 @@
 <!-- #include virtual = "/app/page/event/EventTitle1.asp"-->
 <!-- #include virtual = "/app/page/event/EventTitle2.asp"-->
 <!-- #include virtual = "/app/page/event/EventTitle3.asp"-->
+<!-- #include virtual = "/app/page/event/EventTitle4.asp"-->
+<!-- #include virtual = "/app/page/event/EventTitle5.asp"-->
 
 <!-- #include virtual = "/app/page/event/EventShare1.asp"-->
 <!-- #include virtual = "/app/page/event/EventShare2.asp"-->
@@ -91,8 +93,16 @@
           component: EventTitle2
         },
         {
-          title: "이벤트 타이틀",
+          title: "이벤트 타이틀 - 이미지 라벨",
           component: EventTitle3
+        },
+        {
+          title: "이벤트 타이틀 - 시스템 라벨 (event_tag)",
+          component: EventTitle4
+        },
+        {
+          title: "이벤트 타이틀 - 시스템 라벨 (event_tag + ver_border)",
+          component: EventTitle5
         },
       ];
       sub = "이벤트 풀페이지 - 타이틀";

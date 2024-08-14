@@ -139,7 +139,7 @@ const outJs = ``;
         excCss={excCss}
         js={js}
         outJs={outJs}
-        items={["이벤트 타이틀","다양한 색상"]}
+        items={["컨텐츠 타이틀","다양한 색상"]}
         link="<%=url_main%>/event/2024/07030026/index.asp#eventWrap"
         onChange={onChange}
       />

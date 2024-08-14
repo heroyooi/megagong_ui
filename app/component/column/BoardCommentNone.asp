@@ -21,7 +21,7 @@
 </div>`;
 
     const css = ``;
-    const excCss = ``;
+    const excCss = `.comment-base .input-area input[type="text"] {margin-bottom: 0;}`;
 
     const js = ``;
 

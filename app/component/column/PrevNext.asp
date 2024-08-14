@@ -47,9 +47,7 @@
   </div>`;
 
     const css = ``;
-    const excCss = `
-      
-    `;
+    const excCss = `.post-wrap {line-height: 1;}`;
 
     const js = ``;
 

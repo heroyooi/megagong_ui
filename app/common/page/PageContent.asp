@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, image2, prevHtml = '', html, realHtml, nextHtml = '', css, js, realJs, outJs, excCss = '', items, link, error, errorLink, onChange }) {
+  function PageContent({ title, desc, image, image2, prevHtml = '', html, realHtml, nextHtml = '', css, js, realJs, outJs, excCss = '', items, link, error, errorLink, onChange, file, lazyFile }) {
     // const { user, mode } = useAuth();
     const { initCode } = usePage();
     const refCode = useRef(null);
@@ -118,6 +118,18 @@
                 </ul>
             </div>
         </div>
+        {file && <div className="mt-2 text-black font-semibold flex gap-x-2">
+          <span>파일 경로 : <em class="text-mainColor-500">{file}</em></span>
+          <button class="text-white bg-mainColor-500 font-medium rounded px-2 py-1 text-sm hover:text-white" onClick={onCopy(file)}>
+            경로 복사
+          </button>
+        </div>}
+        {lazyFile && <div className="mt-2 text-black font-semibold flex gap-x-2">
+          <span>파일 경로(레이지 로딩) : <em class="text-mainColor-500">{lazyFile}</em></span>
+          <button class="text-white bg-mainColor-500 font-medium rounded px-2 py-1 text-sm hover:text-white" onClick={onCopy(file)}>
+            경로 복사
+          </button>
+        </div>}
       </div>
     )
   }

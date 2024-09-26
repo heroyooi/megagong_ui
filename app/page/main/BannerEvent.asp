@@ -59,18 +59,6 @@ const html = `<div class="main_wrp">
     <!-- S: [PC] 이벤트 배너 - 1 / main_eventSlider1 -->
     <h3 class="blindw">이벤트</h3>
     <div id="main_eventSlider1" class="main_eventSlider palette event1">
-
-        <% if cdate(lo_now_date) < cdate("2024-06-22") then %>
-        <div class="item">
-            <a href="/s/gong/event/2024/05230046/index.asp#eventWrap" class="" title="피자 GET">
-                <!-- <span class="point"></span> -->
-                <span class="point">111 동시 구매 시 15% 할인</span>
-                2024 지방직 9급 시험 정복
-                <strong>최대 80% 할인 갤럭시 버즈& 피자 GET</strong>
-            </a>
-        </div>
-        <% end if %>
-
         <div class="item">
             <a href="/s/gong/event/2023/05100057/index.asp#eventWrap" class="" title="지방자치론">
                 <!-- <span class="point"></span> -->
@@ -264,13 +252,14 @@ $(window).on('resize', function() {
       <PageContent
         title={title}
         desc=""
-        image="/images/demo/main_banner_evtbanner.png"
+        // image="/images/demo/main_banner_evtbanner.png"
         html={html}
         css={css}
         excCss={excCss}
         js={js}
         items={["이벤트 배너","메인 배너"]}
         link="<%=url_main%>/megagong.asp"
+        file="m\gong\bnr_zone\v24\offline_event.asp"
         onChange={onChange}
       />
     )

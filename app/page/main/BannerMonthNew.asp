@@ -476,13 +476,15 @@ $(document).on('click', function(e){
       <PageContent
         title={title}
         desc=""
-        image="/images/demo/main_banner_monthnew.png"
+        // image="/images/demo/main_banner_monthnew.png"
         html={html}
         css={css}
         excCss={excCss}
         js={js}
         items={["이 달의 새 강좌", "메인 배너"]}
         link="<%=url_main%>/megagong.asp"
+        file="m\gong\bnr_zone\v24\month_new.asp"
+        lazyFile="m\gong\bnr_zone\v24\month_new_load.asp"
         onChange={onChange}
       />
     )

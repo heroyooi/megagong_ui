@@ -92,6 +92,33 @@
     usePageInit(2, 3, 1);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
+    const SFilter = useMemo(() => window.styled.ul`
+      display: flex;
+      li {
+        color: #fff;
+      }
+    `, []);
+
+    const SContent = useMemo(() => window.styled.div`
+      ${props => props.type == "list" ? `` : `
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        > div {
+          width: calc(50% - 10px);
+          .position_site {
+            display: none;
+          }
+        }
+      `}
+    `, []);
+
+    const [filterType, setFilterType] = useState("list");
+
+    const changeFilter = useCallback((type) => () => {
+      setFilterType(type);
+    }, []);
+
     useEffect(() => {
       initCode.current = true;
     }, [componentActive])
@@ -101,8 +128,14 @@
         <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0 pb-[150px]" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
               <PageHeader name="Pub Popup" sub="퍼블 팝업" text="팝업은 메가공무원 메인 페이지에서부터 홍보페이지까지 특정 정보 전달을 위하여 광범위하게 사용되고 있는 기능입니다. <br />별도의 요청이 있던 경우를 제외하고 모든 팝업은 해당 코드를 바탕으로 제작되는 것을 원칙으로 합니다." />
-              {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} onChange={toggleCode} /></div>)}
+              <SFilter>
+                <li onClick={changeFilter("list")}>리스트형</li>
+                <li onClick={changeFilter("thumb")}>썸네일형</li>
+              </SFilter>
+              <SContent type={filterType}>
+                {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} onChange={toggleCode} /></div>)}
               {/*<Tweet />*/}
+              </SContent>
           </div>
         </div>
         <PageAnk position={componentPosition} data={componentArray} active={componentActive} />

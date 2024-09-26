@@ -94,13 +94,19 @@
 
     const SFilter = useMemo(() => window.styled.ul`
       display: flex;
-      li {
-        color: #fff;
+      .inner {
+
+        div {
+          color: #fff;
+          cursor: pointer;
+        }
       }
+      
     `, []);
 
     const SContent = useMemo(() => window.styled.div`
       ${props => props.type == "list" ? `` : `
+        /* thumb */
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -129,8 +135,10 @@
           <div className="page_inner w-5/6 ml-8 pt-32">
               <PageHeader name="Pub Popup" sub="퍼블 팝업" text="팝업은 메가공무원 메인 페이지에서부터 홍보페이지까지 특정 정보 전달을 위하여 광범위하게 사용되고 있는 기능입니다. <br />별도의 요청이 있던 경우를 제외하고 모든 팝업은 해당 코드를 바탕으로 제작되는 것을 원칙으로 합니다." />
               <SFilter>
-                <li onClick={changeFilter("list")}>리스트형</li>
-                <li onClick={changeFilter("thumb")}>썸네일형</li>
+                <div className="inner">
+                  <div onClick={changeFilter("list")}>리스트형</div>
+                  <div onClick={changeFilter("thumb")}>썸네일형</div>
+                </div>
               </SFilter>
               <SContent type={filterType}>
                 {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={`#${index + 1} ` + item.title} onChange={toggleCode} /></div>)}

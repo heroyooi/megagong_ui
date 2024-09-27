@@ -1,3 +1,4 @@
+<!-- #include virtual = "/app/page/main/BannerLeftSky.asp"-->
 <!-- #include virtual = "/app/page/main/BannerRightSky.asp"-->
 <!-- #include virtual = "/app/page/main/BannerMegaPass.asp"-->
 <!-- #include virtual = "/app/page/main/BannerMegasPick.asp"-->
@@ -28,6 +29,10 @@
         {
           title: "이 달의 새 강좌",
           component: BannerMonthNew
+        },
+        {
+          title: "좌측 상단 배너",
+          component: BannerLeftSky
         },
         {
           title: "우측 상단 배너",

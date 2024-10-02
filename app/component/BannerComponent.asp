@@ -49,7 +49,7 @@
     const [componentActive, setComponentActive] = useState(0);
 
     const toggleCode = () => {}
-    useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
+    useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode, cid);
 
     return (
       <PageProvider>

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
   
-  function useScrollNavi(position, refs, setState, margin, callback) {
+  function useScrollNavi(position, refs, setState, margin, callback, cid) {
 
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
@@ -21,7 +21,7 @@
             }, 750);
             return () => clearTimeout(timeout1.current);
         }
-    }, [id, position, setState]);
+    }, [id, position, setState, cid]);
 
     // update positions of refs after a slight delay
     useEffect(() => {
@@ -31,7 +31,7 @@
             });
         }, 600);
         return () => clearTimeout(timeout2.current);
-    }, [refs, position, margin]);
+    }, [refs, position, margin, cid]);
 
     // handle scroll and resize events
     useEffect(() => {
@@ -64,7 +64,7 @@
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
-    }, [refs, position, margin, setState]);
+    }, [refs, position, margin, setState, cid]);
 
     return null;
   }

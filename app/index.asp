@@ -16,6 +16,7 @@
 
 
 <!-- @@ COMPONENT -->
+<!-- #include virtual = "/app/component/BannerComponent.asp"-->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
 <!-- #include virtual = "/app/component/PopupComponent.asp"-->
 <!-- #include virtual = "/app/component/DevPopupComponent.asp"-->
@@ -94,7 +95,8 @@ tailwind.config = {
         <div id="container">
           <PageProvider>
             <Route path="/" exact component={MainLayout} />
-            <Route path="/component/:cid" exact component={ComponentLayout} />
+            <Route path="/component/:pid" exact component={ComponentLayout} />
+            <Route path="/component/:pid/:cid" exact component={ComponentLayout} />
             <Route path="/page/:pid" exact component={PageLayout} />
             <Route path="/page/:pid/:cid" exact component={PageLayout} />
           </PageProvider>

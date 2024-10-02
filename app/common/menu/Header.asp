@@ -69,7 +69,7 @@
                 <h1 className="logo"><Link to="/">COMPONENT GUIDE</Link></h1>
                 <nav id="gnb">
                   <ul className="nav_list">
-                    <li><Link to="/component/popup">COMPONENT</Link></li>
+                    <li><Link to="/component/banner/ss">COMPONENT</Link></li>
                     <li><Link to="/page/common/menu">PAGE</Link></li>
                     {/* <li><Link to="/blog">BLOG</Link></li> */}
                     {/*user && <li id="js_test"><Link to="/js_test">JS TEST</Link></li>*/}

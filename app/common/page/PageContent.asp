@@ -3,7 +3,7 @@
 
   function PageContent({ title, desc, image, image2, prevHtml = '', html, realHtml, nextHtml = '', css, js, realJs, outJs, excCss = '', items, link, error, errorLink, onChange, file, lazyFile, designFile }) {
     // const { user, mode } = useAuth();
-    const { initCode } = usePage();
+    const { initCode, activeIndex } = usePage();
     const refCode = useRef(null);
     const [view, setView] = useState(false);
     const timeout1 = useRef(null);
@@ -17,7 +17,13 @@
           behavior: 'smooth'
         });
       }
-    }, [view])
+    }, [view]);
+
+    useEffect(() => {
+      if (view) {
+        setView(false);
+      }
+    }, [activeIndex]);
 
     const onView = useCallback(() => {
       setView(prev => !prev);

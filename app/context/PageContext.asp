@@ -8,6 +8,7 @@
   function PageProvider({ children }) {
     const timeout = useRef(null);
     const initCode = useRef(false);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const moveComponent = (position, index) => {
       window.scrollTo({
@@ -17,7 +18,7 @@
     }
 
     return (
-      <PageContext.Provider value={{ initCode, moveComponent }}>
+      <PageContext.Provider value={{ initCode, moveComponent, activeIndex, setActiveIndex }}>
         {children}
       </PageContext.Provider>
     )

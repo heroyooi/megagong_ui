@@ -2,12 +2,13 @@
   'use strict';
 
   function PageAnk({ position, data, active }) {
-    const { initCode, moveComponent } = usePage();
+    const { initCode, moveComponent, setActiveIndex } = usePage();
     const [activeAnk, setActiveAnk] = useState(true);
     
     const listEl = useRef(null);
     const goComponent = useCallback((index) => () => {
       moveComponent(position, index);
+      setActiveIndex(index);
     }, [position, active]);
     
     useEffect(() => {

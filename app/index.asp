@@ -81,14 +81,6 @@ tailwind.config = {
   'use strict';
   
   function ComponentGuide() {
-    // const { user, setUser } = useAuth();
-
-    // useEffect(() => {
-    //   Lab.onAuthStateChanged();
-    //   authService.onAuthStateChanged((user) => {
-    //     setUser(user);
-    //   });
-    // }, []);
     return (
       <HashRouter basename="/">
         <Header />

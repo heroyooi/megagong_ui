@@ -83,8 +83,8 @@
         <div className="issue-box-wrap mt-7"></div>
         {image && <div className="position_site overflow-hidden mb-6 mx-56 md:mx-24 lg:mx-0 shadow-lg shadow-gray-500/50"><div className="img_topine h-[1.5rem] rounded-t-xl bg-slate-300 relative"><span className="img_deco w-2.5 h-2.5 bg-slate-100 rounded-full absolute right-6 top-1/2 block -translate-y-1/2 after:content-[''] after:w-2.5 after:h-2.5 after:bg-slate-100 after:rounded-full after:absolute after:-right-[1rem] before:content-[''] before:w-2.5 before:h-2.5 before:bg-slate-100 before:rounded-full before:absolute before:right-[1rem]"></span></div><img src={image} alt='-' /></div>}
         {image2 && <div className="position_site overflow-hidden mb-6 mx-56 md:mx-24 lg:mx-16"><div className="img_topine h-[1.5rem] rounded-t-xl bg-slate-300 relative"><span className="img_deco w-2.5 h-2.5 bg-slate-100 rounded-full absolute right-6 top-1/2 block -translate-y-1/2 after:content-[''] after:w-2.5 after:h-2.5 after:bg-slate-100 after:rounded-full after:absolute after:-right-[1rem] before:content-[''] before:w-2.5 before:h-2.5 before:bg-slate-100 before:rounded-full before:absolute before:right-[1rem]"></span></div><img src={image2} alt='-' /></div>}
-<div className={`code-box html relative w-full m-auto clear-both border-y-2 border-slate-200`}>
-  <Styled>{jsx}</Styled>
+<div className={`code-box html relative w-full m-auto clear-both border-y-2 border-slate-200 w-full`}>
+  <Styled className="!block">{jsx}</Styled>
   {error && <div className="absolute left-0 top-0 w-full h-full bg-black z-10 opacity-75">
     <p className="text-white text-sm flex h-full justify-center items-center flex-col">리액트 환경에서 정상적으로 구동이 되지 않습니다. <br /><a href={errorLink} target="_blank">데모 페이지 가기 &gt;</a></p>
   </div>}

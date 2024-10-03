@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function BoardComment({ title, onChange }) {
+  function BoardComment({ title, onChange, simple = false }) {
 
     const html = `<div class="comment-base">
     <div class="input-wrap">
@@ -50,6 +50,7 @@
         js={js}
         items={["°Ô½ÃÆÇ", "´ñ±Û"]}
         link="<%=url_main%>/column/column.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

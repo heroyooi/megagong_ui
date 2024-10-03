@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function MenuGnb({ title, onChange }) {
+  function MenuGnb({ title, onChange, simple = false }) {
 
 const html = `
 <div id="headertop" class="gong">
@@ -248,6 +248,7 @@ const outJs = `clearTimeout(timeout);`;
         outJs={outJs}
         items={["GNB","2뎁스","PC, 모바일 별도"]}
         link="<%=url_main%>/teacher/qna/qna.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

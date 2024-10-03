@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function ColumnListAll({ title, onChange }) {
+  function ColumnListAll({ title, onChange, simple = false }) {
 
 const html = `<div class="board-list-wrap board_list_wrap">
     <ul class="table-order">
@@ -121,6 +121,7 @@ const js = ``;
         js={js}
         items={["게시판", "목록"]}
         link="<%=url_main%>/column/column.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

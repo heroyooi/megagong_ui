@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function MenuLnb({ title, onChange }) {
+  function MenuLnb({ title, onChange, simple=false }) {
 
 const html = `<div id="mContainer">
 	<div id="mLnb" class="ver2">
@@ -51,6 +51,7 @@ const outJs = ``;
         outJs={outJs}
         items={["ÁÂÃø¸Þ´º","LNB"]}
         link="<%=url_main%>/vod/vod_chr_list.asp?mcode=5&grd_fg=9&cate_cd=3"
+				simple={simple}
         onChange={onChange}
       />
     )

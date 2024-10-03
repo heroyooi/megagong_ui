@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PrevNext({ title, onChange }) {
+  function PrevNext({ title, onChange, simple = false }) {
 
     const html = `<div class="post-wrap">
       <ul class="post-closest-list post_closest_list">
@@ -62,6 +62,7 @@
         js={js}
         items={["게시판", "이전글_다음글"]}
         link="<%=url_main%>/column/column.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

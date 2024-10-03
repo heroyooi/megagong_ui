@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function MenuHcode({ title, onChange }) {
+  function MenuHcode({ title, onChange, simple = false }) {
 
 const html = `
 <div class="hd_top">
@@ -50,6 +50,7 @@ const outJs = ``;
         outJs={outJs}
         items={["유틸메뉴","직렬 메뉴"]}
         link="<%=url_main%>/teacher/qna/qna.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

@@ -49,7 +49,6 @@ body.v-fixed .guide-header { top: -81px; }
 .header_wrp .header::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; backdrop-filter: blur(0.5em); } 
 .header_wrp .header h1 { position: relative; z-index: 1; } 
 .header_wrp .header h1 a { display: flex; align-items: center; font-weight: 700; font-size: 18px; color: inherit; } 
-.header_wrp.on .header h1 a { text-shadow: 0px 0px 16px rgb(0 0 0 / 50%); } 
 .header_wrp .header h1 a:before { content: ''; display: inline-block; width: 35px; height: 25px; background-position: 0 0; background-repeat: no-repeat; background-size: cover; background-image: url(/images/logo.png); margin-right: 10px; } 
 .header_wrp .header h1.mega a:before { background-image: url(/images/smartapp.png); width: 35px; height: 35px; }
 .header_wrp #gnb { position: relative; } 
@@ -72,7 +71,7 @@ body.v-fixed .guide-header { top: -81px; }
 .header_wrp .mo_menu_wrp .util_list,
 .header_wrp .util_list.on { opacity: 1; } 
 .header_wrp.on .header { color: #fff; } 
-.header_wrp.on .header h1 a:before { background-image: url(/images/logo3.png); } 
+/* .header_wrp.on .header h1 a:before { background-image: url(/images/logo3.png); }  */
 .header_wrp.on:not(.open_menu) .btn_menu .shape svg rect { fill: #fff; } 
 .header_wrp.open_menu .mo_menu_wrp { transform: translateX(0); } 
 .header_wrp.open_menu .btn_menu svg rect { fill: #000; } 
@@ -81,14 +80,6 @@ body.v-fixed .guide-header { top: -81px; }
 .header_wrp.open_menu .btn_menu svg rect:nth-child(3) { -webkit-transform: translate(11.11%, -1.4%) rotate(-40deg); transform: translate(11.11%, -1.4%) rotate(-40deg); } 
 .header_wrp.open_menu .header h1 a { font-size: 0;justify-content: flex-start; } 
 .header_wrp.open_menu .header h1 a:before { background-image: url(/images/logo3.png); } 
-
-body.main .header_wrp {background: none;}
-body.main .header_wrp .header {border-bottom:none; }
-
-@media screen and (max-width: 1200px) {
-  body.main .header_wrp .btn_menu2 {display: none;}
-  body.main .header_wrp .header h1 a {justify-content: flex-start;}
-}
 
 .mo_dimm { position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-color: #000; opacity: 0.7; transition: opacity 0.3 ease-out; display: none; } 
 .mo_menu_wrp { position: fixed; width: 100%; height: 100%; left: 0; top: 0; padding-top: 100px; background-color: #fff; transform: translateX(100%); transition: transform 0.3s ease-out; } 

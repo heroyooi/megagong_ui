@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PassBannerEtc({ title, onChange }) {
+  function PassBannerEtc({ title, onChange, simple = false }) {
 
 const html = `<div class="main_wrp">
     <div class="wide_wrap flex first">
@@ -166,6 +166,7 @@ $(window).on('resize', function() {
         items={["패스 배너","메가 패스","리스타트","교정직","법원직"]}
         link="<%=url_main%>/megagong.asp"
         file="m\gong\bnr_zone\v24\pick_event.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

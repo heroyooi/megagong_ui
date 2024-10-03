@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PageContent({ title, desc, image, image2, prevHtml = '', html, realHtml, nextHtml = '', css, js, realJs, outJs, excCss = '', items, link, error, errorLink, onChange, file, lazyFile, designFile }) {
+  function PageContent({ title, desc, image, image2, prevHtml = '', html, realHtml, nextHtml = '', css, js, realJs, outJs, excCss = '', items, link, error, errorLink, onChange, file, lazyFile, designFile, simple }) {
     // const { user, mode } = useAuth();
     const { initCode, activeIndex } = usePage();
     const refCode = useRef(null);
@@ -76,6 +76,12 @@
       toastr.success('코드가 클립보드에 복사되었습니다.');
     }, []);
 
+    if (simple) {
+      return (
+        <>{jsx}</>
+      )
+    }
+
     return (
       <div className="page_text_wrap px-10 pt-9 pb-11 mb-12 bg-white w-full box-border overflow-hidden lg:p-0 lg:pt-2">
         <p className="page_head bg-gradient-to-r from-zinc-600 to-mainColor-500 text-white text-lg font-extrabold rounded-full py-1 pr-12 pl-14 mr-2.5 -ml-14 inline-block">{title}</p> 
@@ -89,6 +95,7 @@
         <div className="issue-box-wrap mt-7"></div>
         {image && <div className="position_site overflow-hidden mb-6 mx-56 md:mx-24 lg:mx-0 shadow-lg shadow-gray-500/50"><div className="img_topine h-[1.5rem] rounded-t-xl bg-slate-300 relative"><span className="img_deco w-2.5 h-2.5 bg-slate-100 rounded-full absolute right-6 top-1/2 block -translate-y-1/2 after:content-[''] after:w-2.5 after:h-2.5 after:bg-slate-100 after:rounded-full after:absolute after:-right-[1rem] before:content-[''] before:w-2.5 before:h-2.5 before:bg-slate-100 before:rounded-full before:absolute before:right-[1rem]"></span></div><img src={image} alt='-' /></div>}
         {image2 && <div className="position_site overflow-hidden mb-6 mx-56 md:mx-24 lg:mx-16"><div className="img_topine h-[1.5rem] rounded-t-xl bg-slate-300 relative"><span className="img_deco w-2.5 h-2.5 bg-slate-100 rounded-full absolute right-6 top-1/2 block -translate-y-1/2 after:content-[''] after:w-2.5 after:h-2.5 after:bg-slate-100 after:rounded-full after:absolute after:-right-[1rem] before:content-[''] before:w-2.5 before:h-2.5 before:bg-slate-100 before:rounded-full before:absolute before:right-[1rem]"></span></div><img src={image2} alt='-' /></div>}
+
 <div className={`code-box html relative w-full m-auto clear-both border-y-2 border-slate-200 w-full`}>
   <Styled className="!block">{jsx}</Styled>
   {error && <div className="absolute left-0 top-0 w-full h-full bg-black z-10 opacity-75">

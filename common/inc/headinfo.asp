@@ -65,12 +65,7 @@ val4css = Year(lo_now_date)&Right("0"&Month(lo_now_date),2)&Right("0"&day(lo_now
     <% if instr(1, NowUrl, "/recruit/") > 0 Then %>
     <meta name="format-detection" content="telephone=no" />
     <% End if %>
-
-    <% ' 본고딕 폰트 ---- S %>
-    <% if instr(1, NowUrl, "/megagong.asp") > 0 Then %>
-    <link type="text/css" rel="stylesheet" href="/common/css/font_NotoSans_kr.css">
-    <% End if %>
-    <% ' // 본고딕 폰트 ---- E %>
+    <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/font_NotoSans_kr.css">
     
 
     <link type="text/css" rel="stylesheet" href="<%=url_main%>/common/css/megagong_common.css?now=<%=val4css%>" />
@@ -94,58 +89,7 @@ val4css = Year(lo_now_date)&Right("0"&Month(lo_now_date),2)&Right("0"&day(lo_now
     <% if instr(1, NowUrl, "/book/") > 0 Then %><link type="text/css" rel="stylesheet" href="/common/css/ebook.css?now=<%=val4css%>" /><% End if %>
     <% if instr(1, NowUrl, "/full/") > 0 Then %><link rel="stylesheet" type="text/css" href="/common/css/fullsvc.css?now=<%=val4css%>"><% End if %>
     <% if instr(1, NowUrl, "/seatrsv/") > 0 Then %><link rel="stylesheet" type="text/css" href="/common/css/seatrsv.css?now=<%=val4css%>"><% End if %>
-
-    <!-- 신규통합 CSS-->
-    <% if instr(1, NowUrl, "/megagong.asp") > 0 Then %>
-
-        <% if hcode = "army" Then %>
-            <%If cdate(lo_now_date) < cdate("2021-12-29") then%>
-            <!-- 군무원 전용 css -->
-            <link type="text/css" rel="stylesheet" href="/common/css/megagong_main_new.css?now=<%=val4css%>">
-            <% else %>
-            <link type="text/css" rel="stylesheet" href="/common/css/main/megagong_main_army_v21.css?now=<%=val4css%>">
-            <% end if %>
-        <% else %>
-        
-            <% ' 20210615 공무원 메인개편 %>
-            <% if hcode = "gong" Then %>
-                
-                <link type="text/css" rel="stylesheet" href="/common/css/main/megagong_main_gong_v21_3.css?now=<%=val4css%>">
-                
-            <% elseif hcode = "sobang" Then %>
-               
-                <link type="text/css" rel="stylesheet" href="/common/css/main/megagong_main_sobang_v21_3.css?now=<%=val4css%>">
-
-            <% ' 20210527 안성 메인개편 %>
-            <% elseif hcode  = "ansung" Then %>
-                <link type="text/css" rel="stylesheet" href="/common/css/main/megagong_main_ansung_v21.css?now=<%=val4css%>">
-            
-            <% ' 20210527 소방학원 메인개편 %>
-            <% elseif hcode  = "sobangcampus" Then %>
-                <link type="text/css" rel="stylesheet" href="/common/css/main/megagong_main_sobangcampus_v21.css?now=<%=val4css%>">
-                
-            <% ' 20210701 공무원학원 메인개편 %>
-            <% elseif hcode  = "gongssel" Then %>
-                <link type="text/css" rel="stylesheet" href="/common/css/main/megagong_main_gongssel_v21.css?now=<%=val4css%>">
-            <% ' 20221130~ 합격전략연구소 구축(1차 오픈 대상) %>
-            <% elseif hcode  = "lab" Then %>
-                <link type="text/css" rel="stylesheet" href="/common/css/main/megagong_main_lab.css?now=<%=val4css%>">
-            <% else %>
-                <link type="text/css" rel="stylesheet" href="/common/css/megagong_main.css?now=<%=val4css%>">
-            <% end if %>
-        <% End if %>
-    <% End if %>
-
-    <% If hcode  = "lab" Then %>
-    <link type="text/css" rel="stylesheet" href="/common/js/jQuery/plug-in/jquery.mCustomScrollbar.css">
-    <% End if %>
     
-    <link type="text/css" rel="stylesheet" href="/common/css/megagong_respons.css?now=<%=val4css%>" />
-
-    <% if SmartLearingFlg = "Y" Then '스마트러닝 Then %>
-        <link type="text/css" rel="stylesheet" href="/common/css/smartlearning.css?now=<%=val4css%>" />
-    <% End if %>
-
     <% if hcode = "sobang" then %>
     <span itemscope="" itemtype="https://schema.org/Organization">
         <link itemprop="url" href="<%=sobang_main%>">

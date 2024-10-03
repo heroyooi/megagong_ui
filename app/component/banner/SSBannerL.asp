@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function SSBannerL({ title, onChange }) {
+  function SSBannerL({ title, onChange, simple = false }) {
 
 const html = `<div id="main_sky_bs_left" class="main_sky_bs_left renew <%=hcode%> top_re <% if (hcode = "gong" or hcode = "sobang") then %> renew_0619 dots_center <% end if %> type_top">
     <div class="inner">
@@ -410,6 +410,7 @@ $(function(){ // html 파싱 이후
         link="<%=url_main%>/megagong.asp"
         file="common\banner\right_sky_banner.asp"
         designFile="\\10.1.0.100\공무원사업본부_공무원 사업부\마케팅서비스실\웹디자인팀(공)\@디자인가이드"
+        simple={simple}
         onChange={onChange}
       />
     )

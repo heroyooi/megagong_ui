@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function SSBannerR({ title, onChange }) {
+  function SSBannerR({ title, onChange, simple = false }) {
 
 const html = `<div class="pass_side_banner top_pos_ver">
     <div class="item">
@@ -400,6 +400,7 @@ $(window).on('load', function() {
         link="<%=url_main%>/megagong.asp"
         file="common\banner\right_sky_banner.asp"
         designFile="\\10.1.0.100\공무원사업본부_공무원 사업부\마케팅서비스실\웹디자인팀(공)\@디자인가이드"
+        simple={simple}
         onChange={onChange}
       />
     )

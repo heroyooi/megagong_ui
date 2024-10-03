@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PassBannerPretty({ title, onChange }) {
+  function PassBannerPretty({ title, onChange, simple = false }) {
 
 const html = `<div class="banner_wrap tpass_bnr" style="background-color:#ffeadc">
     <div class="inner">
@@ -130,6 +130,7 @@ const js = ``;
         items={["패스 배너","프리티 패스"]}
         link="<%=url_main%>/megagong.asp"
         file="m\gong\bnr_zone\v24\top_banner.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

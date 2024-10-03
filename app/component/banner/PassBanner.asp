@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function PassBanner({ title, onChange }) {
+  function PassBanner({ title, onChange, simple = false }) {
 
 const html = `<div class="main_wrp">
     <div class="wide_wrap flex first">
@@ -109,6 +109,7 @@ const js = `$('.main_visualSlider').not('.slick-initialized').slick({
         items={["패스 배너","메가 패스","대표 직렬"]}
         link="<%=url_main%>/megagong.asp"
         file="m\gong\bnr_zone\v24\pass.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

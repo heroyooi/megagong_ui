@@ -144,11 +144,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
   <!--
-  <meta property="og:image" content="<%=h_img %>"/>
+  <meta property="og:image" content="<%=h_img%>"/>
   <meta property="og:url" content="<%=hostnm %>"/>
   <meta property="og:description" content="<%=h_des %>"/>
   -->
-  <meta name="author" content="성연욱, 서예린" />
+  <meta name="author" content="성연욱, 김혜림, 최희주, 서예린, 권영원, 박하나, 김미진" />
   <meta name="description" content="<%=h_des%>">
   <meta name="keywords" content="<%=h_key%>">
 
@@ -206,16 +206,5 @@
 </head>
 <body>
   <div id="wrap">
-    <!--
-    <div class="co-loading" style="background:rgba(0, 0, 0, 0.5); position:fixed; left: 0; top:0; width: 100%; height: 100%; z-index: 999;"></div>
-    <div class="co-loading_ui">
-      <div class="span_loading_wrap">
-        <span class="span_loading"></span>
-        <span class="span_loading"></span>
-        <span class="span_loading"></span>
-        <span class="span_loading"></span>
-      </div>
-    </div>
-    -->
     <div class="wrap">
       

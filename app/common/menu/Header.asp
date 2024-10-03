@@ -66,7 +66,7 @@
                 <button type="button" className="btn_menu2" onClick={() => setActiveLnb(prev => !prev)}>
                   <i className='bx bx-plus'></i>
                 </button>
-                <h1 className="logo"><Link to="/">COMPONENT GUIDE</Link></h1>
+                <h1 className="logo mega"><Link to="/">COMPONENT GUIDE</Link></h1>
                 <nav id="gnb">
                   <ul className="nav_list">
                     <li><Link to="/component/banner/ss">COMPONENT</Link></li>

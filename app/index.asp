@@ -19,12 +19,13 @@
 <!-- #include virtual = "/app/component/BannerComponent.asp"-->
 <!-- #include virtual = "/app/component/ButtonComponent.asp"-->
 <!-- #include virtual = "/app/component/TabComponent.asp"-->
+<!-- #include virtual = "/app/component/ColumnComponent.asp"-->
+<!-- #include virtual = "/app/component/TableComponent.asp"-->
 <!-- #include virtual = "/app/component/PopupComponent.asp"-->
 <!-- #include virtual = "/app/component/DevPopupComponent.asp"-->
 <!-- #include virtual = "/app/component/SwiperComponent.asp"-->
 <!-- #include virtual = "/app/component/SlickComponent.asp"-->
 <!-- #include virtual = "/app/component/PlayerComponent.asp"-->
-<!-- #include virtual = "/app/component/ColumnComponent.asp"-->
 <!-- // @@ COMPONENT -->
 
 <!-- @@ HOOKS -->

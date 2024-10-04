@@ -12,6 +12,7 @@
         {pid === 'button' && <ButtonComponent />}
         {pid === 'tab' && <TabComponent />}
         {pid === 'column' && <ColumnComponent />}
+        {pid === 'table' && <TableComponent />}
         {/*cid === 'menu' && <MenuComponent />*/}
         {/*cid === 'popup' && <PopupComponent />*/}
         {/*cid === 'dev-popup' && <DevPopupComponent />*/}

@@ -48,6 +48,9 @@
               <li className={Depth2Li(dp1 == 1 && dp2 == 4)}>
                 <Link to="/component/column" className={Depth2Link(dp1 == 1 && dp2 == 4)} onClick={changeDp(1, 4)}>게시판<span></span></Link>
               </li>
+              <li className={Depth2Li(dp1 == 1 && dp2 == 5)}>
+                <Link to="/component/table" className={Depth2Link(dp1 == 1 && dp2 == 5)} onClick={changeDp(1, 5)}>테이블<span></span></Link>
+              </li>
               {/*<li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/popup">퍼블 팝업<span></span></Link></li>*/}
             </ul>
           </li>}

@@ -1,28 +1,13 @@
-<!-- #include virtual = "/app/component/tab/Tab1.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab2.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab2Swiper.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab3.asp"-->
+<!-- #include virtual = "/app/component/table/Table1.asp"-->
 
 <script type="text/babel">
   'use strict';
 
-  function TabComponent() {
+  function TableComponent() {
     const componentArray = [
       {
-        title: "탭 - 타입1",
-        component: Tab1
-      },
-      {
-        title: "탭 - 타입2",
-        component: Tab2
-      },
-      {
-        title: "탭 - 타입2 - 스와이퍼 버전",
-        component: Tab2Swiper
-      },
-      {
-        title: "탭 - 타입3",
-        component: Tab3
+        title: "테이블 - 타입1",
+        component: Table1
       },
     ]
     
@@ -31,14 +16,14 @@
     const [componentActive, setComponentActive] = useState(0);
 
     const toggleCode = () => {}
-    usePageInit(1, 3);
+    usePageInit(1, 5);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     return (
       <>
         <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0 pb-[150px]" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
-            <PageHeader name="Tab" sub="탭" text="메가공무원 사이트에서 공통적으로 사용되고 있는 탭 컴포넌트입니다. <br />탭 버튼을 클릭하여 탭 내용에 해당되는 정보를 사용자에게 전달합니다." />
+            <PageHeader name="Table" sub="테이블" text="메가공무원 사이트에서 공통적으로 사용되고 있는 테이블 컴포넌트입니다. <br />이용자에게 테이블을 통해서 정리된 데이터를 공유합니다." />
             {componentArray.map((item, index) => <div key={index} ref={el => componentRefs.current[index] = el}><item.component title={item.title} error={item.error} errorLink={item.errorLink} onChange={toggleCode} /></div>)}
             {/*<Tweet />*/}
           </div>

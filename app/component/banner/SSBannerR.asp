@@ -396,7 +396,7 @@ $(window).on('load', function() {
         css={css}
         excCss={excCss}
         js={js}
-        items={["SS 배너","우측 상단 배너"]}
+        items={["SS 배너","우측 상단 배너","메가공무원"]}
         link="<%=url_main%>/megagong.asp"
         file="common\banner\right_sky_banner.asp"
         designFile="\\10.1.0.100\공무원사업본부_공무원 사업부\마케팅서비스실\웹디자인팀(공)\@디자인가이드"

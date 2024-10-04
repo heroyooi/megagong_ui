@@ -1,5 +1,7 @@
 <!-- #include virtual = "/app/component/banner/SSBannerR.asp"-->
 <!-- #include virtual = "/app/component/banner/SSBannerL.asp"-->
+<!-- #include virtual = "/app/component/banner/SSBannerRSobang.asp"-->
+<!-- #include virtual = "/app/component/banner/SSBannerLSobang.asp"-->
 <!-- #include virtual = "/app/component/banner/PassBanner.asp"-->
 <!-- #include virtual = "/app/component/banner/PassBannerEtc.asp"-->
 <!-- #include virtual = "/app/component/banner/PassBannerPretty.asp"-->
@@ -14,12 +16,20 @@
     if (cid == "ss") {
       componentArray = [
         {
-          title: "SS 배너 - 우측 상단",
+          title: "SS 배너 - 공무원 우측 상단",
           component: SSBannerR
         },
         {
-          title: "SS 배너 - 좌측 상단",
+          title: "SS 배너 - 공무원 좌측 상단",
           component: SSBannerL
+        },
+        {
+          title: "SS 배너 - 소방 우측 상단",
+          component: SSBannerRSobang
+        },
+        {
+          title: "SS 배너 - 소방 좌측 상단",
+          component: SSBannerLSobang
         },
       ]
       sub = "SS 배너";

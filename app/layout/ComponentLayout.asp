@@ -11,13 +11,13 @@
         {pid === 'banner' && <BannerComponent cid={cid} />}
         {pid === 'button' && <ButtonComponent />}
         {pid === 'tab' && <TabComponent />}
+        {pid === 'column' && <ColumnComponent />}
         {/*cid === 'menu' && <MenuComponent />*/}
         {/*cid === 'popup' && <PopupComponent />*/}
         {/*cid === 'dev-popup' && <DevPopupComponent />*/}
         {/*cid === 'swiper' && <SwiperComponent />*/}
         {/*cid === 'slick' && <SlickComponent />*/}
         {/*cid === 'player' && <PlayerComponent />*/}
-        {/*cid === 'column' && <ColumnComponent />*/}
       </AsideProvider>
     )
   }

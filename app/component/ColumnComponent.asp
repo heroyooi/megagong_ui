@@ -53,7 +53,7 @@
     const [activeAnk, setActiveAnk] = useState(true);
 
     const toggleCode = () => {}
-    usePageInit(2, 6);
+    usePageInit(1, 4);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     return (

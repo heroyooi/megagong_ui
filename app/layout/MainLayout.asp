@@ -91,10 +91,13 @@
             <div className="main_component">
               <div className="grid-item"><PassBanner simple={true} /></div>
               <div className="grid-item"><MenuHcode simple={true} /></div>
+              <div className="grid-item"><Tab1 simple={true} /></div>
               <div className="grid-item"><ButtonBlack simple={true} /></div>
+              <div className="grid-item"><Tab2 simple={true} /></div>
               <div className="grid-item"><BoardComment simple={true} /></div>
-              <div className="grid-item"><ButtonOther simple={true} /></div>
+              <div className="grid-item"><Tab3 simple={true} /></div>
               <div className="grid-item"><MenuLnb simple={true} /></div>
+              <div className="grid-item"><ButtonOther simple={true} /></div>
               <div className="grid-item"><ButtonWhite simple={true} /></div>
               <div className="grid-item"><PassBannerEtc simple={true} /></div>
               <div className="grid-item"><PassBanner simple={true} /></div>

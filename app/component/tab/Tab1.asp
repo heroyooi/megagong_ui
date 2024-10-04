@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Tab1({ title, onChange }) {
+  function Tab1({ title, onChange, simple = false }) {
 
 const html = `<ul class="tab-base type-1">
     <li class="on"><a href="javascript:void(0);">공무원</a></li>
@@ -27,6 +27,7 @@ const js = `$('.tab-base li').on('click', function(e){
         link="<%=dev_url_main%>/test/heroyooi/component.asp?id=tab"
         file="test\heroyooi\component.asp"
         designFile="\\10.1.0.100\공무원사업본부_공무원 사업부\마케팅서비스실\웹디자인팀(공)\@디자인가이드\@new_탭.psd"
+        simple={simple}
         onChange={onChange}
       />
     )

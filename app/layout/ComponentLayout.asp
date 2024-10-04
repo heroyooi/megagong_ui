@@ -9,6 +9,7 @@
       <AsideProvider>
         <Aside />
         {pid === 'banner' && <BannerComponent cid={cid} />}
+        {pid === 'button' && <ButtonComponent />}
         {/*cid === 'menu' && <MenuComponent />*/}
         {/*cid === 'tab' && <TabComponent />*/}
         {/*cid === 'popup' && <PopupComponent />*/}

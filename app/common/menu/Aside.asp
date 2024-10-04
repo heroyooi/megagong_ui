@@ -39,6 +39,9 @@
                   </li>
                 </ul>
               </li>
+              <li className={Depth2Li(dp1 == 1 && dp2 == 2)}>
+                <Link to="/component/button" className={Depth2Link(dp1 == 1 && dp2 == 2)} onClick={changeDp(1, 2)}>¹öÆ°<span></span></Link>
+              </li>
               {/*<li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/popup">ÆÛºí ÆË¾÷<span></span></Link></li>
               <li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 2 ? "on text-white" : ""}`}><Link to="/component/tab">ÅÇ<span></span></Link></li>*/}
             </ul>

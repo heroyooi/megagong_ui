@@ -1,8 +1,6 @@
-<!-- #include virtual = "/app/component/button/Button1.asp"-->
-<!-- #include virtual = "/app/component/button/Button2.asp"-->
-<!-- #include virtual = "/app/component/button/Button3.asp"-->
-<!-- #include virtual = "/app/component/button/Button4.asp"-->
-<!-- #include virtual = "/app/component/button/Button5.asp"-->
+<!-- #include virtual = "/app/component/button/ButtonBlack.asp"-->
+<!-- #include virtual = "/app/component/button/ButtonWhite.asp"-->
+<!-- #include virtual = "/app/component/button/ButtonOther.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -10,24 +8,16 @@
   function ButtonComponent() {
     const componentArray = [
       {
-        title: "버튼 - 기본형",
-        component: Button1
+        title: "버튼 - 검은색",
+        component: ButtonBlack
       },
       {
-        title: "버튼 - 슬라이드 좌우형",
-        component: Button2
+        title: "버튼 - 검은색",
+        component: ButtonWhite
       },
       {
-        title: "버튼 - 구매",
-        component: Button3
-      },
-      {
-        title: "버튼 - 라운드형",
-        component: Button4
-      },
-      {
-        title: "버튼 - hover 컬러",
-        component: Button5
+        title: "버튼 - 기타",
+        component: ButtonOther
       },
     ]
    
@@ -36,7 +26,7 @@
     const [componentActive, setComponentActive] = useState(0);
 
     const toggleCode = () => {}
-    usePageInit(2, 1);
+    usePageInit(1, 2);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     return (

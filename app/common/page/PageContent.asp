@@ -78,7 +78,7 @@
 
     if (simple) {
       return (
-        <>{jsx}</>
+        <Styled className="!block">{jsx}</Styled>
       )
     }
 

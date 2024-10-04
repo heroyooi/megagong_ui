@@ -2302,8 +2302,8 @@ body.main .header_wrp:not(.on) .header {border-bottom:none; }
 .main_component{margin:0 auto;width:1210px;}
 .main_component_wrap .grid-item{padding:5px;}
 .main_component_wrap .main_eventSlider{display:block;opacity:1;}
-.main_component_wrap .hd_top .hcode_wrap{position: static;margin-bottom:10px;}
-.main_component_wrap .hd_top .hcode_wrap:last-child{margin-bottom:0;}
+/* .main_component_wrap .hd_top .hcode_wrap{position: static;margin-bottom:10px;}
+.main_component_wrap .hd_top .hcode_wrap:last-child{margin-bottom:0;} */
 
 @media screen and (max-width: 1200px) {
   .main_component_wrap .main_visualSlider{width:370px;margin:0;}

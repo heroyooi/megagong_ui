@@ -23,7 +23,7 @@ const js = `$('.tab-base li').on('click', function(e){
         html={html}
         css={css}
         js={js}
-        items={["탭", "크기", "색상"]}
+        items={["탭", "검은배경", "캡슐"]}
         link="<%=dev_url_main%>/test/heroyooi/component.asp?id=tab"
         file="test\heroyooi\component.asp"
         designFile="\\10.1.0.100\공무원사업본부_공무원 사업부\마케팅서비스실\웹디자인팀(공)\@디자인가이드\@new_탭.psd"

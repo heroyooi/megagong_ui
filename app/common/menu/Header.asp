@@ -71,7 +71,6 @@
                   <ul className="nav_list">
                     <li><Link to="/component/banner/ss">COMPONENT</Link></li>
                     <li><Link to="/page/common/menu">PAGE</Link></li>
-                    <li onClick={() => alert("준비중입니다.")}><a>ARTICLE</a></li>
                     {/* <li><Link to="/blog">BLOG</Link></li> */}
                     {/*user && <li id="js_test"><Link to="/js_test">JS TEST</Link></li>*/}
                   </ul>
@@ -106,7 +105,6 @@
                   <ul className="nav_list">
                     <li onClick={closeMenu('/component/popup')}><a>COMPONENT</a></li>
                     <li onClick={closeMenu('/page/common/menu')}><a>PAGE</a></li>
-                    <li onClick={() => alert("준비중입니다.")}><a>ARTICLE</a></li>
                   </ul>
                 </div>
               </div>

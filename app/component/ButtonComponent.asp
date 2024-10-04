@@ -12,7 +12,7 @@
         component: ButtonBlack
       },
       {
-        title: "버튼 - 검은색",
+        title: "버튼 - 하얀색",
         component: ButtonWhite
       },
       {

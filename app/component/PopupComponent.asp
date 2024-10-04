@@ -14,74 +14,100 @@
 <!-- #include virtual = "/app/component/popup/Popup14.asp"-->
 <!-- #include virtual = "/app/component/popup/Popup15.asp"-->
 
+<!-- #include virtual = "/app/component/popup/DevPopup1.asp"-->
+<!-- #include virtual = "/app/component/popup/DevPopup2.asp"-->
+<!-- #include virtual = "/app/component/popup/DevPopup3.asp"-->
+
 <script type="text/babel">
   'use strict';
 
-  function PopupComponent() {
-    const componentArray = [
-      {
-        title: "¸ÞÀÎ ¿ìÃø ÇÏ´Ü ÆË¾÷",
-        component: Popup1
-      },
-      {
-        title: "Áß¾Ó ¿À´Ã ÇÏ·ç ´Ý±â ÆË¾÷ - ÃÊ±â ·Îµå",
-        component: Popup2
-      },
-      {
-        title: "Áß¾Ó ¿À´Ã ÇÏ·ç ´Ý±â ÆË¾÷",
-        component: Popup3
-      },
-      {
-        title: "µõ ÆË¾÷",
-        component: Popup4
-      },
-      {
-        title: "¿µ»ó ÆË¾÷ - ºñµð¿À",
-        component: Popup5
-      },
-      {
-        title: "¿µ»ó ÆË¾÷ - À¯Æ©ºê",
-        component: Popup6
-      },
-      {
-        title: "ÆË¾÷ È£Ãâ - ÆäÀÌµåÀÎ & ÄÁÅÙÃ÷ ¿òÁ÷ÀÓ",
-        component: Popup7
-      },
-      {
-        title: "ÆË¾÷ È£Ãâ - ÆäÀÌµåÀÎ & ÄÁÅÙÃ÷ °íÁ¤",
-        component: Popup8
-      },
-      {
-        title: "ÆË¾÷ È£Ãâ - ÆäÀÌµå¾÷¡¤´Ù¿î & ÄÁÅÙÃ÷ °íÁ¤",
-        component: Popup9
-      },
-      {
-        title: "¸ð´Þ ÆË¾÷ - ÀÚ¼¼È÷ º¸±â",
-        component: Popup10
-      },
-      {
-        title: "¿øÇü ½½¶óÀÌµå ÆË¾÷",
-        component: Popup11
-      },
-      {
-        title: "ÀÌº¥Æ® ¾à°ü ÆË¾÷ - Áß¾Ó µõ ÆË¾÷",
-        component: Popup12
-      },
-      {
-        title: "ÀÌº¥Æ® ¾à°ü ÆË¾÷ - tiny ÆË¾÷",
-        component: Popup13
-      },
-      {
-        title: "ÄíÆù ÆË¾÷ - ¿À´Ã ÇÏ·ç ´Ý±â",
-        component: Popup14
-      },
-      {
-        title: "È¯½Â ÆË¾÷ - ¿À´Ã ÇÏ·ç ´Ý±â",
-        component: Popup15
-      },
-    ]
+  function PopupComponent({ cid }) {
     
-    const { initCode } = usePage();
+    let componentArray = [];
+    let sub = "";
+    let text = "";
+    if (cid == "pub") {
+      componentArray = [
+        {
+          title: "¸ÞÀÎ ¿ìÃø ÇÏ´Ü ÆË¾÷",
+          component: Popup1
+        },
+        {
+          title: "Áß¾Ó ¿À´Ã ÇÏ·ç ´Ý±â ÆË¾÷ - ÃÊ±â ·Îµå",
+          component: Popup2
+        },
+        {
+          title: "Áß¾Ó ¿À´Ã ÇÏ·ç ´Ý±â ÆË¾÷",
+          component: Popup3
+        },
+        {
+          title: "µõ ÆË¾÷",
+          component: Popup4
+        },
+        {
+          title: "¿µ»ó ÆË¾÷ - ºñµð¿À",
+          component: Popup5
+        },
+        {
+          title: "¿µ»ó ÆË¾÷ - À¯Æ©ºê",
+          component: Popup6
+        },
+        {
+          title: "ÆË¾÷ È£Ãâ - ÆäÀÌµåÀÎ & ÄÁÅÙÃ÷ ¿òÁ÷ÀÓ",
+          component: Popup7
+        },
+        {
+          title: "ÆË¾÷ È£Ãâ - ÆäÀÌµåÀÎ & ÄÁÅÙÃ÷ °íÁ¤",
+          component: Popup8
+        },
+        {
+          title: "ÆË¾÷ È£Ãâ - ÆäÀÌµå¾÷¡¤´Ù¿î & ÄÁÅÙÃ÷ °íÁ¤",
+          component: Popup9
+        },
+        {
+          title: "¸ð´Þ ÆË¾÷ - ÀÚ¼¼È÷ º¸±â",
+          component: Popup10
+        },
+        {
+          title: "¿øÇü ½½¶óÀÌµå ÆË¾÷",
+          component: Popup11
+        },
+        {
+          title: "ÀÌº¥Æ® ¾à°ü ÆË¾÷ - Áß¾Ó µõ ÆË¾÷",
+          component: Popup12
+        },
+        {
+          title: "ÀÌº¥Æ® ¾à°ü ÆË¾÷ - tiny ÆË¾÷",
+          component: Popup13
+        },
+        {
+          title: "ÄíÆù ÆË¾÷ - ¿À´Ã ÇÏ·ç ´Ý±â",
+          component: Popup14
+        },
+        {
+          title: "È¯½Â ÆË¾÷ - ¿À´Ã ÇÏ·ç ´Ý±â",
+          component: Popup15
+        },
+      ]
+      usePageInit(1, 6, 1);
+    } else if (cid == "dev") {
+      componentArray = [
+        {
+          title: "¾Ë¸² ½ÅÃ» ÆË¾÷ È£Ãâ",
+          component: DevPopup1
+        },
+        {
+          title: "°³¹ß ÆË¾÷ÀÌ 2°³ÀÎ °æ¿ì",
+          component: DevPopup2
+        },
+        {
+          title: "°³¹ß ÆË¾÷ÀÌ 3°³ÀÎ °æ¿ì",
+          component: DevPopup3
+        },
+      ]
+      usePageInit(1, 6, 2);
+    }
+    const { initCode, activeIndex } = usePage();
     const componentRefs = useRef(Array(componentArray.length).fill(null));
     const componentPosition = useRef([]);
     const [componentActive, setComponentActive] = useState(0);
@@ -89,7 +115,7 @@
     // const { user } = useAuth();
 
     const toggleCode = () => {}
-    usePageInit(2, 3, 1);
+    
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     const SFilter = useMemo(() => window.styled.ul`

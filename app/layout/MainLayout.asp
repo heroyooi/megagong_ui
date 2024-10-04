@@ -53,7 +53,7 @@
             </div>
           </div>{/* .main_content_wrap */}
           <div className="main_worklist_wrap">
-            <h2 className="main_sub_title"><span>MEGAGONG's</span> Frontend</h2>
+            <h2 className="main_sub_title"><span>메가공무원's</span> 프론트엔드</h2>
             <div className="main_worklist">
               <div className="main_work">
                 <h3>메인 성능 최적화</h3>
@@ -87,7 +87,7 @@
             </div>
           </div>{/* .main_worklist_wrap */}
           <div className="main_component_wrap">
-            <h2 className="main_sub_title"><span>MEGAGONG's</span> UI</h2>
+            <h2 className="main_sub_title"><span>메가공무원's</span> 컴포넌트</h2>
             <div className="main_component">
               <div className="grid-item"><PassBanner simple={true} /></div>
               <div className="grid-item"><MenuHcode simple={true} /></div>

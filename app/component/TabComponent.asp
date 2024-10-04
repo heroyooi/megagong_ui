@@ -1,8 +1,6 @@
 <!-- #include virtual = "/app/component/tab/Tab1.asp"-->
 <!-- #include virtual = "/app/component/tab/Tab2.asp"-->
 <!-- #include virtual = "/app/component/tab/Tab3.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab4.asp"-->
-<!-- #include virtual = "/app/component/tab/Tab5.asp"-->
 
 <script type="text/babel">
   'use strict';
@@ -10,37 +8,25 @@
   function TabComponent() {
     const componentArray = [
       {
-        title: "ÇÕ°ÝÀü·«LAB ¹ÝÀÀÇü ÅÇ ¸Þ´º",
+        title: "ÅÇ - Å¸ÀÔ1",
         component: Tab1
       },
       {
-        title: "±âº» ÅÇ",
+        title: "ÅÇ - Å¸ÀÔ2",
         component: Tab2
       },
       {
-        title: "·£´ý ÅÇ",
+        title: "ÅÇ - Å¸ÀÔ3",
         component: Tab3
-      },
-      {
-        title: "·£´ý ÅÇ - ÀÚµ¿ ·Ñ¸µ (´Ù¼ö »ç¿ë)",
-        component: Tab4,
-        error: true,
-        errorLink: "<%=dev_url_main%>/event/@template/index_tab.asp"
-      },
-      {
-        title: "ÅÇ ¾ÈÀÇ ½½¶óÀÌµå",
-        component: Tab5
       },
     ]
     
-    const { setDp1, setDp2 } = useAside();
     const componentRefs = useRef(Array(componentArray.length).fill(null));
     const componentPosition = useRef([]);
     const [componentActive, setComponentActive] = useState(0);
-    const [activeAnk, setActiveAnk] = useState(true);
 
     const toggleCode = () => {}
-    usePageInit(2, 2);
+    usePageInit(1, 3);
     useScrollNavi(componentPosition, componentRefs, setComponentActive, 120, toggleCode);
 
     return (

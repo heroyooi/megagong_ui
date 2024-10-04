@@ -335,7 +335,7 @@ pre[class*=language-].line-numbers>code { position: relative; white-space: inher
 
 
 pre[class*=language-].act { height: 0; padding: 0; visibility: hidden}
-pre[class*=language-] { position: relative; transition: 0.5s; padding: 1em 1em 0; transition: 0.5s; visibility: visible; margin: 3% 0; border-radius: 9px; max-height: 120px; overflow: scroll; -ms-overflow-style: none; /* overflow-x: hidden; */}
+pre[class*=language-] { position: relative; transition: 0.5s; padding: 1em 1em 0; transition: 0.5s; visibility: visible; margin: 3% 0; border-radius: 9px; max-height: 150px; overflow: scroll; -ms-overflow-style: none; /* overflow-x: hidden; */}
 pre[class*=language-]::-webkit-scrollbar { border-radius: 25px; background: transparent; } 
 pre[class*=language-]::-webkit-scrollbar-track { border-radius: 25px; background: transparent; } 
 pre[class*=language-]::-webkit-scrollbar-thumb { background: #8a8a8a; border-radius: 25px; background-clip: padding-box; border: 5px solid transparent; } 

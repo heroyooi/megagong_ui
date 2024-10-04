@@ -10,8 +10,8 @@
         <Aside />
         {pid === 'banner' && <BannerComponent cid={cid} />}
         {pid === 'button' && <ButtonComponent />}
+        {pid === 'tab' && <TabComponent />}
         {/*cid === 'menu' && <MenuComponent />*/}
-        {/*cid === 'tab' && <TabComponent />*/}
         {/*cid === 'popup' && <PopupComponent />*/}
         {/*cid === 'dev-popup' && <DevPopupComponent />*/}
         {/*cid === 'swiper' && <SwiperComponent />*/}

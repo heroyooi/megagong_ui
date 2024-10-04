@@ -3,58 +3,30 @@
 
   function Tab2({ title, onChange }) {
 
-const html = `<ul id="tab1" class="tab_base">
-  <li class="on"><a href="#tab1_1">탭1-1</a></li>
-  <li><a href="#tab1_2">탭1-2</a></li>
-</ul>
-<ul class="panel_base">
-  <li id="tab1_1">내용 1-1 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel tenetur excepturi omnis recusandae illo eius, quaerat optio commodi quisquam maiores molestiae neque atque inventore laboriosam! Earum saepe recusandae aut!</li>
-  <li id="tab1_2">내용 1-2 <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et enim corrupti in commodi nemo quos nobis voluptatibus ut, nesciunt sequi, eveniet voluptates quas animi, obcaecati distinctio rerum ipsum iure inventore.</li>
+const html = `<ul class="tab-base type-2">
+    <li class="on"><a href="javascript:void(0);">성적분석</a></li>
+    <li><a href="javascript:void(0);">누적분석</a></li>
 </ul>`;
 
-const css = `.tab_base{ clear: both; width:100%;}
-.tab_base:after{content:'';display:block;clear:both;}
-.tab_base > li{float:left;width:50%;text-align:center;}
-.tab_base.col3 > li{width:33.333%;}
-.tab_base > li a{display:block;padding:10px;color:#111; background-color: #f8f8f8;}
-.tab_base > li.on a{background-color:#111;color:#fff;}
-.panel_base > li { padding: 30px;display:none;}`;
+const css = ``;
 
-const excCss = `.panel_base{min-height:123px;}`;
-
-const js = `$('.tab_base').each(function(){
-    var target = $(this).find('li.on').find('a').attr('href');
-    $(target).show();
-});
-$('.tab_base a').on('click', function(e){
+const js = `$('.tab-base li').on('click', function(e){
     e.preventDefault();
-    var target = $(this).attr('href');
-    $(this).closest('li').addClass('on');
-    $(this).closest('li').siblings().removeClass('on');
-    $(target).show();
-    $(target).siblings().hide();
-});
-$('.panel_base').each(function(){
-    if ($(this).hasClass('w_slide')) {
-        setTimeout(function(){
-            $(this).children('li, div').hide();
-            $(this).children('li, div').eq($(this).prev('.tab_base').children('li.on').index()).show();
-            $(this).addClass('active');
-        }, 250);
-    }
+    $(this).addClass('on');
+    $(this).siblings().removeClass('on');
 });`;
 
     return (
       <PageContent
         title={title}
-        desc=""
-        // image="/images/tab1.png"
+        desc="메가공무원에서 사용하는 탭 컴포넌트입니다."
         html={html}
         css={css}
-        excCss={excCss}
         js={js}
-        items={["기본탭"]}
-        // link="<%=lab_main%>/l/gong/guide/guide.asp"
+        items={["탭", "크기", "색상"]}
+        link="<%=dev_url_main%>/test/heroyooi/component.asp?id=tab"
+        file="test\heroyooi\component.asp"
+        designFile="\\10.1.0.100\공무원사업본부_공무원 사업부\마케팅서비스실\웹디자인팀(공)\@디자인가이드\@new_탭.psd"
         onChange={onChange}
       />
     )

@@ -132,19 +132,19 @@
             </div>
         </div>
         {file && <div className="mt-2 text-black font-semibold flex gap-x-2">
-          <span>파일 경로 : <em className="text-mainColor-500">{file}</em></span>
+          <span>퍼블리싱 파일 경로 : <em className="text-mainColor-500">{file}</em></span>
           <button className="text-white bg-mainColor-500 font-medium rounded px-2 py-1 text-sm hover:text-white" onClick={onCopy(file)}>
             경로 복사
           </button>
         </div>}
         {lazyFile && <div className="mt-2 text-black font-semibold flex gap-x-2">
-          <span>파일 경로(레이지 로딩) : <em className="text-mainColor-500">{lazyFile}</em></span>
+          <span>퍼블리싱 파일 경로(레이지 로딩) : <em className="text-mainColor-500">{lazyFile}</em></span>
           <button className="text-white bg-mainColor-500 font-medium rounded px-2 py-1 text-sm hover:text-white" onClick={onCopy(file)}>
             경로 복사
           </button>
         </div>}
         {designFile && <div className="mt-2 text-black font-semibold flex gap-x-2">
-          <span>파일 경로 : <em className="text-mainColor-500">{designFile}</em></span>
+          <span>디자인 파일 경로 : <em className="text-mainColor-500">{designFile}</em></span>
           <button className="text-white bg-mainColor-500 font-medium rounded px-2 py-1 text-sm hover:text-white" onClick={onCopy(designFile)}>
             경로 복사
           </button>

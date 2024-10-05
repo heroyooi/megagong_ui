@@ -52,7 +52,7 @@
                 <Link to="/component/table" className={Depth2Link(dp1 == 1 && dp2 == 5)} onClick={changeDp(1, 5)}>테이블<span></span></Link>
               </li>
               <li className={Depth2Li(dp1 == 1 && dp2 == 6)}>
-                <Link to="/component/popup/pub" className={Depth2Link(dp1 == 1 && dp2 == 6)} onClick={changeDp(1, 6)}>팝업<span></span></Link>
+                <Link to="/component/popup/pub" className={Depth2Link(dp1 == 1 && dp2 == 6)} onClick={changeDp(1, 6)}>팝업 - 리스트&amp;썸네일 개발중<span></span></Link>
                 <ul className="pl-4">
                   <li className={Depth3Li(dp1 == 1 && dp2 == 6 && dp3 == 1)}>
                     <Link to="/component/popup/pub" onClick={changeDp(1, 6, 1)}>퍼블 팝업<span></span></Link>

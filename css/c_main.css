@@ -2270,7 +2270,7 @@ body.main .header_wrp:not(.on) .header {border-bottom:none; }
     transform: rotate(360deg);
   }
 }
-.main_content_wrap .message{text-align:center;color:#fff;font-family:'Noto Sans KR';font-weight:900;}
+.main_content_wrap .message{text-align:center;color:#fff;font-family:'Noto Sans KR';font-weight:900;position: relative;}
 .main_content_wrap .message h1{
   font-size:60px;
   background: linear-gradient(

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Popup6({ title, onChange }) {
+  function Popup6({ title, onChange, simple = false }) {
 
 const html = `<div class="pop_btn_wrap">
   <a class="mg_btn_base sm" href="#" onclick="openCmegaPopup('popupYoutube'); return false;">¿µ»ó ÆË¾÷ È£Ãâ</a>
@@ -47,6 +47,7 @@ function closeCmegaPopupYoutubeToday() {
         js={js}
         items={["¿µ»óÆË¾÷","À¯Æ©ºê","µõµå"]}
         link="<%=url_main%>/megagong.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

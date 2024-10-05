@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Slick1({ title, onChange }) {
+  function Slick1({ title, onChange, simple = false }) {
 
 const html = `<div class="slick-basic-wrap">
   <div class="slick-basic">
@@ -91,6 +91,7 @@ const outJs = ``;
         outJs={outJs}
         items={["반응형 슬라이드", "기본형", "슬릭"]}
         link="<%=dev_url_main%>/event/2023/06200020/index.asp#eventWrap"
+        simple={simple}
         onChange={onChange}
       />
     )

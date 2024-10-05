@@ -89,6 +89,7 @@
           <div className="main_component_wrap">
             <h2 className="main_sub_title"><span>메가공무원's</span> 컴포넌트</h2>
             <div className="main_component">
+              
               <div className="grid-item"><PassBanner simple={true} /></div>
               <div className="grid-item"><MenuHcode simple={true} /></div>
               <div className="grid-item"><Tab1 simple={true} /></div>
@@ -100,10 +101,12 @@
               <div className="grid-item"><ButtonOther simple={true} /></div>
               <div className="grid-item"><ButtonWhite simple={true} /></div>
               <div className="grid-item"><PassBannerEtc simple={true} /></div>
-              <div className="grid-item"><PassBanner simple={true} /></div>
+              <div className="grid-item"><Popup1 simple={true} /></div>
               <div className="grid-item"><MenuUtil simple={true} /></div>
-              <div className="grid-item"><PassBanner simple={true} /></div>
+              <div className="grid-item"><Popup3 simple={true} /></div>
+              <div className="grid-item"><Popup7 simple={true} /></div>
               <div className="grid-item"><MenuGnb simple={true} /></div>
+              
             </div>
           </div>{/* .main_component_wrap */}
         </div>

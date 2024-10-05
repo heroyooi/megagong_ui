@@ -90,6 +90,8 @@
         },
       ]
       usePageInit(1, 6, 1);
+      sub = "퍼블 팝업";
+      text = "팝업은 메가공무원 메인 페이지에서부터 홍보페이지까지 특정 정보 전달을 위하여 광범위하게 사용되고 있는 기능입니다. <br />별도의 요청이 있던 경우를 제외하고 모든 팝업은 해당 코드를 바탕으로 제작되는 것을 원칙으로 합니다.";
     } else if (cid == "dev") {
       componentArray = [
         {
@@ -105,6 +107,8 @@
           component: DevPopup3
         },
       ]
+      sub = "개발 팝업";
+      text = "개발 팝업은 팝업 내부에 개발적인 요소가 있을 때 사용하는 컴포넌트입니다.";
       usePageInit(1, 6, 2);
     }
     const { initCode, activeIndex } = usePage();
@@ -159,7 +163,7 @@
       <>
         <div className="page_wrap w-[1392px] ml-60 h-full overflow-x-hidden relative sm:w-[100%] sm:ml-0 pb-[150px]" id="page_wrap">
           <div className="page_inner w-5/6 ml-8 pt-32">
-              <PageHeader name="Pub Popup" sub="퍼블 팝업" text="팝업은 메가공무원 메인 페이지에서부터 홍보페이지까지 특정 정보 전달을 위하여 광범위하게 사용되고 있는 기능입니다. <br />별도의 요청이 있던 경우를 제외하고 모든 팝업은 해당 코드를 바탕으로 제작되는 것을 원칙으로 합니다." />
+              <PageHeader name="Popup" sub={sub} text={text} />
               <SFilter>
                 <div className="inner">
                   <div onClick={changeFilter("list")}>리스트형</div>

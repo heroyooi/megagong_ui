@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Popup5({ title, onChange }) {
+  function Popup5({ title, onChange, simple = false }) {
 
 const html = `<div class="pop_btn_wrap">
   <a class="mg_btn_base sm" href="#" onclick="openCmegaPopup('popupVideo'); return false;">영상 팝업 호출</a>
@@ -47,6 +47,7 @@ function closeCmegaPopupVideoToday() {
         js={js}
         items={["영상팝업","영상파일","딤드"]}
         link="<%=url_main%>/megagong.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

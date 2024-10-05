@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Popup7({ title, onChange }) {
+  function Popup7({ title, onChange, simple = false }) {
 
 const html = `<div class="pop_btn_wrap">
   <a class="mg_btn_base sm" href="#" onclick="openMegaPopup('popupFadeIn', 1, true, false); return false;">´çÃ· ÆË¾÷</a>
@@ -44,6 +44,7 @@ const js = ``;
         js={js}
         items={["´çÃ·ÆË¾÷","³ªÅ¸³ª±â","µõµå"]}
         link="<%=url_main%>/megagong.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

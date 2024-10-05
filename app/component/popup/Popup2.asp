@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Popup2({ title, onChange }) {
+  function Popup2({ title, onChange, simple = false }) {
 
 const html = `<div class="pop_btn_wrap">
   <a class="mg_btn_base sm mg_txt" href="#" onclick="deleteCookieAndReload('todayPopupPassServiceCookie'); return false;">오늘 하루 닫기 팝업 관련 쿠키값 초기화</a>
@@ -78,6 +78,7 @@ $('.popup_pass .dim_bg').on('click', function(){
         js={js}
         items={["하루보지않기","중앙팝업"]}
         link="<%=url_main%>/megagong.asp?now=2024-05-14 09:00"
+        simple={simple}
         onChange={onChange}
       />
     )

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Popup3({ title, onChange }) {
+  function Popup3({ title, onChange, simple = false }) {
 
 const html = `<div class="pop_btn_wrap">
   <a class="mg_btn_base sm mg_txt" href="#" onclick="deleteCookieAndReload('todayPopupCookie'); return false;">오늘 하루 닫기 팝업 관련 쿠키값 초기화</a>
@@ -51,6 +51,7 @@ function closeCmegaPopupToday() {
         js={js}
         items={["팝업","하루보지않기","안내팝업"]}
         link="<%=url_main%>/megagong.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Popup1({ title, onChange }) {
+  function Popup1({ title, onChange, simple = false }) {
 
 const html = `<div id="mcg_fixbn" class="mcg_fixbn">
   <a href="javascript:;" onclick="mainHide('#mcg_fixbn')" class="close"><img src="<%=img_main%>/common/btn_close_right_bottom_bnr.png" alt="닫기"></a>
@@ -442,6 +442,7 @@ $('.mcg_fixbn.commonSlider').not('.slick-initialized').slick({
         items={["팝업배너","메인하단","슬라이드"]}
         link="<%=url_main%>/megagong.asp"
         file="m_inc\main_content_gong.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

@@ -51,6 +51,7 @@
               <li className={Depth2Li(dp1 == 1 && dp2 == 5)}>
                 <Link to="/component/table" className={Depth2Link(dp1 == 1 && dp2 == 5)} onClick={changeDp(1, 5)}>테이블<span></span></Link>
               </li>
+
               <li className={Depth2Li(dp1 == 1 && dp2 == 6)}>
                 <Link to="/component/popup/pub" className={Depth2Link(dp1 == 1 && dp2 == 6)} onClick={changeDp(1, 6)}>팝업 - 리스트&amp;썸네일 개발중<span></span></Link>
                 <ul className="pl-4">
@@ -62,7 +63,18 @@
                   </li>
                 </ul>
               </li>
-              {/*<li className={`small_nav sec hover:text-white ${dp1 == 2 && dp2 == 3 && dp3 == 1 ? "on text-white" : ""}`}><Link to="/component/popup">퍼블 팝업<span></span></Link></li>*/}
+
+              <li className={Depth2Li(dp1 == 1 && dp2 == 7)}>
+                <Link to="/component/slide/swiper" className={Depth2Link(dp1 == 1 && dp2 == 7)} onClick={changeDp(1, 7)}>슬라이드<span></span></Link>
+                <ul className="pl-4">
+                  <li className={Depth3Li(dp1 == 1 && dp2 == 7 && dp3 == 1)}>
+                    <Link to="/component/slide/swiper" onClick={changeDp(1, 7, 1)}>스와이퍼<span></span></Link>
+                  </li>
+                  <li className={Depth3Li(dp1 == 1 && dp2 == 7 && dp3 == 2)}>
+                    <Link to="/component/slide/slick" onClick={changeDp(1, 7, 2)}>슬릭<span></span></Link>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>}
 

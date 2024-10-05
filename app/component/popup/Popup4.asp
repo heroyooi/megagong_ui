@@ -1,7 +1,7 @@
 <script type="text/babel">
   'use strict';
 
-  function Popup4({ title, onChange }) {
+  function Popup4({ title, onChange, simple = false }) {
 
 const html = `<div class="pop_btn_wrap">
   <a class="mg_btn_base sm" href="#" onclick="openMegaPopup('popupDim', 1); return false;">µõ ÆË¾÷ È£Ãâ</a>
@@ -51,6 +51,7 @@ function closeCmegaDimPopup() {
         js={js}
         items={["µõÆË¾÷","µõµå","¾È³»ÆË¾÷"]}
         link="<%=url_main%>/megagong.asp"
+        simple={simple}
         onChange={onChange}
       />
     )

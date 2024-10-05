@@ -22,9 +22,7 @@
 <!-- #include virtual = "/app/component/ColumnComponent.asp"-->
 <!-- #include virtual = "/app/component/TableComponent.asp"-->
 <!-- #include virtual = "/app/component/PopupComponent.asp"-->
-<!-- #include virtual = "/app/component/DevPopupComponent.asp"-->
-<!-- #include virtual = "/app/component/SwiperComponent.asp"-->
-<!-- #include virtual = "/app/component/SlickComponent.asp"-->
+<!-- #include virtual = "/app/component/SlideComponent.asp"-->
 <!-- #include virtual = "/app/component/PlayerComponent.asp"-->
 <!-- // @@ COMPONENT -->
 

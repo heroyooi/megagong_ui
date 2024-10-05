@@ -14,6 +14,7 @@
         {pid === 'column' && <ColumnComponent />}
         {pid === 'table' && <TableComponent />}
         {pid === 'popup' && <PopupComponent cid={cid} />}
+        {pid === 'slide' && <SlideComponent cid={cid} />}
         {/*cid === 'dev-popup' && <DevPopupComponent />*/}
         {/*cid === 'menu' && <MenuComponent />*/}
         {/*cid === 'swiper' && <SwiperComponent />*/}
